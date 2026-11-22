@@ -1,44 +1,70 @@
 # Crest–Root Calculus
 
-**Mathematics you can actually check.**
+Follow one orange dot on the green curve below. Its two companions move with it. At every instant, all three give the **same point** on the blue curve. Crest–Root Calculus studies connections like this by counting points, finding formulas and checking their predictions exactly.
 
-Crest–Root Calculus is an open research project about turning difficult mathematical questions into **exact calculations, explicit answers, and evidence that can be checked again**.
+## What does a degree-three map do?
 
-This repository contains Python programs, mathematical papers, worked examples, and verification files. The project ranges across algebra and number theory, with recent work focused on finding hidden elliptic-curve structures inside plane quartic curves.
+The green curve is the **Klein quartic**. Its equation has degree four. The blue curve is an **elliptic curve**. The map is a rule that sends each green point to a blue one. The points that land together form a **fibre**. Here a typical fibre has three points, which is what *degree three* counts.
 
-**New to mathematics or programming? You're welcome here.** You don't have to understand the equations to run a demonstration.
+<picture>
+  <source media="(max-width: 640px) and (prefers-reduced-motion: reduce)" srcset="docs/figures/still/klein-fibre-mobile.svg" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="docs/figures/still/klein-fibre.svg" />
+  <source media="(max-width: 640px)" srcset="docs/figures/klein-fibre-mobile.svg" />
+  <img src="docs/figures/klein-fibre.svg" alt="Three moving points with cyclically permuted coordinates on the real Klein quartic share one moving image on the elliptic curve. Fixed rings mark the three coordinate vertices and their common image (0, 1)." />
+</picture>
 
-## What does it do?
-
-Imagine being handed a complicated equation describing a geometric shape. Sometimes that shape contains a surprising connection to a simpler object called an **elliptic curve**. Finding the connection is hard; proving you've found *all* of them can be harder.
-
-For certain questions, Crest–Root Calculus can:
-
-- **Discover** candidate mathematical structures using calculations over small finite fields.
-- **Recover** exact answers instead of relying only on decimal approximations.
-- **Verify** candidate answers by substituting them into the original equations.
-- **Certify completeness** in supported cases: show not just that an answer works, but that no others were missed.
-- **Reproduce research results** from saved, checkable computational evidence.
-
-It is research software, **not** a general-purpose solver for every equation, and not every calculation is fast.
+The rings give you a fibre you can check by hand. Put a 1 in any one of the slots in `(X, Y, Z)` and a 0 in the other two. The formula sends each of those three triples to `(u, W) = (0, 1)`. [See the formula and the substitution.](docs/figures/README.md#the-klein-quartic)
 
 ## A real example
 
-One recent question is: *Does a smooth plane quartic curve have a degree-three map to a genus-one curve? How many distinct maps are there, up to the chosen equivalence?*
+Suppose we’re given only the equation of another quartic, called **C⋆** (“C-star”). Can we discover a map like the one above? And how can we tell whether we’ve found them all?
 
-The Part XXX decision program can analyze an example called `C*` and certify **one geometric degree-three quotient class**. On a different example, it certifies **zero**. This distinction matters: a finite-field scan can show convincing-looking candidates that do not correspond to genuine solutions in characteristic zero.
+Start with arithmetic **modulo 5**, keeping only the remainder after division by 5. Now there are few enough positions to draw every one. A zero means the point lies on the curve. The orange rings show which zeros pass the additional equations for a map.
 
-Here, **degree three** describes the algebraic map, not the power of the original quartic equation. A **certificate** means the result is accompanied by mathematical conditions that the code checks; it does not mean that all of the repository has been formally proved in a proof assistant.
+<picture>
+  <source media="(max-width: 640px) and (prefers-reduced-motion: reduce)" srcset="docs/figures/still/cstar-modulo-five-mobile.svg" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="docs/figures/still/cstar-modulo-five.svg" />
+  <source media="(max-width: 640px)" srcset="docs/figures/cstar-modulo-five-mobile.svg" />
+  <img src="docs/figures/cstar-modulo-five.svg" alt="All 31 projective positions modulo 5 are labeled with the remainder for C-star. Six ordinary positions and two at infinity give zero. The map test marks (1:0:1) and (2:1:0)." />
+</picture>
 
-> **Repository setup:** The research code and monograph are distributed in the separately packaged integrated Part XXX archive and have not yet been uploaded to this GitHub repository. The commands below apply to that archive. A GitHub download will support them once the research source tree is added here.
+**Two marks lead to one map.** The two ringed points identify the same quotient in different ways. To prove completeness for C⋆, the program scans a field with 25 elements, where it checks 40 curve points and finds the same two marks. An exact map gives a lower bound of one. The scan and its field bound give an upper bound of one. Together they certify **one geometric quotient class**. Two maps count as the same class if an isomorphism of their target curves turns one map into the other. [Inspect the counts and bounds.](docs/figures/README.md#the-c-star-scan)
+
+### When a candidate disappears
+
+Start with the Fermat quartic, then change two coefficients by multiples of 13. Modulo 13, the change is invisible. All four curves below give the same 16 candidate quotient classes. Read through the powers of 13 to see when the equations first distinguish them.
+
+<picture>
+  <source media="(max-width: 640px) and (prefers-reduced-motion: reduce)" srcset="docs/figures/still/lifting-depth-mobile.svg" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="docs/figures/still/lifting-depth.svg" />
+  <source media="(max-width: 640px)" srcset="docs/figures/lifting-depth-mobile.svg" />
+  <img src="docs/figures/lifting-depth.svg" alt="Four quartics start with 16 candidates modulo 13. The three perturbations lose all 16 at modulus 169, 2,197 and 28,561 respectively. The original Fermat quartic has 16 exact geometric quotient classes." />
+</picture>
+
+The last perturbation still has 16 candidates at 2,197. At 28,561 every one fails. An exact map would have to pass at every precision, so that failure rules them all out. On the original Fermat curve, 16 known maps attain the upper bound. [See the four equations and the lifting results.](docs/figures/README.md#the-fermat-lifting-test)
+
+## Where do “crest” and “root” come from?
+
+A **root** in the project’s terminology is a record of point counts, one for each prime of good reduction. A **crest** describes a pattern in how those counts contribute to growth. Here’s an example from the opening sections of the monograph.
+
+A projective line modulo 5 has six points, the five ordinary coordinates and one point called infinity (∞). Choose a point on each of two such lines. Each pair specifies one point on a surface called a **split quadric**. In the real picture, holding either coordinate fixed draws a straight line on the saddle.
+
+<picture>
+  <source media="(max-width: 640px) and (prefers-reduced-motion: reduce)" srcset="docs/figures/still/quadric-rulings-mobile.svg" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="docs/figures/still/quadric-rulings.svg" />
+  <source media="(max-width: 640px)" srcset="docs/figures/quadric-rulings-mobile.svg" />
+  <img src="docs/figures/quadric-rulings.svg" alt="Two families of straight lines cross on the real saddle z = uv. Modulo 5 the full projective surface has 25 finite pairs, five with only u infinite, five with only v infinite and one with both infinite, for 36 points." />
+</picture>
+
+For a prime $p$, each line contributes $p+1$ choices, so the count is $(p+1)^2=p^2+2p+1$. The two boundary strips in the grid explain the middle coefficient **2**. For this surface, that same 2 is the growth exponent of the product built from its normalized point counts. [See how the exponent follows from the count.](docs/figures/README.md#the-split-quadric)
 
 ## Try it on Windows (beginner instructions)
 
 ### 1. Get the files
 
-On this GitHub repository page, click **Code → Download ZIP**, then extract the ZIP. Alternatively, if you use Git, clone the repository after it has been published.
+The illustrations play automatically on this page. For the Python examples, extract the separately distributed `crest_root_calculus_integrated_part_xxx.zip`. Open the extracted folder that contains `crest`. Inside `crest` you should see `scan_completeness_xxx`.
 
-The commands below assume the extracted folder contains the `crest` directory, which in turn contains `scan_completeness_xxx`.
+The GitHub ZIP contains this illustrated guide. The Python programs and monograph come with the integrated research archive.
 
 ### 2. Install Python
 
@@ -71,12 +97,14 @@ cd crest/scan_completeness_xxx
 python -B decision/decide.py scan/cstar.json --prime 5
 ```
 
-The result is JSON (structured text). Look for:
+The result is JSON (structured text). Look for these three fields in the output.
 
 ```json
-"complete": true,
-"lower": 1,
-"upper": 1
+{
+  "complete": true,
+  "lower": 1,
+  "upper": 1
+}
 ```
 
 The matching lower and upper bounds certify that this example has exactly **one** geometric degree-three quotient class.
@@ -101,7 +129,7 @@ This reruns **18 Part XXX verification groups** and compares their exact outputs
 
 If you receive an import error, verify that the packages from step 3 installed into the same Python interpreter you're using here.
 
-## What's in the repository?
+## What’s in the research archive?
 
 The integrated research archive is unusually large because it keeps historical work and reproducible evidence instead of only the newest scripts.
 
@@ -116,24 +144,6 @@ The integrated research archive is unusually large because it keeps historical w
 | Archived JSON receipt files | Expected exact outputs used to check reproducibility. |
 
 > **Note:** In the present archive, the Part XXX quick-start file is `crest/README_PART_XXX.md`. Historical directories contain additional specialized READMEs.
-
-## For curious readers: what's the mathematics?
-
-A **plane quartic** is a curve given by a homogeneous polynomial of degree four in three coordinates, such as
-
-\[
-X^4 + Y^4 + Z^4 = 0.
-\]
-
-An **elliptic curve** is a smooth genus-one curve with a selected base point. One familiar form looks like
-
-\[
-y^2=x^3+ax+b.
-\]
-
-The recent program searches for algebraic maps from quartics to genus-one curves, including targets that may not themselves possess a rational point. To avoid overlooking solutions, it combines geometry, finite-field searches, exact reconstruction, local lifting, and global completeness arguments. These steps have different logical roles: finding candidates is not the same thing as proving exhaustiveness.
-
-The monograph also develops other strands of the broader Crest–Root program. Start with its introduction; you do not need to read all 148 sections to run a first example.
 
 ## What is proved, and what remains difficult?
 
