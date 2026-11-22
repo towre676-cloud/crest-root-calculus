@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" width="376" height="607" viewBox="0 0 376 607"><title id="title">Who earned the exploration badge?</title><desc id="desc">River scores 90, including 78 from coins. Sky scores 84, including 64 from coins. Their exploration scores are 12 and 20. All bars use the same zero and scale.</desc>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#172b39}.title{font-family:Georgia,"Times New Roman",serif}.math{font-variant-numeric:tabular-nums}</style>
+<defs><pattern id="coins" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#dfeaf1"/><path d="M-2 2L2 -2M0 8L8 0M6 10L10 6" stroke="#b0c3d4" stroke-width="1"/></pattern></defs>
+<rect width="376" height="607" fill="white"/>
+<text x="17.0" y="33.0" font-size="29" style="fill:#172b39" font-weight="400" text-anchor="start" class="title">Who earned the</text>
+<text x="17.0" y="65.0" font-size="29" style="fill:#172b39" font-weight="400" text-anchor="start" class="title">exploration badge?</text>
+<rect x="17.0" y="83.0" width="17.0" height="13" fill="url(#coins)" stroke="none"/>
+<text x="41.0" y="95.0" font-size="16" style="fill:#4b626d" font-weight="400" text-anchor="start" class="">Coin points</text>
+<rect x="163.0" y="83.0" width="17.0" height="13" fill="#00766b" stroke="none"/>
+<text x="187.0" y="95.0" font-size="16" style="fill:#4b626d" font-weight="400" text-anchor="start" class="">Exploration points</text>
+<path d="M17.0 109.0L359.0 109.0" fill="none" stroke="#d6e1e6" stroke-width="1"/>
+<text x="17.0" y="142.0" font-size="20" style="fill:#172b39" font-weight="700" text-anchor="start" class="">Start with the whole score</text>
+<text x="17.0" y="187.0" font-size="17" style="fill:#172b39" font-weight="700" text-anchor="start" class="">River</text>
+<rect x="84.0" y="172.0" width="190.3" height="20" fill="url(#coins)" stroke="none"/>
+<rect x="274.3" y="172.0" width="29.3" height="20" fill="#00766b" stroke="none"/>
+<text x="179.2" y="187.0" font-size="15" style="fill:#172b39" font-weight="400" text-anchor="middle" class="">78</text>
+<text x="289.0" y="187.0" font-size="15" style="fill:#fff" font-weight="700" text-anchor="middle" class="">12</text>
+<text x="310.6" y="187.0" font-size="17" style="fill:#172b39" font-weight="700" text-anchor="start" class="">90</text>
+<text x="17.0" y="244.0" font-size="17" style="fill:#172b39" font-weight="700" text-anchor="start" class="">Sky</text>
+<rect x="84.0" y="229.0" width="156.2" height="20" fill="url(#coins)" stroke="none"/>
+<rect x="240.2" y="229.0" width="48.8" height="20" fill="#00766b" stroke="none"/>
+<text x="162.1" y="244.0" font-size="15" style="fill:#172b39" font-weight="400" text-anchor="middle" class="">64</text>
+<text x="264.6" y="244.0" font-size="15" style="fill:#fff" font-weight="700" text-anchor="middle" class="">20</text>
+<text x="296.0" y="244.0" font-size="17" style="fill:#172b39" font-weight="700" text-anchor="start" class="">84</text>
+<path d="M84.0 257.0L328.0 257.0" fill="none" stroke="#8da1ae" stroke-width="1"/>
+<path d="M84.0 257.0L84.0 261.0" fill="none" stroke="#8da1ae" stroke-width="1"/>
+<text x="84.0" y="278.0" font-size="14" style="fill:#4b626d" font-weight="400" text-anchor="middle" class="">0</text>
+<path d="M132.8 257.0L132.8 261.0" fill="none" stroke="#8da1ae" stroke-width="1"/>
+<text x="132.8" y="278.0" font-size="14" style="fill:#4b626d" font-weight="400" text-anchor="middle" class="">20</text>
+<path d="M181.6 257.0L181.6 261.0" fill="none" stroke="#8da1ae" stroke-width="1"/>
+<text x="181.6" y="278.0" font-size="14" style="fill:#4b626d" font-weight="400" text-anchor="middle" class="">40</text>
+<path d="M230.4 257.0L230.4 261.0" fill="none" stroke="#8da1ae" stroke-width="1"/>
+<text x="230.4" y="278.0" font-size="14" style="fill:#4b626d" font-weight="400" text-anchor="middle" class="">60</text>
+<path d="M279.2 257.0L279.2 261.0" fill="none" stroke="#8da1ae" stroke-width="1"/>
+<text x="279.2" y="278.0" font-size="14" style="fill:#4b626d" font-weight="400" text-anchor="middle" class="">80</text>
+<path d="M328.0 257.0L328.0 261.0" fill="none" stroke="#8da1ae" stroke-width="1"/>
+<text x="328.0" y="278.0" font-size="14" style="fill:#4b626d" font-weight="400" text-anchor="middle" class="">100</text>
+<path d="M17.0 319.0L359.0 319.0" fill="none" stroke="#d6e1e6" stroke-width="1"/>
+<text x="17.0" y="352.0" font-size="20" style="fill:#172b39" font-weight="700" text-anchor="start" class="">Subtract the included coins</text>
+<text x="17.0" y="395.0" font-size="17" style="fill:#172b39" font-weight="700" text-anchor="start" class="">River</text>
+<rect x="84.0" y="380.0" width="29.3" height="19" fill="#00766b" stroke="none"/>
+<text x="121.3" y="395.0" font-size="17" style="fill:#00766b" font-weight="700" text-anchor="start" class="">12</text>
+<text x="17.0" y="460.0" font-size="17" style="fill:#172b39" font-weight="700" text-anchor="start" class="">Sky</text>
+<rect x="84.0" y="445.0" width="48.8" height="19" fill="#00766b" stroke="none"/>
+<text x="140.8" y="460.0" font-size="17" style="fill:#00766b" font-weight="700" text-anchor="start" class="">20</text>
+<path d="M84.0 472.0L328.0 472.0" fill="none" stroke="#8da1ae" stroke-width="1"/>
+<path d="M84.0 472.0L84.0 476.0" fill="none" stroke="#8da1ae" stroke-width="1"/>
+<text x="84.0" y="493.0" font-size="14" style="fill:#4b626d" font-weight="400" text-anchor="middle" class="">0</text>
+<path d="M132.8 472.0L132.8 476.0" fill="none" stroke="#8da1ae" stroke-width="1"/>
+<text x="132.8" y="493.0" font-size="14" style="fill:#4b626d" font-weight="400" text-anchor="middle" class="">20</text>
+<path d="M181.6 472.0L181.6 476.0" fill="none" stroke="#8da1ae" stroke-width="1"/>
+<text x="181.6" y="493.0" font-size="14" style="fill:#4b626d" font-weight="400" text-anchor="middle" class="">40</text>
+<path d="M230.4 472.0L230.4 476.0" fill="none" stroke="#8da1ae" stroke-width="1"/>
+<text x="230.4" y="493.0" font-size="14" style="fill:#4b626d" font-weight="400" text-anchor="middle" class="">60</text>
+<path d="M279.2 472.0L279.2 476.0" fill="none" stroke="#8da1ae" stroke-width="1"/>
+<text x="279.2" y="493.0" font-size="14" style="fill:#4b626d" font-weight="400" text-anchor="middle" class="">80</text>
+<path d="M328.0 472.0L328.0 476.0" fill="none" stroke="#8da1ae" stroke-width="1"/>
+<text x="328.0" y="493.0" font-size="14" style="fill:#4b626d" font-weight="400" text-anchor="middle" class="">100</text>
+<path d="M17.0 535.0L359.0 535.0" fill="none" stroke="#d6e1e6" stroke-width="1"/>
+<text x="17.0" y="561.0" font-size="19" style="fill:#00766b" font-weight="700" text-anchor="start" class="">Sky leads by 8 exploration points.</text>
+<text x="17.0" y="587.0" font-size="16" style="fill:#4b626d" font-weight="400" text-anchor="start" class="">River led by 6 on the original score.</text>
+</svg>

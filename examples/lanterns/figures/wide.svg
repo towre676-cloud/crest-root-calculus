@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="434" viewBox="0 0 780 434" role="img" aria-labelledby="title desc">
+<title id="title">When two dark lanterns can touch</title>
+<desc id="desc">The alternating rule allows 32 eight-lantern rows using dark, amber and blue. Allowing adjacent darks gives 341 rows. In the new example lamps three and four are dark. Under the relaxed rule 171 rows end in dark, and 170 end in a color.</desc>
+<style>text{font-family:Arial,Helvetica,sans-serif}.serif{font-family:Georgia,"Times New Roman",serif} .scan{display:none}@media(prefers-reduced-motion:no-preference){.scan{display:inline;animation:pair 13s ease-in-out infinite}}@keyframes pair{0%{transform:translateX(0px)}7%{transform:translateX(0px)}12%{transform:translateX(45px)}18%{transform:translateX(45px)}23%{transform:translateX(90px)}46%{transform:translateX(90px)}51%{transform:translateX(135px)}57%{transform:translateX(135px)}62%{transform:translateX(180px)}68%{transform:translateX(180px)}73%{transform:translateX(225px)}79%{transform:translateX(225px)}84%{transform:translateX(270px)}92%{transform:translateX(270px)}99%{transform:translateX(0px)}100%{transform:translateX(0px)}}</style>
+<rect width="780" height="434" fill="white"/>
+<text x="24" y="43" font-size="34" font-weight="400" fill="#172b39" text-anchor="start" class="serif">When two dark lanterns can touch</text>
+<text x="25" y="76" font-size="19" font-weight="400" fill="#465e6d" text-anchor="start" class="">Read eight lanterns left to right. D = dark, A = amber, B = blue.</text>
+<path d="M25 93H755" fill="none" stroke="#cedde0" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round" />
+<text x="25" y="144" font-size="19" font-weight="700" fill="#172b39" text-anchor="start" class="">Alternate dark and lit</text>
+<text x="25" y="172" font-size="16" font-weight="400" fill="#465e6d" text-anchor="start" class="">2 starts × 2⁴ colorings</text>
+<g class="scan">
+<rect x="239" y="124" width="77" height="46" rx="9" fill="#e7f2ef" stroke="none"/>
+</g>
+<path d="M250 136v-3a5 5 0 0 1 10 0v3" fill="none" stroke="#647785" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M247 136h16l3 4v16l-5 6h-12l-5-6v-16z" fill="#eff2f4" stroke="#647785" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M247 163h16" fill="none" stroke="#647785" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+<text x="255" y="155" font-size="14" font-weight="700" fill="#647785" text-anchor="middle" class="">D</text>
+<path d="M295 136v-3a5 5 0 0 1 10 0v3" fill="none" stroke="#944913" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M292 136h16l3 4v16l-5 6h-12l-5-6v-16z" fill="#ffcf72" stroke="#944913" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M292 163h16" fill="none" stroke="#944913" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+<text x="300" y="155" font-size="14" font-weight="700" fill="#944913" text-anchor="middle" class="">A</text>
+<path d="M340 136v-3a5 5 0 0 1 10 0v3" fill="none" stroke="#647785" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M337 136h16l3 4v16l-5 6h-12l-5-6v-16z" fill="#eff2f4" stroke="#647785" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M337 163h16" fill="none" stroke="#647785" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+<text x="345" y="155" font-size="14" font-weight="700" fill="#647785" text-anchor="middle" class="">D</text>
+<path d="M385 136v-3a5 5 0 0 1 10 0v3" fill="none" stroke="#285d9b" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M382 136h16l3 4v16l-5 6h-12l-5-6v-16z" fill="#b7d5ee" stroke="#285d9b" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M382 163h16" fill="none" stroke="#285d9b" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+<text x="390" y="155" font-size="14" font-weight="700" fill="#285d9b" text-anchor="middle" class="">B</text>
+<path d="M430 136v-3a5 5 0 0 1 10 0v3" fill="none" stroke="#647785" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M427 136h16l3 4v16l-5 6h-12l-5-6v-16z" fill="#eff2f4" stroke="#647785" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M427 163h16" fill="none" stroke="#647785" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+<text x="435" y="155" font-size="14" font-weight="700" fill="#647785" text-anchor="middle" class="">D</text>
+<path d="M475 136v-3a5 5 0 0 1 10 0v3" fill="none" stroke="#944913" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M472 136h16l3 4v16l-5 6h-12l-5-6v-16z" fill="#ffcf72" stroke="#944913" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M472 163h16" fill="none" stroke="#944913" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+<text x="480" y="155" font-size="14" font-weight="700" fill="#944913" text-anchor="middle" class="">A</text>
+<path d="M520 136v-3a5 5 0 0 1 10 0v3" fill="none" stroke="#647785" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M517 136h16l3 4v16l-5 6h-12l-5-6v-16z" fill="#eff2f4" stroke="#647785" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M517 163h16" fill="none" stroke="#647785" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+<text x="525" y="155" font-size="14" font-weight="700" fill="#647785" text-anchor="middle" class="">D</text>
+<path d="M565 136v-3a5 5 0 0 1 10 0v3" fill="none" stroke="#285d9b" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M562 136h16l3 4v16l-5 6h-12l-5-6v-16z" fill="#b7d5ee" stroke="#285d9b" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M562 163h16" fill="none" stroke="#285d9b" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+<text x="570" y="155" font-size="14" font-weight="700" fill="#285d9b" text-anchor="middle" class="">B</text>
+<text x="710" y="154" font-size="32" font-weight="400" fill="#00766b" text-anchor="middle" class="serif">32</text>
+<text x="710" y="177" font-size="15" font-weight="400" fill="#465e6d" text-anchor="middle" class="">valid rows</text>
+<path d="M25 190H755" fill="none" stroke="#cedde0" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round" />
+<text x="25" y="229" font-size="19" font-weight="700" fill="#172b39" text-anchor="start" class="">Allow dark neighbors</text>
+<text x="25" y="258" font-size="16" font-weight="400" fill="#465e6d" text-anchor="start" class="">Lit pairs still need a gap.</text>
+<g class="scan">
+<rect x="239" y="212" width="77" height="46" rx="9" fill="#e7f2ef" stroke="none"/>
+</g>
+<path d="M250 224v-3a5 5 0 0 1 10 0v3" fill="none" stroke="#647785" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M247 224h16l3 4v16l-5 6h-12l-5-6v-16z" fill="#eff2f4" stroke="#647785" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M247 251h16" fill="none" stroke="#647785" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+<text x="255" y="243" font-size="14" font-weight="700" fill="#647785" text-anchor="middle" class="">D</text>
+<path d="M295 224v-3a5 5 0 0 1 10 0v3" fill="none" stroke="#944913" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M292 224h16l3 4v16l-5 6h-12l-5-6v-16z" fill="#ffcf72" stroke="#944913" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M292 251h16" fill="none" stroke="#944913" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+<text x="300" y="243" font-size="14" font-weight="700" fill="#944913" text-anchor="middle" class="">A</text>
+<path d="M340 224v-3a5 5 0 0 1 10 0v3" fill="none" stroke="#647785" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M337 224h16l3 4v16l-5 6h-12l-5-6v-16z" fill="#eff2f4" stroke="#647785" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M337 251h16" fill="none" stroke="#647785" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+<text x="345" y="243" font-size="14" font-weight="700" fill="#647785" text-anchor="middle" class="">D</text>
+<path d="M385 224v-3a5 5 0 0 1 10 0v3" fill="none" stroke="#647785" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M382 224h16l3 4v16l-5 6h-12l-5-6v-16z" fill="#eff2f4" stroke="#647785" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M382 251h16" fill="none" stroke="#647785" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+<text x="390" y="243" font-size="14" font-weight="700" fill="#647785" text-anchor="middle" class="">D</text>
+<path d="M430 224v-3a5 5 0 0 1 10 0v3" fill="none" stroke="#285d9b" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M427 224h16l3 4v16l-5 6h-12l-5-6v-16z" fill="#b7d5ee" stroke="#285d9b" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M427 251h16" fill="none" stroke="#285d9b" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+<text x="435" y="243" font-size="14" font-weight="700" fill="#285d9b" text-anchor="middle" class="">B</text>
+<path d="M475 224v-3a5 5 0 0 1 10 0v3" fill="none" stroke="#647785" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M472 224h16l3 4v16l-5 6h-12l-5-6v-16z" fill="#eff2f4" stroke="#647785" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M472 251h16" fill="none" stroke="#647785" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+<text x="480" y="243" font-size="14" font-weight="700" fill="#647785" text-anchor="middle" class="">D</text>
+<path d="M520 224v-3a5 5 0 0 1 10 0v3" fill="none" stroke="#944913" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M517 224h16l3 4v16l-5 6h-12l-5-6v-16z" fill="#ffcf72" stroke="#944913" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M517 251h16" fill="none" stroke="#944913" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+<text x="525" y="243" font-size="14" font-weight="700" fill="#944913" text-anchor="middle" class="">A</text>
+<path d="M565 224v-3a5 5 0 0 1 10 0v3" fill="none" stroke="#647785" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M562 224h16l3 4v16l-5 6h-12l-5-6v-16z" fill="#eff2f4" stroke="#647785" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round" />
+<path d="M562 251h16" fill="none" stroke="#647785" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
+<text x="570" y="243" font-size="14" font-weight="700" fill="#647785" text-anchor="middle" class="">D</text>
+<path d="M340 259v5h55v-5" fill="none" stroke="#ae4523" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<text x="367.5" y="283" font-size="15" font-weight="700" fill="#ae4523" text-anchor="middle" class="">two darks</text>
+<text x="710" y="243" font-size="32" font-weight="400" fill="#00766b" text-anchor="middle" class="serif">341</text>
+<text x="710" y="266" font-size="15" font-weight="400" fill="#465e6d" text-anchor="middle" class="">valid rows</text>
+<path d="M25 301H755" fill="none" stroke="#cedde0" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round" />
+<text x="25" y="336" font-size="22" font-weight="700" fill="#172b39" text-anchor="start" class="">Count by the last lantern</text>
+<text x="25" y="373" font-size="17" font-weight="700" fill="#172b39" text-anchor="start" class="">Ends dark</text>
+<text x="135" y="373" font-size="18" font-weight="700" fill="#00766b" text-anchor="start" class="">171 ways</text>
+<text x="25" y="404" font-size="17" font-weight="400" fill="#465e6d" text-anchor="start" class="">Any valid 7-lantern row, then dark.</text>
+<text x="389" y="373" font-size="17" font-weight="700" fill="#172b39" text-anchor="start" class="">Ends lit</text>
+<text x="485" y="373" font-size="18" font-weight="700" fill="#00766b" text-anchor="start" class="">85 × 2 = 170 ways</text>
+<text x="389" y="404" font-size="17" font-weight="400" fill="#465e6d" text-anchor="start" class="">Any valid 6-lantern row, then dark + color.</text>
+</svg>

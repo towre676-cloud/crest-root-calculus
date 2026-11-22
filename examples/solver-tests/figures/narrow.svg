@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="582" viewBox="0 0 380 582" role="img" aria-labelledby="title desc"><title id="title">The clue lives in the fourth digit</title><desc id="desc">Read the base-thirteen digits from the ones place on the right. The lowest three digits of both changed coefficients are zero, just as on the Fermat quartic. At the fourth place they read eight and nine. All sixteen candidates fail the corresponding map equations for the perturbed curve.</desc>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#172b39}.serif{font-family:Georgia,"Times New Roman",serif}.num{font-family:Consolas,"Liberation Mono",monospace} .focus{opacity:0}@keyframes digit{0%,18%,100%{opacity:0}3%,15%{opacity:1}}@media(prefers-reduced-motion:no-preference){.focus{animation:digit 10s infinite ease-in-out}.f2{animation-delay:1.6s}.f3{animation-delay:3.2s}.f4{animation-delay:4.8s}}</style>
+<rect width="380" height="582" fill="white"/>
+<text x="16" y="33" font-size="28" font-weight="400" text-anchor="start" class="serif" style="fill:#172b39">The clue lives in the</text>
+<text x="16" y="67" font-size="28" font-weight="400" text-anchor="start" class="serif" style="fill:#172b39">fourth digit</text>
+<text x="16" y="101" font-size="17" font-weight="400" text-anchor="start" class="" style="fill:#4a6372">Two quartics agree modulo 2,197.</text>
+<text x="16" y="124" font-size="17" font-weight="400" text-anchor="start" class="" style="fill:#4a6372">Read the place values from right to left.</text>
+<path d="M16 145 L364 145" fill="none" stroke="#cbd8dc" stroke-width="1.4"/>
+<text x="16" y="180" font-size="16" font-weight="700" text-anchor="start" class="" style="fill:#4a6372">Place value</text>
+<text x="148" y="180" font-size="15" font-weight="700" text-anchor="middle" class="num" style="fill:#4a6372">2,197</text>
+<text x="207" y="180" font-size="15" font-weight="700" text-anchor="middle" class="num" style="fill:#4a6372">169</text>
+<text x="267" y="180" font-size="15" font-weight="700" text-anchor="middle" class="num" style="fill:#4a6372">13</text>
+<text x="325" y="180" font-size="15" font-weight="700" text-anchor="middle" class="num" style="fill:#4a6372">1</text>
+<rect x="125" y="192" width="46" height="163" rx="4" fill="#f9eae1"/>
+<rect class="focus f4" x="125" y="192" width="46" height="163" rx="4" fill="none" stroke="#b34826" stroke-width="2.6"/>
+<rect x="184" y="192" width="46" height="163" rx="4" fill="#edf3f6"/>
+<rect class="focus f3" x="184" y="192" width="46" height="163" rx="4" fill="none" stroke="#285d9b" stroke-width="2.6"/>
+<rect x="244" y="192" width="46" height="163" rx="4" fill="#edf3f6"/>
+<rect class="focus f2" x="244" y="192" width="46" height="163" rx="4" fill="none" stroke="#285d9b" stroke-width="2.6"/>
+<rect x="302" y="192" width="46" height="163" rx="4" fill="#edf3f6"/>
+<rect class="focus f1" x="302" y="192" width="46" height="163" rx="4" fill="none" stroke="#285d9b" stroke-width="2.6"/>
+<text x="16" y="232" font-size="16" font-weight="700" text-anchor="start" class="" style="fill:#172b39">Fermat</text>
+<text x="148" y="232" font-size="24" font-weight="400" text-anchor="middle" class="num" style="fill:#172b39">0</text>
+<text x="207" y="232" font-size="24" font-weight="400" text-anchor="middle" class="num" style="fill:#172b39">0</text>
+<text x="267" y="232" font-size="24" font-weight="400" text-anchor="middle" class="num" style="fill:#172b39">0</text>
+<text x="325" y="232" font-size="24" font-weight="400" text-anchor="middle" class="num" style="fill:#172b39">0</text>
+<text x="16" y="286" font-size="16" font-weight="700" text-anchor="start" class="" style="fill:#172b39">X²Z² term</text>
+<text x="148" y="286" font-size="24" font-weight="700" text-anchor="middle" class="num" style="fill:#b34826">8</text>
+<text x="207" y="286" font-size="24" font-weight="400" text-anchor="middle" class="num" style="fill:#172b39">0</text>
+<text x="267" y="286" font-size="24" font-weight="400" text-anchor="middle" class="num" style="fill:#172b39">0</text>
+<text x="325" y="286" font-size="24" font-weight="400" text-anchor="middle" class="num" style="fill:#172b39">0</text>
+<text x="16" y="340" font-size="16" font-weight="700" text-anchor="start" class="" style="fill:#172b39">Y²Z² term</text>
+<text x="148" y="340" font-size="24" font-weight="700" text-anchor="middle" class="num" style="fill:#b34826">9</text>
+<text x="207" y="340" font-size="24" font-weight="400" text-anchor="middle" class="num" style="fill:#172b39">0</text>
+<text x="267" y="340" font-size="24" font-weight="400" text-anchor="middle" class="num" style="fill:#172b39">0</text>
+<text x="325" y="340" font-size="24" font-weight="400" text-anchor="middle" class="num" style="fill:#172b39">0</text>
+<path d="M182 365 v7 H350 v-7" fill="none" stroke="#285d9b" stroke-width="1.6"/>
+<text x="266.0" y="394" font-size="15" font-weight="700" text-anchor="middle" class="" style="fill:#285d9b">Same three digits</text>
+<path d="M16 413 L364 413" fill="none" stroke="#cbd8dc" stroke-width="1.4"/>
+<text x="16" y="446" font-size="18" font-weight="700" text-anchor="start" class="" style="fill:#285d9b">Stop at 2,197</text>
+<text x="16" y="472" font-size="17" font-weight="400" text-anchor="start" class="" style="fill:#172b39">Both curves still have 16 candidates.</text>
+<text x="16" y="512" font-size="18" font-weight="700" text-anchor="start" class="" style="fill:#00766b">Continue to 28,561</text>
+<text x="16" y="538" font-size="17" font-weight="400" text-anchor="start" class="" style="fill:#172b39">Fermat keeps all 16. Every candidate</text>
+<text x="16" y="562" font-size="17" font-weight="400" text-anchor="start" class="" style="fill:#172b39">for the changed curve fails.</text>
+</svg>

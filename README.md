@@ -2,7 +2,20 @@
 
 **How much can a small calculation tell us about a whole shape?** This project started with that ambition and grew into programs that can find hidden maps between curves. You can follow the story here with just counting, multiplication, and a little clock arithmetic.
 
-[How it began](#how-the-project-began) · [Why a claim changed](#when-a-pattern-looks-too-good) · [Finding a hidden curve](#turning-the-question-around) · [Run the examples](#try-it-on-windows-beginner-instructions)
+[Choose a worked example](#choose-a-worked-example) · [How it began](#how-the-project-began) · [Why a claim changed](#when-a-pattern-looks-too-good) · [Finding a hidden curve](#turning-the-question-around) · [Run the examples](#try-it-on-windows-beginner-instructions)
+
+## Choose a worked example
+
+Start with a decision you want to make. Each example gives you a working program, a result you can check by hand, and something you can change.
+
+| What are you trying to do? | Start here | Make it your own |
+|---|---|---|
+| Design enough different puzzles for a class or a fair | [Build a lantern strip](examples/lanterns/README.md) | Change the length, colors, or neighbor rule. Ask for a playable row by number. |
+| Find all the points on a complicated curve above one simpler point | [Hunt for three points on C⋆](examples/fibres/README.md) | Give the program a rational target. See which of its source points have rational coordinates. |
+| Find out whether a math program declares victory too early | [Try to fool a solver](examples/solver-tests/README.md) | Choose how long two inputs agree. Run your solver on both and compare its answers. |
+| Decide what a score really rewards | [Award the exploration badge](examples/scores/README.md) | Supply your own CSV and scoring weight. See who moves up when the shared ingredient comes out. |
+
+**Try the four experiments in your browser.** Download and extract the ZIP, then double-click `examples/workbook.html`. Change a rule or a number and the answer updates. The workbook runs offline. The Python guides above take you from each example to your own inputs. [Download the workbook and programs (.zip).](https://github.com/towre676-cloud/crest-root-calculus/archive/refs/heads/main.zip)
 
 ## How the project began
 
@@ -35,6 +48,19 @@ Now give the puzzle **80 slots**. Each slot can hold 0, 1, 2, 3, or 4. The rule 
 </picture>
 
 Watch the paths meet at the red ring. Two earlier chains come from an ending of 1, and two come from an ending of 4. That gives **four chains ending in 0**. Remembering just five totals, one for each possible ending, lets the program count **2,199,023,255,552** valid chains with **1,975 neighbor-pair checks**. The shortcut works because each new slot needs to know only its neighbor. [Check the count a second way.](docs/figures/origins.md#the-80-slot-chain)
+
+### Design enough puzzles for a school fair
+
+You need 200 different eight-lantern strips. Each lantern can be dark, amber, or blue. If light and dark must alternate, you get **32** strips. Let two dark lanterns sit together, while keeping a dark space between lights, and you get **341**.
+
+<picture>
+  <source media="(max-width: 640px) and (prefers-reduced-motion: reduce)" srcset="examples/lanterns/figures/narrow-still.svg" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="examples/lanterns/figures/wide-still.svg" />
+  <source media="(max-width: 640px)" srcset="examples/lanterns/figures/narrow.svg" />
+  <img src="examples/lanterns/figures/wide.svg" alt="Two eight-lantern strips illustrate the two neighbor rules. Strict alternation gives 32 strips. Allowing dark neighbors gives 171 ending in dark and 170 ending in a color, for 341." />
+</picture>
+
+Choose the second rule and give each player a number. Strip **200** reads **amber, dark, dark, amber, dark, amber, dark, blue**. The program can jump straight to it using the same counting trick as the 80-slot chain. [Give me a strip of my own.](examples/lanterns/README.md#get-one-playable-strip)
 
 ## Where do “crest” and “root” come from?
 
@@ -79,6 +105,19 @@ One early experiment asked how well the nearest pair of **zeros** could predict 
 
 For the highlighted curve, **9.79 of its 10.73** came from that one pair, leaving about **0.94**. We withdrew the claim of a new law. The smaller differences between curves became a new question that could be tested on fresh examples. [See the measurements and what was withdrawn.](docs/figures/origins.md#checking-the-apparent-law)
 
+### Decide what a game badge should reward
+
+River scored 90 and Sky scored 84. The game awards points for coins and for exploration. Before giving away an exploration badge, subtract the coins already included in each total.
+
+<picture>
+  <source media="(max-width: 640px) and (prefers-reduced-motion: reduce)" srcset="examples/scores/figures/narrow-still.svg" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="examples/scores/figures/wide-still.svg" />
+  <source media="(max-width: 640px)" srcset="examples/scores/figures/narrow.svg" />
+  <img src="examples/scores/figures/wide.svg" alt="Two players change places after subtracting their included coin points. River has 90 minus 78, or 12 exploration points. Sky has 84 minus 64, or 20." />
+</picture>
+
+**Sky earns the badge, 20 to 12.** If the game changes how much a coin is worth, the subtraction has to change too. The audit accepts that weight and writes out both rankings. It can also replay the 201-curve research example above. [Try your own score sheet.](examples/scores/README.md#use-your-own-scoring-rule)
+
 ## Turning the question around
 
 At first we gave the program a shape and asked, **“What numbers come out?”** Later we gave it the equation of a complicated curve and asked, **“Can those numbers guide us to a simpler curve and the rule that connects them?”** The next animation shows what such a connection looks like. The C⋆ example that follows shows how to discover one and prove the count is complete.
@@ -113,6 +152,19 @@ Start with arithmetic **modulo 5**, keeping only the remainder after division by
 
 **Two marks lead to one map.** The two ringed points identify the same quotient in different ways. To prove completeness for C⋆, the program scans a field with 25 elements, where it checks 40 curve points and finds the same two marks. An exact map gives a lower bound of one. The scan and its field bound give an upper bound of one. Together they certify **one geometric quotient class**. Two maps count as the same class if an isomorphism of their target curves turns one map into the other. [Inspect the counts and bounds.](docs/figures/README.md#the-c-star-scan)
 
+### Use the map backward to find points
+
+The simpler target for C⋆ can be written as $v^2=u^3-29u-59$. Try **$(u,v)=(-3,1)$**. You can check the point yourself: substituting $-3$ on the right gives 1. Which points on the original quartic land there?
+
+<picture>
+  <source media="(max-width: 640px) and (prefers-reduced-motion: reduce)" srcset="examples/fibres/figures/narrow-still.svg" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="examples/fibres/figures/wide-still.svg" />
+  <source media="(max-width: 640px)" srcset="examples/fibres/figures/narrow.svg" />
+  <img src="examples/fibres/figures/wide.svg" alt="The two target points at u = −3 are paired with triples on C-star. Teal circles mark the fibre above (−3,1), and rust diamonds mark the fibre above (−3,−1)." />
+</picture>
+
+One answer is **$(-3:1:0)$**. The other two come from the roots of $3t^2+t-5=0$ and involve $\sqrt{61}$. If you need a point whose coordinates are fractions, the first one is the only choice in this fibre. The program takes other rational targets on this same elliptic curve, including its point at infinity. [Work through the point hunt.](examples/fibres/README.md)
+
 ### When a candidate disappears
 
 Start with the Fermat quartic, then change two coefficients by multiples of 13. Modulo 13, the change is invisible. All four curves below give the same 16 candidate quotient classes. Read through the powers of 13 to see when the equations first distinguish them.
@@ -125,6 +177,19 @@ Start with the Fermat quartic, then change two coefficients by multiples of 13. 
 </picture>
 
 The last perturbation still has 16 candidates at 2,197. At 28,561 every one fails. An exact map would have to pass at every precision, so that failure rules them all out. On the original Fermat curve, 16 known maps attain the upper bound. [See the four equations and the lifting results.](docs/figures/README.md#the-fermat-lifting-test)
+
+### Catch a solver that guesses too soon
+
+Give a solver two inputs that agree on the first three tests. One has 16 exact quotients and the other has zero. In the picture, the first place at which their coefficients differ is the **2,197s place** in base 13. A test modulo 2,197 loses that digit. A test modulo 28,561 keeps it.
+
+<picture>
+  <source media="(max-width: 640px) and (prefers-reduced-motion: reduce)" srcset="examples/solver-tests/figures/narrow-still.svg" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="examples/solver-tests/figures/wide-still.svg" />
+  <source media="(max-width: 640px)" srcset="examples/solver-tests/figures/narrow.svg" />
+  <img src="examples/solver-tests/figures/wide.svg" alt="The Fermat and modified equations share their lowest three base-13 coefficient digits. At the fourth digit the two changed coefficients read 8 and 9. At that precision all 16 possibilities on the modified curve fail." />
+</picture>
+
+The benchmark includes a deliberately impatient solver. Stop it after three digits and it reports 16 on the hardest near miss. The checker flags that exact case. Then give your own solver the same equations or ask for one that conceals the difference another digit longer. [Run the regression test.](examples/solver-tests/README.md)
 
 ### How do we know we found them all?
 
@@ -143,9 +208,9 @@ This is where the original ambition paid off. For a specific question about smoo
 
 ### 1. Get the files
 
-The illustrations play automatically on this page. For the Python examples, extract the separately distributed `crest_root_calculus_integrated_part_xxx.zip`. Open the extracted folder that contains `crest`. Inside `crest` you should see `scan_completeness_xxx`.
+The illustrations play automatically on this page. The four worked examples above are in the GitHub ZIP. For the full Part XXX solver commands below, extract the separately distributed `crest_root_calculus_integrated_part_xxx.zip`. Open the extracted folder that contains `crest`. Inside `crest` you should see `scan_completeness_xxx`.
 
-The GitHub ZIP contains this illustrated guide. The Python programs and monograph come with the integrated research archive.
+The integrated research archive contains the full solver, monograph, and research verification suite. Each worked example in the GitHub ZIP lists its own requirements.
 
 ### 2. Install Python
 

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="451" viewBox="0 0 780 451" role="img" aria-labelledby="title desc">
+<title id="title">Two target points, two fibres of three</title><desc id="desc">The bounded oval of the elliptic target meets u = −3 at v = 1 and −1. On the quartic in the affine source chart, three circles lie above the upper target and three diamonds above the lower. At the upper target the source points are h = −3, k = 0 and h = 0, k = (1 ± √61)/10. At the lower one all have k = 0.</desc>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#172b39}.title{font-family:Georgia,"Times New Roman",serif}</style>
+<rect width="780" height="451" fill="white"/>
+<text x="24.00" y="42.00" font-size="34" font-weight="400" text-anchor="start" class="title" style="fill:#172b39">Two targets, three points each</text>
+<text x="25.00" y="75.00" font-size="19" font-weight="400" text-anchor="start" class="" style="fill:#465d69">Match each target symbol to its three copies on the source curve.</text>
+<circle cx="32.00" cy="102.00" r="5.2" fill="#00766b" stroke="white" stroke-width="1.3"/>
+<text x="45.00" y="109.00" font-size="18" font-weight="400" text-anchor="start" class="" style="fill:#172b39">Upper target  (−3, 1)</text>
+<path d="M293.00 96.00l6 6 -6 6 -6 -6Z" fill="#b34826" stroke="white" stroke-width="1.25" />
+<text x="306.00" y="109.00" font-size="18" font-weight="400" text-anchor="start" class="" style="fill:#172b39">Lower target  (−3, −1)</text>
+<path d="M24.00 125.00L756.00 125.00" fill="none" stroke="#dae4e8" stroke-width="1" />
+<text x="25.00" y="154.00" font-size="22" font-weight="700" text-anchor="start" class="" style="fill:#172b39">Choose a target on E</text>
+<text x="25.00" y="178.00" font-size="17" font-weight="400" text-anchor="start" class="" style="fill:#465d69">Bounded real component</text>
+<text x="365.00" y="154.00" font-size="22" font-weight="700" text-anchor="start" class="" style="fill:#172b39">Read its fibre on C⋆</text>
+<text x="365.00" y="178.00" font-size="17" font-weight="400" text-anchor="start" class="" style="fill:#465d69">Source chart with coordinates h and k</text>
+<path d="M94.30 201.00L94.30 343.00" fill="none" stroke="#dae4e8" stroke-width="1" />
+<path d="M94.30 343.00L94.30 347.00" fill="none" stroke="#465d69" stroke-width="1" />
+<text x="94.30" y="363.00" font-size="15" font-weight="400" text-anchor="middle" class="" style="fill:#465d69">−3.4</text>
+<path d="M207.11 343.00L207.11 347.00" fill="none" stroke="#465d69" stroke-width="1" />
+<text x="207.11" y="363.00" font-size="15" font-weight="400" text-anchor="middle" class="" style="fill:#465d69">−3</text>
+<path d="M263.52 201.00L263.52 343.00" fill="none" stroke="#dae4e8" stroke-width="1" />
+<path d="M263.52 343.00L263.52 347.00" fill="none" stroke="#465d69" stroke-width="1" />
+<text x="263.52" y="363.00" font-size="15" font-weight="400" text-anchor="middle" class="" style="fill:#465d69">−2.8</text>
+<path d="M52.00 323.82L303.00 323.82" fill="none" stroke="#dae4e8" stroke-width="1" />
+<text x="45.00" y="328.82" font-size="15" font-weight="400" text-anchor="end" class="" style="fill:#465d69">−1</text>
+<path d="M52.00 272.00L303.00 272.00" fill="none" stroke="#dae4e8" stroke-width="1" />
+<text x="45.00" y="277.00" font-size="15" font-weight="400" text-anchor="end" class="" style="fill:#465d69">0</text>
+<path d="M52.00 220.18L303.00 220.18" fill="none" stroke="#dae4e8" stroke-width="1" />
+<text x="45.00" y="225.18" font-size="15" font-weight="400" text-anchor="end" class="" style="fill:#465d69">1</text>
+<path d="M52.00 201.00L52.00 343.00" fill="none" stroke="#93a8b1" stroke-width="1" />
+<path d="M52.00 343.00L303.00 343.00" fill="none" stroke="#93a8b1" stroke-width="1" />
+<path d="M207.11 201.00L207.11 343.00" fill="none" stroke="#536c7a" stroke-width="1.3" stroke-dasharray="4 4"/>
+<path d="M171.78 326.54 L167.87 326.39 L163.96 326.15 L160.05 325.82 L156.14 325.40 L152.51 324.92 L148.88 324.35 L145.25 323.70 L141.62 322.95 L137.99 322.11 L134.64 321.24 L131.29 320.28 L127.94 319.22 L124.87 318.15 L121.80 316.99 L118.73 315.73 L115.94 314.49 L113.14 313.14 L110.57 311.80 L108.12 310.43 L105.84 309.06 L103.53 307.56 L101.38 306.07 L99.38 304.57 L97.51 303.06 L95.56 301.36 L93.88 299.79 L92.20 298.08 L90.64 296.33 L89.40 294.83 L88.08 293.09 L86.87 291.34 L85.78 289.58 L84.82 287.85 L83.97 286.10 L83.21 284.35 L82.57 282.61 L82.02 280.86 L81.58 279.11 L81.23 277.37 L80.98 275.62 L80.83 273.87 L80.78 272.12 L80.82 270.38 L80.96 268.63 L81.19 266.88 L81.52 265.14 L81.95 263.39 L82.48 261.64 L83.12 259.90 L83.85 258.15 L84.69 256.40 L85.65 254.66 L86.71 252.91 L87.90 251.16 L89.20 249.41 L90.64 247.67 L91.97 246.17 L93.60 244.49 L95.24 242.93 L96.95 241.41 L98.91 239.80 L100.86 238.31 L102.81 236.92 L105.05 235.44 L107.48 233.94 L109.79 232.62 L112.31 231.28 L115.01 229.95 L117.73 228.70 L120.68 227.45 L123.75 226.26 L126.83 225.16 L130.18 224.07 L133.53 223.07 L136.88 222.17 L140.51 221.30 L144.14 220.52 L147.77 219.84 L151.39 219.25 L155.21 218.72 L158.93 218.29 L162.84 217.94 L166.75 217.67 L170.66 217.50 L174.57 217.41 L178.48 217.42 L182.39 217.51 L186.29 217.69 L190.34 217.97 L194.11 218.32 L198.02 218.77 L201.93 219.31 L205.84 219.95 L209.47 220.63 L213.10 221.39 L216.73 222.25 L220.36 223.21 L223.99 224.27 L227.34 225.34 L230.69 226.51 L233.83 227.70 L236.87 228.95 L239.90 230.30 L242.80 231.70 L245.48 233.09 L248.00 234.49 L250.51 235.99 L252.76 237.44 L254.98 238.97 L256.95 240.43 L258.89 241.97 L260.84 243.65 L262.52 245.20 L264.22 246.92 L265.82 248.67 L267.07 250.16 L268.42 251.91 L269.63 253.66 L270.72 255.40 L271.69 257.15 L272.55 258.90 L273.29 260.64 L273.92 262.39 L274.45 264.14 L274.87 265.89 L275.18 267.63 L275.39 269.38 L275.49 271.13 L275.49 272.87 L275.39 274.62 L275.18 276.37 L274.87 278.11 L274.45 279.86 L273.92 281.61 L273.29 283.36 L272.55 285.10 L271.69 286.85 L270.72 288.60 L269.78 290.12 L268.60 291.84 L267.27 293.59 L265.87 295.28 L264.46 296.83 L262.80 298.53 L261.15 300.08 L259.43 301.57 L257.49 303.15 L255.54 304.63 L253.30 306.20 L251.07 307.66 L248.77 309.06 L246.14 310.56 L243.53 311.94 L240.74 313.31 L237.95 314.58 L234.88 315.88 L231.80 317.08 L228.45 318.28 L225.38 319.30 L222.03 320.32 L218.40 321.32 L214.77 322.22 L211.12 323.04 L207.23 323.80 L203.33 324.47 L199.42 325.05 L195.51 325.53 L191.60 325.92 L187.69 326.22 L183.78 326.44 L179.87 326.56 L175.96 326.59 L172.06 326.54 L171.78 326.54 L171.78 326.54" fill="none" stroke="#285d9b" stroke-width="2.45" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="302.00" y="378.00" font-size="16" font-weight="700" text-anchor="end" class="" style="fill:#172b39">u</text>
+<text x="39.00" y="196.00" font-size="16" font-weight="700" text-anchor="middle" class="" style="fill:#172b39">v</text>
+<circle cx="207.11" cy="220.18" r="5.2" fill="#00766b" stroke="white" stroke-width="1.3"/>
+<path d="M207.11 317.82l6 6 -6 6 -6 -6Z" fill="#b34826" stroke="white" stroke-width="1.25" />
+<path d="M438.94 201.00L438.94 343.00" fill="none" stroke="#dae4e8" stroke-width="1" />
+<path d="M438.94 343.00L438.94 347.00" fill="none" stroke="#465d69" stroke-width="1" />
+<text x="438.94" y="363.00" font-size="15" font-weight="400" text-anchor="middle" class="" style="fill:#465d69">−3</text>
+<path d="M513.83 201.00L513.83 343.00" fill="none" stroke="#dae4e8" stroke-width="1" />
+<path d="M513.83 343.00L513.83 347.00" fill="none" stroke="#465d69" stroke-width="1" />
+<text x="513.83" y="363.00" font-size="15" font-weight="400" text-anchor="middle" class="" style="fill:#465d69">−2</text>
+<path d="M588.73 201.00L588.73 343.00" fill="none" stroke="#dae4e8" stroke-width="1" />
+<path d="M588.73 343.00L588.73 347.00" fill="none" stroke="#465d69" stroke-width="1" />
+<text x="588.73" y="363.00" font-size="15" font-weight="400" text-anchor="middle" class="" style="fill:#465d69">−1</text>
+<path d="M663.62 343.00L663.62 347.00" fill="none" stroke="#465d69" stroke-width="1" />
+<text x="663.62" y="363.00" font-size="15" font-weight="400" text-anchor="middle" class="" style="fill:#465d69">0</text>
+<path d="M738.52 201.00L738.52 343.00" fill="none" stroke="#dae4e8" stroke-width="1" />
+<path d="M738.52 343.00L738.52 347.00" fill="none" stroke="#465d69" stroke-width="1" />
+<text x="738.52" y="363.00" font-size="15" font-weight="400" text-anchor="middle" class="" style="fill:#465d69">1</text>
+<path d="M394.00 323.23L752.00 323.23" fill="none" stroke="#dae4e8" stroke-width="1" />
+<text x="387.00" y="328.23" font-size="15" font-weight="400" text-anchor="end" class="" style="fill:#465d69">−1</text>
+<text x="387.00" y="276.22" font-size="15" font-weight="400" text-anchor="end" class="" style="fill:#465d69">0</text>
+<path d="M394.00 219.21L752.00 219.21" fill="none" stroke="#dae4e8" stroke-width="1" />
+<text x="387.00" y="224.21" font-size="15" font-weight="400" text-anchor="end" class="" style="fill:#465d69">1</text>
+<path d="M394.00 201.00L394.00 343.00" fill="none" stroke="#93a8b1" stroke-width="1" />
+<path d="M394.00 343.00L752.00 343.00" fill="none" stroke="#93a8b1" stroke-width="1" />
+<path d="M663.62 201.00L663.62 343.00" fill="none" stroke="#536c7a" stroke-width="1.3" stroke-dasharray="4 4"/>
+<path d="M394.00 271.22L752.00 271.22" fill="none" stroke="#536c7a" stroke-width="1.3" stroke-dasharray="4 4"/>
+<path d="M688.68 310.07 L685.50 309.90 L682.31 309.63 L678.73 309.24 L675.14 308.75 L671.16 308.11 L667.18 307.37 L663.20 306.55 L658.82 305.55 L654.44 304.45 L650.06 303.27 L645.28 301.88 L640.90 300.52 L636.12 298.93 L631.57 297.33 L626.91 295.58 L622.52 293.84 L618.38 292.09 L614.50 290.34 L610.85 288.60 L607.84 287.06 L605.06 285.54 L602.60 284.10 L600.22 282.61 L598.04 281.11 L596.30 279.81 L594.70 278.50 L593.44 277.37 L592.20 276.12 L591.10 274.87 L590.32 273.86 L589.53 272.68 L589.06 271.88 L588.57 270.88 L588.17 269.88 L587.85 268.88 L587.63 267.88 L587.49 266.88 L587.44 265.89 L587.47 264.89 L587.58 263.89 L587.76 262.89 L588.09 261.64 L588.54 260.40 L589.13 259.06 L589.73 257.90 L590.47 256.65 L591.48 255.15 L592.71 253.54 L593.91 252.12 L595.23 250.66 L596.70 249.17 L598.55 247.42 L600.68 245.56 L602.68 243.92 L605.06 242.11 L607.45 240.41 L610.02 238.68 L612.62 237.05 L615.01 235.65 L617.80 234.12 L620.61 232.69 L623.37 231.40 L626.16 230.19 L628.95 229.10 L631.50 228.20 L634.13 227.37 L636.52 226.70 L638.91 226.11 L641.29 225.61 L643.68 225.19 L646.07 224.87 L648.46 224.64 L650.85 224.49 L653.24 224.45 L655.63 224.50 L658.02 224.65 L660.41 224.89 L662.80 225.25 L665.19 225.71 L667.58 226.27 L669.97 226.94 L672.28 227.70 L674.35 228.47 L676.74 229.47 L679.13 230.58 L681.29 231.70 L683.52 232.94 L685.57 234.19 L687.85 235.69 L689.88 237.12 L691.95 238.68 L694.12 240.43 L696.15 242.18 L698.07 243.92 L700.14 245.92 L702.09 247.92 L703.93 249.91 L705.89 252.16 L707.80 254.48 L709.66 256.90 L711.38 259.27 L712.99 261.64 L714.58 264.14 L716.05 266.63 L717.28 268.88 L718.41 271.13 L719.44 273.37 L720.37 275.62 L721.11 277.62 L721.75 279.61 L722.30 281.61 L722.70 283.36 L723.01 285.10 L723.23 286.85 L723.33 288.35 L723.36 289.84 L723.29 291.34 L723.12 292.84 L722.89 294.09 L722.58 295.33 L722.17 296.58 L721.74 297.65 L721.14 298.83 L720.54 299.84 L719.74 300.96 L718.95 301.90 L718.05 302.82 L716.96 303.78 L715.92 304.57 L714.78 305.32 L713.47 306.07 L712.18 306.70 L710.59 307.36 L708.99 307.93 L707.40 308.40 L705.41 308.89 L703.27 309.31 L701.43 309.59 L699.04 309.86 L696.65 310.03 L694.26 310.12 L691.47 310.14 L688.68 310.07 L688.68 310.07" fill="none" stroke="#285d9b" stroke-width="2.45" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M451.34 275.63 L450.15 275.50 L448.56 275.23 L446.96 274.85 L445.36 274.37 L443.78 273.79 L442.26 273.12 L440.99 272.48 L439.80 271.78 L438.60 270.98 L437.80 270.36 L436.98 269.63 L436.21 268.81 L435.71 268.13 L435.29 267.38 L435.11 266.88 L435.02 266.38 L435.02 265.89 L435.16 265.39 L435.45 264.89 L435.81 264.53 L436.21 264.26 L436.61 264.05 L437.41 263.76 L438.20 263.59 L439.40 263.45 L440.59 263.41 L441.79 263.46 L443.49 263.64 L445.00 263.89 L446.96 264.33 L448.56 264.77 L450.15 265.30 L451.74 265.91 L453.34 266.63 L454.76 267.38 L455.96 268.13 L456.98 268.88 L457.82 269.63 L458.48 270.38 L458.91 271.04 L459.07 271.38 L459.24 271.88 L459.31 272.37 L459.27 272.87 L459.11 273.37 L458.79 273.87 L458.51 274.16 L457.90 274.62 L457.32 274.93 L456.52 275.22 L455.72 275.43 L454.51 275.62 L453.33 275.69 L452.14 275.68 L451.34 275.63 L451.34 275.63" fill="none" stroke="#285d9b" stroke-width="2.45" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="751.00" y="378.00" font-size="16" font-weight="700" text-anchor="end" class="" style="fill:#172b39">h</text>
+<text x="381.00" y="196.00" font-size="16" font-weight="700" text-anchor="middle" class="" style="fill:#172b39">k</text>
+<circle cx="438.94" cy="271.22" r="5.2" fill="#00766b" stroke="white" stroke-width="1.3"/>
+<circle cx="663.62" cy="225.39" r="5.2" fill="#00766b" stroke="white" stroke-width="1.3"/>
+<circle cx="663.62" cy="306.64" r="5.2" fill="#00766b" stroke="white" stroke-width="1.3"/>
+<path d="M588.73 265.22l6 6 -6 6 -6 -6Z" fill="#b34826" stroke="white" stroke-width="1.25" />
+<path d="M718.45 265.22l6 6 -6 6 -6 -6Z" fill="#b34826" stroke="white" stroke-width="1.25" />
+<path d="M459.01 265.22l6 6 -6 6 -6 -6Z" fill="#b34826" stroke="white" stroke-width="1.25" />
+<path d="M24.00 395.00L756.00 395.00" fill="none" stroke="#dae4e8" stroke-width="1" />
+<text x="25.00" y="426.00" font-size="18" font-weight="400" text-anchor="start" class="" style="fill:#172b39">Here u = hk − 3. The slice u = −3 picks out the two dashed axes, h = 0 or k = 0.</text>
+</svg>
