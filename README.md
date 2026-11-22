@@ -1,5 +1,88 @@
 # Crest–Root Calculus
 
+**How much can a small calculation tell us about a whole shape?** This project started with that ambition and grew into programs that can find hidden maps between curves. You can follow the story here with just counting, multiplication, and a little clock arithmetic.
+
+[How it began](#how-the-project-began) · [Why a claim changed](#when-a-pattern-looks-too-good) · [Finding a hidden curve](#turning-the-question-around) · [Run the examples](#try-it-on-windows-beginner-instructions)
+
+## How the project began
+
+The opening question asked for “the real Crest and real Roots of mathematics.” Could ideas about **numbers, change, shapes, and grids** help each other solve a problem? The aim was to follow those ideas from one unknown number to many dimensions, explain every symbol, and build a program that could discover something worth proving. A question that stayed open should become a precise conjecture someone else could test. The original request called that **“a jump in capacity.”**
+
+### Two curves on a clock
+
+In the first prototype, a **root** was an answer that worked in a small test. A **crest** was a conclusion we could prove by putting clues together. Try a clock that runs from 0 to 4 and then wraps around. On that clock, two different curves each have **five** pairs of numbers that fit their equation. What happens if we use a finer clock with 25 positions?
+
+<picture>
+  <source media="(max-width: 640px) and (prefers-reduced-motion: reduce)" srcset="docs/figures/still/cusp-lifts-mobile.svg" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="docs/figures/still/cusp-lifts.svg" />
+  <source media="(max-width: 640px)" srcset="docs/figures/cusp-lifts-mobile.svg" />
+  <img src="docs/figures/cusp-lifts.svg" alt="Two curves each have five residue pairs modulo 5. Modulo 25 the parabola has five refinements per pair. The cusp has 25 above (0, 0) and five above each other pair, giving totals of 25 and 45." />
+</picture>
+
+**All 20 extra solutions come from one place.** Look at the two blocks marked (0, 0). On the pointed curve, called a cusp, both coordinates in that block are multiples of 5. Squaring one or cubing the other always gives a multiple of 25. Every dot in the block works. On the bowl-shaped parabola only one row works.
+
+**Where does calculus come in?** A small vertical move changes $y-x^2$ immediately. At the cusp’s tip, changes in $y^2-x^3$ first show up as squares and cubes. [Check a dot by hand.](docs/figures/origins.md#two-clocks-two-curves)
+
+### Counting in 80 dimensions
+
+Now give the puzzle **80 slots**. Each slot can hold 0, 1, 2, 3, or 4. The rule looks only at neighbors. Square the two numbers and add them. The sum must leave remainder 1 when divided by 5. How many entire chains obey that rule?
+
+<picture>
+  <source media="(max-width: 640px) and (prefers-reduced-motion: reduce)" srcset="docs/figures/still/chain-count-mobile.svg" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="docs/figures/still/chain-count.svg" />
+  <source media="(max-width: 640px)" srcset="docs/figures/chain-count-mobile.svg" />
+  <img src="docs/figures/chain-count.svg" alt="Allowed neighbors alternate between 0 and either 1 or 4. Five ending counts give totals of 5, 4, 6 and 8 for lengths one to four. After 80 slots the total is 2 times 2 to the fortieth power." />
+</picture>
+
+Watch the paths meet at the red ring. Two earlier chains come from an ending of 1, and two come from an ending of 4. That gives **four chains ending in 0**. Remembering just five totals, one for each possible ending, lets the program count **2,199,023,255,552** valid chains with **1,975 neighbor-pair checks**. The shortcut works because each new slot needs to know only its neighbor. [Check the count a second way.](docs/figures/origins.md#the-80-slot-chain)
+
+## Where do “crest” and “root” come from?
+
+The later monograph gave the two words more precise jobs.
+
+A **root** in the project’s terminology is a record of point counts, one for each prime of good reduction. A **crest** describes a pattern in how those counts contribute to growth. Here’s an example from the opening sections of the monograph.
+
+A projective line modulo 5 has six points, the five ordinary coordinates and one point called infinity (∞). Choose a point on each of two such lines. Each pair specifies one point on a surface called a **split quadric**. In the real picture, holding either coordinate fixed draws a straight line on the saddle.
+
+<picture>
+  <source media="(max-width: 640px) and (prefers-reduced-motion: reduce)" srcset="docs/figures/still/quadric-rulings-mobile.svg" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="docs/figures/still/quadric-rulings.svg" />
+  <source media="(max-width: 640px)" srcset="docs/figures/quadric-rulings-mobile.svg" />
+  <img src="docs/figures/quadric-rulings.svg" alt="Two families of straight lines cross on the real saddle z = uv. Modulo 5 the full projective surface has 25 finite pairs, five with only u infinite, five with only v infinite and one with both infinite, for 36 points." />
+</picture>
+
+For a prime $p$, each line contributes $p+1$ choices, so the count is $(p+1)^2=p^2+2p+1$. The two boundary strips in the grid explain the middle coefficient **2**. For this surface, that same 2 is the growth exponent of the product built from its normalized point counts. [See how the exponent follows from the count.](docs/figures/README.md#the-split-quadric)
+
+### Watching a crest grow
+
+The grid above shows one prime. Now let the primes arrive one at a time. For a line, divide its point count by the prime and multiply the result into a running total. With primes 2, 3, and 5, the three factors are 3/2, 4/3, and 6/5. For the surface made from a pair of lines, **each factor is squared**. Watch the two graphs jump together whenever a prime enters.
+
+<picture>
+  <source media="(max-width: 640px) and (prefers-reduced-motion: reduce)" srcset="docs/figures/still/prime-steps-mobile.svg" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="docs/figures/still/prime-steps.svg" />
+  <source media="(max-width: 640px)" srcset="docs/figures/prime-steps-mobile.svg" />
+  <img src="docs/figures/prime-steps.svg" alt="A step graph multiplies normalized point counts at each prime up to 31. The two-line product is the square of the one-line product at every step. At 5 the two exact values are 2.40 and 5.76." />
+</picture>
+
+At the open circles, the line’s total is **2.40** and the surface’s is **5.76**, exactly 2.40 squared. The square holds at every prime. That identity supplies the reason for the exponent 2 in the growth law. [Follow the multiplication.](docs/figures/origins.md#prime-by-prime)
+
+### When a pattern looks too good
+
+One early experiment asked how well the nearest pair of **zeros** could predict a score for a curve. A zero is a place where a function takes the value 0. In the first plot, 201 dots lie strikingly close to a straight line. But the score already included a contribution from the pair we were using to predict it. The second plot asks what is left once we take that piece out.
+
+<picture>
+  <source media="(max-width: 640px) and (prefers-reduced-motion: reduce)" srcset="docs/figures/still/lowest-zero-audit-mobile.svg" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="docs/figures/still/lowest-zero-audit.svg" />
+  <source media="(max-width: 640px)" srcset="docs/figures/lowest-zero-audit-mobile.svg" />
+  <img src="docs/figures/lowest-zero-audit.svg" alt="The same 201 curves appear on equal axes. Plotting the whole score against its closest pair of zeros shows a rising diagonal. Removing that contribution leaves a narrow band. One score falls from 10.73 to 0.94." />
+</picture>
+
+For the highlighted curve, **9.79 of its 10.73** came from that one pair, leaving about **0.94**. We withdrew the claim of a new law. The smaller differences between curves became a new question that could be tested on fresh examples. [See the measurements and what was withdrawn.](docs/figures/origins.md#checking-the-apparent-law)
+
+## Turning the question around
+
+At first we gave the program a shape and asked, **“What numbers come out?”** Later we gave it the equation of a complicated curve and asked, **“Can those numbers guide us to a simpler curve and the rule that connects them?”** The next animation shows what such a connection looks like. The C⋆ example that follows shows how to discover one and prove the count is complete.
+
 Follow one orange dot on the green curve below. Its two companions move with it. At every instant, all three give the **same point** on the blue curve. Crest–Root Calculus studies connections like this by counting points, finding formulas and checking their predictions exactly.
 
 ## What does a degree-three map do?
@@ -43,20 +126,18 @@ Start with the Fermat quartic, then change two coefficients by multiples of 13. 
 
 The last perturbation still has 16 candidates at 2,197. At 28,561 every one fails. An exact map would have to pass at every precision, so that failure rules them all out. On the original Fermat curve, 16 known maps attain the upper bound. [See the four equations and the lifting results.](docs/figures/README.md#the-fermat-lifting-test)
 
-## Where do “crest” and “root” come from?
+### How do we know we found them all?
 
-A **root** in the project’s terminology is a record of point counts, one for each prime of good reduction. A **crest** describes a pattern in how those counts contribute to growth. Here’s an example from the opening sections of the monograph.
-
-A projective line modulo 5 has six points, the five ordinary coordinates and one point called infinity (∞). Choose a point on each of two such lines. Each pair specifies one point on a surface called a **split quadric**. In the real picture, holding either coordinate fixed draws a straight line on the saddle.
+Finding a map proves **at least one** exists. Ruling out every other possibility proves **at most one** exists. Read each pair of number lines from top to bottom. Here a dot stands for a possible *total number of maps*. The diamond is the answer after the last check.
 
 <picture>
-  <source media="(max-width: 640px) and (prefers-reduced-motion: reduce)" srcset="docs/figures/still/quadric-rulings-mobile.svg" />
-  <source media="(prefers-reduced-motion: reduce)" srcset="docs/figures/still/quadric-rulings.svg" />
-  <source media="(max-width: 640px)" srcset="docs/figures/quadric-rulings-mobile.svg" />
-  <img src="docs/figures/quadric-rulings.svg" alt="Two families of straight lines cross on the real saddle z = uv. Modulo 5 the full projective surface has 25 finite pairs, five with only u infinite, five with only v infinite and one with both infinite, for 36 points." />
+  <source media="(max-width: 640px) and (prefers-reduced-motion: reduce)" srcset="docs/figures/still/proof-bounds-mobile.svg" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="docs/figures/still/proof-bounds.svg" />
+  <source media="(max-width: 640px)" srcset="docs/figures/proof-bounds-mobile.svg" />
+  <img src="docs/figures/proof-bounds.svg" alt="Number lines show allowed totals of map classes. C-star begins with 0 or 1, then an exact map proves 1. For the Fermat perturbation the bounds allow 0 through 16 until all candidates fail and only 0 remains." />
 </picture>
 
-For a prime $p$, each line contributes $p+1$ choices, so the count is $(p+1)^2=p^2+2p+1$. The two boundary strips in the grid explain the middle coefficient **2**. For this surface, that same 2 is the growth exponent of the product built from its normalized point counts. [See how the exponent follows from the count.](docs/figures/README.md#the-split-quadric)
+This is where the original ambition paid off. For a specific question about smooth quartic curves, the program can take an equation, look for the hidden connection, and give a checkable reason for **exactly one** or **exactly zero** on these examples. Whether one framework can span all the branches in the original wish, or outperform the best methods across them, remains open. [See the bounds at each step.](docs/figures/origins.md#when-the-bounds-meet)
 
 ## Try it on Windows (beginner instructions)
 

@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="434" viewBox="0 0 780 434" role="img" aria-labelledby="title desc"><title id="title">When is the count complete?</title><desc id="desc">Two rows for each curve show the whole-number totals allowed by the lower and upper bounds. For C-star the range from zero to one closes on one. For the perturbation F+13D the range from zero to sixteen closes on zero.</desc>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#172b39}.serif{font-family:Georgia,"Times New Roman",serif}</style>
+<rect width="780" height="434" fill="#fff"/>
+<text x="24.00" y="44.00" font-size="34" font-weight="400" text-anchor="start" class="serif" style="fill:#172b39">When is the count complete?</text>
+<text x="25.00" y="78.00" font-size="19" font-weight="400" text-anchor="start" class="" style="fill:#465e6d">Each dot is a whole-number total that the current bounds still allow.</text>
+<path d="M24.00 108.00L756.00 108.00" stroke="#d7e2e6" stroke-width="1.2" fill="none" />
+<text x="25.00" y="137.00" font-size="21" font-weight="700" text-anchor="start" class="" style="fill:#172b39">C⋆</text>
+<text x="756.00" y="137.00" font-size="17" font-weight="400" text-anchor="end" class="" style="fill:#00766b">One map fills the only available place.</text>
+<text x="26.00" y="174.00" font-size="17" font-weight="400" text-anchor="start" class="" style="fill:#465e6d">Scan at 5</text>
+<path d="M224.00 168.00L737.00 168.00" stroke="#d0dce0" stroke-width="1.3" fill="none" />
+<path d="M224.00 165.60L224.00 170.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M256.06 165.60L256.06 170.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M288.12 165.60L288.12 170.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M320.19 165.60L320.19 170.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M352.25 165.60L352.25 170.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M384.31 165.60L384.31 170.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M416.38 165.60L416.38 170.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M448.44 165.60L448.44 170.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M480.50 165.60L480.50 170.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M512.56 165.60L512.56 170.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M544.62 165.60L544.62 170.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M576.69 165.60L576.69 170.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M608.75 165.60L608.75 170.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M640.81 165.60L640.81 170.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M672.88 165.60L672.88 170.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M704.94 165.60L704.94 170.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M737.00 165.60L737.00 170.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<circle cx="224.00" cy="168.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<circle cx="256.06" cy="168.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<text x="26.00" y="214.00" font-size="17" font-weight="400" text-anchor="start" class="" style="fill:#465e6d">Exact map checked</text>
+<path d="M224.00 208.00L737.00 208.00" stroke="#d0dce0" stroke-width="1.3" fill="none" />
+<path d="M224.00 205.60L224.00 210.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M256.06 205.60L256.06 210.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M288.12 205.60L288.12 210.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M320.19 205.60L320.19 210.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M352.25 205.60L352.25 210.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M384.31 205.60L384.31 210.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M416.38 205.60L416.38 210.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M448.44 205.60L448.44 210.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M480.50 205.60L480.50 210.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M512.56 205.60L512.56 210.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M544.62 205.60L544.62 210.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M576.69 205.60L576.69 210.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M608.75 205.60L608.75 210.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M640.81 205.60L640.81 210.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M672.88 205.60L672.88 210.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M704.94 205.60L704.94 210.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M737.00 205.60L737.00 210.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M256.06 201.00l7.0 7.0 -7.0 7.0 -7.0 -7.0Z" stroke="#00766b" stroke-width="0.6" fill="#00766b" />
+<text x="224.00" y="232.00" font-size="15" font-weight="400" text-anchor="middle" class="" style="fill:#465e6d">0</text>
+<text x="256.06" y="232.00" font-size="15" font-weight="400" text-anchor="middle" class="" style="fill:#465e6d">1</text>
+<text x="352.25" y="232.00" font-size="15" font-weight="400" text-anchor="middle" class="" style="fill:#465e6d">4</text>
+<text x="480.50" y="232.00" font-size="15" font-weight="400" text-anchor="middle" class="" style="fill:#465e6d">8</text>
+<text x="608.75" y="232.00" font-size="15" font-weight="400" text-anchor="middle" class="" style="fill:#465e6d">12</text>
+<text x="737.00" y="232.00" font-size="15" font-weight="400" text-anchor="middle" class="" style="fill:#465e6d">16</text>
+<text x="737.00" y="254.00" font-size="15" font-weight="400" text-anchor="end" class="" style="fill:#465e6d">Number of maps, up to equivalence</text>
+<path d="M24.00 272.00L756.00 272.00" stroke="#d7e2e6" stroke-width="1.2" fill="none" />
+<text x="25.00" y="301.00" font-size="21" font-weight="700" text-anchor="start" class="" style="fill:#172b39">Fermat perturbation</text>
+<text x="756.00" y="301.00" font-size="17" font-weight="400" text-anchor="end" class="" style="fill:#a33e20">Every positive count is ruled out.</text>
+<text x="26.00" y="338.00" font-size="17" font-weight="400" text-anchor="start" class="" style="fill:#465e6d">Scan at 13</text>
+<path d="M224.00 332.00L737.00 332.00" stroke="#d0dce0" stroke-width="1.3" fill="none" />
+<path d="M224.00 329.60L224.00 334.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M256.06 329.60L256.06 334.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M288.12 329.60L288.12 334.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M320.19 329.60L320.19 334.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M352.25 329.60L352.25 334.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M384.31 329.60L384.31 334.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M416.38 329.60L416.38 334.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M448.44 329.60L448.44 334.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M480.50 329.60L480.50 334.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M512.56 329.60L512.56 334.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M544.62 329.60L544.62 334.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M576.69 329.60L576.69 334.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M608.75 329.60L608.75 334.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M640.81 329.60L640.81 334.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M672.88 329.60L672.88 334.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M704.94 329.60L704.94 334.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M737.00 329.60L737.00 334.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<circle cx="224.00" cy="332.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<circle cx="256.06" cy="332.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<circle cx="288.12" cy="332.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<circle cx="320.19" cy="332.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<circle cx="352.25" cy="332.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<circle cx="384.31" cy="332.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<circle cx="416.38" cy="332.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<circle cx="448.44" cy="332.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<circle cx="480.50" cy="332.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<circle cx="512.56" cy="332.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<circle cx="544.62" cy="332.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<circle cx="576.69" cy="332.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<circle cx="608.75" cy="332.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<circle cx="640.81" cy="332.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<circle cx="672.88" cy="332.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<circle cx="704.94" cy="332.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<circle cx="737.00" cy="332.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<text x="26.00" y="378.00" font-size="17" font-weight="400" text-anchor="start" class="" style="fill:#465e6d">All lifts fail at 169</text>
+<path d="M224.00 372.00L737.00 372.00" stroke="#d0dce0" stroke-width="1.3" fill="none" />
+<path d="M224.00 369.60L224.00 374.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M256.06 369.60L256.06 374.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M288.12 369.60L288.12 374.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M320.19 369.60L320.19 374.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M352.25 369.60L352.25 374.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M384.31 369.60L384.31 374.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M416.38 369.60L416.38 374.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M448.44 369.60L448.44 374.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M480.50 369.60L480.50 374.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M512.56 369.60L512.56 374.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M544.62 369.60L544.62 374.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M576.69 369.60L576.69 374.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M608.75 369.60L608.75 374.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M640.81 369.60L640.81 374.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M672.88 369.60L672.88 374.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M704.94 369.60L704.94 374.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M737.00 369.60L737.00 374.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M224.00 365.00l7.0 7.0 -7.0 7.0 -7.0 -7.0Z" stroke="#a33e20" stroke-width="0.6" fill="#a33e20" />
+<text x="224.00" y="396.00" font-size="15" font-weight="400" text-anchor="middle" class="" style="fill:#465e6d">0</text>
+<text x="256.06" y="396.00" font-size="15" font-weight="400" text-anchor="middle" class="" style="fill:#465e6d">1</text>
+<text x="352.25" y="396.00" font-size="15" font-weight="400" text-anchor="middle" class="" style="fill:#465e6d">4</text>
+<text x="480.50" y="396.00" font-size="15" font-weight="400" text-anchor="middle" class="" style="fill:#465e6d">8</text>
+<text x="608.75" y="396.00" font-size="15" font-weight="400" text-anchor="middle" class="" style="fill:#465e6d">12</text>
+<text x="737.00" y="396.00" font-size="15" font-weight="400" text-anchor="middle" class="" style="fill:#465e6d">16</text>
+<text x="737.00" y="418.00" font-size="15" font-weight="400" text-anchor="end" class="" style="fill:#465e6d">Number of maps, up to equivalence</text>
+</svg>

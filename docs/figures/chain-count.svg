@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="558" viewBox="0 0 780 558" role="img" aria-labelledby="title desc">
+<title id="title">Counting an 80-slot chain from its last number</title>
+<desc id="desc">Each slot contains a number from 0 to 4. Only 0 and 1, or 0 and 4, can be neighbors in either order. The diagram follows chains of one through four slots by their last number. Their totals are 5, 4, 6, and 8. At four slots, two chains from each of endings 1 and 4 give four ending in 0. At 80 slots, there are two choices for which 40 slots are zeros and two choices, 1 or 4, at each other slot. That makes 2,199,023,255,552 valid chains. The program evaluates 79 times 25 possible neighboring pairs, or 1,975 checks.</desc>
+<style>text{font-family:Arial,Helvetica,sans-serif}.title,.result{font-family:Georgia,"Times New Roman",serif}
+.trace{opacity:0;stroke-dasharray:1;stroke-dashoffset:1}.halo{opacity:0}@keyframes sweep{0%,4%{opacity:0;stroke-dashoffset:1}7%{opacity:1}20%,53%{opacity:1;stroke-dashoffset:0}64%,100%{opacity:0;stroke-dashoffset:0}}@keyframes hold{0%,18%,65%,100%{opacity:0}22%,52%{opacity:1}}@media(prefers-reduced-motion:no-preference){.trace{animation:sweep 13s linear infinite}.halo{animation:hold 13s linear infinite}}
+</style>
+<rect width="780" height="558" fill="#fff"/>
+<text x="24" y="43" text-anchor="start" fill="#172b39" font-size="34" font-weight="normal" class="title">Counting an 80-slot chain</text>
+<text x="24" y="73" text-anchor="start" fill="#42596a" font-size="18" font-weight="normal" class="">Each slot holds 0, 1, 2, 3 or 4. Two neighbors’ squares must add to 1 modulo 5.</text>
+<path d="M24,93 L756,93" stroke="#c6d4d8" stroke-width="1" fill="none"/>
+<text x="24" y="127" text-anchor="start" fill="#172b39" font-size="23" font-weight="bold" class="">How many chains end here?</text>
+<text x="24" y="152" text-anchor="start" fill="#42596a" font-size="18" font-weight="normal" class="">Read from left to right. Follow a line to add one allowed neighbor.</text>
+<text x="51" y="190" text-anchor="middle" fill="#285d9b" font-size="17" font-weight="bold" class="">End</text>
+<text x="145" y="190" text-anchor="middle" fill="#285d9b" font-size="18" font-weight="bold" class="">1 slot</text>
+<text x="245" y="190" text-anchor="middle" fill="#285d9b" font-size="18" font-weight="bold" class="">2 slots</text>
+<text x="345" y="190" text-anchor="middle" fill="#285d9b" font-size="18" font-weight="bold" class="">3 slots</text>
+<text x="445" y="190" text-anchor="middle" fill="#285d9b" font-size="18" font-weight="bold" class="">4 slots</text>
+<text x="51" y="227" text-anchor="middle" fill="#285d9b" font-size="19" font-weight="bold" class="">1</text>
+<text x="51" y="270" text-anchor="middle" fill="#285d9b" font-size="19" font-weight="bold" class="">0</text>
+<text x="51" y="313" text-anchor="middle" fill="#285d9b" font-size="19" font-weight="bold" class="">4</text>
+<text x="51" y="353" text-anchor="middle" fill="#285d9b" font-size="19" font-weight="bold" class="">2</text>
+<text x="51" y="388" text-anchor="middle" fill="#285d9b" font-size="19" font-weight="bold" class="">3</text>
+<path d="M23,327.0 L468,327.0" stroke="#e2eaed" stroke-width="1" fill="none"/>
+<path d="M145,264 C183.00,264 207.00,221 245,221" fill="none" stroke="white" stroke-width="6"/>
+<path d="M145,264 C183.00,264 207.00,221 245,221" fill="none" stroke="#739ca5" stroke-width="2.1"/>
+<path d="M145,264 C183.00,264 207.00,307 245,307" fill="none" stroke="white" stroke-width="6"/>
+<path d="M145,264 C183.00,264 207.00,307 245,307" fill="none" stroke="#739ca5" stroke-width="2.1"/>
+<path d="M145,221 C183.00,221 207.00,264 245,264" fill="none" stroke="white" stroke-width="6"/>
+<path d="M145,221 C183.00,221 207.00,264 245,264" fill="none" stroke="#739ca5" stroke-width="2.1"/>
+<path d="M145,307 C183.00,307 207.00,264 245,264" fill="none" stroke="white" stroke-width="6"/>
+<path d="M145,307 C183.00,307 207.00,264 245,264" fill="none" stroke="#739ca5" stroke-width="2.1"/>
+<path d="M245,264 C283.00,264 307.00,221 345,221" fill="none" stroke="white" stroke-width="6"/>
+<path d="M245,264 C283.00,264 307.00,221 345,221" fill="none" stroke="#739ca5" stroke-width="2.1"/>
+<path d="M245,264 C283.00,264 307.00,307 345,307" fill="none" stroke="white" stroke-width="6"/>
+<path d="M245,264 C283.00,264 307.00,307 345,307" fill="none" stroke="#739ca5" stroke-width="2.1"/>
+<path d="M245,221 C283.00,221 307.00,264 345,264" fill="none" stroke="white" stroke-width="6"/>
+<path d="M245,221 C283.00,221 307.00,264 345,264" fill="none" stroke="#739ca5" stroke-width="2.1"/>
+<path d="M245,307 C283.00,307 307.00,264 345,264" fill="none" stroke="white" stroke-width="6"/>
+<path d="M245,307 C283.00,307 307.00,264 345,264" fill="none" stroke="#739ca5" stroke-width="2.1"/>
+<path d="M345,264 C383.00,264 407.00,221 445,221" fill="none" stroke="white" stroke-width="6"/>
+<path d="M345,264 C383.00,264 407.00,221 445,221" fill="none" stroke="#739ca5" stroke-width="2.1"/>
+<path d="M345,264 C383.00,264 407.00,307 445,307" fill="none" stroke="white" stroke-width="6"/>
+<path d="M345,264 C383.00,264 407.00,307 445,307" fill="none" stroke="#739ca5" stroke-width="2.1"/>
+<path d="M345,221 C383.00,221 407.00,264 445,264" fill="none" stroke="white" stroke-width="6"/>
+<path d="M345,221 C383.00,221 407.00,264 445,264" fill="none" stroke="#739ca5" stroke-width="2.1"/>
+<path d="M345,307 C383.00,307 407.00,264 445,264" fill="none" stroke="white" stroke-width="6"/>
+<path d="M345,307 C383.00,307 407.00,264 445,264" fill="none" stroke="#739ca5" stroke-width="2.1"/>
+<path class="trace" d="M145,221 C183.00,221 207.00,264 245,264" pathLength="1" fill="none" stroke="#b34826" stroke-width="3" style="animation-delay:0.0s"/>
+<path class="trace" d="M145,307 C183.00,307 207.00,264 245,264" pathLength="1" fill="none" stroke="#b34826" stroke-width="3" style="animation-delay:0.0s"/>
+<path class="trace" d="M245,264 C283.00,264 307.00,221 345,221" pathLength="1" fill="none" stroke="#b34826" stroke-width="3" style="animation-delay:1.9s"/>
+<path class="trace" d="M245,264 C283.00,264 307.00,307 345,307" pathLength="1" fill="none" stroke="#b34826" stroke-width="3" style="animation-delay:1.9s"/>
+<path class="trace" d="M345,221 C383.00,221 407.00,264 445,264" pathLength="1" fill="none" stroke="#b34826" stroke-width="3" style="animation-delay:3.8s"/>
+<path class="trace" d="M345,307 C383.00,307 407.00,264 445,264" pathLength="1" fill="none" stroke="#b34826" stroke-width="3" style="animation-delay:3.8s"/>
+<circle cx="145" cy="221" r="16" fill="#00766b" stroke="#fff" stroke-width="1.5"/>
+<text x="145" y="227" text-anchor="middle" fill="white" font-size="18" font-weight="bold" class="">1</text>
+<circle cx="145" cy="264" r="16" fill="#00766b" stroke="#fff" stroke-width="1.5"/>
+<text x="145" y="270" text-anchor="middle" fill="white" font-size="18" font-weight="bold" class="">1</text>
+<circle cx="145" cy="307" r="16" fill="#00766b" stroke="#fff" stroke-width="1.5"/>
+<text x="145" y="313" text-anchor="middle" fill="white" font-size="18" font-weight="bold" class="">1</text>
+<circle cx="145" cy="347" r="16" fill="#00766b" stroke="#fff" stroke-width="1.5"/>
+<text x="145" y="353" text-anchor="middle" fill="white" font-size="18" font-weight="bold" class="">1</text>
+<circle cx="145" cy="382" r="16" fill="#00766b" stroke="#fff" stroke-width="1.5"/>
+<text x="145" y="388" text-anchor="middle" fill="white" font-size="18" font-weight="bold" class="">1</text>
+<circle cx="245" cy="221" r="16" fill="#00766b" stroke="#fff" stroke-width="1.5"/>
+<text x="245" y="227" text-anchor="middle" fill="white" font-size="18" font-weight="bold" class="">1</text>
+<circle cx="245" cy="264" r="16" fill="#00766b" stroke="#fff" stroke-width="1.5"/>
+<text x="245" y="270" text-anchor="middle" fill="white" font-size="18" font-weight="bold" class="">2</text>
+<circle class="halo" cx="245" cy="264" r="19.5" fill="none" stroke="#b34826" stroke-width="2" style="animation-delay:0.0s"/>
+<circle cx="245" cy="307" r="16" fill="#00766b" stroke="#fff" stroke-width="1.5"/>
+<text x="245" y="313" text-anchor="middle" fill="white" font-size="18" font-weight="bold" class="">1</text>
+<text x="245" y="353" text-anchor="middle" fill="#526873" font-size="18" font-weight="normal" class="">0</text>
+<text x="245" y="388" text-anchor="middle" fill="#526873" font-size="18" font-weight="normal" class="">0</text>
+<circle cx="345" cy="221" r="16" fill="#00766b" stroke="#fff" stroke-width="1.5"/>
+<text x="345" y="227" text-anchor="middle" fill="white" font-size="18" font-weight="bold" class="">2</text>
+<circle class="halo" cx="345" cy="221" r="19.5" fill="none" stroke="#b34826" stroke-width="2" style="animation-delay:1.9s"/>
+<circle cx="345" cy="264" r="16" fill="#00766b" stroke="#fff" stroke-width="1.5"/>
+<text x="345" y="270" text-anchor="middle" fill="white" font-size="18" font-weight="bold" class="">2</text>
+<circle cx="345" cy="307" r="16" fill="#00766b" stroke="#fff" stroke-width="1.5"/>
+<text x="345" y="313" text-anchor="middle" fill="white" font-size="18" font-weight="bold" class="">2</text>
+<circle class="halo" cx="345" cy="307" r="19.5" fill="none" stroke="#b34826" stroke-width="2" style="animation-delay:1.9s"/>
+<text x="345" y="353" text-anchor="middle" fill="#526873" font-size="18" font-weight="normal" class="">0</text>
+<text x="345" y="388" text-anchor="middle" fill="#526873" font-size="18" font-weight="normal" class="">0</text>
+<circle cx="445" cy="221" r="16" fill="#00766b" stroke="#fff" stroke-width="1.5"/>
+<text x="445" y="227" text-anchor="middle" fill="white" font-size="18" font-weight="bold" class="">2</text>
+<circle cx="445" cy="264" r="16" fill="#b34826" stroke="#fff" stroke-width="1.5"/>
+<text x="445" y="270" text-anchor="middle" fill="white" font-size="18" font-weight="bold" class="">4</text>
+<circle cx="445" cy="264" r="19.5" fill="none" stroke="#b34826" stroke-width="1.4"/>
+<circle class="halo" cx="445" cy="264" r="19.5" fill="none" stroke="#b34826" stroke-width="2" style="animation-delay:3.8s"/>
+<circle cx="445" cy="307" r="16" fill="#00766b" stroke="#fff" stroke-width="1.5"/>
+<text x="445" y="313" text-anchor="middle" fill="white" font-size="18" font-weight="bold" class="">2</text>
+<text x="445" y="353" text-anchor="middle" fill="#526873" font-size="18" font-weight="normal" class="">0</text>
+<text x="445" y="388" text-anchor="middle" fill="#526873" font-size="18" font-weight="normal" class="">0</text>
+<path d="M23,396 L468,396" stroke="#c6d4d8" stroke-width="1" fill="none"/>
+<text x="51" y="420" text-anchor="middle" fill="#172b39" font-size="17" font-weight="bold" class="">Total</text>
+<text x="145" y="420" text-anchor="middle" fill="#172b39" font-size="19" font-weight="bold" class="">5</text>
+<text x="245" y="420" text-anchor="middle" fill="#172b39" font-size="19" font-weight="bold" class="">4</text>
+<text x="345" y="420" text-anchor="middle" fill="#172b39" font-size="19" font-weight="bold" class="">6</text>
+<text x="445" y="420" text-anchor="middle" fill="#172b39" font-size="19" font-weight="bold" class="">8</text>
+<path d="M491,177 L491,421" stroke="#c6d4d8" stroke-width="1" fill="none"/>
+<text x="512" y="199" text-anchor="start" fill="#172b39" font-size="22" font-weight="bold" class="">Why four paths?</text>
+<text x="512" y="229" text-anchor="start" fill="#42596a" font-size="18" font-weight="normal" class="">At the fourth slot, how</text>
+<text x="512" y="252" text-anchor="start" fill="#42596a" font-size="18" font-weight="normal" class="">many chains end in 0?</text>
+<text x="512" y="292" text-anchor="start" fill="#172b39" font-size="18" font-weight="normal" class="">2 from an ending of 1</text>
+<text x="512" y="318" text-anchor="start" fill="#172b39" font-size="18" font-weight="normal" class="">+ 2 from an ending of 4</text>
+<path d="M512,332 L728,332" stroke="#c6d4d8" stroke-width="1" fill="none"/>
+<text x="512" y="361" text-anchor="start" fill="#b34826" font-size="19" font-weight="bold" class="">= 4 chains ending in 0</text>
+<text x="512" y="396" text-anchor="start" fill="#42596a" font-size="17" font-weight="normal" class="">Endings 2 and 3 have</text>
+<text x="512" y="418" text-anchor="start" fill="#42596a" font-size="17" font-weight="normal" class="">no allowed next move.</text>
+<path d="M24,439 L756,439" stroke="#c6d4d8" stroke-width="1" fill="none"/>
+<text x="24" y="476" text-anchor="start" fill="#172b39" font-size="24" font-weight="bold" class="">At 80 slots</text>
+<text x="183" y="477" text-anchor="start" fill="#00766b" font-size="31" font-weight="normal" class="result">2,199,023,255,552 chains</text>
+<text x="24" y="507" text-anchor="start" fill="#172b39" font-size="17.5" font-weight="normal" class="">Zeros fill the 40 odd or the 40 even slots. Each other slot holds 1 or 4. Total = 2 × 2⁴⁰.</text>
+<text x="24" y="537" text-anchor="start" fill="#42596a" font-size="17.5" font-weight="normal" class="">The program checks all 5 × 5 pairs at each join. 79 joins × 25 pairs = 1,975 checks.</text>
+</svg>

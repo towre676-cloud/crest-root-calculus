@@ -1,6 +1,6 @@
 # The mathematics behind the figures
 
-These notes give the equations used to draw the [four illustrations on the main page](../../README.md). The section numbers and receipt paths refer to the integrated Part XXX research archive.
+These notes give the equations used to draw [four of the illustrations on the main page](../../README.md). The section numbers and receipt paths refer to the integrated Part XXX research archive. The [origin-story figure notes](origins.md) cover the other five illustrations.
 
 ## The Klein quartic
 

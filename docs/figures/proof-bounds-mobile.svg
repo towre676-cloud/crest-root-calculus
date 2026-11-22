@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="625" viewBox="0 0 380 625" role="img" aria-labelledby="title desc"><title id="title">When is the count complete?</title><desc id="desc">Two rows for each curve show the whole-number totals allowed by the lower and upper bounds. For C-star the range from zero to one closes on one. For the perturbation F+13D the range from zero to sixteen closes on zero.</desc>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#172b39}.serif{font-family:Georgia,"Times New Roman",serif}.pulse{opacity:0}.moving{display:inline}@keyframes pulse{0%,45%,100%{opacity:0}12%,33%{opacity:1}}@media(prefers-reduced-motion:no-preference){.pulse{animation:pulse 11s ease-in-out infinite}.second{animation-delay:4.4s}}@media(prefers-reduced-motion:reduce){.moving{display:none}}</style>
+<rect width="380" height="625" fill="#fff"/>
+<text x="16.00" y="36.00" font-size="26" font-weight="400" text-anchor="start" class="serif" style="fill:#172b39">When is the count complete?</text>
+<text x="16.00" y="70.00" font-size="17" font-weight="400" text-anchor="start" class="" style="fill:#465e6d">A dot stands for a possible answer to</text>
+<text x="16.00" y="93.00" font-size="17" font-weight="400" text-anchor="start" class="" style="fill:#465e6d">“How many different maps are there?”</text>
+<path d="M18.00 121.00L362.00 121.00" stroke="#d7e2e6" stroke-width="1.2" fill="none" />
+<text x="17.00" y="150.00" font-size="21" font-weight="700" text-anchor="start" class="" style="fill:#172b39">C⋆</text>
+<text x="19.00" y="188.00" font-size="16" font-weight="400" text-anchor="start" class="" style="fill:#465e6d">Scan at 5</text>
+<path d="M33.00 203.00L347.00 203.00" stroke="#d0dce0" stroke-width="1.3" fill="none" />
+<path d="M33.00 200.60L33.00 205.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M52.62 200.60L52.62 205.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M72.25 200.60L72.25 205.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M91.88 200.60L91.88 205.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M111.50 200.60L111.50 205.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M131.12 200.60L131.12 205.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M150.75 200.60L150.75 205.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M170.38 200.60L170.38 205.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M190.00 200.60L190.00 205.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M209.62 200.60L209.62 205.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M229.25 200.60L229.25 205.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M248.88 200.60L248.88 205.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M268.50 200.60L268.50 205.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M288.12 200.60L288.12 205.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M307.75 200.60L307.75 205.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M327.38 200.60L327.38 205.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M347.00 200.60L347.00 205.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<circle cx="33.00" cy="203.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<circle cx="52.62" cy="203.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<g class="pulse">
+<circle cx="33.00" cy="203.00" r="8.2" fill="none" stroke="#285d9b" stroke-width="1.4"/>
+<circle cx="52.62" cy="203.00" r="8.2" fill="none" stroke="#285d9b" stroke-width="1.4"/>
+</g>
+<text x="19.00" y="256.00" font-size="16" font-weight="400" text-anchor="start" class="" style="fill:#465e6d">Exact map checked</text>
+<path d="M33.00 271.00L347.00 271.00" stroke="#d0dce0" stroke-width="1.3" fill="none" />
+<path d="M33.00 268.60L33.00 273.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M52.62 268.60L52.62 273.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M72.25 268.60L72.25 273.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M91.88 268.60L91.88 273.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M111.50 268.60L111.50 273.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M131.12 268.60L131.12 273.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M150.75 268.60L150.75 273.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M170.38 268.60L170.38 273.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M190.00 268.60L190.00 273.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M209.62 268.60L209.62 273.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M229.25 268.60L229.25 273.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M248.88 268.60L248.88 273.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M268.50 268.60L268.50 273.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M288.12 268.60L288.12 273.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M307.75 268.60L307.75 273.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M327.38 268.60L327.38 273.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M347.00 268.60L347.00 273.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M52.62 264.00l7.0 7.0 -7.0 7.0 -7.0 -7.0Z" stroke="#00766b" stroke-width="0.6" fill="#00766b" />
+<g class="pulse second">
+<circle cx="52.62" cy="271.00" r="8.2" fill="none" stroke="#00766b" stroke-width="1.4"/>
+</g>
+<text x="33.00" y="295.00" font-size="15" font-weight="400" text-anchor="middle" class="" style="fill:#465e6d">0</text>
+<text x="52.62" y="295.00" font-size="15" font-weight="400" text-anchor="middle" class="" style="fill:#465e6d">1</text>
+<text x="111.50" y="295.00" font-size="15" font-weight="400" text-anchor="middle" class="" style="fill:#465e6d">4</text>
+<text x="190.00" y="295.00" font-size="15" font-weight="400" text-anchor="middle" class="" style="fill:#465e6d">8</text>
+<text x="268.50" y="295.00" font-size="15" font-weight="400" text-anchor="middle" class="" style="fill:#465e6d">12</text>
+<text x="347.00" y="295.00" font-size="15" font-weight="400" text-anchor="middle" class="" style="fill:#465e6d">16</text>
+<text x="347.00" y="317.00" font-size="15" font-weight="400" text-anchor="end" class="" style="fill:#465e6d">Number of maps, up to equivalence</text>
+<text x="17.00" y="347.00" font-size="16.7" font-weight="400" text-anchor="start" class="" style="fill:#00766b">One map fills the only available place.</text>
+<path d="M18.00 367.00L362.00 367.00" stroke="#d7e2e6" stroke-width="1.2" fill="none" />
+<text x="17.00" y="396.00" font-size="21" font-weight="700" text-anchor="start" class="" style="fill:#172b39">Fermat perturbation</text>
+<text x="19.00" y="434.00" font-size="16" font-weight="400" text-anchor="start" class="" style="fill:#465e6d">Scan at 13</text>
+<path d="M33.00 449.00L347.00 449.00" stroke="#d0dce0" stroke-width="1.3" fill="none" />
+<path d="M33.00 446.60L33.00 451.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M52.62 446.60L52.62 451.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M72.25 446.60L72.25 451.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M91.88 446.60L91.88 451.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M111.50 446.60L111.50 451.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M131.12 446.60L131.12 451.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M150.75 446.60L150.75 451.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M170.38 446.60L170.38 451.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M190.00 446.60L190.00 451.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M209.62 446.60L209.62 451.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M229.25 446.60L229.25 451.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M248.88 446.60L248.88 451.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M268.50 446.60L268.50 451.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M288.12 446.60L288.12 451.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M307.75 446.60L307.75 451.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M327.38 446.60L327.38 451.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M347.00 446.60L347.00 451.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<circle cx="33.00" cy="449.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<circle cx="52.62" cy="449.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<circle cx="72.25" cy="449.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<circle cx="91.88" cy="449.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<circle cx="111.50" cy="449.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<circle cx="131.12" cy="449.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<circle cx="150.75" cy="449.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<circle cx="170.38" cy="449.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<circle cx="190.00" cy="449.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<circle cx="209.62" cy="449.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<circle cx="229.25" cy="449.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<circle cx="248.88" cy="449.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<circle cx="268.50" cy="449.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<circle cx="288.12" cy="449.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<circle cx="307.75" cy="449.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<circle cx="327.38" cy="449.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<circle cx="347.00" cy="449.00" r="4.8" fill="#fff" stroke="#285d9b" stroke-width="1.8"/>
+<g class="pulse">
+<circle cx="33.00" cy="449.00" r="8.2" fill="none" stroke="#285d9b" stroke-width="1.4"/>
+<circle cx="52.62" cy="449.00" r="8.2" fill="none" stroke="#285d9b" stroke-width="1.4"/>
+<circle cx="72.25" cy="449.00" r="8.2" fill="none" stroke="#285d9b" stroke-width="1.4"/>
+<circle cx="91.88" cy="449.00" r="8.2" fill="none" stroke="#285d9b" stroke-width="1.4"/>
+<circle cx="111.50" cy="449.00" r="8.2" fill="none" stroke="#285d9b" stroke-width="1.4"/>
+<circle cx="131.12" cy="449.00" r="8.2" fill="none" stroke="#285d9b" stroke-width="1.4"/>
+<circle cx="150.75" cy="449.00" r="8.2" fill="none" stroke="#285d9b" stroke-width="1.4"/>
+<circle cx="170.38" cy="449.00" r="8.2" fill="none" stroke="#285d9b" stroke-width="1.4"/>
+<circle cx="190.00" cy="449.00" r="8.2" fill="none" stroke="#285d9b" stroke-width="1.4"/>
+<circle cx="209.62" cy="449.00" r="8.2" fill="none" stroke="#285d9b" stroke-width="1.4"/>
+<circle cx="229.25" cy="449.00" r="8.2" fill="none" stroke="#285d9b" stroke-width="1.4"/>
+<circle cx="248.88" cy="449.00" r="8.2" fill="none" stroke="#285d9b" stroke-width="1.4"/>
+<circle cx="268.50" cy="449.00" r="8.2" fill="none" stroke="#285d9b" stroke-width="1.4"/>
+<circle cx="288.12" cy="449.00" r="8.2" fill="none" stroke="#285d9b" stroke-width="1.4"/>
+<circle cx="307.75" cy="449.00" r="8.2" fill="none" stroke="#285d9b" stroke-width="1.4"/>
+<circle cx="327.38" cy="449.00" r="8.2" fill="none" stroke="#285d9b" stroke-width="1.4"/>
+<circle cx="347.00" cy="449.00" r="8.2" fill="none" stroke="#285d9b" stroke-width="1.4"/>
+</g>
+<text x="19.00" y="502.00" font-size="16" font-weight="400" text-anchor="start" class="" style="fill:#465e6d">All lifts fail at 169</text>
+<path d="M33.00 517.00L347.00 517.00" stroke="#d0dce0" stroke-width="1.3" fill="none" />
+<path d="M33.00 514.60L33.00 519.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M52.62 514.60L52.62 519.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M72.25 514.60L72.25 519.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M91.88 514.60L91.88 519.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M111.50 514.60L111.50 519.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M131.12 514.60L131.12 519.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M150.75 514.60L150.75 519.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M170.38 514.60L170.38 519.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M190.00 514.60L190.00 519.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M209.62 514.60L209.62 519.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M229.25 514.60L229.25 519.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M248.88 514.60L248.88 519.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M268.50 514.60L268.50 519.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M288.12 514.60L288.12 519.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M307.75 514.60L307.75 519.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M327.38 514.60L327.38 519.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M347.00 514.60L347.00 519.40" stroke="#a5b5bc" stroke-width="1" fill="none" />
+<path d="M33.00 510.00l7.0 7.0 -7.0 7.0 -7.0 -7.0Z" stroke="#a33e20" stroke-width="0.6" fill="#a33e20" />
+<g class="pulse second">
+<circle cx="33.00" cy="517.00" r="8.2" fill="none" stroke="#a33e20" stroke-width="1.4"/>
+</g>
+<text x="33.00" y="541.00" font-size="15" font-weight="400" text-anchor="middle" class="" style="fill:#465e6d">0</text>
+<text x="52.62" y="541.00" font-size="15" font-weight="400" text-anchor="middle" class="" style="fill:#465e6d">1</text>
+<text x="111.50" y="541.00" font-size="15" font-weight="400" text-anchor="middle" class="" style="fill:#465e6d">4</text>
+<text x="190.00" y="541.00" font-size="15" font-weight="400" text-anchor="middle" class="" style="fill:#465e6d">8</text>
+<text x="268.50" y="541.00" font-size="15" font-weight="400" text-anchor="middle" class="" style="fill:#465e6d">12</text>
+<text x="347.00" y="541.00" font-size="15" font-weight="400" text-anchor="middle" class="" style="fill:#465e6d">16</text>
+<text x="347.00" y="563.00" font-size="15" font-weight="400" text-anchor="end" class="" style="fill:#465e6d">Number of maps, up to equivalence</text>
+<text x="17.00" y="593.00" font-size="16.7" font-weight="400" text-anchor="start" class="" style="fill:#a33e20">Every positive count is ruled out.</text>
+</svg>
