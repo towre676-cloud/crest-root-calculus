@@ -321,7 +321,7 @@ The integrated research archive is unusually large because it keeps historical w
 
 ## The 57 research questions
 
-The 57-item register now includes an equation-only primitive degree-four map and exact class counts in every degree on an infinite family. The twelve blind Sutherland quartics have complete elliptic-map degree spectra. Ten admit no elliptic map. The other two admit all even geometric degrees and different rational degrees. The cubic-tower study proves a seven-factor decomposition in genus 13 and certifies 111 simple factors at stage ten. [Research results and replay](research/README.md) · [57-item register](research/backlog-2026-11-23.md) · [Download the complete research packet](downloads/crest-root-open-research-2026-11-23.zip)
+The research register now gives an equation-only procedure for finding every primitive degree-four elliptic map on a smooth plane quartic over the algebraic closure. On one example, all four primitive maps have explicit formulas. An entire coefficient class modulo 35 has no elliptic maps in any degree. In the stage-ten cubic tower, exact Frobenius traces certify at least 2,047 distinct simple isogeny classes over the rationals. The full geometric decomposition remains open. [Research results and replay](research/README.md) · [57-item register](research/backlog-2026-11-23.md) · [Download the complete research packet](downloads/crest-root-open-research-2026-11-23.zip)
 
 ## What is proved, and what remains difficult?
 

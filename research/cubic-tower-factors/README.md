@@ -2,6 +2,8 @@
 
 The genus-13 second stage of the Crest–Root tower has a Jacobian isogenous over the rationals to five elliptic curves and two absolutely simple abelian fourfolds. These seven factors are pairwise nonisogenous even over an algebraic closure. We compute its full zeta function at 11. In the genus-393,661 tenth stage, the same construction exhibits **21 elliptic curves and 90 absolutely simple fourfolds**, again pairwise geometrically nonisogenous. Their 111 Frobenius polynomials at 41 occupy 762 of the 787,322 numerator degrees. The remaining supports and their dimensions are determined by the theorem below. Further simple constituents and their multiplicities inside those supports remain open. [Exact coefficients and witnesses](receipt.json)
 
+A subsequent calculation separates all 2,047 displayed factors in the rational isogeny group. Their simple constituents can be chosen pairwise distinct over the rationals, one per displayed factor. It also computes triple-support polynomials modulo 3. [Higher supports and trace-rank proof](../cubic-tower-higher-supports/README.md)
+
 ## The tower and its factors
 
 Write $E:w^2=f(z)=-4z^3+z^2+z+1$. For a finite set $I$ of nonnegative integers, let $X_I$ be the smooth projective normalization obtained by adjoining one root $t_i$ of each of the cubics

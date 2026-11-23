@@ -34,7 +34,12 @@ def main():
     run(ELLIPTIC / "primitive-degree-spectrum/verify.py")
     run(HERE / "projective-graphs/verify.py", "receipt.json")
     run(HERE / "cubic-tower-factors/verify.py")
-    print("All nine research verification groups passed.")
+    run(ELLIPTIC / "degree-four-incidence/verify_projective.py", "receipt.json")
+    run(ELLIPTIC / "degree-four-jets/verify.py", "receipt.json")
+    run(ELLIPTIC / "polarized-reduction/verify.py")
+    run(HERE / "cubic-tower-higher-supports/prime_rank.py")
+    run(HERE / "cubic-tower-higher-supports/mod_three.py")
+    print("All fourteen research verification groups passed.")
 
 
 if __name__ == "__main__":

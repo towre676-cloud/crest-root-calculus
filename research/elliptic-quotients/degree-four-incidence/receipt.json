@@ -1,0 +1,116 @@
+{
+  "sum": {
+    "rank": 62,
+    "base_length": 4,
+    "degree": 4,
+    "differential": [
+      "1",
+      "1",
+      "0"
+    ],
+    "differential_scale": "10",
+    "is_bielliptic_axis": false,
+    "forms": [
+      "122*u**3*w/57 + 32*u**2*v*w/57 - 77*u*v**2*w/57 + 163*u*w**3/19 + 13*v**3*w/57 - 13*v*w**3",
+      "318*u**3*v/19 - 309*u**2*v**2/19 - 246*u**2*w**2/19 + 212*u*v**3/19 + 991*u*v*w**2/19 - 206*v**4/19 - 1497*v**2*w**2/19 - 352*w**4/19",
+      "u**3*w + u**2*v*w/19 - u*v**2*w + 3*u*w**3/19 - v**3*w/19 + 3*v*w**3"
+    ],
+    "a": "-7/3",
+    "b": "-20/27"
+  },
+  "rational_sign": {
+    "rank": 62,
+    "base_length": 4,
+    "degree": 4,
+    "differential": [
+      "1",
+      "-1",
+      "0"
+    ],
+    "differential_scale": "-10",
+    "is_bielliptic_axis": false,
+    "forms": [
+      "122*u**3*w/57 - 32*u**2*v*w/57 - 77*u*v**2*w/57 + 163*u*w**3/19 - 13*v**3*w/57 + 13*v*w**3",
+      "-318*u**3*v/19 - 309*u**2*v**2/19 - 246*u**2*w**2/19 - 212*u*v**3/19 - 991*u*v*w**2/19 - 206*v**4/19 - 1497*v**2*w**2/19 - 352*w**4/19",
+      "u**3*w - u**2*v*w/19 - u*v**2*w + 3*u*w**3/19 + v**3*w/19 - 3*v*w**3"
+    ],
+    "a": "-7/3",
+    "b": "-20/27"
+  },
+  "quadratic_sum": {
+    "rank": 62,
+    "base_length": 4,
+    "degree": 4,
+    "differential": [
+      "1",
+      "0",
+      "-sqrt(2)*I"
+    ],
+    "differential_scale": "10",
+    "is_bielliptic_axis": false,
+    "forms": [
+      "sqrt(2)*I*u*w*(1728*u**2 - 9558*v**2 + 5376*w**2) + v**2*(3442*u**2 + 5888*v**2) + w**2*(12862*u**2 + 39407*v**2 + 20504*w**2)",
+      "3*v*(sqrt(2)*I*u*(2106*u**2 + 2559*v**2 + 4902*w**2) - w*(6378*u**2 + 9117*v**2 + 11376*w**2))",
+      "3*u**2*(4031*v**2 - 4390*w**2) + 3*sqrt(2)*I*u*w*(10080*v**2 - 1920*w**2) + 1902*v**4 - 47679*v**2*w**2 - 10680*w**4"
+    ],
+    "a": "-7/3",
+    "b": "-20/27"
+  },
+  "quadratic_conjugate": {
+    "rank": 62,
+    "base_length": 4,
+    "degree": 4,
+    "differential": [
+      "1",
+      "0",
+      "sqrt(2)*I"
+    ],
+    "differential_scale": "10",
+    "is_bielliptic_axis": false,
+    "forms": [
+      "-sqrt(2)*I*u*w*(1728*u**2 - 9558*v**2 + 5376*w**2) + v**2*(3442*u**2 + 5888*v**2) + w**2*(12862*u**2 + 39407*v**2 + 20504*w**2)",
+      "3*v*(-sqrt(2)*I*u*(2106*u**2 + 2559*v**2 + 4902*w**2) - w*(6378*u**2 + 9117*v**2 + 11376*w**2))",
+      "3*u**2*(4031*v**2 - 4390*w**2) - 3*sqrt(2)*I*u*w*(10080*v**2 - 1920*w**2) + 1902*v**4 - 47679*v**2*w**2 - 10680*w**4"
+    ],
+    "a": "-7/3",
+    "b": "-20/27"
+  },
+  "isogeny_after_double_cover": {
+    "rank": 62,
+    "base_length": 4,
+    "degree": 4,
+    "differential": [
+      "1",
+      "0",
+      "0"
+    ],
+    "differential_scale": "10",
+    "is_bielliptic_axis": true,
+    "forms": [
+      "v**2*w**2 + 8*w**4/3",
+      "6*u**2*v*w/5 - v**3*w/5 + 2*v*w**3/5",
+      "w**4"
+    ],
+    "a": "-52/3",
+    "b": "736/27"
+  },
+  "double_cover": {
+    "rank": 56,
+    "base_length": 10,
+    "degree": 2,
+    "differential": [
+      "1",
+      "0",
+      "0"
+    ],
+    "differential_scale": "10",
+    "is_bielliptic_axis": true,
+    "forms": [
+      "3*u**2*w**2/5 + 2*v**2*w**2/5 + 13*w**4/15",
+      "3*u**2*v*w/5 + 2*v**3*w/5 + 11*v*w**3/5",
+      "w**4"
+    ],
+    "a": "-7/3",
+    "b": "-20/27"
+  }
+}
