@@ -1,0 +1,194 @@
+{
+  "source": [
+    "24",
+    "0",
+    "-50",
+    "0",
+    "35",
+    "0",
+    "-10",
+    "0",
+    "1"
+  ],
+  "target": [
+    "0",
+    "24",
+    "-50",
+    "35",
+    "-10",
+    "1"
+  ],
+  "degree_bound": 2,
+  "degree_one_maps": 0,
+  "rational_maps": [
+    {
+      "u": [
+        "0",
+        "0",
+        "1"
+      ],
+      "v_over_y": [
+        "0",
+        "1"
+      ],
+      "degree": 2
+    },
+    {
+      "u": [
+        "0",
+        "0",
+        "1"
+      ],
+      "v_over_y": [
+        "0",
+        "-1"
+      ],
+      "degree": 2
+    }
+  ],
+  "geometric_map_count": 8,
+  "source_rational_branch_triples": 24,
+  "source_geometric_branch_triples": 336,
+  "target_branch_triples": 120,
+  "source_base_automorphisms": [
+    {
+      "matrix": [
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "vertical_square_factor": "1",
+      "rational_lifts": 2
+    },
+    {
+      "matrix": [
+        "-1",
+        "0",
+        "0",
+        "1"
+      ],
+      "vertical_square_factor": "1",
+      "rational_lifts": 2
+    }
+  ],
+  "source_geometric_base_automorphisms": [
+    {
+      "matrix": [
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "branch_permutation": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "matrix": [
+        "-1",
+        "0",
+        "0",
+        "1"
+      ],
+      "branch_permutation": [
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ]
+    }
+  ],
+  "target_base_automorphisms": [
+    {
+      "matrix": [
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "vertical_square_factor": "1",
+      "rational_lifts": 2
+    },
+    {
+      "matrix": [
+        "-1",
+        "1",
+        "-1/2",
+        "1"
+      ],
+      "vertical_square_factor": "1/8",
+      "rational_lifts": 0
+    },
+    {
+      "matrix": [
+        "-1",
+        "3",
+        "-1/2",
+        "1"
+      ],
+      "vertical_square_factor": "-1/8",
+      "rational_lifts": 0
+    },
+    {
+      "matrix": [
+        "-1",
+        "4",
+        "0",
+        "1"
+      ],
+      "vertical_square_factor": "-1",
+      "rational_lifts": 0
+    }
+  ],
+  "source_involution_fixed_points": [
+    8,
+    4,
+    0
+  ],
+  "source_quotient_genera": [
+    0,
+    1,
+    2
+  ],
+  "odd_source": [
+    "1",
+    "8",
+    "18",
+    "-4",
+    "-45",
+    "-4",
+    "38",
+    "-12"
+  ],
+  "odd_model_map": {
+    "A": [
+      "1",
+      "2",
+      "1"
+    ],
+    "B": [
+      "0",
+      "0",
+      "1"
+    ],
+    "C": [
+      "0",
+      "1",
+      "1"
+    ],
+    "vertical_denominator_exponent": 3
+  },
+  "scope": "all nonconstant maps to the specified genus-two target"
+}

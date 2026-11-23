@@ -1,0 +1,261 @@
+{
+  "protocol_sha256": "1d832ecf382874fd4146e253f6ede9c4a2c95a7ad699292a12cbb674657ba4a3",
+  "runs": [
+    {
+      "case": "g1-d1-cover",
+      "method": "sympy-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.3359924560027139,
+      "status": "complete",
+      "solve_wall_seconds": 0.056637889003468445,
+      "solve_cpu_seconds": 0.05663499999999999,
+      "geometric_marks": 2,
+      "support_sha256": "99b05f0653dea98008e91c84b4be50b3c1788a61f066ec84f91abe32536f9f63"
+    },
+    {
+      "case": "g4-d7-twist",
+      "method": "sympy-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.39008850500249537,
+      "status": "complete",
+      "solve_wall_seconds": 0.10291549699832103,
+      "solve_cpu_seconds": 0.10297100000000003,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d5-perturbed",
+      "method": "singular",
+      "replicate": 1,
+      "process_wall_seconds": 0.36173367100127507,
+      "status": "complete",
+      "solve_wall_seconds": 0.09800790499866707,
+      "solve_cpu_seconds": 0.09799299999999997,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d1-twist",
+      "method": "crest",
+      "replicate": 1,
+      "process_wall_seconds": 0.3172022780017869,
+      "status": "complete",
+      "solve_wall_seconds": 0.04684071000156109,
+      "solve_cpu_seconds": 0.04683699999999999,
+      "geometric_marks": 2,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g3-d5-cover",
+      "method": "crest",
+      "replicate": 1,
+      "process_wall_seconds": 0.46344664199932595,
+      "status": "complete",
+      "solve_wall_seconds": 0.20340652799859527,
+      "solve_cpu_seconds": 0.203394,
+      "geometric_marks": 2,
+      "support_sha256": "00e9682f854414a9757a2b2a85da9178e287d3803e383fd4c4a11005ad14b2b8"
+    },
+    {
+      "case": "g4-d7-cover",
+      "method": "crest",
+      "replicate": 1,
+      "process_wall_seconds": 1.0556376759996056,
+      "status": "complete",
+      "solve_wall_seconds": 0.7989599209977314,
+      "solve_cpu_seconds": 0.7989339999999999,
+      "geometric_marks": 2,
+      "support_sha256": "b3deda2a3562af558e90680f07efecf6716e26b30471710ae56af801d310b5fb"
+    },
+    {
+      "case": "g2-d3-twist",
+      "method": "crest",
+      "replicate": 1,
+      "process_wall_seconds": 0.3226396259997273,
+      "status": "complete",
+      "solve_wall_seconds": 0.06486053499975242,
+      "solve_cpu_seconds": 0.06489600000000001,
+      "geometric_marks": 2,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g4-d7-twist",
+      "method": "singular",
+      "replicate": 1,
+      "status": "timeout",
+      "process_wall_seconds": 10.016729791001126,
+      "limit_seconds": 10.0
+    },
+    {
+      "case": "g3-d5-perturbed",
+      "method": "sympy-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.3262037700005749,
+      "status": "complete",
+      "solve_wall_seconds": 0.054039206999732414,
+      "solve_cpu_seconds": 0.05403800000000003,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g3-d5-perturbed",
+      "method": "crest",
+      "replicate": 1,
+      "process_wall_seconds": 0.42508524100048817,
+      "status": "complete",
+      "solve_wall_seconds": 0.1595396709999477,
+      "solve_cpu_seconds": 0.15953699999999998,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g3-d5-perturbed",
+      "method": "singular",
+      "replicate": 1,
+      "process_wall_seconds": 1.4490054989983037,
+      "status": "complete",
+      "solve_wall_seconds": 1.1802518179974868,
+      "solve_cpu_seconds": 1.1801760000000001,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  ],
+  "outputs": {
+    "g1-d1-cover": {
+      "geometric_maps": 2,
+      "rational_maps": [
+        {
+          "u": [
+            "-1",
+            "4/3"
+          ],
+          "v_over_y": [
+            "-3/2"
+          ],
+          "degree": 1
+        },
+        {
+          "u": [
+            "-1",
+            "4/3"
+          ],
+          "v_over_y": [
+            "3/2"
+          ],
+          "degree": 1
+        }
+      ]
+    },
+    "g4-d7-twist": {
+      "geometric_maps": 0,
+      "rational_maps": []
+    },
+    "g1-d5-perturbed": {
+      "geometric_maps": 0,
+      "rational_maps": []
+    },
+    "g1-d1-twist": {
+      "geometric_maps": 2,
+      "rational_maps": []
+    },
+    "g3-d5-cover": {
+      "geometric_maps": 2,
+      "rational_maps": [
+        {
+          "u": [
+            "-2",
+            "-3/2",
+            "-3",
+            "-3",
+            "1/2",
+            "2/3"
+          ],
+          "v_over_y": [
+            "-3/2"
+          ],
+          "degree": 5
+        },
+        {
+          "u": [
+            "-2",
+            "-3/2",
+            "-3",
+            "-3",
+            "1/2",
+            "2/3"
+          ],
+          "v_over_y": [
+            "3/2"
+          ],
+          "degree": 5
+        }
+      ]
+    },
+    "g4-d7-cover": {
+      "geometric_maps": 2,
+      "rational_maps": [
+        {
+          "u": [
+            "1",
+            "1",
+            "-3/2",
+            "-3/2",
+            "0",
+            "1",
+            "3",
+            "1"
+          ],
+          "v_over_y": [
+            "-3/2"
+          ],
+          "degree": 7
+        },
+        {
+          "u": [
+            "1",
+            "1",
+            "-3/2",
+            "-3/2",
+            "0",
+            "1",
+            "3",
+            "1"
+          ],
+          "v_over_y": [
+            "3/2"
+          ],
+          "degree": 7
+        }
+      ]
+    },
+    "g2-d3-twist": {
+      "geometric_maps": 2,
+      "rational_maps": []
+    },
+    "g3-d5-perturbed": {
+      "geometric_maps": 0,
+      "rational_maps": []
+    }
+  },
+  "summary": {
+    "crest": {
+      "cases_completed_twice": 0,
+      "total_cases": 5,
+      "timeouts": 0,
+      "errors": 0
+    },
+    "singular": {
+      "cases_completed_twice": 0,
+      "total_cases": 3,
+      "timeouts": 1,
+      "errors": 0
+    },
+    "sympy-decomposition": {
+      "cases_completed_twice": 0,
+      "total_cases": 3,
+      "timeouts": 0,
+      "errors": 0
+    }
+  },
+  "completed": false
+}

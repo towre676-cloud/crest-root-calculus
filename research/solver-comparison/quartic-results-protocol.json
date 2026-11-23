@@ -1,0 +1,36 @@
+{
+  "scope": "all geometric transverse degree-three elliptic pencils at a rational mark",
+  "panel_sha256": "e2da6f09114861b6485aafe4c79e56ded0c76e876cea6d491317febefaa40d6f",
+  "worker_sha256": "16b6fb907f7135511d5d69300619237079e3d237f957cef6ca76c658282d974a",
+  "methods": [
+    "crest",
+    "singular",
+    "sympy-buchberger"
+  ],
+  "replicates": 2,
+  "per_process_wall_limit_seconds": 30.0,
+  "memory_limit_bytes": 4294967296,
+  "timing": "Serial fresh processes. Solver timer starts after imports and includes input normalization, smoothness check, exact elimination, radical support and map reconstruction. Process wall includes interpreter startup.",
+  "order": "Two seeded shuffles of every case/method pair, seed 76123.",
+  "baseline": "Same h-open marked chart. General solvers receive q, Db-B and four original square equations with invertible h factors removed. Singular heuristic groebner in dp, radical, then FGLM. SymPy Buchberger in grevlex, then FGLM and exact fibre radical.",
+  "correctness": "Complete outputs must have identical rational lex ideals in c,s and identical geometric counts. The common original-equation fibre reconstruction verifies the target identities.",
+  "platform": {
+    "python": "3.12.14",
+    "sympy": "1.14.0",
+    "singular": "Singular for x86_64-Linux version 4.4.1 (44100, 64 bit) Jan 2025",
+    "os": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "cpu": "AMD EPYC 9V74 80-Core Processor",
+    "cpu_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "created_utc": "2026-11-23T21:56:34.240787+00:00"
+}

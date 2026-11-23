@@ -1,0 +1,30 @@
+{
+  "scope": "complete local zeta numerator of a smooth hyperelliptic curve",
+  "panel_sha256": "cec60ae4f37b4aa7080d8f706964579904d30ae89f470a5220d528db0f656ead",
+  "worker_sha256": "2923b8ef5fee488c8ac6363af65a369654f7f8d64611876cfe2eac85ddc35b8f",
+  "research_source_sha256": {
+    "bounded-correspondences/frobenius_filter.py": "3746aff30d95e081fee25bf2150dfd38c7dac0cda55cb68f848404313ca7af9f",
+    "cubic-tower-factors/field.py": "e3e5b7d87fde419d5271de69aa8a4d7a5969e2d2bde4b735e196002746084680",
+    "cubic-tower-factors/tower.py": "59a5fe17b8af7310f20aaca71729e48d7ecb2d8e1367572529b65dad79d69d24",
+    "bounded-correspondences/finite.py": "71a8dc5d7b61b50aa3c84e232a19e63e1d5696e6345658e2cc574919d5cdc40f",
+    "solver-comparison/worker.py": "16b6fb907f7135511d5d69300619237079e3d237f957cef6ca76c658282d974a",
+    "solver-comparison/benchmark.py": "e23092230e59f396060be66ae8544093cddcea49131b477139e69ffbdbfadf53"
+  },
+  "methods": [
+    "crest-direct",
+    "pari"
+  ],
+  "replicates": 2,
+  "worker_cpu": 8,
+  "per_process_wall_limit_seconds": 10,
+  "memory_limit_bytes": 4294967296,
+  "timing": "Serial fresh processes. Includes curve validation, all field construction and complete zeta numerator. PARI invocation and decoding are included. Imports excluded from solver timer and included in process wall.",
+  "cpu_timer": "POSIX getrusage user plus system time for the Python worker and reaped children; returned in seconds with microsecond precision. The GP millisecond timer is not used.",
+  "normalization": "The descending coefficients of PARI characteristic polynomial are the ascending coefficients of the zeta numerator. Extension counts recovered by Newton identities.",
+  "pari": "2.17.2",
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "numpy": "2.3.5",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "created_utc": "2026-11-23T22:31:36.476946+00:00"
+}

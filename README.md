@@ -4,7 +4,7 @@
 
 [Open the seven applications](#seven-applications-you-can-run) · [Choose a worked example](#choose-a-worked-example) · [Try the wing, rock and solar experiments](#a-wing-a-rock-and-a-street-of-solar-roofs) · [How it began](#how-the-project-began) · [Why a claim changed](#when-a-pattern-looks-too-good) · [Finding a hidden curve](#turning-the-question-around) · [Run the examples](#try-it-on-windows-beginner-instructions)
 
-[Read the full illustrated monograph, Parts I–XXX](https://towre676-cloud.github.io/crest-root-calculus/) · [See all 57 research questions and their status](research/backlog-2026-11-23.md)
+[Read the nine-page introductory essay](downloads/crest-root-introduction.pdf) · [Read the full illustrated monograph, Parts I–XXX](https://towre676-cloud.github.io/crest-root-calculus/) · [See all 57 research questions and their status](research/backlog-2026-11-23.md)
 
 ## Seven applications you can run
 
@@ -322,6 +322,12 @@ The integrated research archive is unusually large because it keeps historical w
 | Archived JSON receipt files | Expected exact outputs used to check reproducibility. |
 
 > **Note:** In the present archive, the Part XXX quick-start file is `crest/README_PART_XXX.md`. Historical directories contain additional specialized READMEs.
+
+## Complete finite map searches
+
+Given two smooth hyperelliptic equations with a target of genus at least two, the new program derives a finite degree bound and reconstructs every nonconstant rational map. Both odd- and even-degree equations are supported. Its exact coefficient identities and local lifting records can be replayed. The executed examples include a curve with no real points and a genus-three double cover with exactly eight geometric maps and two rational maps. A second theorem gives a complete search for elliptic maps with the specified singleton infinity fibre. [The map theorem and programs](research/bounded-correspondences/README.md)
+
+The new solver study compares complete answers under matching conditions across marked quartics, polynomial covers and local zeta functions. It includes native Singular, SymPy's functional decomposition and PARI/GP, with raw timings and time limits. [Measured comparisons](research/solver-comparison/README.md) · [Why complete point counts can still miss rational existence](research/local-pattern-obstruction/README.md)
 
 ## The 57 research questions
 

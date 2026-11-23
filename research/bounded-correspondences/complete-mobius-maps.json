@@ -1,0 +1,270 @@
+{
+  "source": [
+    "0",
+    "1",
+    "0",
+    "3",
+    "1",
+    "2"
+  ],
+  "target": [
+    "0",
+    "2",
+    "1",
+    "3",
+    "0",
+    "1"
+  ],
+  "source_genus": 2,
+  "target_genus": 2,
+  "degree_bound": 1,
+  "scope": "all nonconstant rational morphisms",
+  "charts": [
+    {
+      "degree": 1,
+      "leading_chart": 1,
+      "geometric_maps": 0,
+      "rational_maps": [],
+      "certificate": {
+        "variables": [
+          "a0",
+          "b0",
+          "b1",
+          "differential_scale",
+          "inverse"
+        ],
+        "equations": [
+          "2*b1**5 + b1**4 + 3*b1**3 + b1",
+          "-2*a0**2*b1**2*differential_scale**2 + 4*a0*b0*b1*differential_scale**2 + 2*a0*b1**5 + 2*a0*b1**4 + 9*a0*b1**3 + 5*a0*b1 - 2*b0**2*differential_scale**2 + 10*b0*b1**4 + 4*b0*b1**3 + 9*b0*b1**2 + b0",
+          "a0**2*b1**4 + 9*a0**2*b1**3 - a0**2*b1**2*differential_scale**2 + 10*a0**2*b1 + 10*a0*b0*b1**4 + 8*a0*b0*b1**3 + 27*a0*b0*b1**2 + 2*a0*b0*b1*differential_scale**2 + 5*a0*b0 + 20*b0**2*b1**3 + 6*b0**2*b1**2 + 9*b0**2*b1 - b0**2*differential_scale**2",
+          "3*a0**3*b1**3 + 10*a0**3*b1 + 4*a0**2*b0*b1**3 + 27*a0**2*b0*b1**2 + 10*a0**2*b0 - 3*a0**2*b1**2*differential_scale**2 + 20*a0*b0**2*b1**3 + 12*a0*b0**2*b1**2 + 27*a0*b0**2*b1 + 6*a0*b0*b1*differential_scale**2 + 20*b0**3*b1**2 + 4*b0**3*b1 + 3*b0**3 - 3*b0**2*differential_scale**2",
+          "5*a0**4*b1 + 9*a0**3*b0*b1**2 + 10*a0**3*b0 + 6*a0**2*b0**2*b1**2 + 27*a0**2*b0**2*b1 + 20*a0*b0**3*b1**2 + 8*a0*b0**3*b1 + 9*a0*b0**3 + 10*b0**4*b1 + b0**4",
+          "a0**5*b1 + 5*a0**4*b0 + 9*a0**3*b0**2*b1 + 4*a0**2*b0**3*b1 + 9*a0**2*b0**3 - a0**2*b1**2*differential_scale**2 + 10*a0*b0**4*b1 + 2*a0*b0**4 + 2*a0*b0*b1*differential_scale**2 + 2*b0**5 - b0**2*differential_scale**2",
+          "a0**5*b0 + 3*a0**3*b0**3 + a0**2*b0**4 + 2*a0*b0**5",
+          "inverse*(-a0*b1 + b0) - 1"
+        ],
+        "groebner_basis": [
+          "1"
+        ],
+        "monomials": [],
+        "algebra_dimension": 0,
+        "geometric_points": 0,
+        "rational_points": []
+      }
+    },
+    {
+      "degree": 1,
+      "leading_chart": 2,
+      "geometric_maps": 2,
+      "rational_maps": [
+        {
+          "A": [
+            "1"
+          ],
+          "B": [
+            "0",
+            "1"
+          ],
+          "C": [
+            "-1"
+          ],
+          "degree": 1,
+          "vertical_denominator_exponent": 3
+        },
+        {
+          "A": [
+            "1"
+          ],
+          "B": [
+            "0",
+            "1"
+          ],
+          "C": [
+            "1"
+          ],
+          "degree": 1,
+          "vertical_denominator_exponent": 3
+        }
+      ],
+      "certificate": {
+        "variables": [
+          "a0",
+          "b0",
+          "differential_scale",
+          "inverse"
+        ],
+        "equations": [
+          "-2*a0**2*differential_scale**2 + 2*a0",
+          "-a0**2*differential_scale**2 + a0**2 + 10*a0*b0",
+          "3*a0**3 + 4*a0**2*b0 - 3*a0**2*differential_scale**2 + 20*a0*b0**2",
+          "9*a0**3*b0 + 6*a0**2*b0**2 + 20*a0*b0**3",
+          "a0**5 + 9*a0**3*b0**2 + 4*a0**2*b0**3 - a0**2*differential_scale**2 + 10*a0*b0**4",
+          "a0**5*b0 + 3*a0**3*b0**3 + a0**2*b0**4 + 2*a0*b0**5",
+          "a0*inverse - 1"
+        ],
+        "groebner_basis": [
+          "differential_scale**2 - 1",
+          "a0 - 1",
+          "b0",
+          "inverse - 1"
+        ],
+        "monomials": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ]
+        ],
+        "algebra_dimension": 2,
+        "original_cofactors": [
+          [
+            "-885*a0*differential_scale**2*inverse/159874 - 885*a0*differential_scale**2/159874 + 885*a0*inverse/159874 + 270500*b0**3*differential_scale**2*inverse/239811 + 270500*b0**3*differential_scale**2/239811 - 270500*b0**3*inverse/239811 - 378700*b0**2*differential_scale**2*inverse/79937 - 378700*b0**2*differential_scale**2/79937 + 378700*b0**2*inverse/79937 + 395260*b0*differential_scale**2*inverse/79937 + 395260*b0*differential_scale**2/79937 - 395260*b0*inverse/79937 + differential_scale**2*inverse/2 + differential_scale**2/2 - inverse/2 - 1/2",
+            "-9000*a0**2*differential_scale**2*inverse/79937 - 9000*a0**2*differential_scale**2/79937 + 9000*a0**2*inverse/79937 + 12000*a0*b0*differential_scale**2*inverse/79937 + 12000*a0*b0*differential_scale**2/79937 - 12000*a0*b0*inverse/79937 - 8115*a0*differential_scale**2*inverse/79937 - 8115*a0*differential_scale**2/79937 + 8115*a0*inverse/79937 - 541000*b0**3*differential_scale**2*inverse/239811 - 541000*b0**3*differential_scale**2/239811 + 541000*b0**3*inverse/239811 + 349900*b0**2*differential_scale**2*inverse/79937 + 349900*b0**2*differential_scale**2/79937 - 349900*b0**2*inverse/79937 + 5410*b0*differential_scale**2*inverse/6149 + 5410*b0*differential_scale**2/6149 - 5410*b0*inverse/6149 - 79052*differential_scale**2*inverse/79937 - 79052*differential_scale**2/79937 + 79052*inverse/79937",
+            "3000*a0**2*differential_scale**2*inverse/79937 + 3000*a0**2*differential_scale**2/79937 - 3000*a0**2*inverse/79937 - 4000*a0*b0*differential_scale**2*inverse/79937 - 4000*a0*b0*differential_scale**2/79937 + 4000*a0*b0*inverse/79937 + 3000*a0*differential_scale**2*inverse/79937 + 3000*a0*differential_scale**2/79937 - 3000*a0*inverse/79937 + 407500*b0**2*differential_scale**2*inverse/239811 + 407500*b0**2*differential_scale**2/239811 - 407500*b0**2*inverse/239811 - 286950*b0*differential_scale**2*inverse/79937 - 286950*b0*differential_scale**2/79937 + 286950*b0*inverse/79937 + 2705*differential_scale**2*inverse/79937 + 2705*differential_scale**2/79937 - 2705*inverse/79937",
+            "-9500*b0*differential_scale**2*inverse/18447 - 9500*b0*differential_scale**2/18447 + 9500*b0*inverse/18447 + 308950*differential_scale**2*inverse/239811 + 308950*differential_scale**2/239811 - 308950*inverse/239811",
+            "-9000*differential_scale**2*inverse/79937 - 9000*differential_scale**2/79937 + 9000*inverse/79937",
+            "0",
+            "a0*differential_scale**2 - a0 - differential_scale**2 + 1"
+          ],
+          [
+            "885*a0*inverse/159874 - 270500*b0**3*inverse/239811 + 378700*b0**2*inverse/79937 - 395260*b0*inverse/79937 - inverse/2",
+            "9000*a0**2*inverse/79937 - 12000*a0*b0*inverse/79937 + 8115*a0*inverse/79937 + 541000*b0**3*inverse/239811 - 349900*b0**2*inverse/79937 - 5410*b0*inverse/6149 + 79052*inverse/79937",
+            "-3000*a0**2*inverse/79937 + 4000*a0*b0*inverse/79937 - 3000*a0*inverse/79937 - 407500*b0**2*inverse/239811 + 286950*b0*inverse/79937 - 2705*inverse/79937",
+            "9500*b0*inverse/18447 - 308950*inverse/239811",
+            "9000*inverse/79937",
+            "0",
+            "1 - a0"
+          ],
+          [
+            "-177*a0*inverse/319748 + 27050*b0**3*inverse/239811 - 37870*b0**2*inverse/79937 + 39526*b0*inverse/79937",
+            "-900*a0**2*inverse/79937 + 1200*a0*b0*inverse/79937 - 1623*a0*inverse/159874 - 54100*b0**3*inverse/239811 + 34990*b0**2*inverse/79937 + 541*b0*inverse/6149 + 177*inverse/159874",
+            "300*a0**2*inverse/79937 - 400*a0*b0*inverse/79937 + 300*a0*inverse/79937 + 40750*b0**2*inverse/239811 - 28695*b0*inverse/79937 + 541*inverse/159874",
+            "-950*b0*inverse/18447 + 30895*inverse/239811",
+            "-900*inverse/79937",
+            "0",
+            "-b0"
+          ],
+          [
+            "-885*a0*inverse**2/159874 + 270500*b0**3*inverse**2/239811 - 378700*b0**2*inverse**2/79937 + 395260*b0*inverse**2/79937 + inverse**2/2",
+            "-9000*a0**2*inverse**2/79937 + 12000*a0*b0*inverse**2/79937 - 8115*a0*inverse**2/79937 - 541000*b0**3*inverse**2/239811 + 349900*b0**2*inverse**2/79937 + 5410*b0*inverse**2/6149 - 79052*inverse**2/79937",
+            "3000*a0**2*inverse**2/79937 - 4000*a0*b0*inverse**2/79937 + 3000*a0*inverse**2/79937 + 407500*b0**2*inverse**2/239811 - 286950*b0*inverse**2/79937 + 2705*inverse**2/79937",
+            "-9500*b0*inverse**2/18447 + 308950*inverse**2/239811",
+            "-9000*inverse**2/79937",
+            "0",
+            "a0*inverse - inverse + 1"
+          ]
+        ],
+        "geometric_points": 2,
+        "multiplication_matrices": [
+          [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ]
+        ],
+        "linear_form": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "minimal_polynomial": [
+          "3",
+          "-4",
+          "1"
+        ],
+        "coordinates": [
+          [
+            "1"
+          ],
+          [
+            "0"
+          ],
+          [
+            "-2",
+            "1"
+          ],
+          [
+            "1"
+          ]
+        ],
+        "lifting": {
+          "prime": 3,
+          "modulus": "81",
+          "numerator_bound": "5",
+          "denominator_bound": "1",
+          "branches": [
+            {
+              "initial_root": 0,
+              "lifted_root": "3",
+              "candidate": "3",
+              "exact_root": true
+            },
+            {
+              "initial_root": 1,
+              "lifted_root": "1",
+              "candidate": "1",
+              "exact_root": true
+            }
+          ]
+        },
+        "rational_points": [
+          [
+            "1",
+            "0",
+            "1",
+            "1"
+          ],
+          [
+            "1",
+            "0",
+            "-1",
+            "1"
+          ]
+        ]
+      }
+    }
+  ]
+}
