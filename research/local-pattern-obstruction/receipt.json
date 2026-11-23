@@ -1,0 +1,478 @@
+{
+  "rational_points": {
+    "S": 0,
+    "T": 2
+  },
+  "geometric_points": {
+    "S": 6,
+    "T": 6
+  },
+  "rational_component_degrees": {
+    "S": [
+      2,
+      2,
+      2
+    ],
+    "T": [
+      1,
+      1,
+      4
+    ]
+  },
+  "common_character": [
+    {
+      "chi_13": -1,
+      "chi_17": -1,
+      "S_fixed": 2,
+      "T_fixed": 2
+    },
+    {
+      "chi_13": -1,
+      "chi_17": 1,
+      "S_fixed": 2,
+      "T_fixed": 2
+    },
+    {
+      "chi_13": 1,
+      "chi_17": -1,
+      "S_fixed": 2,
+      "T_fixed": 2
+    },
+    {
+      "chi_13": 1,
+      "chi_17": 1,
+      "S_fixed": 6,
+      "T_fixed": 6
+    }
+  ],
+  "mean_fixed_point_count": "3",
+  "good_prime_model": "all primes outside 2, 13, 17",
+  "biquadratic_minimal_polynomial": "x**4 - 60*x**2 + 16",
+  "local_existence_at_every_completion": {
+    "real": "13 > 0",
+    "2": "17 = 1 modulo 8",
+    "13": "17 = 4 modulo 13",
+    "17": "13 = 8^2 modulo 17",
+    "other_odd_primes": "at least one of a, b, a*b equals +1"
+  },
+  "independent_frobenius_checks": [
+    {
+      "prime": 3,
+      "extension_degrees": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "both_counts": [
+        2,
+        6,
+        2,
+        6,
+        2,
+        6
+      ]
+    },
+    {
+      "prime": 5,
+      "extension_degrees": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "both_counts": [
+        2,
+        6,
+        2,
+        6,
+        2,
+        6
+      ]
+    },
+    {
+      "prime": 7,
+      "extension_degrees": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "both_counts": [
+        2,
+        6,
+        2,
+        6,
+        2,
+        6
+      ]
+    },
+    {
+      "prime": 11,
+      "extension_degrees": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "both_counts": [
+        2,
+        6,
+        2,
+        6,
+        2,
+        6
+      ]
+    },
+    {
+      "prime": 19,
+      "extension_degrees": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "both_counts": [
+        2,
+        6,
+        2,
+        6,
+        2,
+        6
+      ]
+    },
+    {
+      "prime": 23,
+      "extension_degrees": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "both_counts": [
+        2,
+        6,
+        2,
+        6,
+        2,
+        6
+      ]
+    },
+    {
+      "prime": 29,
+      "extension_degrees": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "both_counts": [
+        2,
+        6,
+        2,
+        6,
+        2,
+        6
+      ]
+    },
+    {
+      "prime": 31,
+      "extension_degrees": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "both_counts": [
+        2,
+        6,
+        2,
+        6,
+        2,
+        6
+      ]
+    },
+    {
+      "prime": 37,
+      "extension_degrees": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "both_counts": [
+        2,
+        6,
+        2,
+        6,
+        2,
+        6
+      ]
+    },
+    {
+      "prime": 41,
+      "extension_degrees": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "both_counts": [
+        2,
+        6,
+        2,
+        6,
+        2,
+        6
+      ]
+    },
+    {
+      "prime": 43,
+      "extension_degrees": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "both_counts": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "prime": 47,
+      "extension_degrees": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "both_counts": [
+        2,
+        6,
+        2,
+        6,
+        2,
+        6
+      ]
+    },
+    {
+      "prime": 53,
+      "extension_degrees": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "both_counts": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "prime": 59,
+      "extension_degrees": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "both_counts": [
+        2,
+        6,
+        2,
+        6,
+        2,
+        6
+      ]
+    },
+    {
+      "prime": 61,
+      "extension_degrees": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "both_counts": [
+        2,
+        6,
+        2,
+        6,
+        2,
+        6
+      ]
+    },
+    {
+      "prime": 67,
+      "extension_degrees": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "both_counts": [
+        2,
+        6,
+        2,
+        6,
+        2,
+        6
+      ]
+    },
+    {
+      "prime": 71,
+      "extension_degrees": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "both_counts": [
+        2,
+        6,
+        2,
+        6,
+        2,
+        6
+      ]
+    },
+    {
+      "prime": 73,
+      "extension_degrees": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "both_counts": [
+        2,
+        6,
+        2,
+        6,
+        2,
+        6
+      ]
+    },
+    {
+      "prime": 79,
+      "extension_degrees": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "both_counts": [
+        2,
+        6,
+        2,
+        6,
+        2,
+        6
+      ]
+    },
+    {
+      "prime": 83,
+      "extension_degrees": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "both_counts": [
+        2,
+        6,
+        2,
+        6,
+        2,
+        6
+      ]
+    },
+    {
+      "prime": 89,
+      "extension_degrees": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "both_counts": [
+        2,
+        6,
+        2,
+        6,
+        2,
+        6
+      ]
+    },
+    {
+      "prime": 97,
+      "extension_degrees": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "both_counts": [
+        2,
+        6,
+        2,
+        6,
+        2,
+        6
+      ]
+    }
+  ]
+}

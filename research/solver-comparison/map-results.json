@@ -1,0 +1,2286 @@
+{
+  "protocol_sha256": "16a7fff74631ae12997404479b2569569bedbcf58710ad2248ee4c5a38d49d91",
+  "runs": [
+    {
+      "case": "g1-d3-cover",
+      "method": "sympy-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.5339454850000038,
+      "status": "wrong_answer",
+      "solve_wall_seconds": 0.05501362900031381,
+      "solve_cpu_seconds": 0.05501199999999995,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "actual_output": {
+        "geometric_maps": 0,
+        "rational_maps": []
+      },
+      "expected_output": {
+        "geometric_maps": 2,
+        "rational_maps": [
+          {
+            "u": [
+              "-2",
+              "-1",
+              "-3/2",
+              "4"
+            ],
+            "v_over_y": [
+              "-3/2"
+            ],
+            "degree": 3
+          },
+          {
+            "u": [
+              "-2",
+              "-1",
+              "-3/2",
+              "4"
+            ],
+            "v_over_y": [
+              "3/2"
+            ],
+            "degree": 3
+          }
+        ]
+      }
+    },
+    {
+      "case": "g1-d5-twist",
+      "method": "crest",
+      "replicate": 1,
+      "process_wall_seconds": 0.4631015240011038,
+      "status": "complete",
+      "solve_wall_seconds": 0.11065776199757238,
+      "solve_cpu_seconds": 0.11065599999999998,
+      "geometric_marks": 4,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g2-d3-twist",
+      "method": "corrected-dense-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.41437899400261813,
+      "status": "complete",
+      "solve_wall_seconds": 0.0901990130005288,
+      "solve_cpu_seconds": 0.090196,
+      "geometric_marks": 2,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g3-d5-twist",
+      "method": "sympy-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.37305376199947204,
+      "status": "wrong_answer",
+      "solve_wall_seconds": 0.055665946998487925,
+      "solve_cpu_seconds": 0.05566399999999999,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "actual_output": {
+        "geometric_maps": 0,
+        "rational_maps": []
+      },
+      "expected_output": {
+        "geometric_maps": 2,
+        "rational_maps": []
+      }
+    },
+    {
+      "case": "g3-d5-perturbed",
+      "method": "crest",
+      "replicate": 1,
+      "process_wall_seconds": 0.6141269360014121,
+      "status": "complete",
+      "solve_wall_seconds": 0.2089112200010277,
+      "solve_cpu_seconds": 0.20890699999999995,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d1-perturbed",
+      "method": "crest",
+      "replicate": 1,
+      "process_wall_seconds": 0.3999737800004368,
+      "status": "complete",
+      "solve_wall_seconds": 0.058627370999602135,
+      "solve_cpu_seconds": 0.058623999999999954,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d1-twist",
+      "method": "sympy-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.40577352499894914,
+      "status": "complete",
+      "solve_wall_seconds": 0.06765080599870998,
+      "solve_cpu_seconds": 0.06764799999999999,
+      "geometric_marks": 2,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g3-d5-cover",
+      "method": "singular",
+      "replicate": 1,
+      "process_wall_seconds": 3.2398752170010994,
+      "status": "complete",
+      "solve_wall_seconds": 2.8610241370006406,
+      "solve_cpu_seconds": 2.8608979999999997,
+      "geometric_marks": 2,
+      "support_sha256": "00e9682f854414a9757a2b2a85da9178e287d3803e383fd4c4a11005ad14b2b8"
+    },
+    {
+      "case": "g4-d7-perturbed",
+      "method": "sympy-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.4799909960020159,
+      "status": "complete",
+      "solve_wall_seconds": 0.10339790599755361,
+      "solve_cpu_seconds": 0.10336999999999996,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d3-perturbed",
+      "method": "singular",
+      "replicate": 1,
+      "process_wall_seconds": 0.46402583199960645,
+      "status": "complete",
+      "solve_wall_seconds": 0.11127597800077638,
+      "solve_cpu_seconds": 0.11127100000000001,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d3-twist",
+      "method": "singular",
+      "replicate": 1,
+      "process_wall_seconds": 0.6213220520003233,
+      "status": "complete",
+      "solve_wall_seconds": 0.12514054400162422,
+      "solve_cpu_seconds": 0.12513599999999997,
+      "geometric_marks": 2,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g4-d7-perturbed",
+      "method": "singular",
+      "replicate": 1,
+      "status": "timeout",
+      "process_wall_seconds": 10.012877084998763,
+      "limit_seconds": 10.0
+    },
+    {
+      "case": "g1-d3-cover",
+      "method": "crest",
+      "replicate": 1,
+      "process_wall_seconds": 0.42273045600086334,
+      "status": "complete",
+      "solve_wall_seconds": 0.08735297900057049,
+      "solve_cpu_seconds": 0.08734999999999998,
+      "geometric_marks": 2,
+      "support_sha256": "50c112bc57831edd088579ad843a797b550a1e5fdcdf2bcba081c63dcb4382b8"
+    },
+    {
+      "case": "g3-d5-cover",
+      "method": "sympy-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.38608797200140543,
+      "status": "wrong_answer",
+      "solve_wall_seconds": 0.05583082099838066,
+      "solve_cpu_seconds": 0.05582799999999999,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "actual_output": {
+        "geometric_maps": 0,
+        "rational_maps": []
+      },
+      "expected_output": {
+        "geometric_maps": 2,
+        "rational_maps": [
+          {
+            "u": [
+              "-2",
+              "-3/2",
+              "-3",
+              "-3",
+              "1/2",
+              "2/3"
+            ],
+            "v_over_y": [
+              "-3/2"
+            ],
+            "degree": 5
+          },
+          {
+            "u": [
+              "-2",
+              "-3/2",
+              "-3",
+              "-3",
+              "1/2",
+              "2/3"
+            ],
+            "v_over_y": [
+              "3/2"
+            ],
+            "degree": 5
+          }
+        ]
+      }
+    },
+    {
+      "case": "g3-d5-cover",
+      "method": "crest",
+      "replicate": 1,
+      "process_wall_seconds": 0.7247740450002311,
+      "status": "complete",
+      "solve_wall_seconds": 0.38263788200129056,
+      "solve_cpu_seconds": 0.38275899999999996,
+      "geometric_marks": 2,
+      "support_sha256": "00e9682f854414a9757a2b2a85da9178e287d3803e383fd4c4a11005ad14b2b8"
+    },
+    {
+      "case": "g2-d3-perturbed",
+      "method": "singular",
+      "replicate": 1,
+      "process_wall_seconds": 0.4953668550006114,
+      "status": "complete",
+      "solve_wall_seconds": 0.1676412969973171,
+      "solve_cpu_seconds": 0.16763500000000003,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d1-cover",
+      "method": "singular",
+      "replicate": 1,
+      "process_wall_seconds": 0.4120340350018523,
+      "status": "complete",
+      "solve_wall_seconds": 0.1004867709998507,
+      "solve_cpu_seconds": 0.10048299999999999,
+      "geometric_marks": 2,
+      "support_sha256": "99b05f0653dea98008e91c84b4be50b3c1788a61f066ec84f91abe32536f9f63"
+    },
+    {
+      "case": "g3-d5-perturbed",
+      "method": "sympy-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.3468359899998177,
+      "status": "complete",
+      "solve_wall_seconds": 0.05701431300258264,
+      "solve_cpu_seconds": 0.05701199999999998,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d5-cover",
+      "method": "corrected-dense-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.4364044770009059,
+      "status": "complete",
+      "solve_wall_seconds": 0.11356771799910348,
+      "solve_cpu_seconds": 0.11356500000000003,
+      "geometric_marks": 4,
+      "support_sha256": "d546e82d38665340b35aceea51a296df9d04f553e717d9d2c889dfde855745cb"
+    },
+    {
+      "case": "g4-d7-cover",
+      "method": "corrected-dense-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 1.3256662569983746,
+      "status": "complete",
+      "solve_wall_seconds": 0.9832410400013032,
+      "solve_cpu_seconds": 0.9832020000000001,
+      "geometric_marks": 2,
+      "support_sha256": "b3deda2a3562af558e90680f07efecf6716e26b30471710ae56af801d310b5fb"
+    },
+    {
+      "case": "g2-d3-perturbed",
+      "method": "sympy-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.4414023350000207,
+      "status": "complete",
+      "solve_wall_seconds": 0.0459072939993348,
+      "solve_cpu_seconds": 0.045904,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d5-twist",
+      "method": "sympy-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.38710598300167476,
+      "status": "wrong_answer",
+      "solve_wall_seconds": 0.045524543998908484,
+      "solve_cpu_seconds": 0.04552400000000001,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "actual_output": {
+        "geometric_maps": 0,
+        "rational_maps": []
+      },
+      "expected_output": {
+        "geometric_maps": 4,
+        "rational_maps": []
+      }
+    },
+    {
+      "case": "g1-d5-twist",
+      "method": "corrected-dense-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.5326497360001667,
+      "status": "complete",
+      "solve_wall_seconds": 0.09983484799886355,
+      "solve_cpu_seconds": 0.099833,
+      "geometric_marks": 4,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d1-cover",
+      "method": "crest",
+      "replicate": 1,
+      "process_wall_seconds": 0.3483073280003737,
+      "status": "complete",
+      "solve_wall_seconds": 0.0684217659982096,
+      "solve_cpu_seconds": 0.06839700000000001,
+      "geometric_marks": 2,
+      "support_sha256": "99b05f0653dea98008e91c84b4be50b3c1788a61f066ec84f91abe32536f9f63"
+    },
+    {
+      "case": "g4-d7-twist",
+      "method": "crest",
+      "replicate": 1,
+      "process_wall_seconds": 0.9356598300000769,
+      "status": "complete",
+      "solve_wall_seconds": 0.5824277510000684,
+      "solve_cpu_seconds": 0.582399,
+      "geometric_marks": 2,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g3-d5-twist",
+      "method": "singular",
+      "replicate": 1,
+      "process_wall_seconds": 1.9709326160009368,
+      "status": "complete",
+      "solve_wall_seconds": 1.6162904709999566,
+      "solve_cpu_seconds": 1.616214,
+      "geometric_marks": 2,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g2-d3-twist",
+      "method": "singular",
+      "replicate": 1,
+      "process_wall_seconds": 0.5181334279986913,
+      "status": "complete",
+      "solve_wall_seconds": 0.17641674400147167,
+      "solve_cpu_seconds": 0.176386,
+      "geometric_marks": 2,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d1-perturbed",
+      "method": "corrected-dense-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.330183849997411,
+      "status": "complete",
+      "solve_wall_seconds": 0.042629676001524786,
+      "solve_cpu_seconds": 0.04262699999999997,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g3-d5-cover",
+      "method": "corrected-dense-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.4288663839979563,
+      "status": "complete",
+      "solve_wall_seconds": 0.17706014599752962,
+      "solve_cpu_seconds": 0.17704599999999995,
+      "geometric_marks": 2,
+      "support_sha256": "00e9682f854414a9757a2b2a85da9178e287d3803e383fd4c4a11005ad14b2b8"
+    },
+    {
+      "case": "g2-d3-cover",
+      "method": "crest",
+      "replicate": 1,
+      "process_wall_seconds": 0.3305172149994178,
+      "status": "complete",
+      "solve_wall_seconds": 0.07090555200193194,
+      "solve_cpu_seconds": 0.07089499999999999,
+      "geometric_marks": 2,
+      "support_sha256": "f8a5316c02c39c65c7116ade532941985ea58081cc8b16d0588ee090fd2f8dd6"
+    },
+    {
+      "case": "g4-d7-twist",
+      "method": "sympy-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.44157947300118394,
+      "status": "wrong_answer",
+      "solve_wall_seconds": 0.07588164800108643,
+      "solve_cpu_seconds": 0.07585600000000003,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "actual_output": {
+        "geometric_maps": 0,
+        "rational_maps": []
+      },
+      "expected_output": {
+        "geometric_maps": 2,
+        "rational_maps": []
+      }
+    },
+    {
+      "case": "g1-d1-cover",
+      "method": "corrected-dense-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.3918068890016002,
+      "status": "complete",
+      "solve_wall_seconds": 0.07252477099973476,
+      "solve_cpu_seconds": 0.07248099999999996,
+      "geometric_marks": 2,
+      "support_sha256": "99b05f0653dea98008e91c84b4be50b3c1788a61f066ec84f91abe32536f9f63"
+    },
+    {
+      "case": "g4-d7-cover",
+      "method": "sympy-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.4792156809999142,
+      "status": "wrong_answer",
+      "solve_wall_seconds": 0.08798872899933485,
+      "solve_cpu_seconds": 0.08795600000000003,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "actual_output": {
+        "geometric_maps": 0,
+        "rational_maps": []
+      },
+      "expected_output": {
+        "geometric_maps": 2,
+        "rational_maps": [
+          {
+            "u": [
+              "1",
+              "1",
+              "-3/2",
+              "-3/2",
+              "0",
+              "1",
+              "3",
+              "1"
+            ],
+            "v_over_y": [
+              "-3/2"
+            ],
+            "degree": 7
+          },
+          {
+            "u": [
+              "1",
+              "1",
+              "-3/2",
+              "-3/2",
+              "0",
+              "1",
+              "3",
+              "1"
+            ],
+            "v_over_y": [
+              "3/2"
+            ],
+            "degree": 7
+          }
+        ]
+      }
+    },
+    {
+      "case": "g2-d3-cover",
+      "method": "sympy-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.37899677800305653,
+      "status": "wrong_answer",
+      "solve_wall_seconds": 0.04931373500221525,
+      "solve_cpu_seconds": 0.04926200000000003,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "actual_output": {
+        "geometric_maps": 0,
+        "rational_maps": []
+      },
+      "expected_output": {
+        "geometric_maps": 2,
+        "rational_maps": [
+          {
+            "u": [
+              "2",
+              "0",
+              "-2",
+              "1"
+            ],
+            "v_over_y": [
+              "-3/2"
+            ],
+            "degree": 3
+          },
+          {
+            "u": [
+              "2",
+              "0",
+              "-2",
+              "1"
+            ],
+            "v_over_y": [
+              "3/2"
+            ],
+            "degree": 3
+          }
+        ]
+      }
+    },
+    {
+      "case": "g4-d7-perturbed",
+      "method": "corrected-dense-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.40619773599973996,
+      "status": "complete",
+      "solve_wall_seconds": 0.07877675899726455,
+      "solve_cpu_seconds": 0.07877499999999998,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g2-d3-perturbed",
+      "method": "crest",
+      "replicate": 1,
+      "process_wall_seconds": 0.37302644699957455,
+      "status": "complete",
+      "solve_wall_seconds": 0.05169309600023553,
+      "solve_cpu_seconds": 0.05169099999999999,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d3-cover",
+      "method": "singular",
+      "replicate": 1,
+      "process_wall_seconds": 0.5522168970019266,
+      "status": "complete",
+      "solve_wall_seconds": 0.1555845800030511,
+      "solve_cpu_seconds": 0.155516,
+      "geometric_marks": 2,
+      "support_sha256": "50c112bc57831edd088579ad843a797b550a1e5fdcdf2bcba081c63dcb4382b8"
+    },
+    {
+      "case": "g1-d3-twist",
+      "method": "sympy-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.35531702500156825,
+      "status": "wrong_answer",
+      "solve_wall_seconds": 0.03416064799966989,
+      "solve_cpu_seconds": 0.034160000000000024,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "actual_output": {
+        "geometric_maps": 0,
+        "rational_maps": []
+      },
+      "expected_output": {
+        "geometric_maps": 2,
+        "rational_maps": []
+      }
+    },
+    {
+      "case": "g1-d3-perturbed",
+      "method": "sympy-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.38368076600090717,
+      "status": "complete",
+      "solve_wall_seconds": 0.0617417130015383,
+      "solve_cpu_seconds": 0.06172400000000003,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g3-d5-perturbed",
+      "method": "corrected-dense-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.3850492329984263,
+      "status": "complete",
+      "solve_wall_seconds": 0.06353630000012345,
+      "solve_cpu_seconds": 0.06355800000000006,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d5-cover",
+      "method": "singular",
+      "replicate": 1,
+      "process_wall_seconds": 0.5831443140014017,
+      "status": "complete",
+      "solve_wall_seconds": 0.24722905800081207,
+      "solve_cpu_seconds": 0.247223,
+      "geometric_marks": 4,
+      "support_sha256": "d546e82d38665340b35aceea51a296df9d04f553e717d9d2c889dfde855745cb"
+    },
+    {
+      "case": "g4-d7-cover",
+      "method": "singular",
+      "replicate": 1,
+      "status": "timeout",
+      "process_wall_seconds": 10.019706866998604,
+      "limit_seconds": 10.0
+    },
+    {
+      "case": "g2-d3-twist",
+      "method": "sympy-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.39351735899981577,
+      "status": "wrong_answer",
+      "solve_wall_seconds": 0.052348756998981116,
+      "solve_cpu_seconds": 0.052348000000000006,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "actual_output": {
+        "geometric_maps": 0,
+        "rational_maps": []
+      },
+      "expected_output": {
+        "geometric_maps": 2,
+        "rational_maps": []
+      }
+    },
+    {
+      "case": "g1-d1-cover",
+      "method": "sympy-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.4553066190019308,
+      "status": "complete",
+      "solve_wall_seconds": 0.06454370500068762,
+      "solve_cpu_seconds": 0.06454199999999993,
+      "geometric_marks": 2,
+      "support_sha256": "99b05f0653dea98008e91c84b4be50b3c1788a61f066ec84f91abe32536f9f63"
+    },
+    {
+      "case": "g1-d5-cover",
+      "method": "crest",
+      "replicate": 1,
+      "process_wall_seconds": 0.43644035900069866,
+      "status": "complete",
+      "solve_wall_seconds": 0.11063924900008715,
+      "solve_cpu_seconds": 0.11063799999999999,
+      "geometric_marks": 4,
+      "support_sha256": "d546e82d38665340b35aceea51a296df9d04f553e717d9d2c889dfde855745cb"
+    },
+    {
+      "case": "g2-d3-cover",
+      "method": "singular",
+      "replicate": 1,
+      "process_wall_seconds": 0.5723553210009413,
+      "status": "complete",
+      "solve_wall_seconds": 0.25483145199905266,
+      "solve_cpu_seconds": 0.25481999999999994,
+      "geometric_marks": 2,
+      "support_sha256": "f8a5316c02c39c65c7116ade532941985ea58081cc8b16d0588ee090fd2f8dd6"
+    },
+    {
+      "case": "g1-d1-twist",
+      "method": "crest",
+      "replicate": 1,
+      "process_wall_seconds": 0.38216637799996533,
+      "status": "complete",
+      "solve_wall_seconds": 0.06185781299791415,
+      "solve_cpu_seconds": 0.06185699999999997,
+      "geometric_marks": 2,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d5-perturbed",
+      "method": "crest",
+      "replicate": 1,
+      "process_wall_seconds": 0.459844658998918,
+      "status": "complete",
+      "solve_wall_seconds": 0.05742147699857014,
+      "solve_cpu_seconds": 0.057487999999999956,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d1-perturbed",
+      "method": "sympy-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.3776206410002487,
+      "status": "complete",
+      "solve_wall_seconds": 0.055791890001273714,
+      "solve_cpu_seconds": 0.055790000000000006,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d3-twist",
+      "method": "corrected-dense-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.4255064799981483,
+      "status": "complete",
+      "solve_wall_seconds": 0.07679498799916473,
+      "solve_cpu_seconds": 0.07679200000000003,
+      "geometric_marks": 2,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d3-cover",
+      "method": "corrected-dense-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.4169817990004958,
+      "status": "complete",
+      "solve_wall_seconds": 0.07862720300181536,
+      "solve_cpu_seconds": 0.07862599999999997,
+      "geometric_marks": 2,
+      "support_sha256": "50c112bc57831edd088579ad843a797b550a1e5fdcdf2bcba081c63dcb4382b8"
+    },
+    {
+      "case": "g1-d3-perturbed",
+      "method": "crest",
+      "replicate": 1,
+      "process_wall_seconds": 0.3909930270019686,
+      "status": "complete",
+      "solve_wall_seconds": 0.06074937499943189,
+      "solve_cpu_seconds": 0.06074899999999997,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g4-d7-perturbed",
+      "method": "crest",
+      "replicate": 1,
+      "process_wall_seconds": 0.8330462939993595,
+      "status": "complete",
+      "solve_wall_seconds": 0.48044163300073706,
+      "solve_cpu_seconds": 0.480417,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g2-d3-twist",
+      "method": "crest",
+      "replicate": 1,
+      "process_wall_seconds": 0.4285841099990648,
+      "status": "complete",
+      "solve_wall_seconds": 0.09072260399989318,
+      "solve_cpu_seconds": 0.09072000000000002,
+      "geometric_marks": 2,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d1-twist",
+      "method": "corrected-dense-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.39488497899947106,
+      "status": "complete",
+      "solve_wall_seconds": 0.06972564499665168,
+      "solve_cpu_seconds": 0.06972400000000001,
+      "geometric_marks": 2,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g2-d3-perturbed",
+      "method": "corrected-dense-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.4261785630005761,
+      "status": "complete",
+      "solve_wall_seconds": 0.08289335200242931,
+      "solve_cpu_seconds": 0.08289100000000005,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g4-d7-cover",
+      "method": "crest",
+      "replicate": 1,
+      "process_wall_seconds": 1.3320898080019106,
+      "status": "complete",
+      "solve_wall_seconds": 0.9866690249982639,
+      "solve_cpu_seconds": 0.9866309999999998,
+      "geometric_marks": 2,
+      "support_sha256": "b3deda2a3562af558e90680f07efecf6716e26b30471710ae56af801d310b5fb"
+    },
+    {
+      "case": "g1-d5-perturbed",
+      "method": "corrected-dense-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.35503558200070984,
+      "status": "complete",
+      "solve_wall_seconds": 0.0454300269993837,
+      "solve_cpu_seconds": 0.04542899999999997,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d1-twist",
+      "method": "singular",
+      "replicate": 1,
+      "process_wall_seconds": 0.3788334040000336,
+      "status": "complete",
+      "solve_wall_seconds": 0.09385318899876438,
+      "solve_cpu_seconds": 0.09384999999999999,
+      "geometric_marks": 2,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g4-d7-twist",
+      "method": "corrected-dense-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.6929630859995086,
+      "status": "complete",
+      "solve_wall_seconds": 0.39502766099758446,
+      "solve_cpu_seconds": 0.39500899999999994,
+      "geometric_marks": 2,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d3-perturbed",
+      "method": "corrected-dense-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.3372942599999078,
+      "status": "complete",
+      "solve_wall_seconds": 0.04304979700100375,
+      "solve_cpu_seconds": 0.043047,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g4-d7-twist",
+      "method": "singular",
+      "replicate": 1,
+      "status": "timeout",
+      "process_wall_seconds": 10.01864251400184,
+      "limit_seconds": 10.0
+    },
+    {
+      "case": "g2-d3-cover",
+      "method": "corrected-dense-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.4062112360006722,
+      "status": "complete",
+      "solve_wall_seconds": 0.09065414500219049,
+      "solve_cpu_seconds": 0.09065099999999998,
+      "geometric_marks": 2,
+      "support_sha256": "f8a5316c02c39c65c7116ade532941985ea58081cc8b16d0588ee090fd2f8dd6"
+    },
+    {
+      "case": "g1-d5-twist",
+      "method": "singular",
+      "replicate": 1,
+      "process_wall_seconds": 0.5019199900016247,
+      "status": "complete",
+      "solve_wall_seconds": 0.19351469599860138,
+      "solve_cpu_seconds": 0.193508,
+      "geometric_marks": 4,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g3-d5-twist",
+      "method": "crest",
+      "replicate": 1,
+      "process_wall_seconds": 0.4915323029999854,
+      "status": "complete",
+      "solve_wall_seconds": 0.17919589300072403,
+      "solve_cpu_seconds": 0.17919200000000002,
+      "geometric_marks": 2,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d5-perturbed",
+      "method": "sympy-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.4005275769995933,
+      "status": "complete",
+      "solve_wall_seconds": 0.04130376199827879,
+      "solve_cpu_seconds": 0.04130099999999998,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d3-twist",
+      "method": "crest",
+      "replicate": 1,
+      "process_wall_seconds": 0.34131144599814434,
+      "status": "complete",
+      "solve_wall_seconds": 0.06280088700077613,
+      "solve_cpu_seconds": 0.062801,
+      "geometric_marks": 2,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d1-perturbed",
+      "method": "singular",
+      "replicate": 1,
+      "process_wall_seconds": 0.36297126899808063,
+      "status": "complete",
+      "solve_wall_seconds": 0.07788532900303835,
+      "solve_cpu_seconds": 0.07787799999999998,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g3-d5-twist",
+      "method": "corrected-dense-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.43263229600052,
+      "status": "complete",
+      "solve_wall_seconds": 0.1438945089976187,
+      "solve_cpu_seconds": 0.143891,
+      "geometric_marks": 2,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d5-cover",
+      "method": "sympy-decomposition",
+      "replicate": 1,
+      "process_wall_seconds": 0.3523436640025466,
+      "status": "wrong_answer",
+      "solve_wall_seconds": 0.06073335700057214,
+      "solve_cpu_seconds": 0.06082500000000002,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "actual_output": {
+        "geometric_maps": 0,
+        "rational_maps": []
+      },
+      "expected_output": {
+        "geometric_maps": 4,
+        "rational_maps": [
+          {
+            "u": [
+              "1/2",
+              "3",
+              "2",
+              "1",
+              "1",
+              "4/3"
+            ],
+            "v_over_y": [
+              "-3/2"
+            ],
+            "degree": 5
+          },
+          {
+            "u": [
+              "1/2",
+              "3",
+              "2",
+              "1",
+              "1",
+              "4/3"
+            ],
+            "v_over_y": [
+              "3/2"
+            ],
+            "degree": 5
+          }
+        ]
+      }
+    },
+    {
+      "case": "g3-d5-perturbed",
+      "method": "singular",
+      "replicate": 1,
+      "process_wall_seconds": 1.7631978259996686,
+      "status": "complete",
+      "solve_wall_seconds": 1.4331325389975973,
+      "solve_cpu_seconds": 1.4330660000000002,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d5-perturbed",
+      "method": "singular",
+      "replicate": 1,
+      "process_wall_seconds": 0.47446397099702153,
+      "status": "complete",
+      "solve_wall_seconds": 0.13823280499855173,
+      "solve_cpu_seconds": 0.13822,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d3-cover",
+      "method": "corrected-dense-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 0.35950766099995235,
+      "status": "complete",
+      "solve_wall_seconds": 0.05465942099908716,
+      "solve_cpu_seconds": 0.05465800000000004,
+      "geometric_marks": 2,
+      "support_sha256": "50c112bc57831edd088579ad843a797b550a1e5fdcdf2bcba081c63dcb4382b8"
+    },
+    {
+      "case": "g1-d1-twist",
+      "method": "sympy-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 0.30294986000080826,
+      "status": "complete",
+      "solve_wall_seconds": 0.048026149001088925,
+      "solve_cpu_seconds": 0.04802500000000001,
+      "geometric_marks": 2,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g2-d3-twist",
+      "method": "corrected-dense-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 0.42850102499869536,
+      "status": "complete",
+      "solve_wall_seconds": 0.09194446000037715,
+      "solve_cpu_seconds": 0.09194200000000002,
+      "geometric_marks": 2,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d3-cover",
+      "method": "singular",
+      "replicate": 2,
+      "process_wall_seconds": 0.4585242670000298,
+      "status": "complete",
+      "solve_wall_seconds": 0.1327506240013463,
+      "solve_cpu_seconds": 0.132747,
+      "geometric_marks": 2,
+      "support_sha256": "50c112bc57831edd088579ad843a797b550a1e5fdcdf2bcba081c63dcb4382b8"
+    },
+    {
+      "case": "g1-d3-cover",
+      "method": "crest",
+      "replicate": 2,
+      "process_wall_seconds": 0.3295743179987767,
+      "status": "complete",
+      "solve_wall_seconds": 0.06484455199824879,
+      "solve_cpu_seconds": 0.06482499999999997,
+      "geometric_marks": 2,
+      "support_sha256": "50c112bc57831edd088579ad843a797b550a1e5fdcdf2bcba081c63dcb4382b8"
+    },
+    {
+      "case": "g1-d5-twist",
+      "method": "singular",
+      "replicate": 2,
+      "process_wall_seconds": 0.5771120050012541,
+      "status": "complete",
+      "solve_wall_seconds": 0.2688930750009604,
+      "solve_cpu_seconds": 0.26880000000000004,
+      "geometric_marks": 4,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d5-perturbed",
+      "method": "singular",
+      "replicate": 2,
+      "process_wall_seconds": 0.3991604629991343,
+      "status": "complete",
+      "solve_wall_seconds": 0.11318908499742975,
+      "solve_cpu_seconds": 0.11316000000000007,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d5-perturbed",
+      "method": "crest",
+      "replicate": 2,
+      "process_wall_seconds": 0.4052723729982972,
+      "status": "complete",
+      "solve_wall_seconds": 0.05896225699689239,
+      "solve_cpu_seconds": 0.05896199999999996,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g2-d3-perturbed",
+      "method": "corrected-dense-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 0.29942856399793527,
+      "status": "complete",
+      "solve_wall_seconds": 0.03759617000105209,
+      "solve_cpu_seconds": 0.03759500000000002,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d1-twist",
+      "method": "crest",
+      "replicate": 2,
+      "process_wall_seconds": 0.3727140250011871,
+      "status": "complete",
+      "solve_wall_seconds": 0.0679239340024651,
+      "solve_cpu_seconds": 0.06790199999999993,
+      "geometric_marks": 2,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g3-d5-perturbed",
+      "method": "singular",
+      "replicate": 2,
+      "process_wall_seconds": 1.3915704789978918,
+      "status": "complete",
+      "solve_wall_seconds": 1.125475146000099,
+      "solve_cpu_seconds": 1.12533,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g3-d5-cover",
+      "method": "sympy-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 0.2687447300013446,
+      "status": "wrong_answer",
+      "solve_wall_seconds": 0.044890353001392214,
+      "solve_cpu_seconds": 0.04488799999999998,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "actual_output": {
+        "geometric_maps": 0,
+        "rational_maps": []
+      },
+      "expected_output": {
+        "geometric_maps": 2,
+        "rational_maps": [
+          {
+            "u": [
+              "-2",
+              "-3/2",
+              "-3",
+              "-3",
+              "1/2",
+              "2/3"
+            ],
+            "v_over_y": [
+              "-3/2"
+            ],
+            "degree": 5
+          },
+          {
+            "u": [
+              "-2",
+              "-3/2",
+              "-3",
+              "-3",
+              "1/2",
+              "2/3"
+            ],
+            "v_over_y": [
+              "3/2"
+            ],
+            "degree": 5
+          }
+        ]
+      }
+    },
+    {
+      "case": "g1-d1-cover",
+      "method": "sympy-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 0.27790254399951664,
+      "status": "complete",
+      "solve_wall_seconds": 0.04908256899943808,
+      "solve_cpu_seconds": 0.04908000000000001,
+      "geometric_marks": 2,
+      "support_sha256": "99b05f0653dea98008e91c84b4be50b3c1788a61f066ec84f91abe32536f9f63"
+    },
+    {
+      "case": "g1-d3-twist",
+      "method": "singular",
+      "replicate": 2,
+      "process_wall_seconds": 0.3245664069982013,
+      "status": "complete",
+      "solve_wall_seconds": 0.09191972999906284,
+      "solve_cpu_seconds": 0.09191499999999997,
+      "geometric_marks": 2,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g4-d7-perturbed",
+      "method": "sympy-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 0.47982565100028296,
+      "status": "complete",
+      "solve_wall_seconds": 0.06497972899887827,
+      "solve_cpu_seconds": 0.06497700000000001,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d3-twist",
+      "method": "crest",
+      "replicate": 2,
+      "process_wall_seconds": 0.3215474130010989,
+      "status": "complete",
+      "solve_wall_seconds": 0.060667599998851074,
+      "solve_cpu_seconds": 0.060666,
+      "geometric_marks": 2,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d5-perturbed",
+      "method": "sympy-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 0.35170600800120155,
+      "status": "complete",
+      "solve_wall_seconds": 0.05192323899973417,
+      "solve_cpu_seconds": 0.051921999999999996,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d1-twist",
+      "method": "singular",
+      "replicate": 2,
+      "process_wall_seconds": 0.3463735439981974,
+      "status": "complete",
+      "solve_wall_seconds": 0.07529856399924029,
+      "solve_cpu_seconds": 0.07528000000000001,
+      "geometric_marks": 2,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d1-cover",
+      "method": "singular",
+      "replicate": 2,
+      "process_wall_seconds": 0.3717602029973932,
+      "status": "complete",
+      "solve_wall_seconds": 0.09667522699965048,
+      "solve_cpu_seconds": 0.09667300000000006,
+      "geometric_marks": 2,
+      "support_sha256": "99b05f0653dea98008e91c84b4be50b3c1788a61f066ec84f91abe32536f9f63"
+    },
+    {
+      "case": "g1-d5-perturbed",
+      "method": "corrected-dense-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 0.33596952500010957,
+      "status": "complete",
+      "solve_wall_seconds": 0.0387235630005307,
+      "solve_cpu_seconds": 0.03872199999999998,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d5-cover",
+      "method": "crest",
+      "replicate": 2,
+      "process_wall_seconds": 0.350210562999564,
+      "status": "complete",
+      "solve_wall_seconds": 0.09214309899834916,
+      "solve_cpu_seconds": 0.092141,
+      "geometric_marks": 4,
+      "support_sha256": "d546e82d38665340b35aceea51a296df9d04f553e717d9d2c889dfde855745cb"
+    },
+    {
+      "case": "g1-d1-perturbed",
+      "method": "corrected-dense-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 0.3057077340017713,
+      "status": "complete",
+      "solve_wall_seconds": 0.04282521400091355,
+      "solve_cpu_seconds": 0.04282399999999997,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d1-twist",
+      "method": "corrected-dense-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 0.308650815000874,
+      "status": "complete",
+      "solve_wall_seconds": 0.04898510199927841,
+      "solve_cpu_seconds": 0.048984,
+      "geometric_marks": 2,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g2-d3-perturbed",
+      "method": "sympy-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 0.2719414319981297,
+      "status": "complete",
+      "solve_wall_seconds": 0.03687795799851301,
+      "solve_cpu_seconds": 0.03687600000000002,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g3-d5-perturbed",
+      "method": "sympy-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 0.27645048499834957,
+      "status": "complete",
+      "solve_wall_seconds": 0.04506519499773276,
+      "solve_cpu_seconds": 0.045064999999999966,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d3-perturbed",
+      "method": "corrected-dense-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 0.27389459899859503,
+      "status": "complete",
+      "solve_wall_seconds": 0.034439437000401085,
+      "solve_cpu_seconds": 0.034435999999999994,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g3-d5-perturbed",
+      "method": "corrected-dense-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 0.3458434549975209,
+      "status": "complete",
+      "solve_wall_seconds": 0.05645032499887748,
+      "solve_cpu_seconds": 0.05644899999999997,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g4-d7-twist",
+      "method": "singular",
+      "replicate": 2,
+      "status": "timeout",
+      "process_wall_seconds": 10.01825400600137,
+      "limit_seconds": 10.0
+    },
+    {
+      "case": "g2-d3-cover",
+      "method": "corrected-dense-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 0.38726936300008674,
+      "status": "complete",
+      "solve_wall_seconds": 0.09953396000128123,
+      "solve_cpu_seconds": 0.09953199999999998,
+      "geometric_marks": 2,
+      "support_sha256": "f8a5316c02c39c65c7116ade532941985ea58081cc8b16d0588ee090fd2f8dd6"
+    },
+    {
+      "case": "g4-d7-twist",
+      "method": "crest",
+      "replicate": 2,
+      "process_wall_seconds": 0.6056819200020982,
+      "status": "complete",
+      "solve_wall_seconds": 0.3666290939981991,
+      "solve_cpu_seconds": 0.366618,
+      "geometric_marks": 2,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g4-d7-twist",
+      "method": "sympy-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 0.29654547999962233,
+      "status": "wrong_answer",
+      "solve_wall_seconds": 0.06016766199900303,
+      "solve_cpu_seconds": 0.060163999999999995,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "actual_output": {
+        "geometric_maps": 0,
+        "rational_maps": []
+      },
+      "expected_output": {
+        "geometric_maps": 2,
+        "rational_maps": []
+      }
+    },
+    {
+      "case": "g2-d3-cover",
+      "method": "sympy-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 0.2638747990022239,
+      "status": "wrong_answer",
+      "solve_wall_seconds": 0.03403910500128404,
+      "solve_cpu_seconds": 0.03403800000000001,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "actual_output": {
+        "geometric_maps": 0,
+        "rational_maps": []
+      },
+      "expected_output": {
+        "geometric_maps": 2,
+        "rational_maps": [
+          {
+            "u": [
+              "2",
+              "0",
+              "-2",
+              "1"
+            ],
+            "v_over_y": [
+              "-3/2"
+            ],
+            "degree": 3
+          },
+          {
+            "u": [
+              "2",
+              "0",
+              "-2",
+              "1"
+            ],
+            "v_over_y": [
+              "3/2"
+            ],
+            "degree": 3
+          }
+        ]
+      }
+    },
+    {
+      "case": "g1-d5-cover",
+      "method": "singular",
+      "replicate": 2,
+      "process_wall_seconds": 0.42766143400149303,
+      "status": "complete",
+      "solve_wall_seconds": 0.175328642999375,
+      "solve_cpu_seconds": 0.17532400000000004,
+      "geometric_marks": 4,
+      "support_sha256": "d546e82d38665340b35aceea51a296df9d04f553e717d9d2c889dfde855745cb"
+    },
+    {
+      "case": "g1-d3-perturbed",
+      "method": "sympy-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 0.284300624000025,
+      "status": "complete",
+      "solve_wall_seconds": 0.034239878001244506,
+      "solve_cpu_seconds": 0.03423900000000002,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g3-d5-twist",
+      "method": "sympy-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 0.4552121540000371,
+      "status": "wrong_answer",
+      "solve_wall_seconds": 0.06550788599997759,
+      "solve_cpu_seconds": 0.06550800000000001,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "actual_output": {
+        "geometric_maps": 0,
+        "rational_maps": []
+      },
+      "expected_output": {
+        "geometric_maps": 2,
+        "rational_maps": []
+      }
+    },
+    {
+      "case": "g1-d1-perturbed",
+      "method": "singular",
+      "replicate": 2,
+      "process_wall_seconds": 0.34352806199967745,
+      "status": "complete",
+      "solve_wall_seconds": 0.06315679800172802,
+      "solve_cpu_seconds": 0.06315400000000002,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d5-twist",
+      "method": "corrected-dense-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 0.3481639419987914,
+      "status": "complete",
+      "solve_wall_seconds": 0.07117325500075822,
+      "solve_cpu_seconds": 0.07117199999999999,
+      "geometric_marks": 4,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g4-d7-cover",
+      "method": "corrected-dense-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 1.0771442139994178,
+      "status": "complete",
+      "solve_wall_seconds": 0.7607990420001443,
+      "solve_cpu_seconds": 0.760767,
+      "geometric_marks": 2,
+      "support_sha256": "b3deda2a3562af558e90680f07efecf6716e26b30471710ae56af801d310b5fb"
+    },
+    {
+      "case": "g1-d1-cover",
+      "method": "crest",
+      "replicate": 2,
+      "process_wall_seconds": 0.3333462979971955,
+      "status": "complete",
+      "solve_wall_seconds": 0.05745498499891255,
+      "solve_cpu_seconds": 0.057455000000000034,
+      "geometric_marks": 2,
+      "support_sha256": "99b05f0653dea98008e91c84b4be50b3c1788a61f066ec84f91abe32536f9f63"
+    },
+    {
+      "case": "g3-d5-cover",
+      "method": "singular",
+      "replicate": 2,
+      "process_wall_seconds": 2.2498746889978065,
+      "status": "complete",
+      "solve_wall_seconds": 1.9793272470014927,
+      "solve_cpu_seconds": 1.9792489999999998,
+      "geometric_marks": 2,
+      "support_sha256": "00e9682f854414a9757a2b2a85da9178e287d3803e383fd4c4a11005ad14b2b8"
+    },
+    {
+      "case": "g1-d3-perturbed",
+      "method": "crest",
+      "replicate": 2,
+      "process_wall_seconds": 0.2768334450011025,
+      "status": "complete",
+      "solve_wall_seconds": 0.039394932999130106,
+      "solve_cpu_seconds": 0.039392999999999984,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g4-d7-perturbed",
+      "method": "crest",
+      "replicate": 2,
+      "process_wall_seconds": 0.6921869290017639,
+      "status": "complete",
+      "solve_wall_seconds": 0.394653062998259,
+      "solve_cpu_seconds": 0.39464099999999996,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d3-twist",
+      "method": "corrected-dense-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 0.4075214680015051,
+      "status": "complete",
+      "solve_wall_seconds": 0.07008223299999372,
+      "solve_cpu_seconds": 0.070079,
+      "geometric_marks": 2,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d5-twist",
+      "method": "sympy-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 0.3609782710009313,
+      "status": "wrong_answer",
+      "solve_wall_seconds": 0.04222711100010201,
+      "solve_cpu_seconds": 0.04222500000000001,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "actual_output": {
+        "geometric_maps": 0,
+        "rational_maps": []
+      },
+      "expected_output": {
+        "geometric_maps": 4,
+        "rational_maps": []
+      }
+    },
+    {
+      "case": "g3-d5-twist",
+      "method": "crest",
+      "replicate": 2,
+      "process_wall_seconds": 0.46023763899938785,
+      "status": "complete",
+      "solve_wall_seconds": 0.17446650800047792,
+      "solve_cpu_seconds": 0.174447,
+      "geometric_marks": 2,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g2-d3-perturbed",
+      "method": "crest",
+      "replicate": 2,
+      "process_wall_seconds": 0.3279440740006976,
+      "status": "complete",
+      "solve_wall_seconds": 0.047655375998147065,
+      "solve_cpu_seconds": 0.047653999999999974,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d1-perturbed",
+      "method": "sympy-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 0.3111478850005369,
+      "status": "complete",
+      "solve_wall_seconds": 0.053608248999807984,
+      "solve_cpu_seconds": 0.053604999999999986,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g2-d3-twist",
+      "method": "crest",
+      "replicate": 2,
+      "process_wall_seconds": 0.3938224679986888,
+      "status": "complete",
+      "solve_wall_seconds": 0.10003163000146742,
+      "solve_cpu_seconds": 0.10002900000000003,
+      "geometric_marks": 2,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d3-twist",
+      "method": "sympy-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 0.3512208220017783,
+      "status": "wrong_answer",
+      "solve_wall_seconds": 0.06494531300268136,
+      "solve_cpu_seconds": 0.064942,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "actual_output": {
+        "geometric_maps": 0,
+        "rational_maps": []
+      },
+      "expected_output": {
+        "geometric_maps": 2,
+        "rational_maps": []
+      }
+    },
+    {
+      "case": "g1-d1-perturbed",
+      "method": "crest",
+      "replicate": 2,
+      "process_wall_seconds": 0.29817889600235503,
+      "status": "complete",
+      "solve_wall_seconds": 0.03873497099993983,
+      "solve_cpu_seconds": 0.03873399999999999,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g2-d3-cover",
+      "method": "singular",
+      "replicate": 2,
+      "process_wall_seconds": 0.47463862799850176,
+      "status": "complete",
+      "solve_wall_seconds": 0.18442548700113548,
+      "solve_cpu_seconds": 0.18442099999999997,
+      "geometric_marks": 2,
+      "support_sha256": "f8a5316c02c39c65c7116ade532941985ea58081cc8b16d0588ee090fd2f8dd6"
+    },
+    {
+      "case": "g4-d7-cover",
+      "method": "singular",
+      "replicate": 2,
+      "status": "timeout",
+      "process_wall_seconds": 10.016850086998602,
+      "limit_seconds": 10.0
+    },
+    {
+      "case": "g4-d7-perturbed",
+      "method": "corrected-dense-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 0.3348388119993615,
+      "status": "complete",
+      "solve_wall_seconds": 0.05949172300097416,
+      "solve_cpu_seconds": 0.059493000000000046,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g3-d5-perturbed",
+      "method": "crest",
+      "replicate": 2,
+      "process_wall_seconds": 0.48225299199839355,
+      "status": "complete",
+      "solve_wall_seconds": 0.16069325900025433,
+      "solve_cpu_seconds": 0.160661,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d5-cover",
+      "method": "sympy-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 0.35839492100058123,
+      "status": "wrong_answer",
+      "solve_wall_seconds": 0.04194938600267051,
+      "solve_cpu_seconds": 0.041947999999999985,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "actual_output": {
+        "geometric_maps": 0,
+        "rational_maps": []
+      },
+      "expected_output": {
+        "geometric_maps": 4,
+        "rational_maps": [
+          {
+            "u": [
+              "1/2",
+              "3",
+              "2",
+              "1",
+              "1",
+              "4/3"
+            ],
+            "v_over_y": [
+              "-3/2"
+            ],
+            "degree": 5
+          },
+          {
+            "u": [
+              "1/2",
+              "3",
+              "2",
+              "1",
+              "1",
+              "4/3"
+            ],
+            "v_over_y": [
+              "3/2"
+            ],
+            "degree": 5
+          }
+        ]
+      }
+    },
+    {
+      "case": "g4-d7-cover",
+      "method": "sympy-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 0.34604255099839065,
+      "status": "wrong_answer",
+      "solve_wall_seconds": 0.05796319000000949,
+      "solve_cpu_seconds": 0.05792900000000001,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "actual_output": {
+        "geometric_maps": 0,
+        "rational_maps": []
+      },
+      "expected_output": {
+        "geometric_maps": 2,
+        "rational_maps": [
+          {
+            "u": [
+              "1",
+              "1",
+              "-3/2",
+              "-3/2",
+              "0",
+              "1",
+              "3",
+              "1"
+            ],
+            "v_over_y": [
+              "-3/2"
+            ],
+            "degree": 7
+          },
+          {
+            "u": [
+              "1",
+              "1",
+              "-3/2",
+              "-3/2",
+              "0",
+              "1",
+              "3",
+              "1"
+            ],
+            "v_over_y": [
+              "3/2"
+            ],
+            "degree": 7
+          }
+        ]
+      }
+    },
+    {
+      "case": "g1-d3-cover",
+      "method": "sympy-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 0.28745544200137374,
+      "status": "wrong_answer",
+      "solve_wall_seconds": 0.034223960999952396,
+      "solve_cpu_seconds": 0.034223,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "actual_output": {
+        "geometric_maps": 0,
+        "rational_maps": []
+      },
+      "expected_output": {
+        "geometric_maps": 2,
+        "rational_maps": [
+          {
+            "u": [
+              "-2",
+              "-1",
+              "-3/2",
+              "4"
+            ],
+            "v_over_y": [
+              "-3/2"
+            ],
+            "degree": 3
+          },
+          {
+            "u": [
+              "-2",
+              "-1",
+              "-3/2",
+              "4"
+            ],
+            "v_over_y": [
+              "3/2"
+            ],
+            "degree": 3
+          }
+        ]
+      }
+    },
+    {
+      "case": "g4-d7-perturbed",
+      "method": "singular",
+      "replicate": 2,
+      "status": "timeout",
+      "process_wall_seconds": 10.01688996500161,
+      "limit_seconds": 10.0
+    },
+    {
+      "case": "g1-d5-twist",
+      "method": "crest",
+      "replicate": 2,
+      "process_wall_seconds": 0.3380626839971228,
+      "status": "complete",
+      "solve_wall_seconds": 0.07357032300205901,
+      "solve_cpu_seconds": 0.07356900000000002,
+      "geometric_marks": 4,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d1-cover",
+      "method": "corrected-dense-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 0.32438447499953327,
+      "status": "complete",
+      "solve_wall_seconds": 0.06158493700058898,
+      "solve_cpu_seconds": 0.06158299999999994,
+      "geometric_marks": 2,
+      "support_sha256": "99b05f0653dea98008e91c84b4be50b3c1788a61f066ec84f91abe32536f9f63"
+    },
+    {
+      "case": "g4-d7-twist",
+      "method": "corrected-dense-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 0.5803373310009192,
+      "status": "complete",
+      "solve_wall_seconds": 0.28845432800153503,
+      "solve_cpu_seconds": 0.28844600000000004,
+      "geometric_marks": 2,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g2-d3-cover",
+      "method": "crest",
+      "replicate": 2,
+      "process_wall_seconds": 0.31281302999923355,
+      "status": "complete",
+      "solve_wall_seconds": 0.07048258700160659,
+      "solve_cpu_seconds": 0.07048099999999999,
+      "geometric_marks": 2,
+      "support_sha256": "f8a5316c02c39c65c7116ade532941985ea58081cc8b16d0588ee090fd2f8dd6"
+    },
+    {
+      "case": "g3-d5-cover",
+      "method": "corrected-dense-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 0.4945970290027617,
+      "status": "complete",
+      "solve_wall_seconds": 0.23359193799842615,
+      "solve_cpu_seconds": 0.233579,
+      "geometric_marks": 2,
+      "support_sha256": "00e9682f854414a9757a2b2a85da9178e287d3803e383fd4c4a11005ad14b2b8"
+    },
+    {
+      "case": "g2-d3-twist",
+      "method": "singular",
+      "replicate": 2,
+      "process_wall_seconds": 0.40842535399860935,
+      "status": "complete",
+      "solve_wall_seconds": 0.12356728499798919,
+      "solve_cpu_seconds": 0.123535,
+      "geometric_marks": 2,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g4-d7-cover",
+      "method": "crest",
+      "replicate": 2,
+      "process_wall_seconds": 1.128848473999824,
+      "status": "complete",
+      "solve_wall_seconds": 0.8725918529999035,
+      "solve_cpu_seconds": 0.872557,
+      "geometric_marks": 2,
+      "support_sha256": "b3deda2a3562af558e90680f07efecf6716e26b30471710ae56af801d310b5fb"
+    },
+    {
+      "case": "g2-d3-perturbed",
+      "method": "singular",
+      "replicate": 2,
+      "process_wall_seconds": 0.3996663580001041,
+      "status": "complete",
+      "solve_wall_seconds": 0.12777167100284714,
+      "solve_cpu_seconds": 0.12776799999999996,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g2-d3-twist",
+      "method": "sympy-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 0.29226103000110015,
+      "status": "wrong_answer",
+      "solve_wall_seconds": 0.033600418999412796,
+      "solve_cpu_seconds": 0.03359799999999999,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "actual_output": {
+        "geometric_maps": 0,
+        "rational_maps": []
+      },
+      "expected_output": {
+        "geometric_maps": 2,
+        "rational_maps": []
+      }
+    },
+    {
+      "case": "g1-d5-cover",
+      "method": "corrected-dense-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 0.3022321620010189,
+      "status": "complete",
+      "solve_wall_seconds": 0.06662801199854584,
+      "solve_cpu_seconds": 0.06662599999999999,
+      "geometric_marks": 4,
+      "support_sha256": "d546e82d38665340b35aceea51a296df9d04f553e717d9d2c889dfde855745cb"
+    },
+    {
+      "case": "g3-d5-cover",
+      "method": "crest",
+      "replicate": 2,
+      "process_wall_seconds": 0.4695985970029142,
+      "status": "complete",
+      "solve_wall_seconds": 0.22314025000014226,
+      "solve_cpu_seconds": 0.223133,
+      "geometric_marks": 2,
+      "support_sha256": "00e9682f854414a9757a2b2a85da9178e287d3803e383fd4c4a11005ad14b2b8"
+    },
+    {
+      "case": "g3-d5-twist",
+      "method": "corrected-dense-decomposition",
+      "replicate": 2,
+      "process_wall_seconds": 0.39061073300035787,
+      "status": "complete",
+      "solve_wall_seconds": 0.12303949700071826,
+      "solve_cpu_seconds": 0.12303700000000001,
+      "geometric_marks": 2,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g3-d5-twist",
+      "method": "singular",
+      "replicate": 2,
+      "process_wall_seconds": 1.4259140040012426,
+      "status": "complete",
+      "solve_wall_seconds": 1.1596445930008485,
+      "solve_cpu_seconds": 1.1595820000000001,
+      "geometric_marks": 2,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "case": "g1-d3-perturbed",
+      "method": "singular",
+      "replicate": 2,
+      "process_wall_seconds": 0.3556384869989415,
+      "status": "complete",
+      "solve_wall_seconds": 0.07746409199899063,
+      "solve_cpu_seconds": 0.07746,
+      "geometric_marks": 0,
+      "support_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  ],
+  "outputs": {
+    "g1-d1-cover": {
+      "geometric_maps": 2,
+      "rational_maps": [
+        {
+          "u": [
+            "-1",
+            "4/3"
+          ],
+          "v_over_y": [
+            "-3/2"
+          ],
+          "degree": 1
+        },
+        {
+          "u": [
+            "-1",
+            "4/3"
+          ],
+          "v_over_y": [
+            "3/2"
+          ],
+          "degree": 1
+        }
+      ]
+    },
+    "g1-d1-twist": {
+      "geometric_maps": 2,
+      "rational_maps": []
+    },
+    "g1-d1-perturbed": {
+      "geometric_maps": 0,
+      "rational_maps": []
+    },
+    "g1-d3-cover": {
+      "geometric_maps": 2,
+      "rational_maps": [
+        {
+          "u": [
+            "-2",
+            "-1",
+            "-3/2",
+            "4"
+          ],
+          "v_over_y": [
+            "-3/2"
+          ],
+          "degree": 3
+        },
+        {
+          "u": [
+            "-2",
+            "-1",
+            "-3/2",
+            "4"
+          ],
+          "v_over_y": [
+            "3/2"
+          ],
+          "degree": 3
+        }
+      ]
+    },
+    "g1-d3-twist": {
+      "geometric_maps": 2,
+      "rational_maps": []
+    },
+    "g1-d3-perturbed": {
+      "geometric_maps": 0,
+      "rational_maps": []
+    },
+    "g1-d5-cover": {
+      "geometric_maps": 4,
+      "rational_maps": [
+        {
+          "u": [
+            "1/2",
+            "3",
+            "2",
+            "1",
+            "1",
+            "4/3"
+          ],
+          "v_over_y": [
+            "-3/2"
+          ],
+          "degree": 5
+        },
+        {
+          "u": [
+            "1/2",
+            "3",
+            "2",
+            "1",
+            "1",
+            "4/3"
+          ],
+          "v_over_y": [
+            "3/2"
+          ],
+          "degree": 5
+        }
+      ]
+    },
+    "g1-d5-twist": {
+      "geometric_maps": 4,
+      "rational_maps": []
+    },
+    "g1-d5-perturbed": {
+      "geometric_maps": 0,
+      "rational_maps": []
+    },
+    "g2-d3-cover": {
+      "geometric_maps": 2,
+      "rational_maps": [
+        {
+          "u": [
+            "2",
+            "0",
+            "-2",
+            "1"
+          ],
+          "v_over_y": [
+            "-3/2"
+          ],
+          "degree": 3
+        },
+        {
+          "u": [
+            "2",
+            "0",
+            "-2",
+            "1"
+          ],
+          "v_over_y": [
+            "3/2"
+          ],
+          "degree": 3
+        }
+      ]
+    },
+    "g2-d3-twist": {
+      "geometric_maps": 2,
+      "rational_maps": []
+    },
+    "g2-d3-perturbed": {
+      "geometric_maps": 0,
+      "rational_maps": []
+    },
+    "g3-d5-cover": {
+      "geometric_maps": 2,
+      "rational_maps": [
+        {
+          "u": [
+            "-2",
+            "-3/2",
+            "-3",
+            "-3",
+            "1/2",
+            "2/3"
+          ],
+          "v_over_y": [
+            "-3/2"
+          ],
+          "degree": 5
+        },
+        {
+          "u": [
+            "-2",
+            "-3/2",
+            "-3",
+            "-3",
+            "1/2",
+            "2/3"
+          ],
+          "v_over_y": [
+            "3/2"
+          ],
+          "degree": 5
+        }
+      ]
+    },
+    "g3-d5-twist": {
+      "geometric_maps": 2,
+      "rational_maps": []
+    },
+    "g3-d5-perturbed": {
+      "geometric_maps": 0,
+      "rational_maps": []
+    },
+    "g4-d7-cover": {
+      "geometric_maps": 2,
+      "rational_maps": [
+        {
+          "u": [
+            "1",
+            "1",
+            "-3/2",
+            "-3/2",
+            "0",
+            "1",
+            "3",
+            "1"
+          ],
+          "v_over_y": [
+            "-3/2"
+          ],
+          "degree": 7
+        },
+        {
+          "u": [
+            "1",
+            "1",
+            "-3/2",
+            "-3/2",
+            "0",
+            "1",
+            "3",
+            "1"
+          ],
+          "v_over_y": [
+            "3/2"
+          ],
+          "degree": 7
+        }
+      ]
+    },
+    "g4-d7-twist": {
+      "geometric_maps": 2,
+      "rational_maps": []
+    },
+    "g4-d7-perturbed": {
+      "geometric_maps": 0,
+      "rational_maps": []
+    }
+  },
+  "summary": {
+    "crest": {
+      "cases_completed_twice": 18,
+      "total_cases": 18,
+      "timeouts": 0,
+      "errors": 0,
+      "median_cpu_seconds": 0.08409999999999998,
+      "wrong_answers": 0
+    },
+    "singular": {
+      "cases_completed_twice": 15,
+      "total_cases": 18,
+      "timeouts": 6,
+      "errors": 0,
+      "median_cpu_seconds": 0.14770149999999999,
+      "wrong_answers": 0
+    },
+    "sympy-decomposition": {
+      "cases_completed_twice": 8,
+      "total_cases": 18,
+      "timeouts": 0,
+      "errors": 0,
+      "median_cpu_seconds": 0.052867999999999984,
+      "wrong_answers": 20
+    },
+    "corrected-dense-decomposition": {
+      "cases_completed_twice": 18,
+      "total_cases": 18,
+      "timeouts": 0,
+      "errors": 0,
+      "median_cpu_seconds": 0.07128475000000001,
+      "wrong_answers": 0
+    }
+  },
+  "completed": true,
+  "dependencies_unchanged": true,
+  "completed_utc": "2026-11-23T22:31:33.717571+00:00"
+}

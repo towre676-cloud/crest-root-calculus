@@ -2,13 +2,23 @@
 
 **23 November 2026.** The degree-four search recovers a map from a smooth quartic equation and proves that it stays primitive over an algebraic closure. One example has nineteen geometric degree-four classes. Fifteen factor through double covers, and four are primitive. In degree three the same source has four classes, all defined over $\mathbb Q(\sqrt{-2})$. On an infinite family, all primitive maps in every degree can be counted, and a single curve admits primitive maps of arbitrarily large degree. [Degree-four construction](elliptic-quotients/primitive-degree-four/README.md) · [The nineteen classes](elliptic-quotients/a3-spectrum/README.md) · [All-degree family theorem](elliptic-quotients/primitive-degree-spectrum/README.md)
 
+## Finite map reconstruction and solver comparisons
+
+The reconstruction engine now computes every nonconstant rational morphism between two supplied smooth hyperelliptic curves when the target has genus at least two. It supports both odd- and even-degree equations and derives the complete degree list from Riemann–Hurwitz. A finite coefficient algebra supplies the reconstruction bounds. The output includes exact map formulas, local lifting records and checks against the original equations. An optional Frobenius test can exclude rational maps in every degree before elimination. [The theorem, implementation and examples](bounded-correspondences/README.md)
+
+For elliptic targets, a second theorem handles every map whose entire fibre over the selected infinity is the source infinity. The genus-two case reduces to two equations of degrees four and six in one scale parameter. An independently checked degree-two cover with two points over infinity has exactly eight geometric maps and two rational maps. A curve without real points has all 24 geometric and eight rational automorphisms reconstructed. These counts refer to maps to the specified target, with opposite vertical signs counted separately. [Cubic classification](bounded-correspondences/cubic-proof.md) · [The unramified cover](bounded-correspondences/unramified-example.md)
+
+The performance study uses separately selected inputs and equal resource limits to compare the marked-quartic solver with Singular and SymPy, polynomial-cover reconstruction with specialized functional decomposition, and local zeta calculations with PARI/GP. A verified counterexample exposes a coefficient-recurrence error in SymPy 1.14.0. The comparison retains the unmodified solver's wrong answers and also measures a separately labelled corrected classical recurrence. Raw timings, timeouts, incorrect outputs and exact checks are included. [Controlled solver comparisons](solver-comparison/README.md)
+
+The complete root datum can still lose information needed for rational existence. Two explicit finite solution spaces have identical counts at every good prime and every extension degree, while their rational-point counts are zero and two. The proof identifies the lost multiplication and Galois-orbit information. The finite-algebra reconstruction theorem specifies the additional data it uses. [An exact all-prime obstruction](local-pattern-obstruction/README.md) · [Nine-page introductory essay](../downloads/crest-root-introduction.pdf)
+
 ## Results from the priority research
 
 | Register | Result | Evidence |
 |---|---|---|
 | G01 | Complete geometric chart-I solutions and original-generator cofactor certificates at a specified rational mark, with an extension to algebraic marks. | [Cofactors and replay](chart-one-cofactors/README.md) |
 | G05 | Riemann–Roch spaces for rational signed divisors on embedded curves, symmetric-power searches and a recovered genus-one quotient on a curve without real points. | [Point-free engine](point-free-riemann-roch/README.md) |
-| F01 | Complete rational Richelot recognition from genus-two equations, exact Hom lattices in worked cases, and all-prime rational isogeny spectra for a varying family. General motives remain open. | [Correspondences](local-global-correspondences/README.md) |
+| F01 | Complete rational Richelot recognition and all-degree isogeny spectra in the recorded families. A finite-algebra engine now reconstructs every morphism between supplied hyperelliptic curves with target genus at least two. General motives remain open. | [Correspondences](local-global-correspondences/README.md) · [Finite map reconstruction](bounded-correspondences/README.md) |
 | F07 | The genus-37 Jacobian from §61 has rank between 45 and 64. All 15 character factors have bounds, with exact answers for four of the six genus-two factors. | [Sector table and two-descent](genus37-rank/README.md) |
 | G06, G11, F12 | An infinite family of quartics has genus-one degrees exactly $2n^2,4n^2$ over the rationals and pointed elliptic degrees exactly $4n^2,8n^2$. | [Index-four descent](elliptic-quotients/index-four-descent/README.md) |
 | P02 | The public Part XXX edition matches the archive through §148, including its internal links. | [Read the monograph](https://towre676-cloud.github.io/crest-root-calculus/) · [Publication verification](monograph-publication/README.md) |
@@ -56,10 +66,14 @@ python -m pip install numpy "sympy>=1.12,<2"
 python research/replay.py
 ```
 
-On Windows, `py` can replace `python`. The replay includes the original twelve-row solver with its historical limits, both positive and negative controls, new coefficient-only searches and exact agreement with the saved receipts. The default checks every dimension and separation certificate and rebuilds selected higher-support matrices. Add `--recount --workers 4` to rebuild every archived higher-support observation. The optional C++17 count over the field of 214,358,881 elements uses about 2.2 GB of table storage. The individual programs can also run separately.
+On Windows, `py` can replace `python`. The replay runs 31 verification groups, including the original twelve-row solver with its historical limits, both positive and negative controls, new coefficient-only searches, finite-map certificates and the stored comparison receipts. The default checks every dimension and separation certificate and rebuilds selected higher-support matrices. Add `--recount --workers 4` to rebuild every archived higher-support observation. The optional C++17 count over the field of 214,358,881 elements uses about 2.2 GB of table storage. The individual programs can also run separately. Repeating the timed comparisons requires the native solvers and POSIX environment described in the [comparison instructions](solver-comparison/README.md).
 
 | To use a research program | Command from the repository root |
 |---|---|
+| Recover every rational map to a supplied hyperelliptic target of genus at least two | `python research/bounded-correspondences/rational_maps.py research/bounded-correspondences/examples/mobius.json` |
+| Recover every map with a singleton infinity fibre, including an elliptic target | `python research/bounded-correspondences/maps.py research/bounded-correspondences/examples/cubic.json` |
+| Replay the exact map certificates and exclusion controls | `python research/bounded-correspondences/verify.py` |
+| Verify the three solver-comparison studies and recompute their mathematical outputs | `python research/solver-comparison/verify.py --recompute` |
 | List all geometric double quotients and their equations | `python research/elliptic-quotients/involution-atlas/classify.py research/elliptic-quotients/row-36518/quartic.json` |
 | Discover a primitive degree-four map | `python research/elliptic-quotients/primitive-degree-four/search.py research/elliptic-quotients/primitive-degree-four/sheared.json --all-rational-centers` |
 | Generate the general primitive degree-four equations on one chart | `python research/elliptic-quotients/degree-four-incidence/incidence.py research/elliptic-quotients/primitive-degree-four/ciani.json 2 --singular chart2.sing` |

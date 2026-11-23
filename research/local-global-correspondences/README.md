@@ -57,6 +57,10 @@ a\equiv1\pmod{30\,557\,478\,886\,935}
 $$
 the **complete rational spectrum** consists of the degrees $n^4$ and $4n^4$, with one class in each. All four conclusions hold on the last progression. It contains infinitely many geometric isomorphism classes. Every rational quadratic twist of any source with the all-prime conclusion has the same degrees, with the corresponding twists as its two rational targets. [Family, semistability and all-prime proof](arithmetic.md) · [Symbolic family verification](family.py)
 
+## General finite map reconstruction
+
+The companion reconstruction engine uses the full finite coefficient algebra to derive its local lifting precision and recover every rational parameter point. For two supplied smooth hyperelliptic curves with target genus at least two, a complete rational-function incidence and a genus bound cover every nonconstant morphism. It also treats elliptic targets in the specified infinity-fibre class. These results extend the available constructive methods alongside the polarized Richelot correspondences developed here. [General theorem, equations and replay](../bounded-correspondences/README.md)
+
 ## Reproduction
 
 Install SymPy and NumPy. From this directory run

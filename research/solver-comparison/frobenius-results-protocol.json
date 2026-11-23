@@ -1,0 +1,53 @@
+{
+  "scope": "complete local zeta numerator of a smooth hyperelliptic curve",
+  "panel_sha256": "56a37eba9c3094d3ee58cc5cc5abe830652368fec736917dd255244b1a946e49",
+  "worker_sha256": "4a9ce576274b4ba8cd9ae300f241993e3b3675c3313d618f8d65c65a8a401c78",
+  "research_source_sha256": {
+    "bounded-correspondences/frobenius_filter.py": "3746aff30d95e081fee25bf2150dfd38c7dac0cda55cb68f848404313ca7af9f",
+    "cubic-tower-factors/field.py": "e3e5b7d87fde419d5271de69aa8a4d7a5969e2d2bde4b735e196002746084680",
+    "cubic-tower-factors/tower.py": "59a5fe17b8af7310f20aaca71729e48d7ecb2d8e1367572529b65dad79d69d24",
+    "bounded-correspondences/finite.py": "71a8dc5d7b61b50aa3c84e232a19e63e1d5696e6345658e2cc574919d5cdc40f",
+    "solver-comparison/worker.py": "16b6fb907f7135511d5d69300619237079e3d237f957cef6ca76c658282d974a",
+    "solver-comparison/benchmark.py": "e23092230e59f396060be66ae8544093cddcea49131b477139e69ffbdbfadf53"
+  },
+  "methods": [
+    "crest-direct",
+    "pari"
+  ],
+  "replicates": 2,
+  "worker_cpu": 8,
+  "field_element_budget": 2000000,
+  "cohorts": {
+    "small-prime": [
+      "g2-d5-p5",
+      "g2-d5-p7",
+      "g2-d5-p11",
+      "g3-d7-p5",
+      "g3-d7-p7",
+      "g3-d7-p11",
+      "g4-d9-p5",
+      "g4-d9-p7",
+      "g4-d9-p11",
+      "g2-d6-p5",
+      "g3-d8-p7",
+      "g4-d10-p11"
+    ],
+    "large-field": [
+      "g2-d5-p1009",
+      "g3-d7-p97",
+      "g4-d9-p31"
+    ]
+  },
+  "cohort_definition": "The12originalsmall-primecasesand3larger-fieldcasesarefixedbeforetiming. Maximumextensionordersinthelatterare1009^2,97^3and31^4.",
+  "per_process_wall_limit_seconds": 10,
+  "memory_limit_bytes": 4294967296,
+  "timing": "Serial fresh processes. Includes curve validation, all field construction and complete zeta numerator. PARI invocation and decoding are included. Imports excluded from solver timer and included in process wall.",
+  "cpu_timer": "POSIX getrusage user plus system time for the Python worker and reaped children; returned in seconds with microsecond precision. The GP millisecond timer is not used.",
+  "normalization": "The descending coefficients of PARI characteristic polynomial are the ascending coefficients of the zeta numerator. Extension counts recovered by Newton identities.",
+  "pari": "2.17.2",
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "numpy": "2.3.5",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "created_utc": "2026-11-23T22:35:48.762398+00:00"
+}

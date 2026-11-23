@@ -65,7 +65,10 @@ def main():
     run(ELLIPTIC / "index-four-descent/verify.py", "receipt.json")
     run(HERE / "genus37-rank/verify.py", "receipt.json")
     run(HERE / "monograph-publication/verify.py", "receipt.json")
-    print("All 28 research verification groups passed.")
+    run(HERE / "bounded-correspondences/verify.py")
+    run(HERE / "local-pattern-obstruction/verify.py", "receipt.json")
+    run(HERE / "solver-comparison/verify.py")
+    print("All 31 research verification groups passed.")
 
 
 if __name__ == "__main__":

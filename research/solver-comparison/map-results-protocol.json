@@ -1,0 +1,53 @@
+{
+  "scope": "all rational maps u=U(x), v=c*y with deg U=deg F/deg G, plus exact geometric map count",
+  "panel_sha256": "39bd424b18d4c3e964fb0f202a51bb6e704069eba86a4401797876181f459130",
+  "worker_sha256": "01c136027d090f8196d4abde83a6485d8685605268952ae35e7b86caaa4c9daa",
+  "runner_sha256": "a94dd522b967725691631efcf696a655e48490364eb93445829307c5e1a66d97",
+  "research_source_sha256": {
+    "bounded-correspondences/composition.py": "df08f6b5b57d73066d5626df4b5e0a4c46ae3ca79168ea7f7370c7ef5b8035f2",
+    "bounded-correspondences/finite.py": "71a8dc5d7b61b50aa3c84e232a19e63e1d5696e6345658e2cc574919d5cdc40f",
+    "bounded-correspondences/maps.py": "c9b71976ae05dbf2d541e62864ebd20ff95273201cd3cc220183e6e9440433e2",
+    "solver-comparison/worker.py": "16b6fb907f7135511d5d69300619237079e3d237f957cef6ca76c658282d974a",
+    "solver-comparison/benchmark.py": "e23092230e59f396060be66ae8544093cddcea49131b477139e69ffbdbfadf53"
+  },
+  "reference_file": "map-results-reference.json",
+  "reference_sha256": "8c1c2de45fd7873c671bf43e3d8beed39cc0edeef8d180da2193b0c6667284a8",
+  "methods": [
+    "crest",
+    "singular",
+    "sympy-decomposition",
+    "corrected-dense-decomposition"
+  ],
+  "replicates": 2,
+  "per_process_wall_limit_seconds": 10.0,
+  "memory_limit_bytes": 4294967296,
+  "worker_cpu": 8,
+  "timing": "Serial fresh processes. Solver timer starts after imports and includes curve validation, coefficient construction, elimination, extraction of all rational maps and exact curve identities. Process wall includes interpreter startup. Frozen reference construction and verification are untimed.",
+  "order": "Two seeded shuffles of every case/method pair, seed 76124.",
+  "baseline": "Singular receives the full coefficient ideal G(U)=F*c^2 with inverse*u_d=1 and uses heuristic groebner in dp, radical and FGLM. Stock SymPy uses the fixed-degree dense routines underlying public decompose. The separately labelled corrected-dense-decomposition changes the right-component recurrence to i-(r+1)*j and retains the same dense division and residual equations. It is a project-side correction, not stock SymPy.",
+  "correctness": "Every output is compared with the frozen, independently replayed exact reference. Incorrect outputs retain their actual values and runtimes with status wrong_answer. They do not count as completed correct answers and do not enter paired speed ratios.",
+  "shared_extraction": {
+    "algorithm": "The three decomposition methods use the same exact residual affine equations and rational-point engine.",
+    "engine": "SymPy",
+    "native_executable": null
+  },
+  "platform": {
+    "python": "3.12.14",
+    "sympy": "1.14.0",
+    "singular": "Singular for x86_64-Linux version 4.4.1 (44100, 64 bit) Jan 2025",
+    "os": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "cpu": "AMD EPYC 9V74 80-Core Processor",
+    "cpu_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "created_utc": "2026-11-23T22:29:23.603005+00:00"
+}

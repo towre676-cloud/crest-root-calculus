@@ -1,0 +1,137 @@
+{
+  "schema": 1,
+  "sympy_version": "1.14.0",
+  "module": "sympy/polys/densetools.py",
+  "installed_module_sha256": "034675135e9e571e7bef3c3ce26f0a6604f9a3a75b0d75e89d6f13a9f2122596",
+  "installed_right_helper_sha256": "5487d21b0999b256228c1c4848219ad238350f4cdfd33bdc931f23f1a528376d",
+  "minimal_counterexample": {
+    "source": [
+      "1",
+      "0",
+      "0",
+      "0",
+      "4",
+      "4",
+      "1"
+    ],
+    "squarefree": true,
+    "exact_inner": [
+      "0",
+      "0",
+      "2",
+      "1"
+    ],
+    "exact_outer": [
+      "1",
+      "0",
+      "1"
+    ],
+    "stock_public_decomposition": [
+      [
+        "1",
+        "0",
+        "0",
+        "0",
+        "4",
+        "4",
+        "1"
+      ]
+    ],
+    "stock_fixed_degree_inner": [
+      "0",
+      "2",
+      "2",
+      "1"
+    ],
+    "stock_fixed_degree_outer": null,
+    "corrected_monic_zero_constant_inner": [
+      "0",
+      "0",
+      "2",
+      "1"
+    ],
+    "public_missed_nontrivial_decomposition": true
+  },
+  "benchmark_counterexample": {
+    "source": [
+      "-352/9",
+      "0",
+      "832/9",
+      "-416/9",
+      "-512/9",
+      "512/9",
+      "-640/9",
+      "256/3",
+      "128/3",
+      "-1472/9",
+      "896/9",
+      "256/9",
+      "-592/9",
+      "320/9",
+      "-80/9",
+      "8/9"
+    ],
+    "squarefree": true,
+    "exact_inner": [
+      "2",
+      "0",
+      "-2",
+      "1"
+    ],
+    "exact_outer": [
+      "-32/9",
+      "-32/9",
+      "0",
+      "0",
+      "-32/9",
+      "8/9"
+    ],
+    "stock_public_decomposition": [
+      [
+        "-352/9",
+        "0",
+        "832/9",
+        "-416/9",
+        "-512/9",
+        "512/9",
+        "-640/9",
+        "256/3",
+        "128/3",
+        "-1472/9",
+        "896/9",
+        "256/9",
+        "-592/9",
+        "320/9",
+        "-80/9",
+        "8/9"
+      ]
+    ],
+    "stock_fixed_degree_inner": [
+      "0",
+      "2",
+      "-2",
+      "1"
+    ],
+    "stock_fixed_degree_outer": null,
+    "corrected_monic_zero_constant_inner": [
+      "0",
+      "0",
+      "-2",
+      "1"
+    ],
+    "public_missed_nontrivial_decomposition": true,
+    "id": "g2-d3-twist",
+    "target": [
+      "-4",
+      "-4",
+      "0",
+      "0",
+      "-4",
+      "1"
+    ],
+    "vertical_scale_squared": "9/8",
+    "affine_scale_eliminant": "a - 1",
+    "geometric_maps": 2,
+    "rational_maps": 0
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "schema": 1,
+  "seed": 2026112323,
+  "scope": "complete local zeta numerator of a smooth hyperelliptic curve",
+  "selection_rule": "Twelve seeded coefficient inputs, genera2\u20134, primes5/7/11, nine odd-degree and three even-degree models. Reject bad reduction only.",
+  "cases": [
+    {
+      "id": "g2-d5-p5",
+      "genus": 2,
+      "source": [
+        -4,
+        -2,
+        2,
+        3,
+        -1,
+        2
+      ],
+      "prime": 5
+    },
+    {
+      "id": "g2-d5-p7",
+      "genus": 2,
+      "source": [
+        0,
+        -4,
+        3,
+        -2,
+        -3,
+        2
+      ],
+      "prime": 7
+    },
+    {
+      "id": "g2-d5-p11",
+      "genus": 2,
+      "source": [
+        4,
+        -1,
+        2,
+        1,
+        -3,
+        1
+      ],
+      "prime": 11
+    },
+    {
+      "id": "g3-d7-p5",
+      "genus": 3,
+      "source": [
+        0,
+        1,
+        -3,
+        -4,
+        0,
+        0,
+        0,
+        3
+      ],
+      "prime": 5
+    },
+    {
+      "id": "g3-d7-p7",
+      "genus": 3,
+      "source": [
+        1,
+        4,
+        1,
+        0,
+        0,
+        -2,
+        1,
+        2
+      ],
+      "prime": 7
+    },
+    {
+      "id": "g3-d7-p11",
+      "genus": 3,
+      "source": [
+        -4,
+        1,
+        0,
+        -4,
+        1,
+        -1,
+        3,
+        3
+      ],
+      "prime": 11
+    },
+    {
+      "id": "g4-d9-p5",
+      "genus": 4,
+      "source": [
+        -1,
+        -2,
+        2,
+        -1,
+        -2,
+        2,
+        -4,
+        -4,
+        1,
+        1
+      ],
+      "prime": 5
+    },
+    {
+      "id": "g4-d9-p7",
+      "genus": 4,
+      "source": [
+        1,
+        3,
+        -2,
+        -1,
+        -3,
+        3,
+        -3,
+        3,
+        3,
+        1
+      ],
+      "prime": 7
+    },
+    {
+      "id": "g4-d9-p11",
+      "genus": 4,
+      "source": [
+        -3,
+        -4,
+        1,
+        -2,
+        -4,
+        4,
+        3,
+        1,
+        -3,
+        3
+      ],
+      "prime": 11
+    },
+    {
+      "id": "g2-d6-p5",
+      "genus": 2,
+      "source": [
+        -3,
+        4,
+        2,
+        -2,
+        4,
+        1,
+        1
+      ],
+      "prime": 5
+    },
+    {
+      "id": "g3-d8-p7",
+      "genus": 3,
+      "source": [
+        -1,
+        -3,
+        0,
+        2,
+        0,
+        -1,
+        -2,
+        -1,
+        2
+      ],
+      "prime": 7
+    },
+    {
+      "id": "g4-d10-p11",
+      "genus": 4,
+      "source": [
+        -4,
+        4,
+        4,
+        2,
+        -4,
+        -1,
+        -3,
+        2,
+        2,
+        2,
+        3
+      ],
+      "prime": 11
+    }
+  ]
+}
