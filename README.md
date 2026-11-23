@@ -321,7 +321,7 @@ The integrated research archive is unusually large because it keeps historical w
 
 ## The 57 research questions
 
-The research register now gives an equation-only procedure for finding every primitive degree-four elliptic map on a smooth plane quartic over the algebraic closure. On one example, all four primitive maps have explicit formulas. An entire coefficient class modulo 35 has no elliptic maps in any degree. In the stage-ten cubic tower, exact Frobenius traces certify at least 2,047 distinct simple isogeny classes over the rationals. The full geometric decomposition remains open. [Research results and replay](research/README.md) · [57-item register](research/backlog-2026-11-23.md) · [Download the complete research packet](downloads/crest-root-open-research-2026-11-23.zip)
+Two new quartic equations now have complete answers for their elliptic quotients. One has a unique primitive map of degree four and no involutions. The other has a double cover and two primitive degree-four maps. Both results extend to infinite families. In the cubic tower, the genus-10,207 seventh-stage Jacobian has 255 geometrically simple, pairwise nonisogenous factors. At stage ten, 1,293 of the 2,047 displayed factors are individually certified geometrically simple and pairwise nonisogenous. A separate calculation at 193 raises the stage-ten lower bound to 1,599 distinct geometric simple classes. The archive contains the equations and verification programs for both problems. [Research results and replay](research/README.md) · [57-item register](research/backlog-2026-11-23.md) · [Verified research packet](downloads/crest-root-open-research-2026-11-23.zip)
 
 ## What is proved, and what remains difficult?
 

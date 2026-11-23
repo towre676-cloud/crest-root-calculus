@@ -1,0 +1,11 @@
+{
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "positive_status": "unique primitive elliptic quotient in all degrees",
+  "certificate_seconds": 7.037,
+  "raw_chart": 2,
+  "raw_wall_budget_seconds": 90,
+  "raw_address_limit_MiB": 1024,
+  "raw_status": "wall budget reached",
+  "raw_seconds": 90.106
+}

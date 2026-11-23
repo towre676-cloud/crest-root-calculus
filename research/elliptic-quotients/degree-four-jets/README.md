@@ -60,4 +60,4 @@ python reconstruct.py example.json
 python verify.py
 ```
 
-In an input file, `chart` lists $[i,j,c]$ for the term $c\,t^i s^j$. The chart must have smooth projective closure, pass through the origin and satisfy $F_s(0,0)\ne0$. The entries in `parameters` are $u,v,A,B$, given as integers or exact rational strings. A negative test here concerns that normalized tuple. Finding every tuple on a fresh positive quartic by unrestricted symbolic elimination remains a computational challenge.
+In an input file, `chart` lists $[i,j,c]$ for the term $c\,t^i s^j$. The chart must have smooth projective closure, pass through the origin and satisfy $F_s(0,0)\ne0$. The entries in `parameters` are $u,v,A,B$, given as integers or exact rational strings. A negative test here concerns that normalized tuple. A later modular search recovers both primitive maps on a new positive input by these jets and an independent geometric upper bound. [Complete modular benchmark](../cartier-degree-four/README.md)

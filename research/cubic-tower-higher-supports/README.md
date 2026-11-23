@@ -4,6 +4,8 @@ The genus-393,661 tenth-stage Jacobian has at least **2,047 distinct simple isog
 
 A separate calculation gives the full genus-55 third-stage zeta numerator modulo 3 at 11 and both degree-24 Frobenius polynomials modulo 3 for all 120 three-index supports at 41. The underlying congruence applies at every stage and every simultaneous good prime $p>3$. [Coefficients and point counts](mod-three.json)
 
+Subsequent computations determine the geometric simple factors through the [seventh tower stage](../cubic-tower-stage-seven/README.md) and give new integral coefficients for genus 55. [Cartier matrices and zeta data](../cubic-tower-cartier/README.md) · [Geometric separation](../cubic-tower-geometric-separation/README.md) · [Five- and six-index computations](../cubic-tower-size-five/README.md)
+
 ## Frobenius rank over the rationals
 
 Take the factors $B_j$ to be the base and the two factors $A_S^\pm$ for each nonempty subset of $\{0,\ldots,9\}$. At a simultaneous good prime $p$, put $M_{pj}=\operatorname{Tr}(F_p\mid H^1(B_j))$. The 2,055 rows come from the first simultaneous good primes in increasing order, from 41 through 18,329. The first column is the elliptic base. For each increasing nonzero binary mask, with bit $i$ representing index $i$, the positive and negative traces follow, in that order. The matrix has rank **2,047 modulo 127**. Hence it also has 2,047 independent columns over $\mathbb Q$. [Portable rank verifier](prime_rank.py)
