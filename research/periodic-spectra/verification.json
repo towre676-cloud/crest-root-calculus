@@ -1,0 +1,45 @@
+{
+  "inputs": 20,
+  "planned_rows": 240,
+  "cold_and_batch_observations": 650,
+  "statuses": {
+    "complete": 240
+  },
+  "actual_periods": {
+    "spring-m1-L24": 1,
+    "spring-m1-L96": 1,
+    "spring-m1-L384": 1,
+    "spring-m2-L24": 2,
+    "spring-m2-L96": 2,
+    "spring-m2-L384": 2,
+    "spring-m3-L24": 3,
+    "spring-m3-L96": 3,
+    "spring-m3-L384": 3,
+    "spring-m4-L24": 4,
+    "spring-m4-L96": 4,
+    "spring-m4-L384": 4,
+    "hidden-period-L192": 3,
+    "large-coefficients-L96": 3,
+    "prime-repeat-L183": 3,
+    "single-defect-L24": 24,
+    "single-defect-L96": 96,
+    "single-defect-L384": 384,
+    "aperiodic-L24": 24,
+    "aperiodic-L96": 96
+  },
+  "all_coefficients_independently_recomputed": true,
+  "model_controls": {
+    "exact_model_cases": 33,
+    "direct_symbolic_determinants": 17,
+    "symbolic_characteristic_polynomials": 16,
+    "altered_outputs_rejected": 33,
+    "malformed_matrices_rejected": 9,
+    "spring_energy_controls": 6
+  },
+  "spectral_curve_controls": {
+    "universal_identity_checks": 12,
+    "examples": 5,
+    "checks_passed": true
+  },
+  "altered_study_receipts_rejected": 6
+}

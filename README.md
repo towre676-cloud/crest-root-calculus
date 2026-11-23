@@ -329,6 +329,12 @@ Given two smooth hyperelliptic equations with a target of genus at least two, th
 
 The new solver study compares complete answers under matching conditions across marked quartics, polynomial covers and local zeta functions. It includes native Singular, SymPy's functional decomposition and PARI/GP, with raw timings and time limits. [Measured comparisons](research/solver-comparison/README.md) · [Why complete point counts can still miss rational existence](research/local-pattern-obstruction/README.md)
 
+## Periodic materials: a measured challenge against PARI
+
+The new periodic-spectra module computes the entire exact characteristic polynomial of an integer spring ring, discovers its actual repeated cell, and verifies every coefficient independently. Across 20 fixed inputs, Crest beats PARI/GP's general matrix route on all 20, with a median CPU ratio of 31.9 in Crest's favor. The stronger control changes the verdict: compiled PARI using the same periodic reduction wins 19 of 20 inputs, including all 12 periodic spring systems. All 420 scheduled rows and 1,331 cold/batch observations are preserved, with no incorrect outputs or timeouts. [Proof, programs and candid comparison](research/periodic-spectra/README.md)
+
+The spectral-curve companion proves how repeating a cell can produce a degree-30 plane equation whose smooth normalization still has genus two. This is a classical identity, not a new higher-degree quotient theorem. The next challenge asks whether the project can discover and certify useful hidden quotient maps from expanded coefficients, with corrected classical decomposition and native PARI as baselines. The application assessment also sets out an exact reaction-diffusion challenge. [Next challenge and application priorities](research/periodic-spectra/opportunities.md) · [Focused download](downloads/crest-root-periodic-spectra-2026-11-23.zip) · [All research](downloads/crest-root-open-research-2026-11-23.zip)
+
 ## The 57 research questions
 
 The latest work settles the marked chart-I cofactor problem and delivers a Riemann–Roch engine for curves without a rational point. A genus-two solver reconstructs explicit correspondences from pairs of equations. On the genus-37 example from §61 the proven Mordell–Weil rank is now between 45 and 64, with four of the genus-two sector ranks determined exactly. The register tracks 10 settled items, 18 partial items, 27 open items and two dormant projects. [Latest results](research/README.md) · [Full status table](research/backlog-2026-11-23.md)

@@ -1,0 +1,21 @@
+{
+  "version": "2.19.1",
+  "source_url": "https://pari.math.u-bordeaux.fr/pub/pari/unix/pari-2.19.1.tar.gz",
+  "source_sha256": "419553b11ff8c3ecb8e9031b7d91d7cee003a5d721e685fcb499565c96fe2943",
+  "official_source_sha256": "419553b11ff8c3ecb8e9031b7d91d7cee003a5d721e685fcb499565c96fe2943",
+  "download_page": "https://pari.math.u-bordeaux.fr/download.html",
+  "configure_command": "./Configure --static --prefix=/tmp/crest-pari-2191/install --with-gmp --without-readline --graphic=none",
+  "build_command": "make -j4 gp",
+  "cflags": "-O3 -Wall -fno-strict-aliasing",
+  "compiler": "gcc (Debian 14.2.0-19) 14.2.0",
+  "gmp_version": "6.3.0",
+  "threading": "single",
+  "binary_path": "/tmp/crest-pari-2191/pari-2.19.1/Olinux-x86_64/gp-sta",
+  "binary_sha256": "d9be8bc062e506ebe76e0468fdc2964c344c3399c088b9957b45b87265c32b1c",
+  "upstream_tests": [
+    "dotest-charpoly",
+    "dotest-resultant"
+  ],
+  "upstream_test_result": "pass",
+  "version_output": "GP/PARI CALCULATOR Version 2.19.1 (released)\n          amd64 running linux (x86-64/GMP-6.3.0 kernel) 64-bit version\n          compiled: Nov 23 2026, gcc version 14.2.0 (Debian 14.2.0-19)\n                            threading engine: single\n               (readline not compiled in, extended help enabled)"
+}

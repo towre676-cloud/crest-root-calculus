@@ -1,0 +1,11 @@
+{
+  "id": "three-site-spring-example",
+  "diagonal": [3, 7, 7],
+  "bonds": [-1, -4, -2],
+  "repeats": 4,
+  "physical_model": {
+    "stiffness": [1, 4, 2],
+    "pinning": [0, 2, 1],
+    "mass": 1
+  }
+}

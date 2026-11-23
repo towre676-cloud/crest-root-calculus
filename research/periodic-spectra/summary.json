@@ -1,0 +1,1422 @@
+{
+  "scope": "Complete exact integer characteristic polynomial; synthetic cyclic Jacobi models, not measured materials or molecular energy data",
+  "pari_version": "2.19.1",
+  "replicates": 3,
+  "verification": {
+    "inputs": 20,
+    "planned_rows": 240,
+    "cold_and_batch_observations": 650,
+    "statuses": {
+      "complete": 240
+    },
+    "actual_periods": {
+      "spring-m1-L24": 1,
+      "spring-m1-L96": 1,
+      "spring-m1-L384": 1,
+      "spring-m2-L24": 2,
+      "spring-m2-L96": 2,
+      "spring-m2-L384": 2,
+      "spring-m3-L24": 3,
+      "spring-m3-L96": 3,
+      "spring-m3-L384": 3,
+      "spring-m4-L24": 4,
+      "spring-m4-L96": 4,
+      "spring-m4-L384": 4,
+      "hidden-period-L192": 3,
+      "large-coefficients-L96": 3,
+      "prime-repeat-L183": 3,
+      "single-defect-L24": 24,
+      "single-defect-L96": 96,
+      "single-defect-L384": 384,
+      "aperiodic-L24": 24,
+      "aperiodic-L96": 96
+    },
+    "all_coefficients_independently_recomputed": true
+  },
+  "method_statuses": {
+    "crest-cpp": {
+      "complete": 60
+    },
+    "pari-dense": {
+      "complete": 60
+    },
+    "pari-periodic-linear": {
+      "complete": 60
+    },
+    "pari-periodic-doubling": {
+      "complete": 60
+    }
+  },
+  "cases": {
+    "spring-m1-L24": {
+      "cohort": "periodic-springs",
+      "sites": 24,
+      "actual_period": 1,
+      "max_coefficient_bits": 31,
+      "methods": {
+        "crest-cpp": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 1.5237923541666665e-05,
+          "kernel_min_seconds": 1.5220874375e-05,
+          "kernel_max_seconds": 1.575381875e-05,
+          "cold_wall_median_seconds": 0.003925658002117416,
+          "cold_cpu_median_seconds": 0.003081999999999141
+        },
+        "pari-dense": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 4.9166666666666665e-05,
+          "kernel_min_seconds": 4.8750000000000006e-05,
+          "kernel_max_seconds": 5.7916666666666674e-05,
+          "cold_wall_median_seconds": 0.018894128003012156,
+          "cold_cpu_median_seconds": 0.018035999999980845
+        },
+        "pari-periodic-linear": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 4.2499999999999996e-05,
+          "kernel_min_seconds": 4.2499999999999996e-05,
+          "kernel_max_seconds": 4.9999999999999996e-05,
+          "cold_wall_median_seconds": 0.01915715699942666,
+          "cold_cpu_median_seconds": 0.018545999999986407
+        },
+        "pari-periodic-doubling": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 2.354166666666667e-05,
+          "kernel_min_seconds": 2.3333333333333332e-05,
+          "kernel_max_seconds": 2.875e-05,
+          "cold_wall_median_seconds": 0.019026347999897553,
+          "cold_cpu_median_seconds": 0.018245000000007394
+        }
+      }
+    },
+    "spring-m1-L96": {
+      "cohort": "periodic-springs",
+      "sites": 96,
+      "actual_period": 1,
+      "max_coefficient_bits": 130,
+      "methods": {
+        "crest-cpp": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.0002788385165562914,
+          "kernel_min_seconds": 0.00027612849295774645,
+          "kernel_max_seconds": 0.00027990774162679424,
+          "cold_wall_median_seconds": 0.0044472560002759565,
+          "cold_cpu_median_seconds": 0.0037169999999946413
+        },
+        "pari-dense": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.0017166666666666665,
+          "kernel_min_seconds": 0.0015833333333333333,
+          "kernel_max_seconds": 0.00175,
+          "cold_wall_median_seconds": 0.024082296000415226,
+          "cold_cpu_median_seconds": 0.023359999999996717
+        },
+        "pari-periodic-linear": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.00042083333333333333,
+          "kernel_min_seconds": 0.00040625000000000004,
+          "kernel_max_seconds": 0.00042083333333333333,
+          "cold_wall_median_seconds": 0.02210408000246389,
+          "cold_cpu_median_seconds": 0.01990599999999887
+        },
+        "pari-periodic-doubling": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 9.999999999999999e-05,
+          "kernel_min_seconds": 9.833333333333333e-05,
+          "kernel_max_seconds": 0.00010583333333333334,
+          "cold_wall_median_seconds": 0.02407759799825726,
+          "cold_cpu_median_seconds": 0.023558999999998775
+        }
+      }
+    },
+    "spring-m1-L384": {
+      "cohort": "periodic-springs",
+      "sites": 384,
+      "actual_period": 1,
+      "max_coefficient_bits": 529,
+      "methods": {
+        "crest-cpp": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.006158037181818182,
+          "kernel_min_seconds": 0.004939865125,
+          "kernel_max_seconds": 0.007442365233333333,
+          "cold_wall_median_seconds": 0.01265502100068261,
+          "cold_cpu_median_seconds": 0.011923000000003015
+        },
+        "pari-dense": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.156,
+          "kernel_min_seconds": 0.139,
+          "kernel_max_seconds": 0.177,
+          "cold_wall_median_seconds": 0.20399501300198608,
+          "cold_cpu_median_seconds": 0.20269700000000057
+        },
+        "pari-periodic-linear": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.007666666666666667,
+          "kernel_min_seconds": 0.0076,
+          "kernel_max_seconds": 0.010714285714285714,
+          "cold_wall_median_seconds": 0.02701705899744411,
+          "cold_cpu_median_seconds": 0.02624500000000296
+        },
+        "pari-periodic-doubling": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.0005166666666666667,
+          "kernel_min_seconds": 0.0004966666666666666,
+          "kernel_max_seconds": 0.0005166666666666667,
+          "cold_wall_median_seconds": 0.01984337400062941,
+          "cold_cpu_median_seconds": 0.019237000000003945
+        }
+      }
+    },
+    "spring-m2-L24": {
+      "cohort": "periodic-springs",
+      "sites": 24,
+      "actual_period": 2,
+      "max_coefficient_bits": 58,
+      "methods": {
+        "crest-cpp": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 8.907380052083333e-06,
+          "kernel_min_seconds": 8.719902552083334e-06,
+          "kernel_max_seconds": 1.0234126718749999e-05,
+          "cold_wall_median_seconds": 0.0037390049983514473,
+          "cold_cpu_median_seconds": 0.003067000000001485
+        },
+        "pari-dense": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 6.041666666666666e-05,
+          "kernel_min_seconds": 5.874999999999999e-05,
+          "kernel_max_seconds": 6.833333333333333e-05,
+          "cold_wall_median_seconds": 0.019920971000829013,
+          "cold_cpu_median_seconds": 0.019179000000001167
+        },
+        "pari-periodic-linear": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 3.270833333333333e-05,
+          "kernel_min_seconds": 3.1875e-05,
+          "kernel_max_seconds": 3.5625000000000005e-05,
+          "cold_wall_median_seconds": 0.020344683001894737,
+          "cold_cpu_median_seconds": 0.019533000000024003
+        },
+        "pari-periodic-doubling": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 2.7083333333333335e-05,
+          "kernel_min_seconds": 2.354166666666667e-05,
+          "kernel_max_seconds": 2.9374999999999996e-05,
+          "cold_wall_median_seconds": 0.018714385998464422,
+          "cold_cpu_median_seconds": 0.01815899999999715
+        }
+      }
+    },
+    "spring-m2-L96": {
+      "cohort": "periodic-springs",
+      "sites": 96,
+      "actual_period": 2,
+      "max_coefficient_bits": 237,
+      "methods": {
+        "crest-cpp": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.00017045923270440252,
+          "kernel_min_seconds": 0.00016336984897025172,
+          "kernel_max_seconds": 0.00017048798800000002,
+          "cold_wall_median_seconds": 0.004885169000772294,
+          "cold_cpu_median_seconds": 0.004131000000000995
+        },
+        "pari-dense": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.0054,
+          "kernel_min_seconds": 0.005357142857142857,
+          "kernel_max_seconds": 0.00585,
+          "cold_wall_median_seconds": 0.0259846330009168,
+          "cold_cpu_median_seconds": 0.025086999999999193
+        },
+        "pari-periodic-linear": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.00029166666666666664,
+          "kernel_min_seconds": 0.0002883333333333333,
+          "kernel_max_seconds": 0.0003775,
+          "cold_wall_median_seconds": 0.02162079600020661,
+          "cold_cpu_median_seconds": 0.02047500000000002
+        },
+        "pari-periodic-doubling": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 9.750000000000001e-05,
+          "kernel_min_seconds": 9.5e-05,
+          "kernel_max_seconds": 0.0001225,
+          "cold_wall_median_seconds": 0.020299404000979848,
+          "cold_cpu_median_seconds": 0.019680000000008135
+        }
+      }
+    },
+    "spring-m2-L384": {
+      "cohort": "periodic-springs",
+      "sites": 384,
+      "actual_period": 2,
+      "max_coefficient_bits": 954,
+      "methods": {
+        "crest-cpp": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.004171489685714286,
+          "kernel_min_seconds": 0.003354183086956522,
+          "kernel_max_seconds": 0.0042941195625,
+          "cold_wall_median_seconds": 0.008970238002802944,
+          "cold_cpu_median_seconds": 0.008169000000000093
+        },
+        "pari-dense": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 1.084,
+          "kernel_min_seconds": 1.056,
+          "kernel_max_seconds": 1.251,
+          "cold_wall_median_seconds": 1.1577619969975785,
+          "cold_cpu_median_seconds": 1.1434770000000043
+        },
+        "pari-periodic-linear": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.010142857142857143,
+          "kernel_min_seconds": 0.009428571428571429,
+          "kernel_max_seconds": 0.010750000000000001,
+          "cold_wall_median_seconds": 0.03446058400004404,
+          "cold_cpu_median_seconds": 0.03303099999999759
+        },
+        "pari-periodic-doubling": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.0007708333333333333,
+          "kernel_min_seconds": 0.00075,
+          "kernel_max_seconds": 0.0008458333333333334,
+          "cold_wall_median_seconds": 0.022176888996909838,
+          "cold_cpu_median_seconds": 0.02110999999999308
+        }
+      }
+    },
+    "spring-m3-L24": {
+      "cohort": "periodic-springs",
+      "sites": 24,
+      "actual_period": 3,
+      "max_coefficient_bits": 56,
+      "methods": {
+        "crest-cpp": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 8.85474328125e-06,
+          "kernel_min_seconds": 7.503050104166667e-06,
+          "kernel_max_seconds": 1.2422602708333332e-05,
+          "cold_wall_median_seconds": 0.004278672000509687,
+          "cold_cpu_median_seconds": 0.0035850000000010596
+        },
+        "pari-dense": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 6.041666666666666e-05,
+          "kernel_min_seconds": 5.666666666666667e-05,
+          "kernel_max_seconds": 6.375e-05,
+          "cold_wall_median_seconds": 0.01942218700060039,
+          "cold_cpu_median_seconds": 0.018844000000001415
+        },
+        "pari-periodic-linear": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 3.1875e-05,
+          "kernel_min_seconds": 2.9791666666666665e-05,
+          "kernel_max_seconds": 3.4375e-05,
+          "cold_wall_median_seconds": 0.018970354001794476,
+          "cold_cpu_median_seconds": 0.018370999999994808
+        },
+        "pari-periodic-doubling": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 2.5625e-05,
+          "kernel_min_seconds": 2.4583333333333332e-05,
+          "kernel_max_seconds": 2.6666666666666667e-05,
+          "cold_wall_median_seconds": 0.020533537997835083,
+          "cold_cpu_median_seconds": 0.019858999999998517
+        }
+      }
+    },
+    "spring-m3-L96": {
+      "cohort": "periodic-springs",
+      "sites": 96,
+      "actual_period": 3,
+      "max_coefficient_bits": 229,
+      "methods": {
+        "crest-cpp": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.00013958766615384616,
+          "kernel_min_seconds": 0.00013116272056239015,
+          "kernel_max_seconds": 0.0001690345618811881,
+          "cold_wall_median_seconds": 0.004446085000381572,
+          "cold_cpu_median_seconds": 0.0036319999999996355
+        },
+        "pari-dense": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.005050000000000001,
+          "kernel_min_seconds": 0.004958333333333333,
+          "kernel_max_seconds": 0.006083333333333333,
+          "cold_wall_median_seconds": 0.0268047130011837,
+          "cold_cpu_median_seconds": 0.026121999999986656
+        },
+        "pari-periodic-linear": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.00023958333333333335,
+          "kernel_min_seconds": 0.00022416666666666668,
+          "kernel_max_seconds": 0.000245,
+          "cold_wall_median_seconds": 0.020231922000675695,
+          "cold_cpu_median_seconds": 0.01953900000000175
+        },
+        "pari-periodic-doubling": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 9.333333333333333e-05,
+          "kernel_min_seconds": 9.333333333333333e-05,
+          "kernel_max_seconds": 0.00012666666666666666,
+          "cold_wall_median_seconds": 0.01945307699861587,
+          "cold_cpu_median_seconds": 0.01863300000000012
+        }
+      }
+    },
+    "spring-m3-L384": {
+      "cohort": "periodic-springs",
+      "sites": 384,
+      "actual_period": 3,
+      "max_coefficient_bits": 923,
+      "methods": {
+        "crest-cpp": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.0026558840000000003,
+          "kernel_min_seconds": 0.002654615487179487,
+          "kernel_max_seconds": 0.002678770976744186,
+          "cold_wall_median_seconds": 0.008325062000949401,
+          "cold_cpu_median_seconds": 0.006531000000002507
+        },
+        "pari-dense": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 1.087,
+          "kernel_min_seconds": 1.065,
+          "kernel_max_seconds": 1.186,
+          "cold_wall_median_seconds": 1.1059278460015776,
+          "cold_cpu_median_seconds": 1.0942840000000018
+        },
+        "pari-periodic-linear": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.007166666666666667,
+          "kernel_min_seconds": 0.007166666666666667,
+          "kernel_max_seconds": 0.009466666666666667,
+          "cold_wall_median_seconds": 0.02697173599881353,
+          "cold_cpu_median_seconds": 0.02628199999999481
+        },
+        "pari-periodic-doubling": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.00075,
+          "kernel_min_seconds": 0.0007041666666666667,
+          "kernel_max_seconds": 0.001075,
+          "cold_wall_median_seconds": 0.025251924998883624,
+          "cold_cpu_median_seconds": 0.023053999999998354
+        }
+      }
+    },
+    "spring-m4-L24": {
+      "cohort": "periodic-springs",
+      "sites": 24,
+      "actual_period": 4,
+      "max_coefficient_bits": 63,
+      "methods": {
+        "crest-cpp": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 6.758603854166667e-06,
+          "kernel_min_seconds": 6.66440453125e-06,
+          "kernel_max_seconds": 6.95606484375e-06,
+          "cold_wall_median_seconds": 0.0044674269993265625,
+          "cold_cpu_median_seconds": 0.003622000000000014
+        },
+        "pari-dense": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.00011083333333333333,
+          "kernel_min_seconds": 9.999999999999999e-05,
+          "kernel_max_seconds": 0.00013333333333333334,
+          "cold_wall_median_seconds": 0.019695019000209868,
+          "cold_cpu_median_seconds": 0.019040999999999975
+        },
+        "pari-periodic-linear": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 3.0833333333333335e-05,
+          "kernel_min_seconds": 3.020833333333333e-05,
+          "kernel_max_seconds": 3.8333333333333334e-05,
+          "cold_wall_median_seconds": 0.019445855999947526,
+          "cold_cpu_median_seconds": 0.018647999999999998
+        },
+        "pari-periodic-doubling": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 2.8125000000000003e-05,
+          "kernel_min_seconds": 2.7291666666666668e-05,
+          "kernel_max_seconds": 2.8958333333333337e-05,
+          "cold_wall_median_seconds": 0.019607908001489704,
+          "cold_cpu_median_seconds": 0.01887999999999579
+        }
+      }
+    },
+    "spring-m4-L96": {
+      "cohort": "periodic-springs",
+      "sites": 96,
+      "actual_period": 4,
+      "max_coefficient_bits": 258,
+      "methods": {
+        "crest-cpp": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.0001480001569400631,
+          "kernel_min_seconds": 0.00011268197739726027,
+          "kernel_max_seconds": 0.00015713834899328859,
+          "cold_wall_median_seconds": 0.00487754800269613,
+          "cold_cpu_median_seconds": 0.003869999999999152
+        },
+        "pari-dense": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.011899999999999999,
+          "kernel_min_seconds": 0.01109090909090909,
+          "kernel_max_seconds": 0.0125,
+          "cold_wall_median_seconds": 0.031741640999825904,
+          "cold_cpu_median_seconds": 0.030662999999996998
+        },
+        "pari-periodic-linear": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.0002025,
+          "kernel_min_seconds": 0.00019666666666666666,
+          "kernel_max_seconds": 0.00021583333333333334,
+          "cold_wall_median_seconds": 0.024790818002657034,
+          "cold_cpu_median_seconds": 0.024053999999999576
+        },
+        "pari-periodic-doubling": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.00012333333333333334,
+          "kernel_min_seconds": 9.833333333333333e-05,
+          "kernel_max_seconds": 0.0001325,
+          "cold_wall_median_seconds": 0.020172796001133975,
+          "cold_cpu_median_seconds": 0.01929800000000001
+        }
+      }
+    },
+    "spring-m4-L384": {
+      "cohort": "periodic-springs",
+      "sites": 384,
+      "actual_period": 4,
+      "max_coefficient_bits": 1040,
+      "methods": {
+        "crest-cpp": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.0023047884375,
+          "kernel_min_seconds": 0.0022995540212765956,
+          "kernel_max_seconds": 0.0023513601,
+          "cold_wall_median_seconds": 0.00656241600154317,
+          "cold_cpu_median_seconds": 0.005847000000002822
+        },
+        "pari-dense": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 2.906,
+          "kernel_min_seconds": 2.869,
+          "kernel_max_seconds": 3.417,
+          "cold_wall_median_seconds": 2.9645551489993522,
+          "cold_cpu_median_seconds": 2.963402000000002
+        },
+        "pari-periodic-linear": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.0067777777777777775,
+          "kernel_min_seconds": 0.006722222222222222,
+          "kernel_max_seconds": 0.006888888888888889,
+          "cold_wall_median_seconds": 0.02641276600115816,
+          "cold_cpu_median_seconds": 0.025355999999987944
+        },
+        "pari-periodic-doubling": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.0008625,
+          "kernel_min_seconds": 0.0007791666666666666,
+          "kernel_max_seconds": 0.0008833333333333333,
+          "cold_wall_median_seconds": 0.021549824999965494,
+          "cold_cpu_median_seconds": 0.02083600000000274
+        }
+      }
+    },
+    "hidden-period-L192": {
+      "cohort": "structure-controls",
+      "sites": 192,
+      "actual_period": 3,
+      "max_coefficient_bits": 517,
+      "methods": {
+        "crest-cpp": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.0006159311065088757,
+          "kernel_min_seconds": 0.0006012973670886077,
+          "kernel_max_seconds": 0.0006177447372881355,
+          "cold_wall_median_seconds": 0.005026803999498952,
+          "cold_cpu_median_seconds": 0.004200999999994792
+        },
+        "pari-dense": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.13,
+          "kernel_min_seconds": 0.13,
+          "kernel_max_seconds": 0.167,
+          "cold_wall_median_seconds": 0.15246200399997178,
+          "cold_cpu_median_seconds": 0.1518209999999982
+        },
+        "pari-periodic-linear": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.0012333333333333332,
+          "kernel_min_seconds": 0.001225,
+          "kernel_max_seconds": 0.0014416666666666666,
+          "cold_wall_median_seconds": 0.021217953999439487,
+          "cold_cpu_median_seconds": 0.02017100000000127
+        },
+        "pari-periodic-doubling": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.00023999999999999998,
+          "kernel_min_seconds": 0.00023833333333333332,
+          "kernel_max_seconds": 0.00031874999999999997,
+          "cold_wall_median_seconds": 0.02442233900001156,
+          "cold_cpu_median_seconds": 0.02378599999999409
+        }
+      }
+    },
+    "large-coefficients-L96": {
+      "cohort": "structure-controls",
+      "sites": 96,
+      "actual_period": 3,
+      "max_coefficient_bits": 2058,
+      "methods": {
+        "crest-cpp": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.0002026452456140351,
+          "kernel_min_seconds": 0.00019164358878504673,
+          "kernel_max_seconds": 0.00021183360807291667,
+          "cold_wall_median_seconds": 0.004324576999351848,
+          "cold_cpu_median_seconds": 0.003777000000003028
+        },
+        "pari-dense": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.03525,
+          "kernel_min_seconds": 0.03525,
+          "kernel_max_seconds": 0.0355,
+          "cold_wall_median_seconds": 0.05569053499857546,
+          "cold_cpu_median_seconds": 0.055120999999999754
+        },
+        "pari-periodic-linear": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.0013833333333333334,
+          "kernel_min_seconds": 0.0013416666666666668,
+          "kernel_max_seconds": 0.0015166666666666666,
+          "cold_wall_median_seconds": 0.02055936800024938,
+          "cold_cpu_median_seconds": 0.019743000000005395
+        },
+        "pari-periodic-doubling": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.0002625,
+          "kernel_min_seconds": 0.00024333333333333333,
+          "kernel_max_seconds": 0.000265,
+          "cold_wall_median_seconds": 0.02064991400038707,
+          "cold_cpu_median_seconds": 0.019891000000001213
+        }
+      }
+    },
+    "prime-repeat-L183": {
+      "cohort": "structure-controls",
+      "sites": 183,
+      "actual_period": 3,
+      "max_coefficient_bits": 323,
+      "methods": {
+        "crest-cpp": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.000594805375,
+          "kernel_min_seconds": 0.0005906043240223464,
+          "kernel_max_seconds": 0.0005968172228915663,
+          "cold_wall_median_seconds": 0.005046143000072334,
+          "cold_cpu_median_seconds": 0.004097000000001572
+        },
+        "pari-dense": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.102,
+          "kernel_min_seconds": 0.096,
+          "kernel_max_seconds": 0.111,
+          "cold_wall_median_seconds": 0.12219834699862986,
+          "cold_cpu_median_seconds": 0.12133000000000038
+        },
+        "pari-periodic-linear": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.0008783333333333334,
+          "kernel_min_seconds": 0.0007416666666666666,
+          "kernel_max_seconds": 0.0009375000000000001,
+          "cold_wall_median_seconds": 0.019303018001664896,
+          "cold_cpu_median_seconds": 0.018608999999999654
+        },
+        "pari-periodic-doubling": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.0002291666666666667,
+          "kernel_min_seconds": 0.00022291666666666667,
+          "kernel_max_seconds": 0.00025666666666666665,
+          "cold_wall_median_seconds": 0.019572239001718117,
+          "cold_cpu_median_seconds": 0.018800000000000594
+        }
+      }
+    },
+    "single-defect-L24": {
+      "cohort": "broken-period",
+      "sites": 24,
+      "actual_period": 24,
+      "max_coefficient_bits": 51,
+      "methods": {
+        "crest-cpp": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 3.046056120612061e-05,
+          "kernel_min_seconds": 3.0206633333333337e-05,
+          "kernel_max_seconds": 3.1949292916666666e-05,
+          "cold_wall_median_seconds": 0.0038509340010932647,
+          "cold_cpu_median_seconds": 0.0031469999999984566
+        },
+        "pari-dense": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 8.833333333333333e-05,
+          "kernel_min_seconds": 6.875e-05,
+          "kernel_max_seconds": 9.999999999999999e-05,
+          "cold_wall_median_seconds": 0.019978663000074448,
+          "cold_cpu_median_seconds": 0.019063000000009822
+        },
+        "pari-periodic-linear": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 8.499999999999999e-05,
+          "kernel_min_seconds": 7.916666666666666e-05,
+          "kernel_max_seconds": 9.583333333333334e-05,
+          "cold_wall_median_seconds": 0.01924877499914146,
+          "cold_cpu_median_seconds": 0.01860399999999629
+        },
+        "pari-periodic-doubling": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 8.416666666666668e-05,
+          "kernel_min_seconds": 7.833333333333333e-05,
+          "kernel_max_seconds": 0.00012083333333333332,
+          "cold_wall_median_seconds": 0.019782942999881925,
+          "cold_cpu_median_seconds": 0.01911400000000185
+        }
+      }
+    },
+    "single-defect-L96": {
+      "cohort": "broken-period",
+      "sites": 96,
+      "actual_period": 96,
+      "max_coefficient_bits": 206,
+      "methods": {
+        "crest-cpp": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.0006229391317365269,
+          "kernel_min_seconds": 0.0006111140892857143,
+          "kernel_max_seconds": 0.0006513141974522293,
+          "cold_wall_median_seconds": 0.004476060999877518,
+          "cold_cpu_median_seconds": 0.0038660000000021455
+        },
+        "pari-dense": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.00925,
+          "kernel_min_seconds": 0.008857142857142857,
+          "kernel_max_seconds": 0.010142857142857143,
+          "cold_wall_median_seconds": 0.029560191000200575,
+          "cold_cpu_median_seconds": 0.028601999999992245
+        },
+        "pari-periodic-linear": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.0010333333333333334,
+          "kernel_min_seconds": 0.001,
+          "kernel_max_seconds": 0.0013833333333333334,
+          "cold_wall_median_seconds": 0.020575161001033848,
+          "cold_cpu_median_seconds": 0.019773000000000707
+        },
+        "pari-periodic-doubling": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.0010566666666666667,
+          "kernel_min_seconds": 0.0009666666666666667,
+          "kernel_max_seconds": 0.0010833333333333333,
+          "cold_wall_median_seconds": 0.019888802999048494,
+          "cold_cpu_median_seconds": 0.019256000000000384
+        }
+      }
+    },
+    "single-defect-L384": {
+      "cohort": "broken-period",
+      "sites": 384,
+      "actual_period": 384,
+      "max_coefficient_bits": 829,
+      "methods": {
+        "crest-cpp": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.011577597,
+          "kernel_min_seconds": 0.011407781454545456,
+          "kernel_max_seconds": 0.012163031000000001,
+          "cold_wall_median_seconds": 0.016942356000072323,
+          "cold_cpu_median_seconds": 0.016089999999998383
+        },
+        "pari-dense": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 2.107,
+          "kernel_min_seconds": 2.071,
+          "kernel_max_seconds": 2.164,
+          "cold_wall_median_seconds": 2.1273586219977005,
+          "cold_cpu_median_seconds": 2.1150949999999966
+        },
+        "pari-periodic-linear": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.025,
+          "kernel_min_seconds": 0.025,
+          "kernel_max_seconds": 0.03,
+          "cold_wall_median_seconds": 0.046069593001448084,
+          "cold_cpu_median_seconds": 0.04472599999999716
+        },
+        "pari-periodic-doubling": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.0262,
+          "kernel_min_seconds": 0.023799999999999998,
+          "kernel_max_seconds": 0.029599999999999998,
+          "cold_wall_median_seconds": 0.04641884100055904,
+          "cold_cpu_median_seconds": 0.045294
+        }
+      }
+    },
+    "aperiodic-L24": {
+      "cohort": "broken-period",
+      "sites": 24,
+      "actual_period": 24,
+      "max_coefficient_bits": 61,
+      "methods": {
+        "crest-cpp": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 3.098011833333334e-05,
+          "kernel_min_seconds": 3.0745990833333334e-05,
+          "kernel_max_seconds": 3.1565619967793886e-05,
+          "cold_wall_median_seconds": 0.004202446001727367,
+          "cold_cpu_median_seconds": 0.0034929999999997463
+        },
+        "pari-dense": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.00013833333333333335,
+          "kernel_min_seconds": 0.0001375,
+          "kernel_max_seconds": 0.00013833333333333335,
+          "cold_wall_median_seconds": 0.019216155000322033,
+          "cold_cpu_median_seconds": 0.018334000000010064
+        },
+        "pari-periodic-linear": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.00011166666666666668,
+          "kernel_min_seconds": 0.00010541666666666666,
+          "kernel_max_seconds": 0.00012416666666666666,
+          "cold_wall_median_seconds": 0.023987651999050286,
+          "cold_cpu_median_seconds": 0.023373999999996897
+        },
+        "pari-periodic-doubling": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 7.5e-05,
+          "kernel_min_seconds": 7.458333333333333e-05,
+          "kernel_max_seconds": 7.583333333333334e-05,
+          "cold_wall_median_seconds": 0.019079188001342118,
+          "cold_cpu_median_seconds": 0.018191000000001623
+        }
+      }
+    },
+    "aperiodic-L96": {
+      "cohort": "broken-period",
+      "sites": 96,
+      "actual_period": 96,
+      "max_coefficient_bits": 221,
+      "methods": {
+        "crest-cpp": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.0007007775387596899,
+          "kernel_min_seconds": 0.0006962397535211268,
+          "kernel_max_seconds": 0.0007197491633986928,
+          "cold_wall_median_seconds": 0.005921406998822931,
+          "cold_cpu_median_seconds": 0.004788999999995269
+        },
+        "pari-dense": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.022500000000000003,
+          "kernel_min_seconds": 0.021500000000000002,
+          "kernel_max_seconds": 0.0236,
+          "cold_wall_median_seconds": 0.044229227998584975,
+          "cold_cpu_median_seconds": 0.04342699999999411
+        },
+        "pari-periodic-linear": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.0012333333333333332,
+          "kernel_min_seconds": 0.0010166666666666666,
+          "kernel_max_seconds": 0.0013750000000000001,
+          "cold_wall_median_seconds": 0.021924842996668303,
+          "cold_cpu_median_seconds": 0.021187999999998652
+        },
+        "pari-periodic-doubling": {
+          "statuses": [
+            "complete",
+            "complete",
+            "complete"
+          ],
+          "kernel_median_seconds": 0.0011583333333333335,
+          "kernel_min_seconds": 0.0011250000000000001,
+          "kernel_max_seconds": 0.0013083333333333334,
+          "cold_wall_median_seconds": 0.021940136000921484,
+          "cold_cpu_median_seconds": 0.02072099999999466
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "all": {
+      "pari-dense": {
+        "paired_inputs": 20,
+        "paired_ids": [
+          "spring-m1-L24",
+          "spring-m1-L96",
+          "spring-m1-L384",
+          "spring-m2-L24",
+          "spring-m2-L96",
+          "spring-m2-L384",
+          "spring-m3-L24",
+          "spring-m3-L96",
+          "spring-m3-L384",
+          "spring-m4-L24",
+          "spring-m4-L96",
+          "spring-m4-L384",
+          "hidden-period-L192",
+          "large-coefficients-L96",
+          "prime-repeat-L183",
+          "single-defect-L24",
+          "single-defect-L96",
+          "single-defect-L384",
+          "aperiodic-L24",
+          "aperiodic-L96"
+        ],
+        "median_cpu_ratio": 31.893161158530102,
+        "geomean_cpu_ratio": 37.68565409022102,
+        "median_cold_wall_ratio": 6.555883983015502,
+        "crest_cpu_wins": 20,
+        "comparator_cpu_wins": 0
+      },
+      "pari-periodic-linear": {
+        "paired_inputs": 20,
+        "paired_ids": [
+          "spring-m1-L24",
+          "spring-m1-L96",
+          "spring-m1-L384",
+          "spring-m2-L24",
+          "spring-m2-L96",
+          "spring-m2-L384",
+          "spring-m3-L24",
+          "spring-m3-L96",
+          "spring-m3-L384",
+          "spring-m4-L24",
+          "spring-m4-L96",
+          "spring-m4-L384",
+          "hidden-period-L192",
+          "large-coefficients-L96",
+          "prime-repeat-L183",
+          "single-defect-L24",
+          "single-defect-L96",
+          "single-defect-L384",
+          "aperiodic-L24",
+          "aperiodic-L96"
+        ],
+        "median_cpu_ratio": 2.2954069820631418,
+        "geomean_cpu_ratio": 2.3703813791634536,
+        "median_cold_wall_ratio": 4.4297522346794445,
+        "crest_cpu_wins": 20,
+        "comparator_cpu_wins": 0
+      },
+      "pari-periodic-doubling": {
+        "paired_inputs": 20,
+        "paired_ids": [
+          "spring-m1-L24",
+          "spring-m1-L96",
+          "spring-m1-L384",
+          "spring-m2-L24",
+          "spring-m2-L96",
+          "spring-m2-L384",
+          "spring-m3-L24",
+          "spring-m3-L96",
+          "spring-m3-L384",
+          "spring-m4-L24",
+          "spring-m4-L96",
+          "spring-m4-L384",
+          "hidden-period-L192",
+          "large-coefficients-L96",
+          "prime-repeat-L183",
+          "single-defect-L24",
+          "single-defect-L96",
+          "single-defect-L384",
+          "aperiodic-L24",
+          "aperiodic-L96"
+        ],
+        "median_cpu_ratio": 1.0643498139641914,
+        "geomean_cpu_ratio": 0.8852890237980184,
+        "median_cold_wall_ratio": 4.382205152567282,
+        "crest_cpu_wins": 10,
+        "comparator_cpu_wins": 10
+      }
+    },
+    "periodic-springs": {
+      "pari-dense": {
+        "paired_inputs": 12,
+        "paired_ids": [
+          "spring-m1-L24",
+          "spring-m1-L96",
+          "spring-m1-L384",
+          "spring-m2-L24",
+          "spring-m2-L96",
+          "spring-m2-L384",
+          "spring-m3-L24",
+          "spring-m3-L96",
+          "spring-m3-L384",
+          "spring-m4-L24",
+          "spring-m4-L96",
+          "spring-m4-L384"
+        ],
+        "median_cpu_ratio": 28.505938102192033,
+        "geomean_cpu_ratio": 35.98796094398316,
+        "median_cold_wall_ratio": 5.721963022100086,
+        "crest_cpu_wins": 12,
+        "comparator_cpu_wins": 0
+      },
+      "pari-periodic-linear": {
+        "paired_inputs": 12,
+        "paired_ids": [
+          "spring-m1-L24",
+          "spring-m1-L96",
+          "spring-m1-L384",
+          "spring-m2-L24",
+          "spring-m2-L96",
+          "spring-m2-L384",
+          "spring-m3-L24",
+          "spring-m3-L96",
+          "spring-m3-L384",
+          "spring-m4-L24",
+          "spring-m4-L96",
+          "spring-m4-L384"
+        ],
+        "median_cpu_ratio": 2.564941125787856,
+        "geomean_cpu_ratio": 2.3214905734182243,
+        "median_cold_wall_ratio": 4.4297522346794445,
+        "crest_cpu_wins": 12,
+        "comparator_cpu_wins": 0
+      },
+      "pari-periodic-doubling": {
+        "paired_inputs": 12,
+        "paired_ids": [
+          "spring-m1-L24",
+          "spring-m1-L96",
+          "spring-m1-L384",
+          "spring-m2-L24",
+          "spring-m2-L96",
+          "spring-m2-L384",
+          "spring-m3-L24",
+          "spring-m3-L96",
+          "spring-m3-L384",
+          "spring-m4-L24",
+          "spring-m4-L96",
+          "spring-m4-L384"
+        ],
+        "median_cpu_ratio": 0.6203101162463229,
+        "geomean_cpu_ratio": 0.6845738913624824,
+        "median_cold_wall_ratio": 4.265319910001513,
+        "crest_cpu_wins": 4,
+        "comparator_cpu_wins": 8
+      }
+    },
+    "structure-controls": {
+      "pari-dense": {
+        "paired_inputs": 3,
+        "paired_ids": [
+          "hidden-period-L192",
+          "large-coefficients-L96",
+          "prime-repeat-L183"
+        ],
+        "median_cpu_ratio": 173.9493067956715,
+        "geomean_cpu_ratio": 184.65159697879025,
+        "median_cold_wall_ratio": 24.216187887833975,
+        "crest_cpu_wins": 3,
+        "comparator_cpu_wins": 0
+      },
+      "pari-periodic-linear": {
+        "paired_inputs": 3,
+        "paired_ids": [
+          "hidden-period-L192",
+          "large-coefficients-L96",
+          "prime-repeat-L183"
+        ],
+        "median_cpu_ratio": 2.0023884494548754,
+        "geomean_cpu_ratio": 2.722749863668872,
+        "median_cold_wall_ratio": 4.220963061530625,
+        "crest_cpu_wins": 3,
+        "comparator_cpu_wins": 0
+      },
+      "pari-periodic-doubling": {
+        "paired_inputs": 3,
+        "paired_ids": [
+          "hidden-period-L192",
+          "large-coefficients-L96",
+          "prime-repeat-L183"
+        ],
+        "median_cpu_ratio": 0.3896539685425703,
+        "geomean_cpu_ratio": 0.5793613489486594,
+        "median_cold_wall_ratio": 4.775013603291606,
+        "crest_cpu_wins": 1,
+        "comparator_cpu_wins": 2
+      }
+    },
+    "broken-period": {
+      "pari-dense": {
+        "paired_inputs": 5,
+        "paired_ids": [
+          "single-defect-L24",
+          "single-defect-L96",
+          "single-defect-L384",
+          "aperiodic-L24",
+          "aperiodic-L96"
+        ],
+        "median_cpu_ratio": 14.848962809920732,
+        "geomean_cpu_ratio": 16.222396498997117,
+        "median_cold_wall_ratio": 6.604063483721391,
+        "crest_cpu_wins": 5,
+        "comparator_cpu_wins": 0
+      },
+      "pari-periodic-linear": {
+        "paired_inputs": 5,
+        "paired_ids": [
+          "single-defect-L24",
+          "single-defect-L96",
+          "single-defect-L384",
+          "aperiodic-L24",
+          "aperiodic-L96"
+        ],
+        "median_cpu_ratio": 2.1593427375300767,
+        "geomean_cpu_ratio": 2.293124537375955,
+        "median_cold_wall_ratio": 4.5967114839580745,
+        "crest_cpu_wins": 5,
+        "comparator_cpu_wins": 0
+      },
+      "pari-periodic-doubling": {
+        "paired_inputs": 5,
+        "paired_ids": [
+          "single-defect-L24",
+          "single-defect-L96",
+          "single-defect-L384",
+          "aperiodic-L24",
+          "aperiodic-L96"
+        ],
+        "median_cpu_ratio": 2.26299118893152,
+        "geomean_cpu_ratio": 2.1162248570640045,
+        "median_cold_wall_ratio": 4.443371750204639,
+        "crest_cpu_wins": 5,
+        "comparator_cpu_wins": 0
+      }
+    }
+  }
+}
