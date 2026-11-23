@@ -1,0 +1,37 @@
+{
+  "format": "crest-root.deployable-crossing.examples/1",
+  "case_note": "Independent synthetic algebra/geometry controls. These values do not describe one machine, select hardware, state allowable loads, or recommend a roadway clearance.",
+  "units": {"length": "m", "force": "N", "moment": "N*m"},
+  "cantilevers": [
+    {"label": "synthetic_four_metre_reach", "line_load": "3", "reach": "4", "direction": 1},
+    {"label": "same_line_load_double_reach", "line_load": "3", "reach": "8", "direction": 1},
+    {"label": "bounded_line_load_and_reach", "line_load": ["2", "3"], "reach": ["4", "5"], "direction": 1}
+  ],
+  "pad_reactions": [
+    {"label": "strict_contact_control", "total_downward_load": "10", "total_clockwise_moment": "9", "x_left": "-1", "x_right": "1"},
+    {"label": "unloaded_pad_boundary", "total_downward_load": "10", "total_clockwise_moment": "10", "x_left": "-1", "x_right": "1"},
+    {"label": "unilateral_support_failure", "total_downward_load": "10", "total_clockwise_moment": "11", "x_left": "-1", "x_right": "1"},
+    {"label": "uncertainty_crosses_boundary", "total_downward_load": ["9", "11"], "total_clockwise_moment": ["8", "12"], "x_left": "-1", "x_right": "1"}
+  ],
+  "kinematics": [
+    {"label": "unconnected_pinned_halves", "left_tip_from_base": ["3", "0"], "right_tip_from_base": ["-3", "0"], "left_support": "pin", "right_support": "pin", "connection": "open"},
+    {"label": "collinear_pin_roller_center_hinge", "left_tip_from_base": ["3", "0"], "right_tip_from_base": ["-3", "0"], "left_support": "pin", "right_support": "vertical_roller", "connection": "hinge"},
+    {"label": "collinear_pin_roller_rigid_center", "left_tip_from_base": ["3", "0"], "right_tip_from_base": ["-3", "0"], "left_support": "pin", "right_support": "vertical_roller", "connection": "moment_lock"},
+    {"label": "restrained_cantilevers_center_hinge", "left_tip_from_base": ["3", "0"], "right_tip_from_base": ["-3", "0"], "left_support": "fixed", "right_support": "fixed", "connection": "hinge"}
+  ],
+  "joins": [
+    {"label": "synthetic_lap_window", "roadside_separation": "10", "left_reach": "5.5", "right_reach": "5", "left_tip_height": "0", "right_tip_height": "0", "min_overlap": "0.25", "max_overlap": "0.75", "max_vertical_mismatch": "0.1"},
+    {"label": "vertical_window_crossed_by_uncertainty", "roadside_separation": "10", "left_reach": "5.5", "right_reach": "5", "left_tip_height": ["-0.2", "0.2"], "right_tip_height": "0", "min_overlap": "0.25", "max_overlap": "0.75", "max_vertical_mismatch": "0.1"}
+  ],
+  "ramps": [
+    {"label": "hypothetical_eighteen_foot_rise_at_declared_limit", "rise": "5.4864", "horizontal_run": "65.8368", "declared_max_slope": "1/12"},
+    {"label": "shorter_run_fails_same_declared_slope", "rise": "5.4864", "horizontal_run": "30.48", "declared_max_slope": "1/12"}
+  ],
+  "access_arithmetic": {
+    "rise": "5.4864",
+    "declared_max_slope": "1/12",
+    "declared_max_rise_per_run": "0.762",
+    "declared_intermediate_landing_length": "1.524"
+  },
+  "deployment_record": ["stowed", "supports_declared", "extension_in_progress", "alignment_declared", "lock_engaged_declared", "lock_verified_declared", "access_requested"]
+}

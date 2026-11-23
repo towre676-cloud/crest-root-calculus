@@ -1,0 +1,402 @@
+{
+  "checks_passed": true,
+  "verification_mode": "standard_library_plus_symbolic",
+  "checks": {
+    "independent_rank_and_nullspace_cases": 12,
+    "independent_support_equilibrium_cases": 10,
+    "load_resultant_and_scaling_cases": 6,
+    "join_envelope_cases": 6,
+    "ramp_arithmetic_cases": 4,
+    "record_sequence_cases": 13,
+    "malformed_inputs_rejected": 18,
+    "tampered_receipts_rejected": 4
+  },
+  "optional_symbolic_checks": {
+    "enabled": true,
+    "rank_cases": 12,
+    "equilibrium_corner_solves": 40,
+    "distributed_load_integrals": 1
+  },
+  "examples": {
+    "collinear_pins_center_hinge": {
+      "status": "first_order_mechanism",
+      "constraint_rank": 5,
+      "first_order_degrees_of_freedom": 1,
+      "constraint_matrix": [
+        [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "3",
+          "0",
+          "-1",
+          "3"
+        ]
+      ],
+      "nullspace_basis": [
+        [
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "scope": "Ideal rigid-body kinematics only; not a finite-motion or stability proof"
+    },
+    "pin_and_vertical_roller_center_moment_lock": {
+      "status": "no_first_order_rigid_body_mechanism",
+      "constraint_rank": 6,
+      "first_order_degrees_of_freedom": 0,
+      "constraint_matrix": [
+        [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "3",
+          "0",
+          "-1",
+          "3"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "-1"
+        ]
+      ],
+      "nullspace_basis": [],
+      "scope": "Ideal rigid-body kinematics only; not a finite-motion or stability proof"
+    },
+    "fixed_bases_center_hinge": {
+      "status": "no_first_order_rigid_body_mechanism",
+      "constraint_rank": 6,
+      "first_order_degrees_of_freedom": 0,
+      "constraint_matrix": [
+        [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "3",
+          "0",
+          "-1",
+          "3"
+        ]
+      ],
+      "nullspace_basis": [],
+      "scope": "Ideal rigid-body kinematics only; not a finite-motion or stability proof"
+    },
+    "support_inside": {
+      "status": "inside",
+      "checks": {
+        "left_contact": {
+          "margin": {
+            "lower": "1/2",
+            "upper": "1/2"
+          },
+          "status": "inside"
+        },
+        "right_contact": {
+          "margin": {
+            "lower": "19/2",
+            "upper": "19/2"
+          },
+          "status": "inside"
+        }
+      },
+      "reaction_left": {
+        "lower": "1/2",
+        "upper": "1/2"
+      },
+      "reaction_right": {
+        "lower": "19/2",
+        "upper": "19/2"
+      },
+      "equivalent_condition": "x_left*W < M < x_right*W",
+      "scope": "Declared aggregate-load, two-contact planar screen only"
+    },
+    "support_marginal": {
+      "status": "marginal",
+      "checks": {
+        "left_contact": {
+          "margin": {
+            "lower": "0",
+            "upper": "0"
+          },
+          "status": "marginal"
+        },
+        "right_contact": {
+          "margin": {
+            "lower": "10",
+            "upper": "10"
+          },
+          "status": "inside"
+        }
+      },
+      "reaction_left": {
+        "lower": "0",
+        "upper": "0"
+      },
+      "reaction_right": {
+        "lower": "10",
+        "upper": "10"
+      },
+      "equivalent_condition": "x_left*W < M < x_right*W",
+      "scope": "Declared aggregate-load, two-contact planar screen only"
+    },
+    "support_outside": {
+      "status": "outside",
+      "checks": {
+        "left_contact": {
+          "margin": {
+            "lower": "-1/2",
+            "upper": "-1/2"
+          },
+          "status": "outside"
+        },
+        "right_contact": {
+          "margin": {
+            "lower": "21/2",
+            "upper": "21/2"
+          },
+          "status": "inside"
+        }
+      },
+      "reaction_left": {
+        "lower": "-1/2",
+        "upper": "-1/2"
+      },
+      "reaction_right": {
+        "lower": "21/2",
+        "upper": "21/2"
+      },
+      "equivalent_condition": "x_left*W < M < x_right*W",
+      "scope": "Declared aggregate-load, two-contact planar screen only"
+    },
+    "support_indeterminate": {
+      "status": "indeterminate",
+      "checks": {
+        "left_contact": {
+          "margin": {
+            "lower": "-3/2",
+            "upper": "3/2"
+          },
+          "status": "indeterminate"
+        },
+        "right_contact": {
+          "margin": {
+            "lower": "17/2",
+            "upper": "23/2"
+          },
+          "status": "inside"
+        }
+      },
+      "reaction_left": {
+        "lower": "-3/2",
+        "upper": "3/2"
+      },
+      "reaction_right": {
+        "lower": "17/2",
+        "upper": "23/2"
+      },
+      "equivalent_condition": "x_left*W < M < x_right*W",
+      "scope": "Declared aggregate-load, two-contact planar screen only"
+    },
+    "cantilever": {
+      "root_vertical_force_magnitude": {
+        "lower": "12",
+        "upper": "12"
+      },
+      "root_clockwise_moment": {
+        "lower": "24",
+        "upper": "24"
+      },
+      "scope": "Separate cantilever root demand; not a chassis moment total"
+    },
+    "join_geometry": {
+      "status": "inside",
+      "checks": {
+        "minimum_overlap": {
+          "margin": {
+            "lower": "1/4",
+            "upper": "1/4"
+          },
+          "status": "inside"
+        },
+        "maximum_overlap": {
+          "margin": {
+            "lower": "1/4",
+            "upper": "1/4"
+          },
+          "status": "inside"
+        },
+        "vertical_mismatch": {
+          "margin": {
+            "lower": "1/25",
+            "upper": "1/25"
+          },
+          "status": "inside"
+        }
+      },
+      "overlap": {
+        "lower": "1/2",
+        "upper": "1/2"
+      },
+      "vertical_mismatch": {
+        "lower": "1/100",
+        "upper": "1/100"
+      },
+      "scope": "Declared lap and vertical fit only; no lock or strength inference"
+    },
+    "ramp": {
+      "status": "inside",
+      "checks": {
+        "declared_slope_margin": {
+          "margin": {
+            "lower": "1/20",
+            "upper": "1/20"
+          },
+          "status": "inside"
+        }
+      },
+      "slope": {
+        "lower": "3/40",
+        "upper": "3/40"
+      },
+      "required_horizontal_run": {
+        "lower": "24",
+        "upper": "24"
+      },
+      "scope": "Declared rise/run arithmetic only; no compliance inference"
+    }
+  },
+  "scope": "Synthetic exact model controls only; not a bridge design or physical approval"
+}

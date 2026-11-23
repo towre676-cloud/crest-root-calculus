@@ -6,6 +6,8 @@
 
 [Read the nine-page introductory essay](downloads/crest-root-introduction.pdf) · [Read the full illustrated monograph, Parts I–XXX](https://towre676-cloud.github.io/crest-root-calculus/) · [See all 57 research questions and their status](research/backlog-2026-11-23.md)
 
+**Two mobile halves of a pedestrian bridge.** A new feasibility study examines an extending crossing that joins above a road. It includes exact support-reaction, ideal-joint-rigidity, joining-envelope and ramp-geometry screens, independently checked adverse cases, and the engineering questions that determine whether the concept can work. This is research software and a concept study, not a rated bridge design. [Read the study](research/deployable-crossing/README.md) · [Download the self-contained programs](https://github.com/towre676-cloud/crest-root-calculus/raw/refs/heads/main/downloads/crest-root-deployable-crossing-2026-11-23.zip)
+
 ## Seven applications you can run
 
 **Try a real decision.** Can a second reading settle a chip’s width? Which street still needs a leak search? Does a retired battery need another test? The workshop also compares home retrofits, reconstructs material structures, schedules telescope observations, and runs the original degree-three map solver on published curves. Each app accepts your own inputs and shows which conclusions the measurements support.
