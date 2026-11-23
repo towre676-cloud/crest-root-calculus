@@ -89,7 +89,7 @@ def reconstruct(chart, u, v, a, b):
     r = weierstrass_jet(differential(terms, powers, u, v), a, b)
     basis = [[0]*i + powers[j][:PRECISION-i] for i,j in CUBICS]
     columns = [[0,0]+col[:-2] for col in basis] + [[-v for v in product(r,col)] for col in basis]
-    matrix = sp.Matrix(list(zip(*columns))).to_DM().to_field()
+    matrix = sp.polys.matrices.DomainMatrix.from_Matrix(sp.Matrix(list(zip(*columns)))).to_field()
     kernel = matrix.nullspace()
     nullity = kernel.shape[0]
     result = {"rank": 20-nullity, "nullity": nullity, "degree_four": nullity in (2,3)}
