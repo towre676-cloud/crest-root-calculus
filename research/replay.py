@@ -68,7 +68,8 @@ def main():
     run(HERE / "bounded-correspondences/verify.py")
     run(HERE / "local-pattern-obstruction/verify.py", "receipt.json")
     run(HERE / "solver-comparison/verify.py")
-    print("All 31 research verification groups passed.")
+    run(HERE / "periodic-spectra/audit_native.py")
+    print("All 32 research verification groups passed.")
 
 
 if __name__ == "__main__":

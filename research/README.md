@@ -12,6 +12,14 @@ The performance study uses separately selected inputs and equal resource limits 
 
 The complete root datum can still lose information needed for rational existence. Two explicit finite solution spaces have identical counts at every good prime and every extension degree, while their rational-point counts are zero and two. The proof identifies the lost multiplication and Galois-orbit information. The finite-algebra reconstruction theorem specifies the additional data it uses. [An exact all-prime obstruction](local-pattern-obstruction/README.md) · [Nine-page introductory essay](../downloads/crest-root-introduction.pdf)
 
+## Periodic spectra and our next application challenge
+
+An exact cyclic-Jacobi solver now models integer spring rings, detects their true repeated cell and returns the complete characteristic polynomial with independently verified coefficients. A 20-input study uses the official PARI/GP 2.19.1 release. Crest beats the general matrix route on all 20 inputs, but a separately frozen compiled-PARI control using the same reduction beats Crest on 19 of 20, including all 12 periodic spring inputs. All 420 scheduled rows are correct, and all 1,331 cold and batch observations are retained. The native control was designed after the initial study and is labelled accordingly. This identifies a strength in recognizing useful structure, not a general advantage over PARI's arithmetic. [Programs, proof and all comparisons](periodic-spectra/README.md)
+
+The spectral-curve companion gives exact normalization maps: a three-site cell repeated five times produces a degree-30 plane radicand with genus-two normalization. It also checks closed spectral gaps and distinguishes these classical birational identifications from genuine higher-degree quotient maps. The next research challenge is to discover and certify useful hidden quotients from expanded coefficients without the generating metadata; a rational Brusselator model supplies a concrete chemistry follow-on. [Spectral curves](periodic-spectra/spectral-curve.md) · [Applications and acceptance criteria](periodic-spectra/opportunities.md) · [Focused ZIP](https://github.com/towre676-cloud/crest-root-calculus/raw/refs/heads/main/downloads/crest-root-periodic-spectra-2026-11-23.zip)
+
+An audit of all eight pre-existing remote branches found the content of all six research branches already integrated into `main`, including the full tree of the last squash merge. The deployment branch's monograph matches the archived source byte for byte; its empty publication marker is now preserved beside that source. No historical content needs to be overwritten to reconcile those branches. [Branch reconciliation](branch-reconciliation-2026-11-23.md)
+
 ## Results from the priority research
 
 | Register | Result | Evidence |
@@ -66,7 +74,7 @@ python -m pip install numpy "sympy>=1.12,<2"
 python research/replay.py
 ```
 
-On Windows, `py` can replace `python`. The replay runs 31 verification groups, including the original twelve-row solver with its historical limits, both positive and negative controls, new coefficient-only searches, finite-map certificates and the stored comparison receipts. The default checks every dimension and separation certificate and rebuilds selected higher-support matrices. Add `--recount --workers 4` to rebuild every archived higher-support observation. The optional C++17 count over the field of 214,358,881 elements uses about 2.2 GB of table storage. The individual programs can also run separately. Repeating the timed comparisons requires the native solvers and POSIX environment described in the [comparison instructions](solver-comparison/README.md).
+On Windows, `py` can replace `python`. The replay runs 32 verification groups, including the original twelve-row solver with its historical limits, both positive and negative controls, new coefficient-only searches, finite-map certificates, the stored comparison receipts and both periodic-spectra studies. The default checks every dimension and separation certificate and rebuilds selected higher-support matrices. Add `--recount --workers 4` to rebuild every archived higher-support observation. The optional C++17 count over the field of 214,358,881 elements uses about 2.2 GB of table storage. The individual programs can also run separately. Repeating the timed comparisons requires the native solvers and POSIX environment described in the [earlier comparison instructions](solver-comparison/README.md) and [periodic-spectra instructions](periodic-spectra/README.md).
 
 | To use a research program | Command from the repository root |
 |---|---|
@@ -74,6 +82,8 @@ On Windows, `py` can replace `python`. The replay runs 31 verification groups, i
 | Recover every map with a singleton infinity fibre, including an elliptic target | `python research/bounded-correspondences/maps.py research/bounded-correspondences/examples/cubic.json` |
 | Replay the exact map certificates and exclusion controls | `python research/bounded-correspondences/verify.py` |
 | Verify the three solver-comparison studies and recompute their mathematical outputs | `python research/solver-comparison/verify.py --recompute` |
+| Compute the exact spectrum polynomial of the supplied spring ring | `python research/periodic-spectra/model.py research/periodic-spectra/example.json` |
+| Verify both periodic-spectra studies, all coefficients and the spectral-curve identities | `python research/periodic-spectra/audit_native.py` |
 | List all geometric double quotients and their equations | `python research/elliptic-quotients/involution-atlas/classify.py research/elliptic-quotients/row-36518/quartic.json` |
 | Discover a primitive degree-four map | `python research/elliptic-quotients/primitive-degree-four/search.py research/elliptic-quotients/primitive-degree-four/sheared.json --all-rational-centers` |
 | Generate the general primitive degree-four equations on one chart | `python research/elliptic-quotients/degree-four-incidence/incidence.py research/elliptic-quotients/primitive-degree-four/ciani.json 2 --singular chart2.sing` |

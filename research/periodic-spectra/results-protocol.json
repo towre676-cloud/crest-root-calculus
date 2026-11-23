@@ -1,0 +1,1273 @@
+{
+  "schema": 1,
+  "created_utc": "2026-11-23T23:01:12.986247+00:00",
+  "panel_sha256": "aa41cf475b85ea1856e8059c5759b42ef7563aead9facdda89112cc1677e46eb",
+  "reference_sha256": "c9ff29bfbf414af61fa4ba72cd894305b02e6f236ba4b844470dddcccccaac97",
+  "source_sha256": {
+    "model.py": "effa4f8e104a4e2fec92c4f885335048d2c50122963e135784ccd9d3a2bde666",
+    "solver.cpp": "b63f57b7ee72f0e5df2b74bdb48ad3f26540e418ac9578d1356369792ec3af5c",
+    "pari.gp": "2dbeefc71c5d386de7148a31d97451a5ea08d2ca6733bb2aba99b28798d6811d",
+    "panel.py": "7937e8ceaf221ce61b2b16cba767ddef8d2ce593e22a8b4f1dfbd0bfaadcfa4e",
+    "benchmark.py": "e647069bdb97e22dad15ede127cf8f6516e4ecb90236d239cb6b600850c29b8f",
+    "verify.py": "237985a3ed336118192b432c47ac6bc9ca0f0a94fe985a322a45b45aba1d8549"
+  },
+  "gp_path": "/tmp/crest-pari-2191/pari-2.19.1/Olinux-x86_64/gp-sta",
+  "gp_sha256": "d9be8bc062e506ebe76e0468fdc2964c344c3399c088b9957b45b87265c32b1c",
+  "pari_version": "2.19.1",
+  "pari_build": {
+    "version": "2.19.1",
+    "source_url": "https://pari.math.u-bordeaux.fr/pub/pari/unix/pari-2.19.1.tar.gz",
+    "source_sha256": "419553b11ff8c3ecb8e9031b7d91d7cee003a5d721e685fcb499565c96fe2943",
+    "official_source_sha256": "419553b11ff8c3ecb8e9031b7d91d7cee003a5d721e685fcb499565c96fe2943",
+    "download_page": "https://pari.math.u-bordeaux.fr/download.html",
+    "configure_command": "./Configure --static --prefix=/tmp/crest-pari-2191/install --with-gmp --without-readline --graphic=none",
+    "build_command": "make -j4 gp",
+    "cflags": "-O3 -Wall -fno-strict-aliasing",
+    "compiler": "gcc (Debian 14.2.0-19) 14.2.0",
+    "gmp_version": "6.3.0",
+    "threading": "single",
+    "binary_path": "/tmp/crest-pari-2191/pari-2.19.1/Olinux-x86_64/gp-sta",
+    "binary_sha256": "d9be8bc062e506ebe76e0468fdc2964c344c3399c088b9957b45b87265c32b1c",
+    "upstream_tests": [
+      "dotest-charpoly",
+      "dotest-resultant"
+    ],
+    "upstream_test_result": "pass",
+    "version_output": "GP/PARI CALCULATOR Version 2.19.1 (released)\n          amd64 running linux (x86-64/GMP-6.3.0 kernel) 64-bit version\n          compiled: Nov 23 2026, gcc version 14.2.0 (Debian 14.2.0-19)\n                            threading engine: single\n               (readline not compiled in, extended help enabled)"
+  },
+  "native_path": "/tmp/crest-periodic-solver",
+  "native_sha256": "a3f612f1c45ee422d3a5280930f6e4b1b5fcc3286c8a54681f0e2acc6b0ed7ad",
+  "native_build_command": "g++ -O3 -std=c++17 solver.cpp -lgmpxx -lgmp -o solver",
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "cpu_model": "AMD EPYC 9V74 80-Core Processor",
+  "affinity_available": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "worker_cpu": 8,
+  "methods": [
+    "crest-cpp",
+    "pari-dense",
+    "pari-periodic-linear",
+    "pari-periodic-doubling"
+  ],
+  "replicates": 3,
+  "schedule_seed": 76127,
+  "per_process_wall_limit_seconds": 15,
+  "address_space_bytes": 4294967296,
+  "minimum_batch_cpu_seconds": 0.1,
+  "maximum_batch_iterations": 1048576,
+  "timing": "Each row has a cold single solve in a fresh native process, followed by fresh-process batches doubled until at least 100 ms solver CPU. Every solve validates and discovers period anew. Input text parsing and output serialization are excluded from kernel CPU and included in cold process wall/CPU. No output caching. PARI dense matrix construction is included; common input is the expanded diagonal/bond arrays. All calibration batches are retained. GP clock resolution is 1 ms; native CLOCK_PROCESS_CPUTIME_ID uses nanoseconds.",
+  "scope": "Complete exact integer characteristic polynomial; synthetic cyclic Jacobi models, not measured materials or molecular energy data",
+  "schedule": [
+    {
+      "case": "single-defect-L24",
+      "method": "pari-dense",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m4-L96",
+      "method": "pari-periodic-doubling",
+      "replicate": 1
+    },
+    {
+      "case": "single-defect-L384",
+      "method": "pari-periodic-doubling",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m4-L24",
+      "method": "pari-dense",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m1-L24",
+      "method": "pari-dense",
+      "replicate": 1
+    },
+    {
+      "case": "single-defect-L384",
+      "method": "crest-cpp",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m3-L96",
+      "method": "pari-periodic-doubling",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m4-L24",
+      "method": "pari-periodic-linear",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m2-L96",
+      "method": "pari-periodic-linear",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m3-L24",
+      "method": "pari-dense",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m1-L384",
+      "method": "crest-cpp",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m2-L384",
+      "method": "crest-cpp",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m1-L24",
+      "method": "crest-cpp",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m2-L24",
+      "method": "pari-periodic-doubling",
+      "replicate": 1
+    },
+    {
+      "case": "single-defect-L24",
+      "method": "crest-cpp",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m2-L96",
+      "method": "pari-dense",
+      "replicate": 1
+    },
+    {
+      "case": "aperiodic-L24",
+      "method": "crest-cpp",
+      "replicate": 1
+    },
+    {
+      "case": "prime-repeat-L183",
+      "method": "pari-periodic-linear",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m1-L24",
+      "method": "pari-periodic-doubling",
+      "replicate": 1
+    },
+    {
+      "case": "single-defect-L384",
+      "method": "pari-periodic-linear",
+      "replicate": 1
+    },
+    {
+      "case": "hidden-period-L192",
+      "method": "pari-dense",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m2-L384",
+      "method": "pari-periodic-doubling",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m4-L24",
+      "method": "crest-cpp",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m3-L96",
+      "method": "crest-cpp",
+      "replicate": 1
+    },
+    {
+      "case": "single-defect-L24",
+      "method": "pari-periodic-linear",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m4-L96",
+      "method": "pari-dense",
+      "replicate": 1
+    },
+    {
+      "case": "aperiodic-L24",
+      "method": "pari-dense",
+      "replicate": 1
+    },
+    {
+      "case": "single-defect-L96",
+      "method": "pari-periodic-doubling",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m2-L384",
+      "method": "pari-periodic-linear",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m4-L96",
+      "method": "pari-periodic-linear",
+      "replicate": 1
+    },
+    {
+      "case": "prime-repeat-L183",
+      "method": "pari-periodic-doubling",
+      "replicate": 1
+    },
+    {
+      "case": "aperiodic-L24",
+      "method": "pari-periodic-doubling",
+      "replicate": 1
+    },
+    {
+      "case": "single-defect-L96",
+      "method": "crest-cpp",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m2-L24",
+      "method": "crest-cpp",
+      "replicate": 1
+    },
+    {
+      "case": "aperiodic-L96",
+      "method": "pari-periodic-doubling",
+      "replicate": 1
+    },
+    {
+      "case": "single-defect-L24",
+      "method": "pari-periodic-doubling",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m4-L384",
+      "method": "crest-cpp",
+      "replicate": 1
+    },
+    {
+      "case": "aperiodic-L96",
+      "method": "pari-periodic-linear",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m4-L24",
+      "method": "pari-periodic-doubling",
+      "replicate": 1
+    },
+    {
+      "case": "hidden-period-L192",
+      "method": "crest-cpp",
+      "replicate": 1
+    },
+    {
+      "case": "aperiodic-L96",
+      "method": "crest-cpp",
+      "replicate": 1
+    },
+    {
+      "case": "single-defect-L96",
+      "method": "pari-periodic-linear",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m4-L384",
+      "method": "pari-periodic-doubling",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m1-L384",
+      "method": "pari-periodic-doubling",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m3-L96",
+      "method": "pari-periodic-linear",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m3-L384",
+      "method": "pari-periodic-linear",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m1-L96",
+      "method": "pari-periodic-linear",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m3-L24",
+      "method": "pari-periodic-linear",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m1-L24",
+      "method": "pari-periodic-linear",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m4-L384",
+      "method": "pari-periodic-linear",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m1-L384",
+      "method": "pari-dense",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m3-L24",
+      "method": "pari-periodic-doubling",
+      "replicate": 1
+    },
+    {
+      "case": "hidden-period-L192",
+      "method": "pari-periodic-linear",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m1-L384",
+      "method": "pari-periodic-linear",
+      "replicate": 1
+    },
+    {
+      "case": "large-coefficients-L96",
+      "method": "pari-periodic-doubling",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m2-L24",
+      "method": "pari-dense",
+      "replicate": 1
+    },
+    {
+      "case": "large-coefficients-L96",
+      "method": "pari-dense",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m1-L96",
+      "method": "crest-cpp",
+      "replicate": 1
+    },
+    {
+      "case": "single-defect-L384",
+      "method": "pari-dense",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m3-L384",
+      "method": "crest-cpp",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m3-L96",
+      "method": "pari-dense",
+      "replicate": 1
+    },
+    {
+      "case": "large-coefficients-L96",
+      "method": "crest-cpp",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m2-L96",
+      "method": "pari-periodic-doubling",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m3-L384",
+      "method": "pari-dense",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m2-L384",
+      "method": "pari-dense",
+      "replicate": 1
+    },
+    {
+      "case": "large-coefficients-L96",
+      "method": "pari-periodic-linear",
+      "replicate": 1
+    },
+    {
+      "case": "aperiodic-L96",
+      "method": "pari-dense",
+      "replicate": 1
+    },
+    {
+      "case": "aperiodic-L24",
+      "method": "pari-periodic-linear",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m1-L96",
+      "method": "pari-periodic-doubling",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m3-L24",
+      "method": "crest-cpp",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m4-L96",
+      "method": "crest-cpp",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m3-L384",
+      "method": "pari-periodic-doubling",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m2-L96",
+      "method": "crest-cpp",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m4-L384",
+      "method": "pari-dense",
+      "replicate": 1
+    },
+    {
+      "case": "hidden-period-L192",
+      "method": "pari-periodic-doubling",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m1-L96",
+      "method": "pari-dense",
+      "replicate": 1
+    },
+    {
+      "case": "prime-repeat-L183",
+      "method": "crest-cpp",
+      "replicate": 1
+    },
+    {
+      "case": "single-defect-L96",
+      "method": "pari-dense",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m2-L24",
+      "method": "pari-periodic-linear",
+      "replicate": 1
+    },
+    {
+      "case": "prime-repeat-L183",
+      "method": "pari-dense",
+      "replicate": 1
+    },
+    {
+      "case": "spring-m3-L384",
+      "method": "crest-cpp",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m4-L96",
+      "method": "pari-periodic-doubling",
+      "replicate": 2
+    },
+    {
+      "case": "single-defect-L96",
+      "method": "pari-periodic-doubling",
+      "replicate": 2
+    },
+    {
+      "case": "hidden-period-L192",
+      "method": "pari-periodic-linear",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m2-L24",
+      "method": "pari-periodic-doubling",
+      "replicate": 2
+    },
+    {
+      "case": "single-defect-L96",
+      "method": "pari-dense",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m1-L96",
+      "method": "pari-dense",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m4-L24",
+      "method": "pari-periodic-doubling",
+      "replicate": 2
+    },
+    {
+      "case": "single-defect-L384",
+      "method": "crest-cpp",
+      "replicate": 2
+    },
+    {
+      "case": "single-defect-L24",
+      "method": "pari-dense",
+      "replicate": 2
+    },
+    {
+      "case": "prime-repeat-L183",
+      "method": "pari-dense",
+      "replicate": 2
+    },
+    {
+      "case": "single-defect-L96",
+      "method": "pari-periodic-linear",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m3-L384",
+      "method": "pari-periodic-doubling",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m1-L24",
+      "method": "pari-dense",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m4-L24",
+      "method": "pari-periodic-linear",
+      "replicate": 2
+    },
+    {
+      "case": "large-coefficients-L96",
+      "method": "pari-periodic-doubling",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m3-L96",
+      "method": "pari-periodic-doubling",
+      "replicate": 2
+    },
+    {
+      "case": "single-defect-L24",
+      "method": "crest-cpp",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m3-L96",
+      "method": "crest-cpp",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m4-L96",
+      "method": "pari-periodic-linear",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m2-L96",
+      "method": "pari-dense",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m1-L96",
+      "method": "pari-periodic-doubling",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m4-L24",
+      "method": "pari-dense",
+      "replicate": 2
+    },
+    {
+      "case": "prime-repeat-L183",
+      "method": "crest-cpp",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m3-L384",
+      "method": "pari-periodic-linear",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m3-L96",
+      "method": "pari-periodic-linear",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m2-L384",
+      "method": "crest-cpp",
+      "replicate": 2
+    },
+    {
+      "case": "aperiodic-L24",
+      "method": "pari-periodic-linear",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m2-L96",
+      "method": "pari-periodic-doubling",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m2-L384",
+      "method": "pari-periodic-doubling",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m1-L384",
+      "method": "pari-dense",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m3-L24",
+      "method": "pari-periodic-doubling",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m4-L96",
+      "method": "crest-cpp",
+      "replicate": 2
+    },
+    {
+      "case": "aperiodic-L96",
+      "method": "pari-periodic-linear",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m1-L384",
+      "method": "crest-cpp",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m2-L96",
+      "method": "pari-periodic-linear",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m1-L24",
+      "method": "crest-cpp",
+      "replicate": 2
+    },
+    {
+      "case": "single-defect-L24",
+      "method": "pari-periodic-doubling",
+      "replicate": 2
+    },
+    {
+      "case": "hidden-period-L192",
+      "method": "crest-cpp",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m3-L24",
+      "method": "pari-periodic-linear",
+      "replicate": 2
+    },
+    {
+      "case": "single-defect-L384",
+      "method": "pari-dense",
+      "replicate": 2
+    },
+    {
+      "case": "single-defect-L384",
+      "method": "pari-periodic-doubling",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m1-L384",
+      "method": "pari-periodic-linear",
+      "replicate": 2
+    },
+    {
+      "case": "aperiodic-L96",
+      "method": "crest-cpp",
+      "replicate": 2
+    },
+    {
+      "case": "single-defect-L384",
+      "method": "pari-periodic-linear",
+      "replicate": 2
+    },
+    {
+      "case": "prime-repeat-L183",
+      "method": "pari-periodic-doubling",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m4-L96",
+      "method": "pari-dense",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m3-L96",
+      "method": "pari-dense",
+      "replicate": 2
+    },
+    {
+      "case": "single-defect-L24",
+      "method": "pari-periodic-linear",
+      "replicate": 2
+    },
+    {
+      "case": "aperiodic-L24",
+      "method": "crest-cpp",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m2-L384",
+      "method": "pari-periodic-linear",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m1-L24",
+      "method": "pari-periodic-doubling",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m4-L384",
+      "method": "crest-cpp",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m1-L384",
+      "method": "pari-periodic-doubling",
+      "replicate": 2
+    },
+    {
+      "case": "large-coefficients-L96",
+      "method": "pari-dense",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m4-L384",
+      "method": "pari-periodic-doubling",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m3-L24",
+      "method": "pari-dense",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m1-L96",
+      "method": "crest-cpp",
+      "replicate": 2
+    },
+    {
+      "case": "large-coefficients-L96",
+      "method": "pari-periodic-linear",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m2-L24",
+      "method": "pari-dense",
+      "replicate": 2
+    },
+    {
+      "case": "hidden-period-L192",
+      "method": "pari-dense",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m3-L24",
+      "method": "crest-cpp",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m4-L24",
+      "method": "crest-cpp",
+      "replicate": 2
+    },
+    {
+      "case": "aperiodic-L96",
+      "method": "pari-dense",
+      "replicate": 2
+    },
+    {
+      "case": "hidden-period-L192",
+      "method": "pari-periodic-doubling",
+      "replicate": 2
+    },
+    {
+      "case": "large-coefficients-L96",
+      "method": "crest-cpp",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m3-L384",
+      "method": "pari-dense",
+      "replicate": 2
+    },
+    {
+      "case": "prime-repeat-L183",
+      "method": "pari-periodic-linear",
+      "replicate": 2
+    },
+    {
+      "case": "aperiodic-L24",
+      "method": "pari-periodic-doubling",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m4-L384",
+      "method": "pari-dense",
+      "replicate": 2
+    },
+    {
+      "case": "single-defect-L96",
+      "method": "crest-cpp",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m2-L24",
+      "method": "crest-cpp",
+      "replicate": 2
+    },
+    {
+      "case": "aperiodic-L24",
+      "method": "pari-dense",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m2-L384",
+      "method": "pari-dense",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m2-L24",
+      "method": "pari-periodic-linear",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m2-L96",
+      "method": "crest-cpp",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m4-L384",
+      "method": "pari-periodic-linear",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m1-L96",
+      "method": "pari-periodic-linear",
+      "replicate": 2
+    },
+    {
+      "case": "aperiodic-L96",
+      "method": "pari-periodic-doubling",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m1-L24",
+      "method": "pari-periodic-linear",
+      "replicate": 2
+    },
+    {
+      "case": "spring-m1-L384",
+      "method": "crest-cpp",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m3-L384",
+      "method": "pari-periodic-linear",
+      "replicate": 3
+    },
+    {
+      "case": "single-defect-L384",
+      "method": "pari-periodic-doubling",
+      "replicate": 3
+    },
+    {
+      "case": "single-defect-L96",
+      "method": "crest-cpp",
+      "replicate": 3
+    },
+    {
+      "case": "hidden-period-L192",
+      "method": "crest-cpp",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m4-L96",
+      "method": "crest-cpp",
+      "replicate": 3
+    },
+    {
+      "case": "single-defect-L24",
+      "method": "crest-cpp",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m4-L96",
+      "method": "pari-periodic-doubling",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m1-L24",
+      "method": "pari-dense",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m1-L96",
+      "method": "pari-periodic-doubling",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m1-L24",
+      "method": "pari-periodic-doubling",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m1-L384",
+      "method": "pari-periodic-linear",
+      "replicate": 3
+    },
+    {
+      "case": "single-defect-L96",
+      "method": "pari-periodic-doubling",
+      "replicate": 3
+    },
+    {
+      "case": "aperiodic-L24",
+      "method": "pari-periodic-doubling",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m4-L96",
+      "method": "pari-periodic-linear",
+      "replicate": 3
+    },
+    {
+      "case": "aperiodic-L24",
+      "method": "pari-dense",
+      "replicate": 3
+    },
+    {
+      "case": "single-defect-L96",
+      "method": "pari-dense",
+      "replicate": 3
+    },
+    {
+      "case": "large-coefficients-L96",
+      "method": "crest-cpp",
+      "replicate": 3
+    },
+    {
+      "case": "aperiodic-L96",
+      "method": "pari-dense",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m2-L24",
+      "method": "crest-cpp",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m2-L24",
+      "method": "pari-periodic-doubling",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m3-L384",
+      "method": "crest-cpp",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m1-L384",
+      "method": "pari-periodic-doubling",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m2-L96",
+      "method": "crest-cpp",
+      "replicate": 3
+    },
+    {
+      "case": "hidden-period-L192",
+      "method": "pari-periodic-doubling",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m4-L384",
+      "method": "pari-dense",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m3-L24",
+      "method": "pari-periodic-doubling",
+      "replicate": 3
+    },
+    {
+      "case": "single-defect-L24",
+      "method": "pari-dense",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m2-L24",
+      "method": "pari-periodic-linear",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m1-L96",
+      "method": "crest-cpp",
+      "replicate": 3
+    },
+    {
+      "case": "aperiodic-L96",
+      "method": "crest-cpp",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m3-L96",
+      "method": "pari-dense",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m2-L96",
+      "method": "pari-periodic-doubling",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m2-L24",
+      "method": "pari-dense",
+      "replicate": 3
+    },
+    {
+      "case": "large-coefficients-L96",
+      "method": "pari-periodic-doubling",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m3-L96",
+      "method": "pari-periodic-doubling",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m2-L96",
+      "method": "pari-dense",
+      "replicate": 3
+    },
+    {
+      "case": "single-defect-L96",
+      "method": "pari-periodic-linear",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m3-L384",
+      "method": "pari-dense",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m4-L384",
+      "method": "pari-periodic-doubling",
+      "replicate": 3
+    },
+    {
+      "case": "single-defect-L384",
+      "method": "crest-cpp",
+      "replicate": 3
+    },
+    {
+      "case": "single-defect-L384",
+      "method": "pari-periodic-linear",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m3-L96",
+      "method": "pari-periodic-linear",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m4-L24",
+      "method": "crest-cpp",
+      "replicate": 3
+    },
+    {
+      "case": "hidden-period-L192",
+      "method": "pari-periodic-linear",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m4-L24",
+      "method": "pari-periodic-doubling",
+      "replicate": 3
+    },
+    {
+      "case": "prime-repeat-L183",
+      "method": "crest-cpp",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m4-L24",
+      "method": "pari-periodic-linear",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m2-L384",
+      "method": "pari-periodic-linear",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m3-L24",
+      "method": "pari-periodic-linear",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m3-L24",
+      "method": "crest-cpp",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m2-L384",
+      "method": "pari-dense",
+      "replicate": 3
+    },
+    {
+      "case": "hidden-period-L192",
+      "method": "pari-dense",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m3-L384",
+      "method": "pari-periodic-doubling",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m3-L24",
+      "method": "pari-dense",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m1-L96",
+      "method": "pari-dense",
+      "replicate": 3
+    },
+    {
+      "case": "single-defect-L24",
+      "method": "pari-periodic-doubling",
+      "replicate": 3
+    },
+    {
+      "case": "aperiodic-L96",
+      "method": "pari-periodic-linear",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m2-L384",
+      "method": "pari-periodic-doubling",
+      "replicate": 3
+    },
+    {
+      "case": "single-defect-L24",
+      "method": "pari-periodic-linear",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m4-L384",
+      "method": "pari-periodic-linear",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m3-L96",
+      "method": "crest-cpp",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m2-L96",
+      "method": "pari-periodic-linear",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m1-L96",
+      "method": "pari-periodic-linear",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m4-L384",
+      "method": "crest-cpp",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m4-L24",
+      "method": "pari-dense",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m4-L96",
+      "method": "pari-dense",
+      "replicate": 3
+    },
+    {
+      "case": "large-coefficients-L96",
+      "method": "pari-dense",
+      "replicate": 3
+    },
+    {
+      "case": "aperiodic-L24",
+      "method": "crest-cpp",
+      "replicate": 3
+    },
+    {
+      "case": "large-coefficients-L96",
+      "method": "pari-periodic-linear",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m1-L24",
+      "method": "pari-periodic-linear",
+      "replicate": 3
+    },
+    {
+      "case": "prime-repeat-L183",
+      "method": "pari-periodic-doubling",
+      "replicate": 3
+    },
+    {
+      "case": "aperiodic-L96",
+      "method": "pari-periodic-doubling",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m2-L384",
+      "method": "crest-cpp",
+      "replicate": 3
+    },
+    {
+      "case": "prime-repeat-L183",
+      "method": "pari-periodic-linear",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m1-L24",
+      "method": "crest-cpp",
+      "replicate": 3
+    },
+    {
+      "case": "spring-m1-L384",
+      "method": "pari-dense",
+      "replicate": 3
+    },
+    {
+      "case": "aperiodic-L24",
+      "method": "pari-periodic-linear",
+      "replicate": 3
+    },
+    {
+      "case": "prime-repeat-L183",
+      "method": "pari-dense",
+      "replicate": 3
+    },
+    {
+      "case": "single-defect-L384",
+      "method": "pari-dense",
+      "replicate": 3
+    }
+  ]
+}

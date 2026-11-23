@@ -1,0 +1,416 @@
+{
+  "schema": 1,
+  "audit_date": "2026-11-23",
+  "repository": "towre676-cloud/crest-root-calculus",
+  "scope": "All eight remote branch heads observed before the periodic spectral challenge; the remote symbolic HEAD is excluded from the branch count.",
+  "main_sha": "479938206f125ca62e67897d376a6f5e6b7f4671",
+  "main_tree_sha": "c3eea471e925725275ad3c6fb8c1a3d1c6019190",
+  "main_file_count": 506,
+  "remote_refs_observed": [
+    "origin 0f9b8ecfae3732b4f97d1bc7577d88eb31454117",
+    "origin/gh-pages 488abf904a1165955526184f002114c47dd24b83",
+    "origin/main 479938206f125ca62e67897d376a6f5e6b7f4671",
+    "origin/research/introduction-and-finite-map-reconstruction 0f9b8ecfae3732b4f97d1bc7577d88eb31454117",
+    "origin/research/positive-quartics-geometric-tower aa354c29a6c7f364ec34f6598d12567cbe5d3be9",
+    "origin/research/primitive-maps-and-tower-factors da416135f74bf2f8312a9e7b09642f5b716aa6f2",
+    "origin/research/priority-certificates-and-publication 4d36b805cf4a9a9cc815cd187f22710f6d5bf802",
+    "origin/research/quartic-elimination-tower-factors 0d883e2424c77fb64a4697a9760ae39930be2f32",
+    "origin/research/row-23640-degree-spectra d802bbad561e18edcfe4095a520ff229de55dc12"
+  ],
+  "local_independent_verification": {
+    "shallow_checkout": true,
+    "method": "Compare locally fetched complete trees and blobs. Read raw commit parent headers using git cat-file commit, which exposes recorded parents even at a shallow boundary. Verify the first-parent lineage and each research merge parent.",
+    "main_first_parent_lineage_through_pr_1": [
+      "479938206f125ca62e67897d376a6f5e6b7f4671",
+      "e9ab97224070ad7e6264c3a1e64c52fe5e9198b2",
+      "743b23b8c736d8207fbfe384b293bfac3fb8af68",
+      "2c568e2b3a93b591e51ede04129a7124acc8c9d9",
+      "c4c78f13048e673a6d25ec50e0312cbb23d26c48",
+      "813336a1c82b8b63473aebf63fb78818a1df7963"
+    ]
+  },
+  "research_branches": [
+    {
+      "branch": "research/row-23640-degree-spectra",
+      "head_sha": "d802bbad561e18edcfe4095a520ff229de55dc12",
+      "tree_sha": "974bd28433f963c700f2ec881df9b76303512adb",
+      "pull_request": 1,
+      "merge_sha": "813336a1c82b8b63473aebf63fb78818a1df7963",
+      "merge_tree_sha": "974bd28433f963c700f2ec881df9b76303512adb",
+      "merge_tree_equals_branch_tree": true,
+      "merge_is_ancestor_of_main": true,
+      "merge_ancestry_witness_from_main": [
+        "479938206f125ca62e67897d376a6f5e6b7f4671",
+        "e9ab97224070ad7e6264c3a1e64c52fe5e9198b2",
+        "743b23b8c736d8207fbfe384b293bfac3fb8af68",
+        "2c568e2b3a93b591e51ede04129a7124acc8c9d9",
+        "c4c78f13048e673a6d25ec50e0312cbb23d26c48",
+        "813336a1c82b8b63473aebf63fb78818a1df7963"
+      ],
+      "branch_head_is_recorded_merge_parent": true,
+      "merge_parents": [
+        "2ead5852f3a433fa5dc87ade39de7d3dd6c1dff2",
+        "d802bbad561e18edcfe4095a520ff229de55dc12"
+      ],
+      "files": 263,
+      "same_path_identical_files": 261,
+      "files_absent_from_main": [],
+      "superseded_files": [
+        {
+          "path": "README.md",
+          "branch_blob_sha": "57f830028d7df2d5d122d8eed3a30e0f49823f5d",
+          "main_blob_sha": "bbe00f51103bae3adecd24371ec749dbf9b6f8ad"
+        },
+        {
+          "path": "research/backlog-2026-11-23.md",
+          "branch_blob_sha": "ccb5211d0a97baa7ddb7baf1299adf140f56d520",
+          "main_blob_sha": "2f74a9e76ef9aab55ecff9b4c7f226f1c24ff55c"
+        }
+      ],
+      "same_tree_as_main": false
+    },
+    {
+      "branch": "research/primitive-maps-and-tower-factors",
+      "head_sha": "da416135f74bf2f8312a9e7b09642f5b716aa6f2",
+      "tree_sha": "4cbebac45e30a0bf513d9b35fde1ac71e531bc02",
+      "pull_request": 2,
+      "merge_sha": "c4c78f13048e673a6d25ec50e0312cbb23d26c48",
+      "merge_tree_sha": "4cbebac45e30a0bf513d9b35fde1ac71e531bc02",
+      "merge_tree_equals_branch_tree": true,
+      "merge_is_ancestor_of_main": true,
+      "merge_ancestry_witness_from_main": [
+        "479938206f125ca62e67897d376a6f5e6b7f4671",
+        "e9ab97224070ad7e6264c3a1e64c52fe5e9198b2",
+        "743b23b8c736d8207fbfe384b293bfac3fb8af68",
+        "2c568e2b3a93b591e51ede04129a7124acc8c9d9",
+        "c4c78f13048e673a6d25ec50e0312cbb23d26c48"
+      ],
+      "branch_head_is_recorded_merge_parent": true,
+      "merge_parents": [
+        "813336a1c82b8b63473aebf63fb78818a1df7963",
+        "da416135f74bf2f8312a9e7b09642f5b716aa6f2"
+      ],
+      "files": 304,
+      "same_path_identical_files": 297,
+      "files_absent_from_main": [],
+      "superseded_files": [
+        {
+          "path": "README.md",
+          "branch_blob_sha": "da7c9e2740e26928cb8ccc9f4cb2092da4861194",
+          "main_blob_sha": "bbe00f51103bae3adecd24371ec749dbf9b6f8ad"
+        },
+        {
+          "path": "downloads/crest-root-open-research-2026-11-23.zip",
+          "branch_blob_sha": "ae6fd2cedd346c94a8e9fb140145549664619dc7",
+          "main_blob_sha": "24c6f748cf9792267920c8a862328a446b74c217"
+        },
+        {
+          "path": "research/README.md",
+          "branch_blob_sha": "f9fbc5c67ddcf67085765b7289b6473d0b5f140b",
+          "main_blob_sha": "116e581b8e91a22a1fd5d8b0199b5736713ee257"
+        },
+        {
+          "path": "research/backlog-2026-11-23.md",
+          "branch_blob_sha": "bbf52d9d35d90c53ed53f4abe225142aee6e0742",
+          "main_blob_sha": "2f74a9e76ef9aab55ecff9b4c7f226f1c24ff55c"
+        },
+        {
+          "path": "research/cubic-tower-factors/README.md",
+          "branch_blob_sha": "5093e418ead80dc8f3be60f951f336bd51644b01",
+          "main_blob_sha": "ff8a741d9ed4aa94a90531fcfae3065e6bac020b"
+        },
+        {
+          "path": "research/elliptic-quotients/primitive-degree-four/README.md",
+          "branch_blob_sha": "79cee4ff56e202eb5d8ce8f285753e29c91e7857",
+          "main_blob_sha": "7e9c6f921eee659f3c0e1b70c765b4d087dcd093"
+        },
+        {
+          "path": "research/replay.py",
+          "branch_blob_sha": "02dfb5a1fd96d361b0165cc061e88bc0b20ed1c2",
+          "main_blob_sha": "832a9d23d3a494ad5c8544214b9ba04cd4ff6c2f"
+        }
+      ],
+      "same_tree_as_main": false
+    },
+    {
+      "branch": "research/quartic-elimination-tower-factors",
+      "head_sha": "0d883e2424c77fb64a4697a9760ae39930be2f32",
+      "tree_sha": "ddf38db23077e3568c235bd57317a6dfb011c4d8",
+      "pull_request": 3,
+      "merge_sha": "2c568e2b3a93b591e51ede04129a7124acc8c9d9",
+      "merge_tree_sha": "ddf38db23077e3568c235bd57317a6dfb011c4d8",
+      "merge_tree_equals_branch_tree": true,
+      "merge_is_ancestor_of_main": true,
+      "merge_ancestry_witness_from_main": [
+        "479938206f125ca62e67897d376a6f5e6b7f4671",
+        "e9ab97224070ad7e6264c3a1e64c52fe5e9198b2",
+        "743b23b8c736d8207fbfe384b293bfac3fb8af68",
+        "2c568e2b3a93b591e51ede04129a7124acc8c9d9"
+      ],
+      "branch_head_is_recorded_merge_parent": true,
+      "merge_parents": [
+        "c4c78f13048e673a6d25ec50e0312cbb23d26c48",
+        "0d883e2424c77fb64a4697a9760ae39930be2f32"
+      ],
+      "files": 324,
+      "same_path_identical_files": 316,
+      "files_absent_from_main": [],
+      "superseded_files": [
+        {
+          "path": "README.md",
+          "branch_blob_sha": "4d4ecbeeb9d128d62ce34ba9d6a54c05df47563d",
+          "main_blob_sha": "bbe00f51103bae3adecd24371ec749dbf9b6f8ad"
+        },
+        {
+          "path": "downloads/crest-root-open-research-2026-11-23.zip",
+          "branch_blob_sha": "d9c3208d4458b0c03179ce5e62d3d94279755ff5",
+          "main_blob_sha": "24c6f748cf9792267920c8a862328a446b74c217"
+        },
+        {
+          "path": "research/README.md",
+          "branch_blob_sha": "ff2cf6c49086550cec1fefa28afb6c1a78c5c69b",
+          "main_blob_sha": "116e581b8e91a22a1fd5d8b0199b5736713ee257"
+        },
+        {
+          "path": "research/backlog-2026-11-23.md",
+          "branch_blob_sha": "a2dbb58435e4e68aca428edd8a789f23e196b155",
+          "main_blob_sha": "2f74a9e76ef9aab55ecff9b4c7f226f1c24ff55c"
+        },
+        {
+          "path": "research/cubic-tower-higher-supports/README.md",
+          "branch_blob_sha": "7e6004966dbaa57e14736376415d1bd2a608019a",
+          "main_blob_sha": "afc20cc7836850d3e0931962a02a956d5d4cfb2b"
+        },
+        {
+          "path": "research/elliptic-quotients/degree-four-incidence/README.md",
+          "branch_blob_sha": "2d4bfc1189ca6c00aff4730fd6b3f29dce543449",
+          "main_blob_sha": "4b55e26b6eed926bbb476a06a3a92176b507eafd"
+        },
+        {
+          "path": "research/elliptic-quotients/degree-four-jets/README.md",
+          "branch_blob_sha": "e2381266bc92f311482a27debbd8a08aa46530c4",
+          "main_blob_sha": "2894a47ca5569d7dbe785b1154e92bead705d779"
+        },
+        {
+          "path": "research/replay.py",
+          "branch_blob_sha": "7e45851086e652021170067f5fd8d7cbac7f7b39",
+          "main_blob_sha": "832a9d23d3a494ad5c8544214b9ba04cd4ff6c2f"
+        }
+      ],
+      "same_tree_as_main": false
+    },
+    {
+      "branch": "research/positive-quartics-geometric-tower",
+      "head_sha": "aa354c29a6c7f364ec34f6598d12567cbe5d3be9",
+      "tree_sha": "83aa81b12ff8e9f71f4074eb6a361551023be38a",
+      "pull_request": 4,
+      "merge_sha": "743b23b8c736d8207fbfe384b293bfac3fb8af68",
+      "merge_tree_sha": "83aa81b12ff8e9f71f4074eb6a361551023be38a",
+      "merge_tree_equals_branch_tree": true,
+      "merge_is_ancestor_of_main": true,
+      "merge_ancestry_witness_from_main": [
+        "479938206f125ca62e67897d376a6f5e6b7f4671",
+        "e9ab97224070ad7e6264c3a1e64c52fe5e9198b2",
+        "743b23b8c736d8207fbfe384b293bfac3fb8af68"
+      ],
+      "branch_head_is_recorded_merge_parent": true,
+      "merge_parents": [
+        "2c568e2b3a93b591e51ede04129a7124acc8c9d9",
+        "aa354c29a6c7f364ec34f6598d12567cbe5d3be9"
+      ],
+      "files": 364,
+      "same_path_identical_files": 359,
+      "files_absent_from_main": [],
+      "superseded_files": [
+        {
+          "path": "README.md",
+          "branch_blob_sha": "5a8a8d40e8cf963565de06d200363cc7dd4b89b4",
+          "main_blob_sha": "bbe00f51103bae3adecd24371ec749dbf9b6f8ad"
+        },
+        {
+          "path": "downloads/crest-root-open-research-2026-11-23.zip",
+          "branch_blob_sha": "f148bb1c67f52ec6878f8528e3f93d720e426111",
+          "main_blob_sha": "24c6f748cf9792267920c8a862328a446b74c217"
+        },
+        {
+          "path": "research/README.md",
+          "branch_blob_sha": "16bc23e25872d31dd72767872ff42db678776249",
+          "main_blob_sha": "116e581b8e91a22a1fd5d8b0199b5736713ee257"
+        },
+        {
+          "path": "research/backlog-2026-11-23.md",
+          "branch_blob_sha": "40c895b3a828da8342b32ea90da51d1114bf95c9",
+          "main_blob_sha": "2f74a9e76ef9aab55ecff9b4c7f226f1c24ff55c"
+        },
+        {
+          "path": "research/replay.py",
+          "branch_blob_sha": "7d647d39ccea647fd644356c13c030e54b0e6ab8",
+          "main_blob_sha": "832a9d23d3a494ad5c8544214b9ba04cd4ff6c2f"
+        }
+      ],
+      "same_tree_as_main": false
+    },
+    {
+      "branch": "research/priority-certificates-and-publication",
+      "head_sha": "4d36b805cf4a9a9cc815cd187f22710f6d5bf802",
+      "tree_sha": "1ce257a3be01ce849e31197598edab0b1b06792a",
+      "pull_request": 5,
+      "merge_sha": "e9ab97224070ad7e6264c3a1e64c52fe5e9198b2",
+      "merge_tree_sha": "1ce257a3be01ce849e31197598edab0b1b06792a",
+      "merge_tree_equals_branch_tree": true,
+      "merge_is_ancestor_of_main": true,
+      "merge_ancestry_witness_from_main": [
+        "479938206f125ca62e67897d376a6f5e6b7f4671",
+        "e9ab97224070ad7e6264c3a1e64c52fe5e9198b2"
+      ],
+      "branch_head_is_recorded_merge_parent": true,
+      "merge_parents": [
+        "743b23b8c736d8207fbfe384b293bfac3fb8af68",
+        "4d36b805cf4a9a9cc815cd187f22710f6d5bf802"
+      ],
+      "files": 439,
+      "same_path_identical_files": 433,
+      "files_absent_from_main": [],
+      "superseded_files": [
+        {
+          "path": "README.md",
+          "branch_blob_sha": "68253e15a3d71eed04b7e80c38f1d1c682fc482b",
+          "main_blob_sha": "bbe00f51103bae3adecd24371ec749dbf9b6f8ad"
+        },
+        {
+          "path": "downloads/crest-root-open-research-2026-11-23.zip",
+          "branch_blob_sha": "93ee5e75ccf566dbeb4a8594285dfe741089bb80",
+          "main_blob_sha": "24c6f748cf9792267920c8a862328a446b74c217"
+        },
+        {
+          "path": "research/README.md",
+          "branch_blob_sha": "772ea4064a6b3731977142331c2805805448c636",
+          "main_blob_sha": "116e581b8e91a22a1fd5d8b0199b5736713ee257"
+        },
+        {
+          "path": "research/backlog-2026-11-23.md",
+          "branch_blob_sha": "91a7efe476ca3f47b3357634d41ce861caf4d45d",
+          "main_blob_sha": "2f74a9e76ef9aab55ecff9b4c7f226f1c24ff55c"
+        },
+        {
+          "path": "research/local-global-correspondences/README.md",
+          "branch_blob_sha": "d2040d2df4c347fdc695f7591bdd875a18367844",
+          "main_blob_sha": "64fb78c2362ca96a32ab9ced5733be4bb46f08fe"
+        },
+        {
+          "path": "research/replay.py",
+          "branch_blob_sha": "f5c0ba9f9d62301b4baea12ead363f02b956f595",
+          "main_blob_sha": "832a9d23d3a494ad5c8544214b9ba04cd4ff6c2f"
+        }
+      ],
+      "same_tree_as_main": false
+    },
+    {
+      "branch": "research/introduction-and-finite-map-reconstruction",
+      "head_sha": "0f9b8ecfae3732b4f97d1bc7577d88eb31454117",
+      "tree_sha": "c3eea471e925725275ad3c6fb8c1a3d1c6019190",
+      "pull_request": 6,
+      "merge_sha": "479938206f125ca62e67897d376a6f5e6b7f4671",
+      "merge_tree_sha": "c3eea471e925725275ad3c6fb8c1a3d1c6019190",
+      "merge_tree_equals_branch_tree": true,
+      "merge_is_ancestor_of_main": true,
+      "merge_ancestry_witness_from_main": [
+        "479938206f125ca62e67897d376a6f5e6b7f4671"
+      ],
+      "branch_head_is_recorded_merge_parent": false,
+      "merge_parents": [
+        "e9ab97224070ad7e6264c3a1e64c52fe5e9198b2"
+      ],
+      "files": 506,
+      "same_path_identical_files": 506,
+      "files_absent_from_main": [],
+      "superseded_files": [],
+      "same_tree_as_main": true
+    }
+  ],
+  "publication_branch": {
+    "branch": "gh-pages",
+    "head_sha": "488abf904a1165955526184f002114c47dd24b83",
+    "tree_sha": "b08765434159415b74e83d8da382f60f819f70b6",
+    "files": 2,
+    "paths": {
+      ".nojekyll": {
+        "mode": "100644",
+        "blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      "index.html": {
+        "mode": "100644",
+        "blob_sha": "0c54959e797ffd4567bb1e7adc09838e2db42026"
+      }
+    },
+    "index_matches_main_path": "research/monograph-publication/index.html",
+    "index_equal_by_direct_byte_comparison": true,
+    "index_sha256": "978a72fe6d31b629aa18ca72cd4aa3649fe8a6191e5d8656693861aa047961a0",
+    "index_bytes": 1031075,
+    "empty_marker_preserved_at": "research/monograph-publication/.nojekyll",
+    "empty_marker_bytes": 0,
+    "empty_marker_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "integration": "Canonical HTML already exists on main. Preserve the empty marker beside that source. Do not merge the two-file deployment tree over the research tree."
+  },
+  "conclusion": {
+    "research_branch_files_absent_from_main": 0,
+    "final_research_branch_entire_tree_matches_main": true,
+    "prior_research_merges_are_ancestors_of_main": true,
+    "earlier_differing_versions": "Only later-revised documentation, the replay entry point and the aggregate research ZIP; original versions remain in integrated history.",
+    "only_publication_file_not_previously_present": "Empty .nojekyll deployment marker, now copied beside canonical publication source.",
+    "remote_mutations_during_audit": false,
+    "branches_deleted": false
+  },
+  "reproduction": {
+    "list_remote_branches": [
+      "git",
+      "for-each-ref",
+      "--format=%(refname:short) %(objectname)",
+      "refs/remotes/origin"
+    ],
+    "inspect_tree": [
+      "git",
+      "ls-tree",
+      "-r",
+      "--full-tree",
+      "<frozen-head-sha>"
+    ],
+    "compare_final_trees": [
+      "git",
+      "diff",
+      "--exit-code",
+      "479938206f125ca62e67897d376a6f5e6b7f4671",
+      "0f9b8ecfae3732b4f97d1bc7577d88eb31454117",
+      "--"
+    ],
+    "show_tree_sha": [
+      "git",
+      "rev-parse",
+      "<frozen-head-sha>^{tree}"
+    ],
+    "read_raw_parents": [
+      "git",
+      "cat-file",
+      "commit",
+      "<merge-sha>"
+    ],
+    "check_merge_ancestry_with_full_history": [
+      "git",
+      "merge-base",
+      "--is-ancestor",
+      "<merge-sha>",
+      "479938206f125ca62e67897d376a6f5e6b7f4671"
+    ],
+    "show_publication_blob": [
+      "git",
+      "rev-parse",
+      "488abf904a1165955526184f002114c47dd24b83:index.html"
+    ],
+    "show_canonical_blob": [
+      "git",
+      "rev-parse",
+      "479938206f125ca62e67897d376a6f5e6b7f4671:research/monograph-publication/index.html"
+    ],
+    "note": "Use frozen commits rather than mutable branch names when replaying after later merges. A shallow checkout can produce false-negative merge-base ancestry checks; raw recorded parent links supply the ancestry witnesses here. Tree identity covers paths, modes and Git blob identities. Publication HTML was also compared as raw bytes and hashed with SHA-256."
+  }
+}
