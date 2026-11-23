@@ -1,0 +1,35 @@
+{
+  "graph_basis_over_Q_k_polynomial_ring": [
+    "529*k**2*u**2*v**2 + 46*k*t**2*u*v + 23*k*u**3*v/3 + 161*k*u**2*v**2/3 + 46*k*u*v**3/3 + t**4 + t**2*u**2/3 + 7*t**2*u*v/3 + 2*t**2*v**2/3 + u**3*v/3 + u**2*v**2 + u*v**3/3",
+    "-23*X*k*v**2/2 + X*t**2 - X*v**2/4 + 23*Y*k*v**2/2 + Y*v**2/2 - 345*Z*k*u*v - 345*Z*k*v**2/2 - 5*Z*u**2 - 20*Z*u*v - 35*Z*v**2/4",
+    "23*Y*k*u*v + Y*t**2 + Y*u*v - Y*v**2 + 40*Z*u*v + 20*Z*v**2",
+    "-X*v**2/12 + 23*Z*k*u*v + Z*t**2 + Z*u**2/3 + 4*Z*u*v/3 + 5*Z*v**2/12",
+    "X*u + X*v/2 - Y*v/2 + 15*Z*u + 15*Z*v/2",
+    "-X**2*v/2 + X*Z*v/2 + Y*Z*u + Y*Z*v/2",
+    "X**3 + 14*X**2*Z - 15*X*Z**2 - Y**2*Z"
+  ],
+  "monic_basis_specializes_for_every_k": true,
+  "bigraded_hilbert_polynomial": "4*m + 6*n - 2",
+  "projection_degrees_source_target": [
+    1,
+    2
+  ],
+  "fibre_at_origin_in_chart_u_1": [
+    "t**2",
+    "v"
+  ],
+  "fibre_at_minus15_0_in_chart_u_1": [
+    "t**2 + 1/3",
+    "v"
+  ],
+  "fibre_at_0_0_in_chart_u_1": [
+    "-46*k + t**2 - 2/3",
+    "v + 2"
+  ],
+  "fibre_at_1_0_in_chart_u_1": [
+    "-46*k + t**2 - 1",
+    "v + 2"
+  ],
+  "graph_intersection_with_negative_graph": 8,
+  "spurious_naive_graph_point_removed": true
+}

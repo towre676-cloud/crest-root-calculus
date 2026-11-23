@@ -321,7 +321,7 @@ The integrated research archive is unusually large because it keeps historical w
 
 ## The 57 research questions
 
-The November 23 register traces the original 57 mathematical, engineering and publication items through Part XXX. The twelve-curve blind atlas now has a degree-three verdict on all twelve rows. The last curve, Sutherland 23640, has a hidden degree-two map. Every elliptic map from it factors through that map. An infinite family through the same curve has all positive even degrees over an algebraic closure and precisely $2n^2$ or $4n^2$ over the rationals. [Research register](research/backlog-2026-11-23.md) · [Proof, equations and replay](research/elliptic-quotients/row-23640/README.md) · [Download the research packet](downloads/crest-root-research-23640.zip)
+The 57-item register now includes an equation-only primitive degree-four map and exact class counts in every degree on an infinite family. The twelve blind Sutherland quartics have complete elliptic-map degree spectra. Ten admit no elliptic map. The other two admit all even geometric degrees and different rational degrees. The cubic-tower study proves a seven-factor decomposition in genus 13 and certifies 111 simple factors at stage ten. [Research results and replay](research/README.md) · [57-item register](research/backlog-2026-11-23.md) · [Download the complete research packet](downloads/crest-root-open-research-2026-11-23.zip)
 
 ## What is proved, and what remains difficult?
 
