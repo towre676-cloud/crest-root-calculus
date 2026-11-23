@@ -1,0 +1,1071 @@
+{
+  "0": {
+    "primes": [
+      2,
+      3,
+      5,
+      7,
+      11
+    ],
+    "places": {
+      "0": {
+        "projective_span_dimension": 1,
+        "generators": [
+          -17
+        ]
+      },
+      "2": {
+        "projective_span_dimension": 1,
+        "generators": [
+          -52
+        ]
+      },
+      "3": {
+        "projective_span_dimension": 0,
+        "generators": []
+      },
+      "5": {
+        "projective_span_dimension": 0,
+        "generators": []
+      },
+      "7": {
+        "projective_span_dimension": 1,
+        "generators": [
+          -54
+        ]
+      },
+      "11": {
+        "projective_span_dimension": 1,
+        "generators": [
+          -55
+        ]
+      }
+    }
+  },
+  "1": {
+    "primes": [
+      2
+    ],
+    "places": {
+      "0": {
+        "projective_span_dimension": 1,
+        "generators": [
+          -11
+        ]
+      },
+      "2": {
+        "projective_span_dimension": 3,
+        "generators": [
+          -52,
+          -32,
+          -9
+        ]
+      }
+    }
+  },
+  "01": {
+    "primes": [
+      2,
+      3,
+      5,
+      7,
+      11,
+      76733
+    ],
+    "places": {
+      "0": {
+        "projective_span_dimension": 3,
+        "generators": [
+          -11,
+          1
+        ]
+      },
+      "2": {
+        "projective_span_dimension": 7,
+        "generators": [
+          -55,
+          -52,
+          -47,
+          -9
+        ]
+      },
+      "3": {
+        "projective_span_dimension": 2,
+        "generators": []
+      },
+      "5": {
+        "projective_span_dimension": 2,
+        "generators": []
+      },
+      "7": {
+        "projective_span_dimension": 4,
+        "generators": [
+          -51,
+          -49
+        ]
+      },
+      "11": {
+        "projective_span_dimension": 4,
+        "generators": [
+          -55,
+          -53
+        ]
+      },
+      "76733": {
+        "projective_span_dimension": 5,
+        "generators": [
+          -47,
+          -33,
+          -904407
+        ]
+      }
+    }
+  },
+  "2": {
+    "primes": [
+      2
+    ],
+    "places": {
+      "0": {
+        "projective_span_dimension": 1,
+        "generators": [
+          -10
+        ]
+      },
+      "2": {
+        "projective_span_dimension": 2,
+        "generators": [
+          -55,
+          -54
+        ]
+      }
+    }
+  },
+  "02": {
+    "primes": [
+      2,
+      3,
+      5,
+      7,
+      11,
+      151733
+    ],
+    "places": {
+      "0": {
+        "projective_span_dimension": 3,
+        "generators": [
+          -10,
+          "1/2"
+        ]
+      },
+      "2": {
+        "projective_span_dimension": 6,
+        "generators": [
+          -54,
+          -49,
+          -2
+        ]
+      },
+      "3": {
+        "projective_span_dimension": 2,
+        "generators": []
+      },
+      "5": {
+        "projective_span_dimension": 2,
+        "generators": []
+      },
+      "7": {
+        "projective_span_dimension": 5,
+        "generators": [
+          -54,
+          -51,
+          -43
+        ]
+      },
+      "11": {
+        "projective_span_dimension": 5,
+        "generators": [
+          -54,
+          -50,
+          -45
+        ]
+      },
+      "151733": {
+        "projective_span_dimension": 5,
+        "generators": [
+          -55,
+          -52,
+          -1731484
+        ]
+      }
+    }
+  },
+  "12": {
+    "primes": [
+      2,
+      13267
+    ],
+    "places": {
+      "0": {
+        "projective_span_dimension": 3,
+        "generators": [
+          -10,
+          "1/2"
+        ]
+      },
+      "2": {
+        "projective_span_dimension": 8,
+        "generators": [
+          -50,
+          -28,
+          -26,
+          -9,
+          3
+        ]
+      },
+      "13267": {
+        "projective_span_dimension": 4,
+        "generators": [
+          -55,
+          -136049
+        ]
+      }
+    }
+  },
+  "012": {
+    "primes": [
+      2,
+      3,
+      5,
+      7,
+      11,
+      13267,
+      76733,
+      151733
+    ],
+    "places": {
+      "0": {
+        "projective_span_dimension": 4,
+        "generators": [
+          -17,
+          -10,
+          1,
+          "1/5"
+        ]
+      },
+      "2": {
+        "projective_span_dimension": 9,
+        "generators": [
+          -55,
+          -50,
+          -47,
+          -28,
+          -26,
+          -9,
+          67,
+          [
+            "branch",
+            1
+          ],
+          [
+            "extension",
+            1,
+            -5,
+            1,
+            0
+          ]
+        ]
+      },
+      "3": {
+        "projective_span_dimension": 2,
+        "generators": [
+          -55,
+          [
+            "branch",
+            1
+          ]
+        ]
+      },
+      "5": {
+        "projective_span_dimension": 2,
+        "generators": [
+          -51,
+          [
+            "branch",
+            1
+          ]
+        ]
+      },
+      "7": {
+        "projective_span_dimension": 6,
+        "generators": [
+          -51,
+          -43,
+          -40,
+          -15,
+          21,
+          928
+        ]
+      },
+      "11": {
+        "projective_span_dimension": 6,
+        "generators": [
+          -50,
+          -9,
+          -123,
+          971,
+          [
+            "branch",
+            1
+          ],
+          [
+            "quadratic",
+            -9,
+            5,
+            0
+          ]
+        ]
+      },
+      "13267": {
+        "projective_span_dimension": 4,
+        "generators": [
+          -54,
+          -52,
+          -49,
+          -136049
+        ]
+      },
+      "76733": {
+        "projective_span_dimension": 5,
+        "generators": [
+          -55,
+          -51,
+          -46,
+          -41,
+          -827674
+        ]
+      },
+      "151733": {
+        "projective_span_dimension": 6,
+        "generators": [
+          -53,
+          -51,
+          -49,
+          -48,
+          -42,
+          -1276285
+        ]
+      }
+    }
+  },
+  "3": {
+    "primes": [
+      2,
+      3,
+      5,
+      7,
+      11
+    ],
+    "places": {
+      "0": {
+        "projective_span_dimension": 0,
+        "generators": []
+      },
+      "2": {
+        "projective_span_dimension": 2,
+        "generators": [
+          -55,
+          -51
+        ]
+      },
+      "3": {
+        "projective_span_dimension": 0,
+        "generators": []
+      },
+      "5": {
+        "projective_span_dimension": 0,
+        "generators": []
+      },
+      "7": {
+        "projective_span_dimension": 0,
+        "generators": []
+      },
+      "11": {
+        "projective_span_dimension": 1,
+        "generators": [
+          -51
+        ]
+      }
+    }
+  },
+  "03": {
+    "primes": [
+      2,
+      3,
+      5,
+      7,
+      17,
+      63347
+    ],
+    "places": {
+      "0": {
+        "projective_span_dimension": 2,
+        "generators": [
+          -12
+        ]
+      },
+      "2": {
+        "projective_span_dimension": 6,
+        "generators": [
+          -53,
+          -44,
+          0
+        ]
+      },
+      "3": {
+        "projective_span_dimension": 2,
+        "generators": []
+      },
+      "5": {
+        "projective_span_dimension": 2,
+        "generators": []
+      },
+      "7": {
+        "projective_span_dimension": 3,
+        "generators": [
+          -54
+        ]
+      },
+      "17": {
+        "projective_span_dimension": 5,
+        "generators": [
+          -51,
+          -48,
+          1
+        ]
+      },
+      "63347": {
+        "projective_span_dimension": 5,
+        "generators": [
+          -53,
+          -39,
+          -655120
+        ]
+      }
+    }
+  },
+  "13": {
+    "primes": [
+      2,
+      37,
+      131
+    ],
+    "places": {
+      "0": {
+        "projective_span_dimension": 2,
+        "generators": [
+          -11
+        ]
+      },
+      "2": {
+        "projective_span_dimension": 8,
+        "generators": [
+          -54,
+          -50,
+          -46,
+          -25,
+          -4
+        ]
+      },
+      "37": {
+        "projective_span_dimension": 5,
+        "generators": [
+          -54,
+          -47,
+          -2
+        ]
+      },
+      "131": {
+        "projective_span_dimension": 5,
+        "generators": [
+          -55,
+          -54,
+          -6
+        ]
+      }
+    }
+  },
+  "013": {
+    "primes": [
+      2,
+      17,
+      37,
+      131,
+      63347,
+      76733
+    ],
+    "places": {
+      "0": {
+        "projective_span_dimension": 3,
+        "generators": [
+          -17,
+          -11,
+          1
+        ]
+      },
+      "2": {
+        "projective_span_dimension": 9,
+        "generators": [
+          -55,
+          -54,
+          -50,
+          -47,
+          -46,
+          -25,
+          -4,
+          3,
+          [
+            "branch",
+            1
+          ]
+        ]
+      },
+      "17": {
+        "projective_span_dimension": 5,
+        "generators": [
+          -55,
+          -54,
+          -53,
+          -51,
+          1
+        ]
+      },
+      "37": {
+        "projective_span_dimension": 5,
+        "generators": [
+          -54,
+          -51,
+          -48,
+          -47,
+          -2
+        ]
+      },
+      "131": {
+        "projective_span_dimension": 6,
+        "generators": [
+          -55,
+          -51,
+          -50,
+          -49,
+          -45,
+          -6
+        ]
+      },
+      "63347": {
+        "projective_span_dimension": 7,
+        "generators": [
+          -55,
+          -53,
+          -48,
+          -47,
+          -46,
+          -36,
+          -718467
+        ]
+      },
+      "76733": {
+        "projective_span_dimension": 7,
+        "generators": [
+          -50,
+          -49,
+          -48,
+          -47,
+          -46,
+          -43,
+          -904407
+        ]
+      }
+    }
+  },
+  "23": {
+    "primes": [
+      2,
+      43,
+      421
+    ],
+    "places": {
+      "0": {
+        "projective_span_dimension": 2,
+        "generators": [
+          -10
+        ]
+      },
+      "2": {
+        "projective_span_dimension": 7,
+        "generators": [
+          -55,
+          -51,
+          -50,
+          -48
+        ]
+      },
+      "43": {
+        "projective_span_dimension": 4,
+        "generators": [
+          -54,
+          -47
+        ]
+      },
+      "421": {
+        "projective_span_dimension": 5,
+        "generators": [
+          -49,
+          -48,
+          -4689
+        ]
+      }
+    }
+  },
+  "023": {
+    "primes": [
+      2,
+      7,
+      17,
+      43,
+      421,
+      63347,
+      151733
+    ],
+    "places": {
+      "0": {
+        "projective_span_dimension": 3,
+        "generators": [
+          -17,
+          -10,
+          "1/2"
+        ]
+      },
+      "2": {
+        "projective_span_dimension": 8,
+        "generators": [
+          -53,
+          -50,
+          -48,
+          -26,
+          [
+            "branch",
+            1
+          ],
+          [
+            "branch",
+            2
+          ],
+          [
+            "quadratic",
+            -8,
+            9,
+            0
+          ],
+          [
+            "quadratic",
+            -6,
+            5,
+            0
+          ]
+        ]
+      },
+      "7": {
+        "projective_span_dimension": 5,
+        "generators": [
+          -54,
+          -51,
+          -43,
+          -15,
+          [
+            "quadratic",
+            -9,
+            1,
+            0
+          ]
+        ]
+      },
+      "17": {
+        "projective_span_dimension": 6,
+        "generators": [
+          -52,
+          -49,
+          -48,
+          -45,
+          -43,
+          1
+        ]
+      },
+      "43": {
+        "projective_span_dimension": 4,
+        "generators": [
+          -53,
+          -52,
+          -50,
+          -4
+        ]
+      },
+      "421": {
+        "projective_span_dimension": 7,
+        "generators": [
+          -55,
+          -53,
+          -52,
+          -48,
+          -47,
+          -37,
+          -3847
+        ]
+      },
+      "63347": {
+        "projective_span_dimension": 6,
+        "generators": [
+          -53,
+          -47,
+          -46,
+          -44,
+          -39,
+          -655120
+        ]
+      },
+      "151733": {
+        "projective_span_dimension": 5,
+        "generators": [
+          -55,
+          -51,
+          -50,
+          -49,
+          -1276285
+        ]
+      }
+    }
+  },
+  "123": {
+    "primes": [
+      2,
+      37,
+      43,
+      131,
+      421,
+      13267
+    ],
+    "places": {
+      "0": {
+        "projective_span_dimension": 3,
+        "generators": [
+          -12,
+          -10,
+          "1/2"
+        ]
+      },
+      "2": {
+        "projective_span_dimension": 10,
+        "generators": [
+          -54,
+          -25,
+          -2,
+          4,
+          8,
+          67,
+          80,
+          247,
+          [
+            "branch",
+            2
+          ],
+          [
+            "quadratic",
+            -9,
+            2,
+            0
+          ]
+        ]
+      },
+      "37": {
+        "projective_span_dimension": 6,
+        "generators": [
+          -55,
+          -33,
+          -31,
+          -30,
+          -26,
+          -2
+        ]
+      },
+      "43": {
+        "projective_span_dimension": 4,
+        "generators": [
+          -54,
+          -50,
+          -48,
+          -47
+        ]
+      },
+      "131": {
+        "projective_span_dimension": 7,
+        "generators": [
+          -54,
+          -52,
+          -49,
+          -48,
+          -46,
+          -39,
+          -1185
+        ]
+      },
+      "421": {
+        "projective_span_dimension": 7,
+        "generators": [
+          -55,
+          -53,
+          -51,
+          -50,
+          -49,
+          -47,
+          -4689
+        ]
+      },
+      "13267": {
+        "projective_span_dimension": 5,
+        "generators": [
+          -55,
+          -54,
+          -50,
+          -46,
+          -136049
+        ]
+      }
+    }
+  },
+  "0123": {
+    "primes": [
+      2,
+      7,
+      17,
+      37,
+      43,
+      61,
+      131,
+      421,
+      2089,
+      6469,
+      13267,
+      61909,
+      63347,
+      76733,
+      106979,
+      151733
+    ],
+    "places": {
+      "0": {
+        "projective_span_dimension": 5,
+        "generators": [
+          -12,
+          -10,
+          1,
+          "1/5"
+        ]
+      },
+      "2": {
+        "projective_span_dimension": 14,
+        "generators": [
+          -55,
+          -54,
+          -47,
+          -25,
+          -2,
+          3,
+          4,
+          8,
+          [
+            "quadratic",
+            -8,
+            9,
+            0
+          ],
+          [
+            "quadratic",
+            -7,
+            11,
+            0
+          ],
+          [
+            "quadratic",
+            -5,
+            9,
+            0
+          ]
+        ]
+      },
+      "7": {
+        "projective_span_dimension": 8,
+        "generators": [
+          -55,
+          -51,
+          -43,
+          -40,
+          21,
+          928
+        ]
+      },
+      "17": {
+        "projective_span_dimension": 8,
+        "generators": [
+          -55,
+          -54,
+          -53,
+          -52,
+          -48,
+          1
+        ]
+      },
+      "37": {
+        "projective_span_dimension": 8,
+        "generators": [
+          -55,
+          -48,
+          -44,
+          -42,
+          -36,
+          -2
+        ]
+      },
+      "43": {
+        "projective_span_dimension": 6,
+        "generators": [
+          -52,
+          -51,
+          -45,
+          -4
+        ]
+      },
+      "61": {
+        "projective_span_dimension": 6,
+        "generators": [
+          -53,
+          -52,
+          -51,
+          -50
+        ]
+      },
+      "131": {
+        "projective_span_dimension": 10,
+        "generators": [
+          -52,
+          -50,
+          -49,
+          -48,
+          -46,
+          -45,
+          -43,
+          -1185
+        ]
+      },
+      "421": {
+        "projective_span_dimension": 11,
+        "generators": [
+          -52,
+          -50,
+          -47,
+          -46,
+          -44,
+          -41,
+          -39,
+          -34,
+          -3847
+        ]
+      },
+      "2089": {
+        "projective_span_dimension": 8,
+        "generators": [
+          -52,
+          -51,
+          -49,
+          -48,
+          -47,
+          -46
+        ]
+      },
+      "6469": {
+        "projective_span_dimension": 7,
+        "generators": [
+          -55,
+          -53,
+          -48,
+          -40,
+          -39
+        ]
+      },
+      "13267": {
+        "projective_span_dimension": 7,
+        "generators": [
+          -52,
+          -51,
+          -48,
+          -46,
+          -136049
+        ]
+      },
+      "61909": {
+        "projective_span_dimension": 7,
+        "generators": [
+          -55,
+          -54,
+          -48,
+          -46,
+          -38
+        ]
+      },
+      "63347": {
+        "projective_span_dimension": 10,
+        "generators": [
+          -55,
+          -54,
+          -53,
+          -48,
+          -45,
+          -40,
+          -22,
+          -718467
+        ]
+      },
+      "76733": {
+        "projective_span_dimension": 9,
+        "generators": [
+          -55,
+          -52,
+          -51,
+          -50,
+          -49,
+          -48,
+          -827674
+        ]
+      },
+      "106979": {
+        "projective_span_dimension": 7,
+        "generators": [
+          -54,
+          -53,
+          -50,
+          -45,
+          -44
+        ]
+      },
+      "151733": {
+        "projective_span_dimension": 8,
+        "generators": [
+          -52,
+          -51,
+          -50,
+          -43,
+          -36,
+          -1731484
+        ]
+      }
+    }
+  }
+}

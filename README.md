@@ -4,6 +4,8 @@
 
 [Open the seven applications](#seven-applications-you-can-run) · [Choose a worked example](#choose-a-worked-example) · [Try the wing, rock and solar experiments](#a-wing-a-rock-and-a-street-of-solar-roofs) · [How it began](#how-the-project-began) · [Why a claim changed](#when-a-pattern-looks-too-good) · [Finding a hidden curve](#turning-the-question-around) · [Run the examples](#try-it-on-windows-beginner-instructions)
 
+[Read the full illustrated monograph, Parts I–XXX](https://towre676-cloud.github.io/crest-root-calculus/) · [See all 57 research questions and their status](research/backlog-2026-11-23.md)
+
 ## Seven applications you can run
 
 **Try a real decision.** Can a second reading settle a chip’s width? Which street still needs a leak search? Does a retired battery need another test? The workshop also compares home retrofits, reconstructs material structures, schedules telescope observations, and runs the original degree-three map solver on published curves. Each app accepts your own inputs and shows which conclusions the measurements support.
@@ -236,6 +238,8 @@ This is where the original ambition paid off. For a specific question about smoo
 
 ### 1. Get the files
 
+The full illustrated monograph can be read online through section 148. For the new research programs, use the verified packet linked below. [Read the monograph](https://towre676-cloud.github.io/crest-root-calculus/)
+
 The illustrations play automatically on this page. The four worked examples above are in the GitHub ZIP. For the full Part XXX solver commands below, extract the separately distributed `crest_root_calculus_integrated_part_xxx.zip`. Open the extracted folder that contains `crest`. Inside `crest` you should see `scan_completeness_xxx`.
 
 The integrated research archive contains the full solver, monograph, and research verification suite. Each worked example in the GitHub ZIP lists its own requirements.
@@ -321,6 +325,9 @@ The integrated research archive is unusually large because it keeps historical w
 
 ## The 57 research questions
 
+The latest work settles the marked chart-I cofactor problem and delivers a Riemann–Roch engine for curves without a rational point. A genus-two solver reconstructs explicit correspondences from pairs of equations. On the genus-37 example from §61 the proven Mordell–Weil rank is now between 45 and 64, with four of the genus-two sector ranks determined exactly. The register tracks 10 settled items, 18 partial items, 27 open items and two dormant projects. [Latest results](research/README.md) · [Full status table](research/backlog-2026-11-23.md)
+
+
 Two new quartic equations now have complete answers for their elliptic quotients. One has a unique primitive map of degree four and no involutions. The other has a double cover and two primitive degree-four maps. Both results extend to infinite families. In the cubic tower, the genus-10,207 seventh-stage Jacobian has 255 geometrically simple, pairwise nonisogenous factors. At stage ten, 1,293 of the 2,047 displayed factors are individually certified geometrically simple and pairwise nonisogenous. A separate calculation at 193 raises the stage-ten lower bound to 1,599 distinct geometric simple classes. The archive contains the equations and verification programs for both problems. [Research results and replay](research/README.md) · [57-item register](research/backlog-2026-11-23.md) · [Verified research packet](downloads/crest-root-open-research-2026-11-23.zip)
 
 ## What is proved, and what remains difficult?
@@ -337,6 +344,6 @@ When reporting a problem, include the command you ran, the Python version, your 
 
 ## Research and citation
 
-The primary technical reference is `crest/index.html`, the integrated monograph through **Part XXX (§148)**. For claims from a particular experiment, consult its corresponding section, script, and receipt. A formal bibliographic citation, contributor list, release DOI, and software license should be added before a public archival release; none are assumed here.
+The primary technical reference is the public illustrated monograph through **Part XXX (§148)**. [Read the canonical edition](https://towre676-cloud.github.io/crest-root-calculus/) For claims from a particular experiment, consult its corresponding section, script, and receipt. A formal bibliographic citation, contributor list, release DOI, and software license should be added before a public archival release; none are assumed here.
 
 **Project status:** Active research software. Results and evidence have different levels of verification; consult the proof and receipt associated with each claim.

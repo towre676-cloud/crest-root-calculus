@@ -1,0 +1,261 @@
+{
+  "fermat_dimensions_LmD": [
+    1,
+    1,
+    3,
+    4,
+    6,
+    8,
+    10
+  ],
+  "fermat_rational_symmetric_powers": {
+    "0": [
+      0
+    ],
+    "1": [],
+    "2": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "3": [],
+    "4": [
+      2,
+      1,
+      1,
+      1
+    ],
+    "5": [],
+    "6": [
+      3,
+      3,
+      3,
+      3
+    ],
+    "7": [],
+    "8": [
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  "hyperflex_dimensions_LmP": [
+    1,
+    1,
+    1,
+    2,
+    3,
+    3,
+    4,
+    5,
+    6
+  ],
+  "space_curves": {
+    "bounded_line_symmetric_square": 11,
+    "bounded_conic_points": 0,
+    "bounded_conic_symmetric_square": 6,
+    "space_quartic_degree_one_image": 4,
+    "complete_section_dimension": 5,
+    "certificate_denominator_degree": 2,
+    "genus_one_intersection_of_quadrics_dimension": 4
+  },
+  "cubic_quotients": {
+    "fermat_rational_maps": 4,
+    "fermat_target_j": 287496,
+    "mixed_positive": {
+      "line": [
+        1,
+        -1,
+        1
+      ],
+      "contact_quadratic": "11*Y**2 - 2*Y*Z + 3*Z**2",
+      "center_in_line_frame": [
+        "-1/4",
+        "1/4"
+      ],
+      "deck_extension_squareclass": "3/128",
+      "rational_deck_transformations": false,
+      "t_numerator": "X**2 + 4*X*Y + 6*Y**2 + 4*Y*Z + 2*Z**2",
+      "w_numerator": "48*X**2*Y + 48*X**2*Z + 192*X*Y**2 + 192*X*Y*Z + 160*Y**3 + 96*Y**2*Z - 96*Y*Z**2 - 32*Z**3",
+      "common_linear_form": "X - Y + Z",
+      "target_quartic": "-128*t**4 - 640*t**3 - 3712*t**2 - 7680*t - 12800",
+      "quotient_degree": 3,
+      "dimensions_L3D_L6D": [
+        4,
+        10
+      ]
+    },
+    "rational_contact_control": {
+      "line": [
+        0,
+        0,
+        1
+      ],
+      "contact_quadratic": "X*Y",
+      "center_in_line_frame": [
+        "0",
+        "0"
+      ],
+      "deck_extension_squareclass": "-3",
+      "rational_deck_transformations": false,
+      "t_numerator": "X*Y",
+      "w_numerator": "X**3 - 2*Y**3",
+      "common_linear_form": "Z",
+      "target_quartic": "t**4 - 6*t**3 + 3*t**2 + 2*t + 1",
+      "quotient_degree": 3,
+      "dimensions_L3D_L6D": [
+        4,
+        10
+      ]
+    },
+    "ordinary_bitangent_near_miss_maps": 0,
+    "hyperflex_curve_bitangents": 2,
+    "hyperflex_curve_cyclic_quotients": 0
+  },
+  "arithmetic_family": {
+    "parameter_residue": 10,
+    "parameter_modulus": 24871,
+    "good_primes": [
+      7,
+      11,
+      17,
+      19
+    ],
+    "cyclic_jacobian_traces": [
+      5,
+      4,
+      -2,
+      5
+    ],
+    "reflection_target_traces": [
+      -2,
+      5,
+      5,
+      -4
+    ],
+    "quadratic_twist": 6,
+    "source_counts_degrees_one_two_three": [
+      [
+        3,
+        59,
+        324
+      ],
+      [
+        8,
+        122,
+        1400
+      ],
+      [
+        20,
+        338,
+        4820
+      ],
+      [
+        23,
+        419,
+        6692
+      ]
+    ],
+    "rational_base_degrees": [
+      2,
+      6,
+      12
+    ],
+    "geometric_classes_through_12": [
+      {
+        "degree": 1,
+        "geometric_primitive": 0,
+        "geometric_all": 0,
+        "rational_all": 0,
+        "rational_base_degrees": []
+      },
+      {
+        "degree": 2,
+        "geometric_primitive": 3,
+        "geometric_all": 3,
+        "rational_all": 1,
+        "rational_base_degrees": [
+          2
+        ]
+      },
+      {
+        "degree": 3,
+        "geometric_primitive": 1,
+        "geometric_all": 1,
+        "rational_all": 0,
+        "rational_base_degrees": []
+      },
+      {
+        "degree": 4,
+        "geometric_primitive": 0,
+        "geometric_all": 9,
+        "rational_all": 0,
+        "rational_base_degrees": []
+      },
+      {
+        "degree": 5,
+        "geometric_primitive": 0,
+        "geometric_all": 0,
+        "rational_all": 0,
+        "rational_base_degrees": []
+      },
+      {
+        "degree": 6,
+        "geometric_primitive": 3,
+        "geometric_all": 18,
+        "rational_all": 1,
+        "rational_base_degrees": [
+          6
+        ]
+      },
+      {
+        "degree": 7,
+        "geometric_primitive": 0,
+        "geometric_all": 0,
+        "rational_all": 0,
+        "rational_base_degrees": []
+      },
+      {
+        "degree": 8,
+        "geometric_primitive": 0,
+        "geometric_all": 21,
+        "rational_all": 1,
+        "rational_base_degrees": [
+          2
+        ]
+      },
+      {
+        "degree": 9,
+        "geometric_primitive": 0,
+        "geometric_all": 4,
+        "rational_all": 0,
+        "rational_base_degrees": []
+      },
+      {
+        "degree": 10,
+        "geometric_primitive": 0,
+        "geometric_all": 18,
+        "rational_all": 0,
+        "rational_base_degrees": []
+      },
+      {
+        "degree": 11,
+        "geometric_primitive": 0,
+        "geometric_all": 0,
+        "rational_all": 0,
+        "rational_base_degrees": []
+      },
+      {
+        "degree": 12,
+        "geometric_primitive": 0,
+        "geometric_all": 52,
+        "rational_all": 1,
+        "rational_base_degrees": [
+          12
+        ]
+      }
+    ]
+  }
+}
