@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 282" role="img" aria-labelledby="title desc"><title id="title">Two wavelengths demand incompatible calcite shares</title><desc id="desc">For USGS GDS212 at tolerance 0.005, permitted affine calcite fractions are 33.35 to 37.65 percent at 1.4935 micrometres and 97.38 to 100 percent at 2.2750 micrometres.</desc><rect rx="12" width="600" height="282" fill="#faf9f4"/><g font-family="Arial, sans-serif">
+<text x="32" y="39" fill="#23352f" font-weight="700" font-size="24" text-anchor="start">How much calcite fits the light reading?</text>
+<text x="32" y="66" fill="#23352f" font-weight="400" font-size="15" text-anchor="start">USGS GDS212  ·  affine mixture  ·  reflectance tolerance ±0.005</text>
+<text x="42" y="104" fill="#23352f" font-weight="700" font-size="17" text-anchor="start">1.4935 µm</text>
+<text x="554" y="104" fill="#136e64" font-weight="700" font-size="17" text-anchor="end">33.35–37.65%</text>
+<path d="M42.000 117 L554.000 117" stroke="#c6cfca" stroke-width="2" fill="none"/>
+<path d="M42.000 113 L42.000 121" stroke="#a2b2a8" stroke-width="1" fill="none"/>
+<path d="M170.000 113 L170.000 121" stroke="#a2b2a8" stroke-width="1" fill="none"/>
+<path d="M298.000 113 L298.000 121" stroke="#a2b2a8" stroke-width="1" fill="none"/>
+<path d="M426.000 113 L426.000 121" stroke="#a2b2a8" stroke-width="1" fill="none"/>
+<path d="M554.000 113 L554.000 121" stroke="#a2b2a8" stroke-width="1" fill="none"/>
+<path d="M212.771 117 L234.751 117" stroke="#136e64" stroke-width="9" fill="none"/>
+<path d="M212.771 108 L212.771 126" stroke="#136e64" stroke-width="2" fill="none"/>
+<path d="M234.751 108 L234.751 126" stroke="#136e64" stroke-width="2" fill="none"/>
+<text x="42" y="175" fill="#23352f" font-weight="700" font-size="17" text-anchor="start">2.2750 µm</text>
+<text x="554" y="175" fill="#914518" font-weight="700" font-size="17" text-anchor="end">97.38–100%</text>
+<path d="M42.000 188 L554.000 188" stroke="#c6cfca" stroke-width="2" fill="none"/>
+<path d="M42.000 184 L42.000 192" stroke="#a2b2a8" stroke-width="1" fill="none"/>
+<path d="M170.000 184 L170.000 192" stroke="#a2b2a8" stroke-width="1" fill="none"/>
+<path d="M298.000 184 L298.000 192" stroke="#a2b2a8" stroke-width="1" fill="none"/>
+<path d="M426.000 184 L426.000 192" stroke="#a2b2a8" stroke-width="1" fill="none"/>
+<path d="M554.000 184 L554.000 192" stroke="#a2b2a8" stroke-width="1" fill="none"/>
+<path d="M540.570 188 L554.000 188" stroke="#914518" stroke-width="9" fill="none"/>
+<path d="M540.570 179 L540.570 197" stroke="#914518" stroke-width="2" fill="none"/>
+<path d="M554.000 179 L554.000 197" stroke="#914518" stroke-width="2" fill="none"/>
+<text x="42.0" y="217" fill="#23352f" font-weight="400" font-size="14" text-anchor="middle">0%</text>
+<text x="170.0" y="217" fill="#23352f" font-weight="400" font-size="14" text-anchor="middle">25%</text>
+<text x="298.0" y="217" fill="#23352f" font-weight="400" font-size="14" text-anchor="middle">50%</text>
+<text x="426.0" y="217" fill="#23352f" font-weight="400" font-size="14" text-anchor="middle">75%</text>
+<text x="554.0" y="217" fill="#23352f" font-weight="400" font-size="14" text-anchor="middle">100%</text>
+<text x="298" y="248" fill="#23352f" font-weight="600" font-size="16" text-anchor="middle">Fraction of calcite in the affine light model</text>
+</g></svg>

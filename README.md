@@ -2,7 +2,7 @@
 
 **How much can a small calculation tell us about a whole shape?** This project started with that ambition and grew into programs that can find hidden maps between curves. You can follow the story here with just counting, multiplication, and a little clock arithmetic.
 
-[Choose a worked example](#choose-a-worked-example) · [How it began](#how-the-project-began) · [Why a claim changed](#when-a-pattern-looks-too-good) · [Finding a hidden curve](#turning-the-question-around) · [Run the examples](#try-it-on-windows-beginner-instructions)
+[Choose a worked example](#choose-a-worked-example) · [Try the wing, rock and solar experiments](#a-wing-a-rock-and-a-street-of-solar-roofs) · [How it began](#how-the-project-began) · [Why a claim changed](#when-a-pattern-looks-too-good) · [Finding a hidden curve](#turning-the-question-around) · [Run the examples](#try-it-on-windows-beginner-instructions)
 
 ## Choose a worked example
 
@@ -16,6 +16,26 @@ Start with a decision you want to make. Each example gives you a working program
 | Decide what a score really rewards | [Award the exploration badge](examples/scores/README.md) | Supply your own CSV and scoring weight. See who moves up when the shared ingredient comes out. |
 
 **Try the four experiments in your browser.** Download and extract the ZIP, then double-click `examples/workbook.html`. Change a rule or a number and the answer updates. The workbook runs offline. The Python guides above take you from each example to your own inputs. [Download the workbook and programs (.zip).](https://github.com/towre676-cloud/crest-root-calculus/archive/refs/heads/main.zip)
+
+## A wing, a rock and a street of solar roofs
+
+**Start with the wing.** Imagine turning a crank half a degree at a time. Every picture shows four bars joined together. Could the crank still jam *between* pictures? Yes. In one design the bars fall short by just **0.00006 mm** in an interval that all 720 pictures miss. The two extreme distances between the pins tell you whether *every* angle works. [See the two poses and the missing interval](research/configuration-and-certificates/mechanisms/README.md)
+
+![Two wing poses and the interval missed by a 720-position test.](research/configuration-and-certificates/mechanisms/four-bar.svg)
+
+**Give one crank two jobs.** Attach two pairs of bars to the same crank. Its possible poses form a shape mathematicians call a *configuration curve*. In the six-bar drawing, all the bar lengths are whole numbers. A symmetry lets us group points of the mathematical curve in threes and send each group to one point of a simpler curve. The formula uses complex numbers. [See the mechanism, the formula and a second design where grouping in threes is impossible](research/configuration-and-certificates/sixbar/README.md)
+
+![An integer-length six-bar made from one crank and two rocker loops.](research/configuration-and-certificates/sixbar/six-bar.svg)
+
+**Can light tell us how much calcite is in a rock?** A lab weighed out **80% calcite and 20% clay**. In a simple model of the reflected light, one wavelength allows 33–38% calcite and another requires at least 97%. No number works for both. With a model that accounts for grains scattering light, the amount of surface the light sees can change while the mass stays the same. The reference grain sizes matter. [Work through the weighed powder](research/configuration-and-certificates/spectra/README.md)
+
+![The two measured bands allow disjoint ranges of calcite in the simple light model.](research/configuration-and-certificates/spectra/two-bands.svg)
+
+**How much solar power could 18 homes send out together?** On the example network, **2.71964 kW per new home** passes an upper-voltage check across a whole range of conditions. Every home can be at its cap at once. A conservative check can also turn down an offer that would work. The drawing shows the exact voltage, the limit, and the higher prediction in a tiny network you can check by hand. [Explore the voltage proof and its assumptions](research/configuration-and-certificates/power/README.md)
+
+![A one-line example where the exact AC voltage passes and a conservative upper bound crosses the limit.](research/configuration-and-certificates/power/one-line-voltage.svg)
+
+[Read the two research Parts and replay all four checks](research/configuration-and-certificates/README.md) · [Download all three products, both Parts and the data in one ZIP](https://raw.githubusercontent.com/towre676-cloud/crest-root-calculus/main/downloads/crest_root_three_builds_research_edition.zip)
 
 ## How the project began
 

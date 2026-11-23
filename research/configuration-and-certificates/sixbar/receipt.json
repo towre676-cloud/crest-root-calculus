@@ -1,0 +1,422 @@
+{
+  "aligned_hyperelliptic": {
+    "forms": [
+      [
+        -3,
+        0,
+        5
+      ],
+      [
+        7,
+        0,
+        -1
+      ],
+      [
+        12,
+        0,
+        -6
+      ]
+    ],
+    "determinant": 0,
+    "discriminants": [
+      60,
+      28,
+      288
+    ],
+    "resultants": [
+      1024,
+      1764,
+      900
+    ],
+    "local": {
+      "prime": 13,
+      "traces": [
+        -2,
+        -6,
+        -2
+      ],
+      "factor_product_coefficients": [
+        1,
+        10,
+        67,
+        284,
+        871,
+        1690,
+        2197
+      ],
+      "counts": [
+        {
+          "degree": 1,
+          "q": 13,
+          "C": 24,
+          "quotient_counts": [
+            16,
+            20,
+            16
+          ],
+          "common_branch_fibres": []
+        },
+        {
+          "degree": 2,
+          "q": 169,
+          "C": 204,
+          "quotient_counts": [
+            192,
+            160,
+            192
+          ],
+          "common_branch_fibres": [
+            {
+              "base": 78,
+              "points": 2
+            },
+            {
+              "base": 91,
+              "points": 2
+            }
+          ]
+        },
+        {
+          "degree": 3,
+          "q": 2197,
+          "C": 2040,
+          "quotient_counts": [
+            2128,
+            2180,
+            2128
+          ],
+          "common_branch_fibres": []
+        }
+      ]
+    }
+  },
+  "rotated_plane_quartic": {
+    "forms": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        22,
+        -49,
+        22
+      ],
+      [
+        120,
+        -161,
+        -120
+      ]
+    ],
+    "determinant": 5280,
+    "discriminants": [
+      1,
+      465,
+      83521
+    ],
+    "resultants": [
+      484,
+      -14400,
+      5849764
+    ],
+    "local": [
+      {
+        "prime": 7,
+        "traces": [
+          0,
+          0,
+          0
+        ],
+        "factor_product_coefficients": [
+          1,
+          0,
+          21,
+          0,
+          147,
+          0,
+          343
+        ],
+        "counts": [
+          {
+            "degree": 1,
+            "q": 7,
+            "C": 8,
+            "quotient_counts": [
+              8,
+              8,
+              8
+            ],
+            "common_branch_fibres": [
+              {
+                "base": 0,
+                "points": 0
+              },
+              {
+                "base": "infinity",
+                "points": 2
+              }
+            ],
+            "direct_plane": 8
+          },
+          {
+            "degree": 2,
+            "q": 49,
+            "C": 92,
+            "quotient_counts": [
+              64,
+              64,
+              64
+            ],
+            "common_branch_fibres": [
+              {
+                "base": 0,
+                "points": 2
+              },
+              {
+                "base": "infinity",
+                "points": 2
+              }
+            ],
+            "direct_plane": 92
+          },
+          {
+            "degree": 3,
+            "q": 343,
+            "C": 344,
+            "quotient_counts": [
+              344,
+              344,
+              344
+            ],
+            "common_branch_fibres": [
+              {
+                "base": 0,
+                "points": 0
+              },
+              {
+                "base": "infinity",
+                "points": 2
+              }
+            ],
+            "direct_plane": 344
+          }
+        ]
+      },
+      {
+        "prime": 13,
+        "traces": [
+          2,
+          -2,
+          -6
+        ],
+        "factor_product_coefficients": [
+          1,
+          6,
+          35,
+          132,
+          455,
+          1014,
+          2197
+        ],
+        "counts": [
+          {
+            "degree": 1,
+            "q": 13,
+            "C": 20,
+            "quotient_counts": [
+              12,
+              16,
+              20
+            ],
+            "common_branch_fibres": [
+              {
+                "base": 0,
+                "points": 2
+              },
+              {
+                "base": "infinity",
+                "points": 2
+              }
+            ],
+            "direct_plane": 20
+          },
+          {
+            "degree": 2,
+            "q": 169,
+            "C": 204,
+            "quotient_counts": [
+              192,
+              192,
+              160
+            ],
+            "common_branch_fibres": [
+              {
+                "base": 0,
+                "points": 2
+              },
+              {
+                "base": "infinity",
+                "points": 2
+              }
+            ],
+            "direct_plane": 204
+          },
+          {
+            "degree": 3,
+            "q": 2197,
+            "C": 2180,
+            "quotient_counts": [
+              2268,
+              2128,
+              2180
+            ],
+            "common_branch_fibres": [
+              {
+                "base": 0,
+                "points": 2
+              },
+              {
+                "base": "infinity",
+                "points": 2
+              }
+            ],
+            "direct_plane": 2180
+          }
+        ]
+      }
+    ],
+    "ordinary_supersingular_witnesses": [
+      {
+        "prime": 23,
+        "traces": [
+          -4,
+          0,
+          0
+        ],
+        "factor_product_coefficients": [
+          1,
+          4,
+          69,
+          184,
+          1587,
+          2116,
+          12167
+        ],
+        "counts": [
+          {
+            "degree": 1,
+            "q": 23,
+            "C": 28,
+            "quotient_counts": [
+              28,
+              24,
+              24
+            ],
+            "common_branch_fibres": [
+              {
+                "base": 0,
+                "points": 0
+              },
+              {
+                "base": "infinity",
+                "points": 2
+              }
+            ],
+            "direct_plane": 28
+          }
+        ]
+      },
+      {
+        "prime": 71,
+        "traces": [
+          8,
+          0,
+          -4
+        ],
+        "factor_product_coefficients": [
+          1,
+          -4,
+          181,
+          -568,
+          12851,
+          -20164,
+          357911
+        ],
+        "counts": [
+          {
+            "degree": 1,
+            "q": 71,
+            "C": 68,
+            "quotient_counts": [
+              64,
+              72,
+              76
+            ],
+            "common_branch_fibres": [
+              {
+                "base": 0,
+                "points": 2
+              },
+              {
+                "base": "infinity",
+                "points": 0
+              }
+            ],
+            "direct_plane": 68
+          }
+        ]
+      }
+    ]
+  },
+  "cyclic_plane_quartic": {
+    "d": "2017/2401",
+    "first_loop": [
+      147,
+      147,
+      141,
+      72
+    ],
+    "second_loop": [
+      245,
+      245,
+      235,
+      120
+    ],
+    "rocker_pivot_distance": 343,
+    "quotient_point": {
+      "U": "1/2",
+      "W": "1/8",
+      "V_squared": "-3/64"
+    },
+    "quotient_chart_replays": [
+      {
+        "prime": 31,
+        "plane_points": 56,
+        "points_on_s1_zero": 2,
+        "rational_image_points_on_chart": 18,
+        "rational_preimages_per_image": 3
+      },
+      {
+        "prime": 37,
+        "plane_points": 44,
+        "points_on_s1_zero": 2,
+        "rational_image_points_on_chart": 14,
+        "rational_preimages_per_image": 3
+      },
+      {
+        "prime": 43,
+        "plane_points": 32,
+        "points_on_s1_zero": 2,
+        "rational_image_points_on_chart": 10,
+        "rational_preimages_per_image": 3
+      },
+      {
+        "prime": 61,
+        "plane_points": 92,
+        "points_on_s1_zero": 2,
+        "rational_image_points_on_chart": 30,
+        "rational_preimages_per_image": 3
+      }
+    ]
+  }
+}
