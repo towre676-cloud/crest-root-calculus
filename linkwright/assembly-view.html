@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Linkwright · Reference assembly in 3D</title><link rel="stylesheet" href="inspection/bench.css"><style>
+main{max-width:1060px}header div{max-width:1060px}.view{position:relative;width:100%;height:clamp(340px,54vh,580px);border:1px solid #bdcdca;border-radius:7px;background:#edf1ed;overflow:hidden;margin-top:20px}
+canvas{width:100%;height:100%;display:block;touch-action:none;cursor:grab}canvas:active{cursor:grabbing}.pins{position:absolute;inset:0;pointer-events:none}.pins b{position:absolute;color:white;background:#193b4d;border:1px solid white;border-radius:50%;width:1.55rem;height:1.55rem;text-align:center;line-height:1.4rem;font-size:.82rem;transform:translate(3px,-90%)}
+.focusJoint[aria-pressed=true]{background:#17435a;color:white;border-color:#17435a}#jointInfo{min-height:2.6em}#fallback{padding:10px 20px}#fallback img{max-width:100%;height:250px}#fallback[hidden]{display:none}.controls{display:grid;grid-template-columns:1fr 1fr;gap:12px 28px;align-items:start;margin-top:13px}.controls input[type=range]{accent-color:#00645f;padding:0;border:0;height:30px;min-height:30px} .controls output{float:right;color:#185a54;font-variant-numeric:tabular-nums}.tools{margin:8px 0 12px;display:flex;gap:8px;flex-wrap:wrap}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:.91rem;color:#263f48;margin:12px 0}.legend span:before{content:"";width:13px;height:13px;display:inline-block;background:var(--swatch);border-radius:4px;margin-right:7px;vertical-align:-1px}
+@media(max-width:560px){.controls{grid-template-columns:1fr}.view{height:370px}}
+</style></head>
+<body><header><div><a href="index.html">Linkwright</a><span>Reference assembly · LW-159-R1</span></div></header>
+<main><h1>Look inside the linkage</h1><p class="intro">Turn the crank to see how the two moving levels pass one another. Spread the layers to inspect the washers, spacers and collars at each joint.</p>
+<nav><a href="kit/assembly-guide.html">Assembly sequence</a><a href="cad/reference-assembly.step" download>Download 3D STEP</a><a href="commissioning.html">Inspect a physical build</a></nav>
+<div class="view"><canvas id="model" tabindex="0" aria-label="Interactive 3D assembly. Drag or use arrow keys to orbit."></canvas>
+<div id="pins" class="pins" aria-hidden="true"><b>O</b><b>D</b><b>A</b><b>B</b></div>
+<div id="fallback" hidden><p>The 3D view requires WebGL. This drawing shows the same assembly at crank zero.</p><img src="kit/assembly.svg" alt="Reference assembly with two fixed pivots and three moving links."></div></div>
+<div class="tools" aria-label="Camera focus"><button type="button" class="focusJoint" data-joint="all" aria-pressed="true">Whole assembly</button><button type="button" class="focusJoint" data-joint="O" aria-pressed="false">Joint O</button><button type="button" class="focusJoint" data-joint="D" aria-pressed="false">Joint D</button><button type="button" class="focusJoint" data-joint="A" aria-pressed="false">Joint A</button><button type="button" class="focusJoint" data-joint="B" aria-pressed="false">Joint B</button></div><p id="jointInfo">Choose a joint to see its washers and keepers up close.</p>
+<div class="controls"><label>Crank angle <output id="thetaValue" for="theta">0°</output><input type="range" id="theta" min="0" max="360" value="0" step="1"></label>
+<label>Spread layers <output id="spreadValue" for="spread">Assembled</output><input type="range" id="spread" min="0" max="100" value="0"></label></div>
+<div class="tools"><button id="play" type="button">Play one turn</button><button id="home" type="button">Reset view</button><button id="top" type="button">Top view</button></div>
+<div class="legend"><span style="--swatch:#316699">Crank O–A</span><span style="--swatch:#c46a35">Coupler A–B</span><span style="--swatch:#117f70">Rocker D–B and pointer</span></div>
+<p>O and D are fixed. A carries the finger grip. B joins the coupler to the rocker. Drag to orbit, or focus the drawing and use the arrow keys. The separated view exaggerates axial distances for visibility.</p>
+<p>The STEP file contains the nominal assembly at crank zero. Purchased collars use plain envelopes. Check the actual set-screw projection and clearances against the build drawings. <a href="kit/build-a4.pdf">A4 drawings</a> · <a href="kit/build-letter.pdf">US Letter drawings</a></p></main>
+<script src="cad/mesh.js"></script><script src="cad/view.js"></script></body></html>

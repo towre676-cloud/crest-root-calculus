@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Linkwright · Four-bar motion workshop</title>
+<style>
+:root{
+  --paper:#f6f1e7; --card:#fffdf8; --ink:#1f1a14; --muted:#6d6457; --line:#d9cfbe;
+  --crank:#c2410c; --coupler:#1d4ed8; --rocker:#15803d; --ground:#57534e; --path:#9333ea;
+  --good:#15803d; --warn:#b45309; --bad:#b91c1c; --accent:#7c2d12;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.5 Inter,system-ui,sans-serif}
+header{padding:22px 24px 6px;max-width:1240px;margin:0 auto}
+h1{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:30px;margin:0;letter-spacing:-.01em}
+.tag{color:var(--muted);margin:4px 0 0}
+main{max-width:1240px;margin:0 auto;padding:12px 24px 40px;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:18px}
+@media (max-width:900px){main{grid-template-columns:minmax(0,1fr)}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.card h2{font-family:Fraunces,Georgia,serif;font-size:19px;margin:0 0 8px}
+.tabs{display:flex;gap:6px;margin-bottom:12px}
+.tabs button{flex:1;border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px 10px;font:600 14px Inter;cursor:pointer;color:var(--ink)}
+.tabs button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+canvas{width:100%;display:block;border-radius:10px;background:#fff;border:1px solid var(--line);touch-action:none}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:8px 0}
+label{font-size:13px;color:var(--muted)}
+input[type=range]{width:160px;max-width:100%;accent-color:var(--accent)}
+@media (max-width:600px){header,main{padding-left:12px;padding-right:12px} input[type=range]{width:120px} .tabs button{padding:8px 6px}}
+select,input[type=number]{font:14px Inter;padding:5px 7px;border:1px solid var(--line);border-radius:8px;background:#fff}
+.btn{border:none;background:var(--accent);color:#fff;font:600 14px Inter;padding:9px 14px;border-radius:10px;cursor:pointer}
+.btn.ghost{background:#fff;color:var(--ink);border:1px solid var(--line)}
+.btn:disabled{opacity:.5;cursor:default}
+.val{font-family:'JetBrains Mono',monospace;font-size:13px}
+.checks{list-style:none;padding:0;margin:6px 0}
+.checks li{padding:5px 0;border-bottom:1px dashed var(--line);display:flex;gap:8px;align-items:flex-start}
+.dot{width:10px;height:10px;border-radius:50%;margin-top:6px;flex:none}
+.g{background:var(--good)}.w{background:var(--warn)}.b{background:var(--bad)}
+table{border-collapse:collapse;width:100%;font-size:14px}
+td,th{padding:5px 6px;border-bottom:1px solid var(--line);text-align:left}
+th{font-weight:600;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+.mono{font-family:'JetBrains Mono',monospace}
+ol.steps{padding-left:20px;margin:6px 0}
+ol.steps li{margin:6px 0}
+.hint{font-size:13px;color:var(--muted)}
+.full{grid-column:1/-1}
+#partsWrap{overflow:auto;border:1px solid var(--line);border-radius:10px;background:#fff}
+.swatch{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-1px;margin-right:4px}
+.workshop{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(200px,1fr);gap:20px;align-items:center}.workshop figure{margin:0}.workshop figure svg{display:block;width:100%;max-height:190px}.workshop figcaption{font:13px/1.45 system-ui;color:var(--muted)}.workshop h3{font-size:15px;margin:12px 0 3px}.workshop p{margin:4px 0}.workshop select{max-width:100%}@media(max-width:640px){.workshop{grid-template-columns:1fr;gap:6px}}
+.status{font-size:13px;color:var(--muted);min-height:20px}
+body{background:#f4f3ec;color:#162d34;font-family:"DM Sans",system-ui,sans-serif}
+:root{--ink:#18343b;--muted:#536461;--line:#c9cfc6;--paper:#f4f3ec;--card:#fffef9;--accent:#205c55}
+header{padding:22px 24px 16px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:9px}.brandmark{font:32px/1 Georgia;color:var(--accent)}h1{font:700 25px/1.1 Georgia,serif}.subtitle{border-left:1px solid var(--line);padding-left:11px;color:var(--muted);font-size:13px}nav,.files{display:flex;align-items:center;gap:14px;flex-wrap:wrap}nav a,.files a,.hint a{font-size:13px;color:#1c5854;font-weight:650;text-underline-offset:3px}nav a{text-decoration:none}nav a:hover,a:focus-visible{text-decoration:underline}
+main{padding-top:20px}.reference{background:#e8efea;border:1px solid #b8c9be;border-left:4px solid #276358;border-radius:10px;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(215px,.75fr);gap:32px;padding:26px 32px;align-items:center}.reference h2,.customIntro h2{font:600 clamp(25px,3vw,38px)/1.1 Georgia,serif;color:var(--ink);margin:0}.reference p{margin:11px 0 18px;max-width:55ch}.reference .hint{margin-bottom:0}.files .action{display:inline-block;text-decoration:none;background:var(--accent);color:white;padding:9px 13px;border-radius:6px}.kitFigure{margin:0}.kitFigure svg{display:block;width:100%;height:auto}.kitFigure figcaption{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:12px}.quiet{cursor:pointer;border:0;background:transparent;padding:3px 0;color:var(--accent);font:inherit;text-decoration:underline;text-underline-offset:3px}.kitFigure figcaption a{text-underline-offset:3px}.customIntro{padding:12px 0 0}.customIntro h2{font-size:26px}.customIntro p{margin:6px 0 0;max-width:95ch}
+.card{min-width:0;border-radius:9px}.card h2{font-family:Georgia,serif;font-size:21px}.tabs button,select,input,.btn,output{font-family:system-ui,sans-serif}.tabs button.on{background:#254c48}.btn{border-radius:6px}.val,output{font-variant-numeric:tabular-nums}.row{column-gap:10px}.measureForm{display:flex;align-items:flex-end;flex-wrap:wrap;gap:12px}.measureForm label{display:flex;flex-direction:column;gap:4px}.measureForm input{width:95px}.poseControl input{flex:1}.poseControl output{min-width:50px}.status{display:block}a{color:#205c55}
+@media(max-width:640px){header{padding:14px 12px}header nav{gap:11px}.reference{grid-template-columns:1fr;gap:12px;padding:17px 16px}.kitFigure svg{max-height:190px}.kitFigure figcaption{gap:4px;flex-wrap:wrap}main{gap:12px}.row label{font-size:13px}.row input[type=range]{width:105px}.brandmark{display:none}.card{padding:12px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand"><span class="brandmark" aria-hidden="true">⌁</span><h1>Linkwright</h1><span class="subtitle">Four-bar motion workshop</span></div>
+  <nav aria-label="Skip to"><a href="#reference">Build the reference wing</a><a href="#designer">Design a mechanism</a><a href="commissioning.html">Record a physical build</a></nav>
+</header>
+<main>
+  <section id="reference" class="reference full" aria-labelledby="referenceTitle">
+    <div>
+      <h2 id="referenceTitle">Build the reference wing</h2>
+      <p>One hand crank swings a plywood pointer through 60°. Print the full-size patterns, assemble the four pivots, then measure the motion on your bench.</p>
+      <div class="files"><a class="action" href="kit/assembly-guide.html">Open the assembly guide</a><a href="assembly-view.html">Inspect the 3D assembly</a><a href="kit/build-a4.pdf">Print A4</a><a href="kit/build-letter.pdf">Print US Letter</a></div>
+      <p class="hint"><a href="https://raw.githubusercontent.com/towre676-cloud/crest-root-calculus/main/downloads/linkwright-implementation-kit.zip">Download the complete offline kit</a> · <a href="verification/engineering.html">Engineering results</a></p>
+    </div>
+    <figure class="kitFigure">
+      <svg id="referenceMechanism" viewBox="0 0 435 228" role="img" aria-label="Top view of the actual hand-cranked reference assembly. The crank and rocker rotate about two fixed points, and the coupler joins their free ends.">
+        <rect x="18" y="9" width="174" height="207" rx="4" fill="#faf9f1" stroke="#a9b6aa"/>
+        <g transform="translate(80 154) scale(1 -1)" stroke-linecap="round">
+          <path d="M0 0H93.8" stroke="#9ca8a1" stroke-dasharray="3 4"/>
+          <path id="kitRocker" stroke="#00776d" stroke-width="14"/>
+          <path id="kitCrank" stroke="#335773" stroke-width="14"/>
+          <path id="kitCoupler" stroke="#b7481c" stroke-width="14"/>
+          <g fill="#fffdf6" stroke="#324749" stroke-width="1.4">
+            <circle cx="0" cy="0" r="3.5"/><circle cx="93.8" cy="0" r="3.5"/>
+            <circle id="kitA" r="4.8"/><circle id="kitB" r="3.3"/>
+          </g>
+        </g>
+        <g font-family="system-ui, sans-serif" fill="#244640">
+         <text x="210" y="41" font-size="15" font-weight="650">LW-159-R1 · top view</text>
+         <g font-size="14">
+           <path d="M211 72h16" stroke="#335773" stroke-width="5"/><text x="236" y="77">Crank · 46.6 mm</text>
+           <path d="M211 103h16" stroke="#b7481c" stroke-width="5"/><text x="236" y="108">Coupler · 84.1 mm</text>
+           <path d="M211 134h16" stroke="#00776d" stroke-width="5"/><text x="236" y="139">Rocker · 111.3 mm</text>
+           <text x="210" y="172">Fixed pivots · 93.8 mm</text>
+           <text x="210" y="194">Pointer extends 18 mm</text>
+         </g>
+        </g>
+      </svg>
+      <figcaption><button type="button" class="quiet" id="kitPlay">Pause reference motion</button><a href="kit/assembly.svg">Open dimensioned drawing</a></figcaption>
+    </figure>
+  </section>
+  <section class="customIntro full" id="designer"><h2>Design your own motion</h2>
+    <p>Change the swing or trace a loop. The finished preview, pin spacings and downloadable cut sheet use your current design rounded to 0.1 mm. The reference kit above has fixed hardware and dimensions.</p></section>
+  <section class="card">
+    <div class="tabs">
+      <button id="tabFlap" aria-pressed="true" class="on">Flap a wing</button>
+      <button id="tabPath" aria-pressed="false">Trace a path</button>
+    </div>
+
+    <div id="flapCtl">
+      <div class="row">
+        <label for="psi">Swing <span class="val" id="psiV"></span></label><input type="range" id="psi" min="20" max="110" value="60">
+        <label for="q">Long/short stroke time <span class="val" id="qV"></span></label><input type="range" id="q" min="100" max="180" value="120">
+      </div>
+      <div class="row">
+        <label for="c">Wing arm (rocker) <span class="val" id="cV"></span></label><input type="range" id="c" min="40" max="120" value="70">
+        <button class="btn" id="synthFlap">Design the mechanism</button>
+      </div>
+      <p class="hint">Turn the crank at a steady speed. The ratio controls how much faster one stroke is than the other.</p>
+    </div>
+
+    <div id="pathCtl" style="display:none">
+      <div class="row">
+        <button class="btn ghost" id="clearPath">Clear drawing</button>
+        <button class="btn ghost" id="samplePath">Example: dragon wingtip</button>
+        <label for="pathW">Drawing width <span class="val" id="wV"></span></label><input type="range" id="pathW" min="40" max="160" value="90">
+        <button class="btn" id="synthPath">Find a mechanism</button>
+      </div>
+      <p class="hint">Draw one closed loop in the box (the path a point should follow — a wingtip, a foot, a beak). The search looks for a four-bar linkage whose coupler point traces it.</p>
+    </div>
+
+    <canvas id="cv" width="900" height="560" aria-label="Plan view of the linkage. Draw a closed path here in Trace a path mode."></canvas>
+    <div class="row">
+      <button class="btn ghost" id="play">Pause</button>
+      <label for="driveSense">Drive direction</label><select id="driveSense"><option value="1">Counterclockwise</option><option value="-1">Clockwise</option></select>
+      <label for="spd">Crank speed</label><input type="range" id="spd" min="2" max="40" value="14"><output id="rpmV" for="spd">14 rpm</output>
+      <label><input type="checkbox" id="showTrace" checked> trace</label>
+      <span class="status" role="status" id="status"></span>
+    </div>
+    <div class="row poseControl"><label for="poseAngle">Inspect crank angle from the base</label><input type="range" id="poseAngle" min="0" max="359.9" step="0.1" value="0"><output id="poseValue" for="poseAngle">0.0°</output></div>
+    <div class="row hint">
+      <span><span class="swatch" style="background:var(--crank)"></span>crank (you turn this)</span>
+      <span><span class="swatch" style="background:var(--coupler)"></span>coupler</span>
+      <span><span class="swatch" style="background:var(--rocker)"></span>rocker / wing arm</span>
+      <span><span class="swatch" style="background:var(--ground)"></span>base</span>
+      <span id="wingLegend">Wing silhouette is illustrative.</span>
+      <span id="pathLegend" style="display:none"><span class="swatch" style="background:var(--path)"></span>your path</span>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Motion from the cut dimensions</h2>
+    <ul class="checks" id="checks"><li class="hint">Design a mechanism to see its checks.</li></ul>
+    <h2 style="margin-top:14px">Links</h2>
+    <table id="links"><tr><td class="hint">—</td></tr></table>
+    <h2 style="margin-top:14px">Build with what you have</h2>
+    <div class="row">
+      <label for="mat">Material</label>
+      <select id="mat">
+        <option value="card">Corrugated cardboard</option>
+        <option value="stick">Craft sticks (114 mm)</option>
+        <option value="jumbo">Jumbo craft sticks (152 mm)</option>
+        <option value="print">3D print / laser cut</option>
+      </select>
+      <label for="pin">Pins</label>
+      <select id="pin">
+        <option value="brad">Paper fasteners (3 mm hole)</option>
+        <option value="tooth">Toothpicks (2.5 mm hole)</option>
+        <option value="m3">M3 bolts (3.2 mm hole)</option>
+      </select>
+    </div>
+    <div class="row"><label for="scale">Overall scale</label><input type="range" id="scale" min="50" max="200" value="100"><span class="val" id="scaleV"></span></div>
+    <ul class="checks" id="matChecks"></ul>
+  </section>
+
+  <section class="card full" id="workshop">
+    <h2>Before you cut</h2>
+    <div class="workshop"><div>
+      <h3>How accurately must I place the holes?</h3>
+      <div class="row"><label for="tol">Error in each pin-to-pin length</label><input type="range" id="tol" min="0" max="5" step="0.05" value="0.5"><output class="val" id="tolV" for="tol">±0.50 mm</output></div>
+      <p id="closureText" aria-live="polite"></p>
+      <h3>Which sizes fit this stock?</h3>
+      <p id="scaleText" aria-live="polite"></p>
+      <button class="btn ghost" id="applyScale">Use the smallest fitting scale</button>
+      <h3>Can the crank and rocker share a layer?</h3>
+      <label for="layer">Bar layout</label> <select id="layer"><option value="separate">Separate layers</option><option value="shared">One shared layer</option></select>
+      <p id="sweepText" aria-live="polite"></p>
+      <p class="hint">The sweep uses nominal lengths and the rounded crank and rocker strips on the sheet. Keep the coupler, base and wing on separate levels. Pin heads, spacers, flex and load need a physical clearance check.</p>
+    </div><figure id="sweepFigure"></figure></div>
+  </section>
+  <section class="card full" id="branches">
+    <h2>Two ways to pin the same drawing</h2>
+    <div class="workshop"><div>
+      <p>Keep the crank in place. The coupler and rocker can often meet on either side of the line between the crank tip and the rocker pivot. Choose the joint that matches your build.</p>
+      <div class="row"><label for="anglePick">Crank angle from the base</label>
+      <select id="anglePick"><option value="0/1">0°</option><option value="1/2">53.13°</option><option value="1/1" selected>90°</option><option value="1/0">180°</option><option value="-1/1">270°</option></select></div>
+      <p id="branchText" aria-live="polite"></p>
+      <details><summary>Inspect the configuration curve</summary><div id="curveNumbers" style="overflow-wrap:anywhere"></div></details><p class="hint">Lengths rounded to the 0.1 mm cut list. Integer arithmetic counts the possible rocker positions at the indicated angle. The solid lines mark the selected assembly and dashed lines show its alternative.</p>
+    </div><figure id="branchFigure"></figure></div>
+  </section>
+  <section class="card full">
+    <h2>Custom parts sheet · actual size</h2>
+    <p class="hint">Print the SVG at actual size and check the 50 mm bar in both directions. Hole centres set the geometry. The two fixed pivot holes belong to the base. The assembled reference kit has its own drawings above. <a href="custom-guide.html">Custom design instructions and export fields</a>.</p>
+    <div class="row"><button class="btn" id="saveSvg">Save parts SVG</button><button class="btn ghost" id="saveJson">Save design JSON</button><button class="btn ghost" id="copySvg">Copy SVG</button><button class="btn ghost" id="copyJson">Copy design (JSON)</button><span class="status" id="copyStatus"></span></div>
+    <div id="partsWrap"></div>
+  </section>
+
+  <section class="card full">
+    <h2>Check measured pin spacings</h2>
+    <p>Measure between hole centres on the finished parts in millimetres. This check assumes rigid links, round joints, and the selected assembly side. It also works with a different four-bar linkage.</p>
+    <form id="asBuilt" class="measureForm">
+      <label>Ground <input id="actualG" type="number" step="any" min="0.01" max="10000" required></label>
+      <label>Crank <input id="actualA" type="number" step="any" min="0.01" max="10000" required></label>
+      <label>Coupler <input id="actualB" type="number" step="any" min="0.01" max="10000" required></label>
+      <label>Rocker <input id="actualC" type="number" step="any" min="0.01" max="10000" required></label>
+      <label>Assembly side <select id="actualSide"><option value="1">Positive</option><option value="-1">Negative</option></select></label>
+      <button class="btn" type="submit">Check measurements</button>
+      <button class="btn ghost" id="loadCut" type="button">Use current cut list</button>
+    </form>
+    <p class="hint">Point the base from crank pivot to rocker pivot. Looking from the crank tip toward the fixed rocker pivot, the positive joint lies to your left.</p>
+    <p id="actualResult" role="status">Enter the four measured distances.</p>
+    <a href="commissioning.html">Record hardware, clearance and observed motion on the bench sheet</a>
+  </section>
+  <section class="card full">
+    <h2>Assemble your custom design</h2>
+    <ol class="steps" id="steps"><li class="hint">Design a mechanism first.</li></ol>
+  </section>
+</main>
+
+<script>
+"use strict";
+// ---------------------------------------------------------------- geometry
+const TAU=Math.PI*2, D2R=Math.PI/180, R2D=180/Math.PI;
+const V=(x,y)=>({x,y});
+const add=(a,b)=>V(a.x+b.x,a.y+b.y), sub=(a,b)=>V(a.x-b.x,a.y-b.y), mul=(a,s)=>V(a.x*s,a.y*s);
+const len=a=>Math.hypot(a.x,a.y), dist=(a,b)=>Math.hypot(a.x-b.x,a.y-b.y);
+const rot=(a,t)=>V(a.x*Math.cos(t)-a.y*Math.sin(t),a.x*Math.sin(t)+a.y*Math.cos(t));
+const ang=a=>Math.atan2(a.y,a.x);
+
+// Four-bar: crank pivot A0, rocker pivot B0, crank a, coupler b, rocker c, branch s=+-1,
+// coupler point given in coupler frame (u along AB, v perpendicular): P = A + u*e + v*n
+function solve(m,theta){
+  const A=add(m.A0,V(m.a*Math.cos(theta),m.a*Math.sin(theta)));
+  const dv=sub(m.B0,A), d=len(dv);
+  if(d>m.b+m.c-1e-9||d<Math.abs(m.b-m.c)+1e-9||d<1e-9) return null;
+  const x=(m.b*m.b-m.c*m.c+d*d)/(2*d), h=Math.sqrt(Math.max(0,m.b*m.b-x*x));
+  const e=mul(dv,1/d), n=V(-e.y,e.x);
+  const B=add(add(A,mul(e,x)),mul(n,h*m.s));
+  const eb=mul(sub(B,A),1/m.b), nb=V(-eb.y,eb.x);
+  const P=add(add(A,mul(eb,m.pu||0)),mul(nb,m.pv||0));
+  const cosmu=(m.b*m.b+m.c*m.c-d*d)/(2*m.b*m.c);
+  return {A,B,P,mu:Math.acos(Math.max(-1,Math.min(1,cosmu)))*R2D};
+}
+function simulate(m,N=360){
+  const out=[]; let fails=0, muMin=180, muMax=0;
+  for(let k=0;k<N;k++){const s=solve(m,k/N*TAU); if(!s){fails++;out.push(null);continue;}
+    const dev=s.mu; muMin=Math.min(muMin,Math.min(dev,180-dev)); muMax=Math.max(muMax,dev); out.push(s);}
+  return {pts:out,fails,muMin};
+}
+function grashof(m){
+  const L=[m.a,m.b,m.c,dist(m.A0,m.B0)].sort((x,y)=>x-y);
+  return {ok:L[0]+L[3]<=L[1]+L[2]+1e-9, crankShortest:m.a<=L[0]+1e-9};
+}
+
+// The distance from crank tip A to fixed rocker pivot B0 ranges continuously
+// from |ground - crank| to ground + crank. Both triangle inequalities must
+// be strict to keep the assembly branch through one complete revolution.
+function closureReport(m, tolerance=0) {
+  const ground=dist(m.A0,m.B0), {a,b,c}=m;
+  if (![ground,a,b,c,tolerance].every(Number.isFinite) || tolerance<0 ||
+      Math.min(ground,a,b,c)<=tolerance) return {state:'invalid'};
+  const inner=Math.abs(ground-a)-Math.abs(b-c);
+  const outer=b+c-ground-a;
+  const innerWorst=Math.max(0,Math.abs(ground-a)-2*tolerance)-
+    (Math.abs(b-c)+2*tolerance);
+  const outerWorst=outer-4*tolerance;
+  const margin=Math.min(innerWorst,outerWorst);
+  const guard=1e-10*Math.max(1,ground,a,b,c);
+  const limit=Math.max(0,Math.min(inner/4,outer/4,ground,a,b,c));
+  const direction=ang(sub(m.B0,m.A0));
+  const constraint=innerWorst<=outerWorst?'folded':'extended';
+  // An actual length tuple that attains the worst constraint.
+  let lengths;
+  if (constraint==='extended') {
+    lengths={ground:ground+tolerance,crank:a+tolerance,coupler:b-tolerance,rocker:c-tolerance};
+  } else {
+    const sign=Math.sign(ground-a), step=Math.min(tolerance,Math.abs(ground-a)/2);
+    const signBC=b>=c?1:-1;
+    lengths={ground:ground-sign*step,crank:a+sign*step,coupler:b+signBC*tolerance,rocker:c-signBC*tolerance};
+  }
+  const witnessDeg=(((direction+(constraint==='extended'?Math.PI:0))*R2D)%360+360)%360;
+  return {state:margin>guard?'closes':margin< -guard?'fails':'at limit',inner,outer,innerWorst,outerWorst,
+    limit,margin,constraint,witnessDeg,lengths,guard};
+}
+function closestOnBar(p,a,b) {
+  const ux=b.x-a.x, uy=b.y-a.y, norm=ux*ux+uy*uy;
+  const t=norm===0?0:Math.min(1,Math.max(0,((p.x-a.x)*ux+(p.y-a.y)*uy)/norm));
+  return V(a.x+t*ux,a.y+t*uy);
+}
+function barDistance(a,b,c,d) {
+  const ab=sub(b,a), cd=sub(d,c), ac=sub(c,a);
+  const cross=(v,w)=>v.x*w.y-v.y*w.x;
+  const det=cross(ab,cd);
+  if (det!==0) {
+    const t=cross(ac,cd)/det, u=cross(ac,ab)/det;
+    if (t>=0 && t<=1 && u>=0 && u<=1) {
+      const p=add(a,mul(ab,t));
+      return {gap:0,p,q:p};
+    }
+  }
+  const choices=[[a,closestOnBar(a,c,d)],[b,closestOnBar(b,c,d)],
+    [closestOnBar(c,a,b),c],[closestOnBar(d,a,b),d]];
+  let best=null;
+  for(const [p,q] of choices){
+    const gap=dist(p,q);
+    if(best===null || gap<best.gap) best={p,q,gap};
+  }
+  return best;
+}
+function sweepReport(m,width) {
+  const geometry=closureReport(m);
+  if (geometry.state!=='closes' || !(width>0)) return {state:'unresolved'};
+  const g=dist(m.A0,m.B0);
+  const sine=r=>{
+    const cosine=(m.b*m.b+m.c*m.c-r*r)/(2*m.b*m.c);
+    return Math.sqrt(Math.max(0,(1-cosine)*(1+cosine)));
+  };
+  const sinMin=Math.min(sine(Math.abs(g-m.a)),sine(g+m.a));
+  if (sinMin<1e-7) return {state:'unresolved'};
+  // Tip speed per radian <= a / sin(mu); a point on a bar never moves faster
+  // than its fastest endpoint. Distance between the two bars is Lipschitz.
+  const speed=m.a*(1+1/sinMin), eps=geometry.guard*20;
+  const resolution=0.15, maxDepth=13;
+  let lower=Infinity, upper=Infinity, witness=null, evaluations=0;
+  function visit(lo,hi,depth){
+    const t=(lo+hi)/2, pose=solve(m,t);
+    if (!pose) {lower=-Infinity; return;}
+    evaluations++;
+    const near=barDistance(m.A0,pose.A,m.B0,pose.B);
+    const gap=near.gap-width;
+    if (gap+eps<upper) {upper=gap+eps;witness={angle:t,p:near.p,q:near.q,gap};}
+    const bound=Math.max(-width-eps,gap-speed*(hi-lo)/2-eps);
+    if (bound>=upper-resolution || depth===maxDepth) lower=Math.min(lower,bound);
+    else {visit(lo,t,depth+1); visit(t,hi,depth+1);}
+  }
+  for(let i=0;i<16;i++) visit(i*TAU/16,(i+1)*TAU/16,0);
+  if (!Number.isFinite(lower) || !witness) return {state:'unresolved'};
+  return {state:upper<0?'overlap':lower>0?'clear':'unresolved',lower,upper,witness,evaluations,width};
+}
+function atScale(m,k) {
+  return {...m,A0:mul(m.A0,k),B0:mul(m.B0,k),a:m.a*k,b:m.b*k,c:m.c*k,pu:(m.pu||0)*k,pv:(m.pv||0)*k};
+}
+// The manufacturing model uses the requested dimensions rounded to 0.1 mm.
+// Preserve the world orientation of the ground so a path overlay stays registered.
+function fabricationModel(design, factor=1) {
+  const model=atScale(design,factor);
+  const delta=sub(model.B0,model.A0), ground=len(delta);
+  if (!(ground>0)) throw new Error('The ground pins must be distinct.');
+  const cut=value=>Math.round(value*10)/10;
+  return {...model, B0:add(model.A0,mul(delta,cut(ground)/ground)), a:cut(model.a),
+    b:cut(model.b), c:cut(model.c), pu:cut(model.pu), pv:cut(model.pv),
+    target:design.target?.map(p=>mul(p,factor))};
+}
+
+function positiveAngle(angle) {
+  return ((angle%TAU)+TAU)%TAU;
+}
+
+// At a rocker reversal the crank and coupler are collinear. Intersect each
+// limiting circle with the rocker circle, then retain this assembly branch.
+function strokeReport(m) {
+  if (closureReport(m).state!=='closes') return null;
+  const g=dist(m.A0,m.B0), baseAngle=ang(sub(m.B0,m.A0));
+  const stops=[];
+  for (const radius of [m.a+m.b,Math.abs(m.a-m.b)]) {
+    if (radius<=0) continue;
+    const cosine=(g*g+radius*radius-m.c*m.c)/(2*g*radius);
+    if (Math.abs(cosine)>1+1e-11) continue;
+    const spread=Math.acos(Math.max(-1,Math.min(1,cosine)));
+    for (const bearing of [baseAngle+spread,baseAngle-spread]) {
+      const B=add(m.A0,V(radius*Math.cos(bearing),radius*Math.sin(bearing)));
+      const crank=bearing+(radius===Math.abs(m.a-m.b) && m.b>m.a ? Math.PI : 0);
+      const pose=solve(m,crank);
+      if (!pose || dist(B,pose.B)>1e-7*Math.max(g,m.b,m.c)) continue;
+      const input=positiveAngle(crank-baseAngle);
+      if (!stops.some(stop=>Math.abs(Math.sin((input-stop.input)/2))<1e-8))
+        stops.push({input,output:positiveAngle(ang(sub(B,m.B0))-baseAngle)});
+    }
+  }
+  if (stops.length!==2) return null;
+  stops.sort((a,b)=>a.input-b.input);
+  const [first,second]=stops, travel=second.input-first.input;
+  const middle=solve(m,baseAngle+(first.input+second.input)/2);
+  const midOutput=positiveAngle(ang(sub(middle.B,m.B0))-baseAngle);
+  const ccwSpan=positiveAngle(second.output-first.output);
+  const increasing=positiveAngle(midOutput-first.output)<ccwSpan;
+  const rise=increasing?travel:TAU-travel, fall=TAU-rise;
+  return {swingDeg:(increasing?ccwSpan:TAU-ccwSpan)*R2D,
+    ccwRockerStrokeCrankDeg:rise*R2D,cwRockerStrokeCrankDeg:fall*R2D,
+    longToShortTimeRatio:Math.max(rise,fall)/Math.min(rise,fall),
+    stops:stops.map(p=>({inputDeg:p.input*R2D,rockerDeg:p.output*R2D}))};
+}
+
+function minimumTransmission(m) {
+  if (closureReport(m).state!=='closes') return null;
+  const g=dist(m.A0,m.B0);
+  const cosAbs=Math.max(...[Math.abs(g-m.a),g+m.a].map(d=>
+    Math.abs((m.b*m.b+m.c*m.c-d*d)/(2*m.b*m.c))));
+  return Math.acos(Math.min(1,cosAbs))*R2D;
+}
+
+// Outline of a plate with a material border around all three hole centres.
+// A convex hull plus round end caps also covers collinear tracing positions.
+function plateOutline(centres,radius) {
+  const sorted=centres.slice().sort((a,b)=>a.x-b.x||a.y-b.y);
+  function chain(points) {
+    const out=[];
+    for (const point of points) {
+      while (out.length>=2) {
+        const a=out[out.length-2], b=out[out.length-1];
+        if ((b.x-a.x)*(point.y-a.y)-(b.y-a.y)*(point.x-a.x)>0) break;
+        out.pop();
+      }
+      out.push(point);
+    }
+    return out;
+  }
+  const hull=chain(sorted).slice(0,-1).concat(chain(sorted.reverse()).slice(0,-1));
+  const corners=hull.map((p,i)=>{
+    const d=sub(hull[(i+1)%hull.length],p);
+    return mul(V(d.y,-d.x),radius/len(d));
+  });
+  const xy=p=>p.x+' '+p.y;
+  let path='';
+  hull.forEach((p,i)=>{
+    const incoming=add(p,corners[(i+hull.length-1)%hull.length]),outgoing=add(p,corners[i]);
+    path+=(i?' L ':'M ')+xy(incoming)+' A '+radius+' '+radius+' 0 0 1 '+xy(outgoing);
+  });
+  return path+' Z';
+}
+
+function feasibleStock(m,tolerance,material,pin) {
+  const gaps=[m.a,m.b,m.c];
+  if (m.mode==='path') {
+    const point=V(m.pu,m.pv);
+    for (const joint of [V(0,0),V(m.b,0)]) {
+      const separation=dist(point,joint);
+      if (separation>1e-8) gaps.push(separation);
+    }
+  }
+  return {holesDistinct:Math.min(...gaps)-tolerance>pin.hole,
+    lengthFits:movingSpan(m)+material.w+tolerance<=material.maxL,
+    sheetFits:!(material.isStick && m.mode==='path' && Math.abs(m.pv)>1e-8)};
+}
+
+function movingSpan(m) {
+  const plate=m.mode==='path'?Math.max(Math.hypot(m.pu,m.pv),Math.hypot(m.pu-m.b,m.pv)):0;
+  return Math.max(m.a,m.b,m.c,plate);
+}
+// Every selectable whole-percent scale is tested. Stock dimensions refer to
+// moving strips and to the longest span of a coupler plate cut from sheet.
+function scaleChoices(design,tolerance,material,pin) {
+  const result=[];
+  for(let percent=50; percent<=200; percent++){
+    const m=fabricationModel(design,percent/100);
+    if(closureReport(m,tolerance).state!=='closes') continue;
+    const stock=feasibleStock(m,tolerance,material,pin);
+    if(!stock.holesDistinct||!stock.lengthFits||!stock.sheetFits) continue;
+    result.push(percent);
+  }
+  return result;
+}
+
+// g,a,b,c are integer tenths of mm from the rounded cut list.
+// Use homogeneous tangent-half-angle pairs [n:d] to include half-turns.
+function roundedCurve(m) {
+  const lengths=[dist(m.A0,m.B0),m.a,m.b,m.c].map(x=>Math.round(10*x));
+  if (lengths.some(x=>!Number.isSafeInteger(x)||x<=0)) return null;
+  const [g,a,b,c]=lengths.map(BigInt), sq=x=>x*x;
+  const C00=sq(g+c-a)-sq(b), C20=sq(g+c+a)-sq(b);
+  const C02=sq(g-c-a)-sq(b), C22=sq(g-c+a)-sq(b), C11=-8n*a*c;
+  const D0=-4n*C02*C00, D2=C11*C11-4n*(C02*C20+C22*C00), D4=-4n*C22*C20;
+  const abs=x=>x<0n?-x:x;
+  const fold=abs(g-a)-abs(b-c), reach=b+c-g-a;
+  return {lengths, C00,C20,C02,C22,C11,D0,D2,D4,fold,reach,
+    smoothQuartic:D0!==0n && D4!==0n && sq(D2)!==4n*D0*D4};
+}
+function gcdInt(a,b) {
+  a=a<0n?-a:a;b=b<0n?-b:b;
+  while(b!==0n){const next=a%b;a=b;b=next;}
+  return a;
+}
+function evenQuarticJ(A,B,C) {
+  const disc=B*B-4n*A*C;
+  let den=A*C*disc**2n;
+  if(den===0n) return null;
+  let num=16n*(B*B+12n*A*C)**3n;
+  if(den<0n){num=-num;den=-den;}
+  const g=gcdInt(num,den);
+  return {numerator:String(num/g),denominator:String(den/g)};
+}
+function modInt(a,p){return (a%p+p)%p;}
+function goodPrimeCounts(curve,primes=[3,5,7,11,13,17,19,23,29,31,37,41,43,47,53],limit=3) {
+  if(!curve.smoothQuartic) return [];
+  // Remove the common factor in the bihomogeneous closure equation. Its
+  // discriminant changes by a square, so the rational double cover is unchanged.
+  let content=0n;
+  for(const c of [curve.C00,curve.C20,curve.C02,curve.C22,curve.C11]) content=gcdInt(content,c);
+  const factor=content*content;
+  const [A,B,C]=[curve.D0,curve.D2,curve.D4].map(v=>v/factor);
+  const counts=[];
+  for(const prime of primes) {
+    const p=BigInt(prime);
+    if(prime===2 || modInt(A*C*(B*B-4n*A*C),p)===0n) continue;
+    const roots=Array(prime).fill(0);
+    for(let v=0;v<prime;v++) roots[(v*v)%prime]++;
+    const infinity=roots[Number(modInt(C,p))];
+    let finite=0;
+    for(let t=0n;t<p;t++){
+      const x=t*t;
+      finite+=roots[Number(modInt(A+B*x+C*x*x,p))];
+    }
+    counts.push({prime,finite,infinity,total:finite+infinity});
+    if(counts.length===limit)break;
+  }
+  return counts;
+}
+
+function projectiveFibre(curve,n,d) {
+  n=BigInt(n);d=BigInt(d);
+  if (n===0n && d===0n) throw RangeError('A projective angle needs a nonzero coordinate.');
+  const A=curve.C02*d*d+curve.C22*n*n;
+  const B=curve.C11*n*d;
+  const C=curve.C00*d*d+curve.C20*n*n;
+  const delta=B*B-4n*A*C;
+  const count=(A===0n&&B===0n&&C===0n)?'all':delta>0n?2:delta===0n?1:0;
+  return {A,B,C,delta,count};
+}
+
+// Report geometry alone. The optimiser also trades off the transmission angle;
+// its score is deliberately separate from these distances in millimetres.
+function traceGap(m,target) {
+  const curve=simulate(m,720).pts;
+  if (curve.some(p=>p===null)) return null;
+  const xy=curve.map(p=>p.P);
+  function nearest(p,line) {
+    let d=Infinity;
+    for(let i=0;i<line.length;i++) d=Math.min(d,dist(p,closestOnBar(p,line[i],line[(i+1)%line.length])));
+    return d;
+  }
+  const samples=192;
+  const forward=resample(xy,samples).map(p=>nearest(p,target));
+  const reverse=resample(target,samples).map(p=>nearest(p,xy));
+  const mean=(forward.concat(reverse).reduce((sum,v)=>sum+v,0))/(2*samples);
+  const width=Math.max(...target.map(p=>p.x))-Math.min(...target.map(p=>p.x));
+  return {mean,max:Math.max(...forward,...reverse),fraction:mean/width,width};
+}
+
+// ---------------------------------------------------------------- flap synthesis (crank-rocker, time ratio)
+function synthFlap(psiDeg,Q,c){
+  const psi=psiDeg*D2R, alpha=Math.PI*(Q-1)/(Q+1);
+  const B0=V(0,0);
+  const B1=V(c*Math.cos(Math.PI/2-psi/2),c*Math.sin(Math.PI/2-psi/2));
+  const B2=V(c*Math.cos(Math.PI/2+psi/2),c*Math.sin(Math.PI/2+psi/2));
+  const cands=[];
+  const chord=dist(B1,B2), mid=mul(add(B1,B2),.5), u=mul(sub(B2,B1),1/chord), nrm=V(-u.y,u.x);
+  if(alpha<1e-6){ // A0 on line B1B2 outside the segment
+    for(let t=0.15*c;t<=3*c;t+=0.02*c){cands.push(add(B2,mul(u,t)));cands.push(add(B1,mul(u,-t)));}
+  } else {
+    const R=chord/(2*Math.sin(alpha)), hc=R*Math.cos(alpha);
+    for(const sg of [1,-1]){
+      const C=add(mid,mul(nrm,sg*hc));
+      for(let k=0;k<720;k++){const P=add(C,V(R*Math.cos(k/720*TAU),R*Math.sin(k/720*TAU)));
+        const a1=ang(sub(B1,P)), a2=ang(sub(B2,P)); let dA=Math.abs(a1-a2); if(dA>Math.PI) dA=TAU-dA;
+        if(Math.abs(dA-alpha)<1e-3) cands.push(P);}
+    }
+  }
+  let best=null;
+  for(const A0 of cands){
+    const e=Math.max(dist(A0,B1),dist(A0,B2)), f=Math.min(dist(A0,B1),dist(A0,B2));
+    const a=(e-f)/2, b=(e+f)/2, d=dist(A0,B0);
+    if(a<0.12*c||d>4.5*c||b>4.5*c) continue;
+    for(const s of [1,-1]){
+      const m={A0,B0,a,b,c,s,pu:0,pv:0};
+      const sim=simulate(m,240); if(sim.fails) continue;
+      // verify achieved swing and time ratio
+      const ph=sim.pts.map(p=>ang(sub(p.B,B0)));
+      let mn=1e9,mx=-1e9,imn=0,imx=0; ph.forEach((v,i)=>{if(v<mn){mn=v;imn=i} if(v>mx){mx=v;imx=i}});
+      const sw=(mx-mn)*R2D; if(Math.abs(sw-psiDeg)>1.5) continue;
+      const score=sim.muMin - 2*Math.max(0,d/c-2.6) - 1*Math.max(0,b/c-2.8);
+      if(!best||score>best.score) best={m,score,muMin:sim.muMin};
+    }
+  }
+  if(!best) return null;
+  // orient so that the crank turns counter-clockwise and the downstroke is the faster stroke
+  const m=best.m, sim=simulate(m,720), ph=sim.pts.map(p=>ang(sub(p.B,m.B0)));
+  let imn=0,imx=0; ph.forEach((v,i)=>{if(v<ph[imn])imn=i; if(v>ph[imx])imx=i});
+  const down=((imn-imx)+720)%720, up=720-down; // ccw crank steps from top to bottom position
+  m.timeRatio=Math.max(down,up)/Math.min(down,up); m.downFaster=down<up;
+  m.mode='flap'; m.psi=psiDeg; m.Q=Q;
+  return m;
+}
+
+// ---------------------------------------------------------------- path synthesis (coupler curve fit, differential evolution)
+function resample(pts,N){
+  const L=[0]; for(let i=1;i<pts.length;i++) L.push(L[i-1]+dist(pts[i],pts[i-1]));
+  const tot=L[L.length-1]+dist(pts[0],pts[pts.length-1]); const closed=[...pts,pts[0]]; L.push(tot);
+  const out=[]; let j=0;
+  for(let k=0;k<N;k++){const t=k/N*tot; while(L[j+1]<t)j++; const f=(t-L[j])/Math.max(1e-9,L[j+1]-L[j]); out.push(add(closed[j],mul(sub(closed[j+1],closed[j]),f)));}
+  return out;
+}
+function pathCost(m,target,cache){
+  if(closureReport(m).state!=='closes') return 1e8;
+  const N=72, curve=[]; let fails=0, muMin=180;
+  for(let k=0;k<N;k++){const s=solve(m,k/N*TAU); if(!s){fails++;continue;} curve.push(s.P); muMin=Math.min(muMin,s.mu,180-s.mu);}
+  if(fails) return 1e6+fails*1e4;
+  let c1=0; for(const t of target){let b=1e18; for(const p of curve){const dx=p.x-t.x,dy=p.y-t.y,d=dx*dx+dy*dy; if(d<b)b=d;} c1+=Math.sqrt(b);}
+  let c2=0; for(const p of curve){let b=1e18; for(const t of target){const dx=p.x-t.x,dy=p.y-t.y,d=dx*dx+dy*dy; if(d<b)b=d;} c2+=Math.sqrt(b);}
+  const err=c1/target.length+c2/curve.length;
+  return err + Math.max(0,30-muMin)*0.4*cache.scale/100;
+}
+function decode(x){return {A0:V(x[0],x[1]),B0:V(x[0]+x[2]*Math.cos(x[3]),x[1]+x[2]*Math.sin(x[3])),a:x[4],b:x[5],c:x[6],pu:x[7],pv:x[8],s:x[9]>=0?1:-1};}
+function nelderMead(f,x0,scale,iters){
+  const n=x0.length; let P=[x0.slice()]; for(let i=0;i<n;i++){const y=x0.slice(); y[i]+=scale[i]; P.push(y);} let F=P.map(f);
+  for(let it=0;it<iters;it++){
+    const idx=[...P.keys()].sort((i,j)=>F[i]-F[j]); P=idx.map(i=>P[i]); F=idx.map(i=>F[i]);
+    const c=Array(n).fill(0); for(let i=0;i<n;i++) for(let j=0;j<n;j++) c[j]+=P[i][j]/n;
+    const r=c.map((v,j)=>v+(v-P[n][j])), fr=f(r);
+    if(fr<F[0]){const e=c.map((v,j)=>v+2*(v-P[n][j])), fe=f(e); if(fe<fr){P[n]=e;F[n]=fe;}else{P[n]=r;F[n]=fr;}}
+    else if(fr<F[n-1]){P[n]=r;F[n]=fr;}
+    else{const k=c.map((v,j)=>v+0.5*(P[n][j]-v)), fk=f(k); if(fk<F[n]){P[n]=k;F[n]=fk;} else {for(let i=1;i<=n;i++){P[i]=P[i].map((v,j)=>P[0][j]+0.5*(v-P[0][j])); F[i]=f(P[i]);}}}
+  }
+  let b=0; F.forEach((v,i)=>{if(v<F[b])b=i}); return {x:P[b],f:F[b]};
+}
+function synthPathAsync(target,onProgress,onDone,active=()=>true){
+  let seed=0x43525354;
+  function random(){ seed=(Math.imul(1664525,seed)+1013904223)>>>0; return seed/4294967296; }
+  let cx=0,cy=0; target.forEach(p=>{cx+=p.x;cy+=p.y}); cx/=target.length; cy/=target.length;
+  let span=0; target.forEach(p=>span=Math.max(span,dist(p,V(cx,cy))));
+  const S=span; const cache={scale:S};
+  const lo=[cx-2.5*S,cy-2.5*S,0.5*S,-Math.PI,0.12*S,0.4*S,0.4*S,-1.8*S,-1.8*S,-1];
+  const hi=[cx+2.5*S,cy+2.5*S,2.6*S, Math.PI,1.1*S,2.4*S,2.4*S, 1.8*S, 1.8*S, 1];
+  const size=x=>Math.max(0,(x[5]+x[2])/S-3.2)*0.05;            // mild preference for compact mechanisms
+  const cost=x=>x.some((v,i)=>v<lo[i]||v>hi[i])?1e9:pathCost(decode(x),target,cache)/S+size(x);
+  const D=lo.length, NP=80, G=420, RUNS=3, F=0.6, CR=0.9;
+  const rnd=(a,b)=>a+random()*(b-a);
+  let run=0, best=null;
+  function startRun(){
+    const pop=[],cst=[];
+    let guard=0;
+    while(pop.length<NP&&guard<200000){guard++; const x=lo.map((l,i)=>rnd(l,hi[i])); const m=decode(x); const g=grashof(m); if(g.ok&&g.crankShortest){pop.push(x);cst.push(cost(x));}}
+    return {pop,cst,g:0};
+  }
+  let st=startRun();
+  function step(){
+    if(!active()) return;
+    const t0=performance.now();
+    while(st.g<G&&performance.now()-t0<40){
+      for(let i=0;i<NP;i++){
+        let r1,r2,r3; do r1=random()*NP|0; while(r1===i); do r2=random()*NP|0; while(r2===i||r2===r1); do r3=random()*NP|0; while(r3===i||r3===r1||r3===r2);
+        const jr=random()*D|0, y=st.pop[i].slice();
+        for(let j=0;j<D;j++) if(random()<CR||j===jr){y[j]=st.pop[r1][j]+F*(st.pop[r2][j]-st.pop[r3][j]); if(y[j]<lo[j]||y[j]>hi[j]) y[j]=rnd(lo[j],hi[j]);}
+        const cy_=cost(y); if(cy_<=st.cst[i]){st.pop[i]=y;st.cst[i]=cy_;}
+      }
+      st.g++;
+    }
+    let bi=0; st.cst.forEach((c,i)=>{if(c<st.cst[bi])bi=i});
+    const cur={x:st.pop[bi],f:st.cst[bi]};
+    const shown=best&&best.f<cur.f?best:cur;
+    onProgress((run+st.g/G)/RUNS,decode(shown.x),pathCost(decode(shown.x),target,cache)/S);
+    if(st.g<G){setTimeout(step,0);return;}
+    // polish this run's best with Nelder-Mead (branch held fixed)
+    const sc=hi.map((h,j)=>(h-lo[j])*0.02); const br=cur.x[9];
+    const pol=nelderMead(x=>cost([...x.slice(0,9),br]),cur.x.slice(0,9),sc.slice(0,9),900);
+    const polished={x:[...pol.x,br],f:pol.f};
+    const runBest=polished.f<cur.f?polished:cur;
+    if(!best||runBest.f<best.f) best=runBest;
+    run++;
+    if(run<RUNS){st=startRun(); setTimeout(step,0);}
+    else onDone(decode(best.x),pathCost(decode(best.x),target,cache)/S);
+  }
+  setTimeout(step,0);
+}
+
+// ---------------------------------------------------------------- state & UI
+const cv=document.getElementById('cv'), ctx=cv.getContext('2d');
+let generation=0, previewModel=null, displayModel=null, cutSource=null, cutFactor=0, cutModel=null;
+let mode='flap', design=null, drawn=[], drawing=false, theta=0, playing=!window.matchMedia('(prefers-reduced-motion: reduce)').matches, trace=[];
+const $=id=>document.getElementById(id);
+const kitModel={A0:V(0,0),B0:V(93.8,0),a:46.6,b:84.1,c:111.3,s:1,pointerExtension:18};
+let kitAngle=0, kitPlaying=playing;
+function drawReference() {
+  const {A,B}=solve(kitModel,kitAngle);
+  const tip=add(B,mul(sub(B,kitModel.B0),kitModel.pointerExtension/kitModel.c));
+  for(const [id,p,q] of [['kitCrank',kitModel.A0,A],['kitRocker',kitModel.B0,tip],['kitCoupler',A,B]]) {
+    $(id).setAttribute('d','M'+p.x+' '+p.y+' L'+q.x+' '+q.y);
+  }
+  for(const [id,p] of [['kitA',A],['kitB',B]]){
+    $(id).setAttribute('cx',p.x); $(id).setAttribute('cy',p.y);
+  }
+}
+function labelKitPlay() {$('kitPlay').textContent=kitPlaying?'Pause reference motion':'Play reference motion';}
+$('kitPlay').onclick=()=>{kitPlaying=!kitPlaying;labelKitPlay();}; labelKitPlay();drawReference();
+function cancelSearch(){generation++;previewModel=null;$('synthPath').disabled=false; $('status').textContent='';}
+function setMode(m){cancelSearch();mode=m; $('tabFlap').classList.toggle('on',m==='flap'); $('tabPath').classList.toggle('on',m==='path');
+  $('flapCtl').style.display=m==='flap'?'':'none'; $('pathCtl').style.display=m==='path'?'':'none'; $('pathLegend').style.display=m==='path'?'':'none'; $('wingLegend').hidden=m!=='flap'; $('tabFlap').setAttribute('aria-pressed',String(m==='flap')); $('tabPath').setAttribute('aria-pressed',String(m==='path'));
+  design=null; trace=[]; renderAll(); if(m==='flap') runFlap();}
+$('tabFlap').onclick=()=>setMode('flap'); $('tabPath').onclick=()=>setMode('path');
+const lbl=()=>{$('psiV').textContent=$('psi').value+'°'; $('qV').textContent=(+$('q').value/100).toFixed(2)+'×'; $('cV').textContent=$('c').value+' mm';
+  $('tolV').textContent='±'+(+$('tol').value).toFixed(2)+' mm'; $('wV').textContent=$('pathW').value+' mm'; $('scaleV').textContent=$('scale').value+'%';};
+['psi','q','c','pathW','scale','tol'].forEach(id=>$(id).addEventListener('input',()=>{lbl(); if ((id==='pathW'&&mode==='path') || (['psi','q','c'].includes(id)&&mode==='flap')) {
+    cancelSearch();design=null;trace=[];renderAll();
+    $('status').textContent=mode==='flap'?'Settings changed. Choose Design the mechanism.':'Width changed. Choose Find a mechanism.';
+  } if(id==='scale'||id==='tol') renderAll();})); lbl();
+$('play').textContent=playing?'Pause':'Play';
+$('spd').oninput=()=>{$('rpmV').textContent=$('spd').value+' rpm';};
+$('poseAngle').oninput=()=>{
+  playing=false; $('play').textContent='Play'; theta=Number($('poseAngle').value)*D2R;
+  $('poseValue').textContent=(theta*R2D).toFixed(1)+'°'; trace=[];
+};
+$('synthFlap').onclick=runFlap; $('play').onclick=()=>{playing=!playing; $('play').textContent=playing?'Pause':'Play';};
+$('driveSense').onchange=()=>{trace=[];renderAll();};
+$('layer').onchange=renderAll; $('mat').onchange=renderAll; $('pin').onchange=renderAll;
+
+function runFlap(){
+  const m=synthFlap(+$('psi').value,+$('q').value/100,+$('c').value);
+  if(!m){design=null; $('status').textContent='No buildable crank-rocker for those settings — try a smaller swing or speed ratio.'; renderAll(); return;}
+  design=m; trace=[]; $('status').textContent=''; renderAll();
+}
+
+// path drawing: canvas pixels -> mm via drawing width
+function canvasPt(ev){const r=cv.getBoundingClientRect(); return V((ev.clientX-r.left)/r.width*cv.width,(ev.clientY-r.top)/r.height*cv.height);}
+cv.addEventListener('pointerdown',ev=>{if(mode!=='path')return; cancelSearch(); drawing=true; drawn=[canvasPt(ev)]; design=null; trace=[]; cv.setPointerCapture(ev.pointerId);renderAll();});
+cv.addEventListener('pointermove',ev=>{if(!drawing)return; const p=canvasPt(ev); if(drawn.length<8192 && dist(p,drawn[drawn.length-1])>3) drawn.push(p);});
+cv.addEventListener('pointerup',()=>{drawing=false;});
+cv.addEventListener('pointercancel',()=>{drawing=false;});
+cv.addEventListener('lostpointercapture',()=>{drawing=false;});
+$('clearPath').onclick=()=>{cancelSearch();drawn=[];design=null;trace=[];renderAll();};
+$('samplePath').onclick=()=>{cancelSearch();drawn=[]; for(let k=0;k<80;k++){const t=k/80*TAU; drawn.push(V(560+150*Math.cos(t)+30*Math.cos(2*t),200+55*Math.sin(t)-35*Math.sin(2*t)*0.6));} design=null;trace=[];renderAll();};
+function drawnMM(){ // convert drawn pixels to mm, y up, origin at drawing centroid
+  let minx=1e9,maxx=-1e9; drawn.forEach(p=>{minx=Math.min(minx,p.x);maxx=Math.max(maxx,p.x)});
+  const s=(+$('pathW').value)/Math.max(1,maxx-minx); let cx=0,cy=0; drawn.forEach(p=>{cx+=p.x;cy+=p.y}); cx/=drawn.length; cy/=drawn.length;
+  return {pts:drawn.map(p=>V((p.x-cx)*s,-(p.y-cy)*s)),s,cx,cy};
+}
+$('synthPath').onclick=()=>{
+  if(drawn.length<12){$('status').textContent='Draw a loop first.';return;}
+  const span=Math.max(...drawn.map(p=>p.x))-Math.min(...drawn.map(p=>p.x));
+  if(span<3){$('status').textContent='Give the loop a measurable horizontal width.';return;}
+  cancelSearch();design=null;trace=[];renderAll();
+  const thisGeneration=generation;const conv=drawnMM(), target=resample(conv.pts,64); $('synthPath').disabled=true;
+  synthPathAsync(target,(f,m,e)=>{previewModel=Object.assign(m,{mode:'path',target}); $('status').textContent='Searching… '+Math.round(f*100)+'%'; trace=[];},
+    (m,e)=>{previewModel=null;design=Object.assign(m,{mode:'path',target});$('synthPath').disabled=false;
+      trace=[];renderAll(); const gap=displayModel?.pathGap;
+      $('status').textContent=gap?'Best fit: compare the rounded path with the drawing below.':'The rounded fit did not retain a continuous full turn.';
+    }, ()=>generation===thisGeneration);
+};
+
+// ---------------------------------------------------------------- drawing
+let framedModel=null, projectedView=null;
+function view(model){
+  if(framedModel===model && projectedView) return projectedView;
+  if(!model) return null;
+  const sim=simulate(model,180); const P=[model.A0,model.B0];
+  sim.pts.forEach(s=>{if(s){P.push(s.A,s.B,s.P);}}); if(model.target) model.target.forEach(p=>P.push(p));
+  if(model.mode==='flap'){sim.pts.forEach(q=>{if(!q)return; const u=sub(q.B,model.B0), L=len(u); const e=mul(u,1/L), n=V(-e.y,e.x);
+    P.push(add(model.B0,mul(e,1.9*model.c)), add(add(model.B0,mul(e,0.9*model.c)),mul(n,0.55*model.c)));});}
+  let minx=1e9,maxx=-1e9,miny=1e9,maxy=-1e9; P.forEach(p=>{minx=Math.min(minx,p.x);maxx=Math.max(maxx,p.x);miny=Math.min(miny,p.y);maxy=Math.max(maxy,p.y)});
+  const pad=40, s=Math.min((cv.width-2*pad)/(maxx-minx),(cv.height-2*pad)/(maxy-miny));
+  const ox=pad+((cv.width-2*pad)-s*(maxx-minx))/2-s*minx, oy=pad+((cv.height-2*pad)-s*(maxy-miny))/2+s*maxy;
+  framedModel=model;projectedView=p=>V(ox+s*p.x,oy-s*p.y);return projectedView;
+}
+function drawBar(T,p,q,col,w){ctx.strokeStyle=col;ctx.lineWidth=w;ctx.lineCap='round';ctx.beginPath();const a=T(p),b=T(q);ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke();}
+function pinAt(T,p,fixed){const a=T(p);ctx.fillStyle='#fff';ctx.strokeStyle='#1f1a14';ctx.lineWidth=2;ctx.beginPath();ctx.arc(a.x,a.y,6,0,TAU);ctx.fill();ctx.stroke();
+  if(fixed){ctx.fillStyle='#57534e';ctx.beginPath();ctx.moveTo(a.x-12,a.y+16);ctx.lineTo(a.x+12,a.y+16);ctx.lineTo(a.x,a.y+4);ctx.closePath();ctx.fill();}}
+let previousFrame=0;
+function frame(now){
+  const model=previewModel||displayModel;
+  const elapsed=previousFrame ? Math.min(0.1,(now-previousFrame)/1000) : 0;
+  previousFrame=now;
+  if(kitPlaying) {kitAngle=(kitAngle+elapsed*TAU/8)%TAU;drawReference();}
+  ctx.clearRect(0,0,cv.width,cv.height);
+  if(mode==='path'&&!model&&drawn.length){ctx.strokeStyle='rgba(147,51,234,.35)';ctx.lineWidth=3;ctx.beginPath();drawn.forEach((p,i)=>i?ctx.lineTo(p.x,p.y):ctx.moveTo(p.x,p.y));if(!drawing)ctx.closePath();ctx.stroke();}
+  if(!model){ if(mode==='path'&&!drawn.length){ctx.fillStyle='#a8a29e';ctx.font='18px Inter';ctx.textAlign='center';ctx.fillText('Draw a closed loop here',cv.width/2,cv.height/2);} requestAnimationFrame(frame); return;}
+  const T=view(model);
+  if(playing){
+    theta=positiveAngle(theta+Number($('driveSense').value)*Number($('spd').value)*TAU*elapsed/60);
+    $('poseAngle').value=theta*R2D;
+    $('poseValue').textContent=(theta*R2D).toFixed(1)+'°';
+  }
+  const s=solve(model,theta+ang(sub(model.B0,model.A0)));
+  if(model.target){ctx.strokeStyle='rgba(147,51,234,.55)';ctx.lineWidth=3;ctx.setLineDash([6,5]);ctx.beginPath();model.target.forEach((p,i)=>{const q=T(p);i?ctx.lineTo(q.x,q.y):ctx.moveTo(q.x,q.y)});ctx.closePath();ctx.stroke();ctx.setLineDash([]);}
+  if(s){
+    trace.push(model.mode==='path'?s.P:null); if(trace.length>400) trace.shift();
+    if($('showTrace').checked&&model.mode==='path'){ctx.strokeStyle='rgba(29,78,216,.35)';ctx.lineWidth=2;ctx.beginPath();trace.forEach((p,i)=>{if(!p)return;const q=T(p);i?ctx.lineTo(q.x,q.y):ctx.moveTo(q.x,q.y)});ctx.stroke();}
+    // ground
+    drawBar(T,model.A0,model.B0,'rgba(87,83,78,.35)',8);
+    // wing on rocker (flap mode)
+    if(model.mode==='flap'){
+      const dir=sub(s.B,model.B0), u=mul(dir,1/len(dir)), n=V(-u.y,u.x), c=model.c;
+      const tip=add(model.B0,mul(u,1.9*c)), w1=add(add(model.B0,mul(u,0.9*c)),mul(n,0.55*c)), w2=add(add(model.B0,mul(u,1.5*c)),mul(n,0.35*c));
+      ctx.fillStyle='rgba(194,65,12,.12)';ctx.strokeStyle='rgba(124,45,18,.6)';ctx.lineWidth=2;ctx.beginPath();
+      [model.B0,w1,w2,tip].map(T).forEach((q,i)=>i?ctx.lineTo(q.x,q.y):ctx.moveTo(q.x,q.y));
+      const back=add(model.B0,mul(u,1.2*c)); const qb=T(back); ctx.quadraticCurveTo(qb.x,qb.y,T(model.B0).x,T(model.B0).y); ctx.fill(); ctx.stroke();
+    }
+    drawBar(T,model.A0,s.A,getComputedStyle(document.body).getPropertyValue('--crank'),10);
+    drawBar(T,model.B0,s.B,getComputedStyle(document.body).getPropertyValue('--rocker'),10);
+    if(model.mode==='path'){ // coupler as triangle plate
+      const a=T(s.A),b=T(s.B),p=T(s.P); ctx.fillStyle='rgba(29,78,216,.15)';ctx.strokeStyle='#1d4ed8';ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.lineTo(p.x,p.y);ctx.closePath();ctx.fill();ctx.stroke();
+      ctx.fillStyle='#9333ea';ctx.beginPath();ctx.arc(p.x,p.y,7,0,TAU);ctx.fill();
+    } else drawBar(T,s.A,s.B,'#1d4ed8',10);
+    pinAt(T,model.A0,true); pinAt(T,model.B0,true); pinAt(T,s.A,false); pinAt(T,s.B,false);
+  }
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+
+// ---------------------------------------------------------------- materials, checks, parts, steps
+const MATS={card:{name:'corrugated cardboard',w:14,maxL:400,thick:4},stick:{name:'craft sticks',isStick:true,w:10,maxL:114,thick:2},jumbo:{name:'jumbo craft sticks',isStick:true,w:18,maxL:152,thick:2},print:{name:'3D-printed or laser-cut parts',w:10,maxL:250,thick:4}};
+const PINS={brad:{name:'paper fasteners',hole:3},tooth:{name:'toothpicks (glue the fixed ends)',hole:2.5},m3:{name:'M3 bolts with nyloc nuts',hole:3.2}};
+function scaled(m) {
+  const factor=Number($('scale').value)/100;
+  if(cutSource!==m || cutFactor!==factor) {
+    cutSource=m;cutFactor=factor;cutModel=fabricationModel(m,factor);
+    if(cutModel.target) cutModel.pathGap=closureReport(cutModel).state==='closes'?traceGap(cutModel,cutModel.target):null;
+  }
+  return cutModel;
+}
+function li(cls,html){return `<li><span class="dot ${cls}"></span><span>${html}</span></li>`;}
+let pageGeometry=null;
+function examineWorkshop(m,mat) {
+  const tolerance=+$('tol').value;
+  const closure=closureReport(m,tolerance), sweep=sweepReport(m,mat.w);
+  pageGeometry={closure,sweep,tolerance,layer:$('layer').value};
+  const c=$('closureText'), s=$('sweepText'), figure=$('sweepFigure');
+  if (closure.state==='invalid') {
+    c.textContent='This error range includes a zero or negative length. Reduce the allowed error.';
+  } else {
+    const cap=closure.limit.toFixed(2);
+    const shortGap=closure.margin.toFixed(2);
+    const verb=closure.state==='closes'?'Every length combination closes':closure.state==='fails'?'Some length combinations cannot close':'A length combination reaches a toggle at the full-turn limit';
+    c.textContent=verb+' over a full turn. Worst triangle margin '+shortGap+' mm. The ideal critical error per pin spacing is '+cap+' mm (rounded; stay below the exact limit).';
+  }
+  const sizes=scaleChoices(design,tolerance,mat,PINS[$('pin').value]);
+  const min=sizes[0],max=sizes[sizes.length-1];
+  const consecutive=sizes.length===max-min+1;
+  pageGeometry.fitScales={min:min??null,max:max??null,count:sizes.length};
+  $('scaleText').textContent=sizes.length?(consecutive?'At '+(min===max?min+'%':min+'–'+max+'%'):'At '+sizes.length+' sizes, starting at '+min+'%')+', the moving pieces fit the stock length, the two pin holes on each bar stay distinct, and the full-turn triangle check passes. The base uses a separate board.':'No whole-percent scale from 50% to 200% passes all three checks with this stock. Try different stock, a finer pin-spacing tolerance, or a different linkage.';
+  $('applyScale').disabled=!sizes.length || +$('scale').value===min;
+  const layered=pageGeometry.layer==='separate';
+  if (!sweep.witness) {
+    s.textContent='The nominal lengths do not support this clearance bound. Inspect the full-turn result.';
+    figure.innerHTML='';
+    return;
+  }
+  const prefix=layered?'With separate layers, this is their overlap viewed from above. ':'With both bars in one layer, ';
+  const status=sweep.state==='clear'?'the two outlines stay apart.':sweep.state==='overlap'?'the two outlines overlap.':'contact remains possible.';
+  s.textContent=(layered?prefix+'If moved into one layer, ':prefix)+status+' The minimum signed gap is between '+(Math.floor(100*sweep.lower)/100).toFixed(2)+' and '+(Math.ceil(100*sweep.upper)/100).toFixed(2)+' mm over the full turn.';
+  const theta=sweep.witness.angle, pose=solve(m,theta);
+  const pts=[m.A0,m.B0,pose.A,pose.B];
+  const xs=pts.map(p=>p.x),ys=pts.map(p=>p.y);
+  const minX=Math.min(...xs)-mat.w/2,maxX=Math.max(...xs)+mat.w/2;
+  const minY=Math.min(...ys)-mat.w/2,maxY=Math.max(...ys)+mat.w/2;
+  const k=Math.min(218/(maxX-minX),122/(maxY-minY));
+  function mapped(p) {return V(122+(p.x-(maxX+minX)/2)*k,72-(p.y-(maxY+minY)/2)*k);}
+  function line(a,b,color,width,dash='') {
+    a=mapped(a);b=mapped(b);
+    return '<line x1="'+a.x+'" y1="'+a.y+'" x2="'+b.x+'" y2="'+b.y+'" stroke="'+color+'" stroke-width="'+width+'" stroke-linecap="round" '+dash+'/>';
+  }
+  function pivot(p,label) {
+    p=mapped(p);
+    return '<circle cx="'+p.x+'" cy="'+p.y+'" r="3.2" fill="#fff" stroke="#30251b"/><text x="'+p.x+'" y="'+(p.y+16)+'" fill="#30251b" text-anchor="middle" font-size="11">'+label+'</text>';
+  }
+  const angle=(theta*R2D).toFixed(1);
+  const detail=sweep.state==='overlap'?'Negative gap means the bar outlines share space in this view.':'Distance uses the actual width of each cut strip.';
+  figure.innerHTML='<svg viewBox="0 0 244 166" role="img" aria-label="Crank and rocker at a close approach. Pin spacing is shown in the current design." xmlns="http://www.w3.org/2000/svg">'+
+    line(m.A0,m.B0,'#b1a696',2,'stroke-dasharray="4 4"')+line(pose.A,pose.B,'#7d8eac',2,'stroke-dasharray="4 4"')+
+    line(m.A0,pose.A,'#cf622b',mat.w*k)+line(m.B0,pose.B,'#4b9870',mat.w*k)+
+    line(sweep.witness.p,sweep.witness.q,'#312a26',1.5,'stroke-dasharray="2 2"')+
+    pivot(m.A0,'crank')+pivot(m.B0,'rocker')+'</svg><figcaption>Close approach at '+angle+'° crank angle. '+detail+'</figcaption>';
+}
+$('applyScale').onclick=()=>{
+  const min=pageGeometry?.fitScales?.min;
+  if(min!=null){$('scale').value=min;lbl();renderAll();}
+};
+function renderBranch(m) {
+  const curve=roundedCurve(m);
+  if(!curve){$('branchText').textContent='A pin spacing rounded to zero.';$('branchFigure').innerHTML='';return;}
+  const [n,d]=$('anglePick').value.split('/').map(Number);
+  const fibre=projectiveFibre(curve,n,d);
+  const [g,a,b,c]=curve.lengths.map(v=>v/10);
+  const theta=2*Math.atan2(n,d), A0=V(0,0), B0=V(g,0), A=V(a*Math.cos(theta),a*Math.sin(theta));
+  const dv=sub(B0,A), L=len(dv), elbows=[];
+  if(fibre.count===1 || fibre.count===2){
+    const run=(b*b-c*c+L*L)/(2*L), height=(fibre.count===1)?0:Math.sqrt(Math.max(0,b*b-run*run));
+    const u=mul(dv,1/L), normal=V(-u.y,u.x), middle=add(A,mul(u,run));
+    elbows.push(add(middle,mul(normal,height)));
+    if(fibre.count===2)elbows.push(add(middle,mul(normal,-height)));
+  }
+  const bounds=[A0,B0,A,...elbows];
+  if(fibre.count==='all')bounds.push(V(g-c,-c),V(g+c,c));
+  const x=bounds.map(p=>p.x),y=bounds.map(p=>p.y);
+  const minx=Math.min(...x),maxx=Math.max(...x),miny=Math.min(...y),maxy=Math.max(...y);
+  const k=Math.min(240/Math.max(1,maxx-minx),114/Math.max(1,maxy-miny));
+  const map=p=>V(137+(p.x-(minx+maxx)/2)*k,69-(p.y-(miny+maxy)/2)*k);
+  function segment(p,q,color,dashed=false){
+    p=map(p);q=map(q);
+    return '<line x1="'+p.x+'" y1="'+p.y+'" x2="'+q.x+'" y2="'+q.y+'" stroke="'+color+'" stroke-width="3" '+(dashed?'stroke-dasharray="5 4"':'')+'/>';
+  }
+  function dot(p,label){
+    p=map(p);return '<circle cx="'+p.x+'" cy="'+p.y+'" r="3.5" fill="#fff" stroke="#32261b"/><text x="'+(p.x+5)+'" y="'+(p.y-6)+'" font-size="12">'+label+'</text>';
+  }
+  let svg=segment(A0,B0,'#b6aa98')+segment(A0,A,'#c2410c');
+  elbows.forEach((p,i)=>{
+    const alternate=elbows.length===2 && (i===0?1:-1)!==m.s;
+    svg+=segment(A,p,'#1d4ed8',alternate)+segment(B0,p,'#15803d',alternate)+dot(p,i===0?'B+':'B−');
+  });
+  if(fibre.count==='all'){const pivot=map(B0);svg+='<circle cx="'+pivot.x+'" cy="'+pivot.y+'" r="'+(c*k)+'" fill="none" stroke="#15803d"/>';}
+  svg+=dot(A,'A');
+  const msg=fibre.count==='all'?'Every rocker angle fits here.':fibre.count===2?'Two assembly positions fit this crank angle.':fibre.count===1?'One assembly position fits. The two branches meet here.':'No assembly position fits this crank angle.';
+  const full=curve.fold>0n&&curve.reach>0n;
+  $('branchText').textContent=msg+' The rounded link lengths '+(full?'pass':'fail')+' the exact strict full-turn test.';
+  $('branchFigure').innerHTML='<svg viewBox="0 0 274 142" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Assembly branches at the selected crank angle">'+svg+'</svg><figcaption>A is the crank tip. B marks a possible joint between coupler and rocker. Base shown horizontally.</figcaption>';
+  const strings=Object.fromEntries(['C00','C20','C02','C22','C11','D0','D2','D4'].map(key=>[key,String(curve[key])]));
+  const j=evenQuarticJ(curve.D0,curve.D2,curve.D4), primeCounts=goodPrimeCounts(curve);
+  $('curveNumbers').textContent=j?'For this cut list the smooth quartic has j = '+j.numerator+(j.denominator==='1'?'':' / '+j.denominator)+'. Projective point counts including infinity: '+(primeCounts.map(c=>c.total+' modulo '+c.prime).join(', ')||'no eligible prime in the tested list')+'.':'The even quartic is degenerate. Its elliptic j is undefined.';
+  pageGeometry.roundedConfiguration={lengthUnit:'0.1 mm',j,primeCounts,ground:curve.lengths[0],crank:curve.lengths[1],
+    coupler:curve.lengths[2],rocker:curve.lengths[3],coefficients:strings,strictFullTurn:full,smoothQuartic:curve.smoothQuartic,
+    crankAnglePair:[n,d],rockerPositions:fibre.count,discriminant:String(fibre.delta)};
+}
+
+$('anglePick').onchange=()=>{if(design) renderBranch(scaled(design));};
+function designRecord() {
+  const m=scaled(design), motion=strokeReport(m), groundAngle=ang(sub(m.B0,m.A0));
+  return {version:3,mode:m.mode,units:'mm',cutResolutionMm:0.1,scalePercent:Number($('scale').value),
+    axes:'World coordinates have +y up. Ground goes from crank pivot to rocker pivot. Input angles in the motion record run counterclockwise from that directed ground.',
+    branchConvention:'Positive means the joint lies to the left of the line from the crank tip to the rocker pivot.',
+    crankPivot:m.A0,rockerPivot:m.B0,ground:Math.round(10*dist(m.A0,m.B0))/10,groundBearingDeg:groundAngle*R2D,
+    crank:m.a,coupler:m.b,rocker:m.c,branch:m.s,driveDirection:Number($('driveSense').value)===1?'counterclockwise':'clockwise',tracingPoint:{alongAB:m.pu,offAB:m.pv},
+    requested:m.mode==='flap'?{swingDeg:design.psi,longToShortTimeRatio:design.Q,unscaledRockerMm:design.c}:
+      {unscaledDrawingWidthMm:Number($('pathW').value),scaledTargetMm:m.target},
+    swingDeg:motion?.swingDeg,timeRatio:motion?.longToShortTimeRatio,motion,
+    minimumTransmissionDeg:minimumTransmission(m), material:$('mat').value,pin:$('pin').value,
+    workshop:pageGeometry,pathGap:m.pathGap?{...m.pathGap,dimensionUnits:'mm at current cut scale'}:undefined};
+}
+
+function renderAll(){
+  displayModel=design?scaled(design):null;
+  $('loadCut').disabled=!design;
+  $('poseAngle').disabled=!design;
+  $('branches').hidden=!design; $('workshop').hidden=!design; $('saveSvg').disabled=!design; $('saveJson').disabled=!design; $('copySvg').disabled=!design; $('copyJson').disabled=!design;
+  if(!design){lastSVG='';pageGeometry=null;$('checks').innerHTML='<li class="hint">Design a mechanism to see its checks.</li>';$('links').innerHTML='<tr><td class="hint">—</td></tr>';$('partsWrap').innerHTML='';$('steps').innerHTML='<li class="hint">Design a mechanism first.</li>';$('matChecks').innerHTML='';return;}
+  const m=scaled(design), gr=grashof(m), d=dist(m.A0,m.B0);
+  let C='';
+  const nominal=closureReport(m);
+  C+= li(nominal.state==='closes'?'g':'b',nominal.state==='closes'?'The ideal pin centres can close a triangle at every crank angle.':'The full-turn triangle check reached a folding limit.');
+    if(gr.ok && gr.crankShortest && nominal.state==='closes') C+=li('g','The input crank is the shortest link and turns continuously in this assembly.');
+  const mu=minimumTransmission(m), motion=strokeReport(m);
+  if(mu!==null) C+=li(mu>=40?'g':'w','Minimum acute transmission angle over a full turn: '+mu.toFixed(2)+'°. Smaller angles increase sensitivity to friction and joint play.');
+  if(design.mode==='flap'){
+    if(motion){
+      C+=li('g','Cut-dimension swing: '+motion.swingDeg.toFixed(2)+'° (requested '+design.psi+'°).');
+      C+=li('g','At constant input speed the longer stroke takes '+motion.longToShortTimeRatio.toFixed(4)+'× the time of the shorter (requested '+design.Q.toFixed(2)+'×).');
+      const forward=Number($('driveSense').value)===1;
+      const ccw=forward?motion.ccwRockerStrokeCrankDeg:motion.cwRockerStrokeCrankDeg;
+      const cw=360-ccw;
+      C+=li('g','Turning the input '+(forward?'counterclockwise':'clockwise')+', use '+ccw.toFixed(2)+'° of crank travel on the counterclockwise rocker stroke and '+cw.toFixed(2)+'° on its clockwise return.');
+    }else C+=li('w','Two distinct rocker stops were not found on this full-turn branch.');
+  } else if(m.pathGap){
+    const gap=m.pathGap;
+    C+=li(gap.fraction<0.05?'g':gap.fraction<0.1?'w':'b','Rounded path: mean gap '+gap.mean.toFixed(2)+' mm ('+(gap.fraction*100).toFixed(2)+'% of target width); largest sampled gap '+gap.max.toFixed(2)+' mm.');
+  }else C+=li('b','The rounded fit has no verified continuous trace. Change the scale or the drawing.');
+  $('checks').innerHTML=C;
+  const rows=[['Crank','crank',m.a],['Coupler','coupler',m.b],['Rocker'+(design.mode==='flap'?' (wing arm)':''),'rocker',m.c],['Base (pivot to pivot)','ground',d]];
+  let T='<tr><th>Link</th><th>Pin to pin</th></tr>'+rows.map(r=>`<tr><td><span class="swatch" style="background:var(--${r[1]})"></span>${r[0]}</td><td class="mono">${r[2].toFixed(1)} mm</td></tr>`).join('');
+  if(design.mode==='path') T+=`<tr><td><span class="swatch" style="background:var(--path)"></span>Tracing point on coupler</td><td class="mono">${Math.hypot(m.pu,m.pv).toFixed(1)} mm from A, ${dist(V(m.pu,m.pv),V(m.b,0)).toFixed(1)} mm from B</td></tr>`;
+  $('links').innerHTML=T;
+  // material checks
+  const mat=MATS[$('mat').value], pin=PINS[$('pin').value]; let M='';
+  const longest=movingSpan(m)+mat.w+Number($('tol').value);
+  M+= longest<=mat.maxL? li('g',`Longest moving part ${longest.toFixed(0)} mm fits ${mat.name} (max ${mat.maxL} mm).`) : li('b',`Longest moving part ${longest.toFixed(0)} mm is longer than ${mat.name} allow (${mat.maxL} mm). Try an overall scale at most ${Math.floor((mat.maxL-mat.w)/(longest-mat.w)*(+$('scale').value))}% or switch material.`);
+  M+= m.a>=3*pin.hole+mat.w*0.6? li('g',`Crank is long enough for two ${pin.hole} mm holes with material between them.`) : li('w',`Crank is short (${m.a.toFixed(1)} mm) for ${pin.hole} mm holes — scale up, or use a round crank disc with the pin off-centre.`);
+  examineWorkshop(m,mat);renderBranch(m);
+  const plateWidth=Math.abs(m.pv)+mat.w;
+  if (design.mode==='path'&&['stick','jumbo'].includes($('mat').value)&&plateWidth>mat.w+0.01)
+    M+=li('w',`The tracing plate is ${plateWidth.toFixed(1)} mm across along its printed orientation. Make this plate from sheet stock or joined sticks.`);
+  const stock=feasibleStock(m,pageGeometry.tolerance,mat,pin);
+  if(!stock.holesDistinct) M+=li('b','Hole centres can overlap at this pin diameter and spacing error.');
+  const passes=pageGeometry.closure.state==='closes' && stock.lengthFits && stock.holesDistinct && stock.sheetFits &&
+    (pageGeometry.layer!=='shared' || pageGeometry.sweep.state==='clear');
+  pageGeometry.customTemplateStatus=passes?'selected geometry checks pass':'review before cutting';
+  M+=li(passes?'g':'b',passes?'Selected custom-template geometry checks pass. Inspect actual hardware, layers and motion before using a build.':'Review before cutting: the selected stock, geometry, or shared-layer clearance has a failing or unresolved check.');
+  $('matChecks').innerHTML=M;
+  renderParts(m,mat,pin); renderSteps(m,mat,pin);
+}
+const PX=96/25.4; // px per mm
+function linkSVG(x0,y0,L,w,hole,col,label,extra){
+  const r=w/2; let s=`<g transform="translate(${x0*PX},${y0*PX})"><rect x="${-r*PX}" y="${-r*PX}" width="${(L+w)*PX}" height="${w*PX}" rx="${r*PX}" fill="${col}" fill-opacity=".12" stroke="${col}" stroke-width="1.5"/>`;
+  s+=`<circle cx="0" cy="0" r="${hole/2*PX}" fill="#fff" stroke="#000"/><circle cx="${L*PX}" cy="0" r="${hole/2*PX}" fill="#fff" stroke="#000"/>`;
+  if(extra) s+=extra;
+  s+=`<text x="${(L/2)*PX}" y="${(r+5)*PX}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11">${label} · ${L.toFixed(1)} mm</text></g>`; return s;
+}
+let lastSVG='';
+function renderParts(m,mat,pin){
+  const w=mat.w, h=pin.hole; let y=12, parts='', W=0;
+  parts+=linkSVG(10,y,m.a,w,h,'#c2410c','Crank'); W=Math.max(W,m.a+30);
+  // The current custom design has two crank pin centres.
+  y+=w+16;
+  if(design.mode==='path'){
+    const A=V(0,0),B=V(m.b,0),P=V(m.pu,-m.pv); const xs=[A.x,B.x,P.x],ys=[A.y,B.y,P.y];
+    const minx=Math.min(...xs),miny=Math.min(...ys),maxy=Math.max(...ys); const ox=10-minx+w/2, oy=y-miny+w/2;
+    const plate=plateOutline([A,B,P].map(q=>V((q.x+ox)*PX,(q.y+oy)*PX)),w*PX/2);
+    parts+=`<path d="${plate}" fill="#e1eafa" stroke="#1d4ed8" stroke-width="1.5"/>`;
+    [A,B].forEach(p=>parts+=`<circle cx="${(p.x+ox)*PX}" cy="${(p.y+oy)*PX}" r="${h/2*PX}" fill="#fff" stroke="#000"/>`);
+    parts+=`<circle cx="${(P.x+ox)*PX}" cy="${(P.y+oy)*PX}" r="${h/2*PX}" fill="#9333ea" fill-opacity=".4" stroke="#000"/>`;
+    parts+=`<text x="${(ox+m.b/2)*PX}" y="${(maxy+oy+w)*PX+12}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11">Coupler plate · A–B ${m.b.toFixed(1)} mm · purple hole = tracing point</text>`;
+    y+= (maxy-miny)+w+22; W=Math.max(W,Math.max(...xs)-minx+30);
+  } else {parts+=linkSVG(10,y,m.b,w,h,'#1d4ed8','Coupler'); y+=w+16; W=Math.max(W,m.b+30);}
+  const ext=design.mode==='flap'? `<text x="${(m.c+w)*PX}" y="4" font-family="system-ui,sans-serif" font-size="10" fill="#15803d">→ wing attaches past this hole</text>`:'';
+  parts+=linkSVG(10,y,m.c,w,h,'#15803d','Rocker'+(design.mode==='flap'?' / wing arm':''),ext); y+=w+20; W=Math.max(W,m.c+70);
+  // base plate with the two fixed pivots at true spacing
+  const d=dist(m.A0,m.B0), bw=d+2*w+10, bh=3*w; const bx=10, by=y;
+  parts+=`<g><rect x="${bx*PX}" y="${by*PX}" width="${bw*PX}" height="${bh*PX}" rx="6" fill="#57534e" fill-opacity=".08" stroke="#57534e" stroke-width="1.5"/>`;
+  const a0=V(bx+w+5,by+bh/2), b0=V(bx+w+5+d,by+bh/2);
+  [a0,b0].forEach((p,i)=>parts+=`<circle cx="${p.x*PX}" cy="${p.y*PX}" r="${h/2*PX}" fill="#fff" stroke="#000"/><text x="${p.x*PX}" y="${(p.y-h-3)*PX}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11">⊕ ${i?'rocker pivot':'crank pivot'}</text>`);
+  parts+=`<text x="${(bx+bw/2)*PX}" y="${(by+bh+5)*PX}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11">Base · pivots ${d.toFixed(1)} mm apart · rotate the sheet to the assembly angle</text></g>`;
+  y+=bh+14; W=Math.max(W,bw+20);
+  parts+=`<g transform="translate(${10*PX},${y*PX})"><line x1="0" y1="0" x2="${50*PX}" y2="0" stroke="#000" stroke-width="2"/><line x1="0" y1="-5" x2="0" y2="5" stroke="#000"/><line x1="${50*PX}" y1="-5" x2="${50*PX}" y2="5" stroke="#000"/><text x="${25*PX}" y="16" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11">50 mm</text></g>`;
+  y+=12;
+  // A vertical check catches anisotropic resizing by the print driver.
+  const gaugeX=82*PX, gaugeY=y*PX;
+  parts+=`<g transform="translate(${gaugeX},${gaugeY})"><path d="M-4 0H4 M0 0V${50*PX} M-4 ${50*PX}H4" stroke="#222" fill="none"/><text x="8" y="${25*PX}" font-size="11">50 mm vertical</text></g>`;y+=53;
+  const note='Pin spacing ±'+pageGeometry.tolerance.toFixed(2)+' mm · rotation '+pageGeometry.closure.state;
+  parts+=`<text x="${10*PX}" y="${y*PX}" font-family="sans-serif" font-size="12">${note}</text>`;y+=6;
+  const layerNote=pageGeometry.layer==='separate'?'Separate crank and rocker layers':'Shared crank and rocker layer';
+  parts+=`<text x="${10*PX}" y="${y*PX}" font-family="sans-serif" font-size="12">${layerNote} · projected outlines: ${pageGeometry.sweep.state}</text>`;y+=8;
+  parts+=`<text x="${10*PX}" y="${y*PX}" font-family="sans-serif" font-size="12">Custom sheet · ${pageGeometry.customTemplateStatus}</text>`; y+=8;
+  const branchText=m.s===1?'LEFT of A to fixed rocker pivot':'RIGHT of A to fixed rocker pivot';
+  parts+=`<text x="${10*PX}" y="${y*PX}" font-family="sans-serif" font-size="12">Assembly joint B: ${branchText} when viewed from above</text>`; y+=8;
+  W=Math.max(W,145);
+  lastSVG=`<svg xmlns="http://www.w3.org/2000/svg" width="${W}mm" height="${y}mm" viewBox="0 0 ${W*PX} ${y*PX}">${parts}</svg>`;
+  $('partsWrap').innerHTML=lastSVG;
+}
+function renderSteps(m,mat,pin){
+  const d=dist(m.A0,m.B0), angGround=ang(sub(m.B0,m.A0))*R2D;
+  const st=[];
+  st.push(`Cut the parts from ${mat.name}. Make each hole ${pin.hole} mm across, centred where the sheet shows — the pin-to-pin distances are what make it move correctly.`);
+  st.push(`Fix the base so its two pivot holes are ${d.toFixed(1)} mm apart and the line from the crank pivot to the rocker pivot points ${Math.abs(angGround).toFixed(0)}° ${angGround>=0?'upward':'downward'} from horizontal (to the right), as in the animation.`);
+  st.push(`Pin the rocker${design.mode==='flap'?' (wing arm)':''} to the rocker pivot. It must swing freely: if using ${pin.name}, do not clamp tight.`);
+  st.push(`Pin the crank to the crank pivot in front of the base. Add a handle: a second pin or a dowel through the crank's free end works, or glue a small disc.`);
+  st.push("Join the coupler to the crank's free hole (A) and the rocker's free hole (B). "+(pageGeometry.layer==='shared'&&pageGeometry.sweep.state==='clear'?'The two nominal rounded strips may share a layer. Leave a separate level for the coupler and check actual hardware through a full turn.':'Place the rocker behind the coupler and the crank in front. Add spacers so solid parts and fasteners pass each other.'));
+  const motion=strokeReport(m);
+  if(design.mode==='flap') st.push(motion?'Mark the rocker direction on the base at both reversals. The rounded design predicts '+motion.swingDeg.toFixed(2)+'° between these marks. Check any added pointer or wing for clearance throughout the turn.':'Check the rounded dimensions and full-turn geometry before fitting a wing.');
+  else st.push(`The purple hole on the coupler plate traces your path. Push a pin or glue the wingtip, foot or beak there.`);
+  st.push('From the crank tip, sight toward the fixed rocker pivot. Assemble the free coupler–rocker joint on the '+(m.s===1?'left':'right')+' side, viewed from above.');
+  st.push('Turn the crank slowly by hand. Stop at any rubbing or tight spot and inspect hole spacing, spacer stack and fastener clearance.');
+  $('steps').innerHTML=st.map(s=>`<li>${s}</li>`).join('');
+}
+function saveFile(content,name,type) {
+  const url=URL.createObjectURL(new Blob([content],{type}));
+  const link=document.createElement('a');link.href=url;link.download=name;
+  document.body.appendChild(link);link.click();link.remove();
+  setTimeout(()=>URL.revokeObjectURL(url),1500);
+  $('copyStatus').textContent='If this viewer blocks saving, use the copy buttons.';
+}
+$('saveSvg').onclick=()=>{if(design)saveFile(lastSVG,'linkwright-parts.svg','image/svg+xml');};
+$('saveJson').onclick=()=>{if(design)saveFile(JSON.stringify(designRecord(),null,2),'linkwright-design.json','application/json');};
+$('copySvg').onclick=async()=>{try{await navigator.clipboard.writeText(lastSVG);$('copyStatus').textContent='SVG copied — paste into a file named parts.svg and print at 100%.';}catch(e){$('copyStatus').textContent='Copy was blocked here; select the parts sheet instead.';}};
+$('copyJson').onclick=async()=>{if(!design)return; const j=JSON.stringify(designRecord(),null,2);
+  try{await navigator.clipboard.writeText(j);$('copyStatus').textContent='Design copied.';}catch(e){$('copyStatus').textContent='Copy was blocked here.';}};
+
+$('loadCut').onclick=()=>{
+  if(!displayModel)return;
+  const m=displayModel;
+  for(const [id,val] of [['actualG',dist(m.A0,m.B0)],['actualA',m.a],['actualB',m.b],['actualC',m.c]])
+    $(id).value=val.toFixed(1);
+  $('actualSide').value=String(m.s);
+  $('actualResult').textContent='Copied the current nominal cut list. Replace these with your measurements and choose Check measurements.';
+};
+$('asBuilt').oninput=()=>{$('actualResult').textContent='Measurements changed. Run the check again.';};
+$('asBuilt').onsubmit=event=>{
+  event.preventDefault();
+  const [g,a,b,c]=['actualG','actualA','actualB','actualC'].map(id=>Number($(id).value));
+  if(![g,a,b,c].every(n=>Number.isFinite(n)&&n>0&&n<=10000)) return;
+  const model={A0:V(0,0),B0:V(g,0),a,b,c,s:Number($('actualSide').value)};
+  const closure=closureReport(model), motion=strokeReport(model), mu=minimumTransmission(model);
+  const text=['Full turn: '+closure.state+'.','Folded margin '+closure.inner.toFixed(3)+' mm; extended margin '+closure.outer.toFixed(3)+' mm.'];
+  if(mu!==null) text.push('Minimum transmission '+mu.toFixed(2)+'°.');
+  if(motion) text.push('Rocker swing '+motion.swingDeg.toFixed(2)+'°. Long/short stroke time '+motion.longToShortTimeRatio.toFixed(4)+'×.');
+  $('actualResult').textContent=text.join(' ');
+};
+// self-test exposed for verification
+window.__linkwrightSelfTest=function(){
+  const res=[];
+  for(const [psi,Q] of [[40,1],[70,1.3],[90,1.5],[60,1.8]]){const m=synthFlap(psi,Q,70); if(!m){res.push({psi,Q,ok:false});continue;}
+    const sim=simulate(m,720); const ph=sim.pts.map(p=>ang(sub(p.B,m.B0))); const sw=(Math.max(...ph)-Math.min(...ph))*R2D;
+    res.push({psi,Q,ok:!sim.fails,swing:+sw.toFixed(2),timeRatio:+m.timeRatio.toFixed(3),muMin:+sim.muMin.toFixed(1)});}
+  return res;
+};
+runFlap();
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="170mm" height="106mm" viewBox="0 0 170 106" role="img" aria-labelledby="title desc">
+<title id="title">Linkwright links manufacturing outlines</title><desc id="desc">Millimetres, 1 mm margin. Finished bore and outside outlines; nominal toolpath requires machine compensation.</desc>
+<rect x="9.00000" y="13.00000" width="60.60000" height="14.00000" rx="7.00000" stroke="#192E38" fill="none" stroke-width="0.1"/>
+<circle cx="16.00000" cy="20.00000" r="1.57500" stroke="#006B62" fill="none" stroke-width="0.1"/>
+<circle cx="62.60000" cy="20.00000" r="1.57500" stroke="#006B62" fill="none" stroke-width="0.1"/>
+<rect x="9.00000" y="46.00000" width="98.10000" height="14.00000" rx="7.00000" stroke="#192E38" fill="none" stroke-width="0.1"/>
+<circle cx="16.00000" cy="53.00000" r="1.57500" stroke="#006B62" fill="none" stroke-width="0.1"/>
+<circle cx="100.10000" cy="53.00000" r="1.57500" stroke="#006B62" fill="none" stroke-width="0.1"/>
+<rect x="9.00000" y="79.00000" width="143.30000" height="14.00000" rx="7.00000" stroke="#192E38" fill="none" stroke-width="0.1"/>
+<circle cx="16.00000" cy="86.00000" r="1.57500" stroke="#006B62" fill="none" stroke-width="0.1"/>
+<circle cx="127.30000" cy="86.00000" r="1.57500" stroke="#006B62" fill="none" stroke-width="0.1"/>
+</svg>

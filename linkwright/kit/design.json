@@ -1,0 +1,13 @@
+{
+  "revision": "LW-159-R1",
+  "units": "mm",
+  "purpose": "Unloaded hand-turned tabletop motion demonstrator; integral rocker pointer.",
+  "datum": {"origin": "O, crank axis; +x toward D, +y left of +x in plan; +z above base top", "O": [0, 0], "D": [93.8, 0], "branch": "cross(D-A, B-A) > 0"},
+  "spacings": {"ground": 93.8, "crank": 46.6, "coupler": 84.1, "rocker": 111.3, "acceptance_plus_minus": 0.25},
+  "base": {"xmin": -62, "xmax": 112, "ymin": -62, "ymax": 145, "thickness": 6, "thickness_tol": 0.2, "outline_tol": 0.5, "fixed_position_tol_per_axis": 0.25, "flatness_max": 0.30, "foot_inset": 12, "foot_position_tol": 1.0, "foot_width": 15, "foot_height": 12, "foot_height_tol": 0.5},
+  "links": {"width": 14, "width_tol": 0.4, "thickness": 3, "thickness_tol": 0.1, "flatness_max": 0.2, "profile": "capsule centered on pin line, rounded ends R7; rocker extended toward B", "edge_profile_deviation_max": 0.2, "pointer_extension": 18, "pointer_extension_tol": 0.3, "material": "smooth flat birch plywood"},
+  "joint": {"shaft_diameter": [2.98,3.00], "moving_bore": [3.10,3.20], "ground_bore": [3.00,3.05], "perpendicularity_cone_deg_max": 1.0, "endplay": [0.15,0.35], "free_end_projection": [0.0,0.6], "collar_od_nominal": 7, "collar_od_min": 6.5, "collar_od_envelope_max": 10.2, "collar_height": 5, "collar_height_tol": 0.1, "washer_od_nominal": 7, "washer_od_min": 6.5, "washer_od_max": 8, "washer_bore": [3.1,3.3], "washer_thickness": 0.5, "washer_thickness_tol": 0.05, "spacer_od_min": 5, "spacer_od_nominal": 6, "spacer_od_max": 8, "spacer_bore": [3.05,3.3], "ground_spacer": 3, "moving_spacer": 10, "spacer_length_tol": 0.1, "grip_diameter": 10, "grip_diameter_tol": 0.3, "grip_length": 15, "grip_length_tol": 0.5, "grip_blind_bore_diameter": [3.05,3.20], "grip_engagement": [9.5,10.5], "grip_above_collar": [0.5,1.0]},
+  "layers_nominal": {"base_z": [-6,0], "foot_bottom_z": -18, "crank_rocker_z": [8.5,11.5], "coupler_z": [22.5,25.5], "axial_reference": "loose stack resting downwards before endplay"},
+  "stacks_bottom_to_top": {"O_D": ["bottom collar","base","clamp collar","3 spacer","washer","lower link","washer","endplay","top collar"],"A_B": ["bottom collar","washer","lower link","washer","10 spacer","washer","upper link","washer","endplay","top collar"],"A_addition": ["grip gap","bonded finger grip"]},
+  "acceptance": {"calibration_rule_length": 50, "calibration_rule_tol": 0.25, "swing_deg": [57,63], "stroke_angle_ratio": [1.65,1.95], "angle_repetitions": 3, "cycles_each_direction": 10, "minimum_measured_unintended_gap": 0.5, "training_load": "bare pointer; turn by hand, slowly, intrinsic load only"}
+}

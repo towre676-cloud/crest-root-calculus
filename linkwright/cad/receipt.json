@@ -1,0 +1,166 @@
+{
+  "revision": "LW-159-R1",
+  "pose": "crank 0 deg, positive branch, rigid nominal",
+  "solids_reimported": 39,
+  "pairs_screened_for_positive_volume": 741,
+  "maximum_allowed_intersection_mm3": 1e-06,
+  "part_comparison": "volume and centre of mass to 4 decimal places",
+  "parts": [
+    {
+      "name": "base",
+      "volume_mm3": 216021.7574
+    },
+    {
+      "name": "foot_1",
+      "volume_mm3": 2700.0
+    },
+    {
+      "name": "foot_2",
+      "volume_mm3": 2700.0
+    },
+    {
+      "name": "foot_3",
+      "volume_mm3": 2700.0
+    },
+    {
+      "name": "foot_4",
+      "volume_mm3": 2700.0
+    },
+    {
+      "name": "crank",
+      "volume_mm3": 2372.2554
+    },
+    {
+      "name": "coupler",
+      "volume_mm3": 3947.2554
+    },
+    {
+      "name": "rocker",
+      "volume_mm3": 5845.6554
+    },
+    {
+      "name": "O_pin",
+      "volume_mm3": 203.9286
+    },
+    {
+      "name": "O_lower_collar",
+      "volume_mm3": 157.0796
+    },
+    {
+      "name": "O_upper_collar",
+      "volume_mm3": 157.0796
+    },
+    {
+      "name": "O_base_collar",
+      "volume_mm3": 157.0796
+    },
+    {
+      "name": "O_spacer",
+      "volume_mm3": 61.4437
+    },
+    {
+      "name": "O_washer_1",
+      "volume_mm3": 15.221
+    },
+    {
+      "name": "O_washer_2",
+      "volume_mm3": 15.221
+    },
+    {
+      "name": "D_pin",
+      "volume_mm3": 203.9286
+    },
+    {
+      "name": "D_lower_collar",
+      "volume_mm3": 157.0796
+    },
+    {
+      "name": "D_upper_collar",
+      "volume_mm3": 157.0796
+    },
+    {
+      "name": "D_base_collar",
+      "volume_mm3": 157.0796
+    },
+    {
+      "name": "D_spacer",
+      "volume_mm3": 61.4437
+    },
+    {
+      "name": "D_washer_1",
+      "volume_mm3": 15.221
+    },
+    {
+      "name": "D_washer_2",
+      "volume_mm3": 15.221
+    },
+    {
+      "name": "A_pin",
+      "volume_mm3": 277.7953
+    },
+    {
+      "name": "A_lower_collar",
+      "volume_mm3": 157.0796
+    },
+    {
+      "name": "A_upper_collar",
+      "volume_mm3": 157.0796
+    },
+    {
+      "name": "A_spacer",
+      "volume_mm3": 204.8122
+    },
+    {
+      "name": "A_washer_1",
+      "volume_mm3": 15.221
+    },
+    {
+      "name": "A_washer_2",
+      "volume_mm3": 15.221
+    },
+    {
+      "name": "A_washer_3",
+      "volume_mm3": 15.221
+    },
+    {
+      "name": "A_washer_4",
+      "volume_mm3": 15.221
+    },
+    {
+      "name": "A_finger_grip",
+      "volume_mm3": 1097.5633
+    },
+    {
+      "name": "B_pin",
+      "volume_mm3": 203.9286
+    },
+    {
+      "name": "B_lower_collar",
+      "volume_mm3": 157.0796
+    },
+    {
+      "name": "B_upper_collar",
+      "volume_mm3": 157.0796
+    },
+    {
+      "name": "B_spacer",
+      "volume_mm3": 204.8122
+    },
+    {
+      "name": "B_washer_1",
+      "volume_mm3": 15.221
+    },
+    {
+      "name": "B_washer_2",
+      "volume_mm3": 15.221
+    },
+    {
+      "name": "B_washer_3",
+      "volume_mm3": 15.221
+    },
+    {
+      "name": "B_washer_4",
+      "volume_mm3": 15.221
+    }
+  ]
+}

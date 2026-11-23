@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Linkwright · Check a physical build</title><link rel="stylesheet" href="inspection/bench.css"></head>
+<body><header><div><a href="index.html">Linkwright</a><span>LW-159-R1 · Physical inspection</span></div></header>
+<main><h1>Check a physical build</h1>
+<p class="intro">Turn the bare pointer by hand, measure where it changes direction, and record what happened. Each record follows one assembled reference wing.</p>
+<nav><a href="kit/assembly-guide.html">Assembly guide</a><a href="inspection/angle-gauge.pdf">Print the angle gauge at 100%</a></nav>
+<noscript>This record needs JavaScript. The angle gauge and assembly guide work independently.</noscript>
+<form id="bench" autocomplete="off">
+<section><h2>Identify and measure the parts</h2>
+<label class="long">Build identifier<input name="buildId" type="text" maxlength="90" placeholder="e.g. Wing 01 · birch plywood"></label>
+<label class="long">Physical inspection date<input type="date" name="inspectionDate"></label>
+<label class="long">Instruments used<input name="instruments" type="text" maxlength="240" placeholder="Caliper, feeler set and angle-reading method or instrument IDs"></label>
+<p>Record a conservative error bound for each reading, including the instrument, alignment and your ability to locate the mark. The acceptance calculation allows either sign of that error. Use the largest applicable bound in each group. For a spacing derived from an outside span minus one pin diameter, add both error bounds. Two readings each bounded by ±0.02 mm give a spacing error bound of ±0.04 mm. For unequal pins, use the span error plus half the sum of their diameter errors.</p>
+<div class="fields three" id="uncertainty"></div>
+<h3>Print scale and pivot spacings</h3>
+<p>Print the base pattern, moving-link pattern and reversal-angle gauge at actual size. Measure both 50 mm rules on each physical sheet. For repeated copies of one sheet, inspect them all and enter the reading farthest from 50 mm on each axis. Then measure the centre spacings on the finished parts. With two equal gauge pins, subtract one measured pin diameter from the outside span.</p>
+<div class="fields" id="lengths"></div>
+<h3>Clearance on the assembled unit</h3>
+<p>Measure axial endplay at all four joints using a two-sided measurement. If bracketed by feelers, use the bracket midpoint and include half its width plus instrument error in the feeler error bound. Stop the crank before inserting a blade.</p>
+<p>Inspect both full sweeps. Stop at the closest approaches listed in the assembly guide. Record the thickest single blade you confirmed slides freely at <strong>every</strong> required location, and identify the pair and crank angle that limited the test. A 0.52 mm blade with ±0.02 mm error proves at least 0.50 mm at those positions. A thinner blade can fit a larger gap and calls for remeasurement. Record observed unintended contact separately. Intended washer and bearing contacts belong in the joint-fit check.</p>
+<div class="fields" id="gaps"></div>
+<label class="long">Closest inspected pair<input name="limitingPair" type="text" maxlength="180" placeholder="e.g. crank edge and rocker edge"></label>
+<label class="long">Unintended contact during both full sweeps<select name="contact"><option value="">Untested</option><option value="none">No unintended contact observed</option><option value="observed">Unintended contact observed</option></select></label>
+</section>
+<section><h2>Measure three strokes</h2>
+<p>Lay the gauge on the base, aligned with both fixed pivots. Face it squarely. Starting at the smaller rocker angle, turn the crank slowly counterclockwise to the larger rocker angle. At each reversal read the crank along O–A and the rocker along D–B. If the coupler covers the forward crank graduation at the extended reversal, read the clear line from A through O on the opposite side of the crank dial. Add 180° and wrap into 0–359.99…° before recording the O→A angle. For example, 108° on the opposite ray means an input angle of 288°. Make three independent passes in the same direction.</p>
+<p>The target is <strong>57–63° of rocker travel</strong> and <strong>1.65–1.95 times as much crank travel</strong> on the increasing stroke as on the return. This equals the time ratio at constant crank speed. Hand timing is unnecessary.</p>
+<div id="sweeps"></div></section>
+<section><h2>Cycle and inspect</h2>
+<p>Make ten complete slow turns each way under the pointer’s own weight. Stop on a hard spot. Check retention, free movement and the tightest gaps again after cycling.</p>
+<div class="fields" id="cycles"></div><div id="conditions"></div>
+<label class="long">Bench notes <span class="muted">(optional)</span><textarea name="notes" rows="3" maxlength="1800" placeholder="Repairs, interrupted cycles or other observations"></textarea></label></section>
+<div class="actions"><button type="submit">Evaluate readings</button><button type="button" id="save">Save record JSON</button><label class="file" for="open">Open saved record</label><input type="file" id="open" accept=".json,application/json"><button type="button" id="print">Print record</button><button type="button" id="clear">New blank record</button></div>
+<p id="io" aria-live="polite"></p>
+<section id="result" aria-live="polite" tabindex="-1"><h2>Awaiting bench readings</h2><p>This form begins blank. Enter measurements from your own unit.</p></section>
+</form></main>
+<script src="inspection/bench.js"></script><script src="inspection/form.js"></script></body></html>

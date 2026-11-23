@@ -19,6 +19,8 @@ Start with a decision you want to make. Each example gives you a working program
 
 ## A wing, a rock and a street of solar roofs
 
+**Build the Linkwright reference wing.** The fabrication kit includes life-size drawings for US Letter and A4, a 39-solid 3D assembly, CAD cutting files, and a bench form for measuring your finished linkage. Extract the ZIP and open `index.html` to use it offline. [Download Linkwright](https://raw.githubusercontent.com/towre676-cloud/crest-root-calculus/main/downloads/linkwright-implementation-kit.zip) · [Read the mechanical build guide](linkwright/README.md)
+
 **Start with the wing.** Imagine turning a crank half a degree at a time. Every picture shows four bars joined together. Could the crank still jam *between* pictures? Yes. In one design the bars fall short by just **0.00006 mm** in an interval that all 720 pictures miss. The two extreme distances between the pins tell you whether *every* angle works. [See the two poses and the missing interval](research/configuration-and-certificates/mechanisms/README.md)
 
 ![Two wing poses and the interval missed by a 720-position test.](research/configuration-and-certificates/mechanisms/four-bar.svg)
