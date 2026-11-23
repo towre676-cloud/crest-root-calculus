@@ -1,0 +1,163 @@
+{
+  "sum": {
+    "point": [
+      1,
+      1,
+      0
+    ],
+    "quadratic_chart": false,
+    "parameters": [
+      0,
+      -5,
+      "-112/3",
+      "-1280/27"
+    ],
+    "rank": 18,
+    "nullity": 2,
+    "degree_four": true,
+    "x": "(-360*s**3 - 696*s**2 - 440*s*t**2 - 552*s + 548*t**2 - 60)/(9*s**2 - 30*s*t**2 + 18*s - 87*t**2)",
+    "weierstrass_identity": true,
+    "canonical_line": [
+      "1",
+      "1",
+      "0"
+    ],
+    "primitive": true
+  },
+  "difference": {
+    "point": [
+      -1,
+      1,
+      0
+    ],
+    "quadratic_chart": false,
+    "parameters": [
+      0,
+      -5,
+      "-112/3",
+      "-1280/27"
+    ],
+    "rank": 18,
+    "nullity": 2,
+    "degree_four": true,
+    "x": "(360*s**3 - 696*s**2 + 440*s*t**2 + 552*s + 548*t**2 - 60)/(9*s**2 + 30*s*t**2 - 18*s - 87*t**2)",
+    "weierstrass_identity": true,
+    "canonical_line": [
+      "1",
+      "-1",
+      "0"
+    ],
+    "primitive": true
+  },
+  "quadratic_plus": {
+    "point": [
+      1,
+      1,
+      0
+    ],
+    "quadratic_chart": true,
+    "parameters": [
+      10,
+      -10,
+      "-7/12",
+      "5/54"
+    ],
+    "rank": 18,
+    "nullity": 2,
+    "degree_four": true,
+    "x": "(324*s**3 + 391*s**2*t + 1471*s**2 + 180*s*t**2 + 1432*s*t + 1806*s + 232*t**3 + 424*t**2 + 615*t + 915)/(114*s**2*t + 114*s**2 + 432*s*t**2 + 960*s*t - 180*s + 420*t**3 + 780*t**2)",
+    "weierstrass_identity": true,
+    "canonical_line": [
+      "1",
+      "0",
+      "-sqrt(2)*I"
+    ],
+    "primitive": true
+  },
+  "quadratic_minus": {
+    "point": [
+      1,
+      1,
+      0
+    ],
+    "quadratic_chart": true,
+    "parameters": [
+      -10,
+      -10,
+      "-7/12",
+      "5/54"
+    ],
+    "rank": 18,
+    "nullity": 2,
+    "degree_four": true,
+    "x": "(-324*s**3 + 391*s**2*t - 1471*s**2 - 180*s*t**2 + 1432*s*t - 1806*s + 232*t**3 - 424*t**2 + 615*t - 915)/(114*s**2*t - 114*s**2 - 432*s*t**2 + 960*s*t + 180*s + 420*t**3 - 780*t**2)",
+    "weierstrass_identity": true,
+    "canonical_line": [
+      "1",
+      "0",
+      "sqrt(2)*I"
+    ],
+    "primitive": true
+  },
+  "isogeny_after_double": {
+    "point": [
+      1,
+      1,
+      0
+    ],
+    "quadratic_chart": false,
+    "parameters": [
+      0,
+      -10,
+      "-52/3",
+      "736/27"
+    ],
+    "rank": 17,
+    "nullity": 3,
+    "degree_four": true,
+    "x": "(8*t**2 + 3)/(3*t**2)",
+    "weierstrass_identity": true,
+    "canonical_line": [
+      "1",
+      "0",
+      "0"
+    ],
+    "primitive": false
+  },
+  "double": {
+    "point": [
+      1,
+      1,
+      0
+    ],
+    "quadratic_chart": false,
+    "parameters": [
+      0,
+      -10,
+      "-7/3",
+      "-20/27"
+    ],
+    "rank": 14,
+    "nullity": 6,
+    "degree_four": false,
+    "x": "(9*s**2 + 18*s + 13*t**2 + 15)/(15*t**2)",
+    "weierstrass_identity": true
+  },
+  "changed_target": {
+    "point": [
+      1,
+      1,
+      0
+    ],
+    "quadratic_chart": false,
+    "parameters": [
+      0,
+      -5,
+      "-112/3",
+      "-1253/27"
+    ],
+    "rank": 20,
+    "nullity": 0,
+    "degree_four": false
+  }
+}

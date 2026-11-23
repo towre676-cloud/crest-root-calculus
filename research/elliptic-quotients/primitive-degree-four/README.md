@@ -63,7 +63,7 @@ The program locates rational involutions either with the [height-bounded finder]
 
 The search matches the finite branch roots under $r\mapsto hr+k$ and checks a rational $y$-scaling $L$. The recovered points are $(r,rV/W)$ and $(hr+k,LrU/W)$ on the first cubic. The program requires exactly one common finite branch value, as well as the common branch at infinity. It tests all three nonzero 2-torsion classes against the branch squareclasses. Its JSON contains the coordinate frame, the actual formulas and the odd places witnessing primitivity. Recovered coordinates may differ from the simplified family formulas above.
 
-An unresolved output describes the scope of the selected search. The bounded mode can miss centers outside the given height. Both modes require the split branch and rational identification conditions above. Quartics without a suitable rational involution pair require another construction. In particular this gives a constructive subcase of G06. It supplies no exhaustive degree-four decision theorem on arbitrary quartics.
+An unresolved output describes the scope of the selected search. The bounded mode can miss centers outside the given height. Both modes require the split branch and rational identification conditions above. Quartics without a suitable rational involution pair require another construction. In particular this gives a constructive subcase of G06. Two subsequent constructions give exhaustive criteria for primitive degree-four maps on arbitrary smooth plane quartics. [Projective incidence](../degree-four-incidence/README.md) · [Four-parameter local reconstruction](../degree-four-jets/README.md)
 
 ## Replay
 
