@@ -2,7 +2,13 @@
 
 **How much can a small calculation tell us about a whole shape?** This project started with that ambition and grew into programs that can find hidden maps between curves. You can follow the story here with just counting, multiplication, and a little clock arithmetic.
 
-[Choose a worked example](#choose-a-worked-example) · [Try the wing, rock and solar experiments](#a-wing-a-rock-and-a-street-of-solar-roofs) · [How it began](#how-the-project-began) · [Why a claim changed](#when-a-pattern-looks-too-good) · [Finding a hidden curve](#turning-the-question-around) · [Run the examples](#try-it-on-windows-beginner-instructions)
+[Open the seven applications](#seven-applications-you-can-run) · [Choose a worked example](#choose-a-worked-example) · [Try the wing, rock and solar experiments](#a-wing-a-rock-and-a-street-of-solar-roofs) · [How it began](#how-the-project-began) · [Why a claim changed](#when-a-pattern-looks-too-good) · [Finding a hidden curve](#turning-the-question-around) · [Run the examples](#try-it-on-windows-beginner-instructions)
+
+## Seven applications you can run
+
+**Try a real decision.** Can a second reading settle a chip’s width? Which street still needs a leak search? Does a retired battery need another test? The workshop also compares home retrofits, reconstructs material structures, schedules telescope observations, and runs the original degree-three map solver on published curves. Each app accepts your own inputs and shows which conclusions the measurements support.
+
+On Windows, extract the ZIP and double-click **Start-Workshop.cmd** with Python 3.11 or newer installed. [Download the offline workshop](https://raw.githubusercontent.com/towre676-cloud/crest-root-calculus/main/downloads/crest-root-applications.zip) · [Browse the seven applications and their measured results](applications/README.md)
 
 ## Choose a worked example
 

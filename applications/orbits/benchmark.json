@@ -1,0 +1,14 @@
+{
+  "measured_RV_timestamps": 320,
+  "frequency_difference_per_day": 1.00272008,
+  "spectral_window_magnitude_at_alias_frequency": 0.85958787,
+  "historical_schedule_example": {
+    "first_available": "First visit",
+    "first_pairs": 0,
+    "selected": "Short-period return",
+    "selected_pairs": 1
+  },
+  "confirmation_survivors": [
+    "short orbit"
+  ]
+}

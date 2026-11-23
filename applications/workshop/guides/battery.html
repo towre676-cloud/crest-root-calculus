@@ -1,0 +1,206 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Battery grading · Method</title><base href="/file/battery/"><link rel="stylesheet" href="/ui/style.css"></head><body class="guidetext"><nav><a href="/#battery">← Return to the application</a></nav><main><h1 id="battery-capacity-grader">Battery capacity grader</h1>
+<p><strong>Does this used cell meet the capacity grade, or does it need
+a full test?</strong> Enter voltages measured during an approved
+screening run. The grader keeps each reference cell compatible with
+every reading. It reports the lowest and highest reference capacities
+still possible after the stated allowances. A 4.80 Ah grade means a cell
+at exactly 4.80 Ah passes.</p>
+<h2 id="run-a-screen">Run a screen</h2>
+<p>Extract the kit, open this folder, and run these commands with Python
+3.9 or newer. Use <code>py</code> in place of <code>python</code> on
+Windows if needed.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> app.py</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> app.py example.json</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> benchmark.py</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">-m</span> unittest <span class="at">-v</span></span></code></pre></div>
+<p>The example uses the first-minute voltage of a physical reference
+cell. Six profiles fit. Their capacity interval is <strong>4.487–5.645
+Ah</strong>, spanning the 4.80 Ah cut. The next recommended measurement
+is at <strong>300 seconds from the start</strong>. At that checkpoint
+three pairs spanning the grade boundary have non-overlapping voltage
+bands. The candidate count is a count of reference traces and gives no
+probability for the incoming cell. The readout uses measured capacity in
+ampere-hours for the reference test protocol. Deliverable energy in
+watt-hours under a different load requires a separate labelled
+measurement.</p>
+<p>A <a href="grade.json">grade-complete example</a> and a <a
+href="deferred.json">five-minute deferral</a> can be replayed with
+<code>python app.py grade.json</code> and
+<code>python app.py deferred.json</code>.</p>
+<h2 id="enter-your-readings">Enter your readings</h2>
+<p>Copy <a href="example.json">example.json</a>. All voltage and time
+fields are absolute measurements on one consistent screening protocol.
+The five checkpoints are elapsed times of 60, 300, 600, 1200 and 1800
+seconds.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>min_capacity_ah</code></td>
+<td>Positive threshold for the grade.</td>
+</tr>
+<tr class="even">
+<td><code>voltage_tolerance_v</code></td>
+<td>Absolute allowed difference between a query and each stored
+reference voltage. Include both instruments' error, rounding and the
+allowed mismatch between nominally similar cells. The example uses 0.020
+V.</td>
+</tr>
+<tr class="odd">
+<td><code>capacity_error_ah</code></td>
+<td>Expand both ends of each reference capacity by this allowance. The
+example uses 0.050 Ah.</td>
+</tr>
+<tr class="even">
+<td><code>observations</code></td>
+<td>Object mapping elapsed seconds to measured voltage. For example
+<code>{"60":3.207446,"300":3.393884}</code>. Empty is allowed for
+planning.</td>
+</tr>
+<tr class="odd">
+<td><code>policy</code></td>
+<td>Optional. <code>adaptive</code> chooses subsequent checkpoints.
+<code>fixed_300s</code> collects the 60 and 300 second readings, then
+defers unresolved cases immediately.</td>
+</tr>
+<tr class="even">
+<td><code>reference</code></td>
+<td>Optional replacement library. Supply a list of objects with a unique
+<code>id</code>, measured <code>capacity_ah</code>, and
+<code>volts</code> mapping all five checkpoint strings to volts.</td>
+</tr>
+</tbody>
+</table>
+<p>The built-in references are 23 second-life LongTTech LFP cells with
+unknown degradation history. Each published label is the mean of three
+capacity tests. The reference charge trajectories were acquired at 25 °C
+with a 1C constant-current / constant-voltage protocol terminating at
+3.65 V. These conditions identify the source data. Use qualified
+equipment, a compatible approved procedure and known starting
+conditions. Other chemistries, starting states, temperatures, and module
+sizes require their own reference library. Initial SOC varies in the
+archive. Only timestamps and terminal voltages enter the estimator. <a
+href="https://doi.org/10.5281/zenodo.18630889">Ji, Yue, Yan and Zhu,
+<em>Second-life LFP battery dataset</em></a></p>
+<table>
+<thead>
+<tr class="header">
+<th>Result</th>
+<th>Bench action</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>meets_capacity_grade</code> or
+<code>below_capacity_grade</code></td>
+<td>All surviving capacity intervals agree on that grade <strong>within
+the supplied reference model</strong>.</td>
+</tr>
+<tr class="even">
+<td><code>continue_screen</code></td>
+<td>Read the next elapsed-time checkpoint. Options rank the number of
+cross-grade reference pairs that the measurement must separate, divided
+by seconds spent waiting. If tied, prefer more separated pairs, then the
+earlier checkpoint. Even when two voltage bands overlap, a particular
+reading may separate them.</td>
+</tr>
+<tr class="odd">
+<td><code>reference_test</code></td>
+<td>Measure capacity directly. An empty survivor list indicates an
+unsupported reading. Remaining ambiguity at the last checkpoint or one
+surviving label straddling the threshold also calls for a reference
+test.</td>
+</tr>
+</tbody>
+</table>
+<p>The screening logic compares the decimal inputs including equality at
+band endpoints. Any guarantee depends on the actual cell lying within
+the specified allowances of a reference trace and capacity. An
+incomplete library can return a confident wrong grade. Safety, internal
+defects, thermal response, calendar life and vehicle serviceability
+require independent assessment.</p>
+<h2 id="what-happened-on-cells-held-out-of-the-library">What happened on
+cells held out of the library?</h2>
+<p>The replay removes one entire physical cell, screens it against the
+other 22 and then reveals its published capacity. It repeats for all 23.
+Each fixed-time policy uses <strong>all</strong> available checkpoints
+up to its time limit. The adaptive policy starts at one minute and picks
+subsequent checkpoints from survivors. Every policy uses the same
+illustrative 4.80 Ah threshold and error allowances above.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Screening policy</th>
+<th style="text-align: right;">Correct early grades</th>
+<th style="text-align: right;">False accepts</th>
+<th style="text-align: right;">False rejects</th>
+<th style="text-align: right;">Deferred</th>
+<th style="text-align: right;">Total time on short screens</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Adaptive</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">3 h 37 min</td>
+</tr>
+<tr class="even">
+<td>Fixed 5 minutes</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">1 h 55 min</td>
+</tr>
+<tr class="odd">
+<td>Fixed 30 minutes</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">11 h 30 min</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The five-minute screen graded the same twelve cells as the
+adaptive screen in less time.</strong> In this archive, a held-out unit
+can be compatible with a reference early in the charge and incompatible
+later. That explains how the fixed 30-minute rule defers more units.
+Full-test time for deferred cells is additional and was not measured in
+this study. For these data the simpler operating policy is to collect 60
+and 300 second readings together and send unresolved cells to a full
+capacity test. The per-cell outcomes are in <a
+href="benchmark.json">benchmark.json</a>. A larger prospective intake
+cohort with an agreed false-accept ceiling is needed to establish any
+shop-wide benefit.</p>
+<h2 id="data-origin-and-rebuild">Data origin and rebuild</h2>
+<p>The small table in <a
+href="data/measurements.csv">data/measurements.csv</a> contains actual
+timestamp-matched voltages rounded to six decimals, with the workbook
+filename and the original capacity label. The extractor checks the
+published file bytes by SHA-256 and takes each sample at its recorded
+elapsed second. The original 23 workbooks are distributed by Minghui Ji,
+Hong Yue, Yan Shao and Qunzhi Zhu under CC BY 4.0. This table is a
+reduced adaptation of their versioned dataset. <a
+href="https://zenodo.org/records/18630889">Original ZIP and metadata</a>
+· <a href="https://creativecommons.org/licenses/by/4.0/">License</a></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> prepare_data.py <span class="at">--out</span> rebuilt.csv</span></code></pre></div>
+<p>If you already downloaded the upstream archive, use
+<code>python prepare_data.py SLBs_LFP_charging_data.zip --out rebuilt.csv</code>.
+The raw ZIP SHA-256 is
+<code>16afff956da104fcfb0acae5ee86a53f4c5c5e030c06f6fa8e7dfd566c715d07</code>.
+An additional EV-derived dataset covers six stationary duty cases with
+different pack protocols. It is a candidate for a separate library and
+external study. <a
+href="https://doi.org/10.1038/s41597-025-05360-7">Beatty et al.,
+<em>Long-Term Sweat Testing Dataset for Second-Life
+Batteries</em></a></p>
+</main></body></html>

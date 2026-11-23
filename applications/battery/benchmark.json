@@ -1,0 +1,384 @@
+{
+  "parameters": {
+    "min_capacity_ah": 4.8,
+    "voltage_tolerance_v": 0.02,
+    "capacity_error_ah": 0.05
+  },
+  "strategies": {
+    "adaptive": {
+      "total_cells": 23,
+      "short_screen_seconds": 13020,
+      "correct": 12,
+      "false_accept": 0,
+      "false_reject": 0,
+      "deferred": 11,
+      "held_out": [
+        {
+          "held_out_cell": "3.422Ah_charge.xlsx",
+          "stop_s": 60,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "3.45Ah_charge.xlsx",
+          "stop_s": 60,
+          "outcome": "correct"
+        },
+        {
+          "held_out_cell": "3.78Ah_charge.xlsx",
+          "stop_s": 60,
+          "outcome": "correct"
+        },
+        {
+          "held_out_cell": "3.804Ah_charge.xlsx",
+          "stop_s": 60,
+          "outcome": "correct"
+        },
+        {
+          "held_out_cell": "3.81Ah_charge.xlsx",
+          "stop_s": 60,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "4.366Ah_charge.xlsx",
+          "stop_s": 300,
+          "outcome": "correct"
+        },
+        {
+          "held_out_cell": "4.41Ah_charge.xlsx",
+          "stop_s": 60,
+          "outcome": "correct"
+        },
+        {
+          "held_out_cell": "4.431Ah_charge.xlsx",
+          "stop_s": 60,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "4.52Ah_charge.xlsx",
+          "stop_s": 1800,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "4.537Ah_charge.xlsx",
+          "stop_s": 1800,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "4.59Ah_charge.xlsx",
+          "stop_s": 300,
+          "outcome": "correct"
+        },
+        {
+          "held_out_cell": "4.62Ah_charge.xlsx",
+          "stop_s": 1800,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "4.6Ah_charge.xlsx",
+          "stop_s": 60,
+          "outcome": "correct"
+        },
+        {
+          "held_out_cell": "4.871Ah_charge.xlsx",
+          "stop_s": 60,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "4.891Ah_charge.xlsx",
+          "stop_s": 1800,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "4.912Ah_charge.xlsx",
+          "stop_s": 300,
+          "outcome": "correct"
+        },
+        {
+          "held_out_cell": "4.954Ah_charge.xlsx",
+          "stop_s": 1800,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "5.019Ah_charge.xlsx",
+          "stop_s": 1800,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "5.04Ah_charge.xlsx",
+          "stop_s": 300,
+          "outcome": "correct"
+        },
+        {
+          "held_out_cell": "5.11Ah_charge.xlsx",
+          "stop_s": 60,
+          "outcome": "correct"
+        },
+        {
+          "held_out_cell": "5.12Ah_charge.xlsx",
+          "stop_s": 60,
+          "outcome": "correct"
+        },
+        {
+          "held_out_cell": "5.595Ah_charge.xlsx",
+          "stop_s": 300,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "5.596Ah_charge.xlsx",
+          "stop_s": 60,
+          "outcome": "correct"
+        }
+      ]
+    },
+    "fixed_300s": {
+      "total_cells": 23,
+      "short_screen_seconds": 6900,
+      "correct": 12,
+      "false_accept": 0,
+      "false_reject": 0,
+      "deferred": 11,
+      "held_out": [
+        {
+          "held_out_cell": "3.422Ah_charge.xlsx",
+          "stop_s": 300,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "3.45Ah_charge.xlsx",
+          "stop_s": 300,
+          "outcome": "correct"
+        },
+        {
+          "held_out_cell": "3.78Ah_charge.xlsx",
+          "stop_s": 300,
+          "outcome": "correct"
+        },
+        {
+          "held_out_cell": "3.804Ah_charge.xlsx",
+          "stop_s": 300,
+          "outcome": "correct"
+        },
+        {
+          "held_out_cell": "3.81Ah_charge.xlsx",
+          "stop_s": 300,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "4.366Ah_charge.xlsx",
+          "stop_s": 300,
+          "outcome": "correct"
+        },
+        {
+          "held_out_cell": "4.41Ah_charge.xlsx",
+          "stop_s": 300,
+          "outcome": "correct"
+        },
+        {
+          "held_out_cell": "4.431Ah_charge.xlsx",
+          "stop_s": 300,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "4.52Ah_charge.xlsx",
+          "stop_s": 300,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "4.537Ah_charge.xlsx",
+          "stop_s": 300,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "4.59Ah_charge.xlsx",
+          "stop_s": 300,
+          "outcome": "correct"
+        },
+        {
+          "held_out_cell": "4.62Ah_charge.xlsx",
+          "stop_s": 300,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "4.6Ah_charge.xlsx",
+          "stop_s": 300,
+          "outcome": "correct"
+        },
+        {
+          "held_out_cell": "4.871Ah_charge.xlsx",
+          "stop_s": 300,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "4.891Ah_charge.xlsx",
+          "stop_s": 300,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "4.912Ah_charge.xlsx",
+          "stop_s": 300,
+          "outcome": "correct"
+        },
+        {
+          "held_out_cell": "4.954Ah_charge.xlsx",
+          "stop_s": 300,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "5.019Ah_charge.xlsx",
+          "stop_s": 300,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "5.04Ah_charge.xlsx",
+          "stop_s": 300,
+          "outcome": "correct"
+        },
+        {
+          "held_out_cell": "5.11Ah_charge.xlsx",
+          "stop_s": 300,
+          "outcome": "correct"
+        },
+        {
+          "held_out_cell": "5.12Ah_charge.xlsx",
+          "stop_s": 300,
+          "outcome": "correct"
+        },
+        {
+          "held_out_cell": "5.595Ah_charge.xlsx",
+          "stop_s": 300,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "5.596Ah_charge.xlsx",
+          "stop_s": 300,
+          "outcome": "correct"
+        }
+      ]
+    },
+    "fixed_1800s": {
+      "total_cells": 23,
+      "short_screen_seconds": 41400,
+      "correct": 8,
+      "false_accept": 0,
+      "false_reject": 0,
+      "deferred": 15,
+      "held_out": [
+        {
+          "held_out_cell": "3.422Ah_charge.xlsx",
+          "stop_s": 1800,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "3.45Ah_charge.xlsx",
+          "stop_s": 1800,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "3.78Ah_charge.xlsx",
+          "stop_s": 1800,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "3.804Ah_charge.xlsx",
+          "stop_s": 1800,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "3.81Ah_charge.xlsx",
+          "stop_s": 1800,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "4.366Ah_charge.xlsx",
+          "stop_s": 1800,
+          "outcome": "correct"
+        },
+        {
+          "held_out_cell": "4.41Ah_charge.xlsx",
+          "stop_s": 1800,
+          "outcome": "correct"
+        },
+        {
+          "held_out_cell": "4.431Ah_charge.xlsx",
+          "stop_s": 1800,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "4.52Ah_charge.xlsx",
+          "stop_s": 1800,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "4.537Ah_charge.xlsx",
+          "stop_s": 1800,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "4.59Ah_charge.xlsx",
+          "stop_s": 1800,
+          "outcome": "correct"
+        },
+        {
+          "held_out_cell": "4.62Ah_charge.xlsx",
+          "stop_s": 1800,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "4.6Ah_charge.xlsx",
+          "stop_s": 1800,
+          "outcome": "correct"
+        },
+        {
+          "held_out_cell": "4.871Ah_charge.xlsx",
+          "stop_s": 1800,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "4.891Ah_charge.xlsx",
+          "stop_s": 1800,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "4.912Ah_charge.xlsx",
+          "stop_s": 1800,
+          "outcome": "correct"
+        },
+        {
+          "held_out_cell": "4.954Ah_charge.xlsx",
+          "stop_s": 1800,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "5.019Ah_charge.xlsx",
+          "stop_s": 1800,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "5.04Ah_charge.xlsx",
+          "stop_s": 1800,
+          "outcome": "correct"
+        },
+        {
+          "held_out_cell": "5.11Ah_charge.xlsx",
+          "stop_s": 1800,
+          "outcome": "correct"
+        },
+        {
+          "held_out_cell": "5.12Ah_charge.xlsx",
+          "stop_s": 1800,
+          "outcome": "correct"
+        },
+        {
+          "held_out_cell": "5.595Ah_charge.xlsx",
+          "stop_s": 1800,
+          "outcome": "deferred"
+        },
+        {
+          "held_out_cell": "5.596Ah_charge.xlsx",
+          "stop_s": 1800,
+          "outcome": "deferred"
+        }
+      ]
+    }
+  }
+}

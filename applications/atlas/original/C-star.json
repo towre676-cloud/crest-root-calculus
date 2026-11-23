@@ -1,0 +1,270 @@
+{
+  "id": "C-star",
+  "terms": [
+    [
+      4,
+      0,
+      0,
+      1
+    ],
+    [
+      3,
+      1,
+      0,
+      -6
+    ],
+    [
+      3,
+      0,
+      1,
+      2
+    ],
+    [
+      2,
+      2,
+      0,
+      -27
+    ],
+    [
+      2,
+      1,
+      1,
+      -18
+    ],
+    [
+      2,
+      0,
+      2,
+      -3
+    ],
+    [
+      1,
+      3,
+      0,
+      54
+    ],
+    [
+      1,
+      0,
+      3,
+      -31
+    ],
+    [
+      0,
+      4,
+      0,
+      162
+    ],
+    [
+      0,
+      3,
+      1,
+      108
+    ],
+    [
+      0,
+      2,
+      2,
+      837
+    ],
+    [
+      0,
+      1,
+      3,
+      186
+    ],
+    [
+      0,
+      0,
+      4,
+      31
+    ]
+  ],
+  "proof": {
+    "scope": "geometric",
+    "prime": 5,
+    "scan_degree": 2,
+    "field_bound": {
+      "p": 5,
+      "weil_polynomial": [
+        1,
+        2,
+        9,
+        11,
+        45,
+        50,
+        125
+      ],
+      "root_ratio_orders": [
+        1
+      ],
+      "endomorphism_field_divides": 1,
+      "mod3_scalar_exponent": 24,
+      "whole_jacobian_class_field_divides": 1,
+      "even_splitting_power": 2,
+      "elliptic_components": [
+        {
+          "powered_simple_polynomial": [
+            1,
+            1,
+            25
+          ],
+          "geometric_multiplicity": 1,
+          "weil_polynomial": [
+            1,
+            3,
+            5
+          ],
+          "ratio_orders": [
+            1
+          ],
+          "mod3_scalar_exponent": 2,
+          "class_field_divides": 1
+        }
+      ],
+      "elliptic_dimension": 1,
+      "one_sufficient_scan_degree": 2,
+      "separate_sufficient_scan_degrees": [
+        2
+      ]
+    },
+    "point_counts": [
+      8,
+      40,
+      113
+    ],
+    "levels": [
+      {
+        "precision": 1,
+        "branches": 2,
+        "lower": 0,
+        "upper": 1
+      },
+      {
+        "precision": 2,
+        "branches": 2,
+        "lower": 1,
+        "upper": 1
+      }
+    ],
+    "scan": {
+      "prime": 5,
+      "degree": 2,
+      "q": 25,
+      "modulus_constant_first": [
+        1,
+        1,
+        1
+      ],
+      "operations": {
+        "points": 40,
+        "transverse_lines": 1000,
+        "transverse_conics": 884,
+        "tangent_conics": 35
+      },
+      "marked_hits": 2,
+      "classes_with_a_rational_mark": 1,
+      "p_frobenius_permutation": [
+        0
+      ],
+      "p_frobenius_fixed_in_scan": 1,
+      "exhausts_Fp_defined_classes": true,
+      "marks_grouped_by_quotient": [
+        [
+          {
+            "point": [
+              1,
+              0,
+              1
+            ],
+            "frame": [
+              0,
+              1,
+              2
+            ],
+            "kind": "I",
+            "parameters": [
+              1,
+              0,
+              0
+            ],
+            "g": 1,
+            "shape": [
+              1,
+              0,
+              3,
+              2,
+              1
+            ],
+            "target_constant_first": [
+              4,
+              4,
+              1,
+              2
+            ]
+          },
+          {
+            "point": [
+              2,
+              1,
+              0
+            ],
+            "frame": [
+              0,
+              2,
+              1
+            ],
+            "kind": "I",
+            "parameters": [
+              3,
+              0,
+              0
+            ],
+            "g": 1,
+            "shape": [
+              2,
+              0,
+              2,
+              4,
+              3
+            ],
+            "target_constant_first": [
+              1,
+              4,
+              4,
+              2
+            ]
+          }
+        ]
+      ]
+    },
+    "complete": true,
+    "lower": 1,
+    "upper": 1,
+    "verified_orbits": [
+      {
+        "frame": "021",
+        "kind": "I",
+        "fixed": {},
+        "point_polynomial": "T",
+        "rur_point_degree": 1,
+        "net_in_Q_T_mod_point_polynomial": [
+          "x*y*z + 3*y**2*z + 2*y*z**2",
+          "x**3/8 + 3*x**2*z/8 - 27*x*y**2/8 - 9*x*y*z/8 - 27*y**3/4 - 27*y**2*z/4 - 9*y*z**2/4 - 35*z**3/16",
+          "-8*z**3"
+        ],
+        "image_cubic_in_Q_T_mod_point_polynomial": "27*U**3/4 + 729*U**2*W/64 - 243*U*W**2/512 + V**2*W - 729*W**3/16384",
+        "base_length": 3,
+        "map_degree": 3,
+        "differential_line": [
+          "1",
+          "0",
+          "0"
+        ],
+        "chow_polynomial": "A",
+        "orbit_size": 1
+      }
+    ],
+    "rational_classes": 1
+  }
+}

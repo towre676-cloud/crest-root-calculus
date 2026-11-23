@@ -1,0 +1,16 @@
+{
+  "title": "Two proposals for a house with the measured baseline HTC of DEEP 07LT",
+  "total_W_K": [340,364],
+  "heating_degree_hours_Kh": 48000,
+  "measured": [],
+  "actions": [
+    {"id":"Insulate fabric","fraction_fabric_saved":0.20,"fraction_infiltration_saved":0,"cost":8000},
+    {"id":"Seal unintended leaks","fraction_fabric_saved":0,"fraction_infiltration_saved":0.35,"cost":4000}
+  ],
+  "tests": [
+    {"id":"Effective infiltration survey","quantity":"infiltration","error_W_K":8,"cost":230},
+    {"id":"Fabric loss survey","quantity":"fabric","error_W_K":12,"cost":400},
+    {"id":"Repeat whole-house heat test","quantity":"total","error_W_K":6,"cost":180}
+  ],
+  "assumptions": "Only total_W_K is a field measurement. Test precision, prices, weather and upgrade fractions are illustrative. Infiltration means excess leakage above a separately protected ventilation provision."
+}

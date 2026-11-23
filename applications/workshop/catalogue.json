@@ -1,0 +1,290 @@
+{
+  "wafer": {
+    "name": "Chip inspection",
+    "question": "Does the line meet its width limit?",
+    "context": "A single reflected-light reading can fit several chip shapes. Compare every compatible profile with the allowed bottom width, then choose a useful second setting.",
+    "cases": [
+      {
+        "file": "example.json",
+        "label": "One optical reading"
+      },
+      {
+        "file": "two-readings.json",
+        "label": "Two polarizations"
+      },
+      {
+        "file": "measured-die.json",
+        "label": "Measured wafer die"
+      }
+    ],
+    "fields": [
+      {
+        "path": "width_limit_nm",
+        "label": "Maximum bottom width (nm)",
+        "type": "number"
+      },
+      {
+        "path": "error",
+        "label": "Intensity error (±)",
+        "type": "number"
+      },
+      {
+        "path": "observations/11",
+        "label": "Channel 11 intensity",
+        "type": "number"
+      },
+      {
+        "path": "die",
+        "label": "Measured die (1–9)",
+        "type": "integer"
+      }
+    ],
+    "resources": {
+      "benchmark": "results.json"
+    }
+  },
+  "water": {
+    "name": "Water leaks",
+    "question": "Which pipe reaches should the crew search?",
+    "context": "Check each proposed leak against the pressure readings. Compare temporary logger locations by how much pipe the crew could rule out, even with an unfavorable reading.",
+    "cases": [
+      {
+        "file": "example.json",
+        "label": "Two streets, one inlet reading"
+      },
+      {
+        "file": "logged.json",
+        "label": "After the temporary reading"
+      },
+      {
+        "file": "field-case.json",
+        "label": "Controlled release in Belgium"
+      }
+    ],
+    "fields": [
+      {
+        "path": "observations/Inlet",
+        "label": "Inlet drop range (kPa)",
+        "type": "list"
+      },
+      {
+        "path": "sensors/North/cost",
+        "label": "Cost of a north logger visit",
+        "type": "number"
+      }
+    ],
+    "resources": {
+      "field-benchmark": "receipt.json"
+    }
+  },
+  "battery": {
+    "name": "Battery grading",
+    "question": "Can the short test settle a capacity grade?",
+    "context": "Compare a retired cell’s voltage readings with measured reference cells. Read the range of usable capacity before deciding whether to keep testing.",
+    "cases": [
+      {
+        "file": "example.json",
+        "label": "A first-minute voltage reading"
+      },
+      {
+        "file": "grade.json",
+        "label": "A grade from measured readings"
+      },
+      {
+        "file": "deferred.json",
+        "label": "Test budget exhausted"
+      }
+    ],
+    "fields": [
+      {
+        "path": "min_capacity_ah",
+        "label": "Minimum capacity (Ah)",
+        "type": "number"
+      },
+      {
+        "path": "voltage_tolerance_v",
+        "label": "Voltage error (± V)",
+        "type": "number"
+      },
+      {
+        "path": "observations/60",
+        "label": "Voltage at 60 s (V)",
+        "type": "number"
+      }
+    ],
+    "resources": {
+      "benchmark": "benchmark.json"
+    }
+  },
+  "retrofit": {
+    "name": "Home heat loss",
+    "question": "Which upgrade earns its cost in saved heat?",
+    "context": "Compare insulation and air sealing across every fabric and infiltration split consistent with the measured whole-house heat loss.",
+    "cases": [
+      {
+        "file": "example.json",
+        "label": "Measured whole-house heat loss"
+      },
+      {
+        "file": "surveyed.json",
+        "label": "After an infiltration survey"
+      }
+    ],
+    "fields": [
+      {
+        "path": "total_W_K",
+        "label": "Whole-house loss range (W/K)",
+        "type": "list"
+      },
+      {
+        "path": "heating_degree_hours_Kh",
+        "label": "Annual heating degree-hours (K·h)",
+        "type": "number"
+      },
+      {
+        "path": "actions/0/cost",
+        "label": "First proposal cost",
+        "type": "number"
+      },
+      {
+        "path": "actions/1/cost",
+        "label": "Second proposal cost",
+        "type": "number"
+      }
+    ],
+    "resources": {
+      "field-benchmark": "receipt.json"
+    }
+  },
+  "materials": {
+    "name": "Material structure",
+    "question": "Can two structures give the same distances?",
+    "context": "Reconstruct ordered sites on a line from the complete list of pair distances. Use a local observation to separate arrangements that produce the same pattern.",
+    "cases": [
+      {
+        "file": "example.json",
+        "label": "Six sites with a shared pattern"
+      },
+      {
+        "file": "resolved.json",
+        "label": "After the local observation"
+      },
+      {
+        "file": "bounded.json",
+        "label": "A bounded search"
+      },
+      {
+        "file": "powder.json",
+        "label": "Measured powder diffraction peaks"
+      },
+      {
+        "file": "powder_reference.json",
+        "label": "Powder peaks with independent cell measurement"
+      }
+    ],
+    "fields": [
+      {
+        "path": "distances",
+        "label": "Measured pair distances",
+        "type": "list"
+      },
+      {
+        "path": "distance_error",
+        "label": "Error per distance (grid units)",
+        "type": "integer"
+      },
+      {
+        "path": "node_budget",
+        "label": "Search budget (nodes)",
+        "type": "integer"
+      },
+      {
+        "path": "cell_range_A",
+        "label": "Allowed cubic cell edge (Å)",
+        "type": "decimals"
+      }
+    ],
+    "resources": {}
+  },
+  "orbits": {
+    "name": "Telescope time",
+    "question": "When would two orbits give different observations?",
+    "context": "Compare transit predictions over the observing windows you can use. Add a recorded event to see which timing histories survive.",
+    "cases": [
+      {
+        "file": "example.json",
+        "label": "Plan a follow-up for 55 Cancri e"
+      },
+      {
+        "file": "confirmed.json",
+        "label": "Apply the measured transit timings"
+      }
+    ],
+    "fields": [
+      {
+        "path": "hypotheses/0/period_days",
+        "label": "First orbital period range (days)",
+        "type": "decimals"
+      },
+      {
+        "path": "windows/0/days",
+        "label": "First observing window (days)",
+        "type": "decimals"
+      }
+    ],
+    "resources": {
+      "benchmark": "benchmark.json"
+    }
+  },
+  "atlas": {
+    "name": "Elliptic map atlas",
+    "question": "Does a quartic hide an elliptic curve?",
+    "context": "Start with a blind catalogue sample and a curve with a known map. Inspect each proof, or run the original Part XXX solver with its optional scientific packages.",
+    "cases": [
+      {
+        "file": "example.json",
+        "label": "Portable solver · blind sample and Klein control"
+      },
+      {
+        "file": "original-slice.json",
+        "label": "Part XXX · same blind sample"
+      },
+      {
+        "file": "original-C-star.json",
+        "label": "Part XXX · C-star positive control"
+      },
+      {
+        "file": "original-nonlift.json",
+        "label": "Part XXX · non-lifting control"
+      }
+    ],
+    "fields": [
+      {
+        "path": "curves/0/quartic",
+        "label": "First curve equation",
+        "type": "text"
+      },
+      {
+        "path": "primes",
+        "label": "Primes to try",
+        "type": "list"
+      },
+      {
+        "path": "max_field_size",
+        "label": "Largest scan field (Part XXX)",
+        "type": "integer"
+      },
+      {
+        "path": "max_precision",
+        "label": "Lifting precision (Part XXX)",
+        "type": "integer"
+      }
+    ],
+    "resources": {
+      "original-catalogue": "original/catalogue.json",
+      "portable-catalogue": "receipt.json",
+      "positive": "original/C-star.json",
+      "negative": "original/nonlift.json"
+    }
+  }
+}

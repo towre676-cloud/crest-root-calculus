@@ -1,0 +1,153 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Elliptic map atlas · Method</title><base href="/file/atlas/"><link rel="stylesheet" href="/ui/style.css"></head><body class="guidetext"><nav><a href="/#atlas">← Return to the application</a></nav><main><h1 id="an-atlas-of-elliptic-maps">An atlas of elliptic maps</h1>
+<p><strong>Does a curve hide a simpler curve inside it?</strong> A
+degree-three map groups the points of a complicated curve into triples
+over a simpler one, except at special values. The default atlas either
+constructs a map, proves that no elliptic map of any degree is possible,
+or identifies a case for further work. It reads integer coefficients,
+runs offline with Python 3.9 or later and returns reproducible
+certificates.</p>
+<p>Run these in this folder. On Windows, <code>py</code> can take the
+place of <code>python</code>.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> app.py</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> app.py my-curves.json</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">-m</span> unittest <span class="at">-v</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> select_slice.py</span></code></pre></div>
+<p>Only the last command needs internet. It verifies the pinned
+full-source hash and all 12 selected rows, or accepts the downloaded
+text file as its argument. The first command reads <a
+href="example.json">example.json</a>. The <a href="receipt.json">saved
+report</a> contains the data for each proof. For the archived Part XXX
+solver and its separate certification procedure, see <a
+href="original/README.md">the original engine</a>.</p>
+<h2 id="twelve-real-curves-selected-before-scoring">Twelve real curves,
+selected before scoring</h2>
+<p>Andrew Sutherland published 82,240 nonhyperelliptic genus-three
+curves over the rationals of bounded discriminant. Our 12 rows are the
+ones with the smallest SHA-256 values when hashing the ASCII text
+<code>Crest-Root atlas v1|i</code>, where <code>i</code> is the
+one-based source row. That rule sees only row numbers. The Klein quartic
+was added separately as a positive control. The full source SHA-256
+starts with <code>d3f06d9a</code> and is recorded in the input. <a
+href="https://math.mit.edu/~drew/genus3curves.html">Source data and
+citation</a></p>
+<table>
+<thead>
+<tr class="header">
+<th>Population</th>
+<th>Result of the default engine</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>12 blind published rows</td>
+<td>Seven certificates excluding all elliptic maps, five open</td>
+</tr>
+<tr class="even">
+<td>Klein control</td>
+<td>Degree-three map over the rationals, with a rational origin and
+target invariant −3375</td>
+</tr>
+</tbody>
+</table>
+<p>This small sample gives a reproducible demonstration. It does not
+measure the frequency of degree-three maps in the whole database.</p>
+<h2 id="enter-a-quartic">Enter a quartic</h2>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span><span class="dt">&quot;primes&quot;</span><span class="fu">:</span><span class="ot">[</span><span class="dv">2</span><span class="ot">,</span><span class="dv">3</span><span class="ot">,</span><span class="dv">5</span><span class="ot">]</span><span class="fu">,</span><span class="dt">&quot;curves&quot;</span><span class="fu">:</span><span class="ot">[</span><span class="fu">{</span><span class="dt">&quot;id&quot;</span><span class="fu">:</span><span class="st">&quot;Klein&quot;</span><span class="fu">,</span><span class="dt">&quot;quartic&quot;</span><span class="fu">:</span><span class="st">&quot;x^3*y+y^3*z+z^3*x&quot;</span><span class="fu">}</span><span class="ot">]</span><span class="fu">}</span></span></code></pre></div>
+<p>Use up to 32 distinct curve names. Each monomial has degree four in
+<code>x,y,z</code>. Write products using <code>*</code> and powers using
+<code>^</code>. The order of the optional primes determines the order of
+certificate attempts. Malformed inputs exit with status 2. An
+unsuccessful proof attempt returns <code>unresolved</code>. All
+coefficients of the target and Frobenius polynomials appear in ascending
+order.</p>
+<h3 id="how-to-read-a-positive">How to read a positive</h3>
+<p>The coordinate permutation
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>↦</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>,</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">(x,y,z)\mapsto(y,z,x)</annotation></semantics></math>
+generates a group of order three. Its affine invariants include
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mi>y</mi><mo>+</mo><mi>y</mi><mi>z</mi><mo>+</mo><mi>z</mi><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mi>z</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">U=(xy+yz+zx)/(x+y+z)^2</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>−</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>y</mi><mo>−</mo><mi>z</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>z</mi><mo>−</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mi>z</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">V=(x-y)(y-z)(z-x)/(x+y+z)^3</annotation></semantics></math>.
+For qualifying cyclic quartics the app gives an explicit target
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>Y</mi><mn>2</mn></msup><mo>=</mo><mi>H</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>U</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">Y^2=H(U)</annotation></semantics></math>,
+with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi><mo>=</mo><mn>2</mn><mi>L</mi><mi>V</mi><mo>−</mo><mi>S</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>U</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">Y=2LV-S(U)</annotation></semantics></math>.
+It checks smoothness at a prime of good reduction, proves the invariant
+decomposition by polynomial interpolation, and exhibits squarefreeness
+of the target at an auxiliary prime. A rational source point supplies an
+origin when found. Without one, the output calls the target a genus-one
+curve.</p>
+<p>For the Klein control,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>=</mo><mn>28</mn></mrow><annotation encoding="application/x-tex">L=28</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mn>4</mn><mo>+</mo><mn>36</mn><mi>U</mi><mo>−</mo><mn>108</mn><msup><mi>U</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">S=4+36U-108U^2</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo>=</mo><mn>16</mn><mo>−</mo><mn>160</mn><mi>U</mi><mo>+</mo><mn>432</mn><msup><mi>U</mi><mn>2</mn></msup><mo>−</mo><mn>160</mn><msup><mi>U</mi><mn>3</mn></msup><mo>−</mo><mn>432</mn><msup><mi>U</mi><mn>4</mn></msup></mrow><annotation encoding="application/x-tex">H=16-160U+432U^2-160U^3-432U^4</annotation></semantics></math>.
+The point
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">[</mo><mn>0</mn><mo>:</mo><mn>0</mn><mo>:</mo><mn>1</mn><mo stretchy="true" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0:0:1]</annotation></semantics></math>
+maps to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo>,</mo><mi>−</mi><mn>4</mn><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(0,-4)</annotation></semantics></math>.
+To see the degree, normalize
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mi>z</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x+y+z=1</annotation></semantics></math>.
+The curve identity determines
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>=</mo><mi>x</mi><mi>y</mi><mi>z</mi></mrow><annotation encoding="application/x-tex">W=xyz</annotation></semantics></math>
+uniquely from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo>,</mo><mi>V</mi></mrow><annotation encoding="application/x-tex">U,V</annotation></semantics></math>.
+The coordinates solve
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>T</mi><mn>3</mn></msup><mo>−</mo><msup><mi>T</mi><mn>2</mn></msup><mo>+</mo><mi>U</mi><mi>T</mi><mo>−</mo><mi>W</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">T^3-T^2+UT-W=0</annotation></semantics></math>.
+A generic point has three distinct roots and six orderings, of which
+precisely the three cyclic orderings have the specified sign of the
+Vandermonde. The rational map extends over the smooth projective models.
+The default constructor checks a visible cyclic permutation in the
+supplied coordinates and requires its coefficient of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/x-tex">W</annotation></semantics></math>
+to be nonzero.</p>
+<h3 id="how-to-read-an-exclusion">How to read an exclusion</h3>
+<ol type="1">
+<li>The program searches for full span of the homogeneous degree 7 or 9
+piece of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mi>F</mi><mo>,</mo><msub><mi>F</mi><mi>x</mi></msub><mo>,</mo><msub><mi>F</mi><mi>y</mi></msub><mo>,</mo><msub><mi>F</mi><mi>z</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(F,F_x,F_y,F_z)</annotation></semantics></math>
+over the prime field. A full span puts every monomial of that degree in
+the ideal. No projective point over the algebraic closure can then be
+singular.</li>
+<li>Exhaustive projective point counts over the first three extension
+fields give the three independent coefficients of the degree-six
+Frobenius characteristic polynomial by Newton identities and
+reciprocity.</li>
+<li>An auxiliary prime witnesses irreducibility of that polynomial by
+the finite-field degree-six Rabin test. The ratios of two distinct
+characteristic-zero roots have at most
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mo>⋅</mo><mn>5</mn><mo>=</mo><mn>30</mn></mrow><annotation encoding="application/x-tex">6\cdot5=30</annotation></semantics></math>
+conjugates. A ratio that is a root of unity of order
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+must therefore have
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>φ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>m</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≤</mo><mn>30</mn></mrow><annotation encoding="application/x-tex">\varphi(m)\le30</annotation></semantics></math>.
+All 56 possible orders larger than one are tested. The finite
+enumeration to 1800 follows from
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>φ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>m</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≥</mo><msqrt><mrow><mi>m</mi><mi>/</mi><mn>2</mn></mrow></msqrt></mrow><annotation encoding="application/x-tex">\varphi(m)\ge\sqrt{m/2}</annotation></semantics></math>,
+obtained by multiplying the elementary prime-power inequalities.</li>
+<li>In the degree-six residue field, let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+be a root. If
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>a</mi><mi>m</mi></msup><annotation encoding="application/x-tex">a^m</annotation></semantics></math>
+belongs to neither the degree-two nor degree-three subfield then its six
+conjugates are distinct. This supplies an exact modular witness that no
+two original roots have the same
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>-th
+power. Irreducibility in characteristic zero makes the roots a single
+Galois orbit. Their powers remain in a single six-element orbit over
+every finite extension, so all power characteristic polynomials remain
+irreducible.</li>
+<li>An elliptic subvariety of the Jacobian over an algebraic closure
+specializes, after finite extension at good reduction, to an elliptic
+factor over a finite extension of the residue field. The irreducible
+six-dimensional Frobenius polynomial on that extension excludes such a
+factor. A nonconstant elliptic map induces an elliptic quotient of the
+Jacobian. The conclusion covers all degrees.</li>
+</ol>
+<p>If the auxiliary test cannot produce a witness it makes no exclusion.
+A partial prime search and failure to recognize cyclic coordinates are
+common reasons for <code>unresolved</code>. The original §86 chart solve
+has different coverage. <a
+href="https://arxiv.org/abs/math/0002205">Simplicity and extension
+fields</a></p>
+</main></body></html>

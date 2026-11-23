@@ -1,0 +1,10 @@
+{
+  "min_capacity_ah": 4.8,
+  "voltage_tolerance_v": 0.02,
+  "capacity_error_ah": 0.05,
+  "observations": {
+    "60": "3.236696",
+    "300": "3.402984"
+  },
+  "policy": "fixed_300s"
+}

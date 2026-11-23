@@ -1,0 +1,77 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Chip inspection · Method</title><base href="/file/wafer/"><link rel="stylesheet" href="/ui/style.css"></head><body class="guidetext"><nav><a href="/#wafer">← Return to the application</a></nav><main><h1 id="chip-inspection">Chip inspection</h1>
+<p><strong>Can these optical readings settle a line-width
+specification?</strong> Enter the largest acceptable bottom width and
+the light intensities recorded by the instrument. The program keeps
+every NIST profile that explains all readings within your stated error.
+It reports whether every survivor gives the same width decision. If the
+survivors disagree, it ranks the available optical settings by the
+number of disagreeing pairs they can separate per unit cost.</p>
+<h2 id="try-the-three-cases">Try the three cases</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Case</th>
+<th>Command in this folder</th>
+<th>What happens</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>One reading, simulated example</td>
+<td><code>python app.py example.json</code></td>
+<td>44 profiles meet the illustrative limit and 37 exceed it. Switching
+polarization separates 1,560 of the 1,628 disagreeing pairs.</td>
+</tr>
+<tr class="even">
+<td>Both polarizations</td>
+<td><code>python app.py two-readings.json</code></td>
+<td>Three geometries still fit. All three bottom widths fall between
+126.5 and 134 nm, below the 135 nm limit.</td>
+</tr>
+<tr class="odd">
+<td>Actual measured die</td>
+<td><code>python app.py measured-die.json</code></td>
+<td>At ±0.001, all 2,566 profiles disagree with one or more readings.
+The best profile's largest channel discrepancy is 0.0140153.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="enter-another-job">Enter another job</h2>
+<p>Copy a case and provide <code>width_limit_nm</code> (inclusive),
+<code>error</code> (absolute normalized intensity) and
+<code>observations</code> (an object mapping NIST channel numbers 1–84
+to normalized intensities). Alternatively provide <code>die</code> from
+1–9 and <code>observed_channels</code> (a list or <code>"all"</code>) to
+read actual NIST measurements. <code>available_channels</code> can
+restrict the next available settings. Optional positive
+<code>channel_costs</code> use any consistent unit. An empty
+observations object represents the whole library before measurement.
+Input decimals support 13 places. The example error and width limit are
+illustrative choices.</p>
+<p>Two possible profiles can share an observation on a channel precisely
+when their predicted intensities differ by at most twice the specified
+error. These closed intervals are compared using scaled integers. For
+each allowed channel we count all surviving opposite-grade pairs whose
+intervals are disjoint. Unit costs are the default. Pair counts describe
+a finite design library. The distribution of shapes on a manufacturing
+line and the calibration errors of an actual instrument require separate
+measurements.</p>
+<h2 id="replay-the-comparison">Replay the comparison</h2>
+<p>Run <code>python replay.py</code>. The exact sweep compares a fixed
+normal-incidence setting, adding an adjacent angle, adding the
+orthogonal polarization, and all 84 settings. Of 2,566 grid profiles,
+the respective numbers whose grade is robust to every allowed reading
+are 927, 951, 1,649 and 2,533. The replay also compares all nine
+measured dies directly to the table. None fits within the example error
+across all channels. Resolving at manufacturing scale requires an
+independently measured reference width, model discrepancy estimated on
+held-out wafers, and comparison at matched false-accept rates. This
+application makes a decision only for the stated library and error.</p>
+<p>The three original CSV files ship gzip-compressed. Both programs
+check their decompressed SHA-256 digests. See the original <a
+href="data/NIST-readme.txt">NIST readme</a> for geometry and channels,
+and the <a href="https://doi.org/10.18434/mds2-2290">NIST measurement
+and simulation dataset</a> for the full resource. Python 3.11+ needs no
+third-party packages. Run <code>python -m unittest -v</code> in this
+folder.</p>
+</main></body></html>

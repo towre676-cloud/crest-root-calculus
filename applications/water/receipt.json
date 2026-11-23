@@ -1,0 +1,264 @@
+{
+  "events_scored": 8,
+  "excluded_events": [
+    {
+      "date": "2020-12-17T11:45:00",
+      "reason": "baseline overlaps previous controlled discharge"
+    }
+  ],
+  "summary": {
+    "initial": {
+      "true_site_retained": 5,
+      "total_sites_to_check": 33,
+      "empty_sets": 1
+    },
+    "selected": {
+      "true_site_retained": 3,
+      "total_sites_to_check": 20,
+      "empty_sets": 2
+    },
+    "fixed": {
+      "true_site_retained": 4,
+      "total_sites_to_check": 24,
+      "empty_sets": 1
+    },
+    "nearest_correct_after_selected": 2
+  },
+  "events": [
+    {
+      "event": "2020-12-16T09:05:00",
+      "truth": "Z01",
+      "reference": "S01",
+      "first": "S03",
+      "second": "S11",
+      "ranked_choice": "S11",
+      "initial": [
+        "Z01",
+        "Z03",
+        "Z05",
+        "Z06"
+      ],
+      "selected": [
+        "Z01",
+        "Z05",
+        "Z06"
+      ],
+      "fixed": [
+        "Z01",
+        "Z03",
+        "Z05"
+      ],
+      "nearest_baseline": "Z05"
+    },
+    {
+      "event": "2020-12-16T10:00:00",
+      "truth": "Z02",
+      "reference": "S01",
+      "first": "S02",
+      "second": "S03",
+      "ranked_choice": "S03",
+      "initial": [
+        "Z02",
+        "Z03",
+        "Z04",
+        "Z05",
+        "Z06"
+      ],
+      "selected": [
+        "Z03",
+        "Z05"
+      ],
+      "fixed": [
+        "Z03",
+        "Z05"
+      ],
+      "nearest_baseline": "Z05"
+    },
+    {
+      "event": "2020-12-16T10:50:00",
+      "truth": "Z03",
+      "reference": "S01",
+      "first": "S02",
+      "second": "S03",
+      "ranked_choice": "S03",
+      "initial": [
+        "Z02",
+        "Z03",
+        "Z04",
+        "Z05",
+        "Z06"
+      ],
+      "selected": [
+        "Z03",
+        "Z04",
+        "Z05",
+        "Z06"
+      ],
+      "fixed": [
+        "Z03",
+        "Z04",
+        "Z05",
+        "Z06"
+      ],
+      "nearest_baseline": "Z03"
+    },
+    {
+      "event": "2020-12-16T11:40:00",
+      "truth": "Z04",
+      "reference": "S01",
+      "first": "S02",
+      "second": "S03",
+      "ranked_choice": null,
+      "initial": [
+        "Z02",
+        "Z03",
+        "Z05"
+      ],
+      "selected": [
+        "Z03",
+        "Z05"
+      ],
+      "fixed": [
+        "Z03",
+        "Z05"
+      ],
+      "nearest_baseline": "Z05"
+    },
+    {
+      "event": "2020-12-17T07:40:00",
+      "truth": "Z05",
+      "reference": "S01",
+      "first": "S02",
+      "second": "S10",
+      "ranked_choice": "S10",
+      "initial": [
+        "Z03",
+        "Z04",
+        "Z06",
+        "Z07",
+        "Z08",
+        "Z09"
+      ],
+      "selected": [
+        "Z04",
+        "Z06",
+        "Z07",
+        "Z08",
+        "Z09"
+      ],
+      "fixed": [
+        "Z04",
+        "Z06",
+        "Z07",
+        "Z08",
+        "Z09"
+      ],
+      "nearest_baseline": "Z06"
+    },
+    {
+      "event": "2020-12-17T08:30:00",
+      "truth": "Z06",
+      "reference": "S01",
+      "first": "S02",
+      "second": "S03",
+      "ranked_choice": null,
+      "initial": [],
+      "selected": [],
+      "fixed": [],
+      "nearest_baseline": "Z09"
+    },
+    {
+      "event": "2020-12-17T10:15:00",
+      "truth": "Z07",
+      "reference": "S01",
+      "first": "S02",
+      "second": "S03",
+      "ranked_choice": null,
+      "initial": [
+        "Z04",
+        "Z07",
+        "Z08",
+        "Z09"
+      ],
+      "selected": [
+        "Z04",
+        "Z07",
+        "Z08",
+        "Z09"
+      ],
+      "fixed": [
+        "Z04",
+        "Z07",
+        "Z08",
+        "Z09"
+      ],
+      "nearest_baseline": "Z09"
+    },
+    {
+      "event": "2020-12-17T11:05:00",
+      "truth": "Z08",
+      "reference": "S01",
+      "first": "S02",
+      "second": "S11",
+      "ranked_choice": "S11",
+      "initial": [
+        "Z03",
+        "Z04",
+        "Z06",
+        "Z07",
+        "Z08",
+        "Z09"
+      ],
+      "selected": [],
+      "fixed": [
+        "Z04",
+        "Z07",
+        "Z08",
+        "Z09"
+      ],
+      "nearest_baseline": "Z08"
+    }
+  ],
+  "later_day": {
+    "training_day": "2020-12-16",
+    "calibration_events": 4,
+    "held_out_events": 4,
+    "additional_model_halfwidth_bar": 0.238617,
+    "before_calibration": {
+      "initial": {
+        "true_site_retained": 2,
+        "total_sites_to_check": 16,
+        "empty_sets": 1
+      },
+      "selected": {
+        "true_site_retained": 1,
+        "total_sites_to_check": 9,
+        "empty_sets": 2
+      },
+      "fixed": {
+        "true_site_retained": 2,
+        "total_sites_to_check": 13,
+        "empty_sets": 1
+      },
+      "nearest_correct_after_selected": 1
+    },
+    "after_calibration": {
+      "initial": {
+        "true_site_retained": 4,
+        "total_sites_to_check": 32,
+        "empty_sets": 0
+      },
+      "selected": {
+        "true_site_retained": 4,
+        "total_sites_to_check": 28,
+        "empty_sets": 0
+      },
+      "fixed": {
+        "true_site_retained": 4,
+        "total_sites_to_check": 28,
+        "empty_sets": 0
+      },
+      "nearest_correct_after_selected": 0
+    }
+  }
+}

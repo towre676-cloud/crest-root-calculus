@@ -1,0 +1,1208 @@
+{
+  "id": "nonlift",
+  "terms": [
+    [
+      4,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      4,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      4,
+      1
+    ],
+    [
+      2,
+      0,
+      2,
+      -65
+    ],
+    [
+      0,
+      2,
+      2,
+      -52
+    ]
+  ],
+  "proof": {
+    "scope": "geometric",
+    "prime": 13,
+    "scan_degree": 2,
+    "field_bound": {
+      "p": 13,
+      "weil_polynomial": [
+        1,
+        18,
+        147,
+        684,
+        1911,
+        3042,
+        2197
+      ],
+      "root_ratio_orders": [
+        1
+      ],
+      "endomorphism_field_divides": 1,
+      "mod3_scalar_exponent": 6,
+      "whole_jacobian_class_field_divides": 1,
+      "even_splitting_power": 2,
+      "elliptic_components": [
+        {
+          "powered_simple_polynomial": [
+            1,
+            -10,
+            169
+          ],
+          "geometric_multiplicity": 3,
+          "weil_polynomial": [
+            1,
+            18,
+            147,
+            684,
+            1911,
+            3042,
+            2197
+          ],
+          "ratio_orders": [
+            1
+          ],
+          "mod3_scalar_exponent": 6,
+          "class_field_divides": 1
+        }
+      ],
+      "elliptic_dimension": 3,
+      "one_sufficient_scan_degree": 2,
+      "separate_sufficient_scan_degrees": [
+        2
+      ]
+    },
+    "point_counts": [
+      32,
+      140,
+      2144
+    ],
+    "levels": [
+      {
+        "precision": 1,
+        "branches": 32,
+        "lower": 0,
+        "upper": 16
+      },
+      {
+        "precision": 2,
+        "branches": 0,
+        "lower": 0,
+        "upper": 0
+      }
+    ],
+    "scan": {
+      "prime": 13,
+      "degree": 2,
+      "q": 169,
+      "modulus_constant_first": [
+        1,
+        3,
+        1
+      ],
+      "operations": {
+        "points": 140,
+        "transverse_lines": 23660,
+        "transverse_conics": 25136,
+        "tangent_conics": 128
+      },
+      "marked_hits": 32,
+      "classes_with_a_rational_mark": 16,
+      "p_frobenius_permutation": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "p_frobenius_fixed_in_scan": 16,
+      "exhausts_Fp_defined_classes": true,
+      "marks_grouped_by_quotient": [
+        [
+          {
+            "point": [
+              4,
+              2,
+              1
+            ],
+            "frame": [
+              0,
+              1,
+              2
+            ],
+            "kind": "I",
+            "parameters": [
+              9,
+              2,
+              6
+            ],
+            "g": 1,
+            "shape": [
+              0,
+              0,
+              0,
+              2,
+              9
+            ],
+            "target_constant_first": [
+              4,
+              10,
+              9,
+              6
+            ]
+          },
+          {
+            "point": [
+              10,
+              6,
+              1
+            ],
+            "frame": [
+              0,
+              1,
+              2
+            ],
+            "kind": "I",
+            "parameters": [
+              12,
+              11,
+              6
+            ],
+            "g": 1,
+            "shape": [
+              0,
+              0,
+              0,
+              11,
+              4
+            ],
+            "target_constant_first": [
+              4,
+              10,
+              9,
+              6
+            ]
+          }
+        ],
+        [
+          {
+            "point": [
+              6,
+              2,
+              1
+            ],
+            "frame": [
+              0,
+              1,
+              2
+            ],
+            "kind": "I",
+            "parameters": [
+              7,
+              10,
+              6
+            ],
+            "g": 1,
+            "shape": [
+              0,
+              0,
+              0,
+              3,
+              6
+            ],
+            "target_constant_first": [
+              9,
+              10,
+              4,
+              6
+            ]
+          },
+          {
+            "point": [
+              2,
+              6,
+              1
+            ],
+            "frame": [
+              0,
+              1,
+              2
+            ],
+            "kind": "I",
+            "parameters": [
+              5,
+              3,
+              6
+            ],
+            "g": 1,
+            "shape": [
+              0,
+              0,
+              0,
+              10,
+              7
+            ],
+            "target_constant_first": [
+              9,
+              10,
+              4,
+              6
+            ]
+          }
+        ],
+        [
+          {
+            "point": [
+              7,
+              2,
+              1
+            ],
+            "frame": [
+              0,
+              1,
+              2
+            ],
+            "kind": "I",
+            "parameters": [
+              6,
+              3,
+              6
+            ],
+            "g": 1,
+            "shape": [
+              0,
+              0,
+              0,
+              10,
+              7
+            ],
+            "target_constant_first": [
+              9,
+              10,
+              4,
+              6
+            ]
+          },
+          {
+            "point": [
+              11,
+              6,
+              1
+            ],
+            "frame": [
+              0,
+              1,
+              2
+            ],
+            "kind": "I",
+            "parameters": [
+              8,
+              10,
+              6
+            ],
+            "g": 1,
+            "shape": [
+              0,
+              0,
+              0,
+              3,
+              6
+            ],
+            "target_constant_first": [
+              9,
+              10,
+              4,
+              6
+            ]
+          }
+        ],
+        [
+          {
+            "point": [
+              9,
+              2,
+              1
+            ],
+            "frame": [
+              0,
+              1,
+              2
+            ],
+            "kind": "I",
+            "parameters": [
+              4,
+              11,
+              6
+            ],
+            "g": 1,
+            "shape": [
+              0,
+              0,
+              0,
+              11,
+              4
+            ],
+            "target_constant_first": [
+              4,
+              10,
+              9,
+              6
+            ]
+          },
+          {
+            "point": [
+              3,
+              6,
+              1
+            ],
+            "frame": [
+              0,
+              1,
+              2
+            ],
+            "kind": "I",
+            "parameters": [
+              1,
+              2,
+              6
+            ],
+            "g": 1,
+            "shape": [
+              0,
+              0,
+              0,
+              2,
+              9
+            ],
+            "target_constant_first": [
+              4,
+              10,
+              9,
+              6
+            ]
+          }
+        ],
+        [
+          {
+            "point": [
+              4,
+              3,
+              1
+            ],
+            "frame": [
+              0,
+              1,
+              2
+            ],
+            "kind": "I",
+            "parameters": [
+              6,
+              2,
+              4
+            ],
+            "g": 1,
+            "shape": [
+              0,
+              0,
+              0,
+              10,
+              4
+            ],
+            "target_constant_first": [
+              9,
+              2,
+              9,
+              4
+            ]
+          },
+          {
+            "point": [
+              10,
+              9,
+              1
+            ],
+            "frame": [
+              0,
+              1,
+              2
+            ],
+            "kind": "I",
+            "parameters": [
+              8,
+              11,
+              4
+            ],
+            "g": 1,
+            "shape": [
+              0,
+              0,
+              0,
+              3,
+              9
+            ],
+            "target_constant_first": [
+              9,
+              2,
+              9,
+              4
+            ]
+          }
+        ],
+        [
+          {
+            "point": [
+              6,
+              3,
+              1
+            ],
+            "frame": [
+              0,
+              1,
+              2
+            ],
+            "kind": "I",
+            "parameters": [
+              9,
+              10,
+              4
+            ],
+            "g": 1,
+            "shape": [
+              0,
+              0,
+              0,
+              2,
+              7
+            ],
+            "target_constant_first": [
+              4,
+              2,
+              4,
+              4
+            ]
+          },
+          {
+            "point": [
+              2,
+              9,
+              1
+            ],
+            "frame": [
+              0,
+              1,
+              2
+            ],
+            "kind": "I",
+            "parameters": [
+              12,
+              3,
+              4
+            ],
+            "g": 1,
+            "shape": [
+              0,
+              0,
+              0,
+              11,
+              6
+            ],
+            "target_constant_first": [
+              4,
+              2,
+              4,
+              4
+            ]
+          }
+        ],
+        [
+          {
+            "point": [
+              7,
+              3,
+              1
+            ],
+            "frame": [
+              0,
+              1,
+              2
+            ],
+            "kind": "I",
+            "parameters": [
+              4,
+              3,
+              4
+            ],
+            "g": 1,
+            "shape": [
+              0,
+              0,
+              0,
+              11,
+              6
+            ],
+            "target_constant_first": [
+              4,
+              2,
+              4,
+              4
+            ]
+          },
+          {
+            "point": [
+              11,
+              9,
+              1
+            ],
+            "frame": [
+              0,
+              1,
+              2
+            ],
+            "kind": "I",
+            "parameters": [
+              1,
+              10,
+              4
+            ],
+            "g": 1,
+            "shape": [
+              0,
+              0,
+              0,
+              2,
+              7
+            ],
+            "target_constant_first": [
+              4,
+              2,
+              4,
+              4
+            ]
+          }
+        ],
+        [
+          {
+            "point": [
+              9,
+              3,
+              1
+            ],
+            "frame": [
+              0,
+              1,
+              2
+            ],
+            "kind": "I",
+            "parameters": [
+              7,
+              11,
+              4
+            ],
+            "g": 1,
+            "shape": [
+              0,
+              0,
+              0,
+              3,
+              9
+            ],
+            "target_constant_first": [
+              9,
+              2,
+              9,
+              4
+            ]
+          },
+          {
+            "point": [
+              3,
+              9,
+              1
+            ],
+            "frame": [
+              0,
+              1,
+              2
+            ],
+            "kind": "I",
+            "parameters": [
+              5,
+              2,
+              4
+            ],
+            "g": 1,
+            "shape": [
+              0,
+              0,
+              0,
+              10,
+              4
+            ],
+            "target_constant_first": [
+              9,
+              2,
+              9,
+              4
+            ]
+          }
+        ],
+        [
+          {
+            "point": [
+              2,
+              4,
+              1
+            ],
+            "frame": [
+              0,
+              1,
+              2
+            ],
+            "kind": "I",
+            "parameters": [
+              1,
+              3,
+              9
+            ],
+            "g": 1,
+            "shape": [
+              0,
+              0,
+              0,
+              2,
+              6
+            ],
+            "target_constant_first": [
+              4,
+              11,
+              4,
+              9
+            ]
+          },
+          {
+            "point": [
+              6,
+              10,
+              1
+            ],
+            "frame": [
+              0,
+              1,
+              2
+            ],
+            "kind": "I",
+            "parameters": [
+              4,
+              10,
+              9
+            ],
+            "g": 1,
+            "shape": [
+              0,
+              0,
+              0,
+              11,
+              7
+            ],
+            "target_constant_first": [
+              4,
+              11,
+              4,
+              9
+            ]
+          }
+        ],
+        [
+          {
+            "point": [
+              3,
+              4,
+              1
+            ],
+            "frame": [
+              0,
+              1,
+              2
+            ],
+            "kind": "I",
+            "parameters": [
+              8,
+              2,
+              9
+            ],
+            "g": 1,
+            "shape": [
+              0,
+              0,
+              0,
+              3,
+              4
+            ],
+            "target_constant_first": [
+              9,
+              11,
+              9,
+              9
+            ]
+          },
+          {
+            "point": [
+              9,
+              10,
+              1
+            ],
+            "frame": [
+              0,
+              1,
+              2
+            ],
+            "kind": "I",
+            "parameters": [
+              6,
+              11,
+              9
+            ],
+            "g": 1,
+            "shape": [
+              0,
+              0,
+              0,
+              10,
+              9
+            ],
+            "target_constant_first": [
+              9,
+              11,
+              9,
+              9
+            ]
+          }
+        ],
+        [
+          {
+            "point": [
+              10,
+              4,
+              1
+            ],
+            "frame": [
+              0,
+              1,
+              2
+            ],
+            "kind": "I",
+            "parameters": [
+              5,
+              11,
+              9
+            ],
+            "g": 1,
+            "shape": [
+              0,
+              0,
+              0,
+              10,
+              9
+            ],
+            "target_constant_first": [
+              9,
+              11,
+              9,
+              9
+            ]
+          },
+          {
+            "point": [
+              4,
+              10,
+              1
+            ],
+            "frame": [
+              0,
+              1,
+              2
+            ],
+            "kind": "I",
+            "parameters": [
+              7,
+              2,
+              9
+            ],
+            "g": 1,
+            "shape": [
+              0,
+              0,
+              0,
+              3,
+              4
+            ],
+            "target_constant_first": [
+              9,
+              11,
+              9,
+              9
+            ]
+          }
+        ],
+        [
+          {
+            "point": [
+              11,
+              4,
+              1
+            ],
+            "frame": [
+              0,
+              1,
+              2
+            ],
+            "kind": "I",
+            "parameters": [
+              12,
+              10,
+              9
+            ],
+            "g": 1,
+            "shape": [
+              0,
+              0,
+              0,
+              11,
+              7
+            ],
+            "target_constant_first": [
+              4,
+              11,
+              4,
+              9
+            ]
+          },
+          {
+            "point": [
+              7,
+              10,
+              1
+            ],
+            "frame": [
+              0,
+              1,
+              2
+            ],
+            "kind": "I",
+            "parameters": [
+              9,
+              3,
+              9
+            ],
+            "g": 1,
+            "shape": [
+              0,
+              0,
+              0,
+              2,
+              6
+            ],
+            "target_constant_first": [
+              4,
+              11,
+              4,
+              9
+            ]
+          }
+        ],
+        [
+          {
+            "point": [
+              2,
+              7,
+              1
+            ],
+            "frame": [
+              0,
+              1,
+              2
+            ],
+            "kind": "I",
+            "parameters": [
+              8,
+              3,
+              7
+            ],
+            "g": 1,
+            "shape": [
+              0,
+              0,
+              0,
+              3,
+              7
+            ],
+            "target_constant_first": [
+              9,
+              3,
+              4,
+              7
+            ]
+          },
+          {
+            "point": [
+              6,
+              11,
+              1
+            ],
+            "frame": [
+              0,
+              1,
+              2
+            ],
+            "kind": "I",
+            "parameters": [
+              6,
+              10,
+              7
+            ],
+            "g": 1,
+            "shape": [
+              0,
+              0,
+              0,
+              10,
+              6
+            ],
+            "target_constant_first": [
+              9,
+              3,
+              4,
+              7
+            ]
+          }
+        ],
+        [
+          {
+            "point": [
+              3,
+              7,
+              1
+            ],
+            "frame": [
+              0,
+              1,
+              2
+            ],
+            "kind": "I",
+            "parameters": [
+              12,
+              2,
+              7
+            ],
+            "g": 1,
+            "shape": [
+              0,
+              0,
+              0,
+              11,
+              9
+            ],
+            "target_constant_first": [
+              4,
+              3,
+              9,
+              7
+            ]
+          },
+          {
+            "point": [
+              9,
+              11,
+              1
+            ],
+            "frame": [
+              0,
+              1,
+              2
+            ],
+            "kind": "I",
+            "parameters": [
+              9,
+              11,
+              7
+            ],
+            "g": 1,
+            "shape": [
+              0,
+              0,
+              0,
+              2,
+              4
+            ],
+            "target_constant_first": [
+              4,
+              3,
+              9,
+              7
+            ]
+          }
+        ],
+        [
+          {
+            "point": [
+              10,
+              7,
+              1
+            ],
+            "frame": [
+              0,
+              1,
+              2
+            ],
+            "kind": "I",
+            "parameters": [
+              1,
+              11,
+              7
+            ],
+            "g": 1,
+            "shape": [
+              0,
+              0,
+              0,
+              2,
+              4
+            ],
+            "target_constant_first": [
+              4,
+              3,
+              9,
+              7
+            ]
+          },
+          {
+            "point": [
+              4,
+              11,
+              1
+            ],
+            "frame": [
+              0,
+              1,
+              2
+            ],
+            "kind": "I",
+            "parameters": [
+              4,
+              2,
+              7
+            ],
+            "g": 1,
+            "shape": [
+              0,
+              0,
+              0,
+              11,
+              9
+            ],
+            "target_constant_first": [
+              4,
+              3,
+              9,
+              7
+            ]
+          }
+        ],
+        [
+          {
+            "point": [
+              11,
+              7,
+              1
+            ],
+            "frame": [
+              0,
+              1,
+              2
+            ],
+            "kind": "I",
+            "parameters": [
+              5,
+              10,
+              7
+            ],
+            "g": 1,
+            "shape": [
+              0,
+              0,
+              0,
+              10,
+              6
+            ],
+            "target_constant_first": [
+              9,
+              3,
+              4,
+              7
+            ]
+          },
+          {
+            "point": [
+              7,
+              11,
+              1
+            ],
+            "frame": [
+              0,
+              1,
+              2
+            ],
+            "kind": "I",
+            "parameters": [
+              7,
+              3,
+              7
+            ],
+            "g": 1,
+            "shape": [
+              0,
+              0,
+              0,
+              3,
+              7
+            ],
+            "target_constant_first": [
+              9,
+              3,
+              4,
+              7
+            ]
+          }
+        ]
+      ]
+    },
+    "complete": true,
+    "lower": 0,
+    "upper": 0,
+    "verified_orbits": [],
+    "rational_classes": 0
+  }
+}

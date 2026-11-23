@@ -1,0 +1,14 @@
+{
+  "engine": "part_xxx",
+  "curves": [
+    {
+      "id": "nonlift",
+      "quartic": "x^4+y^4+z^4-65*x^2*z^2-52*y^2*z^2"
+    }
+  ],
+  "primes": [
+    13
+  ],
+  "max_field_size": 169,
+  "max_precision": 4
+}

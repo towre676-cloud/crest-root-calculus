@@ -1,0 +1,40 @@
+{
+  "decision": "one_listed_ephemeris_remains",
+  "time_system": "Approximate common day scale for this historical replay; timing allowance explained in README",
+  "surviving_hypotheses": [
+    "short orbit"
+  ],
+  "excluded_hypotheses": [
+    "daily alias"
+  ],
+  "feasible_cycle_histories": {
+    "short orbit": 1
+  },
+  "recommended_window": null,
+  "windows": [
+    {
+      "name": "First visit",
+      "hours": 3.6,
+      "outcomes": {
+        "short orbit": "no complete transit"
+      },
+      "distinguished_pairs": []
+    },
+    {
+      "name": "Short-period return",
+      "hours": 3.6,
+      "outcomes": {
+        "short orbit": "complete transit"
+      },
+      "distinguished_pairs": []
+    },
+    {
+      "name": "Long-period return",
+      "hours": 3.6,
+      "outcomes": {
+        "short orbit": "no complete transit"
+      },
+      "distinguished_pairs": []
+    }
+  ]
+}
