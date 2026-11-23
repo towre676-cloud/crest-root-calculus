@@ -1,0 +1,79 @@
+{
+  "row": 36518,
+  "p": 5,
+  "C_counts": [
+    8,
+    40,
+    140
+  ],
+  "E_counts": [
+    6,
+    36,
+    126
+  ],
+  "elliptic_curve": "Y^2=X^3+16",
+  "j": 0,
+  "prym_frobenius": "T**4 + 2*T**3 + 4*T**2 + 10*T + 25",
+  "nontrivial_root_ratio_factors": [
+    "5*U**4 + 6*U**3 + 6*U**2 + 6*U + 5",
+    "25*U**4 + 20*U**3 + 26*U**2 + 20*U + 25"
+  ],
+  "coefficient_prime": 11,
+  "rational_isogeny_sieve": [
+    {
+      "p": 5,
+      "trace": 0,
+      "nonsquare_mod": [
+        11,
+        13,
+        17,
+        19,
+        37
+      ]
+    },
+    {
+      "p": 7,
+      "trace": -1,
+      "nonsquare_mod": [
+        5,
+        11,
+        17
+      ]
+    },
+    {
+      "p": 11,
+      "trace": 0,
+      "nonsquare_mod": [
+        7,
+        13,
+        17,
+        19,
+        43
+      ]
+    },
+    {
+      "p": 17,
+      "trace": 0,
+      "nonsquare_mod": [
+        5,
+        19,
+        37,
+        43,
+        67
+      ]
+    },
+    {
+      "p": 41,
+      "trace": 0,
+      "nonsquare_mod": [
+        13,
+        17,
+        43,
+        163
+      ]
+    }
+  ],
+  "geometric_degrees_all_elliptic_targets": "2*n",
+  "rational_degrees_all_elliptic_targets": "2*n^2 or 6*n^2",
+  "family": "r=t^2+5*k*u*v, k in Z"
+}

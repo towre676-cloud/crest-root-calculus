@@ -1,0 +1,1307 @@
+{
+  "Sutherland row 42243": {
+    "geometric_involutions": 0,
+    "rational_involutions": 0,
+    "hyperflexes_removed": 0,
+    "orbits": []
+  },
+  "Sutherland row 80491": {
+    "geometric_involutions": 0,
+    "rational_involutions": 0,
+    "hyperflexes_removed": 0,
+    "orbits": []
+  },
+  "Sutherland row 55578": {
+    "geometric_involutions": 0,
+    "rational_involutions": 0,
+    "hyperflexes_removed": 0,
+    "orbits": []
+  },
+  "Sutherland row 16968": {
+    "geometric_involutions": 0,
+    "rational_involutions": 0,
+    "hyperflexes_removed": 1,
+    "orbits": []
+  },
+  "Sutherland row 78269": {
+    "geometric_involutions": 0,
+    "rational_involutions": 0,
+    "hyperflexes_removed": 0,
+    "orbits": []
+  },
+  "Sutherland row 36518": {
+    "geometric_involutions": 1,
+    "rational_involutions": 1,
+    "hyperflexes_removed": 0,
+    "orbits": [
+      {
+        "field_polynomial": "T",
+        "orbit_size": 1,
+        "center": [
+          "0",
+          "0",
+          "1"
+        ],
+        "axis": [
+          "2",
+          "-2",
+          "4"
+        ],
+        "quotient": {
+          "frame_columns": [
+            [
+              "1",
+              "1",
+              "0"
+            ],
+            [
+              "-2",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          "t4_coefficient": "1",
+          "A_ascending": [
+            "2",
+            "-8",
+            "4"
+          ],
+          "B_ascending": [
+            "-3",
+            "8",
+            "-4",
+            "2",
+            "-2"
+          ],
+          "D_ascending": [
+            "16",
+            "-64",
+            "96",
+            "-72",
+            "24"
+          ],
+          "map": "[u:v:t] -> [u:v:2*f*t^2+A(u,v)]",
+          "j": "0"
+        }
+      }
+    ]
+  },
+  "Sutherland row 54964": {
+    "geometric_involutions": 0,
+    "rational_involutions": 0,
+    "hyperflexes_removed": 0,
+    "orbits": []
+  },
+  "Sutherland row 23904": {
+    "geometric_involutions": 0,
+    "rational_involutions": 0,
+    "hyperflexes_removed": 1,
+    "orbits": []
+  },
+  "Sutherland row 72418": {
+    "geometric_involutions": 0,
+    "rational_involutions": 0,
+    "hyperflexes_removed": 0,
+    "orbits": []
+  },
+  "Sutherland row 52173": {
+    "geometric_involutions": 0,
+    "rational_involutions": 0,
+    "hyperflexes_removed": 0,
+    "orbits": []
+  },
+  "Sutherland row 32703": {
+    "geometric_involutions": 0,
+    "rational_involutions": 0,
+    "hyperflexes_removed": 0,
+    "orbits": []
+  },
+  "Sutherland row 23640": {
+    "geometric_involutions": 1,
+    "rational_involutions": 1,
+    "hyperflexes_removed": 0,
+    "orbits": [
+      {
+        "field_polynomial": "T + 1",
+        "orbit_size": 1,
+        "center": [
+          "-1",
+          "-1",
+          "1"
+        ],
+        "axis": [
+          "0",
+          "-12",
+          "0"
+        ],
+        "quotient": {
+          "frame_columns": [
+            [
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "-1",
+              "-1",
+              "1"
+            ]
+          ],
+          "t4_coefficient": "3",
+          "A_ascending": [
+            "2",
+            "7",
+            "1"
+          ],
+          "B_ascending": [
+            "0",
+            "1",
+            "3",
+            "1",
+            "0"
+          ],
+          "D_ascending": [
+            "4",
+            "16",
+            "17",
+            "2",
+            "1"
+          ],
+          "map": "[u:v:t] -> [u:v:2*f*t^2+A(u,v)]",
+          "j": "13997521/225"
+        }
+      }
+    ]
+  },
+  "Fermat": {
+    "geometric_involutions": 15,
+    "rational_involutions": 9,
+    "hyperflexes_removed": 12,
+    "orbits": [
+      {
+        "field_polynomial": "T - 2",
+        "orbit_size": 1,
+        "center": [
+          "0",
+          "1",
+          "1"
+        ],
+        "axis": [
+          "0",
+          "4",
+          "4"
+        ],
+        "quotient": {
+          "frame_columns": [
+            [
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "-1",
+              "1"
+            ],
+            [
+              "0",
+              "1",
+              "1"
+            ]
+          ],
+          "t4_coefficient": "2",
+          "A_ascending": [
+            "12",
+            "0",
+            "0"
+          ],
+          "B_ascending": [
+            "2",
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          "D_ascending": [
+            "128",
+            "0",
+            "0",
+            "0",
+            "-8"
+          ],
+          "map": "[u:v:t] -> [u:v:2*f*t^2+A(u,v)]",
+          "j": "1728"
+        }
+      },
+      {
+        "field_polynomial": "T - 1",
+        "orbit_size": 1,
+        "center": [
+          "1",
+          "0",
+          "1"
+        ],
+        "axis": [
+          "4",
+          "0",
+          "4"
+        ],
+        "quotient": {
+          "frame_columns": [
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "-1",
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "0",
+              "1"
+            ]
+          ],
+          "t4_coefficient": "2",
+          "A_ascending": [
+            "12",
+            "0",
+            "0"
+          ],
+          "B_ascending": [
+            "2",
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          "D_ascending": [
+            "128",
+            "0",
+            "0",
+            "0",
+            "-8"
+          ],
+          "map": "[u:v:t] -> [u:v:2*f*t^2+A(u,v)]",
+          "j": "1728"
+        }
+      },
+      {
+        "field_polynomial": "T",
+        "orbit_size": 1,
+        "center": [
+          "0",
+          "0",
+          "1"
+        ],
+        "axis": [
+          "0",
+          "0",
+          "4"
+        ],
+        "quotient": {
+          "frame_columns": [
+            [
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          "t4_coefficient": "1",
+          "A_ascending": [
+            "0",
+            "0",
+            "0"
+          ],
+          "B_ascending": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          "D_ascending": [
+            "-4",
+            "0",
+            "0",
+            "0",
+            "-4"
+          ],
+          "map": "[u:v:t] -> [u:v:2*f*t^2+A(u,v)]",
+          "j": "1728"
+        }
+      },
+      {
+        "field_polynomial": "T + 1",
+        "orbit_size": 1,
+        "center": [
+          "-1",
+          "0",
+          "1"
+        ],
+        "axis": [
+          "-4",
+          "0",
+          "4"
+        ],
+        "quotient": {
+          "frame_columns": [
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "1",
+              "0",
+              "1"
+            ],
+            [
+              "-1",
+              "0",
+              "1"
+            ]
+          ],
+          "t4_coefficient": "2",
+          "A_ascending": [
+            "12",
+            "0",
+            "0"
+          ],
+          "B_ascending": [
+            "2",
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          "D_ascending": [
+            "128",
+            "0",
+            "0",
+            "0",
+            "-8"
+          ],
+          "map": "[u:v:t] -> [u:v:2*f*t^2+A(u,v)]",
+          "j": "1728"
+        }
+      },
+      {
+        "field_polynomial": "T + 2",
+        "orbit_size": 1,
+        "center": [
+          "0",
+          "-1",
+          "1"
+        ],
+        "axis": [
+          "0",
+          "-4",
+          "4"
+        ],
+        "quotient": {
+          "frame_columns": [
+            [
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "1"
+            ],
+            [
+              "0",
+              "-1",
+              "1"
+            ]
+          ],
+          "t4_coefficient": "2",
+          "A_ascending": [
+            "12",
+            "0",
+            "0"
+          ],
+          "B_ascending": [
+            "2",
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          "D_ascending": [
+            "128",
+            "0",
+            "0",
+            "0",
+            "-8"
+          ],
+          "map": "[u:v:t] -> [u:v:2*f*t^2+A(u,v)]",
+          "j": "1728"
+        }
+      },
+      {
+        "field_polynomial": "T**2 + 1",
+        "orbit_size": 2,
+        "center": [
+          "T",
+          "0",
+          "1"
+        ],
+        "axis": [
+          "-4*T",
+          "0",
+          "4"
+        ],
+        "quotient": {
+          "frame_columns": [
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "-T",
+              "0",
+              "1"
+            ],
+            [
+              "T",
+              "0",
+              "1"
+            ]
+          ],
+          "t4_coefficient": "2",
+          "A_ascending": [
+            "12",
+            "0",
+            "0"
+          ],
+          "B_ascending": [
+            "2",
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          "D_ascending": [
+            "128",
+            "0",
+            "0",
+            "0",
+            "-8"
+          ],
+          "map": "[u:v:t] -> [u:v:2*f*t^2+A(u,v)]",
+          "j": "1728"
+        }
+      },
+      {
+        "field_polynomial": "T**2 + 4",
+        "orbit_size": 2,
+        "center": [
+          "0",
+          "T/2",
+          "1"
+        ],
+        "axis": [
+          "0",
+          "-2*T",
+          "4"
+        ],
+        "quotient": {
+          "frame_columns": [
+            [
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "-T/2",
+              "1"
+            ],
+            [
+              "0",
+              "T/2",
+              "1"
+            ]
+          ],
+          "t4_coefficient": "2",
+          "A_ascending": [
+            "12",
+            "0",
+            "0"
+          ],
+          "B_ascending": [
+            "2",
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          "D_ascending": [
+            "128",
+            "0",
+            "0",
+            "0",
+            "-8"
+          ],
+          "map": "[u:v:t] -> [u:v:2*f*t^2+A(u,v)]",
+          "j": "1728"
+        }
+      },
+      {
+        "field_polynomial": "T - 1",
+        "orbit_size": 1,
+        "center": [
+          "1",
+          "1",
+          "0"
+        ],
+        "axis": [
+          "4",
+          "4",
+          "0"
+        ],
+        "quotient": {
+          "frame_columns": [
+            [
+              "-1",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "1",
+              "0"
+            ]
+          ],
+          "t4_coefficient": "2",
+          "A_ascending": [
+            "0",
+            "0",
+            "12"
+          ],
+          "B_ascending": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "2"
+          ],
+          "D_ascending": [
+            "-8",
+            "0",
+            "0",
+            "0",
+            "128"
+          ],
+          "map": "[u:v:t] -> [u:v:2*f*t^2+A(u,v)]",
+          "j": "1728"
+        }
+      },
+      {
+        "field_polynomial": "T",
+        "orbit_size": 1,
+        "center": [
+          "0",
+          "1",
+          "0"
+        ],
+        "axis": [
+          "0",
+          "4",
+          "0"
+        ],
+        "quotient": {
+          "frame_columns": [
+            [
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ]
+          ],
+          "t4_coefficient": "1",
+          "A_ascending": [
+            "0",
+            "0",
+            "0"
+          ],
+          "B_ascending": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          "D_ascending": [
+            "-4",
+            "0",
+            "0",
+            "0",
+            "-4"
+          ],
+          "map": "[u:v:t] -> [u:v:2*f*t^2+A(u,v)]",
+          "j": "1728"
+        }
+      },
+      {
+        "field_polynomial": "T + 1",
+        "orbit_size": 1,
+        "center": [
+          "-1",
+          "1",
+          "0"
+        ],
+        "axis": [
+          "-4",
+          "4",
+          "0"
+        ],
+        "quotient": {
+          "frame_columns": [
+            [
+              "1",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "-1",
+              "1",
+              "0"
+            ]
+          ],
+          "t4_coefficient": "2",
+          "A_ascending": [
+            "0",
+            "0",
+            "12"
+          ],
+          "B_ascending": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "2"
+          ],
+          "D_ascending": [
+            "-8",
+            "0",
+            "0",
+            "0",
+            "128"
+          ],
+          "map": "[u:v:t] -> [u:v:2*f*t^2+A(u,v)]",
+          "j": "1728"
+        }
+      },
+      {
+        "field_polynomial": "T**2 + 1",
+        "orbit_size": 2,
+        "center": [
+          "T",
+          "1",
+          "0"
+        ],
+        "axis": [
+          "-4*T",
+          "4",
+          "0"
+        ],
+        "quotient": {
+          "frame_columns": [
+            [
+              "-T",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "T",
+              "1",
+              "0"
+            ]
+          ],
+          "t4_coefficient": "2",
+          "A_ascending": [
+            "0",
+            "0",
+            "12"
+          ],
+          "B_ascending": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "2"
+          ],
+          "D_ascending": [
+            "-8",
+            "0",
+            "0",
+            "0",
+            "128"
+          ],
+          "map": "[u:v:t] -> [u:v:2*f*t^2+A(u,v)]",
+          "j": "1728"
+        }
+      },
+      {
+        "field_polynomial": "T",
+        "orbit_size": 1,
+        "center": [
+          "1",
+          "0",
+          "0"
+        ],
+        "axis": [
+          "4",
+          "0",
+          "0"
+        ],
+        "quotient": {
+          "frame_columns": [
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "0",
+              "0"
+            ]
+          ],
+          "t4_coefficient": "1",
+          "A_ascending": [
+            "0",
+            "0",
+            "0"
+          ],
+          "B_ascending": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          "D_ascending": [
+            "-4",
+            "0",
+            "0",
+            "0",
+            "-4"
+          ],
+          "map": "[u:v:t] -> [u:v:2*f*t^2+A(u,v)]",
+          "j": "1728"
+        }
+      }
+    ]
+  },
+  "Klein": {
+    "geometric_involutions": 21,
+    "rational_involutions": 0,
+    "hyperflexes_removed": 0,
+    "orbits": [
+      {
+        "field_polynomial": "T**3 + T**2 - 2*T - 1",
+        "orbit_size": 3,
+        "center": [
+          "T",
+          "-T - 1",
+          "1"
+        ],
+        "axis": [
+          "-6*T - 2",
+          "2*T**2 + 8*T + 4",
+          "-2*T**2 - 2*T - 2"
+        ],
+        "quotient": {
+          "frame_columns": [
+            [
+              "T**2 + T - 1",
+              "1",
+              "0"
+            ],
+            [
+              "-T**2 - T + 2",
+              "0",
+              "1"
+            ],
+            [
+              "T",
+              "-T - 1",
+              "1"
+            ]
+          ],
+          "t4_coefficient": "-4*T**2 - 5*T - 2",
+          "A_ascending": [
+            "-6*T**2 - 3*T + 9",
+            "12*T**2 + 18*T",
+            "-3*T**2 - 12*T - 6"
+          ],
+          "B_ascending": [
+            "-T**2 - T + 2",
+            "-4*T**2 - 2*T + 10",
+            "9*T**2 + 6*T - 18",
+            "-6*T**2 - 6*T + 10",
+            "2*T**2 + 3*T - 1"
+          ],
+          "D_ascending": [
+            "-35*T**2 - 42*T + 77",
+            "-28*T**2 - 84*T - 112",
+            "420*T**2 + 924*T + 294",
+            "-476*T**2 - 1120*T - 364",
+            "203*T**2 + 427*T + 147"
+          ],
+          "map": "[u:v:t] -> [u:v:2*f*t^2+A(u,v)]",
+          "j": "-3375"
+        }
+      },
+      {
+        "field_polynomial": "T**6 - 5*T**5 + 11*T**4 - 13*T**3 + 9*T**2 - 3*T + 1",
+        "orbit_size": 6,
+        "center": [
+          "T",
+          "T**5 - 4*T**4 + 6*T**3 - 4*T**2 + 2*T",
+          "1"
+        ],
+        "axis": [
+          "-6*T**4 + 18*T**3 - 18*T**2 + 6*T - 2",
+          "6*T**5 - 30*T**4 + 58*T**3 - 48*T**2 + 18*T - 6",
+          "-2*T**5 + 4*T**4 + 2*T**3 - 10*T**2 + 6*T - 2"
+        ],
+        "quotient": {
+          "frame_columns": [
+            [
+              "-T**3 + 3*T**2 - 3*T",
+              "1",
+              "0"
+            ],
+            [
+              "-T**5 + 5*T**4 - 11*T**3 + 13*T**2 - 9*T + 2",
+              "0",
+              "1"
+            ],
+            [
+              "T",
+              "T**5 - 4*T**4 + 6*T**3 - 4*T**2 + 2*T",
+              "1"
+            ]
+          ],
+          "t4_coefficient": "-4*T**5 + 10*T**4 - 4*T**3 - 8*T**2 + 3*T - 2",
+          "A_ascending": [
+            "-6*T**5 + 27*T**4 - 54*T**3 + 60*T**2 - 39*T + 9",
+            "12*T**5 - 60*T**4 + 108*T**3 - 78*T**2 + 18*T - 12",
+            "9*T**5 - 33*T**4 + 42*T**3 - 18*T**2 + 9*T"
+          ],
+          "B_ascending": [
+            "-T**5 + 5*T**4 - 11*T**3 + 13*T**2 - 9*T + 2",
+            "6*T**5 - 30*T**4 + 64*T**3 - 70*T**2 + 40*T - 6",
+            "9*T**5 - 45*T**4 + 96*T**3 - 102*T**2 + 51*T",
+            "6*T**5 - 30*T**4 + 60*T**3 - 54*T**2 + 18*T + 4",
+            "3*T**5 - 12*T**4 + 18*T**3 - 10*T**2 + 2*T + 1"
+          ],
+          "D_ascending": [
+            "-42*T**5 + 168*T**4 - 252*T**3 + 133*T**2 + 35*T - 77",
+            "84*T**4 - 280*T**3 + 252*T**2 + 56*T - 28",
+            "-924*T**5 + 4116*T**4 - 7014*T**3 + 5082*T**2 - 1890*T + 630",
+            "-476*T**5 + 1064*T**4 + 28*T**3 - 1708*T**2 + 336*T - 364",
+            "350*T**5 - 1750*T**4 + 3297*T**3 - 2667*T**2 + 917*T - 350"
+          ],
+          "map": "[u:v:t] -> [u:v:2*f*t^2+A(u,v)]",
+          "j": "-3375"
+        }
+      },
+      {
+        "field_polynomial": "T**6 + 2*T**5 + 4*T**4 + T**3 + 2*T**2 - 3*T + 1",
+        "orbit_size": 6,
+        "center": [
+          "T",
+          "T**5/2 + 3*T**4/2 + 5*T**3/2 + T**2 - 1/2",
+          "1"
+        ],
+        "axis": [
+          "-3*T**5/2 - 9*T**4/2 - 9*T**3/2 + 3*T - 1/2",
+          "3*T**4 + 4*T**3 + 3*T**2 - 9*T + 3",
+          "-T**5/2 + 3*T**4/2 + 5*T**3/2 + 5*T**2 - 2*T + 3/2"
+        ],
+        "quotient": {
+          "frame_columns": [
+            [
+              "3*T**5/4 + 9*T**4/4 + 17*T**3/4 + 3*T**2 + 3*T/2 - 3/4",
+              "1",
+              "0"
+            ],
+            [
+              "-T**5/4 - 3*T**4/4 - 7*T**3/4 - 2*T**2 - 5*T/2 - 3/4",
+              "0",
+              "1"
+            ],
+            [
+              "T",
+              "T**5/2 + 3*T**4/2 + 5*T**3/2 + T**2 - 1/2",
+              "1"
+            ]
+          ],
+          "t4_coefficient": "-T**5 + 2*T**4 + 3*T**3 + 7*T**2 - 6*T + 2",
+          "A_ascending": [
+            "-3*T**5/2 - 3*T**4 - 15*T**3/2 - 15*T**2/2 - 21*T/2 - 3",
+            "9*T**5/2 + 39*T**4/2 + 63*T**3/2 + 24*T**2 - 9*T + 3/2",
+            "3*T**5 + 21*T**4/2 + 15*T**3 + 9*T**2/2 - 15*T/2 + 3/2"
+          ],
+          "B_ascending": [
+            "-T**5/4 - 3*T**4/4 - 7*T**3/4 - 2*T**2 - 5*T/2 - 3/4",
+            "-11*T**5/2 - 27*T**4/2 - 57*T**3/2 - 19*T**2 - 20*T + 17/2",
+            "21*T**5/2 + 24*T**4 + 99*T**3/2 + 51*T**2/2 + 57*T/2 - 27",
+            "-3*T**5 - 6*T**4 - 9*T**3 + 3*T**2 + 3*T + 10",
+            "-7*T**5/4 - 15*T**4/4 - 25*T**3/4 - 3*T**2/2 - 3*T + 1/4"
+          ],
+          "D_ascending": [
+            "161*T**5/4 + 399*T**4/4 + 791*T**3/4 + 140*T**2 + 273*T/2 - 77/4",
+            "-91*T**5 - 175*T**4 - 301*T**3 - 42*T**2 - 196*T + 105",
+            "-525*T**5/2 - 231*T**4/2 - 147*T**3/2 + 966*T**2 - 777*T + 441/2",
+            "-119*T**5 + 301*T**4 + 483*T**3 + 1022*T**2 - 1176*T + 301",
+            "133*T**5/4 + 1099*T**4/4 + 1519*T**3/4 + 308*T**2 - 917*T/2 + 567/4"
+          ],
+          "map": "[u:v:t] -> [u:v:2*f*t^2+A(u,v)]",
+          "j": "-3375"
+        }
+      },
+      {
+        "field_polynomial": "T**6 + 2*T**5 + 4*T**4 + 8*T**3 + 9*T**2 + 4*T + 1",
+        "orbit_size": 6,
+        "center": [
+          "T",
+          "-T**5 - T**4 - 3*T**3 - 5*T**2 - 4*T - 1",
+          "1"
+        ],
+        "axis": [
+          "-3*T**5 - 3*T**4 - 9*T**3 - 18*T**2 - 9*T - 2",
+          "-3*T**4 + T**3 - 9*T**2 - 6*T - 3",
+          "3*T**5 + 4*T**4 + 8*T**3 + 19*T**2 + 13*T + 3"
+        ],
+        "quotient": {
+          "frame_columns": [
+            [
+              "T**3/2 + 3*T/2 + 3/2",
+              "1",
+              "0"
+            ],
+            [
+              "-3*T**5/2 - 5*T**4/2 - 5*T**3 - 10*T**2 - 10*T - 3/2",
+              "0",
+              "1"
+            ],
+            [
+              "T",
+              "-T**5 - T**4 - 3*T**3 - 5*T**2 - 4*T - 1",
+              "1"
+            ]
+          ],
+          "t4_coefficient": "4*T**5 + 5*T**4 + 10*T**3 + 25*T**2 + 14*T + 4",
+          "A_ascending": [
+            "-6*T**5 - 21*T**4/2 - 21*T**3 - 81*T**2/2 - 81*T/2 - 6",
+            "-6*T**4 + 3*T**3 - 18*T**2 - 3*T + 3",
+            "-15*T**5/2 - 9*T**4/2 - 21*T**3 - 30*T**2 - 18*T - 9/2"
+          ],
+          "B_ascending": [
+            "-3*T**5/2 - 5*T**4/2 - 5*T**3 - 10*T**2 - 10*T - 3/2",
+            "-3*T**4 - 4*T**3 - 9*T**2 - 17*T - 14",
+            "-27*T**5/2 - 51*T**4/2 - 48*T**3 - 99*T**2 - 102*T - 51/2",
+            "-6*T**5 - 6*T**4 - 15*T**3 - 30*T**2 - 15*T + 7",
+            "2*T**5 + 4*T**4 + 13*T**3/2 + 16*T**2 + 27*T/2 + 9/2"
+          ],
+          "D_ascending": [
+            "-119*T**5/2 - 119*T**4 - 217*T**3 - 903*T**2/2 - 945*T/2 - 315/2",
+            "-14*T**5 - 84*T**4 - 42*T**3 - 238*T**2 - 224*T",
+            "-672*T**5 - 525*T**4 - 1869*T**3 - 3171*T**2 - 1638*T - 483",
+            "602*T**5 + 784*T**4 + 1568*T**3 + 3794*T**2 + 1834*T + 602",
+            "-175*T**4 + 77*T**3/2 - 525*T**2 - 567*T/2 - 217/2"
+          ],
+          "map": "[u:v:t] -> [u:v:2*f*t^2+A(u,v)]",
+          "j": "-3375"
+        }
+      }
+    ]
+  },
+  "primitive quartic cover": {
+    "geometric_involutions": 5,
+    "rational_involutions": 3,
+    "hyperflexes_removed": 0,
+    "orbits": [
+      {
+        "field_polynomial": "T",
+        "orbit_size": 1,
+        "center": [
+          "0",
+          "0",
+          "1"
+        ],
+        "axis": [
+          "0",
+          "0",
+          "32"
+        ],
+        "quotient": {
+          "frame_columns": [
+            [
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          "t4_coefficient": "8",
+          "A_ascending": [
+            "17",
+            "0",
+            "-2"
+          ],
+          "B_ascending": [
+            "2",
+            "0",
+            "1",
+            "0",
+            "-3"
+          ],
+          "D_ascending": [
+            "225",
+            "0",
+            "-100",
+            "0",
+            "100"
+          ],
+          "map": "[u:v:t] -> [u:v:2*f*t^2+A(u,v)]",
+          "j": "21952/9"
+        }
+      },
+      {
+        "field_polynomial": "T**2 + 2",
+        "orbit_size": 2,
+        "center": [
+          "0",
+          "T",
+          "1"
+        ],
+        "axis": [
+          "0",
+          "18*T",
+          "-36"
+        ],
+        "quotient": {
+          "frame_columns": [
+            [
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "-T",
+              "1"
+            ],
+            [
+              "0",
+              "T",
+              "1"
+            ]
+          ],
+          "t4_coefficient": "-18",
+          "A_ascending": [
+            "164",
+            "0",
+            "-4"
+          ],
+          "B_ascending": [
+            "-18",
+            "0",
+            "-4",
+            "0",
+            "-3"
+          ],
+          "D_ascending": [
+            "25600",
+            "0",
+            "-1600",
+            "0",
+            "-200"
+          ],
+          "map": "[u:v:t] -> [u:v:2*f*t^2+A(u,v)]",
+          "j": "97336/81"
+        }
+      },
+      {
+        "field_polynomial": "T",
+        "orbit_size": 1,
+        "center": [
+          "0",
+          "1",
+          "0"
+        ],
+        "axis": [
+          "0",
+          "8",
+          "0"
+        ],
+        "quotient": {
+          "frame_columns": [
+            [
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ]
+          ],
+          "t4_coefficient": "2",
+          "A_ascending": [
+            "17",
+            "0",
+            "1"
+          ],
+          "B_ascending": [
+            "8",
+            "0",
+            "-2",
+            "0",
+            "-3"
+          ],
+          "D_ascending": [
+            "225",
+            "0",
+            "50",
+            "0",
+            "25"
+          ],
+          "map": "[u:v:t] -> [u:v:2*f*t^2+A(u,v)]",
+          "j": "21952/9"
+        }
+      },
+      {
+        "field_polynomial": "T",
+        "orbit_size": 1,
+        "center": [
+          "1",
+          "0",
+          "0"
+        ],
+        "axis": [
+          "-12",
+          "0",
+          "0"
+        ],
+        "quotient": {
+          "frame_columns": [
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "0",
+              "0"
+            ]
+          ],
+          "t4_coefficient": "-3",
+          "A_ascending": [
+            "-2",
+            "0",
+            "1"
+          ],
+          "B_ascending": [
+            "8",
+            "0",
+            "17",
+            "0",
+            "2"
+          ],
+          "D_ascending": [
+            "100",
+            "0",
+            "200",
+            "0",
+            "25"
+          ],
+          "map": "[u:v:t] -> [u:v:2*f*t^2+A(u,v)]",
+          "j": "21952/9"
+        }
+      }
+    ]
+  }
+}
