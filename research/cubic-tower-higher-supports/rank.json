@@ -1,9 +1,0 @@
-{
-  "number_of_good_primes": 2055,
-  "first_good_prime": 41,
-  "last_good_prime": 18329,
-  "columns": 2047,
-  "coefficient_prime": 127,
-  "rank": 2047,
-  "trace_matrix_int32_little_endian_sha256": "e07f55b091a306437f89b3c0a0adbd1dce4b09d87f27e5da9e61b9f9858deadb"
-}

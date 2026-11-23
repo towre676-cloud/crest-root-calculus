@@ -1,9 +1,0 @@
-{
-  "publication": "UK DEEP Report 2.11, 07 & 09LT, table 3-5, printed page 61",
-  "source": "https://assets.publishing.service.gov.uk/media/6717b9ace319b91ef09e3851/2.11_DEEP_07LT___09LT.pdf",
-  "pdf_sha256": "7cc3d5632118c849f8c0728e7a512bec1dbfec10749dee1e0947b4cd0027afbd",
-  "homes": [
-    {"id":"07LT","before":[352,12],"after":[310,34],"published_change":[42,36]},
-    {"id":"09LT","before":[228,14],"after":[218,6],"published_change":[10,15]}
-  ]
-}
