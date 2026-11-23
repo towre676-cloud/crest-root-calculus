@@ -24,6 +24,8 @@ r_{ij}=D^{6-i-2j}N_{ij}(s,B/D,c)\bmod q .
 $$
 These are polynomials. Indeed, in the coefficient $[t^i z^j]G$ the power of $b$ is at most $6-i-2j$, and the weight is additive under square completion. The reduced implementation performs polynomial multiplication modulo the monic $q$ at each step. A second check uses the unmodified original generators before substitution.
 
+Every residual solution on $h\ne0$ has a separable cubic target. Absorb $s,b,c$ into the linear substitution $(X,Y,Z)\mapsto(X-sY,Y,Z-bX-cY)$ in the adapted quartic and call the result $F'$. Then $t^2G(t,z)=F'(-t,-t^2,z)$. The mark $[0:0:1]$ has tangent $Y=0$, so $G(0,z)=z^2(\alpha+\beta z)$ with $\beta\ne0$, the negative coefficient of $YZ^3$ in $F'$. Since $S(0,z)$ has degree at most one, $K$ has degree three. If $K$ had a repeated root $z_0$, each root of the monic $S(t,z_0)$ would give a singular point of $G=h(S^2-K)$. For $t\ne0$ the displayed substitution is an isomorphism onto the plane open $XY\ne0$, with inverse $t=Y/X$, $z=-YZ/X^2$. Smoothness forces $S(t,z_0)=t^3$. Since $G(0,z_0)=G_z(0,z_0)=0$, the expression for $G(0,z)$ gives $z_0=0$. Now $S=t^3+z(f_0+f_1t)$, and the coefficients of $t^2$, $t^3$ and $tz$ in $G$ vanish. Up to sign these are the coefficients of $X^4$, $X^3Y$ and $X^3Z$ in $F'$. Their vanishing makes $[1:0:0]$ singular, a contradiction. The fixed-degree elliptic-quotient finiteness theorem therefore applies to every residual solution on this open chart.
+
 For a linear combination $r$ of the four rows, let $M_r$ be multiplication by $r$ on $1,c,c^2,c^3$. Cramer's rule gives
 $$
 e(s)=\det M_r,\qquad u_r=(1,c,c^2,c^3)\operatorname{adj}(M_r)(1,0,0,0)^{\mathsf T},\qquad u_r r=e(s)\pmod q.

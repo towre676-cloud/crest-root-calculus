@@ -7,6 +7,7 @@ import subprocess
 import sympy as sp
 
 from rank import polynomial
+from direct_counts import verify as verify_direct_counts
 
 HERE = Path(__file__).resolve().parent
 
@@ -28,6 +29,7 @@ def torsion_bound(rows):
 
 def verify(binary=None):
     d = json.loads((HERE / "torsion-orders.json").read_text())
+    verify_direct_counts(d["small_fibres"])
     common_prime = d["common_good_prime"]
     groups = {}
     code = ["default(parisizemax,500000000);"]
