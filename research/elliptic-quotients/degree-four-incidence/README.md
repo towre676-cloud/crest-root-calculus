@@ -1,6 +1,6 @@
 # A projective incidence for primitive degree-four elliptic maps
 
-For any smooth plane quartic over the rationals, the three elimination ideals in [incidence.py](incidence.py) cut out exactly the geometric primitive degree-four classes, up to target isomorphism and translation, in the projective plane of differentials. Their coefficients retain Galois conjugacy. The supplied [certificate verifier](verify_projective.py) checks explicit map formulas and their primitivity on the [previous degree-four example](../primitive-degree-four/README.md). The nontrivial unspecialized Gröbner systems were generated. Their full elimination remains unbenchmarked.
+For any smooth plane quartic over the rationals, the three elimination ideals in [incidence.py](incidence.py) cut out exactly the geometric primitive degree-four classes, up to target isomorphism and translation, in the projective plane of differentials. Their coefficients retain Galois conjugacy. The supplied [certificate verifier](verify_projective.py) checks explicit map formulas and their primitivity on the [previous degree-four example](../primitive-degree-four/README.md). A later benchmark gives the radical of the unrestricted positive chart on an involution-free example and times the raw elimination under a fixed budget. [Benchmark and exact solution](../flex-fiber-benchmark/README.md)
 
 ## Why three plane quartics suffice
 

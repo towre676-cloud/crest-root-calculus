@@ -1,4 +1,5 @@
 """Replay the 23 November research release from either a checkout or the ZIP."""
+import argparse
 import json
 import os
 from pathlib import Path
@@ -10,8 +11,8 @@ HERE = Path(__file__).resolve().parent
 ELLIPTIC = HERE / "elliptic-quotients"
 
 
-def run(script, receipt=None):
-    result = subprocess.run([sys.executable, "-B", str(script)], cwd=script.parent,
+def run(script, receipt=None, args=()):
+    result = subprocess.run([sys.executable, "-B", str(script), *args], cwd=script.parent,
                             capture_output=True, text=True, encoding="utf-8",
                             env={**os.environ, "PYTHONIOENCODING": "utf-8"})
     if result.returncode:
@@ -24,6 +25,17 @@ def run(script, receipt=None):
 
 
 def main():
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--workers", type=int, default=min(4,os.cpu_count() or 1),
+                        help="Number of processes for independent local polynomial checks")
+    parser.add_argument("--recount", action="store_true",
+                        help="Recompute every stored higher-support matrix from the curve equations")
+    options=parser.parse_args()
+    if options.workers<1:
+        parser.error("Choose at least one worker")
+    local_args=["--workers",str(options.workers)]
+    if options.recount:
+        local_args.append("--recount")
     run(HERE.parent / "applications/atlas/original/replay.py")
     # The blind spectrum replay also recomputes both individual bielliptic proofs.
     run(ELLIPTIC / "blind-degree-spectra/verify.py", "receipt.json")
@@ -39,7 +51,15 @@ def main():
     run(ELLIPTIC / "polarized-reduction/verify.py")
     run(HERE / "cubic-tower-higher-supports/prime_rank.py")
     run(HERE / "cubic-tower-higher-supports/mod_three.py")
-    print("All fourteen research verification groups passed.")
+    run(ELLIPTIC / "flex-fiber-benchmark/verify.py")
+    run(ELLIPTIC / "cartier-degree-four/verify.py")
+    run(HERE / "cubic-tower-cartier/verify.py")
+    run(HERE / "cubic-tower-geometric-separation/verify.py",args=local_args)
+    run(HERE / "cubic-tower-size-five/verify.py",args=local_args)
+    run(HERE / "cubic-tower-size-five/six_index.py",args=local_args)
+    run(HERE / "cubic-tower-stage-seven/verify.py",args=local_args)
+    run(HERE / "cubic-tower-size-five/high_orbits.py",args=["--workers",str(options.workers)])
+    print("All twenty-two research verification groups passed.")
 
 
 if __name__ == "__main__":
