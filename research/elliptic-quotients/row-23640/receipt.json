@@ -1,0 +1,146 @@
+{
+  "row": 23640,
+  "height_one_discovery": [
+    {
+      "center": [
+        1,
+        1,
+        -1
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "matrix": [
+        [
+          1,
+          -2,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          2,
+          1
+        ]
+      ]
+    }
+  ],
+  "quotient": {
+    "double_cover_discriminant": 57600,
+    "I": 241,
+    "J": -7378,
+    "j": "13997521/225"
+  },
+  "family": {
+    "base_parameter": "integer k",
+    "good_reduction": 23,
+    "fixed_point_u_v_t": [
+      1,
+      0,
+      0
+    ],
+    "elliptic_model": "Y^2=X*(X-1)*(X+15)"
+  },
+  "prym": {
+    "p": 23,
+    "C_counts": [
+      30,
+      608,
+      12186
+    ],
+    "E_counts": [
+      24,
+      576,
+      12168
+    ],
+    "elliptic_frobenius": "T**2 + 23",
+    "prym_frobenius": "T**4 + 6*T**3 + 34*T**2 + 138*T + 529",
+    "irreducibility_prime": 11,
+    "root_ratio_factors": [
+      "23*U**4 + 12*U**3 + 14*U**2 + 12*U + 23",
+      "529*U**4 + 736*U**3 + 558*U**2 + 736*U + 529"
+    ]
+  },
+  "independent_row_check": {
+    "7": {
+      "C_counts": [
+        10,
+        64,
+        382
+      ],
+      "E_counts": [
+        8,
+        64,
+        344
+      ],
+      "Jacobian": "T**6 + 2*T**5 + 9*T**4 + 28*T**3 + 63*T**2 + 98*T + 343",
+      "elliptic_quotient": "T**2 + 7",
+      "Prym": "T**4 + 2*T**3 + 2*T**2 + 14*T + 49",
+      "Prym_over_F49": "U**4 + 46*U**2 + 2401"
+    },
+    "13": {
+      "C_counts": [
+        18,
+        224,
+        2106
+      ],
+      "E_counts": [
+        16,
+        192,
+        2128
+      ],
+      "Jacobian": "T**6 + 4*T**5 + 35*T**4 + 88*T**3 + 455*T**2 + 676*T + 2197",
+      "elliptic_quotient": "T**2 + 2*T + 13",
+      "Prym": "(T**2 - 2*T + 13)*(T**2 + 4*T + 13)"
+    }
+  },
+  "rational_isogeny_sieve": {
+    "7": {
+      "trace": 0,
+      "discriminant": -28,
+      "excludes": [
+        3,
+        5,
+        13,
+        17,
+        19
+      ]
+    },
+    "17": {
+      "trace": 2,
+      "discriminant": -64,
+      "excludes": [
+        3,
+        7,
+        11,
+        19,
+        43,
+        67,
+        163
+      ]
+    },
+    "23": {
+      "trace": 0,
+      "discriminant": -92,
+      "excludes": [
+        5,
+        7,
+        11,
+        17,
+        19,
+        37,
+        43,
+        67
+      ]
+    }
+  },
+  "geometric_map_degrees": "2*n (n>=1)",
+  "geometric_degree_three_classes": 0,
+  "rational_map_degrees": "2*n^2 or 4*n^2 (n>=1)"
+}

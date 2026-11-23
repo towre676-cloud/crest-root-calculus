@@ -319,6 +319,10 @@ The integrated research archive is unusually large because it keeps historical w
 
 > **Note:** In the present archive, the Part XXX quick-start file is `crest/README_PART_XXX.md`. Historical directories contain additional specialized READMEs.
 
+## The 57 research questions
+
+The November 23 register traces the original 57 mathematical, engineering and publication items through Part XXX. The twelve-curve blind atlas now has a degree-three verdict on all twelve rows. The last curve, Sutherland 23640, has a hidden degree-two map. Every elliptic map from it factors through that map. An infinite family through the same curve has all positive even degrees over an algebraic closure and precisely $2n^2$ or $4n^2$ over the rationals. [Research register](research/backlog-2026-11-23.md) · [Proof, equations and replay](research/elliptic-quotients/row-23640/README.md) · [Download the research packet](downloads/crest-root-research-23640.zip)
+
 ## What is proved, and what remains difficult?
 
 The Part XXX work provides a **theoretical terminating decision procedure for geometric degree-three quotient classes of smooth plane quartics over the rationals**, together with concrete certificates for worked examples. However, the finite fields and lifting precision required by the general procedure can become impractically large. A prior twelve-chart elimination procedure also exceeded 1,600 seconds on representative inputs. The fast examples above are not a promise of fast performance on arbitrary curves.
