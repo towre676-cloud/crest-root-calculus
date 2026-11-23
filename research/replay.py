@@ -59,7 +59,13 @@ def main():
     run(HERE / "cubic-tower-size-five/six_index.py",args=local_args)
     run(HERE / "cubic-tower-stage-seven/verify.py",args=local_args)
     run(HERE / "cubic-tower-size-five/high_orbits.py",args=["--workers",str(options.workers)])
-    print("All twenty-two research verification groups passed.")
+    run(HERE / "chart-one-cofactors/verify.py", args=["--workers",str(options.workers)])
+    run(HERE / "point-free-riemann-roch/verify.py")
+    run(HERE / "local-global-correspondences/verify.py")
+    run(ELLIPTIC / "index-four-descent/verify.py", "receipt.json")
+    run(HERE / "genus37-rank/verify.py", "receipt.json")
+    run(HERE / "monograph-publication/verify.py", "receipt.json")
+    print("All 28 research verification groups passed.")
 
 
 if __name__ == "__main__":

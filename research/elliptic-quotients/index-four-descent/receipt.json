@@ -1,0 +1,87 @@
+{
+  "verified_cases": [
+    "diagonal",
+    "deformation",
+    "mixed"
+  ],
+  "complete_genus_one_degrees": [
+    "2*n^2",
+    "4*n^2"
+  ],
+  "complete_pointed_degrees": [
+    "4*n^2",
+    "8*n^2"
+  ],
+  "progression_modulus": 82944785,
+  "good_prime_traces": {
+    "5": [
+      2,
+      -4,
+      0
+    ],
+    "11": [
+      0,
+      0,
+      -4
+    ],
+    "17": [
+      -2,
+      8,
+      0
+    ],
+    "19": [
+      0,
+      0,
+      -2
+    ],
+    "23": [
+      0,
+      0,
+      0
+    ],
+    "29": [
+      -4,
+      10,
+      4
+    ]
+  },
+  "local_non_diagonal_obstruction": {
+    "prime": 3,
+    "global_valuation_shift": 0,
+    "coordinate_scales": [
+      0,
+      0,
+      0
+    ],
+    "diagonal_valuations": [
+      0,
+      1,
+      2
+    ],
+    "competing_indices": [
+      0,
+      2
+    ],
+    "nonsquare_unit_ratio": 2,
+    "least_mixed_valuation": 3
+  },
+  "diagonal_cubic_orbit": {
+    "odd_primes": [
+      3,
+      7
+    ],
+    "valuation_rows": [
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "geometric_degree_three_classes": 16,
+    "galois_orbit_size": 16,
+    "least_degree_of_a_direction_field": 16
+  }
+}

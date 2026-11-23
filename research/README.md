@@ -2,6 +2,19 @@
 
 **23 November 2026.** The degree-four search recovers a map from a smooth quartic equation and proves that it stays primitive over an algebraic closure. One example has nineteen geometric degree-four classes. Fifteen factor through double covers, and four are primitive. In degree three the same source has four classes, all defined over $\mathbb Q(\sqrt{-2})$. On an infinite family, all primitive maps in every degree can be counted, and a single curve admits primitive maps of arbitrarily large degree. [Degree-four construction](elliptic-quotients/primitive-degree-four/README.md) · [The nineteen classes](elliptic-quotients/a3-spectrum/README.md) · [All-degree family theorem](elliptic-quotients/primitive-degree-spectrum/README.md)
 
+## Results from the priority research
+
+| Register | Result | Evidence |
+|---|---|---|
+| G01 | Complete geometric chart-I solutions and original-generator cofactor certificates at a specified rational mark, with an extension to algebraic marks. | [Cofactors and replay](chart-one-cofactors/README.md) |
+| G05 | Riemann–Roch spaces for rational signed divisors on embedded curves, symmetric-power searches and a recovered genus-one quotient on a curve without real points. | [Point-free engine](point-free-riemann-roch/README.md) |
+| F01 | Complete rational Richelot recognition from genus-two equations, exact Hom lattices in worked cases, and all-prime rational isogeny spectra for a varying family. General motives remain open. | [Correspondences](local-global-correspondences/README.md) |
+| F07 | The genus-37 Jacobian from §61 has rank between 45 and 64. All 15 character factors have bounds, with exact answers for four of the six genus-two factors. | [Sector table and two-descent](genus37-rank/README.md) |
+| G06, G11, F12 | An infinite family of quartics has genus-one degrees exactly $2n^2,4n^2$ over the rationals and pointed elliptic degrees exactly $4n^2,8n^2$. | [Index-four descent](elliptic-quotients/index-four-descent/README.md) |
+| P02 | The public Part XXX edition matches the archive through §148, including its internal links. | [Read the monograph](https://towre676-cloud.github.io/crest-root-calculus/) · [Publication verification](monograph-publication/README.md) |
+
+The [full register](backlog-2026-11-23.md) records 10 settled items, 18 partial items, 27 open items and two dormant projects. For the rank proof, installing PARI/GP enables regeneration of the number-field arithmetic as part of the replay. The Python-only replay checks the published binary matrices and independently verifies all lower-bound divisor identities.
+
 ## Degree four on an arbitrary smooth plane quartic
 
 Three elimination charts now describe every primitive degree-four elliptic map over the algebraic closure, up to translation and isomorphism of the target. A second characterization uses four scalars and 57 Taylor coefficients at an unramified point. On the worked example the reconstruction returns explicit formulas for all four primitive classes, two over the rationals and two over $\mathbb Q(\sqrt{-2})$. The general incidence equations can be generated from the quartic alone. On a fresh positive input, the unrestricted positive chart reached its 90-second time budget. A two-variable elimination and a reduction certificate recovered its entire geometric solution in 7.037 seconds on the benchmark machine. [Equation-only elimination](elliptic-quotients/degree-four-incidence/README.md) · [Local reconstruction and exact formulas](elliptic-quotients/degree-four-jets/README.md)
