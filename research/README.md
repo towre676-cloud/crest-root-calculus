@@ -20,6 +20,12 @@ The spectral-curve companion gives exact normalization maps: a three-site cell r
 
 An audit of all eight pre-existing remote branches found the content of all six research branches already integrated into `main`, including the full tree of the last squash merge. The deployment branch's monograph matches the archived source byte for byte; its empty publication marker is now preserved beside that source. No historical content needs to be overwritten to reconcile those branches. [Branch reconciliation](branch-reconciliation-2026-11-23.md)
 
+## A deployable pedestrian crossing
+
+The next concrete mechanical application is a pair of transportable half-spans that extend from opposite roadsides and connect above the road. The first study implements exact planar support-reaction bounds, rigid-half constraint ranks, scalar joining envelopes, and access-ramp arithmetic. It distinguishes the unconnected deployment state from the occupied bridge and documents close existing concepts and built mechanisms. The supplied cases are synthetic mathematical controls; structural capacity, a real coupling, accessible approaches, and site-specific operation remain engineering work. [Study, proof and primary sources](deployable-crossing/README.md) · [Focused source ZIP](https://github.com/towre676-cloud/crest-root-calculus/raw/refs/heads/main/downloads/crest-root-deployable-crossing-2026-11-23.zip)
+
+Run `python research/deployable-crossing/verify.py` for the independent standard-library checks and `python research/deployable-crossing/study.py` for the recorded examples. The optional `--symbolic` verifier also uses SymPy. This separate focused study is not part of the earlier 32-group replay or its archived packet.
+
 ## Results from the priority research
 
 | Register | Result | Evidence |
