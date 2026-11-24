@@ -1,0 +1,36 @@
+{
+  "endpoint": "https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer/28/query",
+  "method": "GET",
+  "parameters": {
+    "f": "json",
+    "objectIds": "1797412,1797416,1798069,1799229",
+    "outFields": "*",
+    "returnGeometry": "true",
+    "outSR": "26910",
+    "returnZ": "false",
+    "returnM": "false"
+  },
+  "request_url": "https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer/28/query?f=json&objectIds=1797412%2C1797416%2C1798069%2C1799229&outFields=%2A&returnGeometry=true&outSR=26910&returnZ=false&returnM=false",
+  "started_at_utc": "2026-11-24T00:24:49+00:00",
+  "http_status": 200,
+  "response_url": "https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer/28/query?f=json&objectIds=1797412%2C1797416%2C1798069%2C1799229&outFields=%2A&returnGeometry=true&outSR=26910&returnZ=false&returnM=false",
+  "response_headers": {
+    "date": "Tue, 24 Nov 2026 00:24:53 GMT",
+    "content-type": "application/json;charset=UTF-8",
+    "cache-control": "max-age=0,must-revalidate",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "vary": "Origin",
+    "server": "envoy",
+    "etag": "\"f0ed387e\"",
+    "strict-transport-security": "max-age=31536000; includeSubDomains",
+    "x-envoy-upstream-service-time": "616",
+    "connection": "close",
+    "transfer-encoding": "chunked"
+  },
+  "retrieved_at_utc": "2026-11-24T00:24:53+00:00",
+  "response_file": "fema_nfhl_28.smallbatch_002.raw.json",
+  "response_bytes": 85547,
+  "sha256": "614e90557b00939c5e84ec2b1c6a160f74e9bee22e323a9c877d704a7419c530",
+  "success": true
+}

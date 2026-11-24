@@ -1,0 +1,29 @@
+{
+  "endpoint": "https://gis.dogami.oregon.gov/arcgis/rest/services/Public/OTGC1/MapServer/12",
+  "method": "GET",
+  "parameters": {
+    "f": "json"
+  },
+  "request_url": "https://gis.dogami.oregon.gov/arcgis/rest/services/Public/OTGC1/MapServer/12?f=json",
+  "started_at_utc": "2026-11-24T00:22:22+00:00",
+  "http_status": 200,
+  "response_url": "https://gis.dogami.oregon.gov/arcgis/rest/services/Public/OTGC1/MapServer/12?f=json",
+  "response_headers": {
+    "cache-control": "must-revalidate,max-age=0,public",
+    "content-type": "application/json; charset=UTF-8",
+    "etag": "\"dcb5696b\"",
+    "vary": "Origin",
+    "server": "envoy",
+    "x-content-type-options": "nosniff",
+    "x-powered-by": "ASP.NET",
+    "date": "Tue, 24 Nov 2026 00:22:28 GMT",
+    "x-envoy-upstream-service-time": "936",
+    "connection": "close",
+    "transfer-encoding": "chunked"
+  },
+  "retrieved_at_utc": "2026-11-24T00:22:28+00:00",
+  "response_file": "dogami_tsunami_12.layer.raw.json",
+  "response_bytes": 12607,
+  "sha256": "d1cebd92ef7bdb2e9d4de1ca537e06e581f5578592071a1e60a8ab5d4d4990de",
+  "success": true
+}

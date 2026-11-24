@@ -1,0 +1,308 @@
+{
+  "format": "crest-root-site-independent-verification/1",
+  "passed": true,
+  "engines": {
+    "gdal": "3.10.3",
+    "geos": "3.13.1"
+  },
+  "input_hashes": {
+    "atlas_subset_sha256": "24b3a78c2e4e7cac3f55005e806d4476a39a2940cd03e27fef03ba7d6fbcc79b",
+    "site_report_sha256": "06a0e6c833d2976f6706d0336e43167b44e0946e7d075a015a53d4ca0bdaf48f",
+    "atlas_content_sha256": "dcf603c18297f95170b05e189f055fb60b027192e55ac8ba6619b06f698a70dc"
+  },
+  "associated_source_code_sha256": {
+    "site_geometry.py": "6ea213970eedd2243fbea8846fcfa82139bb74d9e5ab843e0c9ec0e6bd923583",
+    "site_study.py": "0da898d6f5d253579ef83a0d0aac1c6f706bfcb64af2d366eda7e5a879093e6f",
+    "atlas_adapter.py": "b7ad524cabef3dda683900ed5d87a76013df505b63b5093e78696855311acf1e",
+    "verify_site_independent.py": "e1837c843616324cd10ea1d562214c31b3da98eba4e450b63fae2f66c2e3ac9a"
+  },
+  "comparison": {
+    "scenarios": 648,
+    "hit_fields_per_scenario": 8,
+    "hit_sets_compared": 5184,
+    "mismatch_count": 0,
+    "mismatches": [],
+    "invalid_geometries": {
+      "buildings": [],
+      "parcels": [],
+      "environment": [],
+      "scenario_footprints": []
+    },
+    "independent_screen_counts": {
+      "conflict_in_declared_layout": 636,
+      "no_tested_building_or_road_centerline_conflict": 12
+    },
+    "unconflicted_count": 12,
+    "unconflicted_nearest_building_distance_range_m": [
+      0.13880528044280616,
+      2.1388052804425755
+    ],
+    "all_unconflicted_cases_have_building_within_3m": true
+  },
+  "cases_without_tested_building_or_road_centerline_conflict": [
+    {
+      "scenario": "main-7th-w8-o-30-elevator-and-stair-allowance--1--1",
+      "architecture": "elevator-and-stair-allowance",
+      "nearest_building_id": "29-1004813",
+      "nearest_footprint_id": "access-1",
+      "nearest_building_distance_m": 1.0158396314903215,
+      "building_within_3m_sensitivity": true,
+      "site_approval": "unresolved"
+    },
+    {
+      "scenario": "main-7th-w8-o-30-elevator-and-stair-allowance--1-1",
+      "architecture": "elevator-and-stair-allowance",
+      "nearest_building_id": "29-1005291",
+      "nearest_footprint_id": "access-1",
+      "nearest_building_distance_m": 2.1388052804425755,
+      "building_within_3m_sensitivity": true,
+      "site_approval": "unresolved"
+    },
+    {
+      "scenario": "main-7th-w8-o-30-elevator-and-stair-allowance-1--1",
+      "architecture": "elevator-and-stair-allowance",
+      "nearest_building_id": "29-1004813",
+      "nearest_footprint_id": "access-1",
+      "nearest_building_distance_m": 1.0158396314903215,
+      "building_within_3m_sensitivity": true,
+      "site_approval": "unresolved"
+    },
+    {
+      "scenario": "main-7th-w8-o-30-elevator-and-stair-allowance-1-1",
+      "architecture": "elevator-and-stair-allowance",
+      "nearest_building_id": "29-1005291",
+      "nearest_footprint_id": "access-1",
+      "nearest_building_distance_m": 2.1388052804425755,
+      "building_within_3m_sensitivity": true,
+      "site_approval": "unresolved"
+    },
+    {
+      "scenario": "main-7th-w12-o-30-elevator-and-stair-allowance--1--1",
+      "architecture": "elevator-and-stair-allowance",
+      "nearest_building_id": "29-1004813",
+      "nearest_footprint_id": "access-1",
+      "nearest_building_distance_m": 0.9262537354701872,
+      "building_within_3m_sensitivity": true,
+      "site_approval": "unresolved"
+    },
+    {
+      "scenario": "main-7th-w12-o-30-elevator-and-stair-allowance--1-1",
+      "architecture": "elevator-and-stair-allowance",
+      "nearest_building_id": "29-1005291",
+      "nearest_footprint_id": "access-1",
+      "nearest_building_distance_m": 0.13880528044280616,
+      "building_within_3m_sensitivity": true,
+      "site_approval": "unresolved"
+    },
+    {
+      "scenario": "main-7th-w12-o-30-elevator-and-stair-allowance-1--1",
+      "architecture": "elevator-and-stair-allowance",
+      "nearest_building_id": "29-1004813",
+      "nearest_footprint_id": "access-1",
+      "nearest_building_distance_m": 0.9262537354701872,
+      "building_within_3m_sensitivity": true,
+      "site_approval": "unresolved"
+    },
+    {
+      "scenario": "main-7th-w12-o-30-elevator-and-stair-allowance-1-1",
+      "architecture": "elevator-and-stair-allowance",
+      "nearest_building_id": "29-1005291",
+      "nearest_footprint_id": "access-1",
+      "nearest_building_distance_m": 0.13880528044280616,
+      "building_within_3m_sensitivity": true,
+      "site_approval": "unresolved"
+    },
+    {
+      "scenario": "main-7th-w16-o-30-elevator-and-stair-allowance-1--1",
+      "architecture": "elevator-and-stair-allowance",
+      "nearest_building_id": "29-1004813",
+      "nearest_footprint_id": "access-1",
+      "nearest_building_distance_m": 0.8366678394491301,
+      "building_within_3m_sensitivity": true,
+      "site_approval": "unresolved"
+    },
+    {
+      "scenario": "pacific-9th-w8-o-30-elevator-and-stair-allowance-1--1",
+      "architecture": "elevator-and-stair-allowance",
+      "nearest_building_id": "29-1005602",
+      "nearest_footprint_id": "base--1",
+      "nearest_building_distance_m": 0.3697469655556554,
+      "building_within_3m_sensitivity": true,
+      "site_approval": "unresolved"
+    },
+    {
+      "scenario": "main-11th-w8-o30-elevator-and-stair-allowance-1--1",
+      "architecture": "elevator-and-stair-allowance",
+      "nearest_building_id": "29-1005430",
+      "nearest_footprint_id": "access-1",
+      "nearest_building_distance_m": 0.3021098546388536,
+      "building_within_3m_sensitivity": true,
+      "site_approval": "unresolved"
+    },
+    {
+      "scenario": "main-11th-w8-o30-elevator-and-stair-allowance-1-1",
+      "architecture": "elevator-and-stair-allowance",
+      "nearest_building_id": "29-1005701",
+      "nearest_footprint_id": "access-1",
+      "nearest_building_distance_m": 1.4573431484850818,
+      "building_within_3m_sensitivity": true,
+      "site_approval": "unresolved"
+    }
+  ],
+  "candidate_crs_controls": [
+    {
+      "candidate": "main-7th",
+      "node_id": "n36984060",
+      "source_latitude_longitude": [
+        45.4533631,
+        -123.84397
+      ],
+      "gdal_local_metres": [
+        4008.945076851058,
+        5161.694901789539
+      ],
+      "rounded_local_metres": [
+        4008.95,
+        5161.69
+      ],
+      "stored_local_metres": [
+        4008.95,
+        5161.69
+      ],
+      "rounding_residual_m": 0.006947297041970982,
+      "rounded_coordinates_match": true,
+      "tangent_norm": 1.0,
+      "tangent_points_north": true,
+      "tangent_azimuth_clockwise_from_north_degrees": 0.8461957465301834
+    },
+    {
+      "candidate": "pacific-7th",
+      "node_id": "n36985866",
+      "source_latitude_longitude": [
+        45.4533604,
+        -123.8431586
+      ],
+      "gdal_local_metres": [
+        4072.3862318647443,
+        5160.72918808274
+      ],
+      "rounded_local_metres": [
+        4072.39,
+        5160.73
+      ],
+      "stored_local_metres": [
+        4072.39,
+        5160.73
+      ],
+      "rounding_residual_m": 0.003854614499648119,
+      "rounded_coordinates_match": true,
+      "tangent_norm": 1.0000000000000004,
+      "tangent_points_north": true,
+      "tangent_azimuth_clockwise_from_north_degrees": 0.48557522177410783
+    },
+    {
+      "candidate": "main-9th",
+      "node_id": "n36959806",
+      "source_latitude_longitude": [
+        45.4518739,
+        -123.8439631
+      ],
+      "gdal_local_metres": [
+        4007.7477044493426,
+        4996.2450816826895
+      ],
+      "rounded_local_metres": [
+        4007.75,
+        4996.25
+      ],
+      "stored_local_metres": [
+        4007.75,
+        4996.25
+      ],
+      "rounding_residual_m": 0.005427651240429754,
+      "rounded_coordinates_match": true,
+      "tangent_norm": 0.9999999999999997,
+      "tangent_points_north": true,
+      "tangent_azimuth_clockwise_from_north_degrees": 0.7245147085126843
+    },
+    {
+      "candidate": "pacific-9th",
+      "node_id": "n36959805",
+      "source_latitude_longitude": [
+        45.4518723,
+        -123.8431592
+      ],
+      "gdal_local_metres": [
+        4070.605362292379,
+        4995.407729363069
+      ],
+      "rounded_local_metres": [
+        4070.61,
+        4995.41
+      ],
+      "stored_local_metres": [
+        4070.61,
+        4995.41
+      ],
+      "rounding_residual_m": 0.005163731601254725,
+      "rounded_coordinates_match": true,
+      "tangent_norm": 1.0,
+      "tangent_points_north": true,
+      "tangent_azimuth_clockwise_from_north_degrees": 0.7508009199876342
+    },
+    {
+      "candidate": "main-11th",
+      "node_id": "n36984056",
+      "source_latitude_longitude": [
+        45.4503961,
+        -123.8439525
+      ],
+      "gdal_local_metres": [
+        4006.8530232540215,
+        4832.058760596439
+      ],
+      "rounded_local_metres": [
+        4006.85,
+        4832.06
+      ],
+      "stored_local_metres": [
+        4006.85,
+        4832.06
+      ],
+      "rounding_residual_m": 0.0032674433532499957,
+      "rounded_coordinates_match": true,
+      "tangent_norm": 1.0000000000000004,
+      "tangent_points_north": true,
+      "tangent_azimuth_clockwise_from_north_degrees": -1.4831715961176704
+    },
+    {
+      "candidate": "pacific-11th",
+      "node_id": "n36985862",
+      "source_latitude_longitude": [
+        45.450398,
+        -123.8431638
+      ],
+      "gdal_local_metres": [
+        4068.527833365719,
+        4831.622717563063
+      ],
+      "rounded_local_metres": [
+        4068.53,
+        4831.62
+      ],
+      "stored_local_metres": [
+        4068.53,
+        4831.62
+      ],
+      "rounding_residual_m": 0.0034755507636425012,
+      "rounded_coordinates_match": true,
+      "tangent_norm": 1.0000000000000002,
+      "tangent_points_north": true,
+      "tangent_azimuth_clockwise_from_north_degrees": 0.614893217941267
+    }
+  ],
+  "coordinate_control_scope": "Internal OSM-to-Atlas transform checks, not independent withheld survey controls or an accuracy estimate.",
+  "method": "GDAL/GEOS polygon intersection and distance for each separately filled footprint; all rings retained; separate line/point tests.",
+  "scope": "Independently checks stored overlap results and coordinate transforms. Does not approve a site, certify source accuracy, rerun deployment mechanics, or prove terrain extrema.",
+  "replay": "/usr/bin/python3 verify_site_independent.py"
+}

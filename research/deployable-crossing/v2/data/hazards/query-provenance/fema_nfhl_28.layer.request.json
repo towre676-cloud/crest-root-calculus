@@ -1,0 +1,30 @@
+{
+  "endpoint": "https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer/28",
+  "method": "GET",
+  "parameters": {
+    "f": "json"
+  },
+  "request_url": "https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer/28?f=json",
+  "started_at_utc": "2026-11-24T00:22:22+00:00",
+  "http_status": 200,
+  "response_url": "https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer/28?f=json",
+  "response_headers": {
+    "date": "Tue, 24 Nov 2026 00:22:30 GMT",
+    "content-type": "application/json;charset=UTF-8",
+    "cache-control": "max-age=0,must-revalidate",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "vary": "Origin",
+    "server": "envoy",
+    "etag": "\"dd086352\"",
+    "strict-transport-security": "max-age=31536000; includeSubDomains",
+    "x-envoy-upstream-service-time": "536",
+    "connection": "close",
+    "transfer-encoding": "chunked"
+  },
+  "retrieved_at_utc": "2026-11-24T00:22:30+00:00",
+  "response_file": "fema_nfhl_28.layer.raw.json",
+  "response_bytes": 60213,
+  "sha256": "965d48cd6451fa8cc4c2a010e58ca6bad334148af9dae882c794e6b6e06d8699",
+  "success": true
+}

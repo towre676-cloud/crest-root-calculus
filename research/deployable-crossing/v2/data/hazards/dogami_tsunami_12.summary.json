@@ -1,0 +1,78 @@
+{
+  "key": "dogami_tsunami_12",
+  "label": "DOGAMI tsunami evacuation zones",
+  "endpoint": "https://gis.dogami.oregon.gov/arcgis/rest/services/Public/OTGC1/MapServer/12",
+  "query_envelope": [
+    433750,
+    5033050,
+    434350,
+    5034000
+  ],
+  "query_srid": 26910,
+  "status": "features_returned",
+  "requests": [
+    "dogami_tsunami_12.layer.request.json",
+    "dogami_tsunami_12.ids.request.json",
+    "dogami_tsunami_12.count.request.json",
+    "dogami_tsunami_12.features_001.request.json"
+  ],
+  "features": [
+    {
+      "file": "dogami_tsunami_12.features_001.raw.json",
+      "sha256": "f0fb75d00f44d2db150fcb1715da176ae9b57ad1dc385fd16bb32f004d2be829",
+      "count": 2,
+      "spatialReference": {
+        "wkid": 26910,
+        "latestWkid": 26910
+      },
+      "requested_object_ids": [
+        769,
+        1199
+      ],
+      "returned_object_ids": [
+        769,
+        1199
+      ],
+      "exceededTransferLimit": false,
+      "batch_id_control_passed": true
+    }
+  ],
+  "interpretation": "A spatial query is screening evidence, not a hazard-free or buildable-site finding.",
+  "layer_metadata": {
+    "name": "Tsunami Evacuation Zones",
+    "type": "Feature Layer",
+    "geometryType": "esriGeometryPolygon",
+    "objectIdField": null,
+    "maxRecordCount": 1000,
+    "extent": {
+      "xmin": 219250.31430445611,
+      "ymin": 88632.3330052495,
+      "xmax": 2345141.064304456,
+      "ymax": 1677524.3248031437,
+      "spatialReference": {
+        "wkid": 102970,
+        "latestWkid": 6557,
+        "xyTolerance": 0.0032808398950131233,
+        "zTolerance": 0.001,
+        "mTolerance": 0.001,
+        "falseX": -118489100,
+        "falseY": -97381100,
+        "xyUnits": 37592196.316242374,
+        "falseZ": -100000,
+        "zUnits": 10000,
+        "falseM": -100000,
+        "mUnits": 10000
+      }
+    },
+    "editingInfo": null
+  },
+  "reported_count": 2,
+  "object_id_field": "OBJECTID",
+  "object_ids": [
+    769,
+    1199
+  ],
+  "count_id_control_passed": true,
+  "returned_feature_count": 2,
+  "reason": "All features selected by this envelope query were retrieved with full XY geometry. Assess their attributes and actual proposed footprints; the study envelope is not a bridge site."
+}

@@ -1,0 +1,57 @@
+{
+  "checks_passed": true,
+  "verification_mode": "standard_library",
+  "controls": {
+    "analytic_unique_solutions": 4,
+    "independent_cramer_solves": 5,
+    "mechanism_and_load_compatibility_cases": 3,
+    "orientation_and_load_decomposition": 2,
+    "malformed_or_invalid_inputs_rejected": 12,
+    "unsupported_irrational_lengths_rejected": 1,
+    "tampered_certificates_rejected": 5
+  },
+  "optional_symbolic_checks": {
+    "enabled": false,
+    "unique_solves": 0,
+    "mechanism_ranks": 0
+  },
+  "example_summaries": [
+    {
+      "case_id": "synthetic_345_triangle",
+      "status": "unique_linear_solution",
+      "dimension": 2,
+      "free_dof_count": 3,
+      "supported_rigidity_rank": 3,
+      "supported_self_stress_dimension": 0,
+      "strain_energy": "189/2000"
+    },
+    {
+      "case_id": "synthetic_redundant_34_rectangle",
+      "status": "unique_linear_solution",
+      "dimension": 2,
+      "free_dof_count": 5,
+      "supported_rigidity_rank": 5,
+      "supported_self_stress_dimension": 1,
+      "strain_energy": "63/5000"
+    },
+    {
+      "case_id": "synthetic_spatial_three_bar_control",
+      "status": "unique_linear_solution",
+      "dimension": 3,
+      "free_dof_count": 3,
+      "supported_rigidity_rank": 3,
+      "supported_self_stress_dimension": 0,
+      "strain_energy": "657/800000"
+    },
+    {
+      "case_id": "synthetic_prescribed_support_movement",
+      "status": "unique_linear_solution",
+      "dimension": 2,
+      "free_dof_count": 1,
+      "supported_rigidity_rank": 1,
+      "supported_self_stress_dimension": 1,
+      "strain_energy": "1/300"
+    }
+  ],
+  "scope": "Synthetic exact axial-model verification only; no site, capacity or physical approval"
+}

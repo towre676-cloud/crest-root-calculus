@@ -6,7 +6,7 @@
 
 [Read the nine-page introductory essay](downloads/crest-root-introduction.pdf) · [Read the full illustrated monograph, Parts I–XXX](https://towre676-cloud.github.io/crest-root-calculus/) · [See all 57 research questions and their status](research/backlog-2026-11-23.md)
 
-**Two mobile halves of a pedestrian bridge.** A new feasibility study examines an extending crossing that joins above a road. It includes exact support-reaction, ideal-joint-rigidity, joining-envelope and ramp-geometry screens, independently checked adverse cases, and the engineering questions that determine whether the concept can work. This is research software and a concept study, not a rated bridge design. [Read the study](research/deployable-crossing/README.md) · [Download the self-contained programs](https://github.com/towre676-cloud/crest-root-calculus/raw/refs/heads/main/downloads/crest-root-deployable-crossing-2026-11-23.zip)
+**Tillamook crossing, version 2.** The two mobile half-spans now have a mapped test bed and an exact 2D/3D axial truss solver. The saved Atlas drives 648 roadside placement scenarios, with independent geometry checks and official hazard overlays. Exact support-path and connector-transform models expose failures between deployment endpoints. The offline workbench shows the actual map, assumptions and remaining engineering requirements. No site or physical bridge is approved. [Read v2](research/deployable-crossing/v2/README.md) · [Download the complete offline packet](https://github.com/towre676-cloud/crest-root-calculus/raw/refs/heads/main/downloads/crest-root-tillamook-crossing-v2-2026-11-23.zip) · [Original feasibility study](research/deployable-crossing/README.md)
 
 ## Seven applications you can run
 

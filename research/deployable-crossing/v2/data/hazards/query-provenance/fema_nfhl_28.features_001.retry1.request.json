@@ -1,0 +1,30 @@
+{
+  "endpoint": "https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer/28/query",
+  "method": "GET",
+  "parameters": {
+    "f": "json",
+    "objectIds": "283667,283744,1796857,1797408,1797412,1797416,1798069,1799229",
+    "outFields": "*",
+    "returnGeometry": "true",
+    "outSR": "26910",
+    "returnZ": "false",
+    "returnM": "false"
+  },
+  "request_url": "https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer/28/query?f=json&objectIds=283667%2C283744%2C1796857%2C1797408%2C1797412%2C1797416%2C1798069%2C1799229&outFields=%2A&returnGeometry=true&outSR=26910&returnZ=false&returnM=false",
+  "started_at_utc": "2026-11-24T00:24:03+00:00",
+  "http_status": 503,
+  "error": "HTTP Error 503: Service Unavailable",
+  "response_headers": {
+    "content-length": "95",
+    "content-type": "text/plain",
+    "date": "Tue, 24 Nov 2026 00:24:07 GMT",
+    "server": "envoy",
+    "connection": "close"
+  },
+  "retrieved_at_utc": "2026-11-24T00:24:08+00:00",
+  "parse_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+  "response_file": "fema_nfhl_28.features_001.retry1.raw.txt",
+  "response_bytes": 95,
+  "sha256": "9deff96f9b5925fa5081257849ace321304b382d64cfb67d90a21a3c7cbf2925",
+  "success": false
+}

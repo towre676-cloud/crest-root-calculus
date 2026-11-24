@@ -1,0 +1,479 @@
+{
+  "format": "crest-root-tillamook-audit/1",
+  "audited_at_utc_date": "2026-11-24",
+  "source_archive": {
+    "filename": "Tillamook-Atlas-V5-Staging.zip",
+    "sha256": "90f06d6f8bd4a67e51350f2ae849a1f16440925493c1ab2b7111241f1e1f79a8",
+    "bytes": 35341779,
+    "zip_members": 718,
+    "regular_files": 708,
+    "ledger_entries_verified": 707,
+    "only_regular_file_not_listed_in_ledger": "CONTENTS.sha256",
+    "manifest_sha256": "91b1a7064e7922f033a2591b1b0c0a591d86b7336a7c7e3244bfbdcb23b0adbc"
+  },
+  "subset": {
+    "path": "data/atlas-subset.json",
+    "file_sha256": "24b3a78c2e4e7cac3f55005e806d4476a39a2940cd03e27fef03ba7d6fbcc79b",
+    "bytes": 747966,
+    "content_sha256": "dcf603c18297f95170b05e189f055fb60b027192e55ac8ba6619b06f698a70dc",
+    "bounds": [
+      3750,
+      4550,
+      4350,
+      5450
+    ],
+    "counts": {
+      "areas": 17,
+      "buildings": 395,
+      "candidates": 6,
+      "canopy": 311,
+      "environment": 40,
+      "marks": 58,
+      "parcels": 401,
+      "streets": 244
+    },
+    "width_evidence_counts": {
+      "authored": 244
+    },
+    "parcel_hole_count": 78,
+    "building_hole_count": 0,
+    "terrain_shape": [
+      300,
+      450
+    ],
+    "terrain_source_window": [
+      625,
+      1275,
+      925,
+      1725
+    ],
+    "terrain_crop_sha256": "27a6971b047a378a73e972820495aef0e6287d0204547d50449d13861a52c5fe"
+  },
+  "coordinate_contract": {
+    "crs": "EPSG:26910",
+    "origin": [
+      430000,
+      5028500
+    ],
+    "axis_order": [
+      "east",
+      "north"
+    ],
+    "units": "metres",
+    "context_extent_m": [
+      7500,
+      8000
+    ],
+    "source_utm_bounds": [
+      430000,
+      5028500,
+      437500,
+      5036500
+    ],
+    "path_quantization_m": 0.01,
+    "path_fragment_quantization_m": 0.001,
+    "fragment_precision_note": "Extra decimal places are interpolation, not new evidence. Subset uses original path vertices.",
+    "horizontal_accuracy_bound_m": null,
+    "vertical_accuracy_bound_m": null,
+    "vertical_datum_status": "unresolved; V2 recipe asserts NAVD88, lineage not independently verified",
+    "terrain_sample_spacing_m": 2,
+    "terrain_height_quantization_m": 0.025,
+    "terrain_row_order": "north-to-south",
+    "terrain_sample_location": "cell centres",
+    "terrain_is_blended": false
+  },
+  "source_totals": {
+    "linear_paths": 2044,
+    "authored_path_widths": 2042,
+    "osm_attribute_path_widths": 2,
+    "osm_attribute_widths_are_runways_only": true,
+    "footway_paths": 639,
+    "bridge_tagged_paths": 42,
+    "road_streaming_cells": 231,
+    "marks": 358,
+    "osm_areas": 176,
+    "raw_parcel_features": 1804,
+    "raw_parcel_multipolygons": 13,
+    "parcel_parts": 1817,
+    "dogami_buildings": 3824,
+    "canopy_proxies": 6684,
+    "environment_objects": 494
+  },
+  "candidates": [
+    {
+      "cross_street_way_ids": [
+        "w1557734242"
+      ],
+      "id": "main-7th",
+      "label": "Main Avenue at 7th Street",
+      "latlon": [
+        45.4533631,
+        -123.84397
+      ],
+      "node_id": "n36984060",
+      "osm_node_timestamp": "2025-05-13T22:49:35Z",
+      "osm_node_version": 8,
+      "point": [
+        4008.95,
+        5161.69
+      ],
+      "road_tangent": [
+        0.014768364999225,
+        0.999890941750774
+      ],
+      "road_tangent_method": "unit secant through immediate road neighbours, oriented north",
+      "road_tangent_points": [
+        [
+          4010.69,
+          5244.15
+        ],
+        [
+          4008.25,
+          5078.95
+        ]
+      ],
+      "road_way_id": "w160662295",
+      "status": "mapped junction for research screening; no crossing design selected",
+      "footway_ids_within_25m": [],
+      "nearest_mapped_footway": {
+        "id": "w1280010408",
+        "distance_m_rounded": 154.764
+      },
+      "crossing_marks_within_25m": [],
+      "encoded_ground_sample_m": 7.422909375
+    },
+    {
+      "cross_street_way_ids": [
+        "w1557734242"
+      ],
+      "id": "pacific-7th",
+      "label": "Pacific Avenue at 7th Street",
+      "latlon": [
+        45.4533604,
+        -123.8431586
+      ],
+      "node_id": "n36985866",
+      "osm_node_timestamp": "2013-10-24T04:11:33Z",
+      "osm_node_version": 6,
+      "point": [
+        4072.39,
+        5160.73
+      ],
+      "road_tangent": [
+        0.008474784936809,
+        0.999964088365315
+      ],
+      "road_tangent_method": "unit secant through immediate road neighbours, oriented north",
+      "road_tangent_points": [
+        [
+          4071.79,
+          5078.17
+        ],
+        [
+          4073.19,
+          5243.36
+        ]
+      ],
+      "road_way_id": "w160662310",
+      "status": "mapped junction for research screening; no crossing design selected",
+      "footway_ids_within_25m": [],
+      "nearest_mapped_footway": {
+        "id": "w1280010408",
+        "distance_m_rounded": 218.211
+      },
+      "crossing_marks_within_25m": [],
+      "encoded_ground_sample_m": 7.542375
+    },
+    {
+      "cross_street_way_ids": [
+        "w671168314"
+      ],
+      "id": "main-9th",
+      "label": "Main Avenue at 9th Street",
+      "latlon": [
+        45.4518739,
+        -123.8439631
+      ],
+      "node_id": "n36959806",
+      "osm_node_timestamp": "2025-05-13T22:49:35Z",
+      "osm_node_version": 7,
+      "point": [
+        4007.75,
+        4996.25
+      ],
+      "road_tangent": [
+        0.012644830151132,
+        0.999920050939298
+      ],
+      "road_tangent_method": "unit secant through immediate road neighbours, oriented north",
+      "road_tangent_points": [
+        [
+          4008.25,
+          5078.95
+        ],
+        [
+          4006.57,
+          4946.1
+        ]
+      ],
+      "road_way_id": "w160662295",
+      "status": "mapped junction for research screening; no crossing design selected",
+      "footway_ids_within_25m": [],
+      "nearest_mapped_footway": {
+        "id": "w1432085500",
+        "distance_m_rounded": 74.568
+      },
+      "crossing_marks_within_25m": [],
+      "encoded_ground_sample_m": 6.64375
+    },
+    {
+      "cross_street_way_ids": [
+        "w671168314",
+        "w5246810"
+      ],
+      "id": "pacific-9th",
+      "label": "Pacific Avenue at 9th Street",
+      "latlon": [
+        45.4518723,
+        -123.8431592
+      ],
+      "node_id": "n36959805",
+      "osm_node_timestamp": "2012-04-06T00:01:42Z",
+      "osm_node_version": 5,
+      "point": [
+        4070.61,
+        4995.41
+      ],
+      "road_tangent": [
+        0.013103573063306,
+        0.999914144500904
+      ],
+      "road_tangent_method": "unit secant through immediate road neighbours, oriented north",
+      "road_tangent_points": [
+        [
+          4069.96,
+          4944.06
+        ],
+        [
+          4070.9,
+          5015.79
+        ]
+      ],
+      "road_way_id": "w160662310",
+      "status": "mapped junction for research screening; no crossing design selected",
+      "footway_ids_within_25m": [],
+      "nearest_mapped_footway": {
+        "id": "w1432085500",
+        "distance_m_rounded": 101.05
+      },
+      "crossing_marks_within_25m": [],
+      "encoded_ground_sample_m": 6.770125
+    },
+    {
+      "cross_street_way_ids": [
+        "w5250328",
+        "w1557734251"
+      ],
+      "id": "main-11th",
+      "label": "Main Avenue at 11th Street",
+      "latlon": [
+        45.4503961,
+        -123.8439525
+      ],
+      "node_id": "n36984056",
+      "osm_node_timestamp": "2025-05-14T09:34:48Z",
+      "osm_node_version": 8,
+      "point": [
+        4006.85,
+        4832.06
+      ],
+      "road_tangent": [
+        -0.025883336774843,
+        0.999664970316256
+      ],
+      "road_tangent_method": "unit secant through immediate road neighbours, oriented north",
+      "road_tangent_points": [
+        [
+          4005.17,
+          4888.94
+        ],
+        [
+          4006.81,
+          4825.6
+        ]
+      ],
+      "road_way_id": "w160662295",
+      "status": "mapped junction for research screening; no crossing design selected",
+      "footway_ids_within_25m": [],
+      "nearest_mapped_footway": {
+        "id": "w1432085500",
+        "distance_m_rounded": 90.087
+      },
+      "crossing_marks_within_25m": [
+        {
+          "id": "n9982988085",
+          "kind": "crossing",
+          "p": [
+            4006.81,
+            4825.6
+          ]
+        },
+        {
+          "id": "n9982988086",
+          "kind": "crossing",
+          "p": [
+            4000.25,
+            4832.09
+          ]
+        },
+        {
+          "id": "n9982988087",
+          "kind": "crossing",
+          "p": [
+            4014.55,
+            4831.97
+          ]
+        }
+      ],
+      "encoded_ground_sample_m": 6.03350625
+    },
+    {
+      "cross_street_way_ids": [
+        "w5250328"
+      ],
+      "id": "pacific-11th",
+      "label": "Pacific Avenue at 11th Street",
+      "latlon": [
+        45.450398,
+        -123.8431638
+      ],
+      "node_id": "n36985862",
+      "osm_node_timestamp": "2013-10-24T04:11:33Z",
+      "osm_node_version": 7,
+      "point": [
+        4068.53,
+        4831.62
+      ],
+      "road_tangent": [
+        0.010731705196401,
+        0.999942413593692
+      ],
+      "road_tangent_method": "unit secant through immediate road neighbours, oriented north",
+      "road_tangent_points": [
+        [
+          4068.52,
+          4823.58
+        ],
+        [
+          4068.69,
+          4839.42
+        ]
+      ],
+      "road_way_id": "w160662310",
+      "status": "mapped junction for research screening; no crossing design selected",
+      "footway_ids_within_25m": [],
+      "nearest_mapped_footway": {
+        "id": "w1227077048",
+        "distance_m_rounded": 87.074
+      },
+      "crossing_marks_within_25m": [
+        {
+          "id": "n9982988083",
+          "kind": "crossing",
+          "p": [
+            4068.52,
+            4823.58
+          ]
+        },
+        {
+          "id": "n9982988084",
+          "kind": "crossing",
+          "p": [
+            4068.69,
+            4839.42
+          ]
+        }
+      ],
+      "encoded_ground_sample_m": 5.95005375
+    }
+  ],
+  "source_file_sha256": {
+    "BuildInputs/airport.osm": "63c50fb5b96b9dd86ad9b307bfbe20cccea1e25f7f0a9d88ad3776e435c0af9d",
+    "BuildInputs/east.osm": "771b5c74fe05025a54850980aecc8b4ace329b1f0368eba8a8d8c0b112beee28",
+    "BuildInputs/north.osm": "1064f2f443eecdf7710d99ff97d9c5b775470b55e676b716cf3e1146ff95c0c8",
+    "BuildInputs/parcels.geojson": "ad9b33a6643a92d0fbda6a036e665bc301e2ee08f122482c532a9be320121dcc",
+    "BuildInputs/town.osm": "9bfd7cd35b10efb9ab404623ee115474c130179da00bfc578657667784f05cd7",
+    "BuildInputs/west.osm": "0e5289ab0e3fc0080680e0503263333b80eddb2fb2ddedcc045d7d76ba270abd",
+    "Content/data/buildings-7-10.json": "e41a93066152705ca3a66ddde7b69eb44aed0ab6dedea51cc12733b988a8aae5",
+    "Content/data/buildings-7-9.json": "7c1ccac31c852b4ce4d294a45fa2eaa76aa0d7aa2200e34c368310f8cb12e5db",
+    "Content/data/buildings-8-10.json": "ddabd07fd05a8cf40055e4d0dda0d3bdc73f50221ef9243534daa07fd39a9c35",
+    "Content/data/buildings-8-9.json": "77db7f1d33b8eede5c71dd723061975eb7e4b0b99187e6aeecc851a9038138d6",
+    "Content/data/canopy-7-10.json": "64cb668eae174531e3ada202fabc3a7b37d4cb9893197b00fb074eedafe41a85",
+    "Content/data/canopy-7-9.json": "c809fe91d83bc2d1f488cdbceb28d74f37e1e56a9bfc200ea8e4f7e0cc00d316",
+    "Content/data/canopy-8-10.json": "231646c72a1f0e1ca8a51007f66cc112e8c7a392fbe4e8fee6f2325bb55cbfb7",
+    "Content/data/canopy-8-9.json": "d7bdd5bffc8d2424098bd222f547b275f5b6912cc7b3bab2aef541684c41cf11",
+    "Content/data/environment/catalogue.json": "cde0b0b41cc5beb73cd11cdabf0af0b343285f8a1fb2ff551c4de5f4e0d3b5ca",
+    "Content/data/streets.json": "04ae9858bb4a18b58acb04572bf2744525db00e6eba515fc1c67613230bd3747",
+    "Content/data/streets/parcels.json": "82fdd9a07416141b8aa8748b29e80a6121241f71622e870218ed881a36ad598c",
+    "Content/data/streets/source-features.json": "41e499a368b2acb2ccebe20c46b828337583f9bfbb64f8bfc4b72b95f417fce5",
+    "Content/data/survey-ground.bin": "9eece90ffdca8fabcb470f6e141411b466ed70437f27b448b9afd1b2db6791da",
+    "Content/data/town.json": "b58a88d5e56a0960cdabdc09cd3aad9e907bd7909bc3760826cf5ba23502ec81",
+    "Content/refs/Sources.md": "0291cdadeddb4db8bb02ac32fb918e7be435002967522f1947a5990e8cacf33a",
+    "Content/refs/repertoire/compile-streets.py": "08f0ddcd8a92f78cb7567df67d6bcb8487564cce674ad548afa79f7003762ef9",
+    "Content/refs/repertoire/compile-town.py": "32424564d3b8fe6040f124211209815a9babcff76ff56a54b41951315af7b6a7",
+    "Content/refs/repertoire/tillamook.json": "ab9b91cf693d7d4d7134a4f60992ed92f18bcf185077f91be73a3a4ec0d22bf8"
+  },
+  "license_and_sources": {
+    "osm": {
+      "attribution": "© OpenStreetMap contributors",
+      "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "copyright_url": "https://www.openstreetmap.org/copyright",
+      "applies_to": [
+        "streets",
+        "marks",
+        "areas",
+        "environment",
+        "candidate OSM source records"
+      ]
+    },
+    "dogami": "Oregon DOGAMI O-23-01; preserve original footprint IDs and attribution; no blanket redistribution license inferred by this audit",
+    "parcels": "ODOT Tillamook County Taxlots geometry snapshot; preserve attribution, do not treat geometry as ownership/access permission",
+    "terrain": "Paired DOGAMI DEM/DSM derivatives. Original float raster inputs are not present in the V5 package; their hashes and compiler recipe are recorded.",
+    "imagery": "OSIP 2024 imagery is not included in the crossing subset."
+  },
+  "verification": {
+    "stdlib_only": true,
+    "source_manifest_file_hashes_checked": 707,
+    "street_input_hashes_cross_checked": 6,
+    "exact_source_grid_and_bilinear_checks": 126,
+    "tampered_or_out_of_bounds_cases_rejected": 11,
+    "byte_identical_rebuild": true,
+    "unique_ids_per_category": true,
+    "source_and_site_mutations": false
+  },
+  "limitations": [
+    "Map encoding precision is not a survey uncertainty bound.",
+    "All selected road widths are authored defaults.",
+    "No explicit footway path lies within 25m of the six junction centers; roads have sidewalk:both=yes tags. This is a mapping limitation, not proof that sidewalks are absent.",
+    "Missing crossing marks at 7th/9th do not imply no legal or physical pedestrian crossing.",
+    "Five mapped crossing nodes occur within 25m of the two 11th Street junction centers.",
+    "Parcel outlines do not authorize placement; access, ownership, bearing, utilities and clearances remain unverified.",
+    "Canopy locations/radii/heights are display proxies, not individually surveyed obstacle envelopes.",
+    "Original geometric accuracy controls and engineering vertical datum checks are not supplied.",
+    "Candidate ground samples are interpolation of encoded raster values, not certified elevations."
+  ],
+  "github_site_discovery": {
+    "github_repository": "towre676-cloud/Aether-Ash-game-source",
+    "github_main_commit": "4c001ad283318be5b8eac84c153e1b9dce3e1836",
+    "branch_tips_checked": 27,
+    "unique_branch_tip_commits": 26,
+    "complete_trees_no_tillamook_named_files": true,
+    "github_site_export_version": 45,
+    "github_site_export_commit": "1b86d964cf816232588cb0dd1c44ada82daab563",
+    "site_metadata_version": 248,
+    "site_metadata_commit": "527768d52282c29dd2d81fb2219e58ea8a680b39",
+    "site_source_access": "unavailable: native credential delivery returned 403",
+    "public_atlas_read": "403; not proof of presence or absence",
+    "v5_deployed_to_site_verified": false
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "endpoint": "https://gis.dogami.oregon.gov/arcgis/rest/services/Public/SLIDO42_DetailedLSSus/MapServer/0/query",
+  "method": "GET",
+  "parameters": {
+    "f": "json",
+    "objectIds": "12",
+    "outFields": "*",
+    "returnGeometry": "true",
+    "outSR": "26910",
+    "returnZ": "false",
+    "returnM": "false"
+  },
+  "request_url": "https://gis.dogami.oregon.gov/arcgis/rest/services/Public/SLIDO42_DetailedLSSus/MapServer/0/query?f=json&objectIds=12&outFields=%2A&returnGeometry=true&outSR=26910&returnZ=false&returnM=false",
+  "started_at_utc": "2026-11-24T00:22:59+00:00",
+  "http_status": 200,
+  "response_url": "https://gis.dogami.oregon.gov/arcgis/rest/services/Public/SLIDO42_DetailedLSSus/MapServer/0/query?f=json&objectIds=12&outFields=%2A&returnGeometry=true&outSR=26910&returnZ=false&returnM=false",
+  "response_headers": {
+    "cache-control": "must-revalidate,max-age=0,public",
+    "content-type": "application/json; charset=UTF-8",
+    "etag": "\"1603208466\"",
+    "vary": "Origin",
+    "server": "envoy",
+    "x-content-type-options": "nosniff",
+    "x-powered-by": "ASP.NET",
+    "date": "Tue, 24 Nov 2026 00:23:03 GMT",
+    "x-envoy-upstream-service-time": "265",
+    "connection": "close",
+    "transfer-encoding": "chunked"
+  },
+  "retrieved_at_utc": "2026-11-24T00:23:03+00:00",
+  "response_file": "dogami_ls_coverage_0.features_001.raw.json",
+  "response_bytes": 239462,
+  "sha256": "9eb891adebdc40b4065734e50a0469efbe6a9593cfab6cd549b72e0d837abf34",
+  "success": true
+}

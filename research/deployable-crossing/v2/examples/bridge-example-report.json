@@ -1,0 +1,103 @@
+{
+  "checks_passed": true,
+  "study_type": "synthetic_declared_geometry_and_loading",
+  "site_derived_span": false,
+  "physical_approval_or_load_rating": false,
+  "declared_inputs": {
+    "panel_width_m": "3",
+    "truss_depth_m": "4",
+    "deck_width_m": "2",
+    "plane_count": 2,
+    "crowd_pressure_kPa_service_only": "5",
+    "dead_pressure_kPa": "1",
+    "young_modulus_kN_m2": "200000000",
+    "member_area_m2": "3/1000",
+    "material_and_area_basis": "Arbitrary illustrative elastic inputs, not selected or capacity-verified members",
+    "dead_load_basis": "Prescribed uniform input, not calculated member/equipment mass"
+  },
+  "idealizations": [
+    "Vertical load is shared equally by two independent truss planes; no spatial deck-load distribution is solved",
+    "Service top and lower midspan nodes are each shared: ideal continuity at both chord levels, not a single center hinge",
+    "The shared nodes do not verify a physical connection's strength, stiffness, alignment, fatigue or reliability",
+    "Prejoin root upper and lower nodes have both translations held by an ideal mast; no mast or chassis capacity is calculated",
+    "Prejoin contains declared dead load only and no public crowd load",
+    "Only two idealized endpoint configurations are analyzed; intermediate extension, lifting and joining states are absent",
+    "No buckling, lateral stability, torsion, second-order response, vibration, connection or mast capacity is established",
+    "The 24 m span and 12 m reach are illustrative and are not derived from any Tillamook road or site measurement"
+  ],
+  "cases": [
+    {
+      "case_id": "service-24m-plane",
+      "configuration": "service",
+      "span_or_reach_m": "24",
+      "truss_depth_m": "4",
+      "panels": 8,
+      "line_load_per_plane_kN_m": "6",
+      "total_downward_load_per_plane_kN": "144",
+      "end_nodal_load_kN": "9",
+      "interior_nodal_load_kN": "18",
+      "clockwise_external_moment_about_left_root_kN_m": "1728",
+      "counterclockwise_reaction_moment_about_left_root_kN_m": "1728",
+      "observed_lower_chord_node": "B4",
+      "observed_node_displacement_m": [
+        "459/400000",
+        "-3321/400000"
+      ],
+      "downward_vertical_displacement_m": "3321/400000",
+      "independent_member_force_checks": 33,
+      "independent_virtual_work_displacement_check": true,
+      "support_reactions_kN": {
+        "B0": [
+          "0",
+          "72"
+        ],
+        "B8": [
+          "0",
+          "72"
+        ]
+      },
+      "supported_rigidity_rank": 33,
+      "free_dof_count": 33,
+      "status": "unique_linear_solution"
+    },
+    {
+      "case_id": "prejoin-12m-plane",
+      "configuration": "prejoin",
+      "span_or_reach_m": "12",
+      "truss_depth_m": "4",
+      "panels": 4,
+      "line_load_per_plane_kN_m": "1",
+      "total_downward_load_per_plane_kN": "12",
+      "end_nodal_load_kN": "3/2",
+      "interior_nodal_load_kN": "3",
+      "clockwise_external_moment_about_left_root_kN_m": "72",
+      "counterclockwise_reaction_moment_about_left_root_kN_m": "72",
+      "observed_lower_chord_node": "B4",
+      "observed_node_displacement_m": [
+        "-27/160000",
+        "-781/800000"
+      ],
+      "downward_vertical_displacement_m": "781/800000",
+      "independent_member_force_checks": 17,
+      "independent_virtual_work_displacement_check": true,
+      "support_reactions_kN": {
+        "B0": [
+          "18",
+          "3/2"
+        ],
+        "T0": [
+          "-18",
+          "21/2"
+        ]
+      },
+      "supported_rigidity_rank": 16,
+      "free_dof_count": 16,
+      "status": "unique_linear_solution"
+    }
+  ],
+  "independent_checks": {
+    "member_section_force_checks": 50,
+    "unit_load_virtual_work_deflections": 2,
+    "load_and_reaction_resultants": 2
+  }
+}

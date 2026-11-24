@@ -1,0 +1,85 @@
+{
+  "format": "crest-root-offline-workbench-verification/1",
+  "verified_at_utc": "2026-11-24T00:44:43+00:00",
+  "status": "bounded_code_checks_passed_real_browser_layout_unverified",
+  "artifacts": {
+    "build_viewer.py": {
+      "sha256": "b5447f88769e1e8f4beef4260aff4dc3abb003e9707e498704fbbaceb8d3d6c3",
+      "bytes": 55630
+    },
+    "workbench.html": {
+      "sha256": "ed2e65d8498c2d714eef5db4f5db3cb7bc8a9d4b5272ab8ec9cce948a3a08490",
+      "bytes": 3861501
+    },
+    "site-comparison.png": {
+      "sha256": "c36843116df26dd4391e3d2fe0240557b94b69b08e51606d8baa6a0d90e7b38e",
+      "bytes": 433131
+    }
+  },
+  "embedded_source_hashes": {
+    "data/atlas-subset.json": "24b3a78c2e4e7cac3f55005e806d4476a39a2940cd03e27fef03ba7d6fbcc79b",
+    "site-report.json": "06a0e6c833d2976f6706d0336e43167b44e0946e7d075a015a53d4ca0bdaf48f",
+    "engineering-report.json": "a5a7d29d37fb77aa4f04c6012f2304ef6ab253aa0ae8c35aba9634b04d95d740",
+    "examples/bridge-example-report.json": "785223d66ee04a881746db5b642b0a60754ffd4d3365ab4ccd88d92d529225c9",
+    "data/hazards/manifest.json": "e1c5fcbb076aa68bba351eb802775fc16eae82b0e248fc6ab19f83c69c6dc99b",
+    "examples/service-24m-plane.json": "8eee4b0dbb1c506fcabd66b2b732f7b1c25fccce8e0bd06bc9d692bc07149e9a",
+    "examples/service-24m-plane-result.json": "a73a4d1dbdbf9faabce1186bbed8be419a8ee2bc34a466507535d5cb4ea51371",
+    "examples/prejoin-12m-plane.json": "560e2ebc8a81c298a703f42b02f6a6f6f2b13a386f182f6573aa3a2dde9e494e",
+    "examples/prejoin-12m-plane-result.json": "3572c022427bf031bc3b24b3a18eccf5c4e8c230b086505495d32aaa60c41384",
+    "hazard-report.json": "19f930110e604d4a191c993b72091dabe862d44b2bea06a60b04d6ec2c038ecb"
+  },
+  "javascript": {
+    "node_version": "v24.22.3",
+    "syntax_check_exit_code": 0,
+    "javascript_sha256": "3db67aa248d545c872c0e35cb7f5b9e74adfab03ee4f820317259bd3c5f5ded7",
+    "runtime_smoke": {
+      "engine": "Node vm with explicit DOM and Canvas2D adapter; no real browser rendering",
+      "initial_default": "Main/7th, switchback, 12m, best-ranked",
+      "site_architecture_width_combinations": 54,
+      "placement_variants_in_one_combination": 12,
+      "embedded_scenarios": 648,
+      "checkbox_layers": 5,
+      "hazard_overlay_choices": 6,
+      "truss_cases": 2,
+      "zoom_fit_controls": true,
+      "source_hazard_labels_resolved": true,
+      "runtime_exceptions": 0,
+      "browser_layout_tested": false,
+      "mobile_layout_tested": false
+    }
+  },
+  "offline_static_checks": {
+    "external_automatic_resource_references": [],
+    "network_request_apis_detected": false,
+    "all_embedded_source_hashes_match_files": true,
+    "missing_relative_reading_links": [],
+    "self_contained_data": true
+  },
+  "visual_review": {
+    "site_comparison_png_reviewed": true,
+    "three_architectures_common_map_scale": true,
+    "base_and_access_envelope_label": true,
+    "span_connection_explicitly_schematic": true,
+    "no_inferred_deck_width": true
+  },
+  "browser_qa": {
+    "actual_browser_run": false,
+    "actual_mobile_layout_run": false,
+    "desktop_browser_screenshot": null,
+    "mobile_screenshot": null,
+    "existing_binary_checks": {
+      "chromium": null,
+      "chromium-browser": null,
+      "google-chrome": null
+    },
+    "reason": "Installed Playwright lacked a browser binary. Its ordinary Chromium headless-shell download failed with HTTP 403 Site Unavailable. No alternate download or authenticated browser was used."
+  },
+  "windows_launcher_tested": false,
+  "limitations": [
+    "DOM/Canvas adapter checks exercise JavaScript and state selection but do not render pixels or validate browser layout.",
+    "Responsive CSS is present, but real desktop and mobile browser layouts remain unverified.",
+    "The image is a plan-envelope comparison, not a complete machine footprint or construction drawing.",
+    "Geometric half reach is base-center to midpoint; bearing offsets, overlap and joint engagement length are not included."
+  ],
+  "temporary_qa_artifacts": "Kept under /tmp and excluded from this packet."
+}
