@@ -1,0 +1,658 @@
+{
+  "blocked_transitions": [
+    {
+      "from_state": {
+        "cantilever_restraint_released": false,
+        "locks_secured": false,
+        "mode": "hold",
+        "supports_established": false
+      },
+      "transition_id": "begin_recovery",
+      "unsatisfied_guards": [
+        {
+          "guard": "recovery_path_verified",
+          "status": "unresolved"
+        }
+      ]
+    },
+    {
+      "from_state": {
+        "cantilever_restraint_released": false,
+        "locks_secured": false,
+        "mode": "hold",
+        "supports_established": true
+      },
+      "transition_id": "begin_recovery",
+      "unsatisfied_guards": [
+        {
+          "guard": "recovery_path_verified",
+          "status": "unresolved"
+        }
+      ]
+    },
+    {
+      "from_state": {
+        "cantilever_restraint_released": false,
+        "locks_secured": true,
+        "mode": "hold",
+        "supports_established": true
+      },
+      "transition_id": "begin_recovery",
+      "unsatisfied_guards": [
+        {
+          "guard": "recovery_path_verified",
+          "status": "unresolved"
+        }
+      ]
+    },
+    {
+      "from_state": {
+        "cantilever_restraint_released": true,
+        "locks_secured": true,
+        "mode": "hold",
+        "supports_established": true
+      },
+      "transition_id": "begin_recovery",
+      "unsatisfied_guards": [
+        {
+          "guard": "recovery_path_verified",
+          "status": "unresolved"
+        }
+      ]
+    }
+  ],
+  "checked_transition_count": 16,
+  "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+  "evidence_is_reused_as_guard_fixture": true,
+  "graph_is_physically_complete": false,
+  "guards": {
+    "assembly_models_solved": {
+      "evidence": "Bound receipt checks.all_expected_models_solved",
+      "status": "satisfied"
+    },
+    "bindings_valid": {
+      "evidence": {
+        "assembly": true,
+        "evidence": true,
+        "evidence_replay": "Every evidence case was replayed against its bound input",
+        "motion": true
+      },
+      "status": "satisfied"
+    },
+    "continuous_half_separation": {
+      "evidence": "Bound receipt checks.continuous_half_separation",
+      "status": "satisfied"
+    },
+    "continuous_support_inside": {
+      "evidence": "Bound receipt checks.continuous_support_inside",
+      "status": "satisfied"
+    },
+    "controlled_release_verified": {
+      "evidence": "Bound receipt checks.controlled_release_verified",
+      "status": "satisfied"
+    },
+    "invalid_modes_have_mechanism": {
+      "evidence": "Bound receipt checks.invalid_modes_have_mechanism",
+      "status": "satisfied"
+    },
+    "loaded_capture_within_envelope": {
+      "evidence": "Bound receipt checks.loaded_capture_within_envelope",
+      "status": "satisfied"
+    },
+    "locks_condition_established": {
+      "evidence": {
+        "case_id": "independent_channels_synthetic",
+        "meaning": "Synthetic evidence fixture for a conditional model transition",
+        "outcome": "condition_established",
+        "source_kind": "synthetic_fixture"
+      },
+      "status": "satisfied"
+    },
+    "mass_conserved": {
+      "evidence": "Bound receipt checks.mass_conserved",
+      "status": "satisfied"
+    },
+    "nominal_capture_within_envelope": {
+      "evidence": "Bound receipt checks.nominal_capture_within_envelope",
+      "status": "satisfied"
+    },
+    "recovery_path_verified": {
+      "evidence": "No reverse deployment/failed-hardware recovery path is supplied",
+      "status": "unresolved"
+    },
+    "release_support_inside": {
+      "evidence": "Bound receipt checks.release_support_inside",
+      "status": "satisfied"
+    },
+    "service_reference_clearance_satisfied": {
+      "evidence": "Bound receipt checks.service_reference_clearance_satisfied",
+      "status": "satisfied"
+    },
+    "service_support_inside": {
+      "evidence": "Bound receipt checks.service_support_inside",
+      "status": "satisfied"
+    },
+    "stage_endpoints_match": {
+      "evidence": "Bound receipt checks.stage_endpoints_match",
+      "status": "satisfied"
+    }
+  },
+  "liveness": {
+    "accepted_hold_reached": true,
+    "accepted_terminal_states": [
+      {
+        "state": {
+          "cantilever_restraint_released": false,
+          "locks_secured": false,
+          "mode": "hold",
+          "supports_established": false
+        },
+        "witness_transition_ids": [
+          "hold_from_staged"
+        ]
+      },
+      {
+        "state": {
+          "cantilever_restraint_released": false,
+          "locks_secured": false,
+          "mode": "hold",
+          "supports_established": true
+        },
+        "witness_transition_ids": [
+          "stabilize",
+          "hold_from_stabilized"
+        ]
+      },
+      {
+        "state": {
+          "cantilever_restraint_released": false,
+          "locks_secured": true,
+          "mode": "hold",
+          "supports_established": true
+        },
+        "witness_transition_ids": [
+          "stabilize",
+          "deploy",
+          "capture",
+          "lock",
+          "hold_from_locked"
+        ]
+      },
+      {
+        "state": {
+          "cantilever_restraint_released": true,
+          "locks_secured": true,
+          "mode": "service",
+          "supports_established": true
+        },
+        "witness_transition_ids": [
+          "stabilize",
+          "deploy",
+          "capture",
+          "lock",
+          "release_cantilever_restraint",
+          "enter_model_service"
+        ]
+      },
+      {
+        "state": {
+          "cantilever_restraint_released": true,
+          "locks_secured": true,
+          "mode": "hold",
+          "supports_established": true
+        },
+        "witness_transition_ids": [
+          "stabilize",
+          "deploy",
+          "capture",
+          "lock",
+          "release_cantilever_restraint",
+          "hold_from_transferred"
+        ]
+      }
+    ],
+    "meaning": "Existential reachability and deadlock reporting; accepted hold is not service, and recovery is unresolved",
+    "model_service_state_reached": true,
+    "unexpected_deadlock_count": 0,
+    "unexpected_deadlocks": [],
+    "universal_service_liveness_proved": false
+  },
+  "physical_approval": false,
+  "public_opening": {
+    "allowed": false,
+    "meaning": "Software-model decisions never confer public opening or physical operating authorization",
+    "unresolved_gates": [
+      "site_selection_and_permission",
+      "structural_capacity_and_foundations",
+      "accessible_route",
+      "calibrated_field_measurements",
+      "hardware_and_actuation_model",
+      "deployment_work_zone",
+      "inspection_and_emergency_procedure"
+    ]
+  },
+  "reachable_modes": [
+    "captured",
+    "deploying",
+    "hold",
+    "locked",
+    "service",
+    "stabilized",
+    "staged",
+    "transferred"
+  ],
+  "reachable_states": [
+    {
+      "cantilever_restraint_released": false,
+      "locks_secured": false,
+      "mode": "staged",
+      "supports_established": false
+    },
+    {
+      "cantilever_restraint_released": false,
+      "locks_secured": false,
+      "mode": "stabilized",
+      "supports_established": true
+    },
+    {
+      "cantilever_restraint_released": false,
+      "locks_secured": false,
+      "mode": "hold",
+      "supports_established": false
+    },
+    {
+      "cantilever_restraint_released": false,
+      "locks_secured": false,
+      "mode": "deploying",
+      "supports_established": true
+    },
+    {
+      "cantilever_restraint_released": false,
+      "locks_secured": false,
+      "mode": "hold",
+      "supports_established": true
+    },
+    {
+      "cantilever_restraint_released": false,
+      "locks_secured": false,
+      "mode": "captured",
+      "supports_established": true
+    },
+    {
+      "cantilever_restraint_released": false,
+      "locks_secured": true,
+      "mode": "locked",
+      "supports_established": true
+    },
+    {
+      "cantilever_restraint_released": true,
+      "locks_secured": true,
+      "mode": "transferred",
+      "supports_established": true
+    },
+    {
+      "cantilever_restraint_released": false,
+      "locks_secured": true,
+      "mode": "hold",
+      "supports_established": true
+    },
+    {
+      "cantilever_restraint_released": true,
+      "locks_secured": true,
+      "mode": "service",
+      "supports_established": true
+    },
+    {
+      "cantilever_restraint_released": true,
+      "locks_secured": true,
+      "mode": "hold",
+      "supports_established": true
+    }
+  ],
+  "receipt_bindings": {
+    "assembly_receipt_content_sha256": "17e42cfeda4f71a6e43e74f065d443ab3bea5c44e2d1d1ffcd221a2d0cf81474",
+    "evidence_report_content_sha256": "65723c466a9c916dd783469409005ee4ab3c5e28d61c2bc4104861c83e853e17",
+    "geometry_and_mass_source_sha256": "8b3fa46801e8a95c8b89fd58e7823e97e9059dd9b3e96ba8b0351a30d3483a2f",
+    "loaded_capture_source_sha256": "ddb3a9308d5719a7e0fa511fdd46616ed52631d31766147d217f700156c44c7e",
+    "motion_receipt_content_sha256": "cccbffb42e6d219314db3edbfb418a7fdb4c122653cc0a4c2a6c469708c81e6e"
+  },
+  "safety": {
+    "declared_graph_invariants_hold": true,
+    "scope": "All states reachable in this finite graph for this fixed guard valuation",
+    "violations": []
+  },
+  "schema_version": 1,
+  "scope": "Finite model transitions composed with bound continuous-model receipts and synthetic evidence; no actuator commands are issued",
+  "source_file_sha256": {
+    "assembly-report.json": "f969202a08dd688f85cf2b13255ac9403df06d02783085df5b01f0d9188a5541",
+    "design.json": "52f9682beefbe1cba27747c10281f78cef73cd0f328916ca65c158a96aa839ab",
+    "evidence-report.json": "17766c63d59ecafdc42b8c7e3ee1045b4b91f863d620a130ad61ebc49c585570",
+    "motion-report.json": "4f654ccd1483223381b171aa278d4ce43798369e6330b172c3f22266d1c2f750"
+  },
+  "transitions": [
+    {
+      "effects": {
+        "supports_established": true
+      },
+      "from": "staged",
+      "id": "stabilize",
+      "requires": [
+        "bindings_valid",
+        "mass_conserved",
+        "assembly_models_solved",
+        "continuous_support_inside"
+      ],
+      "to": "stabilized"
+    },
+    {
+      "effects": {},
+      "from": "stabilized",
+      "id": "deploy",
+      "requires": [
+        "bindings_valid",
+        "continuous_support_inside",
+        "stage_endpoints_match",
+        "state_supports_established"
+      ],
+      "to": "deploying"
+    },
+    {
+      "effects": {},
+      "from": "deploying",
+      "id": "capture",
+      "requires": [
+        "continuous_support_inside",
+        "continuous_half_separation",
+        "nominal_capture_within_envelope",
+        "loaded_capture_within_envelope"
+      ],
+      "to": "captured"
+    },
+    {
+      "effects": {
+        "locks_secured": true
+      },
+      "from": "captured",
+      "id": "lock",
+      "requires": [
+        "locks_condition_established",
+        "continuous_support_inside",
+        "state_supports_established"
+      ],
+      "to": "locked"
+    },
+    {
+      "effects": {
+        "cantilever_restraint_released": true
+      },
+      "from": "locked",
+      "id": "release_cantilever_restraint",
+      "requires": [
+        "controlled_release_verified",
+        "release_support_inside",
+        "locks_condition_established",
+        "continuous_support_inside",
+        "state_supports_established",
+        "state_locks_secured"
+      ],
+      "to": "transferred"
+    },
+    {
+      "effects": {},
+      "from": "transferred",
+      "id": "enter_model_service",
+      "requires": [
+        "assembly_models_solved",
+        "service_support_inside",
+        "service_reference_clearance_satisfied",
+        "stage_endpoints_match",
+        "locks_condition_established",
+        "state_locks_secured",
+        "state_supports_established",
+        "state_restraint_released"
+      ],
+      "to": "service"
+    },
+    {
+      "effects": {},
+      "from": "hold",
+      "id": "begin_recovery",
+      "requires": [
+        "recovery_path_verified"
+      ],
+      "to": "recovery"
+    },
+    {
+      "effects": {
+        "cantilever_restraint_released": false,
+        "locks_secured": false,
+        "supports_established": false
+      },
+      "from": "recovery",
+      "id": "finish_recovery",
+      "requires": [
+        "recovery_path_verified"
+      ],
+      "to": "staged"
+    },
+    {
+      "effects": {},
+      "from": "staged",
+      "id": "hold_from_staged",
+      "requires": [],
+      "to": "hold"
+    },
+    {
+      "effects": {},
+      "from": "stabilized",
+      "id": "hold_from_stabilized",
+      "requires": [],
+      "to": "hold"
+    },
+    {
+      "effects": {},
+      "from": "deploying",
+      "id": "hold_from_deploying",
+      "requires": [],
+      "to": "hold"
+    },
+    {
+      "effects": {},
+      "from": "captured",
+      "id": "hold_from_captured",
+      "requires": [],
+      "to": "hold"
+    },
+    {
+      "effects": {},
+      "from": "locked",
+      "id": "hold_from_locked",
+      "requires": [],
+      "to": "hold"
+    },
+    {
+      "effects": {},
+      "from": "transferred",
+      "id": "hold_from_transferred",
+      "requires": [],
+      "to": "hold"
+    },
+    {
+      "effects": {},
+      "from": "recovery",
+      "id": "hold_from_recovery",
+      "requires": [],
+      "to": "hold"
+    }
+  ],
+  "verification_controls": {
+    "failed_release_certificate": {
+      "liveness": {
+        "accepted_hold_reached": true,
+        "accepted_terminal_states": [
+          {
+            "state": {
+              "cantilever_restraint_released": false,
+              "locks_secured": false,
+              "mode": "hold",
+              "supports_established": false
+            },
+            "witness_transition_ids": [
+              "hold_from_staged"
+            ]
+          },
+          {
+            "state": {
+              "cantilever_restraint_released": false,
+              "locks_secured": false,
+              "mode": "hold",
+              "supports_established": true
+            },
+            "witness_transition_ids": [
+              "stabilize",
+              "hold_from_stabilized"
+            ]
+          },
+          {
+            "state": {
+              "cantilever_restraint_released": false,
+              "locks_secured": true,
+              "mode": "hold",
+              "supports_established": true
+            },
+            "witness_transition_ids": [
+              "stabilize",
+              "deploy",
+              "capture",
+              "lock",
+              "hold_from_locked"
+            ]
+          }
+        ],
+        "meaning": "Existential reachability and deadlock reporting; accepted hold is not service, and recovery is unresolved",
+        "model_service_state_reached": false,
+        "unexpected_deadlock_count": 0,
+        "unexpected_deadlocks": [],
+        "universal_service_liveness_proved": false
+      },
+      "reachable_modes": [
+        "captured",
+        "deploying",
+        "hold",
+        "locked",
+        "stabilized",
+        "staged"
+      ]
+    },
+    "missing_hold_escape": {
+      "liveness": {
+        "accepted_hold_reached": false,
+        "accepted_terminal_states": [],
+        "meaning": "Existential reachability and deadlock reporting; accepted hold is not service, and recovery is unresolved",
+        "model_service_state_reached": false,
+        "unexpected_deadlock_count": 1,
+        "unexpected_deadlocks": [
+          {
+            "state": {
+              "cantilever_restraint_released": false,
+              "locks_secured": false,
+              "mode": "staged",
+              "supports_established": false
+            },
+            "witness_transition_ids": []
+          }
+        ],
+        "universal_service_liveness_proved": false
+      }
+    },
+    "missing_support_certificate": {
+      "liveness": {
+        "accepted_hold_reached": true,
+        "accepted_terminal_states": [
+          {
+            "state": {
+              "cantilever_restraint_released": false,
+              "locks_secured": false,
+              "mode": "hold",
+              "supports_established": false
+            },
+            "witness_transition_ids": [
+              "hold_from_staged"
+            ]
+          }
+        ],
+        "meaning": "Existential reachability and deadlock reporting; accepted hold is not service, and recovery is unresolved",
+        "model_service_state_reached": false,
+        "unexpected_deadlock_count": 0,
+        "unexpected_deadlocks": [],
+        "universal_service_liveness_proved": false
+      },
+      "reachable_modes": [
+        "hold",
+        "staged"
+      ]
+    },
+    "unsafe_release_graph": {
+      "safety": {
+        "declared_graph_invariants_hold": false,
+        "scope": "All states reachable in this finite graph for this fixed guard valuation",
+        "violations": [
+          {
+            "problems": [
+              "Cantilever restraint released before both model locks and support establishment"
+            ],
+            "state": {
+              "cantilever_restraint_released": true,
+              "locks_secured": false,
+              "mode": "transferred",
+              "supports_established": false
+            },
+            "witness_transition_ids": [
+              "UNSAFE_release_before_locks_or_supports"
+            ]
+          }
+        ]
+      },
+      "source_kind": "deliberately_unsafe_graph_fixture"
+    }
+  },
+  "witness_paths": {
+    "captured": [
+      "stabilize",
+      "deploy",
+      "capture"
+    ],
+    "deploying": [
+      "stabilize",
+      "deploy"
+    ],
+    "hold": [
+      "hold_from_staged"
+    ],
+    "locked": [
+      "stabilize",
+      "deploy",
+      "capture",
+      "lock"
+    ],
+    "service": [
+      "stabilize",
+      "deploy",
+      "capture",
+      "lock",
+      "release_cantilever_restraint",
+      "enter_model_service"
+    ],
+    "stabilized": [
+      "stabilize"
+    ],
+    "staged": [],
+    "transferred": [
+      "stabilize",
+      "deploy",
+      "capture",
+      "lock",
+      "release_cantilever_restraint"
+    ]
+  }
+}

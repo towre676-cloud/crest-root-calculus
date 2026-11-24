@@ -1,0 +1,4579 @@
+{
+  "case_count": 14,
+  "cases": [
+    {
+      "case_id": "command_only",
+      "description": "The same commanded position fits full, partial and missing locks, with either support state",
+      "expected_outcome": "ambiguous",
+      "input": {
+        "bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "source_sha256": "215b5178c80dc9287ccc46a36d1f2b862497d608a19075717a6f87310aed3533"
+        },
+        "evaluation_step": 10,
+        "expected_bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "source_sha256": "215b5178c80dc9287ccc46a36d1f2b862497d608a19075717a6f87310aed3533"
+        },
+        "expected_hazards": [
+          "full_connector_engagement",
+          "support_state_established"
+        ],
+        "model": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_id": "synthetic-lock-and-support-v1",
+          "required_hazards": [
+            "full_connector_engagement",
+            "support_state_established"
+          ],
+          "required_measurements": [
+            "engagement_probe",
+            "support_reaction_probe"
+          ],
+          "scope": "Authored synthetic signal intervals, not predictions calibrated to the reference bridge",
+          "sensors": {
+            "actuator_command": {
+              "allowed_observation_kinds": [
+                "command_record"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "0",
+              "planning_error": "0",
+              "unit": "mm"
+            },
+            "engagement_probe": {
+              "allowed_observation_kinds": [
+                "synthetic_fixture",
+                "independent_measurement"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "100",
+              "planning_error": "1",
+              "unit": "mm"
+            },
+            "support_reaction_probe": {
+              "allowed_observation_kinds": [
+                "synthetic_fixture",
+                "independent_measurement"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "5000",
+              "planning_error": "100",
+              "unit": "N"
+            }
+          },
+          "states": [
+            {
+              "hazards": {
+                "full_connector_engagement": true,
+                "support_state_established": true
+              },
+              "id": "full_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "98",
+                  "102"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": true,
+                "support_state_established": false
+              },
+              "id": "full_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "98",
+                  "102"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": true
+              },
+              "id": "partial_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "45",
+                  "55"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": false
+              },
+              "id": "partial_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "45",
+                  "55"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": true
+              },
+              "id": "missing_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "0",
+                  "2"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": false
+              },
+              "id": "missing_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "0",
+                  "2"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            }
+          ]
+        },
+        "schema_version": 1,
+        "source": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "kind": "synthetic_fixture",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "observations": {
+            "actuator_command": {
+              "at_step": 10,
+              "bounds": [
+                "1000",
+                "1000"
+              ],
+              "error": "0",
+              "kind": "command_record",
+              "unit": "mm"
+            }
+          },
+          "source_id": "authored-lock-ambiguity-control:command_only"
+        }
+      },
+      "result": {
+        "bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "source_sha256": "215b5178c80dc9287ccc46a36d1f2b862497d608a19075717a6f87310aed3533"
+        },
+        "declared_candidate_count": 6,
+        "effective_observation_intervals": {
+          "actuator_command": [
+            "1000",
+            "1000"
+          ]
+        },
+        "excluded_states": [],
+        "hazard_witnesses": {
+          "full_connector_engagement": {
+            "discharging_state_ids": [
+              "full_lock__established_support",
+              "full_lock__missing_support"
+            ],
+            "failing_state_ids": [
+              "partial_lock__established_support",
+              "partial_lock__missing_support",
+              "missing_lock__established_support",
+              "missing_lock__missing_support"
+            ]
+          },
+          "support_state_established": {
+            "discharging_state_ids": [
+              "full_lock__established_support",
+              "partial_lock__established_support",
+              "missing_lock__established_support"
+            ],
+            "failing_state_ids": [
+              "full_lock__missing_support",
+              "partial_lock__missing_support",
+              "missing_lock__missing_support"
+            ]
+          }
+        },
+        "missing_measurement_ids": [
+          "engagement_probe",
+          "support_reaction_probe"
+        ],
+        "next_measurement_id": "engagement_probe",
+        "observation_provenance": {
+          "actuator_command": "command_record"
+        },
+        "observed_measurement_ids": [
+          "actuator_command"
+        ],
+        "outcome": "ambiguous",
+        "physical_authorization": false,
+        "ranked_next_measurements": [
+          {
+            "cost": "1",
+            "measurement_id": "engagement_probe",
+            "opposite_decision_pairs": 5,
+            "opposite_decision_pairs_separated": 4,
+            "planning_error": "1",
+            "separated_pairs_per_cost": "4"
+          },
+          {
+            "cost": "1",
+            "measurement_id": "support_reaction_probe",
+            "opposite_decision_pairs": 5,
+            "opposite_decision_pairs_separated": 3,
+            "planning_error": "100",
+            "separated_pairs_per_cost": "3"
+          }
+        ],
+        "reasons": [
+          "Required evidence is absent: engagement_probe, support_reaction_probe"
+        ],
+        "required_hazards": [
+          "full_connector_engagement",
+          "support_state_established"
+        ],
+        "schema_version": 1,
+        "scope": "Finite explicit model and bounded intervals only; no physical opening authority",
+        "source_id": "authored-lock-ambiguity-control:command_only",
+        "source_kind": "synthetic_fixture",
+        "surviving_state_ids": [
+          "full_lock__established_support",
+          "full_lock__missing_support",
+          "partial_lock__established_support",
+          "partial_lock__missing_support",
+          "missing_lock__established_support",
+          "missing_lock__missing_support"
+        ]
+      }
+    },
+    {
+      "case_id": "independent_channels_synthetic",
+      "description": "Two independently defined synthetic channels isolate the full-lock/established-support candidate",
+      "expected_outcome": "condition_established",
+      "input": {
+        "bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "source_sha256": "8aa04fcb55cf8e2edd624c1715a2aa86436f135b1dd8d6f3ace05fc6549824cd"
+        },
+        "evaluation_step": 10,
+        "expected_bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "source_sha256": "8aa04fcb55cf8e2edd624c1715a2aa86436f135b1dd8d6f3ace05fc6549824cd"
+        },
+        "expected_hazards": [
+          "full_connector_engagement",
+          "support_state_established"
+        ],
+        "model": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_id": "synthetic-lock-and-support-v1",
+          "required_hazards": [
+            "full_connector_engagement",
+            "support_state_established"
+          ],
+          "required_measurements": [
+            "engagement_probe",
+            "support_reaction_probe"
+          ],
+          "scope": "Authored synthetic signal intervals, not predictions calibrated to the reference bridge",
+          "sensors": {
+            "actuator_command": {
+              "allowed_observation_kinds": [
+                "command_record"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "0",
+              "planning_error": "0",
+              "unit": "mm"
+            },
+            "engagement_probe": {
+              "allowed_observation_kinds": [
+                "synthetic_fixture",
+                "independent_measurement"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "100",
+              "planning_error": "1",
+              "unit": "mm"
+            },
+            "support_reaction_probe": {
+              "allowed_observation_kinds": [
+                "synthetic_fixture",
+                "independent_measurement"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "5000",
+              "planning_error": "100",
+              "unit": "N"
+            }
+          },
+          "states": [
+            {
+              "hazards": {
+                "full_connector_engagement": true,
+                "support_state_established": true
+              },
+              "id": "full_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "98",
+                  "102"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": true,
+                "support_state_established": false
+              },
+              "id": "full_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "98",
+                  "102"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": true
+              },
+              "id": "partial_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "45",
+                  "55"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": false
+              },
+              "id": "partial_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "45",
+                  "55"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": true
+              },
+              "id": "missing_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "0",
+                  "2"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": false
+              },
+              "id": "missing_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "0",
+                  "2"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            }
+          ]
+        },
+        "schema_version": 1,
+        "source": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "kind": "synthetic_fixture",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "observations": {
+            "actuator_command": {
+              "at_step": 10,
+              "bounds": [
+                "1000",
+                "1000"
+              ],
+              "error": "0",
+              "kind": "command_record",
+              "unit": "mm"
+            },
+            "engagement_probe": {
+              "at_step": 10,
+              "bounds": [
+                "100",
+                "100"
+              ],
+              "error": "1",
+              "kind": "synthetic_fixture",
+              "unit": "mm"
+            },
+            "support_reaction_probe": {
+              "at_step": 10,
+              "bounds": [
+                "21000",
+                "21000"
+              ],
+              "error": "100",
+              "kind": "synthetic_fixture",
+              "unit": "N"
+            }
+          },
+          "source_id": "authored-lock-ambiguity-control:independent_channels_synthetic"
+        }
+      },
+      "result": {
+        "bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "source_sha256": "8aa04fcb55cf8e2edd624c1715a2aa86436f135b1dd8d6f3ace05fc6549824cd"
+        },
+        "declared_candidate_count": 6,
+        "effective_observation_intervals": {
+          "actuator_command": [
+            "1000",
+            "1000"
+          ],
+          "engagement_probe": [
+            "99",
+            "101"
+          ],
+          "support_reaction_probe": [
+            "20900",
+            "21100"
+          ]
+        },
+        "excluded_states": [
+          {
+            "disjoint_intervals": [
+              {
+                "measurement_id": "support_reaction_probe",
+                "permitted_observation": [
+                  "20900",
+                  "21100"
+                ],
+                "prediction": [
+                  "0",
+                  "2000"
+                ]
+              }
+            ],
+            "state_id": "full_lock__missing_support"
+          },
+          {
+            "disjoint_intervals": [
+              {
+                "measurement_id": "engagement_probe",
+                "permitted_observation": [
+                  "99",
+                  "101"
+                ],
+                "prediction": [
+                  "45",
+                  "55"
+                ]
+              }
+            ],
+            "state_id": "partial_lock__established_support"
+          },
+          {
+            "disjoint_intervals": [
+              {
+                "measurement_id": "engagement_probe",
+                "permitted_observation": [
+                  "99",
+                  "101"
+                ],
+                "prediction": [
+                  "45",
+                  "55"
+                ]
+              },
+              {
+                "measurement_id": "support_reaction_probe",
+                "permitted_observation": [
+                  "20900",
+                  "21100"
+                ],
+                "prediction": [
+                  "0",
+                  "2000"
+                ]
+              }
+            ],
+            "state_id": "partial_lock__missing_support"
+          },
+          {
+            "disjoint_intervals": [
+              {
+                "measurement_id": "engagement_probe",
+                "permitted_observation": [
+                  "99",
+                  "101"
+                ],
+                "prediction": [
+                  "0",
+                  "2"
+                ]
+              }
+            ],
+            "state_id": "missing_lock__established_support"
+          },
+          {
+            "disjoint_intervals": [
+              {
+                "measurement_id": "engagement_probe",
+                "permitted_observation": [
+                  "99",
+                  "101"
+                ],
+                "prediction": [
+                  "0",
+                  "2"
+                ]
+              },
+              {
+                "measurement_id": "support_reaction_probe",
+                "permitted_observation": [
+                  "20900",
+                  "21100"
+                ],
+                "prediction": [
+                  "0",
+                  "2000"
+                ]
+              }
+            ],
+            "state_id": "missing_lock__missing_support"
+          }
+        ],
+        "hazard_witnesses": {
+          "full_connector_engagement": {
+            "discharging_state_ids": [
+              "full_lock__established_support"
+            ],
+            "failing_state_ids": []
+          },
+          "support_state_established": {
+            "discharging_state_ids": [
+              "full_lock__established_support"
+            ],
+            "failing_state_ids": []
+          }
+        },
+        "missing_measurement_ids": [],
+        "next_measurement_id": null,
+        "observation_provenance": {
+          "actuator_command": "command_record",
+          "engagement_probe": "synthetic_fixture",
+          "support_reaction_probe": "synthetic_fixture"
+        },
+        "observed_measurement_ids": [
+          "actuator_command",
+          "engagement_probe",
+          "support_reaction_probe"
+        ],
+        "outcome": "condition_established",
+        "physical_authorization": false,
+        "ranked_next_measurements": [],
+        "reasons": [
+          "Every compatible candidate discharges every declared hazard"
+        ],
+        "required_hazards": [
+          "full_connector_engagement",
+          "support_state_established"
+        ],
+        "schema_version": 1,
+        "scope": "Finite explicit model and bounded intervals only; no physical opening authority",
+        "source_id": "authored-lock-ambiguity-control:independent_channels_synthetic",
+        "source_kind": "synthetic_fixture",
+        "surviving_state_ids": [
+          "full_lock__established_support"
+        ]
+      }
+    },
+    {
+      "case_id": "partial_lock",
+      "description": "The engagement observation rejects the full-lock state",
+      "expected_outcome": "condition_fails",
+      "input": {
+        "bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "source_sha256": "2bd9686ff3afdf2ade8337ef7528570152395d233fb409da5191e80058a1a0d2"
+        },
+        "evaluation_step": 10,
+        "expected_bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "source_sha256": "2bd9686ff3afdf2ade8337ef7528570152395d233fb409da5191e80058a1a0d2"
+        },
+        "expected_hazards": [
+          "full_connector_engagement",
+          "support_state_established"
+        ],
+        "model": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_id": "synthetic-lock-and-support-v1",
+          "required_hazards": [
+            "full_connector_engagement",
+            "support_state_established"
+          ],
+          "required_measurements": [
+            "engagement_probe",
+            "support_reaction_probe"
+          ],
+          "scope": "Authored synthetic signal intervals, not predictions calibrated to the reference bridge",
+          "sensors": {
+            "actuator_command": {
+              "allowed_observation_kinds": [
+                "command_record"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "0",
+              "planning_error": "0",
+              "unit": "mm"
+            },
+            "engagement_probe": {
+              "allowed_observation_kinds": [
+                "synthetic_fixture",
+                "independent_measurement"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "100",
+              "planning_error": "1",
+              "unit": "mm"
+            },
+            "support_reaction_probe": {
+              "allowed_observation_kinds": [
+                "synthetic_fixture",
+                "independent_measurement"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "5000",
+              "planning_error": "100",
+              "unit": "N"
+            }
+          },
+          "states": [
+            {
+              "hazards": {
+                "full_connector_engagement": true,
+                "support_state_established": true
+              },
+              "id": "full_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "98",
+                  "102"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": true,
+                "support_state_established": false
+              },
+              "id": "full_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "98",
+                  "102"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": true
+              },
+              "id": "partial_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "45",
+                  "55"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": false
+              },
+              "id": "partial_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "45",
+                  "55"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": true
+              },
+              "id": "missing_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "0",
+                  "2"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": false
+              },
+              "id": "missing_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "0",
+                  "2"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            }
+          ]
+        },
+        "schema_version": 1,
+        "source": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "kind": "synthetic_fixture",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "observations": {
+            "actuator_command": {
+              "at_step": 10,
+              "bounds": [
+                "1000",
+                "1000"
+              ],
+              "error": "0",
+              "kind": "command_record",
+              "unit": "mm"
+            },
+            "engagement_probe": {
+              "at_step": 10,
+              "bounds": [
+                "50",
+                "50"
+              ],
+              "error": "1",
+              "kind": "synthetic_fixture",
+              "unit": "mm"
+            },
+            "support_reaction_probe": {
+              "at_step": 10,
+              "bounds": [
+                "21000",
+                "21000"
+              ],
+              "error": "100",
+              "kind": "synthetic_fixture",
+              "unit": "N"
+            }
+          },
+          "source_id": "authored-lock-ambiguity-control:partial_lock"
+        }
+      },
+      "result": {
+        "bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "source_sha256": "2bd9686ff3afdf2ade8337ef7528570152395d233fb409da5191e80058a1a0d2"
+        },
+        "declared_candidate_count": 6,
+        "effective_observation_intervals": {
+          "actuator_command": [
+            "1000",
+            "1000"
+          ],
+          "engagement_probe": [
+            "49",
+            "51"
+          ],
+          "support_reaction_probe": [
+            "20900",
+            "21100"
+          ]
+        },
+        "excluded_states": [
+          {
+            "disjoint_intervals": [
+              {
+                "measurement_id": "engagement_probe",
+                "permitted_observation": [
+                  "49",
+                  "51"
+                ],
+                "prediction": [
+                  "98",
+                  "102"
+                ]
+              }
+            ],
+            "state_id": "full_lock__established_support"
+          },
+          {
+            "disjoint_intervals": [
+              {
+                "measurement_id": "engagement_probe",
+                "permitted_observation": [
+                  "49",
+                  "51"
+                ],
+                "prediction": [
+                  "98",
+                  "102"
+                ]
+              },
+              {
+                "measurement_id": "support_reaction_probe",
+                "permitted_observation": [
+                  "20900",
+                  "21100"
+                ],
+                "prediction": [
+                  "0",
+                  "2000"
+                ]
+              }
+            ],
+            "state_id": "full_lock__missing_support"
+          },
+          {
+            "disjoint_intervals": [
+              {
+                "measurement_id": "support_reaction_probe",
+                "permitted_observation": [
+                  "20900",
+                  "21100"
+                ],
+                "prediction": [
+                  "0",
+                  "2000"
+                ]
+              }
+            ],
+            "state_id": "partial_lock__missing_support"
+          },
+          {
+            "disjoint_intervals": [
+              {
+                "measurement_id": "engagement_probe",
+                "permitted_observation": [
+                  "49",
+                  "51"
+                ],
+                "prediction": [
+                  "0",
+                  "2"
+                ]
+              }
+            ],
+            "state_id": "missing_lock__established_support"
+          },
+          {
+            "disjoint_intervals": [
+              {
+                "measurement_id": "engagement_probe",
+                "permitted_observation": [
+                  "49",
+                  "51"
+                ],
+                "prediction": [
+                  "0",
+                  "2"
+                ]
+              },
+              {
+                "measurement_id": "support_reaction_probe",
+                "permitted_observation": [
+                  "20900",
+                  "21100"
+                ],
+                "prediction": [
+                  "0",
+                  "2000"
+                ]
+              }
+            ],
+            "state_id": "missing_lock__missing_support"
+          }
+        ],
+        "hazard_witnesses": {
+          "full_connector_engagement": {
+            "discharging_state_ids": [],
+            "failing_state_ids": [
+              "partial_lock__established_support"
+            ]
+          },
+          "support_state_established": {
+            "discharging_state_ids": [
+              "partial_lock__established_support"
+            ],
+            "failing_state_ids": []
+          }
+        },
+        "missing_measurement_ids": [],
+        "next_measurement_id": null,
+        "observation_provenance": {
+          "actuator_command": "command_record",
+          "engagement_probe": "synthetic_fixture",
+          "support_reaction_probe": "synthetic_fixture"
+        },
+        "observed_measurement_ids": [
+          "actuator_command",
+          "engagement_probe",
+          "support_reaction_probe"
+        ],
+        "outcome": "condition_fails",
+        "physical_authorization": false,
+        "ranked_next_measurements": [],
+        "reasons": [
+          "Every compatible candidate fails at least one declared hazard"
+        ],
+        "required_hazards": [
+          "full_connector_engagement",
+          "support_state_established"
+        ],
+        "schema_version": 1,
+        "scope": "Finite explicit model and bounded intervals only; no physical opening authority",
+        "source_id": "authored-lock-ambiguity-control:partial_lock",
+        "source_kind": "synthetic_fixture",
+        "surviving_state_ids": [
+          "partial_lock__established_support"
+        ]
+      }
+    },
+    {
+      "case_id": "missing_lock",
+      "description": "The engagement observation supports a missing connector",
+      "expected_outcome": "condition_fails",
+      "input": {
+        "bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "source_sha256": "6ec53818921e75043932a41e3c4fd705886810752b4f16f0f70914ff429b3073"
+        },
+        "evaluation_step": 10,
+        "expected_bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "source_sha256": "6ec53818921e75043932a41e3c4fd705886810752b4f16f0f70914ff429b3073"
+        },
+        "expected_hazards": [
+          "full_connector_engagement",
+          "support_state_established"
+        ],
+        "model": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_id": "synthetic-lock-and-support-v1",
+          "required_hazards": [
+            "full_connector_engagement",
+            "support_state_established"
+          ],
+          "required_measurements": [
+            "engagement_probe",
+            "support_reaction_probe"
+          ],
+          "scope": "Authored synthetic signal intervals, not predictions calibrated to the reference bridge",
+          "sensors": {
+            "actuator_command": {
+              "allowed_observation_kinds": [
+                "command_record"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "0",
+              "planning_error": "0",
+              "unit": "mm"
+            },
+            "engagement_probe": {
+              "allowed_observation_kinds": [
+                "synthetic_fixture",
+                "independent_measurement"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "100",
+              "planning_error": "1",
+              "unit": "mm"
+            },
+            "support_reaction_probe": {
+              "allowed_observation_kinds": [
+                "synthetic_fixture",
+                "independent_measurement"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "5000",
+              "planning_error": "100",
+              "unit": "N"
+            }
+          },
+          "states": [
+            {
+              "hazards": {
+                "full_connector_engagement": true,
+                "support_state_established": true
+              },
+              "id": "full_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "98",
+                  "102"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": true,
+                "support_state_established": false
+              },
+              "id": "full_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "98",
+                  "102"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": true
+              },
+              "id": "partial_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "45",
+                  "55"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": false
+              },
+              "id": "partial_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "45",
+                  "55"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": true
+              },
+              "id": "missing_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "0",
+                  "2"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": false
+              },
+              "id": "missing_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "0",
+                  "2"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            }
+          ]
+        },
+        "schema_version": 1,
+        "source": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "kind": "synthetic_fixture",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "observations": {
+            "actuator_command": {
+              "at_step": 10,
+              "bounds": [
+                "1000",
+                "1000"
+              ],
+              "error": "0",
+              "kind": "command_record",
+              "unit": "mm"
+            },
+            "engagement_probe": {
+              "at_step": 10,
+              "bounds": [
+                "1",
+                "1"
+              ],
+              "error": "1",
+              "kind": "synthetic_fixture",
+              "unit": "mm"
+            },
+            "support_reaction_probe": {
+              "at_step": 10,
+              "bounds": [
+                "21000",
+                "21000"
+              ],
+              "error": "100",
+              "kind": "synthetic_fixture",
+              "unit": "N"
+            }
+          },
+          "source_id": "authored-lock-ambiguity-control:missing_lock"
+        }
+      },
+      "result": {
+        "bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "source_sha256": "6ec53818921e75043932a41e3c4fd705886810752b4f16f0f70914ff429b3073"
+        },
+        "declared_candidate_count": 6,
+        "effective_observation_intervals": {
+          "actuator_command": [
+            "1000",
+            "1000"
+          ],
+          "engagement_probe": [
+            "0",
+            "2"
+          ],
+          "support_reaction_probe": [
+            "20900",
+            "21100"
+          ]
+        },
+        "excluded_states": [
+          {
+            "disjoint_intervals": [
+              {
+                "measurement_id": "engagement_probe",
+                "permitted_observation": [
+                  "0",
+                  "2"
+                ],
+                "prediction": [
+                  "98",
+                  "102"
+                ]
+              }
+            ],
+            "state_id": "full_lock__established_support"
+          },
+          {
+            "disjoint_intervals": [
+              {
+                "measurement_id": "engagement_probe",
+                "permitted_observation": [
+                  "0",
+                  "2"
+                ],
+                "prediction": [
+                  "98",
+                  "102"
+                ]
+              },
+              {
+                "measurement_id": "support_reaction_probe",
+                "permitted_observation": [
+                  "20900",
+                  "21100"
+                ],
+                "prediction": [
+                  "0",
+                  "2000"
+                ]
+              }
+            ],
+            "state_id": "full_lock__missing_support"
+          },
+          {
+            "disjoint_intervals": [
+              {
+                "measurement_id": "engagement_probe",
+                "permitted_observation": [
+                  "0",
+                  "2"
+                ],
+                "prediction": [
+                  "45",
+                  "55"
+                ]
+              }
+            ],
+            "state_id": "partial_lock__established_support"
+          },
+          {
+            "disjoint_intervals": [
+              {
+                "measurement_id": "engagement_probe",
+                "permitted_observation": [
+                  "0",
+                  "2"
+                ],
+                "prediction": [
+                  "45",
+                  "55"
+                ]
+              },
+              {
+                "measurement_id": "support_reaction_probe",
+                "permitted_observation": [
+                  "20900",
+                  "21100"
+                ],
+                "prediction": [
+                  "0",
+                  "2000"
+                ]
+              }
+            ],
+            "state_id": "partial_lock__missing_support"
+          },
+          {
+            "disjoint_intervals": [
+              {
+                "measurement_id": "support_reaction_probe",
+                "permitted_observation": [
+                  "20900",
+                  "21100"
+                ],
+                "prediction": [
+                  "0",
+                  "2000"
+                ]
+              }
+            ],
+            "state_id": "missing_lock__missing_support"
+          }
+        ],
+        "hazard_witnesses": {
+          "full_connector_engagement": {
+            "discharging_state_ids": [],
+            "failing_state_ids": [
+              "missing_lock__established_support"
+            ]
+          },
+          "support_state_established": {
+            "discharging_state_ids": [
+              "missing_lock__established_support"
+            ],
+            "failing_state_ids": []
+          }
+        },
+        "missing_measurement_ids": [],
+        "next_measurement_id": null,
+        "observation_provenance": {
+          "actuator_command": "command_record",
+          "engagement_probe": "synthetic_fixture",
+          "support_reaction_probe": "synthetic_fixture"
+        },
+        "observed_measurement_ids": [
+          "actuator_command",
+          "engagement_probe",
+          "support_reaction_probe"
+        ],
+        "outcome": "condition_fails",
+        "physical_authorization": false,
+        "ranked_next_measurements": [],
+        "reasons": [
+          "Every compatible candidate fails at least one declared hazard"
+        ],
+        "required_hazards": [
+          "full_connector_engagement",
+          "support_state_established"
+        ],
+        "schema_version": 1,
+        "scope": "Finite explicit model and bounded intervals only; no physical opening authority",
+        "source_id": "authored-lock-ambiguity-control:missing_lock",
+        "source_kind": "synthetic_fixture",
+        "surviving_state_ids": [
+          "missing_lock__established_support"
+        ]
+      }
+    },
+    {
+      "case_id": "missing_support_state",
+      "description": "A full lock reading cannot compensate for missing support establishment",
+      "expected_outcome": "condition_fails",
+      "input": {
+        "bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "source_sha256": "e5899a66dba4e5049deb8de10cfd0c729f3bff7300abbdb9a4411a2c73e2cbae"
+        },
+        "evaluation_step": 10,
+        "expected_bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "source_sha256": "e5899a66dba4e5049deb8de10cfd0c729f3bff7300abbdb9a4411a2c73e2cbae"
+        },
+        "expected_hazards": [
+          "full_connector_engagement",
+          "support_state_established"
+        ],
+        "model": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_id": "synthetic-lock-and-support-v1",
+          "required_hazards": [
+            "full_connector_engagement",
+            "support_state_established"
+          ],
+          "required_measurements": [
+            "engagement_probe",
+            "support_reaction_probe"
+          ],
+          "scope": "Authored synthetic signal intervals, not predictions calibrated to the reference bridge",
+          "sensors": {
+            "actuator_command": {
+              "allowed_observation_kinds": [
+                "command_record"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "0",
+              "planning_error": "0",
+              "unit": "mm"
+            },
+            "engagement_probe": {
+              "allowed_observation_kinds": [
+                "synthetic_fixture",
+                "independent_measurement"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "100",
+              "planning_error": "1",
+              "unit": "mm"
+            },
+            "support_reaction_probe": {
+              "allowed_observation_kinds": [
+                "synthetic_fixture",
+                "independent_measurement"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "5000",
+              "planning_error": "100",
+              "unit": "N"
+            }
+          },
+          "states": [
+            {
+              "hazards": {
+                "full_connector_engagement": true,
+                "support_state_established": true
+              },
+              "id": "full_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "98",
+                  "102"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": true,
+                "support_state_established": false
+              },
+              "id": "full_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "98",
+                  "102"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": true
+              },
+              "id": "partial_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "45",
+                  "55"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": false
+              },
+              "id": "partial_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "45",
+                  "55"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": true
+              },
+              "id": "missing_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "0",
+                  "2"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": false
+              },
+              "id": "missing_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "0",
+                  "2"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            }
+          ]
+        },
+        "schema_version": 1,
+        "source": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "kind": "synthetic_fixture",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "observations": {
+            "actuator_command": {
+              "at_step": 10,
+              "bounds": [
+                "1000",
+                "1000"
+              ],
+              "error": "0",
+              "kind": "command_record",
+              "unit": "mm"
+            },
+            "engagement_probe": {
+              "at_step": 10,
+              "bounds": [
+                "100",
+                "100"
+              ],
+              "error": "1",
+              "kind": "synthetic_fixture",
+              "unit": "mm"
+            },
+            "support_reaction_probe": {
+              "at_step": 10,
+              "bounds": [
+                "1000",
+                "1000"
+              ],
+              "error": "100",
+              "kind": "synthetic_fixture",
+              "unit": "N"
+            }
+          },
+          "source_id": "authored-lock-ambiguity-control:missing_support_state"
+        }
+      },
+      "result": {
+        "bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "source_sha256": "e5899a66dba4e5049deb8de10cfd0c729f3bff7300abbdb9a4411a2c73e2cbae"
+        },
+        "declared_candidate_count": 6,
+        "effective_observation_intervals": {
+          "actuator_command": [
+            "1000",
+            "1000"
+          ],
+          "engagement_probe": [
+            "99",
+            "101"
+          ],
+          "support_reaction_probe": [
+            "900",
+            "1100"
+          ]
+        },
+        "excluded_states": [
+          {
+            "disjoint_intervals": [
+              {
+                "measurement_id": "support_reaction_probe",
+                "permitted_observation": [
+                  "900",
+                  "1100"
+                ],
+                "prediction": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            ],
+            "state_id": "full_lock__established_support"
+          },
+          {
+            "disjoint_intervals": [
+              {
+                "measurement_id": "engagement_probe",
+                "permitted_observation": [
+                  "99",
+                  "101"
+                ],
+                "prediction": [
+                  "45",
+                  "55"
+                ]
+              },
+              {
+                "measurement_id": "support_reaction_probe",
+                "permitted_observation": [
+                  "900",
+                  "1100"
+                ],
+                "prediction": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            ],
+            "state_id": "partial_lock__established_support"
+          },
+          {
+            "disjoint_intervals": [
+              {
+                "measurement_id": "engagement_probe",
+                "permitted_observation": [
+                  "99",
+                  "101"
+                ],
+                "prediction": [
+                  "45",
+                  "55"
+                ]
+              }
+            ],
+            "state_id": "partial_lock__missing_support"
+          },
+          {
+            "disjoint_intervals": [
+              {
+                "measurement_id": "engagement_probe",
+                "permitted_observation": [
+                  "99",
+                  "101"
+                ],
+                "prediction": [
+                  "0",
+                  "2"
+                ]
+              },
+              {
+                "measurement_id": "support_reaction_probe",
+                "permitted_observation": [
+                  "900",
+                  "1100"
+                ],
+                "prediction": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            ],
+            "state_id": "missing_lock__established_support"
+          },
+          {
+            "disjoint_intervals": [
+              {
+                "measurement_id": "engagement_probe",
+                "permitted_observation": [
+                  "99",
+                  "101"
+                ],
+                "prediction": [
+                  "0",
+                  "2"
+                ]
+              }
+            ],
+            "state_id": "missing_lock__missing_support"
+          }
+        ],
+        "hazard_witnesses": {
+          "full_connector_engagement": {
+            "discharging_state_ids": [
+              "full_lock__missing_support"
+            ],
+            "failing_state_ids": []
+          },
+          "support_state_established": {
+            "discharging_state_ids": [],
+            "failing_state_ids": [
+              "full_lock__missing_support"
+            ]
+          }
+        },
+        "missing_measurement_ids": [],
+        "next_measurement_id": null,
+        "observation_provenance": {
+          "actuator_command": "command_record",
+          "engagement_probe": "synthetic_fixture",
+          "support_reaction_probe": "synthetic_fixture"
+        },
+        "observed_measurement_ids": [
+          "actuator_command",
+          "engagement_probe",
+          "support_reaction_probe"
+        ],
+        "outcome": "condition_fails",
+        "physical_authorization": false,
+        "ranked_next_measurements": [],
+        "reasons": [
+          "Every compatible candidate fails at least one declared hazard"
+        ],
+        "required_hazards": [
+          "full_connector_engagement",
+          "support_state_established"
+        ],
+        "schema_version": 1,
+        "scope": "Finite explicit model and bounded intervals only; no physical opening authority",
+        "source_id": "authored-lock-ambiguity-control:missing_support_state",
+        "source_kind": "synthetic_fixture",
+        "surviving_state_ids": [
+          "full_lock__missing_support"
+        ]
+      }
+    },
+    {
+      "case_id": "missing_sensor",
+      "description": "A missing required support observation blocks establishment",
+      "expected_outcome": "ambiguous",
+      "input": {
+        "bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "source_sha256": "7f019b077f4babc9bdb8d13406f0e8874755ed0a217b6f05670c670c73ec498c"
+        },
+        "evaluation_step": 10,
+        "expected_bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "source_sha256": "7f019b077f4babc9bdb8d13406f0e8874755ed0a217b6f05670c670c73ec498c"
+        },
+        "expected_hazards": [
+          "full_connector_engagement",
+          "support_state_established"
+        ],
+        "model": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_id": "synthetic-lock-and-support-v1",
+          "required_hazards": [
+            "full_connector_engagement",
+            "support_state_established"
+          ],
+          "required_measurements": [
+            "engagement_probe",
+            "support_reaction_probe"
+          ],
+          "scope": "Authored synthetic signal intervals, not predictions calibrated to the reference bridge",
+          "sensors": {
+            "actuator_command": {
+              "allowed_observation_kinds": [
+                "command_record"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "0",
+              "planning_error": "0",
+              "unit": "mm"
+            },
+            "engagement_probe": {
+              "allowed_observation_kinds": [
+                "synthetic_fixture",
+                "independent_measurement"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "100",
+              "planning_error": "1",
+              "unit": "mm"
+            },
+            "support_reaction_probe": {
+              "allowed_observation_kinds": [
+                "synthetic_fixture",
+                "independent_measurement"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "5000",
+              "planning_error": "100",
+              "unit": "N"
+            }
+          },
+          "states": [
+            {
+              "hazards": {
+                "full_connector_engagement": true,
+                "support_state_established": true
+              },
+              "id": "full_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "98",
+                  "102"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": true,
+                "support_state_established": false
+              },
+              "id": "full_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "98",
+                  "102"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": true
+              },
+              "id": "partial_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "45",
+                  "55"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": false
+              },
+              "id": "partial_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "45",
+                  "55"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": true
+              },
+              "id": "missing_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "0",
+                  "2"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": false
+              },
+              "id": "missing_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "0",
+                  "2"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            }
+          ]
+        },
+        "schema_version": 1,
+        "source": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "kind": "synthetic_fixture",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "observations": {
+            "actuator_command": {
+              "at_step": 10,
+              "bounds": [
+                "1000",
+                "1000"
+              ],
+              "error": "0",
+              "kind": "command_record",
+              "unit": "mm"
+            },
+            "engagement_probe": {
+              "at_step": 10,
+              "bounds": [
+                "100",
+                "100"
+              ],
+              "error": "1",
+              "kind": "synthetic_fixture",
+              "unit": "mm"
+            }
+          },
+          "source_id": "authored-lock-ambiguity-control:missing_sensor"
+        }
+      },
+      "result": {
+        "bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "source_sha256": "7f019b077f4babc9bdb8d13406f0e8874755ed0a217b6f05670c670c73ec498c"
+        },
+        "declared_candidate_count": 6,
+        "effective_observation_intervals": {
+          "actuator_command": [
+            "1000",
+            "1000"
+          ],
+          "engagement_probe": [
+            "99",
+            "101"
+          ]
+        },
+        "excluded_states": [
+          {
+            "disjoint_intervals": [
+              {
+                "measurement_id": "engagement_probe",
+                "permitted_observation": [
+                  "99",
+                  "101"
+                ],
+                "prediction": [
+                  "45",
+                  "55"
+                ]
+              }
+            ],
+            "state_id": "partial_lock__established_support"
+          },
+          {
+            "disjoint_intervals": [
+              {
+                "measurement_id": "engagement_probe",
+                "permitted_observation": [
+                  "99",
+                  "101"
+                ],
+                "prediction": [
+                  "45",
+                  "55"
+                ]
+              }
+            ],
+            "state_id": "partial_lock__missing_support"
+          },
+          {
+            "disjoint_intervals": [
+              {
+                "measurement_id": "engagement_probe",
+                "permitted_observation": [
+                  "99",
+                  "101"
+                ],
+                "prediction": [
+                  "0",
+                  "2"
+                ]
+              }
+            ],
+            "state_id": "missing_lock__established_support"
+          },
+          {
+            "disjoint_intervals": [
+              {
+                "measurement_id": "engagement_probe",
+                "permitted_observation": [
+                  "99",
+                  "101"
+                ],
+                "prediction": [
+                  "0",
+                  "2"
+                ]
+              }
+            ],
+            "state_id": "missing_lock__missing_support"
+          }
+        ],
+        "hazard_witnesses": {
+          "full_connector_engagement": {
+            "discharging_state_ids": [
+              "full_lock__established_support",
+              "full_lock__missing_support"
+            ],
+            "failing_state_ids": []
+          },
+          "support_state_established": {
+            "discharging_state_ids": [
+              "full_lock__established_support"
+            ],
+            "failing_state_ids": [
+              "full_lock__missing_support"
+            ]
+          }
+        },
+        "missing_measurement_ids": [
+          "support_reaction_probe"
+        ],
+        "next_measurement_id": "support_reaction_probe",
+        "observation_provenance": {
+          "actuator_command": "command_record",
+          "engagement_probe": "synthetic_fixture"
+        },
+        "observed_measurement_ids": [
+          "actuator_command",
+          "engagement_probe"
+        ],
+        "outcome": "ambiguous",
+        "physical_authorization": false,
+        "ranked_next_measurements": [
+          {
+            "cost": "1",
+            "measurement_id": "support_reaction_probe",
+            "opposite_decision_pairs": 1,
+            "opposite_decision_pairs_separated": 1,
+            "planning_error": "100",
+            "separated_pairs_per_cost": "1"
+          }
+        ],
+        "reasons": [
+          "Required evidence is absent: support_reaction_probe"
+        ],
+        "required_hazards": [
+          "full_connector_engagement",
+          "support_state_established"
+        ],
+        "schema_version": 1,
+        "scope": "Finite explicit model and bounded intervals only; no physical opening authority",
+        "source_id": "authored-lock-ambiguity-control:missing_sensor",
+        "source_kind": "synthetic_fixture",
+        "surviving_state_ids": [
+          "full_lock__established_support",
+          "full_lock__missing_support"
+        ]
+      }
+    },
+    {
+      "case_id": "broad_error",
+      "description": "A bounded but broad error admits full, partial and missing locks",
+      "expected_outcome": "ambiguous",
+      "input": {
+        "bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "source_sha256": "9c89dec9f92ec2d449f81ea3dd10b730119bc357dfd20108801f31ba92f70ba6"
+        },
+        "evaluation_step": 10,
+        "expected_bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "source_sha256": "9c89dec9f92ec2d449f81ea3dd10b730119bc357dfd20108801f31ba92f70ba6"
+        },
+        "expected_hazards": [
+          "full_connector_engagement",
+          "support_state_established"
+        ],
+        "model": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_id": "synthetic-lock-and-support-v1",
+          "required_hazards": [
+            "full_connector_engagement",
+            "support_state_established"
+          ],
+          "required_measurements": [
+            "engagement_probe",
+            "support_reaction_probe"
+          ],
+          "scope": "Authored synthetic signal intervals, not predictions calibrated to the reference bridge",
+          "sensors": {
+            "actuator_command": {
+              "allowed_observation_kinds": [
+                "command_record"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "0",
+              "planning_error": "0",
+              "unit": "mm"
+            },
+            "engagement_probe": {
+              "allowed_observation_kinds": [
+                "synthetic_fixture",
+                "independent_measurement"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "100",
+              "planning_error": "1",
+              "unit": "mm"
+            },
+            "support_reaction_probe": {
+              "allowed_observation_kinds": [
+                "synthetic_fixture",
+                "independent_measurement"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "5000",
+              "planning_error": "100",
+              "unit": "N"
+            }
+          },
+          "states": [
+            {
+              "hazards": {
+                "full_connector_engagement": true,
+                "support_state_established": true
+              },
+              "id": "full_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "98",
+                  "102"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": true,
+                "support_state_established": false
+              },
+              "id": "full_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "98",
+                  "102"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": true
+              },
+              "id": "partial_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "45",
+                  "55"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": false
+              },
+              "id": "partial_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "45",
+                  "55"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": true
+              },
+              "id": "missing_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "0",
+                  "2"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": false
+              },
+              "id": "missing_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "0",
+                  "2"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            }
+          ]
+        },
+        "schema_version": 1,
+        "source": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "kind": "synthetic_fixture",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "observations": {
+            "actuator_command": {
+              "at_step": 10,
+              "bounds": [
+                "1000",
+                "1000"
+              ],
+              "error": "0",
+              "kind": "command_record",
+              "unit": "mm"
+            },
+            "engagement_probe": {
+              "at_step": 10,
+              "bounds": [
+                "50",
+                "50"
+              ],
+              "error": "55",
+              "kind": "synthetic_fixture",
+              "unit": "mm"
+            },
+            "support_reaction_probe": {
+              "at_step": 10,
+              "bounds": [
+                "21000",
+                "21000"
+              ],
+              "error": "100",
+              "kind": "synthetic_fixture",
+              "unit": "N"
+            }
+          },
+          "source_id": "authored-lock-ambiguity-control:broad_error"
+        }
+      },
+      "result": {
+        "bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "source_sha256": "9c89dec9f92ec2d449f81ea3dd10b730119bc357dfd20108801f31ba92f70ba6"
+        },
+        "declared_candidate_count": 6,
+        "effective_observation_intervals": {
+          "actuator_command": [
+            "1000",
+            "1000"
+          ],
+          "engagement_probe": [
+            "-5",
+            "105"
+          ],
+          "support_reaction_probe": [
+            "20900",
+            "21100"
+          ]
+        },
+        "excluded_states": [
+          {
+            "disjoint_intervals": [
+              {
+                "measurement_id": "support_reaction_probe",
+                "permitted_observation": [
+                  "20900",
+                  "21100"
+                ],
+                "prediction": [
+                  "0",
+                  "2000"
+                ]
+              }
+            ],
+            "state_id": "full_lock__missing_support"
+          },
+          {
+            "disjoint_intervals": [
+              {
+                "measurement_id": "support_reaction_probe",
+                "permitted_observation": [
+                  "20900",
+                  "21100"
+                ],
+                "prediction": [
+                  "0",
+                  "2000"
+                ]
+              }
+            ],
+            "state_id": "partial_lock__missing_support"
+          },
+          {
+            "disjoint_intervals": [
+              {
+                "measurement_id": "support_reaction_probe",
+                "permitted_observation": [
+                  "20900",
+                  "21100"
+                ],
+                "prediction": [
+                  "0",
+                  "2000"
+                ]
+              }
+            ],
+            "state_id": "missing_lock__missing_support"
+          }
+        ],
+        "hazard_witnesses": {
+          "full_connector_engagement": {
+            "discharging_state_ids": [
+              "full_lock__established_support"
+            ],
+            "failing_state_ids": [
+              "partial_lock__established_support",
+              "missing_lock__established_support"
+            ]
+          },
+          "support_state_established": {
+            "discharging_state_ids": [
+              "full_lock__established_support",
+              "partial_lock__established_support",
+              "missing_lock__established_support"
+            ],
+            "failing_state_ids": []
+          }
+        },
+        "missing_measurement_ids": [],
+        "next_measurement_id": null,
+        "observation_provenance": {
+          "actuator_command": "command_record",
+          "engagement_probe": "synthetic_fixture",
+          "support_reaction_probe": "synthetic_fixture"
+        },
+        "observed_measurement_ids": [
+          "actuator_command",
+          "engagement_probe",
+          "support_reaction_probe"
+        ],
+        "outcome": "ambiguous",
+        "physical_authorization": false,
+        "ranked_next_measurements": [],
+        "reasons": [
+          "Compatible candidates disagree about the declared condition"
+        ],
+        "required_hazards": [
+          "full_connector_engagement",
+          "support_state_established"
+        ],
+        "schema_version": 1,
+        "scope": "Finite explicit model and bounded intervals only; no physical opening authority",
+        "source_id": "authored-lock-ambiguity-control:broad_error",
+        "source_kind": "synthetic_fixture",
+        "surviving_state_ids": [
+          "full_lock__established_support",
+          "partial_lock__established_support",
+          "missing_lock__established_support"
+        ]
+      }
+    },
+    {
+      "case_id": "impossible_reading",
+      "description": "No library state predicts this engagement reading",
+      "expected_outcome": "model_mismatch",
+      "input": {
+        "bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "source_sha256": "ffc8f12f3a09d93e8f3c9b4c97c9dda26285276eb7922c9dd1b1063fdc207d1f"
+        },
+        "evaluation_step": 10,
+        "expected_bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "source_sha256": "ffc8f12f3a09d93e8f3c9b4c97c9dda26285276eb7922c9dd1b1063fdc207d1f"
+        },
+        "expected_hazards": [
+          "full_connector_engagement",
+          "support_state_established"
+        ],
+        "model": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_id": "synthetic-lock-and-support-v1",
+          "required_hazards": [
+            "full_connector_engagement",
+            "support_state_established"
+          ],
+          "required_measurements": [
+            "engagement_probe",
+            "support_reaction_probe"
+          ],
+          "scope": "Authored synthetic signal intervals, not predictions calibrated to the reference bridge",
+          "sensors": {
+            "actuator_command": {
+              "allowed_observation_kinds": [
+                "command_record"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "0",
+              "planning_error": "0",
+              "unit": "mm"
+            },
+            "engagement_probe": {
+              "allowed_observation_kinds": [
+                "synthetic_fixture",
+                "independent_measurement"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "100",
+              "planning_error": "1",
+              "unit": "mm"
+            },
+            "support_reaction_probe": {
+              "allowed_observation_kinds": [
+                "synthetic_fixture",
+                "independent_measurement"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "5000",
+              "planning_error": "100",
+              "unit": "N"
+            }
+          },
+          "states": [
+            {
+              "hazards": {
+                "full_connector_engagement": true,
+                "support_state_established": true
+              },
+              "id": "full_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "98",
+                  "102"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": true,
+                "support_state_established": false
+              },
+              "id": "full_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "98",
+                  "102"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": true
+              },
+              "id": "partial_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "45",
+                  "55"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": false
+              },
+              "id": "partial_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "45",
+                  "55"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": true
+              },
+              "id": "missing_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "0",
+                  "2"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": false
+              },
+              "id": "missing_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "0",
+                  "2"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            }
+          ]
+        },
+        "schema_version": 1,
+        "source": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "kind": "synthetic_fixture",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "observations": {
+            "actuator_command": {
+              "at_step": 10,
+              "bounds": [
+                "1000",
+                "1000"
+              ],
+              "error": "0",
+              "kind": "command_record",
+              "unit": "mm"
+            },
+            "engagement_probe": {
+              "at_step": 10,
+              "bounds": [
+                "200",
+                "200"
+              ],
+              "error": "1",
+              "kind": "synthetic_fixture",
+              "unit": "mm"
+            },
+            "support_reaction_probe": {
+              "at_step": 10,
+              "bounds": [
+                "21000",
+                "21000"
+              ],
+              "error": "100",
+              "kind": "synthetic_fixture",
+              "unit": "N"
+            }
+          },
+          "source_id": "authored-lock-ambiguity-control:impossible_reading"
+        }
+      },
+      "result": {
+        "bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "source_sha256": "ffc8f12f3a09d93e8f3c9b4c97c9dda26285276eb7922c9dd1b1063fdc207d1f"
+        },
+        "declared_candidate_count": 6,
+        "effective_observation_intervals": {
+          "actuator_command": [
+            "1000",
+            "1000"
+          ],
+          "engagement_probe": [
+            "199",
+            "201"
+          ],
+          "support_reaction_probe": [
+            "20900",
+            "21100"
+          ]
+        },
+        "excluded_states": [
+          {
+            "disjoint_intervals": [
+              {
+                "measurement_id": "engagement_probe",
+                "permitted_observation": [
+                  "199",
+                  "201"
+                ],
+                "prediction": [
+                  "98",
+                  "102"
+                ]
+              }
+            ],
+            "state_id": "full_lock__established_support"
+          },
+          {
+            "disjoint_intervals": [
+              {
+                "measurement_id": "engagement_probe",
+                "permitted_observation": [
+                  "199",
+                  "201"
+                ],
+                "prediction": [
+                  "98",
+                  "102"
+                ]
+              },
+              {
+                "measurement_id": "support_reaction_probe",
+                "permitted_observation": [
+                  "20900",
+                  "21100"
+                ],
+                "prediction": [
+                  "0",
+                  "2000"
+                ]
+              }
+            ],
+            "state_id": "full_lock__missing_support"
+          },
+          {
+            "disjoint_intervals": [
+              {
+                "measurement_id": "engagement_probe",
+                "permitted_observation": [
+                  "199",
+                  "201"
+                ],
+                "prediction": [
+                  "45",
+                  "55"
+                ]
+              }
+            ],
+            "state_id": "partial_lock__established_support"
+          },
+          {
+            "disjoint_intervals": [
+              {
+                "measurement_id": "engagement_probe",
+                "permitted_observation": [
+                  "199",
+                  "201"
+                ],
+                "prediction": [
+                  "45",
+                  "55"
+                ]
+              },
+              {
+                "measurement_id": "support_reaction_probe",
+                "permitted_observation": [
+                  "20900",
+                  "21100"
+                ],
+                "prediction": [
+                  "0",
+                  "2000"
+                ]
+              }
+            ],
+            "state_id": "partial_lock__missing_support"
+          },
+          {
+            "disjoint_intervals": [
+              {
+                "measurement_id": "engagement_probe",
+                "permitted_observation": [
+                  "199",
+                  "201"
+                ],
+                "prediction": [
+                  "0",
+                  "2"
+                ]
+              }
+            ],
+            "state_id": "missing_lock__established_support"
+          },
+          {
+            "disjoint_intervals": [
+              {
+                "measurement_id": "engagement_probe",
+                "permitted_observation": [
+                  "199",
+                  "201"
+                ],
+                "prediction": [
+                  "0",
+                  "2"
+                ]
+              },
+              {
+                "measurement_id": "support_reaction_probe",
+                "permitted_observation": [
+                  "20900",
+                  "21100"
+                ],
+                "prediction": [
+                  "0",
+                  "2000"
+                ]
+              }
+            ],
+            "state_id": "missing_lock__missing_support"
+          }
+        ],
+        "hazard_witnesses": {
+          "full_connector_engagement": {
+            "discharging_state_ids": [],
+            "failing_state_ids": []
+          },
+          "support_state_established": {
+            "discharging_state_ids": [],
+            "failing_state_ids": []
+          }
+        },
+        "missing_measurement_ids": [],
+        "next_measurement_id": null,
+        "observation_provenance": {
+          "actuator_command": "command_record",
+          "engagement_probe": "synthetic_fixture",
+          "support_reaction_probe": "synthetic_fixture"
+        },
+        "observed_measurement_ids": [
+          "actuator_command",
+          "engagement_probe",
+          "support_reaction_probe"
+        ],
+        "outcome": "model_mismatch",
+        "physical_authorization": false,
+        "ranked_next_measurements": [],
+        "reasons": [
+          "No declared candidate explains every observation; empty sets never pass"
+        ],
+        "required_hazards": [
+          "full_connector_engagement",
+          "support_state_established"
+        ],
+        "schema_version": 1,
+        "scope": "Finite explicit model and bounded intervals only; no physical opening authority",
+        "source_id": "authored-lock-ambiguity-control:impossible_reading",
+        "source_kind": "synthetic_fixture",
+        "surviving_state_ids": []
+      }
+    },
+    {
+      "case_id": "stale_reading",
+      "description": "A stale support reading is rejected",
+      "expected_outcome": "model_mismatch",
+      "input": {
+        "bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "source_sha256": "5bf6006b4ef469b23decea0cee4a25da856e40df1313ce9947840fbd899ec479"
+        },
+        "evaluation_step": 10,
+        "expected_bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "source_sha256": "5bf6006b4ef469b23decea0cee4a25da856e40df1313ce9947840fbd899ec479"
+        },
+        "expected_hazards": [
+          "full_connector_engagement",
+          "support_state_established"
+        ],
+        "model": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_id": "synthetic-lock-and-support-v1",
+          "required_hazards": [
+            "full_connector_engagement",
+            "support_state_established"
+          ],
+          "required_measurements": [
+            "engagement_probe",
+            "support_reaction_probe"
+          ],
+          "scope": "Authored synthetic signal intervals, not predictions calibrated to the reference bridge",
+          "sensors": {
+            "actuator_command": {
+              "allowed_observation_kinds": [
+                "command_record"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "0",
+              "planning_error": "0",
+              "unit": "mm"
+            },
+            "engagement_probe": {
+              "allowed_observation_kinds": [
+                "synthetic_fixture",
+                "independent_measurement"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "100",
+              "planning_error": "1",
+              "unit": "mm"
+            },
+            "support_reaction_probe": {
+              "allowed_observation_kinds": [
+                "synthetic_fixture",
+                "independent_measurement"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "5000",
+              "planning_error": "100",
+              "unit": "N"
+            }
+          },
+          "states": [
+            {
+              "hazards": {
+                "full_connector_engagement": true,
+                "support_state_established": true
+              },
+              "id": "full_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "98",
+                  "102"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": true,
+                "support_state_established": false
+              },
+              "id": "full_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "98",
+                  "102"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": true
+              },
+              "id": "partial_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "45",
+                  "55"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": false
+              },
+              "id": "partial_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "45",
+                  "55"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": true
+              },
+              "id": "missing_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "0",
+                  "2"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": false
+              },
+              "id": "missing_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "0",
+                  "2"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            }
+          ]
+        },
+        "schema_version": 1,
+        "source": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "kind": "synthetic_fixture",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "observations": {
+            "actuator_command": {
+              "at_step": 10,
+              "bounds": [
+                "1000",
+                "1000"
+              ],
+              "error": "0",
+              "kind": "command_record",
+              "unit": "mm"
+            },
+            "engagement_probe": {
+              "at_step": 10,
+              "bounds": [
+                "100",
+                "100"
+              ],
+              "error": "1",
+              "kind": "synthetic_fixture",
+              "unit": "mm"
+            },
+            "support_reaction_probe": {
+              "at_step": 1,
+              "bounds": [
+                "21000",
+                "21000"
+              ],
+              "error": "100",
+              "kind": "synthetic_fixture",
+              "unit": "N"
+            }
+          },
+          "source_id": "authored-lock-ambiguity-control:stale_reading"
+        }
+      },
+      "result": {
+        "excluded_states": [],
+        "missing_measurement_ids": [],
+        "outcome": "model_mismatch",
+        "physical_authorization": false,
+        "reasons": [
+          "invalid_or_unbound_evidence: Stale or future observation: support_reaction_probe"
+        ],
+        "schema_version": 1,
+        "scope": "Finite explicit model and bounded intervals only; no physical opening authority",
+        "surviving_state_ids": []
+      }
+    },
+    {
+      "case_id": "bad_unit",
+      "description": "Units must match the declared channel exactly",
+      "expected_outcome": "model_mismatch",
+      "input": {
+        "bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "source_sha256": "4de01dedcb60dd7c816d8e4036476a925581ce03df705ce36cc9ba453f86d1f0"
+        },
+        "evaluation_step": 10,
+        "expected_bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "source_sha256": "4de01dedcb60dd7c816d8e4036476a925581ce03df705ce36cc9ba453f86d1f0"
+        },
+        "expected_hazards": [
+          "full_connector_engagement",
+          "support_state_established"
+        ],
+        "model": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_id": "synthetic-lock-and-support-v1",
+          "required_hazards": [
+            "full_connector_engagement",
+            "support_state_established"
+          ],
+          "required_measurements": [
+            "engagement_probe",
+            "support_reaction_probe"
+          ],
+          "scope": "Authored synthetic signal intervals, not predictions calibrated to the reference bridge",
+          "sensors": {
+            "actuator_command": {
+              "allowed_observation_kinds": [
+                "command_record"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "0",
+              "planning_error": "0",
+              "unit": "mm"
+            },
+            "engagement_probe": {
+              "allowed_observation_kinds": [
+                "synthetic_fixture",
+                "independent_measurement"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "100",
+              "planning_error": "1",
+              "unit": "mm"
+            },
+            "support_reaction_probe": {
+              "allowed_observation_kinds": [
+                "synthetic_fixture",
+                "independent_measurement"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "5000",
+              "planning_error": "100",
+              "unit": "N"
+            }
+          },
+          "states": [
+            {
+              "hazards": {
+                "full_connector_engagement": true,
+                "support_state_established": true
+              },
+              "id": "full_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "98",
+                  "102"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": true,
+                "support_state_established": false
+              },
+              "id": "full_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "98",
+                  "102"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": true
+              },
+              "id": "partial_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "45",
+                  "55"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": false
+              },
+              "id": "partial_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "45",
+                  "55"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": true
+              },
+              "id": "missing_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "0",
+                  "2"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": false
+              },
+              "id": "missing_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "0",
+                  "2"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            }
+          ]
+        },
+        "schema_version": 1,
+        "source": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "kind": "synthetic_fixture",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "observations": {
+            "actuator_command": {
+              "at_step": 10,
+              "bounds": [
+                "1000",
+                "1000"
+              ],
+              "error": "0",
+              "kind": "command_record",
+              "unit": "mm"
+            },
+            "engagement_probe": {
+              "at_step": 10,
+              "bounds": [
+                "100",
+                "100"
+              ],
+              "error": "1",
+              "kind": "synthetic_fixture",
+              "unit": "m"
+            },
+            "support_reaction_probe": {
+              "at_step": 10,
+              "bounds": [
+                "21000",
+                "21000"
+              ],
+              "error": "100",
+              "kind": "synthetic_fixture",
+              "unit": "N"
+            }
+          },
+          "source_id": "authored-lock-ambiguity-control:bad_unit"
+        }
+      },
+      "result": {
+        "excluded_states": [],
+        "missing_measurement_ids": [],
+        "outcome": "model_mismatch",
+        "physical_authorization": false,
+        "reasons": [
+          "invalid_or_unbound_evidence: Measurement unit mismatch: engagement_probe"
+        ],
+        "schema_version": 1,
+        "scope": "Finite explicit model and bounded intervals only; no physical opening authority",
+        "surviving_state_ids": []
+      }
+    },
+    {
+      "case_id": "excess_error",
+      "description": "An observation cannot exceed the declared error bound",
+      "expected_outcome": "model_mismatch",
+      "input": {
+        "bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "source_sha256": "6805120803f0004d90aed5baaccd8db4347ec50409c72bd1ae8bb48c869c07d1"
+        },
+        "evaluation_step": 10,
+        "expected_bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "source_sha256": "6805120803f0004d90aed5baaccd8db4347ec50409c72bd1ae8bb48c869c07d1"
+        },
+        "expected_hazards": [
+          "full_connector_engagement",
+          "support_state_established"
+        ],
+        "model": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_id": "synthetic-lock-and-support-v1",
+          "required_hazards": [
+            "full_connector_engagement",
+            "support_state_established"
+          ],
+          "required_measurements": [
+            "engagement_probe",
+            "support_reaction_probe"
+          ],
+          "scope": "Authored synthetic signal intervals, not predictions calibrated to the reference bridge",
+          "sensors": {
+            "actuator_command": {
+              "allowed_observation_kinds": [
+                "command_record"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "0",
+              "planning_error": "0",
+              "unit": "mm"
+            },
+            "engagement_probe": {
+              "allowed_observation_kinds": [
+                "synthetic_fixture",
+                "independent_measurement"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "100",
+              "planning_error": "1",
+              "unit": "mm"
+            },
+            "support_reaction_probe": {
+              "allowed_observation_kinds": [
+                "synthetic_fixture",
+                "independent_measurement"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "5000",
+              "planning_error": "100",
+              "unit": "N"
+            }
+          },
+          "states": [
+            {
+              "hazards": {
+                "full_connector_engagement": true,
+                "support_state_established": true
+              },
+              "id": "full_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "98",
+                  "102"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": true,
+                "support_state_established": false
+              },
+              "id": "full_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "98",
+                  "102"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": true
+              },
+              "id": "partial_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "45",
+                  "55"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": false
+              },
+              "id": "partial_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "45",
+                  "55"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": true
+              },
+              "id": "missing_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "0",
+                  "2"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": false
+              },
+              "id": "missing_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "0",
+                  "2"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            }
+          ]
+        },
+        "schema_version": 1,
+        "source": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "kind": "synthetic_fixture",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "observations": {
+            "actuator_command": {
+              "at_step": 10,
+              "bounds": [
+                "1000",
+                "1000"
+              ],
+              "error": "0",
+              "kind": "command_record",
+              "unit": "mm"
+            },
+            "engagement_probe": {
+              "at_step": 10,
+              "bounds": [
+                "100",
+                "100"
+              ],
+              "error": "101",
+              "kind": "synthetic_fixture",
+              "unit": "mm"
+            },
+            "support_reaction_probe": {
+              "at_step": 10,
+              "bounds": [
+                "21000",
+                "21000"
+              ],
+              "error": "100",
+              "kind": "synthetic_fixture",
+              "unit": "N"
+            }
+          },
+          "source_id": "authored-lock-ambiguity-control:excess_error"
+        }
+      },
+      "result": {
+        "excluded_states": [],
+        "missing_measurement_ids": [],
+        "outcome": "model_mismatch",
+        "physical_authorization": false,
+        "reasons": [
+          "invalid_or_unbound_evidence: Measurement error outside declared bounds: engagement_probe"
+        ],
+        "schema_version": 1,
+        "scope": "Finite explicit model and bounded intervals only; no physical opening authority",
+        "surviving_state_ids": []
+      }
+    },
+    {
+      "case_id": "wrong_design",
+      "description": "A source record bound to another assembly is rejected",
+      "expected_outcome": "model_mismatch",
+      "input": {
+        "bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "source_sha256": "c3da994f53f222db329b4430312e65bb0729d22861e8a93f6e7de1453b4bb867"
+        },
+        "evaluation_step": 10,
+        "expected_bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "source_sha256": "c3da994f53f222db329b4430312e65bb0729d22861e8a93f6e7de1453b4bb867"
+        },
+        "expected_hazards": [
+          "full_connector_engagement",
+          "support_state_established"
+        ],
+        "model": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_id": "synthetic-lock-and-support-v1",
+          "required_hazards": [
+            "full_connector_engagement",
+            "support_state_established"
+          ],
+          "required_measurements": [
+            "engagement_probe",
+            "support_reaction_probe"
+          ],
+          "scope": "Authored synthetic signal intervals, not predictions calibrated to the reference bridge",
+          "sensors": {
+            "actuator_command": {
+              "allowed_observation_kinds": [
+                "command_record"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "0",
+              "planning_error": "0",
+              "unit": "mm"
+            },
+            "engagement_probe": {
+              "allowed_observation_kinds": [
+                "synthetic_fixture",
+                "independent_measurement"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "100",
+              "planning_error": "1",
+              "unit": "mm"
+            },
+            "support_reaction_probe": {
+              "allowed_observation_kinds": [
+                "synthetic_fixture",
+                "independent_measurement"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "5000",
+              "planning_error": "100",
+              "unit": "N"
+            }
+          },
+          "states": [
+            {
+              "hazards": {
+                "full_connector_engagement": true,
+                "support_state_established": true
+              },
+              "id": "full_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "98",
+                  "102"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": true,
+                "support_state_established": false
+              },
+              "id": "full_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "98",
+                  "102"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": true
+              },
+              "id": "partial_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "45",
+                  "55"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": false
+              },
+              "id": "partial_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "45",
+                  "55"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": true
+              },
+              "id": "missing_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "0",
+                  "2"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": false
+              },
+              "id": "missing_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "0",
+                  "2"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            }
+          ]
+        },
+        "schema_version": 1,
+        "source": {
+          "design_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "kind": "synthetic_fixture",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "observations": {
+            "actuator_command": {
+              "at_step": 10,
+              "bounds": [
+                "1000",
+                "1000"
+              ],
+              "error": "0",
+              "kind": "command_record",
+              "unit": "mm"
+            },
+            "engagement_probe": {
+              "at_step": 10,
+              "bounds": [
+                "100",
+                "100"
+              ],
+              "error": "1",
+              "kind": "synthetic_fixture",
+              "unit": "mm"
+            },
+            "support_reaction_probe": {
+              "at_step": 10,
+              "bounds": [
+                "21000",
+                "21000"
+              ],
+              "error": "100",
+              "kind": "synthetic_fixture",
+              "unit": "N"
+            }
+          },
+          "source_id": "authored-lock-ambiguity-control:wrong_design"
+        }
+      },
+      "result": {
+        "excluded_states": [],
+        "missing_measurement_ids": [],
+        "outcome": "model_mismatch",
+        "physical_authorization": false,
+        "reasons": [
+          "invalid_or_unbound_evidence: Design hash mismatch"
+        ],
+        "schema_version": 1,
+        "scope": "Finite explicit model and bounded intervals only; no physical opening authority",
+        "surviving_state_ids": []
+      }
+    },
+    {
+      "case_id": "changed_model_bytes",
+      "description": "Changed model bytes without a matching trusted binding are rejected",
+      "expected_outcome": "model_mismatch",
+      "input": {
+        "bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "source_sha256": "ed5f44f0bee46c228d66c6e84a9bb4bd4c25bb875d8520268d7c34f5d84afbcf"
+        },
+        "evaluation_step": 10,
+        "expected_bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "source_sha256": "ed5f44f0bee46c228d66c6e84a9bb4bd4c25bb875d8520268d7c34f5d84afbcf"
+        },
+        "expected_hazards": [
+          "full_connector_engagement",
+          "support_state_established"
+        ],
+        "model": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_id": "synthetic-lock-and-support-v1",
+          "required_hazards": [
+            "full_connector_engagement",
+            "support_state_established"
+          ],
+          "required_measurements": [
+            "engagement_probe",
+            "support_reaction_probe"
+          ],
+          "scope": "Authored synthetic signal intervals, not predictions calibrated to the reference bridge",
+          "sensors": {
+            "actuator_command": {
+              "allowed_observation_kinds": [
+                "command_record"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "0",
+              "planning_error": "0",
+              "unit": "mm"
+            },
+            "engagement_probe": {
+              "allowed_observation_kinds": [
+                "synthetic_fixture",
+                "independent_measurement"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "100",
+              "planning_error": "1",
+              "unit": "mm"
+            },
+            "support_reaction_probe": {
+              "allowed_observation_kinds": [
+                "synthetic_fixture",
+                "independent_measurement"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "5000",
+              "planning_error": "100",
+              "unit": "N"
+            }
+          },
+          "states": [
+            {
+              "hazards": {
+                "full_connector_engagement": true,
+                "support_state_established": true
+              },
+              "id": "full_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "99",
+                  "102"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": true,
+                "support_state_established": false
+              },
+              "id": "full_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "98",
+                  "102"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": true
+              },
+              "id": "partial_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "45",
+                  "55"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": false
+              },
+              "id": "partial_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "45",
+                  "55"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": true
+              },
+              "id": "missing_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "0",
+                  "2"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": false
+              },
+              "id": "missing_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "0",
+                  "2"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            }
+          ]
+        },
+        "schema_version": 1,
+        "source": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "kind": "synthetic_fixture",
+          "model_sha256": "8ca4ab671eff5954cf103679651092b4db0ec13aaf8c33971d1e9de81665c144",
+          "observations": {
+            "actuator_command": {
+              "at_step": 10,
+              "bounds": [
+                "1000",
+                "1000"
+              ],
+              "error": "0",
+              "kind": "command_record",
+              "unit": "mm"
+            },
+            "engagement_probe": {
+              "at_step": 10,
+              "bounds": [
+                "100",
+                "100"
+              ],
+              "error": "1",
+              "kind": "synthetic_fixture",
+              "unit": "mm"
+            },
+            "support_reaction_probe": {
+              "at_step": 10,
+              "bounds": [
+                "21000",
+                "21000"
+              ],
+              "error": "100",
+              "kind": "synthetic_fixture",
+              "unit": "N"
+            }
+          },
+          "source_id": "authored-lock-ambiguity-control:changed_model_bytes"
+        }
+      },
+      "result": {
+        "excluded_states": [],
+        "missing_measurement_ids": [],
+        "outcome": "model_mismatch",
+        "physical_authorization": false,
+        "reasons": [
+          "invalid_or_unbound_evidence: Model content hash mismatch"
+        ],
+        "schema_version": 1,
+        "scope": "Finite explicit model and bounded intervals only; no physical opening authority",
+        "surviving_state_ids": []
+      }
+    },
+    {
+      "case_id": "omitted_hazard",
+      "description": "A candidate cannot silently omit a declared hazard",
+      "expected_outcome": "model_mismatch",
+      "input": {
+        "bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "ed21f5bc02297a8f7a0b446131d0826587061bdd806b12e0656bdd2e08043df3",
+          "source_sha256": "f5c3e00a00fc64783ecaba4650d9c6e72285252ae9ee84598180aecf171c720a"
+        },
+        "evaluation_step": 10,
+        "expected_bindings": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_sha256": "ed21f5bc02297a8f7a0b446131d0826587061bdd806b12e0656bdd2e08043df3",
+          "source_sha256": "f5c3e00a00fc64783ecaba4650d9c6e72285252ae9ee84598180aecf171c720a"
+        },
+        "expected_hazards": [
+          "full_connector_engagement",
+          "support_state_established"
+        ],
+        "model": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "model_id": "synthetic-lock-and-support-v1",
+          "required_hazards": [
+            "full_connector_engagement",
+            "support_state_established"
+          ],
+          "required_measurements": [
+            "engagement_probe",
+            "support_reaction_probe"
+          ],
+          "scope": "Authored synthetic signal intervals, not predictions calibrated to the reference bridge",
+          "sensors": {
+            "actuator_command": {
+              "allowed_observation_kinds": [
+                "command_record"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "0",
+              "planning_error": "0",
+              "unit": "mm"
+            },
+            "engagement_probe": {
+              "allowed_observation_kinds": [
+                "synthetic_fixture",
+                "independent_measurement"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "100",
+              "planning_error": "1",
+              "unit": "mm"
+            },
+            "support_reaction_probe": {
+              "allowed_observation_kinds": [
+                "synthetic_fixture",
+                "independent_measurement"
+              ],
+              "cost": "1",
+              "max_age_steps": 2,
+              "max_error": "5000",
+              "planning_error": "100",
+              "unit": "N"
+            }
+          },
+          "states": [
+            {
+              "hazards": {
+                "full_connector_engagement": true
+              },
+              "id": "full_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "98",
+                  "102"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": true,
+                "support_state_established": false
+              },
+              "id": "full_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "98",
+                  "102"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": true
+              },
+              "id": "partial_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "45",
+                  "55"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": false
+              },
+              "id": "partial_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "45",
+                  "55"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": true
+              },
+              "id": "missing_lock__established_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "0",
+                  "2"
+                ],
+                "support_reaction_probe": [
+                  "20000",
+                  "22000"
+                ]
+              }
+            },
+            {
+              "hazards": {
+                "full_connector_engagement": false,
+                "support_state_established": false
+              },
+              "id": "missing_lock__missing_support",
+              "predictions": {
+                "actuator_command": [
+                  "1000",
+                  "1000"
+                ],
+                "engagement_probe": [
+                  "0",
+                  "2"
+                ],
+                "support_reaction_probe": [
+                  "0",
+                  "2000"
+                ]
+              }
+            }
+          ]
+        },
+        "schema_version": 1,
+        "source": {
+          "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+          "kind": "synthetic_fixture",
+          "model_sha256": "ed21f5bc02297a8f7a0b446131d0826587061bdd806b12e0656bdd2e08043df3",
+          "observations": {
+            "actuator_command": {
+              "at_step": 10,
+              "bounds": [
+                "1000",
+                "1000"
+              ],
+              "error": "0",
+              "kind": "command_record",
+              "unit": "mm"
+            },
+            "engagement_probe": {
+              "at_step": 10,
+              "bounds": [
+                "100",
+                "100"
+              ],
+              "error": "1",
+              "kind": "synthetic_fixture",
+              "unit": "mm"
+            },
+            "support_reaction_probe": {
+              "at_step": 10,
+              "bounds": [
+                "21000",
+                "21000"
+              ],
+              "error": "100",
+              "kind": "synthetic_fixture",
+              "unit": "N"
+            }
+          },
+          "source_id": "authored-lock-ambiguity-control:omitted_hazard"
+        }
+      },
+      "result": {
+        "excluded_states": [],
+        "missing_measurement_ids": [],
+        "outcome": "model_mismatch",
+        "physical_authorization": false,
+        "reasons": [
+          "invalid_or_unbound_evidence: Every state must explicitly discharge or fail every declared hazard"
+        ],
+        "schema_version": 1,
+        "scope": "Finite explicit model and bounded intervals only; no physical opening authority",
+        "surviving_state_ids": []
+      }
+    }
+  ],
+  "claims": {
+    "actual_bridge_sensor_validation": false,
+    "finite_library_exhaustive_physical_state_space": false,
+    "physical_authorization": false
+  },
+  "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+  "meaning": "Exact compatibility examples demonstrate ambiguity and fail-closed behavior; all signal intervals are authored fixtures",
+  "physical_measurement_count": 0,
+  "schema_version": 1,
+  "source_kind": "synthetic_fixture"
+}

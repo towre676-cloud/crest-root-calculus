@@ -1,0 +1,68 @@
+{
+  "format": "crest-root-integrated-viewer-review/3",
+  "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+  "checks": {
+    "all_six_design_bindings_match": true,
+    "embedded_input_file_hashes_match": true,
+    "exactly_395_source_buildings": true,
+    "same_motion_frame_count": true,
+    "same_member_count": true,
+    "canonical_nodes_preserved": true,
+    "network_requests_blocked_by_csp": true,
+    "no_external_script_or_style_resource": true,
+    "no_network_api_in_application": true,
+    "local_reading_links_exist": true,
+    "mismatched_design_rejected": true
+  },
+  "javascript": {
+    "status": "passed",
+    "syntax": "passed",
+    "engine": "Node vm with a minimal explicit DOM/Canvas2D adapter",
+    "results": [
+      {
+        "adapter": "desktop_adapter",
+        "frames_executed": 27,
+        "phase_buttons": 3,
+        "checkbox_layers": 5,
+        "view_controls": 7,
+        "keyboard_and_pointer_handlers": true,
+        "play_pause": true,
+        "finite_canvas_arguments": true,
+        "draw_calls": 515378,
+        "runtime_exceptions": 0
+      },
+      {
+        "adapter": "narrow_adapter",
+        "frames_executed": 27,
+        "phase_buttons": 3,
+        "checkbox_layers": 5,
+        "view_controls": 7,
+        "keyboard_and_pointer_handlers": true,
+        "play_pause": true,
+        "finite_canvas_arguments": true,
+        "draw_calls": 515378,
+        "runtime_exceptions": 0
+      }
+    ],
+    "real_browser_tested": false,
+    "css_layout_tested": false,
+    "mobile_browser_tested": false
+  },
+  "browser_executables_on_path": {
+    "chromium": null,
+    "chromium-browser": null,
+    "google-chrome": null,
+    "firefox": null
+  },
+  "real_browser_rendering_verified": false,
+  "mobile_layout_verified": false,
+  "windows_launcher_verified": false,
+  "limitation": "Source/binding checks and simulated DOM/Canvas interactions only; no actual browser pixels, CSS layout or mobile touch verification. No browser was installed or downloaded.",
+  "file_sha256": {
+    "build_viewer.py": "1edbcd4c9bb58ebad9fdfe6177d1028783c224b59bbbd002823074138ed55e59",
+    "workbench.html": "2eb5da1e7c421494d39f98df31a92beb11392140ba9d25880bd307c57002a61e",
+    "integration-review.md": "29c8fa2552a43030f43e2e746dbe2834af40b52282086b73f3129eb6fb9dc0bd",
+    "independent_review.py": "7e418dc0a172164c7cc66cae738ba3f2b57f2525cfa8031561dffd1b9f0fe0aa",
+    "integrated-report.json": "bae69a0dbbdc22798f0b9903ad18858deda6aa76c2486ef2535c6114ce91ec63"
+  }
+}

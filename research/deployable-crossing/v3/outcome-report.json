@@ -1,0 +1,2952 @@
+{
+  "availability_definition": "Fraction of intervention crossing opportunities for which the facility is available, not an assumed clock-time uptime",
+  "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+  "formula": "N0*r0 - N1*(a*u*rb + (1-a*u)*rf) - D - S, separately for each outcome",
+  "input_units": {
+    "availability": "fraction",
+    "baseline_exposure": "person_crossings",
+    "baseline_risk": "harm_events/person_crossing",
+    "deployment_harm": "harm_events",
+    "displacement_harm": "harm_events",
+    "facility_risk": "harm_events/person_crossing",
+    "fallback_risk": "harm_events/person_crossing",
+    "intervention_exposure": "person_crossings",
+    "uptake_when_available": "fraction"
+  },
+  "physical_approval": false,
+  "schema_version": 1,
+  "scope": "No geometry or model-service result supplies exposure, uptake, risk, deployment harm, displacement harm or causal evidence",
+  "site_report_sha256": "c13f6b0997efece5ef44dd5a3fa512075f1769cc9b6e985c69879c71265c34fc",
+  "site_results": [
+    {
+      "label": "Main Avenue at 7th Street",
+      "outcomes": [
+        {
+          "input": {
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "extra_harm_disjointness_evidence": null,
+            "inputs": {
+              "availability": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-7th:deaths:availability",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "main-7th",
+                "unit": "fraction"
+              },
+              "baseline_exposure": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-7th:deaths:baseline_exposure",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "main-7th",
+                "unit": "person_crossings"
+              },
+              "baseline_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-7th:deaths:baseline_risk",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "main-7th",
+                "unit": "harm_events/person_crossing"
+              },
+              "deployment_harm": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-7th:deaths:deployment_harm",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "main-7th",
+                "unit": "harm_events"
+              },
+              "displacement_harm": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-7th:deaths:displacement_harm",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "main-7th",
+                "unit": "harm_events"
+              },
+              "facility_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-7th:deaths:facility_risk",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "main-7th",
+                "unit": "harm_events/person_crossing"
+              },
+              "fallback_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-7th:deaths:fallback_risk",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "main-7th",
+                "unit": "harm_events/person_crossing"
+              },
+              "intervention_exposure": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-7th:deaths:intervention_exposure",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "main-7th",
+                "unit": "person_crossings"
+              },
+              "uptake_when_available": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-7th:deaths:uptake_when_available",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "main-7th",
+                "unit": "fraction"
+              }
+            },
+            "outcome": "deaths",
+            "period": null,
+            "schema_version": 1,
+            "site_id": "main-7th",
+            "source_model_sha256": "d2c6a478d8276f376367ae80dfff1e439a9a214844e22d93ce3413979283412f"
+          },
+          "outcome": "deaths",
+          "result": {
+            "baseline_expected_harm": null,
+            "causal_effect_established": false,
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "facility_use_share": null,
+            "input_content_sha256": "728f3add6281e427bcb77dc0717103be2f23a9c29167090f2ed64bd5e777009b",
+            "interpretation": "Input-range accounting enclosure, not a confidence interval, causal estimate or measured benefit",
+            "intervention_expected_harm": null,
+            "missing_inputs": [
+              "period",
+              "extra_harm_disjointness_evidence",
+              "baseline_exposure",
+              "intervention_exposure",
+              "availability",
+              "uptake_when_available",
+              "baseline_risk",
+              "facility_risk",
+              "fallback_risk",
+              "deployment_harm",
+              "displacement_harm"
+            ],
+            "net_harm_avoided": null,
+            "outcome": "deaths",
+            "period": null,
+            "physical_approval": false,
+            "reason": "No site benefit is computed while any input, period or extra-harm boundary is unknown",
+            "site_id": "main-7th",
+            "source_model_sha256": "d2c6a478d8276f376367ae80dfff1e439a9a214844e22d93ce3413979283412f",
+            "status": "unknown"
+          }
+        },
+        {
+          "input": {
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "extra_harm_disjointness_evidence": null,
+            "inputs": {
+              "availability": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-7th:serious_nonfatal_injuries:availability",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "main-7th",
+                "unit": "fraction"
+              },
+              "baseline_exposure": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-7th:serious_nonfatal_injuries:baseline_exposure",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "main-7th",
+                "unit": "person_crossings"
+              },
+              "baseline_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-7th:serious_nonfatal_injuries:baseline_risk",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "main-7th",
+                "unit": "harm_events/person_crossing"
+              },
+              "deployment_harm": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-7th:serious_nonfatal_injuries:deployment_harm",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "main-7th",
+                "unit": "harm_events"
+              },
+              "displacement_harm": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-7th:serious_nonfatal_injuries:displacement_harm",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "main-7th",
+                "unit": "harm_events"
+              },
+              "facility_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-7th:serious_nonfatal_injuries:facility_risk",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "main-7th",
+                "unit": "harm_events/person_crossing"
+              },
+              "fallback_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-7th:serious_nonfatal_injuries:fallback_risk",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "main-7th",
+                "unit": "harm_events/person_crossing"
+              },
+              "intervention_exposure": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-7th:serious_nonfatal_injuries:intervention_exposure",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "main-7th",
+                "unit": "person_crossings"
+              },
+              "uptake_when_available": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-7th:serious_nonfatal_injuries:uptake_when_available",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "main-7th",
+                "unit": "fraction"
+              }
+            },
+            "outcome": "serious_nonfatal_injuries",
+            "period": null,
+            "schema_version": 1,
+            "site_id": "main-7th",
+            "source_model_sha256": "d2c6a478d8276f376367ae80dfff1e439a9a214844e22d93ce3413979283412f"
+          },
+          "outcome": "serious_nonfatal_injuries",
+          "result": {
+            "baseline_expected_harm": null,
+            "causal_effect_established": false,
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "facility_use_share": null,
+            "input_content_sha256": "8f6e40c69b1fcdc81b0c51a69f3416448d6ebc811b2d533083b74dc9cac8332f",
+            "interpretation": "Input-range accounting enclosure, not a confidence interval, causal estimate or measured benefit",
+            "intervention_expected_harm": null,
+            "missing_inputs": [
+              "period",
+              "extra_harm_disjointness_evidence",
+              "baseline_exposure",
+              "intervention_exposure",
+              "availability",
+              "uptake_when_available",
+              "baseline_risk",
+              "facility_risk",
+              "fallback_risk",
+              "deployment_harm",
+              "displacement_harm"
+            ],
+            "net_harm_avoided": null,
+            "outcome": "serious_nonfatal_injuries",
+            "period": null,
+            "physical_approval": false,
+            "reason": "No site benefit is computed while any input, period or extra-harm boundary is unknown",
+            "site_id": "main-7th",
+            "source_model_sha256": "d2c6a478d8276f376367ae80dfff1e439a9a214844e22d93ce3413979283412f",
+            "status": "unknown"
+          }
+        }
+      ],
+      "site_id": "main-7th"
+    },
+    {
+      "label": "Pacific Avenue at 7th Street",
+      "outcomes": [
+        {
+          "input": {
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "extra_harm_disjointness_evidence": null,
+            "inputs": {
+              "availability": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-7th:deaths:availability",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "pacific-7th",
+                "unit": "fraction"
+              },
+              "baseline_exposure": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-7th:deaths:baseline_exposure",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "pacific-7th",
+                "unit": "person_crossings"
+              },
+              "baseline_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-7th:deaths:baseline_risk",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "pacific-7th",
+                "unit": "harm_events/person_crossing"
+              },
+              "deployment_harm": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-7th:deaths:deployment_harm",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "pacific-7th",
+                "unit": "harm_events"
+              },
+              "displacement_harm": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-7th:deaths:displacement_harm",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "pacific-7th",
+                "unit": "harm_events"
+              },
+              "facility_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-7th:deaths:facility_risk",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "pacific-7th",
+                "unit": "harm_events/person_crossing"
+              },
+              "fallback_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-7th:deaths:fallback_risk",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "pacific-7th",
+                "unit": "harm_events/person_crossing"
+              },
+              "intervention_exposure": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-7th:deaths:intervention_exposure",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "pacific-7th",
+                "unit": "person_crossings"
+              },
+              "uptake_when_available": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-7th:deaths:uptake_when_available",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "pacific-7th",
+                "unit": "fraction"
+              }
+            },
+            "outcome": "deaths",
+            "period": null,
+            "schema_version": 1,
+            "site_id": "pacific-7th",
+            "source_model_sha256": "d2c6a478d8276f376367ae80dfff1e439a9a214844e22d93ce3413979283412f"
+          },
+          "outcome": "deaths",
+          "result": {
+            "baseline_expected_harm": null,
+            "causal_effect_established": false,
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "facility_use_share": null,
+            "input_content_sha256": "d159d08fb2a5eaf5917ba050bb04b2f96153e7084de5f007d3b01cd66e6616c6",
+            "interpretation": "Input-range accounting enclosure, not a confidence interval, causal estimate or measured benefit",
+            "intervention_expected_harm": null,
+            "missing_inputs": [
+              "period",
+              "extra_harm_disjointness_evidence",
+              "baseline_exposure",
+              "intervention_exposure",
+              "availability",
+              "uptake_when_available",
+              "baseline_risk",
+              "facility_risk",
+              "fallback_risk",
+              "deployment_harm",
+              "displacement_harm"
+            ],
+            "net_harm_avoided": null,
+            "outcome": "deaths",
+            "period": null,
+            "physical_approval": false,
+            "reason": "No site benefit is computed while any input, period or extra-harm boundary is unknown",
+            "site_id": "pacific-7th",
+            "source_model_sha256": "d2c6a478d8276f376367ae80dfff1e439a9a214844e22d93ce3413979283412f",
+            "status": "unknown"
+          }
+        },
+        {
+          "input": {
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "extra_harm_disjointness_evidence": null,
+            "inputs": {
+              "availability": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-7th:serious_nonfatal_injuries:availability",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "pacific-7th",
+                "unit": "fraction"
+              },
+              "baseline_exposure": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-7th:serious_nonfatal_injuries:baseline_exposure",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "pacific-7th",
+                "unit": "person_crossings"
+              },
+              "baseline_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-7th:serious_nonfatal_injuries:baseline_risk",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "pacific-7th",
+                "unit": "harm_events/person_crossing"
+              },
+              "deployment_harm": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-7th:serious_nonfatal_injuries:deployment_harm",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "pacific-7th",
+                "unit": "harm_events"
+              },
+              "displacement_harm": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-7th:serious_nonfatal_injuries:displacement_harm",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "pacific-7th",
+                "unit": "harm_events"
+              },
+              "facility_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-7th:serious_nonfatal_injuries:facility_risk",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "pacific-7th",
+                "unit": "harm_events/person_crossing"
+              },
+              "fallback_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-7th:serious_nonfatal_injuries:fallback_risk",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "pacific-7th",
+                "unit": "harm_events/person_crossing"
+              },
+              "intervention_exposure": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-7th:serious_nonfatal_injuries:intervention_exposure",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "pacific-7th",
+                "unit": "person_crossings"
+              },
+              "uptake_when_available": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-7th:serious_nonfatal_injuries:uptake_when_available",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "pacific-7th",
+                "unit": "fraction"
+              }
+            },
+            "outcome": "serious_nonfatal_injuries",
+            "period": null,
+            "schema_version": 1,
+            "site_id": "pacific-7th",
+            "source_model_sha256": "d2c6a478d8276f376367ae80dfff1e439a9a214844e22d93ce3413979283412f"
+          },
+          "outcome": "serious_nonfatal_injuries",
+          "result": {
+            "baseline_expected_harm": null,
+            "causal_effect_established": false,
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "facility_use_share": null,
+            "input_content_sha256": "fffa82d518c9c54ecc22185cf9b32672780635d4bd5f2c8e83f7af840ee3a044",
+            "interpretation": "Input-range accounting enclosure, not a confidence interval, causal estimate or measured benefit",
+            "intervention_expected_harm": null,
+            "missing_inputs": [
+              "period",
+              "extra_harm_disjointness_evidence",
+              "baseline_exposure",
+              "intervention_exposure",
+              "availability",
+              "uptake_when_available",
+              "baseline_risk",
+              "facility_risk",
+              "fallback_risk",
+              "deployment_harm",
+              "displacement_harm"
+            ],
+            "net_harm_avoided": null,
+            "outcome": "serious_nonfatal_injuries",
+            "period": null,
+            "physical_approval": false,
+            "reason": "No site benefit is computed while any input, period or extra-harm boundary is unknown",
+            "site_id": "pacific-7th",
+            "source_model_sha256": "d2c6a478d8276f376367ae80dfff1e439a9a214844e22d93ce3413979283412f",
+            "status": "unknown"
+          }
+        }
+      ],
+      "site_id": "pacific-7th"
+    },
+    {
+      "label": "Main Avenue at 9th Street",
+      "outcomes": [
+        {
+          "input": {
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "extra_harm_disjointness_evidence": null,
+            "inputs": {
+              "availability": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-9th:deaths:availability",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "main-9th",
+                "unit": "fraction"
+              },
+              "baseline_exposure": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-9th:deaths:baseline_exposure",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "main-9th",
+                "unit": "person_crossings"
+              },
+              "baseline_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-9th:deaths:baseline_risk",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "main-9th",
+                "unit": "harm_events/person_crossing"
+              },
+              "deployment_harm": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-9th:deaths:deployment_harm",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "main-9th",
+                "unit": "harm_events"
+              },
+              "displacement_harm": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-9th:deaths:displacement_harm",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "main-9th",
+                "unit": "harm_events"
+              },
+              "facility_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-9th:deaths:facility_risk",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "main-9th",
+                "unit": "harm_events/person_crossing"
+              },
+              "fallback_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-9th:deaths:fallback_risk",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "main-9th",
+                "unit": "harm_events/person_crossing"
+              },
+              "intervention_exposure": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-9th:deaths:intervention_exposure",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "main-9th",
+                "unit": "person_crossings"
+              },
+              "uptake_when_available": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-9th:deaths:uptake_when_available",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "main-9th",
+                "unit": "fraction"
+              }
+            },
+            "outcome": "deaths",
+            "period": null,
+            "schema_version": 1,
+            "site_id": "main-9th",
+            "source_model_sha256": "d2c6a478d8276f376367ae80dfff1e439a9a214844e22d93ce3413979283412f"
+          },
+          "outcome": "deaths",
+          "result": {
+            "baseline_expected_harm": null,
+            "causal_effect_established": false,
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "facility_use_share": null,
+            "input_content_sha256": "d86568963f889ffe34890f9d49b456d2b2c056eb815edf35027cec3ff9dc9dbc",
+            "interpretation": "Input-range accounting enclosure, not a confidence interval, causal estimate or measured benefit",
+            "intervention_expected_harm": null,
+            "missing_inputs": [
+              "period",
+              "extra_harm_disjointness_evidence",
+              "baseline_exposure",
+              "intervention_exposure",
+              "availability",
+              "uptake_when_available",
+              "baseline_risk",
+              "facility_risk",
+              "fallback_risk",
+              "deployment_harm",
+              "displacement_harm"
+            ],
+            "net_harm_avoided": null,
+            "outcome": "deaths",
+            "period": null,
+            "physical_approval": false,
+            "reason": "No site benefit is computed while any input, period or extra-harm boundary is unknown",
+            "site_id": "main-9th",
+            "source_model_sha256": "d2c6a478d8276f376367ae80dfff1e439a9a214844e22d93ce3413979283412f",
+            "status": "unknown"
+          }
+        },
+        {
+          "input": {
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "extra_harm_disjointness_evidence": null,
+            "inputs": {
+              "availability": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-9th:serious_nonfatal_injuries:availability",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "main-9th",
+                "unit": "fraction"
+              },
+              "baseline_exposure": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-9th:serious_nonfatal_injuries:baseline_exposure",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "main-9th",
+                "unit": "person_crossings"
+              },
+              "baseline_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-9th:serious_nonfatal_injuries:baseline_risk",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "main-9th",
+                "unit": "harm_events/person_crossing"
+              },
+              "deployment_harm": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-9th:serious_nonfatal_injuries:deployment_harm",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "main-9th",
+                "unit": "harm_events"
+              },
+              "displacement_harm": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-9th:serious_nonfatal_injuries:displacement_harm",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "main-9th",
+                "unit": "harm_events"
+              },
+              "facility_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-9th:serious_nonfatal_injuries:facility_risk",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "main-9th",
+                "unit": "harm_events/person_crossing"
+              },
+              "fallback_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-9th:serious_nonfatal_injuries:fallback_risk",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "main-9th",
+                "unit": "harm_events/person_crossing"
+              },
+              "intervention_exposure": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-9th:serious_nonfatal_injuries:intervention_exposure",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "main-9th",
+                "unit": "person_crossings"
+              },
+              "uptake_when_available": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-9th:serious_nonfatal_injuries:uptake_when_available",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "main-9th",
+                "unit": "fraction"
+              }
+            },
+            "outcome": "serious_nonfatal_injuries",
+            "period": null,
+            "schema_version": 1,
+            "site_id": "main-9th",
+            "source_model_sha256": "d2c6a478d8276f376367ae80dfff1e439a9a214844e22d93ce3413979283412f"
+          },
+          "outcome": "serious_nonfatal_injuries",
+          "result": {
+            "baseline_expected_harm": null,
+            "causal_effect_established": false,
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "facility_use_share": null,
+            "input_content_sha256": "1d278e9b2d1083661c0b5c4ef995937c668686e16b290d0a23831433bf23d76e",
+            "interpretation": "Input-range accounting enclosure, not a confidence interval, causal estimate or measured benefit",
+            "intervention_expected_harm": null,
+            "missing_inputs": [
+              "period",
+              "extra_harm_disjointness_evidence",
+              "baseline_exposure",
+              "intervention_exposure",
+              "availability",
+              "uptake_when_available",
+              "baseline_risk",
+              "facility_risk",
+              "fallback_risk",
+              "deployment_harm",
+              "displacement_harm"
+            ],
+            "net_harm_avoided": null,
+            "outcome": "serious_nonfatal_injuries",
+            "period": null,
+            "physical_approval": false,
+            "reason": "No site benefit is computed while any input, period or extra-harm boundary is unknown",
+            "site_id": "main-9th",
+            "source_model_sha256": "d2c6a478d8276f376367ae80dfff1e439a9a214844e22d93ce3413979283412f",
+            "status": "unknown"
+          }
+        }
+      ],
+      "site_id": "main-9th"
+    },
+    {
+      "label": "Pacific Avenue at 9th Street",
+      "outcomes": [
+        {
+          "input": {
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "extra_harm_disjointness_evidence": null,
+            "inputs": {
+              "availability": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-9th:deaths:availability",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "pacific-9th",
+                "unit": "fraction"
+              },
+              "baseline_exposure": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-9th:deaths:baseline_exposure",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "pacific-9th",
+                "unit": "person_crossings"
+              },
+              "baseline_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-9th:deaths:baseline_risk",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "pacific-9th",
+                "unit": "harm_events/person_crossing"
+              },
+              "deployment_harm": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-9th:deaths:deployment_harm",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "pacific-9th",
+                "unit": "harm_events"
+              },
+              "displacement_harm": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-9th:deaths:displacement_harm",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "pacific-9th",
+                "unit": "harm_events"
+              },
+              "facility_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-9th:deaths:facility_risk",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "pacific-9th",
+                "unit": "harm_events/person_crossing"
+              },
+              "fallback_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-9th:deaths:fallback_risk",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "pacific-9th",
+                "unit": "harm_events/person_crossing"
+              },
+              "intervention_exposure": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-9th:deaths:intervention_exposure",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "pacific-9th",
+                "unit": "person_crossings"
+              },
+              "uptake_when_available": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-9th:deaths:uptake_when_available",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "pacific-9th",
+                "unit": "fraction"
+              }
+            },
+            "outcome": "deaths",
+            "period": null,
+            "schema_version": 1,
+            "site_id": "pacific-9th",
+            "source_model_sha256": "d2c6a478d8276f376367ae80dfff1e439a9a214844e22d93ce3413979283412f"
+          },
+          "outcome": "deaths",
+          "result": {
+            "baseline_expected_harm": null,
+            "causal_effect_established": false,
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "facility_use_share": null,
+            "input_content_sha256": "06a9d267b631195b1b622a4b2d15cc6d8fb0d7604eeeb3371e5a2bf3f4355186",
+            "interpretation": "Input-range accounting enclosure, not a confidence interval, causal estimate or measured benefit",
+            "intervention_expected_harm": null,
+            "missing_inputs": [
+              "period",
+              "extra_harm_disjointness_evidence",
+              "baseline_exposure",
+              "intervention_exposure",
+              "availability",
+              "uptake_when_available",
+              "baseline_risk",
+              "facility_risk",
+              "fallback_risk",
+              "deployment_harm",
+              "displacement_harm"
+            ],
+            "net_harm_avoided": null,
+            "outcome": "deaths",
+            "period": null,
+            "physical_approval": false,
+            "reason": "No site benefit is computed while any input, period or extra-harm boundary is unknown",
+            "site_id": "pacific-9th",
+            "source_model_sha256": "d2c6a478d8276f376367ae80dfff1e439a9a214844e22d93ce3413979283412f",
+            "status": "unknown"
+          }
+        },
+        {
+          "input": {
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "extra_harm_disjointness_evidence": null,
+            "inputs": {
+              "availability": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-9th:serious_nonfatal_injuries:availability",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "pacific-9th",
+                "unit": "fraction"
+              },
+              "baseline_exposure": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-9th:serious_nonfatal_injuries:baseline_exposure",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "pacific-9th",
+                "unit": "person_crossings"
+              },
+              "baseline_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-9th:serious_nonfatal_injuries:baseline_risk",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "pacific-9th",
+                "unit": "harm_events/person_crossing"
+              },
+              "deployment_harm": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-9th:serious_nonfatal_injuries:deployment_harm",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "pacific-9th",
+                "unit": "harm_events"
+              },
+              "displacement_harm": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-9th:serious_nonfatal_injuries:displacement_harm",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "pacific-9th",
+                "unit": "harm_events"
+              },
+              "facility_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-9th:serious_nonfatal_injuries:facility_risk",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "pacific-9th",
+                "unit": "harm_events/person_crossing"
+              },
+              "fallback_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-9th:serious_nonfatal_injuries:fallback_risk",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "pacific-9th",
+                "unit": "harm_events/person_crossing"
+              },
+              "intervention_exposure": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-9th:serious_nonfatal_injuries:intervention_exposure",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "pacific-9th",
+                "unit": "person_crossings"
+              },
+              "uptake_when_available": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-9th:serious_nonfatal_injuries:uptake_when_available",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "pacific-9th",
+                "unit": "fraction"
+              }
+            },
+            "outcome": "serious_nonfatal_injuries",
+            "period": null,
+            "schema_version": 1,
+            "site_id": "pacific-9th",
+            "source_model_sha256": "d2c6a478d8276f376367ae80dfff1e439a9a214844e22d93ce3413979283412f"
+          },
+          "outcome": "serious_nonfatal_injuries",
+          "result": {
+            "baseline_expected_harm": null,
+            "causal_effect_established": false,
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "facility_use_share": null,
+            "input_content_sha256": "eb8bf0dc379157dba558ecf5b6a4e680ae75a84e38c9ee88096ea5b9822575b1",
+            "interpretation": "Input-range accounting enclosure, not a confidence interval, causal estimate or measured benefit",
+            "intervention_expected_harm": null,
+            "missing_inputs": [
+              "period",
+              "extra_harm_disjointness_evidence",
+              "baseline_exposure",
+              "intervention_exposure",
+              "availability",
+              "uptake_when_available",
+              "baseline_risk",
+              "facility_risk",
+              "fallback_risk",
+              "deployment_harm",
+              "displacement_harm"
+            ],
+            "net_harm_avoided": null,
+            "outcome": "serious_nonfatal_injuries",
+            "period": null,
+            "physical_approval": false,
+            "reason": "No site benefit is computed while any input, period or extra-harm boundary is unknown",
+            "site_id": "pacific-9th",
+            "source_model_sha256": "d2c6a478d8276f376367ae80dfff1e439a9a214844e22d93ce3413979283412f",
+            "status": "unknown"
+          }
+        }
+      ],
+      "site_id": "pacific-9th"
+    },
+    {
+      "label": "Main Avenue at 11th Street",
+      "outcomes": [
+        {
+          "input": {
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "extra_harm_disjointness_evidence": null,
+            "inputs": {
+              "availability": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-11th:deaths:availability",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "main-11th",
+                "unit": "fraction"
+              },
+              "baseline_exposure": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-11th:deaths:baseline_exposure",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "main-11th",
+                "unit": "person_crossings"
+              },
+              "baseline_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-11th:deaths:baseline_risk",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "main-11th",
+                "unit": "harm_events/person_crossing"
+              },
+              "deployment_harm": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-11th:deaths:deployment_harm",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "main-11th",
+                "unit": "harm_events"
+              },
+              "displacement_harm": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-11th:deaths:displacement_harm",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "main-11th",
+                "unit": "harm_events"
+              },
+              "facility_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-11th:deaths:facility_risk",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "main-11th",
+                "unit": "harm_events/person_crossing"
+              },
+              "fallback_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-11th:deaths:fallback_risk",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "main-11th",
+                "unit": "harm_events/person_crossing"
+              },
+              "intervention_exposure": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-11th:deaths:intervention_exposure",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "main-11th",
+                "unit": "person_crossings"
+              },
+              "uptake_when_available": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-11th:deaths:uptake_when_available",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "main-11th",
+                "unit": "fraction"
+              }
+            },
+            "outcome": "deaths",
+            "period": null,
+            "schema_version": 1,
+            "site_id": "main-11th",
+            "source_model_sha256": "d2c6a478d8276f376367ae80dfff1e439a9a214844e22d93ce3413979283412f"
+          },
+          "outcome": "deaths",
+          "result": {
+            "baseline_expected_harm": null,
+            "causal_effect_established": false,
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "facility_use_share": null,
+            "input_content_sha256": "56b51796f3529d145db1cb023243ea95d6d9859fa95da20eb61f269fbc497212",
+            "interpretation": "Input-range accounting enclosure, not a confidence interval, causal estimate or measured benefit",
+            "intervention_expected_harm": null,
+            "missing_inputs": [
+              "period",
+              "extra_harm_disjointness_evidence",
+              "baseline_exposure",
+              "intervention_exposure",
+              "availability",
+              "uptake_when_available",
+              "baseline_risk",
+              "facility_risk",
+              "fallback_risk",
+              "deployment_harm",
+              "displacement_harm"
+            ],
+            "net_harm_avoided": null,
+            "outcome": "deaths",
+            "period": null,
+            "physical_approval": false,
+            "reason": "No site benefit is computed while any input, period or extra-harm boundary is unknown",
+            "site_id": "main-11th",
+            "source_model_sha256": "d2c6a478d8276f376367ae80dfff1e439a9a214844e22d93ce3413979283412f",
+            "status": "unknown"
+          }
+        },
+        {
+          "input": {
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "extra_harm_disjointness_evidence": null,
+            "inputs": {
+              "availability": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-11th:serious_nonfatal_injuries:availability",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "main-11th",
+                "unit": "fraction"
+              },
+              "baseline_exposure": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-11th:serious_nonfatal_injuries:baseline_exposure",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "main-11th",
+                "unit": "person_crossings"
+              },
+              "baseline_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-11th:serious_nonfatal_injuries:baseline_risk",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "main-11th",
+                "unit": "harm_events/person_crossing"
+              },
+              "deployment_harm": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-11th:serious_nonfatal_injuries:deployment_harm",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "main-11th",
+                "unit": "harm_events"
+              },
+              "displacement_harm": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-11th:serious_nonfatal_injuries:displacement_harm",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "main-11th",
+                "unit": "harm_events"
+              },
+              "facility_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-11th:serious_nonfatal_injuries:facility_risk",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "main-11th",
+                "unit": "harm_events/person_crossing"
+              },
+              "fallback_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-11th:serious_nonfatal_injuries:fallback_risk",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "main-11th",
+                "unit": "harm_events/person_crossing"
+              },
+              "intervention_exposure": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-11th:serious_nonfatal_injuries:intervention_exposure",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "main-11th",
+                "unit": "person_crossings"
+              },
+              "uptake_when_available": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "main-11th:serious_nonfatal_injuries:uptake_when_available",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "main-11th",
+                "unit": "fraction"
+              }
+            },
+            "outcome": "serious_nonfatal_injuries",
+            "period": null,
+            "schema_version": 1,
+            "site_id": "main-11th",
+            "source_model_sha256": "d2c6a478d8276f376367ae80dfff1e439a9a214844e22d93ce3413979283412f"
+          },
+          "outcome": "serious_nonfatal_injuries",
+          "result": {
+            "baseline_expected_harm": null,
+            "causal_effect_established": false,
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "facility_use_share": null,
+            "input_content_sha256": "2fa54075b1ff0c0e336ad69785c9bd7de862893d6c1bf073c093a98ba3a98a28",
+            "interpretation": "Input-range accounting enclosure, not a confidence interval, causal estimate or measured benefit",
+            "intervention_expected_harm": null,
+            "missing_inputs": [
+              "period",
+              "extra_harm_disjointness_evidence",
+              "baseline_exposure",
+              "intervention_exposure",
+              "availability",
+              "uptake_when_available",
+              "baseline_risk",
+              "facility_risk",
+              "fallback_risk",
+              "deployment_harm",
+              "displacement_harm"
+            ],
+            "net_harm_avoided": null,
+            "outcome": "serious_nonfatal_injuries",
+            "period": null,
+            "physical_approval": false,
+            "reason": "No site benefit is computed while any input, period or extra-harm boundary is unknown",
+            "site_id": "main-11th",
+            "source_model_sha256": "d2c6a478d8276f376367ae80dfff1e439a9a214844e22d93ce3413979283412f",
+            "status": "unknown"
+          }
+        }
+      ],
+      "site_id": "main-11th"
+    },
+    {
+      "label": "Pacific Avenue at 11th Street",
+      "outcomes": [
+        {
+          "input": {
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "extra_harm_disjointness_evidence": null,
+            "inputs": {
+              "availability": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-11th:deaths:availability",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "pacific-11th",
+                "unit": "fraction"
+              },
+              "baseline_exposure": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-11th:deaths:baseline_exposure",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "pacific-11th",
+                "unit": "person_crossings"
+              },
+              "baseline_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-11th:deaths:baseline_risk",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "pacific-11th",
+                "unit": "harm_events/person_crossing"
+              },
+              "deployment_harm": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-11th:deaths:deployment_harm",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "pacific-11th",
+                "unit": "harm_events"
+              },
+              "displacement_harm": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-11th:deaths:displacement_harm",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "pacific-11th",
+                "unit": "harm_events"
+              },
+              "facility_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-11th:deaths:facility_risk",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "pacific-11th",
+                "unit": "harm_events/person_crossing"
+              },
+              "fallback_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-11th:deaths:fallback_risk",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "pacific-11th",
+                "unit": "harm_events/person_crossing"
+              },
+              "intervention_exposure": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-11th:deaths:intervention_exposure",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "pacific-11th",
+                "unit": "person_crossings"
+              },
+              "uptake_when_available": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-11th:deaths:uptake_when_available",
+                "outcome": "deaths",
+                "period": null,
+                "site_id": "pacific-11th",
+                "unit": "fraction"
+              }
+            },
+            "outcome": "deaths",
+            "period": null,
+            "schema_version": 1,
+            "site_id": "pacific-11th",
+            "source_model_sha256": "d2c6a478d8276f376367ae80dfff1e439a9a214844e22d93ce3413979283412f"
+          },
+          "outcome": "deaths",
+          "result": {
+            "baseline_expected_harm": null,
+            "causal_effect_established": false,
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "facility_use_share": null,
+            "input_content_sha256": "c0223b11bef56a0130265718356e000c95eea5f8ce4eacd1a01e23e5349e8d09",
+            "interpretation": "Input-range accounting enclosure, not a confidence interval, causal estimate or measured benefit",
+            "intervention_expected_harm": null,
+            "missing_inputs": [
+              "period",
+              "extra_harm_disjointness_evidence",
+              "baseline_exposure",
+              "intervention_exposure",
+              "availability",
+              "uptake_when_available",
+              "baseline_risk",
+              "facility_risk",
+              "fallback_risk",
+              "deployment_harm",
+              "displacement_harm"
+            ],
+            "net_harm_avoided": null,
+            "outcome": "deaths",
+            "period": null,
+            "physical_approval": false,
+            "reason": "No site benefit is computed while any input, period or extra-harm boundary is unknown",
+            "site_id": "pacific-11th",
+            "source_model_sha256": "d2c6a478d8276f376367ae80dfff1e439a9a214844e22d93ce3413979283412f",
+            "status": "unknown"
+          }
+        },
+        {
+          "input": {
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "extra_harm_disjointness_evidence": null,
+            "inputs": {
+              "availability": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-11th:serious_nonfatal_injuries:availability",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "pacific-11th",
+                "unit": "fraction"
+              },
+              "baseline_exposure": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-11th:serious_nonfatal_injuries:baseline_exposure",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "pacific-11th",
+                "unit": "person_crossings"
+              },
+              "baseline_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-11th:serious_nonfatal_injuries:baseline_risk",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "pacific-11th",
+                "unit": "harm_events/person_crossing"
+              },
+              "deployment_harm": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-11th:serious_nonfatal_injuries:deployment_harm",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "pacific-11th",
+                "unit": "harm_events"
+              },
+              "displacement_harm": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-11th:serious_nonfatal_injuries:displacement_harm",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "pacific-11th",
+                "unit": "harm_events"
+              },
+              "facility_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-11th:serious_nonfatal_injuries:facility_risk",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "pacific-11th",
+                "unit": "harm_events/person_crossing"
+              },
+              "fallback_risk": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-11th:serious_nonfatal_injuries:fallback_risk",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "pacific-11th",
+                "unit": "harm_events/person_crossing"
+              },
+              "intervention_exposure": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-11th:serious_nonfatal_injuries:intervention_exposure",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "pacific-11th",
+                "unit": "person_crossings"
+              },
+              "uptake_when_available": {
+                "bounds": null,
+                "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+                "evidence": {
+                  "as_of": null,
+                  "interpretation": "Not established for this site",
+                  "source": null,
+                  "status": "unknown"
+                },
+                "input_id": "pacific-11th:serious_nonfatal_injuries:uptake_when_available",
+                "outcome": "serious_nonfatal_injuries",
+                "period": null,
+                "site_id": "pacific-11th",
+                "unit": "fraction"
+              }
+            },
+            "outcome": "serious_nonfatal_injuries",
+            "period": null,
+            "schema_version": 1,
+            "site_id": "pacific-11th",
+            "source_model_sha256": "d2c6a478d8276f376367ae80dfff1e439a9a214844e22d93ce3413979283412f"
+          },
+          "outcome": "serious_nonfatal_injuries",
+          "result": {
+            "baseline_expected_harm": null,
+            "causal_effect_established": false,
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "facility_use_share": null,
+            "input_content_sha256": "90c6cd2ede7d9b6222323dd5d43cdf5b7ce8966b280635288b47b20d629d80da",
+            "interpretation": "Input-range accounting enclosure, not a confidence interval, causal estimate or measured benefit",
+            "intervention_expected_harm": null,
+            "missing_inputs": [
+              "period",
+              "extra_harm_disjointness_evidence",
+              "baseline_exposure",
+              "intervention_exposure",
+              "availability",
+              "uptake_when_available",
+              "baseline_risk",
+              "facility_risk",
+              "fallback_risk",
+              "deployment_harm",
+              "displacement_harm"
+            ],
+            "net_harm_avoided": null,
+            "outcome": "serious_nonfatal_injuries",
+            "period": null,
+            "physical_approval": false,
+            "reason": "No site benefit is computed while any input, period or extra-harm boundary is unknown",
+            "site_id": "pacific-11th",
+            "source_model_sha256": "d2c6a478d8276f376367ae80dfff1e439a9a214844e22d93ce3413979283412f",
+            "status": "unknown"
+          }
+        }
+      ],
+      "site_id": "pacific-11th"
+    }
+  ],
+  "source_file_sha256": {
+    "design.json": "52f9682beefbe1cba27747c10281f78cef73cd0f328916ca65c158a96aa839ab",
+    "site-report.json": "2edf4e4b97c19108a00788428865e9f30b889297fa6d5678042af288de30ae7a"
+  },
+  "source_model": {
+    "adaptation": "Self-contained Fraction arithmetic for the same interval-accounting formula; explicit unknown inputs and design/site bindings added",
+    "archive": "Safe_Roads_Recovery_2026-11-23 (revision 2)",
+    "attribution": "Inspected recovered Safe Roads research source; no empirical effect is imported",
+    "function": "local_crossing_harm",
+    "path": "gap_closure/model_repair/models.py",
+    "sha256": "d2c6a478d8276f376367ae80dfff1e439a9a214844e22d93ce3413979283412f"
+  },
+  "summary": {
+    "computed_site_benefits": 0,
+    "physical_approval": false,
+    "positive_site_benefit_claims": 0,
+    "site_count": 6,
+    "site_outcome_evaluations": 12,
+    "unknown_site_outcomes": 12
+  },
+  "synthetic_controls": [
+    {
+      "id": "point_deaths",
+      "input": {
+        "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+        "extra_harm_disjointness_evidence": "Synthetic control explicitly assigns deployment, displaced-site and main-site events to disjoint categories",
+        "inputs": {
+          "availability": {
+            "bounds": [
+              "4/5",
+              "4/5"
+            ],
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "evidence": {
+              "as_of": "2026-11-24",
+              "interpretation": "Synthetic arithmetic only; not a Tillamook estimate",
+              "source": "Authored exact arithmetic verification fixture",
+              "status": "scenario"
+            },
+            "input_id": "synthetic-arithmetic-control:deaths:availability",
+            "outcome": "deaths",
+            "period": [
+              "2027-01-01",
+              "2028-01-01"
+            ],
+            "site_id": "synthetic-arithmetic-control",
+            "unit": "fraction"
+          },
+          "baseline_exposure": {
+            "bounds": [
+              "100000",
+              "100000"
+            ],
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "evidence": {
+              "as_of": "2026-11-24",
+              "interpretation": "Synthetic arithmetic only; not a Tillamook estimate",
+              "source": "Authored exact arithmetic verification fixture",
+              "status": "scenario"
+            },
+            "input_id": "synthetic-arithmetic-control:deaths:baseline_exposure",
+            "outcome": "deaths",
+            "period": [
+              "2027-01-01",
+              "2028-01-01"
+            ],
+            "site_id": "synthetic-arithmetic-control",
+            "unit": "person_crossings"
+          },
+          "baseline_risk": {
+            "bounds": [
+              "1/100000",
+              "1/100000"
+            ],
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "evidence": {
+              "as_of": "2026-11-24",
+              "interpretation": "Synthetic arithmetic only; not a Tillamook estimate",
+              "source": "Authored exact arithmetic verification fixture",
+              "status": "scenario"
+            },
+            "input_id": "synthetic-arithmetic-control:deaths:baseline_risk",
+            "outcome": "deaths",
+            "period": [
+              "2027-01-01",
+              "2028-01-01"
+            ],
+            "site_id": "synthetic-arithmetic-control",
+            "unit": "harm_events/person_crossing"
+          },
+          "deployment_harm": {
+            "bounds": [
+              "1/100",
+              "1/100"
+            ],
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "evidence": {
+              "as_of": "2026-11-24",
+              "interpretation": "Synthetic arithmetic only; not a Tillamook estimate",
+              "source": "Authored exact arithmetic verification fixture",
+              "status": "scenario"
+            },
+            "input_id": "synthetic-arithmetic-control:deaths:deployment_harm",
+            "outcome": "deaths",
+            "period": [
+              "2027-01-01",
+              "2028-01-01"
+            ],
+            "site_id": "synthetic-arithmetic-control",
+            "unit": "harm_events"
+          },
+          "displacement_harm": {
+            "bounds": [
+              "1/50",
+              "1/50"
+            ],
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "evidence": {
+              "as_of": "2026-11-24",
+              "interpretation": "Synthetic arithmetic only; not a Tillamook estimate",
+              "source": "Authored exact arithmetic verification fixture",
+              "status": "scenario"
+            },
+            "input_id": "synthetic-arithmetic-control:deaths:displacement_harm",
+            "outcome": "deaths",
+            "period": [
+              "2027-01-01",
+              "2028-01-01"
+            ],
+            "site_id": "synthetic-arithmetic-control",
+            "unit": "harm_events"
+          },
+          "facility_risk": {
+            "bounds": [
+              "1/1000000",
+              "1/1000000"
+            ],
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "evidence": {
+              "as_of": "2026-11-24",
+              "interpretation": "Synthetic arithmetic only; not a Tillamook estimate",
+              "source": "Authored exact arithmetic verification fixture",
+              "status": "scenario"
+            },
+            "input_id": "synthetic-arithmetic-control:deaths:facility_risk",
+            "outcome": "deaths",
+            "period": [
+              "2027-01-01",
+              "2028-01-01"
+            ],
+            "site_id": "synthetic-arithmetic-control",
+            "unit": "harm_events/person_crossing"
+          },
+          "fallback_risk": {
+            "bounds": [
+              "1/100000",
+              "1/100000"
+            ],
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "evidence": {
+              "as_of": "2026-11-24",
+              "interpretation": "Synthetic arithmetic only; not a Tillamook estimate",
+              "source": "Authored exact arithmetic verification fixture",
+              "status": "scenario"
+            },
+            "input_id": "synthetic-arithmetic-control:deaths:fallback_risk",
+            "outcome": "deaths",
+            "period": [
+              "2027-01-01",
+              "2028-01-01"
+            ],
+            "site_id": "synthetic-arithmetic-control",
+            "unit": "harm_events/person_crossing"
+          },
+          "intervention_exposure": {
+            "bounds": [
+              "110000",
+              "110000"
+            ],
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "evidence": {
+              "as_of": "2026-11-24",
+              "interpretation": "Synthetic arithmetic only; not a Tillamook estimate",
+              "source": "Authored exact arithmetic verification fixture",
+              "status": "scenario"
+            },
+            "input_id": "synthetic-arithmetic-control:deaths:intervention_exposure",
+            "outcome": "deaths",
+            "period": [
+              "2027-01-01",
+              "2028-01-01"
+            ],
+            "site_id": "synthetic-arithmetic-control",
+            "unit": "person_crossings"
+          },
+          "uptake_when_available": {
+            "bounds": [
+              "3/4",
+              "3/4"
+            ],
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "evidence": {
+              "as_of": "2026-11-24",
+              "interpretation": "Synthetic arithmetic only; not a Tillamook estimate",
+              "source": "Authored exact arithmetic verification fixture",
+              "status": "scenario"
+            },
+            "input_id": "synthetic-arithmetic-control:deaths:uptake_when_available",
+            "outcome": "deaths",
+            "period": [
+              "2027-01-01",
+              "2028-01-01"
+            ],
+            "site_id": "synthetic-arithmetic-control",
+            "unit": "fraction"
+          }
+        },
+        "outcome": "deaths",
+        "period": [
+          "2027-01-01",
+          "2028-01-01"
+        ],
+        "schema_version": 1,
+        "site_id": "synthetic-arithmetic-control",
+        "source_model_sha256": "d2c6a478d8276f376367ae80dfff1e439a9a214844e22d93ce3413979283412f"
+      },
+      "result": {
+        "baseline_expected_harm": [
+          "1",
+          "1"
+        ],
+        "causal_effect_established": false,
+        "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+        "extra_harm_boundary": "Synthetic control explicitly assigns deployment, displaced-site and main-site events to disjoint categories",
+        "facility_use_share": [
+          "3/5",
+          "3/5"
+        ],
+        "input_content_sha256": "317d62efb1350a36b96b1e0e8e1a4f9b72b1f0e5626ca0e53893820a811f7c89",
+        "input_evidence_status": "scenario",
+        "interpretation": "Input-range accounting enclosure, not a confidence interval, causal estimate or measured benefit",
+        "intervention_expected_harm": [
+          "67/125",
+          "67/125"
+        ],
+        "missing_inputs": [],
+        "net_harm_avoided": [
+          "58/125",
+          "58/125"
+        ],
+        "net_range_sign": "positive",
+        "outcome": "deaths",
+        "period": [
+          "2027-01-01",
+          "2028-01-01"
+        ],
+        "physical_approval": false,
+        "site_id": "synthetic-arithmetic-control",
+        "source_model_sha256": "d2c6a478d8276f376367ae80dfff1e439a9a214844e22d93ce3413979283412f",
+        "status": "conditional_range"
+      }
+    },
+    {
+      "id": "point_serious_nonfatal_injuries",
+      "input": {
+        "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+        "extra_harm_disjointness_evidence": "Synthetic control explicitly assigns deployment, displaced-site and main-site events to disjoint categories",
+        "inputs": {
+          "availability": {
+            "bounds": [
+              "4/5",
+              "4/5"
+            ],
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "evidence": {
+              "as_of": "2026-11-24",
+              "interpretation": "Synthetic arithmetic only; not a Tillamook estimate",
+              "source": "Authored exact arithmetic verification fixture",
+              "status": "scenario"
+            },
+            "input_id": "synthetic-arithmetic-control:serious_nonfatal_injuries:availability",
+            "outcome": "serious_nonfatal_injuries",
+            "period": [
+              "2027-01-01",
+              "2028-01-01"
+            ],
+            "site_id": "synthetic-arithmetic-control",
+            "unit": "fraction"
+          },
+          "baseline_exposure": {
+            "bounds": [
+              "100000",
+              "100000"
+            ],
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "evidence": {
+              "as_of": "2026-11-24",
+              "interpretation": "Synthetic arithmetic only; not a Tillamook estimate",
+              "source": "Authored exact arithmetic verification fixture",
+              "status": "scenario"
+            },
+            "input_id": "synthetic-arithmetic-control:serious_nonfatal_injuries:baseline_exposure",
+            "outcome": "serious_nonfatal_injuries",
+            "period": [
+              "2027-01-01",
+              "2028-01-01"
+            ],
+            "site_id": "synthetic-arithmetic-control",
+            "unit": "person_crossings"
+          },
+          "baseline_risk": {
+            "bounds": [
+              "1/10000",
+              "1/10000"
+            ],
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "evidence": {
+              "as_of": "2026-11-24",
+              "interpretation": "Synthetic arithmetic only; not a Tillamook estimate",
+              "source": "Authored exact arithmetic verification fixture",
+              "status": "scenario"
+            },
+            "input_id": "synthetic-arithmetic-control:serious_nonfatal_injuries:baseline_risk",
+            "outcome": "serious_nonfatal_injuries",
+            "period": [
+              "2027-01-01",
+              "2028-01-01"
+            ],
+            "site_id": "synthetic-arithmetic-control",
+            "unit": "harm_events/person_crossing"
+          },
+          "deployment_harm": {
+            "bounds": [
+              "1/10",
+              "1/10"
+            ],
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "evidence": {
+              "as_of": "2026-11-24",
+              "interpretation": "Synthetic arithmetic only; not a Tillamook estimate",
+              "source": "Authored exact arithmetic verification fixture",
+              "status": "scenario"
+            },
+            "input_id": "synthetic-arithmetic-control:serious_nonfatal_injuries:deployment_harm",
+            "outcome": "serious_nonfatal_injuries",
+            "period": [
+              "2027-01-01",
+              "2028-01-01"
+            ],
+            "site_id": "synthetic-arithmetic-control",
+            "unit": "harm_events"
+          },
+          "displacement_harm": {
+            "bounds": [
+              "1/5",
+              "1/5"
+            ],
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "evidence": {
+              "as_of": "2026-11-24",
+              "interpretation": "Synthetic arithmetic only; not a Tillamook estimate",
+              "source": "Authored exact arithmetic verification fixture",
+              "status": "scenario"
+            },
+            "input_id": "synthetic-arithmetic-control:serious_nonfatal_injuries:displacement_harm",
+            "outcome": "serious_nonfatal_injuries",
+            "period": [
+              "2027-01-01",
+              "2028-01-01"
+            ],
+            "site_id": "synthetic-arithmetic-control",
+            "unit": "harm_events"
+          },
+          "facility_risk": {
+            "bounds": [
+              "1/100000",
+              "1/100000"
+            ],
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "evidence": {
+              "as_of": "2026-11-24",
+              "interpretation": "Synthetic arithmetic only; not a Tillamook estimate",
+              "source": "Authored exact arithmetic verification fixture",
+              "status": "scenario"
+            },
+            "input_id": "synthetic-arithmetic-control:serious_nonfatal_injuries:facility_risk",
+            "outcome": "serious_nonfatal_injuries",
+            "period": [
+              "2027-01-01",
+              "2028-01-01"
+            ],
+            "site_id": "synthetic-arithmetic-control",
+            "unit": "harm_events/person_crossing"
+          },
+          "fallback_risk": {
+            "bounds": [
+              "1/10000",
+              "1/10000"
+            ],
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "evidence": {
+              "as_of": "2026-11-24",
+              "interpretation": "Synthetic arithmetic only; not a Tillamook estimate",
+              "source": "Authored exact arithmetic verification fixture",
+              "status": "scenario"
+            },
+            "input_id": "synthetic-arithmetic-control:serious_nonfatal_injuries:fallback_risk",
+            "outcome": "serious_nonfatal_injuries",
+            "period": [
+              "2027-01-01",
+              "2028-01-01"
+            ],
+            "site_id": "synthetic-arithmetic-control",
+            "unit": "harm_events/person_crossing"
+          },
+          "intervention_exposure": {
+            "bounds": [
+              "110000",
+              "110000"
+            ],
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "evidence": {
+              "as_of": "2026-11-24",
+              "interpretation": "Synthetic arithmetic only; not a Tillamook estimate",
+              "source": "Authored exact arithmetic verification fixture",
+              "status": "scenario"
+            },
+            "input_id": "synthetic-arithmetic-control:serious_nonfatal_injuries:intervention_exposure",
+            "outcome": "serious_nonfatal_injuries",
+            "period": [
+              "2027-01-01",
+              "2028-01-01"
+            ],
+            "site_id": "synthetic-arithmetic-control",
+            "unit": "person_crossings"
+          },
+          "uptake_when_available": {
+            "bounds": [
+              "3/4",
+              "3/4"
+            ],
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "evidence": {
+              "as_of": "2026-11-24",
+              "interpretation": "Synthetic arithmetic only; not a Tillamook estimate",
+              "source": "Authored exact arithmetic verification fixture",
+              "status": "scenario"
+            },
+            "input_id": "synthetic-arithmetic-control:serious_nonfatal_injuries:uptake_when_available",
+            "outcome": "serious_nonfatal_injuries",
+            "period": [
+              "2027-01-01",
+              "2028-01-01"
+            ],
+            "site_id": "synthetic-arithmetic-control",
+            "unit": "fraction"
+          }
+        },
+        "outcome": "serious_nonfatal_injuries",
+        "period": [
+          "2027-01-01",
+          "2028-01-01"
+        ],
+        "schema_version": 1,
+        "site_id": "synthetic-arithmetic-control",
+        "source_model_sha256": "d2c6a478d8276f376367ae80dfff1e439a9a214844e22d93ce3413979283412f"
+      },
+      "result": {
+        "baseline_expected_harm": [
+          "10",
+          "10"
+        ],
+        "causal_effect_established": false,
+        "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+        "extra_harm_boundary": "Synthetic control explicitly assigns deployment, displaced-site and main-site events to disjoint categories",
+        "facility_use_share": [
+          "3/5",
+          "3/5"
+        ],
+        "input_content_sha256": "5c17956c63280d44b73559a37eee3e26870229adefb0b76affdd7440a1b9c145",
+        "input_evidence_status": "scenario",
+        "interpretation": "Input-range accounting enclosure, not a confidence interval, causal estimate or measured benefit",
+        "intervention_expected_harm": [
+          "134/25",
+          "134/25"
+        ],
+        "missing_inputs": [],
+        "net_harm_avoided": [
+          "116/25",
+          "116/25"
+        ],
+        "net_range_sign": "positive",
+        "outcome": "serious_nonfatal_injuries",
+        "period": [
+          "2027-01-01",
+          "2028-01-01"
+        ],
+        "physical_approval": false,
+        "site_id": "synthetic-arithmetic-control",
+        "source_model_sha256": "d2c6a478d8276f376367ae80dfff1e439a9a214844e22d93ce3413979283412f",
+        "status": "conditional_range"
+      }
+    },
+    {
+      "id": "interval_crosses_zero",
+      "input": {
+        "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+        "extra_harm_disjointness_evidence": "Synthetic control explicitly assigns deployment, displaced-site and main-site events to disjoint categories",
+        "inputs": {
+          "availability": {
+            "bounds": [
+              "1/2",
+              "1"
+            ],
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "evidence": {
+              "as_of": "2026-11-24",
+              "interpretation": "Synthetic arithmetic only; not a Tillamook estimate",
+              "source": "Authored exact arithmetic verification fixture",
+              "status": "scenario"
+            },
+            "input_id": "synthetic-arithmetic-control:deaths:availability",
+            "outcome": "deaths",
+            "period": [
+              "2027-01-01",
+              "2028-01-01"
+            ],
+            "site_id": "synthetic-arithmetic-control",
+            "unit": "fraction"
+          },
+          "baseline_exposure": {
+            "bounds": [
+              "100",
+              "200"
+            ],
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "evidence": {
+              "as_of": "2026-11-24",
+              "interpretation": "Synthetic arithmetic only; not a Tillamook estimate",
+              "source": "Authored exact arithmetic verification fixture",
+              "status": "scenario"
+            },
+            "input_id": "synthetic-arithmetic-control:deaths:baseline_exposure",
+            "outcome": "deaths",
+            "period": [
+              "2027-01-01",
+              "2028-01-01"
+            ],
+            "site_id": "synthetic-arithmetic-control",
+            "unit": "person_crossings"
+          },
+          "baseline_risk": {
+            "bounds": [
+              "0",
+              "1/1000"
+            ],
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "evidence": {
+              "as_of": "2026-11-24",
+              "interpretation": "Synthetic arithmetic only; not a Tillamook estimate",
+              "source": "Authored exact arithmetic verification fixture",
+              "status": "scenario"
+            },
+            "input_id": "synthetic-arithmetic-control:deaths:baseline_risk",
+            "outcome": "deaths",
+            "period": [
+              "2027-01-01",
+              "2028-01-01"
+            ],
+            "site_id": "synthetic-arithmetic-control",
+            "unit": "harm_events/person_crossing"
+          },
+          "deployment_harm": {
+            "bounds": [
+              "0",
+              "1/50"
+            ],
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "evidence": {
+              "as_of": "2026-11-24",
+              "interpretation": "Synthetic arithmetic only; not a Tillamook estimate",
+              "source": "Authored exact arithmetic verification fixture",
+              "status": "scenario"
+            },
+            "input_id": "synthetic-arithmetic-control:deaths:deployment_harm",
+            "outcome": "deaths",
+            "period": [
+              "2027-01-01",
+              "2028-01-01"
+            ],
+            "site_id": "synthetic-arithmetic-control",
+            "unit": "harm_events"
+          },
+          "displacement_harm": {
+            "bounds": [
+              "0",
+              "3/100"
+            ],
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "evidence": {
+              "as_of": "2026-11-24",
+              "interpretation": "Synthetic arithmetic only; not a Tillamook estimate",
+              "source": "Authored exact arithmetic verification fixture",
+              "status": "scenario"
+            },
+            "input_id": "synthetic-arithmetic-control:deaths:displacement_harm",
+            "outcome": "deaths",
+            "period": [
+              "2027-01-01",
+              "2028-01-01"
+            ],
+            "site_id": "synthetic-arithmetic-control",
+            "unit": "harm_events"
+          },
+          "facility_risk": {
+            "bounds": [
+              "1/1000000",
+              "1/100000"
+            ],
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "evidence": {
+              "as_of": "2026-11-24",
+              "interpretation": "Synthetic arithmetic only; not a Tillamook estimate",
+              "source": "Authored exact arithmetic verification fixture",
+              "status": "scenario"
+            },
+            "input_id": "synthetic-arithmetic-control:deaths:facility_risk",
+            "outcome": "deaths",
+            "period": [
+              "2027-01-01",
+              "2028-01-01"
+            ],
+            "site_id": "synthetic-arithmetic-control",
+            "unit": "harm_events/person_crossing"
+          },
+          "fallback_risk": {
+            "bounds": [
+              "1/10000",
+              "1/1000"
+            ],
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "evidence": {
+              "as_of": "2026-11-24",
+              "interpretation": "Synthetic arithmetic only; not a Tillamook estimate",
+              "source": "Authored exact arithmetic verification fixture",
+              "status": "scenario"
+            },
+            "input_id": "synthetic-arithmetic-control:deaths:fallback_risk",
+            "outcome": "deaths",
+            "period": [
+              "2027-01-01",
+              "2028-01-01"
+            ],
+            "site_id": "synthetic-arithmetic-control",
+            "unit": "harm_events/person_crossing"
+          },
+          "intervention_exposure": {
+            "bounds": [
+              "100",
+              "300"
+            ],
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "evidence": {
+              "as_of": "2026-11-24",
+              "interpretation": "Synthetic arithmetic only; not a Tillamook estimate",
+              "source": "Authored exact arithmetic verification fixture",
+              "status": "scenario"
+            },
+            "input_id": "synthetic-arithmetic-control:deaths:intervention_exposure",
+            "outcome": "deaths",
+            "period": [
+              "2027-01-01",
+              "2028-01-01"
+            ],
+            "site_id": "synthetic-arithmetic-control",
+            "unit": "person_crossings"
+          },
+          "uptake_when_available": {
+            "bounds": [
+              "1/2",
+              "1"
+            ],
+            "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+            "evidence": {
+              "as_of": "2026-11-24",
+              "interpretation": "Synthetic arithmetic only; not a Tillamook estimate",
+              "source": "Authored exact arithmetic verification fixture",
+              "status": "scenario"
+            },
+            "input_id": "synthetic-arithmetic-control:deaths:uptake_when_available",
+            "outcome": "deaths",
+            "period": [
+              "2027-01-01",
+              "2028-01-01"
+            ],
+            "site_id": "synthetic-arithmetic-control",
+            "unit": "fraction"
+          }
+        },
+        "outcome": "deaths",
+        "period": [
+          "2027-01-01",
+          "2028-01-01"
+        ],
+        "schema_version": 1,
+        "site_id": "synthetic-arithmetic-control",
+        "source_model_sha256": "d2c6a478d8276f376367ae80dfff1e439a9a214844e22d93ce3413979283412f"
+      },
+      "result": {
+        "baseline_expected_harm": [
+          "0",
+          "1/5"
+        ],
+        "causal_effect_established": false,
+        "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+        "extra_harm_boundary": "Synthetic control explicitly assigns deployment, displaced-site and main-site events to disjoint categories",
+        "facility_use_share": [
+          "1/4",
+          "1"
+        ],
+        "input_content_sha256": "5b4cf625c455e2cbd1fe5f2b3c531052a182f6261011e4626e575fd4d30178f7",
+        "input_evidence_status": "scenario",
+        "interpretation": "Input-range accounting enclosure, not a confidence interval, causal estimate or measured benefit",
+        "intervention_expected_harm": [
+          "1/10000",
+          "1103/4000"
+        ],
+        "missing_inputs": [],
+        "net_harm_avoided": [
+          "-1103/4000",
+          "1999/10000"
+        ],
+        "net_range_sign": "contains_zero",
+        "outcome": "deaths",
+        "period": [
+          "2027-01-01",
+          "2028-01-01"
+        ],
+        "physical_approval": false,
+        "site_id": "synthetic-arithmetic-control",
+        "source_model_sha256": "d2c6a478d8276f376367ae80dfff1e439a9a214844e22d93ce3413979283412f",
+        "status": "conditional_range"
+      }
+    }
+  ],
+  "uptake_definition": "Fraction choosing the facility conditional on its availability"
+}

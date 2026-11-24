@@ -1,5 +1,7 @@
 # Elliptic maps, projective graphs and the cubic tower
 
+**New: [Tillamook crossing v3](deployable-crossing/v3/README.md).** One exact spatial assembly, continuous motion/support certificates, actual mapped access, synthetic measurement evidence, guarded operating states and a local outcome ledger share the same design identity. The integrated model identifies the raised access requirement and invalid partial-join release; it does not approve a physical bridge.
+
 **23 November 2026.** The degree-four search recovers a map from a smooth quartic equation and proves that it stays primitive over an algebraic closure. One example has nineteen geometric degree-four classes. Fifteen factor through double covers, and four are primitive. In degree three the same source has four classes, all defined over $\mathbb Q(\sqrt{-2})$. On an infinite family, all primitive maps in every degree can be counted, and a single curve admits primitive maps of arbitrarily large degree. [Degree-four construction](elliptic-quotients/primitive-degree-four/README.md) · [The nineteen classes](elliptic-quotients/a3-spectrum/README.md) · [All-degree family theorem](elliptic-quotients/primitive-degree-spectrum/README.md)
 
 ## Finite map reconstruction and solver comparisons
