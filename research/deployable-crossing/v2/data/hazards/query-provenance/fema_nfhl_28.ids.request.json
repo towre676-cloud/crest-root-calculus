@@ -1,0 +1,36 @@
+{
+  "endpoint": "https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer/28/query",
+  "method": "GET",
+  "parameters": {
+    "f": "json",
+    "where": "1=1",
+    "geometryType": "esriGeometryEnvelope",
+    "geometry": "{\"xmin\":433750,\"ymin\":5033050,\"xmax\":434350,\"ymax\":5034000,\"spatialReference\":{\"wkid\":26910}}",
+    "inSR": "26910",
+    "spatialRel": "esriSpatialRelIntersects",
+    "returnIdsOnly": "true"
+  },
+  "request_url": "https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer/28/query?f=json&where=1%3D1&geometryType=esriGeometryEnvelope&geometry=%7B%22xmin%22%3A433750%2C%22ymin%22%3A5033050%2C%22xmax%22%3A434350%2C%22ymax%22%3A5034000%2C%22spatialReference%22%3A%7B%22wkid%22%3A26910%7D%7D&inSR=26910&spatialRel=esriSpatialRelIntersects&returnIdsOnly=true",
+  "started_at_utc": "2026-11-24T00:22:30+00:00",
+  "http_status": 200,
+  "response_url": "https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer/28/query?f=json&where=1%3D1&geometryType=esriGeometryEnvelope&geometry=%7B%22xmin%22%3A433750%2C%22ymin%22%3A5033050%2C%22xmax%22%3A434350%2C%22ymax%22%3A5034000%2C%22spatialReference%22%3A%7B%22wkid%22%3A26910%7D%7D&inSR=26910&spatialRel=esriSpatialRelIntersects&returnIdsOnly=true",
+  "response_headers": {
+    "date": "Tue, 24 Nov 2026 00:22:34 GMT",
+    "content-type": "application/json;charset=UTF-8",
+    "content-length": "108",
+    "cache-control": "max-age=0,must-revalidate",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "vary": "Origin",
+    "server": "envoy",
+    "etag": "\"8845b539\"",
+    "strict-transport-security": "max-age=31536000; includeSubDomains",
+    "x-envoy-upstream-service-time": "179",
+    "connection": "close"
+  },
+  "retrieved_at_utc": "2026-11-24T00:22:34+00:00",
+  "response_file": "fema_nfhl_28.ids.raw.json",
+  "response_bytes": 108,
+  "sha256": "033647b8b3944fa0483238ddbce60f12c255a275d85b0a56d716e94dd74bedb1",
+  "success": true
+}

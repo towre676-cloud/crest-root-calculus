@@ -1,0 +1,54 @@
+{
+  "key": "dogami_landslide_3",
+  "label": "DOGAMI mapped landslide deposits",
+  "endpoint": "https://gis.dogami.oregon.gov/arcgis/rest/services/Public/SLIDO42/MapServer/3",
+  "query_envelope": [
+    433750,
+    5033050,
+    434350,
+    5034000
+  ],
+  "query_srid": 26910,
+  "status": "no_features_returned",
+  "requests": [
+    "dogami_landslide_3.layer.request.json",
+    "dogami_landslide_3.ids.request.json",
+    "dogami_landslide_3.count.request.json"
+  ],
+  "features": [],
+  "interpretation": "A spatial query is screening evidence, not a hazard-free or buildable-site finding.",
+  "layer_metadata": {
+    "name": "Deposits",
+    "type": "Feature Layer",
+    "geometryType": "esriGeometryPolygon",
+    "objectIdField": null,
+    "maxRecordCount": 1000,
+    "extent": {
+      "xmin": -13892875.346972499,
+      "ymin": 5149917.660749057,
+      "xmax": -12960220.035520023,
+      "ymax": 5824363.487159681,
+      "spatialReference": {
+        "wkid": 102100,
+        "latestWkid": 3857,
+        "xyTolerance": 0.001,
+        "zTolerance": 0.001,
+        "mTolerance": 0.001,
+        "falseX": -20037700,
+        "falseY": -30241100,
+        "xyUnits": 148923141.92838538,
+        "falseZ": -100000,
+        "zUnits": 10000,
+        "falseM": -100000,
+        "mUnits": 10000
+      }
+    },
+    "editingInfo": null
+  },
+  "reported_count": 0,
+  "object_id_field": "OBJECTID",
+  "empty_id_normalization": "The successful ID query returned objectIds:null and the independent successful count query returned count:0. Both original responses are retained.",
+  "object_ids": [],
+  "count_id_control_passed": true,
+  "reason": "Successful envelope query returned zero features in this layer; this does not establish hazard absence, mapping completeness or suitability."
+}

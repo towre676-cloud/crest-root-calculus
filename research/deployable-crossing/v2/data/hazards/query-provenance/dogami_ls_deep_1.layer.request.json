@@ -1,0 +1,29 @@
+{
+  "endpoint": "https://gis.dogami.oregon.gov/arcgis/rest/services/Public/SLIDO42_DetailedLSSus/MapServer/1",
+  "method": "GET",
+  "parameters": {
+    "f": "json"
+  },
+  "request_url": "https://gis.dogami.oregon.gov/arcgis/rest/services/Public/SLIDO42_DetailedLSSus/MapServer/1?f=json",
+  "started_at_utc": "2026-11-24T00:22:52+00:00",
+  "http_status": 200,
+  "response_url": "https://gis.dogami.oregon.gov/arcgis/rest/services/Public/SLIDO42_DetailedLSSus/MapServer/1?f=json",
+  "response_headers": {
+    "cache-control": "must-revalidate,max-age=0,public",
+    "content-length": "7455",
+    "content-type": "application/json; charset=UTF-8",
+    "etag": "\"cb4a4cf8\"",
+    "vary": "Origin",
+    "server": "envoy",
+    "x-content-type-options": "nosniff",
+    "x-powered-by": "ASP.NET",
+    "date": "Tue, 24 Nov 2026 00:22:56 GMT",
+    "x-envoy-upstream-service-time": "234",
+    "connection": "close"
+  },
+  "retrieved_at_utc": "2026-11-24T00:22:56+00:00",
+  "response_file": "dogami_ls_deep_1.layer.raw.json",
+  "response_bytes": 7455,
+  "sha256": "49ecdc7c5338592fdadaab83dc5bce1add7a05c64f777fb55fb3340c770889e5",
+  "success": true
+}

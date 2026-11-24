@@ -1,0 +1,963 @@
+{
+  "schema_version": 2,
+  "created_at_utc": "2026-11-24T00:26:01+00:00",
+  "study_envelope": {
+    "bbox": [
+      433750,
+      5033050,
+      434350,
+      5034000
+    ],
+    "srid": 26910,
+    "units": "metres",
+    "source": "Parent task's downtown candidate corridor, not a surveyed site boundary"
+  },
+  "retrieval_interval_utc": [
+    "2026-11-24T00:22:22+00:00",
+    "2026-11-24T00:24:53+00:00"
+  ],
+  "raw_storage": {
+    "external_directory": "/workspace/scratch/9f2debab16eb/tillamook-source/hazard-raw/2026-11-24-expanded-envelope",
+    "included_in_repository": false,
+    "manifest_file": "raw-manifest.json",
+    "request_provenance_directory": "query-provenance"
+  },
+  "processing": {
+    "tool": "GDAL 3.10.3, released 2025/04/01",
+    "input_driver": "ESRIJSON",
+    "output_driver": "GeoJSON",
+    "clipping": "GDAL/GEOS rectangle intersection via ogr2ogr -clipsrc; preserves holes and multipart topology through the geometry engine.",
+    "clip_bounds": [
+      433750,
+      5033050,
+      434350,
+      5034000
+    ],
+    "input_srid": 26910,
+    "output_srid": 26910,
+    "RFC7946": false,
+    "coordinate_precision": 15,
+    "simplification": null,
+    "topology_repair": null,
+    "raw_hash_checks": [
+      {
+        "request": "query-provenance/dogami_landslide_3.count.request.json",
+        "response_file": "dogami_landslide_3.count.raw.json",
+        "sha256": "618de7d9f46f3f697d827a1b6d84974760d5deda62e4e592adaa3c646602a94c",
+        "verified": true
+      },
+      {
+        "request": "query-provenance/dogami_landslide_3.ids.request.json",
+        "response_file": "dogami_landslide_3.ids.raw.json",
+        "sha256": "667410564a013e24d2b824ed7ea5c2613b8f5a6ea02633399a491988c5e3a512",
+        "verified": true
+      },
+      {
+        "request": "query-provenance/dogami_landslide_3.layer.request.json",
+        "response_file": "dogami_landslide_3.layer.raw.json",
+        "sha256": "95b425d54e0fa50920c1e2a8188e454423e1ed7ee1c23fa5b2edde7c5ae5d775",
+        "verified": true
+      },
+      {
+        "request": "query-provenance/dogami_ls_coverage_0.count.request.json",
+        "response_file": "dogami_ls_coverage_0.count.raw.json",
+        "sha256": "6aea6dfe6561984cdc5c54ead84d47d2cf29e48253ae282aef237404adad4661",
+        "verified": true
+      },
+      {
+        "request": "query-provenance/dogami_ls_coverage_0.features_001.request.json",
+        "response_file": "dogami_ls_coverage_0.features_001.raw.json",
+        "sha256": "9eb891adebdc40b4065734e50a0469efbe6a9593cfab6cd549b72e0d837abf34",
+        "verified": true
+      },
+      {
+        "request": "query-provenance/dogami_ls_coverage_0.ids.request.json",
+        "response_file": "dogami_ls_coverage_0.ids.raw.json",
+        "sha256": "486180a9deba66fbe44ffb6356ed9842dab7d1ae47d9bff18ddc88a8adea463d",
+        "verified": true
+      },
+      {
+        "request": "query-provenance/dogami_ls_coverage_0.layer.request.json",
+        "response_file": "dogami_ls_coverage_0.layer.raw.json",
+        "sha256": "94d7ebe626b5c746e99e80396f2d1b69904015c56962594cf578a6895dd90c82",
+        "verified": true
+      },
+      {
+        "request": "query-provenance/dogami_ls_deep_1.count.request.json",
+        "response_file": "dogami_ls_deep_1.count.raw.json",
+        "sha256": "6aea6dfe6561984cdc5c54ead84d47d2cf29e48253ae282aef237404adad4661",
+        "verified": true
+      },
+      {
+        "request": "query-provenance/dogami_ls_deep_1.features_001.request.json",
+        "response_file": "dogami_ls_deep_1.features_001.raw.json",
+        "sha256": "0ae8fb12b0a5313c070f085feaad86b6fb8ce00368336d63f9f29f58b7a928ba",
+        "verified": true
+      },
+      {
+        "request": "query-provenance/dogami_ls_deep_1.ids.request.json",
+        "response_file": "dogami_ls_deep_1.ids.raw.json",
+        "sha256": "8ccd13b24d366666029e6f27b3ff1d4cf592605fab31ddad28026ed254e20911",
+        "verified": true
+      },
+      {
+        "request": "query-provenance/dogami_ls_deep_1.layer.request.json",
+        "response_file": "dogami_ls_deep_1.layer.raw.json",
+        "sha256": "49ecdc7c5338592fdadaab83dc5bce1add7a05c64f777fb55fb3340c770889e5",
+        "verified": true
+      },
+      {
+        "request": "query-provenance/dogami_tsunami_12.count.request.json",
+        "response_file": "dogami_tsunami_12.count.raw.json",
+        "sha256": "57413ce83ee1d989e384dfd3a82c6e2d9052a23c4204706bd2d7df11aa4c2d7c",
+        "verified": true
+      },
+      {
+        "request": "query-provenance/dogami_tsunami_12.features_001.request.json",
+        "response_file": "dogami_tsunami_12.features_001.raw.json",
+        "sha256": "f0fb75d00f44d2db150fcb1715da176ae9b57ad1dc385fd16bb32f004d2be829",
+        "verified": true
+      },
+      {
+        "request": "query-provenance/dogami_tsunami_12.ids.request.json",
+        "response_file": "dogami_tsunami_12.ids.raw.json",
+        "sha256": "fe661a1995b86a7fe2f3ee962faf42e792bb6ebc326abd7612f1f8dcc2c8b754",
+        "verified": true
+      },
+      {
+        "request": "query-provenance/dogami_tsunami_12.layer.request.json",
+        "response_file": "dogami_tsunami_12.layer.raw.json",
+        "sha256": "d1cebd92ef7bdb2e9d4de1ca537e06e581f5578592071a1e60a8ab5d4d4990de",
+        "verified": true
+      },
+      {
+        "request": "query-provenance/dogami_tsunami_78.count.request.json",
+        "response_file": "dogami_tsunami_78.count.raw.json",
+        "sha256": "6aea6dfe6561984cdc5c54ead84d47d2cf29e48253ae282aef237404adad4661",
+        "verified": true
+      },
+      {
+        "request": "query-provenance/dogami_tsunami_78.features_001.request.json",
+        "response_file": "dogami_tsunami_78.features_001.raw.json",
+        "sha256": "d8f845a1d256f83160534b6c371ee85cfd17818ed443364823921a6839fdb212",
+        "verified": true
+      },
+      {
+        "request": "query-provenance/dogami_tsunami_78.ids.request.json",
+        "response_file": "dogami_tsunami_78.ids.raw.json",
+        "sha256": "1cdb82d29226b6f6577db63ec7ed10c00188e36164f977c46a4f35354a3ca105",
+        "verified": true
+      },
+      {
+        "request": "query-provenance/dogami_tsunami_78.layer.request.json",
+        "response_file": "dogami_tsunami_78.layer.raw.json",
+        "sha256": "7609b303ed00e1f28f177ed9082c94ad448606bb3360805e8a53daa4c2fb65d1",
+        "verified": true
+      },
+      {
+        "request": "query-provenance/fema_nfhl_28.count.request.json",
+        "response_file": "fema_nfhl_28.count.raw.json",
+        "sha256": "286ef99473842386e093b70e2cb43524734dcd35c826f5b736d6444f65ad4686",
+        "verified": true
+      },
+      {
+        "request": "query-provenance/fema_nfhl_28.features_001.request.json",
+        "response_file": "fema_nfhl_28.features_001.raw.txt",
+        "sha256": "33fbc61ad080ef68dd7a6479f8c53f1bf864dba2930567dbbc4ceb47490a1909",
+        "verified": true
+      },
+      {
+        "request": "query-provenance/fema_nfhl_28.features_001.retry1.request.json",
+        "response_file": "fema_nfhl_28.features_001.retry1.raw.txt",
+        "sha256": "9deff96f9b5925fa5081257849ace321304b382d64cfb67d90a21a3c7cbf2925",
+        "verified": true
+      },
+      {
+        "request": "query-provenance/fema_nfhl_28.ids.request.json",
+        "response_file": "fema_nfhl_28.ids.raw.json",
+        "sha256": "033647b8b3944fa0483238ddbce60f12c255a275d85b0a56d716e94dd74bedb1",
+        "verified": true
+      },
+      {
+        "request": "query-provenance/fema_nfhl_28.layer.request.json",
+        "response_file": "fema_nfhl_28.layer.raw.json",
+        "sha256": "965d48cd6451fa8cc4c2a010e58ca6bad334148af9dae882c794e6b6e06d8699",
+        "verified": true
+      },
+      {
+        "request": "query-provenance/fema_nfhl_28.smallbatch_001.request.json",
+        "response_file": "fema_nfhl_28.smallbatch_001.raw.json",
+        "sha256": "f136a1a32c4cb348a3902612f0cbdabb8da8c7ae2045d96993072812a34bbd7a",
+        "verified": true
+      },
+      {
+        "request": "query-provenance/fema_nfhl_28.smallbatch_002.request.json",
+        "response_file": "fema_nfhl_28.smallbatch_002.raw.json",
+        "sha256": "614e90557b00939c5e84ec2b1c6a160f74e9bee22e323a9c877d704a7419c530",
+        "verified": true
+      }
+    ]
+  },
+  "limitations": [
+    "Successful zero-feature queries are not findings of hazard absence.",
+    "Service failures and incomplete batches remain unknown.",
+    "Full feature geometries may extend beyond the study envelope.",
+    "Count/ID queries are sequential observations, not an atomic source snapshot.",
+    "Coverage, source dates, vertical datum and site applicability require review.",
+    "No ground capacity, seismic class, road clearance or construction approval is inferred.",
+    "Clipped data are valid only inside the declared study envelope.",
+    "Returned feature labels must be interpreted; Outside Hazard Area and Low are not hazard-positive classes.",
+    "An empty clipped result is not evidence of complete mapping or a hazard-free site.",
+    "Clipping and CRS conversion use floating-point GIS, not exact geodetic arithmetic.",
+    "Source area/length attributes keep original units and are not recomputed by clipping."
+  ],
+  "layers": [
+    {
+      "key": "fema_nfhl_28",
+      "label": "FEMA flood hazard zones",
+      "endpoint": "https://hazards.fema.gov/arcgis/rest/services/public/NFHL/MapServer/28",
+      "query_status": "features_returned",
+      "query_feature_count": 8,
+      "raw_object_ids": [
+        283667,
+        283744,
+        1796857,
+        1797408,
+        1797412,
+        1797416,
+        1798069,
+        1799229
+      ],
+      "object_id_field": "OBJECTID",
+      "raw_summary": "fema_nfhl_28.summary.json",
+      "clip_status": "complete",
+      "operations": [
+        {
+          "source_file": "fema_nfhl_28.smallbatch_001.raw.json",
+          "source_sha256": "f136a1a32c4cb348a3902612f0cbdabb8da8c7ae2045d96993072812a34bbd7a",
+          "command": [
+            "ogr2ogr",
+            "-if",
+            "ESRIJSON",
+            "-f",
+            "GeoJSON",
+            "/tmp/hazard-clip-b7huc485/batch-001.geojson",
+            "/workspace/scratch/9f2debab16eb/tillamook-source/hazard-raw/2026-11-24-expanded-envelope/fema_nfhl_28.smallbatch_001.raw.json",
+            "-clipsrc",
+            "433750",
+            "5033050",
+            "434350",
+            "5034000",
+            "-s_srs",
+            "EPSG:26910",
+            "-t_srs",
+            "EPSG:26910",
+            "-nln",
+            "fema_nfhl_28",
+            "-lco",
+            "RFC7946=NO",
+            "-lco",
+            "COORDINATE_PRECISION=15"
+          ],
+          "returncode": 0,
+          "stdout": "",
+          "stderr": "",
+          "requested_source_ids": [
+            283667,
+            283744,
+            1796857,
+            1797408
+          ],
+          "clipped_feature_count": 4,
+          "clipped_feature_ids": [
+            283667,
+            283744,
+            1796857,
+            1797408
+          ]
+        },
+        {
+          "source_file": "fema_nfhl_28.smallbatch_002.raw.json",
+          "source_sha256": "614e90557b00939c5e84ec2b1c6a160f74e9bee22e323a9c877d704a7419c530",
+          "command": [
+            "ogr2ogr",
+            "-if",
+            "ESRIJSON",
+            "-f",
+            "GeoJSON",
+            "/tmp/hazard-clip-b7huc485/batch-002.geojson",
+            "/workspace/scratch/9f2debab16eb/tillamook-source/hazard-raw/2026-11-24-expanded-envelope/fema_nfhl_28.smallbatch_002.raw.json",
+            "-clipsrc",
+            "433750",
+            "5033050",
+            "434350",
+            "5034000",
+            "-s_srs",
+            "EPSG:26910",
+            "-t_srs",
+            "EPSG:26910",
+            "-nln",
+            "fema_nfhl_28",
+            "-lco",
+            "RFC7946=NO",
+            "-lco",
+            "COORDINATE_PRECISION=15"
+          ],
+          "returncode": 0,
+          "stdout": "",
+          "stderr": "",
+          "requested_source_ids": [
+            1797412,
+            1797416,
+            1798069,
+            1799229
+          ],
+          "clipped_feature_count": 4,
+          "clipped_feature_ids": [
+            1797412,
+            1797416,
+            1798069,
+            1799229
+          ]
+        }
+      ],
+      "clipped_file": "fema_nfhl_28.clipped.geojson",
+      "clipped_sha256": "d5004f5820072ed19e41e5efa3a80a5ebfe82eadfb22bac7570864d4ef4d10d3",
+      "clipped_bytes": 55473,
+      "clipped_feature_count": 8,
+      "clipped_object_ids": [
+        283667,
+        283744,
+        1796857,
+        1797408,
+        1797412,
+        1797416,
+        1798069,
+        1799229
+      ],
+      "properties": [
+        {
+          "GFID": "c92c9053-41e2-48ce-99ba-aae2d3d5cfd3",
+          "OBJECTID": 283667,
+          "DFIRM_ID": "41057C",
+          "VERSION_ID": "1.1.1.0",
+          "FLD_AR_ID": "41057C_3848",
+          "STUDY_TYP": "DIGITAL CONVERSION",
+          "FLD_ZONE": "AE",
+          "SFHA_TF": "T",
+          "STATIC_BFE": 19.5,
+          "V_DATUM": "NAVD88",
+          "DEPTH": -9999.0,
+          "LEN_UNIT": "Feet",
+          "VELOCITY": -9999.0,
+          "BFE_REVERT": -9999.0,
+          "DEP_REVERT": -9999.0,
+          "SOURCE_CIT": "41057C_FIRM2",
+          "GlobalID": "{C43C720A-83C4-405A-BA06-A68EC6C9B61D}",
+          "SHAPE.STArea()": 0.0003212678129110066,
+          "SHAPE.STLength()": 0.20882689351080375
+        },
+        {
+          "GFID": "c92c9053-41e2-48ce-99ba-aae2d3d5cfd3",
+          "OBJECTID": 283744,
+          "DFIRM_ID": "41057C",
+          "VERSION_ID": "1.1.1.0",
+          "FLD_AR_ID": "41057C_4140",
+          "STUDY_TYP": "DIGITAL CONVERSION",
+          "FLD_ZONE": "AE",
+          "SFHA_TF": "T",
+          "STATIC_BFE": -9999.0,
+          "DEPTH": -9999.0,
+          "VELOCITY": -9999.0,
+          "BFE_REVERT": -9999.0,
+          "DEP_REVERT": -9999.0,
+          "SOURCE_CIT": "41057C_FIRM2",
+          "GlobalID": "{390FAB4A-1387-4B63-A70F-C36162339C3B}",
+          "SHAPE.STArea()": 0.0003071269791677538,
+          "SHAPE.STLength()": 0.33967369543399123
+        },
+        {
+          "GFID": "c92c9053-41e2-48ce-99ba-aae2d3d5cfd3",
+          "OBJECTID": 1796857,
+          "DFIRM_ID": "41057C",
+          "VERSION_ID": "1.1.1.0",
+          "FLD_AR_ID": "41057C_1190",
+          "STUDY_TYP": "NP",
+          "FLD_ZONE": "X",
+          "ZONE_SUBTY": "AREA OF MINIMAL FLOOD HAZARD",
+          "SFHA_TF": "F",
+          "STATIC_BFE": -9999.0,
+          "DEPTH": -9999.0,
+          "VELOCITY": -9999.0,
+          "BFE_REVERT": -9999.0,
+          "DEP_REVERT": -9999.0,
+          "SOURCE_CIT": "41057C_FIRM2",
+          "GlobalID": "{1BF2D7AC-5BB5-4CDE-88DA-25CF01E91C59}",
+          "SHAPE.STArea()": 3.544170288130968e-07,
+          "SHAPE.STLength()": 0.0030526344162850384
+        },
+        {
+          "GFID": "c92c9053-41e2-48ce-99ba-aae2d3d5cfd3",
+          "OBJECTID": 1797408,
+          "DFIRM_ID": "41057C",
+          "VERSION_ID": "1.1.1.0",
+          "FLD_AR_ID": "41057C_1786",
+          "STUDY_TYP": "NP",
+          "FLD_ZONE": "X",
+          "ZONE_SUBTY": "AREA OF MINIMAL FLOOD HAZARD",
+          "SFHA_TF": "F",
+          "STATIC_BFE": -9999.0,
+          "DEPTH": -9999.0,
+          "VELOCITY": -9999.0,
+          "BFE_REVERT": -9999.0,
+          "DEP_REVERT": -9999.0,
+          "SOURCE_CIT": "41057C_FIRM2",
+          "GlobalID": "{9FDEA005-677D-4891-86CB-4BDA98DE4BB4}",
+          "SHAPE.STArea()": 1.5390095351678244e-07,
+          "SHAPE.STLength()": 0.001462100724078645
+        },
+        {
+          "GFID": "c92c9053-41e2-48ce-99ba-aae2d3d5cfd3",
+          "OBJECTID": 1797412,
+          "DFIRM_ID": "41057C",
+          "VERSION_ID": "1.1.1.0",
+          "FLD_AR_ID": "41057C_1791",
+          "STUDY_TYP": "NP",
+          "FLD_ZONE": "X",
+          "ZONE_SUBTY": "AREA OF MINIMAL FLOOD HAZARD",
+          "SFHA_TF": "F",
+          "STATIC_BFE": -9999.0,
+          "DEPTH": -9999.0,
+          "VELOCITY": -9999.0,
+          "BFE_REVERT": -9999.0,
+          "DEP_REVERT": -9999.0,
+          "SOURCE_CIT": "41057C_FIRM2",
+          "GlobalID": "{DF2A63E4-8202-42B1-A398-18B569707951}",
+          "SHAPE.STArea()": 1.6749101259551404e-06,
+          "SHAPE.STLength()": 0.0068697567639500025
+        },
+        {
+          "GFID": "c92c9053-41e2-48ce-99ba-aae2d3d5cfd3",
+          "OBJECTID": 1797416,
+          "DFIRM_ID": "41057C",
+          "VERSION_ID": "1.1.1.0",
+          "FLD_AR_ID": "41057C_1796",
+          "STUDY_TYP": "DIGITAL CONVERSION",
+          "FLD_ZONE": "X",
+          "ZONE_SUBTY": "0.2 PCT ANNUAL CHANCE FLOOD HAZARD",
+          "SFHA_TF": "F",
+          "STATIC_BFE": -9999.0,
+          "DEPTH": -9999.0,
+          "VELOCITY": -9999.0,
+          "BFE_REVERT": -9999.0,
+          "DEP_REVERT": -9999.0,
+          "SOURCE_CIT": "41057C_FIRM2",
+          "GlobalID": "{61AFD73A-D04E-4606-A873-117D8535C892}",
+          "SHAPE.STArea()": 5.960785946407087e-06,
+          "SHAPE.STLength()": 0.029873306595759184
+        },
+        {
+          "GFID": "c92c9053-41e2-48ce-99ba-aae2d3d5cfd3",
+          "OBJECTID": 1798069,
+          "DFIRM_ID": "41057C",
+          "VERSION_ID": "1.1.1.0",
+          "FLD_AR_ID": "41057C_2472",
+          "STUDY_TYP": "DIGITAL CONVERSION",
+          "FLD_ZONE": "X",
+          "ZONE_SUBTY": "0.2 PCT ANNUAL CHANCE FLOOD HAZARD",
+          "SFHA_TF": "F",
+          "STATIC_BFE": -9999.0,
+          "DEPTH": -9999.0,
+          "VELOCITY": -9999.0,
+          "BFE_REVERT": -9999.0,
+          "DEP_REVERT": -9999.0,
+          "SOURCE_CIT": "41057C_FIRM2",
+          "GlobalID": "{C2CADBE9-1BF4-48D7-BE6F-B3D2FDFB671D}",
+          "SHAPE.STArea()": 2.49723490155274e-07,
+          "SHAPE.STLength()": 0.0030889604841273822
+        },
+        {
+          "GFID": "c92c9053-41e2-48ce-99ba-aae2d3d5cfd3",
+          "OBJECTID": 1799229,
+          "DFIRM_ID": "41057C",
+          "VERSION_ID": "1.1.1.0",
+          "FLD_AR_ID": "41057C_3868",
+          "STUDY_TYP": "NP",
+          "FLD_ZONE": "X",
+          "ZONE_SUBTY": "AREA OF MINIMAL FLOOD HAZARD",
+          "SFHA_TF": "F",
+          "STATIC_BFE": -9999.0,
+          "DEPTH": -9999.0,
+          "VELOCITY": -9999.0,
+          "BFE_REVERT": -9999.0,
+          "DEP_REVERT": -9999.0,
+          "SOURCE_CIT": "41057C_FIRM2",
+          "GlobalID": "{A674255D-3DB5-4B2D-9FEF-D17944654208}",
+          "SHAPE.STArea()": 0.0012074261822604998,
+          "SHAPE.STLength()": 0.5257439227791577
+        }
+      ],
+      "coordinates_within_clip_bounds": true,
+      "geometry_validation": {
+        "command": [
+          "ogr2ogr",
+          "-f",
+          "GeoJSON",
+          "/vsistdout/",
+          "/workspace/scratch/9f2debab16eb/crest-root-calculus/research/deployable-crossing/v2/data/hazards/fema_nfhl_28.clipped.geojson",
+          "-dialect",
+          "SQLite",
+          "-sql",
+          "SELECT \"OBJECTID\" AS source_object_id, ST_IsValid(geometry) AS is_valid, ST_Area(geometry) AS area_square_metres FROM \"fema_nfhl_28\""
+        ],
+        "returncode": 0,
+        "stderr": "",
+        "features": [
+          {
+            "source_object_id": 283667,
+            "is_valid": 1,
+            "area_square_metres": 67351.85066932016
+          },
+          {
+            "source_object_id": 283744,
+            "is_valid": 1,
+            "area_square_metres": 94303.51961035552
+          },
+          {
+            "source_object_id": 1796857,
+            "is_valid": 1,
+            "area_square_metres": 1512.547524090514
+          },
+          {
+            "source_object_id": 1797408,
+            "is_valid": 1,
+            "area_square_metres": 1337.1450930104463
+          },
+          {
+            "source_object_id": 1797412,
+            "is_valid": 1,
+            "area_square_metres": 14552.011383212048
+          },
+          {
+            "source_object_id": 1797416,
+            "is_valid": 1,
+            "area_square_metres": 38713.18292639034
+          },
+          {
+            "source_object_id": 1798069,
+            "is_valid": 1,
+            "area_square_metres": 2169.692151478197
+          },
+          {
+            "source_object_id": 1799229,
+            "is_valid": 1,
+            "area_square_metres": 350060.0506421426
+          }
+        ],
+        "all_geometries_valid": true
+      }
+    },
+    {
+      "key": "dogami_tsunami_12",
+      "label": "DOGAMI tsunami evacuation zones",
+      "endpoint": "https://gis.dogami.oregon.gov/arcgis/rest/services/Public/OTGC1/MapServer/12",
+      "query_status": "features_returned",
+      "query_feature_count": 2,
+      "raw_object_ids": [
+        769,
+        1199
+      ],
+      "object_id_field": "OBJECTID",
+      "raw_summary": "dogami_tsunami_12.summary.json",
+      "clip_status": "complete",
+      "operations": [
+        {
+          "source_file": "dogami_tsunami_12.features_001.raw.json",
+          "source_sha256": "f0fb75d00f44d2db150fcb1715da176ae9b57ad1dc385fd16bb32f004d2be829",
+          "command": [
+            "ogr2ogr",
+            "-if",
+            "ESRIJSON",
+            "-f",
+            "GeoJSON",
+            "/tmp/hazard-clip-wybq9ie6/batch-001.geojson",
+            "/workspace/scratch/9f2debab16eb/tillamook-source/hazard-raw/2026-11-24-expanded-envelope/dogami_tsunami_12.features_001.raw.json",
+            "-clipsrc",
+            "433750",
+            "5033050",
+            "434350",
+            "5034000",
+            "-s_srs",
+            "EPSG:26910",
+            "-t_srs",
+            "EPSG:26910",
+            "-nln",
+            "dogami_tsunami_12",
+            "-lco",
+            "RFC7946=NO",
+            "-lco",
+            "COORDINATE_PRECISION=15"
+          ],
+          "returncode": 0,
+          "stdout": "",
+          "stderr": "",
+          "requested_source_ids": [
+            769,
+            1199
+          ],
+          "clipped_feature_count": 2,
+          "clipped_feature_ids": [
+            769,
+            1199
+          ]
+        }
+      ],
+      "clipped_file": "dogami_tsunami_12.clipped.geojson",
+      "clipped_sha256": "7c8e2b6880ea169c0587d96e5533548e1b5c5e5e7e02dd373b23f7eae7eed9d5",
+      "clipped_bytes": 9227,
+      "clipped_feature_count": 2,
+      "clipped_object_ids": [
+        769,
+        1199
+      ],
+      "properties": [
+        {
+          "OBJECTID": 769,
+          "Tsunami_Region": "Local Tsunami Evacuation Zone",
+          "Shape_Length": 101869.1067575929,
+          "Shape_Area": 27243133.85722651,
+          "DataSourceID": "AllaJC2020"
+        },
+        {
+          "OBJECTID": 1199,
+          "Tsunami_Region": "Outside Hazard Area",
+          "Shape_Length": 2574913.893737162,
+          "Shape_Area": 25325101528.19534
+        }
+      ],
+      "coordinates_within_clip_bounds": true,
+      "geometry_validation": {
+        "command": [
+          "ogr2ogr",
+          "-f",
+          "GeoJSON",
+          "/vsistdout/",
+          "/workspace/scratch/9f2debab16eb/crest-root-calculus/research/deployable-crossing/v2/data/hazards/dogami_tsunami_12.clipped.geojson",
+          "-dialect",
+          "SQLite",
+          "-sql",
+          "SELECT \"OBJECTID\" AS source_object_id, ST_IsValid(geometry) AS is_valid, ST_Area(geometry) AS area_square_metres FROM \"dogami_tsunami_12\""
+        ],
+        "returncode": 0,
+        "stderr": "",
+        "features": [
+          {
+            "source_object_id": 769,
+            "is_valid": 1,
+            "area_square_metres": 17192.128866648854
+          },
+          {
+            "source_object_id": 1199,
+            "is_valid": 1,
+            "area_square_metres": 552807.8711333511
+          }
+        ],
+        "all_geometries_valid": true
+      }
+    },
+    {
+      "key": "dogami_tsunami_78",
+      "label": "DOGAMI XXL1 Cascadia local-source inundation",
+      "endpoint": "https://gis.dogami.oregon.gov/arcgis/rest/services/Public/OTGC1/MapServer/78",
+      "query_status": "features_returned",
+      "query_feature_count": 1,
+      "raw_object_ids": [
+        1
+      ],
+      "object_id_field": "OBJECTID",
+      "raw_summary": "dogami_tsunami_78.summary.json",
+      "clip_status": "complete",
+      "operations": [
+        {
+          "source_file": "dogami_tsunami_78.features_001.raw.json",
+          "source_sha256": "d8f845a1d256f83160534b6c371ee85cfd17818ed443364823921a6839fdb212",
+          "command": [
+            "ogr2ogr",
+            "-if",
+            "ESRIJSON",
+            "-f",
+            "GeoJSON",
+            "/tmp/hazard-clip-xres83go/batch-001.geojson",
+            "/workspace/scratch/9f2debab16eb/tillamook-source/hazard-raw/2026-11-24-expanded-envelope/dogami_tsunami_78.features_001.raw.json",
+            "-clipsrc",
+            "433750",
+            "5033050",
+            "434350",
+            "5034000",
+            "-s_srs",
+            "EPSG:26910",
+            "-t_srs",
+            "EPSG:26910",
+            "-nln",
+            "dogami_tsunami_78",
+            "-lco",
+            "RFC7946=NO",
+            "-lco",
+            "COORDINATE_PRECISION=15"
+          ],
+          "returncode": 0,
+          "stdout": "",
+          "stderr": "Warning 1: organizePolygons() received a polygon with more than 100 parts. The processing may be really slow.  You can skip the processing by setting METHOD=SKIP, or only make it analyze counter-clock wise parts by setting METHOD=ONLY_CCW if you can assume that the outline of holes is counter-clock wise defined\n",
+          "requested_source_ids": [
+            1
+          ],
+          "clipped_feature_count": 1,
+          "clipped_feature_ids": [
+            1
+          ]
+        }
+      ],
+      "clipped_file": "dogami_tsunami_78.clipped.geojson",
+      "clipped_sha256": "45cc104c470fbc77fe367782df6f2f5857328fe0af4568919371a53d9248f87a",
+      "clipped_bytes": 9240,
+      "clipped_feature_count": 1,
+      "clipped_object_ids": [
+        1
+      ],
+      "properties": [
+        {
+          "Shape_Length": 15139238.458172126,
+          "Shape_Area": 18215900760.452995,
+          "OBJECTID": 1
+        }
+      ],
+      "coordinates_within_clip_bounds": true,
+      "geometry_validation": {
+        "command": [
+          "ogr2ogr",
+          "-f",
+          "GeoJSON",
+          "/vsistdout/",
+          "/workspace/scratch/9f2debab16eb/crest-root-calculus/research/deployable-crossing/v2/data/hazards/dogami_tsunami_78.clipped.geojson",
+          "-dialect",
+          "SQLite",
+          "-sql",
+          "SELECT \"OBJECTID\" AS source_object_id, ST_IsValid(geometry) AS is_valid, ST_Area(geometry) AS area_square_metres FROM \"dogami_tsunami_78\""
+        ],
+        "returncode": 0,
+        "stderr": "",
+        "features": [
+          {
+            "source_object_id": 1,
+            "is_valid": 1,
+            "area_square_metres": 31282.938886523207
+          }
+        ],
+        "all_geometries_valid": true
+      }
+    },
+    {
+      "key": "dogami_landslide_3",
+      "label": "DOGAMI mapped landslide deposits",
+      "endpoint": "https://gis.dogami.oregon.gov/arcgis/rest/services/Public/SLIDO42/MapServer/3",
+      "query_status": "no_features_returned",
+      "query_feature_count": 0,
+      "raw_object_ids": [],
+      "object_id_field": "OBJECTID",
+      "raw_summary": "dogami_landslide_3.summary.json",
+      "clip_status": "complete",
+      "operations": [],
+      "clipped_file": "dogami_landslide_3.clipped.geojson",
+      "clipped_sha256": "14578b379e30a6fc4db70ac101df005b56a46814ca488c83ba93bb2e4a8b1663",
+      "clipped_bytes": 190,
+      "clipped_feature_count": 0,
+      "clipped_object_ids": [],
+      "properties": [],
+      "coordinates_within_clip_bounds": true
+    },
+    {
+      "key": "dogami_ls_coverage_0",
+      "label": "DOGAMI detailed susceptibility reference-map coverage",
+      "endpoint": "https://gis.dogami.oregon.gov/arcgis/rest/services/Public/SLIDO42_DetailedLSSus/MapServer/0",
+      "query_status": "features_returned",
+      "query_feature_count": 1,
+      "raw_object_ids": [
+        12
+      ],
+      "object_id_field": "OBJECTID",
+      "raw_summary": "dogami_ls_coverage_0.summary.json",
+      "clip_status": "complete",
+      "operations": [
+        {
+          "source_file": "dogami_ls_coverage_0.features_001.raw.json",
+          "source_sha256": "9eb891adebdc40b4065734e50a0469efbe6a9593cfab6cd549b72e0d837abf34",
+          "command": [
+            "ogr2ogr",
+            "-if",
+            "ESRIJSON",
+            "-f",
+            "GeoJSON",
+            "/tmp/hazard-clip-6bjlc2_h/batch-001.geojson",
+            "/workspace/scratch/9f2debab16eb/tillamook-source/hazard-raw/2026-11-24-expanded-envelope/dogami_ls_coverage_0.features_001.raw.json",
+            "-clipsrc",
+            "433750",
+            "5033050",
+            "434350",
+            "5034000",
+            "-s_srs",
+            "EPSG:26910",
+            "-t_srs",
+            "EPSG:26910",
+            "-nln",
+            "dogami_ls_coverage_0",
+            "-lco",
+            "RFC7946=NO",
+            "-lco",
+            "COORDINATE_PRECISION=15"
+          ],
+          "returncode": 0,
+          "stdout": "",
+          "stderr": "",
+          "requested_source_ids": [
+            12
+          ],
+          "clipped_feature_count": 1,
+          "clipped_feature_ids": [
+            12
+          ]
+        }
+      ],
+      "clipped_file": "dogami_ls_coverage_0.clipped.geojson",
+      "clipped_sha256": "91ad23387f271b591ca2601eda20efe71121999647c21b899bd4e3018fd3d233",
+      "clipped_bytes": 943,
+      "clipped_feature_count": 1,
+      "clipped_object_ids": [
+        12
+      ],
+      "properties": [
+        {
+          "REF_ID_COD": "CalhNC2020a",
+          "Shape_Area": 8789032953.178366,
+          "OBJECTID": 12,
+          "Shape_Length": 1573003.1108323133
+        }
+      ],
+      "coordinates_within_clip_bounds": true,
+      "geometry_validation": {
+        "command": [
+          "ogr2ogr",
+          "-f",
+          "GeoJSON",
+          "/vsistdout/",
+          "/workspace/scratch/9f2debab16eb/crest-root-calculus/research/deployable-crossing/v2/data/hazards/dogami_ls_coverage_0.clipped.geojson",
+          "-dialect",
+          "SQLite",
+          "-sql",
+          "SELECT \"OBJECTID\" AS source_object_id, ST_IsValid(geometry) AS is_valid, ST_Area(geometry) AS area_square_metres FROM \"dogami_ls_coverage_0\""
+        ],
+        "returncode": 0,
+        "stderr": "",
+        "features": [
+          {
+            "source_object_id": 12,
+            "is_valid": 1,
+            "area_square_metres": 570000.0
+          }
+        ],
+        "all_geometries_valid": true
+      }
+    },
+    {
+      "key": "dogami_ls_deep_1",
+      "label": "DOGAMI detailed deep-landslide susceptibility",
+      "endpoint": "https://gis.dogami.oregon.gov/arcgis/rest/services/Public/SLIDO42_DetailedLSSus/MapServer/1",
+      "query_status": "features_returned",
+      "query_feature_count": 1,
+      "raw_object_ids": [
+        2
+      ],
+      "object_id_field": "OBJECTID",
+      "raw_summary": "dogami_ls_deep_1.summary.json",
+      "clip_status": "complete",
+      "operations": [
+        {
+          "source_file": "dogami_ls_deep_1.features_001.raw.json",
+          "source_sha256": "0ae8fb12b0a5313c070f085feaad86b6fb8ce00368336d63f9f29f58b7a928ba",
+          "command": [
+            "ogr2ogr",
+            "-if",
+            "ESRIJSON",
+            "-f",
+            "GeoJSON",
+            "/tmp/hazard-clip-078cyaeb/batch-001.geojson",
+            "/workspace/scratch/9f2debab16eb/tillamook-source/hazard-raw/2026-11-24-expanded-envelope/dogami_ls_deep_1.features_001.raw.json",
+            "-clipsrc",
+            "433750",
+            "5033050",
+            "434350",
+            "5034000",
+            "-s_srs",
+            "EPSG:26910",
+            "-t_srs",
+            "EPSG:26910",
+            "-nln",
+            "dogami_ls_deep_1",
+            "-lco",
+            "RFC7946=NO",
+            "-lco",
+            "COORDINATE_PRECISION=15"
+          ],
+          "returncode": 0,
+          "stdout": "",
+          "stderr": "Warning 1: organizePolygons() received a polygon with more than 100 parts. The processing may be really slow.  You can skip the processing by setting METHOD=SKIP, or only make it analyze counter-clock wise parts by setting METHOD=ONLY_CCW if you can assume that the outline of holes is counter-clock wise defined\n",
+          "requested_source_ids": [
+            2
+          ],
+          "clipped_feature_count": 1,
+          "clipped_feature_ids": [
+            2
+          ]
+        }
+      ],
+      "clipped_file": "dogami_ls_deep_1.clipped.geojson",
+      "clipped_sha256": "aed90522125896395efae633d243d779ee5590863d8367b2fcedf0bbd5b4bf54",
+      "clipped_bytes": 927,
+      "clipped_feature_count": 1,
+      "clipped_object_ids": [
+        2
+      ],
+      "properties": [
+        {
+          "Suscept": "Low",
+          "Shape_Area": 29811690467.96782,
+          "OBJECTID": 2,
+          "Shape_Length": 15656981.596050512
+        }
+      ],
+      "coordinates_within_clip_bounds": true,
+      "geometry_validation": {
+        "command": [
+          "ogr2ogr",
+          "-f",
+          "GeoJSON",
+          "/vsistdout/",
+          "/workspace/scratch/9f2debab16eb/crest-root-calculus/research/deployable-crossing/v2/data/hazards/dogami_ls_deep_1.clipped.geojson",
+          "-dialect",
+          "SQLite",
+          "-sql",
+          "SELECT \"OBJECTID\" AS source_object_id, ST_IsValid(geometry) AS is_valid, ST_Area(geometry) AS area_square_metres FROM \"dogami_ls_deep_1\""
+        ],
+        "returncode": 0,
+        "stderr": "",
+        "features": [
+          {
+            "source_object_id": 2,
+            "is_valid": 1,
+            "area_square_metres": 570000.0
+          }
+        ],
+        "all_geometries_valid": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "type": "FeatureCollection",
+  "name": "dogami_ls_coverage_0",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:EPSG::26910"
+    }
+  },
+  "xy_coordinate_resolution": 1e-15,
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "REF_ID_COD": "CalhNC2020a",
+        "Shape_Area": 8789032953.178366,
+        "OBJECTID": 12,
+        "Shape_Length": 1573003.1108323133
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              433750.0,
+              5034000.0
+            ],
+            [
+              434350.0,
+              5034000.0
+            ],
+            [
+              434350.0,
+              5033050.0
+            ],
+            [
+              433750.0,
+              5033050.0
+            ],
+            [
+              433750.0,
+              5034000.0
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

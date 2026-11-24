@@ -1,0 +1,397 @@
+{
+  "id": "service-24m-plane",
+  "dimension": 2,
+  "units": {
+    "length": "m",
+    "force": "kN"
+  },
+  "nodes": {
+    "B0": [
+      "0",
+      "0"
+    ],
+    "T0": [
+      "0",
+      "4"
+    ],
+    "B1": [
+      "3",
+      "0"
+    ],
+    "T1": [
+      "3",
+      "4"
+    ],
+    "B2": [
+      "6",
+      "0"
+    ],
+    "T2": [
+      "6",
+      "4"
+    ],
+    "B3": [
+      "9",
+      "0"
+    ],
+    "T3": [
+      "9",
+      "4"
+    ],
+    "B4": [
+      "12",
+      "0"
+    ],
+    "T4": [
+      "12",
+      "4"
+    ],
+    "B5": [
+      "15",
+      "0"
+    ],
+    "T5": [
+      "15",
+      "4"
+    ],
+    "B6": [
+      "18",
+      "0"
+    ],
+    "T6": [
+      "18",
+      "4"
+    ],
+    "B7": [
+      "21",
+      "0"
+    ],
+    "T7": [
+      "21",
+      "4"
+    ],
+    "B8": [
+      "24",
+      "0"
+    ],
+    "T8": [
+      "24",
+      "4"
+    ]
+  },
+  "members": [
+    {
+      "id": "lower_0",
+      "start": "B0",
+      "end": "B1",
+      "young_modulus": "200000000",
+      "area": "3/1000"
+    },
+    {
+      "id": "upper_0",
+      "start": "T0",
+      "end": "T1",
+      "young_modulus": "200000000",
+      "area": "3/1000"
+    },
+    {
+      "id": "lower_1",
+      "start": "B1",
+      "end": "B2",
+      "young_modulus": "200000000",
+      "area": "3/1000"
+    },
+    {
+      "id": "upper_1",
+      "start": "T1",
+      "end": "T2",
+      "young_modulus": "200000000",
+      "area": "3/1000"
+    },
+    {
+      "id": "lower_2",
+      "start": "B2",
+      "end": "B3",
+      "young_modulus": "200000000",
+      "area": "3/1000"
+    },
+    {
+      "id": "upper_2",
+      "start": "T2",
+      "end": "T3",
+      "young_modulus": "200000000",
+      "area": "3/1000"
+    },
+    {
+      "id": "lower_3",
+      "start": "B3",
+      "end": "B4",
+      "young_modulus": "200000000",
+      "area": "3/1000"
+    },
+    {
+      "id": "upper_3",
+      "start": "T3",
+      "end": "T4",
+      "young_modulus": "200000000",
+      "area": "3/1000"
+    },
+    {
+      "id": "lower_4",
+      "start": "B4",
+      "end": "B5",
+      "young_modulus": "200000000",
+      "area": "3/1000"
+    },
+    {
+      "id": "upper_4",
+      "start": "T4",
+      "end": "T5",
+      "young_modulus": "200000000",
+      "area": "3/1000"
+    },
+    {
+      "id": "lower_5",
+      "start": "B5",
+      "end": "B6",
+      "young_modulus": "200000000",
+      "area": "3/1000"
+    },
+    {
+      "id": "upper_5",
+      "start": "T5",
+      "end": "T6",
+      "young_modulus": "200000000",
+      "area": "3/1000"
+    },
+    {
+      "id": "lower_6",
+      "start": "B6",
+      "end": "B7",
+      "young_modulus": "200000000",
+      "area": "3/1000"
+    },
+    {
+      "id": "upper_6",
+      "start": "T6",
+      "end": "T7",
+      "young_modulus": "200000000",
+      "area": "3/1000"
+    },
+    {
+      "id": "lower_7",
+      "start": "B7",
+      "end": "B8",
+      "young_modulus": "200000000",
+      "area": "3/1000"
+    },
+    {
+      "id": "upper_7",
+      "start": "T7",
+      "end": "T8",
+      "young_modulus": "200000000",
+      "area": "3/1000"
+    },
+    {
+      "id": "vertical_0",
+      "start": "B0",
+      "end": "T0",
+      "young_modulus": "200000000",
+      "area": "3/1000"
+    },
+    {
+      "id": "vertical_1",
+      "start": "B1",
+      "end": "T1",
+      "young_modulus": "200000000",
+      "area": "3/1000"
+    },
+    {
+      "id": "vertical_2",
+      "start": "B2",
+      "end": "T2",
+      "young_modulus": "200000000",
+      "area": "3/1000"
+    },
+    {
+      "id": "vertical_3",
+      "start": "B3",
+      "end": "T3",
+      "young_modulus": "200000000",
+      "area": "3/1000"
+    },
+    {
+      "id": "vertical_4",
+      "start": "B4",
+      "end": "T4",
+      "young_modulus": "200000000",
+      "area": "3/1000"
+    },
+    {
+      "id": "vertical_5",
+      "start": "B5",
+      "end": "T5",
+      "young_modulus": "200000000",
+      "area": "3/1000"
+    },
+    {
+      "id": "vertical_6",
+      "start": "B6",
+      "end": "T6",
+      "young_modulus": "200000000",
+      "area": "3/1000"
+    },
+    {
+      "id": "vertical_7",
+      "start": "B7",
+      "end": "T7",
+      "young_modulus": "200000000",
+      "area": "3/1000"
+    },
+    {
+      "id": "vertical_8",
+      "start": "B8",
+      "end": "T8",
+      "young_modulus": "200000000",
+      "area": "3/1000"
+    },
+    {
+      "id": "diagonal_0",
+      "start": "T0",
+      "end": "B1",
+      "young_modulus": "200000000",
+      "area": "3/1000"
+    },
+    {
+      "id": "diagonal_1",
+      "start": "T1",
+      "end": "B2",
+      "young_modulus": "200000000",
+      "area": "3/1000"
+    },
+    {
+      "id": "diagonal_2",
+      "start": "T2",
+      "end": "B3",
+      "young_modulus": "200000000",
+      "area": "3/1000"
+    },
+    {
+      "id": "diagonal_3",
+      "start": "T3",
+      "end": "B4",
+      "young_modulus": "200000000",
+      "area": "3/1000"
+    },
+    {
+      "id": "diagonal_4",
+      "start": "B4",
+      "end": "T5",
+      "young_modulus": "200000000",
+      "area": "3/1000"
+    },
+    {
+      "id": "diagonal_5",
+      "start": "B5",
+      "end": "T6",
+      "young_modulus": "200000000",
+      "area": "3/1000"
+    },
+    {
+      "id": "diagonal_6",
+      "start": "B6",
+      "end": "T7",
+      "young_modulus": "200000000",
+      "area": "3/1000"
+    },
+    {
+      "id": "diagonal_7",
+      "start": "B7",
+      "end": "T8",
+      "young_modulus": "200000000",
+      "area": "3/1000"
+    }
+  ],
+  "restraints": [
+    {
+      "node": "B0",
+      "axis": 0,
+      "displacement": "0"
+    },
+    {
+      "node": "B0",
+      "axis": 1,
+      "displacement": "0"
+    },
+    {
+      "node": "B8",
+      "axis": 1,
+      "displacement": "0"
+    }
+  ],
+  "loads": [
+    {
+      "node": "B0",
+      "components": [
+        "0",
+        "-9"
+      ]
+    },
+    {
+      "node": "B1",
+      "components": [
+        "0",
+        "-18"
+      ]
+    },
+    {
+      "node": "B2",
+      "components": [
+        "0",
+        "-18"
+      ]
+    },
+    {
+      "node": "B3",
+      "components": [
+        "0",
+        "-18"
+      ]
+    },
+    {
+      "node": "B4",
+      "components": [
+        "0",
+        "-18"
+      ]
+    },
+    {
+      "node": "B5",
+      "components": [
+        "0",
+        "-18"
+      ]
+    },
+    {
+      "node": "B6",
+      "components": [
+        "0",
+        "-18"
+      ]
+    },
+    {
+      "node": "B7",
+      "components": [
+        "0",
+        "-18"
+      ]
+    },
+    {
+      "node": "B8",
+      "components": [
+        "0",
+        "-9"
+      ]
+    }
+  ]
+}

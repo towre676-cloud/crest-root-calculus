@@ -1,0 +1,35 @@
+{
+  "endpoint": "https://gis.dogami.oregon.gov/arcgis/rest/services/Public/SLIDO42_DetailedLSSus/MapServer/1/query",
+  "method": "GET",
+  "parameters": {
+    "f": "json",
+    "where": "1=1",
+    "geometryType": "esriGeometryEnvelope",
+    "geometry": "{\"xmin\":433750,\"ymin\":5033050,\"xmax\":434350,\"ymax\":5034000,\"spatialReference\":{\"wkid\":26910}}",
+    "inSR": "26910",
+    "spatialRel": "esriSpatialRelIntersects",
+    "returnIdsOnly": "true"
+  },
+  "request_url": "https://gis.dogami.oregon.gov/arcgis/rest/services/Public/SLIDO42_DetailedLSSus/MapServer/1/query?f=json&where=1%3D1&geometryType=esriGeometryEnvelope&geometry=%7B%22xmin%22%3A433750%2C%22ymin%22%3A5033050%2C%22xmax%22%3A434350%2C%22ymax%22%3A5034000%2C%22spatialReference%22%3A%7B%22wkid%22%3A26910%7D%7D&inSR=26910&spatialRel=esriSpatialRelIntersects&returnIdsOnly=true",
+  "started_at_utc": "2026-11-24T00:22:56+00:00",
+  "http_status": 200,
+  "response_url": "https://gis.dogami.oregon.gov/arcgis/rest/services/Public/SLIDO42_DetailedLSSus/MapServer/1/query?f=json&where=1%3D1&geometryType=esriGeometryEnvelope&geometry=%7B%22xmin%22%3A433750%2C%22ymin%22%3A5033050%2C%22xmax%22%3A434350%2C%22ymax%22%3A5034000%2C%22spatialReference%22%3A%7B%22wkid%22%3A26910%7D%7D&inSR=26910&spatialRel=esriSpatialRelIntersects&returnIdsOnly=true",
+  "response_headers": {
+    "cache-control": "must-revalidate,max-age=0,public",
+    "content-length": "48",
+    "content-type": "application/json; charset=UTF-8",
+    "etag": "\"1603232293\"",
+    "vary": "Origin",
+    "server": "envoy",
+    "x-content-type-options": "nosniff",
+    "x-powered-by": "ASP.NET",
+    "date": "Tue, 24 Nov 2026 00:22:59 GMT",
+    "x-envoy-upstream-service-time": "1210",
+    "connection": "close"
+  },
+  "retrieved_at_utc": "2026-11-24T00:23:00+00:00",
+  "response_file": "dogami_ls_deep_1.ids.raw.json",
+  "response_bytes": 48,
+  "sha256": "8ccd13b24d366666029e6f27b3ff1d4cf592605fab31ddad28026ed254e20911",
+  "success": true
+}

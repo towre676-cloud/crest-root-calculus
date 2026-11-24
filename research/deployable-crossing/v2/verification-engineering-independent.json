@@ -1,0 +1,55 @@
+{
+  "status": "passed",
+  "checks_passed": true,
+  "verification_mode": "standard_library",
+  "reviewed_sha256": {
+    "engineering.py": "ad7b8974e17e820fd02dd2595bd30df07de438acc9e6ea9296ec0a4f4af274f1",
+    "engineering_study.py": "dfe958411fb7e0d3b9e1e3550e11fe89936363dbfb12131a3b06d070863bc36e",
+    "verify_engineering.py": "dd14bf806f6634ab13d267b57e2e0781da0d8295b39b5b6a5fadfcf15fdaa03f",
+    "engineering-report.json": "a5a7d29d37fb77aa4f04c6012f2304ef6ab253aa0ae8c35aba9634b04d95d740",
+    "verification-engineering.json": "1dae685383718379762dc783579ecf27b00a0eb076941da82b62177e60bb7f22",
+    "site_geometry.py": "6ea213970eedd2243fbea8846fcfa82139bb74d9e5ab843e0c9ec0e6bd923583",
+    "verify_engineering_independent.py": "5e5792d6098343d9a1c1f63bac2df5026b7c49a449b5f09b12572021531f8564",
+    "truss.py": "f28d5fff2e5836a8503bbcbc8ecba20afc15d76696f7bf6f9473f84968898c26",
+    "verify_truss.py": "f898174b8883980e1b654b315b7735035cbd971e668b86196f09ed561ca99b65",
+    "verification-truss.json": "018c9276e96c21f4018369a74a5ea05471e50981dc98e21222c8ff68c685e820",
+    "verification-truss-symbolic.json": "c4d0060efaeb9813eaa1ec6a9eda2608ff922e4234ce10de625735b4a7923042"
+  },
+  "checks": {
+    "original_verifier_checks_replayed": 38,
+    "full_report_replay": 1,
+    "grid": {
+      "candidates": 198,
+      "wind_corner_paths": 792,
+      "edge_minima": 3168,
+      "feasible": 182,
+      "complete_grid_pareto_points": 6
+    },
+    "support_moment_and_nonrectangular_cases": 4,
+    "hand_derived_quadratic_extrema": 8,
+    "interior_path_violation_counterexample": 1,
+    "finite_quaternion_cases": 7,
+    "hamilton_connector_transforms": 28,
+    "quaternion_sign_invariance_cases": 7,
+    "ramp_dimension_and_run_boundary_cases": 4,
+    "altered_report_controls_rejected": 3
+  },
+  "optional_symbolic_checks": {
+    "enabled": false,
+    "quadratic_extrema": 0,
+    "proper_rotation_determinants": 0
+  },
+  "substantive_bugs_found": [],
+  "reviewed_source_changes_made": false,
+  "review_notes": [
+    "First moments Qx,Qy are not Cartesian torque components: vertical balance requires external Mx=-Qy, My=Qx. The implementation's weight and horizontal-force signs are consistent.",
+    "Support-hull interior certifies existence of compressive vertical reactions, not actual pad forces, stiffness, capacities, friction or complete 3D equilibrium.",
+    "Every declared quadratic path parameter is covered by endpoint/stationary-point minimization; the included counterexample correctly exposes endpoint-only checking.",
+    "Four wind corners suffice because every edge margin is affine in the independent horizontal-force components at each parameter value. The force bounds are hypotheses, not a safe wind-speed determination.",
+    "The six reported Pareto points are complete only for the 198 enumerated designs and the two stated objectives; no continuous or physical design optimum is established.",
+    "Connector capture uses an exact active finite rigid transform in one declared reference frame. Identical nominal connector correspondence and the transform origin remain input assumptions; lock engagement, strength and elasticity are absent.",
+    "Ramp results are horizontal bounding footprints with end landings. The declared run-rise/landing/width values and unstacked arrangement do not establish route, headroom, detailing or accessibility approval.",
+    "Geometry predicates and site data receive a separate site audit; this review focuses on the engineering math and saved engineering report."
+  ],
+  "scope": "Independent exact model/code review only; no physical validation or load rating"
+}

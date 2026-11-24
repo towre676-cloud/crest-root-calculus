@@ -1,0 +1,29 @@
+{
+  "endpoint": "https://gis.dogami.oregon.gov/arcgis/rest/services/Public/SLIDO42/MapServer/3",
+  "method": "GET",
+  "parameters": {
+    "f": "json"
+  },
+  "request_url": "https://gis.dogami.oregon.gov/arcgis/rest/services/Public/SLIDO42/MapServer/3?f=json",
+  "started_at_utc": "2026-11-24T00:22:42+00:00",
+  "http_status": 200,
+  "response_url": "https://gis.dogami.oregon.gov/arcgis/rest/services/Public/SLIDO42/MapServer/3?f=json",
+  "response_headers": {
+    "cache-control": "must-revalidate,max-age=0,public",
+    "content-type": "application/json; charset=UTF-8",
+    "etag": "\"807fc011\"",
+    "vary": "Origin",
+    "server": "envoy",
+    "x-content-type-options": "nosniff",
+    "x-powered-by": "ASP.NET",
+    "date": "Tue, 24 Nov 2026 00:22:45 GMT",
+    "x-envoy-upstream-service-time": "327",
+    "connection": "close",
+    "transfer-encoding": "chunked"
+  },
+  "retrieved_at_utc": "2026-11-24T00:22:45+00:00",
+  "response_file": "dogami_landslide_3.layer.raw.json",
+  "response_bytes": 14999,
+  "sha256": "95b425d54e0fa50920c1e2a8188e454423e1ed7ee1c23fa5b2edde7c5ae5d775",
+  "success": true
+}

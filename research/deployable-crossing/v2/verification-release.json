@@ -1,0 +1,117 @@
+{
+  "format": "crest-root-tillamook-release-verification/1",
+  "status": "passed",
+  "python": "3.12.14",
+  "stdlib_default": true,
+  "network_required": false,
+  "recomputed_sites": true,
+  "groups": [
+    {
+      "group": "Atlas subset content/terrain integrity",
+      "status": "passed",
+      "counts": {
+        "areas": 17,
+        "buildings": 395,
+        "candidates": 6,
+        "canopy": 311,
+        "environment": 40,
+        "marks": 58,
+        "parcels": 401,
+        "streets": 244
+      }
+    },
+    {
+      "group": "Exact truss independent controls",
+      "status": "passed"
+    },
+    {
+      "group": "Bridge sections and virtual-work controls",
+      "status": "passed",
+      "checks": {
+        "member_section_force_checks": 50,
+        "unit_load_virtual_work_deflections": 2,
+        "load_and_reaction_resultants": 2
+      }
+    },
+    {
+      "group": "Exact support paths, capture transforms, access and geometry",
+      "status": "passed",
+      "checks": 38
+    },
+    {
+      "group": "Independent engineering and GIS review byte bindings",
+      "status": "passed"
+    },
+    {
+      "group": "Placement scenarios",
+      "status": "recomputed",
+      "scenario_count": 648,
+      "summary": {
+        "scenario_count": 648,
+        "counts_by_screen": {
+          "conflict_in_declared_layout": 636,
+          "no_tested_building_or_road_centerline_conflict": 12
+        },
+        "approved_sites": 0,
+        "architecture_count": 3,
+        "minimum_assumed_base_span_m": 19,
+        "maximum_assumed_base_span_m": 27
+      }
+    },
+    {
+      "group": "Hazard source/report integrity and query coverage",
+      "status": "passed",
+      "receipt": {
+        "all_footprints_within_every_query": true,
+        "approved_sites": 0,
+        "footprints_per_scenario": 4,
+        "geometry_pair_tests": 33696,
+        "layer_count": 6,
+        "scenario_count": 648,
+        "scenario_counts_by_intersecting_label": {
+          "dogami_ls_coverage_0": {
+            "CalhNC2020a": 648
+          },
+          "dogami_ls_deep_1": {
+            "Low": 648
+          },
+          "dogami_tsunami_12": {
+            "Outside Hazard Area": 648
+          },
+          "fema_nfhl_28": {
+            "AE": 213,
+            "X | 0.2 PCT ANNUAL CHANCE FLOOD HAZARD": 166,
+            "X | AREA OF MINIMAL FLOOD HAZARD": 547
+          }
+        },
+        "scenario_layer_results": 3888,
+        "scenario_status_counts_by_layer": {
+          "dogami_landslide_3": {
+            "no_intersection_with_returned_features": 648
+          },
+          "dogami_ls_coverage_0": {
+            "intersects_returned_map_features": 648
+          },
+          "dogami_ls_deep_1": {
+            "intersects_returned_map_features": 648
+          },
+          "dogami_tsunami_12": {
+            "intersects_returned_map_features": 648
+          },
+          "dogami_tsunami_78": {
+            "no_intersection_with_returned_features": 648
+          },
+          "fema_nfhl_28": {
+            "intersects_returned_map_features": 648
+          }
+        }
+      }
+    },
+    {
+      "group": "Stored complete truss outputs",
+      "status": "passed",
+      "case_count": 2
+    }
+  ],
+  "scope": "Reproducibility and stated model correctness only; no physical tests, site approval or capacity rating"
+}
