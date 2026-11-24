@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "format": "crest-root-integrated-release-verification/3",
+  "checks_passed": true,
+  "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+  "integration_checks": {
+    "same_design": true,
+    "same_geometry_and_mass": true,
+    "same_structural_capture_source": true,
+    "same_continuous_sweep": true,
+    "operation_consumes_actual_reports": true,
+    "outcomes_bound_to_same_sites": true,
+    "physical_opening_remains_unresolved": true
+  },
+  "integration_negative_controls": [
+    "different_design",
+    "different_geometry",
+    "different_structural_capture",
+    "different_sweep",
+    "different_outcome_site_source",
+    "promoted_public_opening"
+  ],
+  "core_verifiers": {
+    "assembly": {
+      "passed": true,
+      "receipt": "verification-assembly.json"
+    },
+    "motion": {
+      "passed": true,
+      "receipt": "verification-motion.json"
+    },
+    "evidence": {
+      "passed": true,
+      "receipt": "verification-evidence.json"
+    },
+    "outcomes": {
+      "passed": true,
+      "receipt": "verification-outcomes.json"
+    }
+  },
+  "full_solver_replay": false,
+  "optional_replays": {
+    "gis": "not_rerun_by_this_invocation",
+    "viewer": "not_rerun_by_this_invocation"
+  },
+  "python": "3.12.14",
+  "file_sha256": {
+    "Open-Workbench.cmd": "96340d43e16d7ea33cd20575cfd29eea93109f3bfe70bafb1dba62dfaf5a5b4b",
+    "README.md": "e6ccb55887035410fe7b169c8b1844dc42630f3f92fafcae66245b774cc83ef0",
+    "assembly-proof.md": "bb6ca88c58afc94c7e233b662f2ad0ead9f270ef0aeae5bd5fd3b45fe9d58080",
+    "assembly-report.json": "f969202a08dd688f85cf2b13255ac9403df06d02783085df5b01f0d9188a5541",
+    "assembly.py": "e9fa9560c186da405dc2e8368a8badd74959fe451cbfa707ebfbc8d10de256ec",
+    "build_packet.py": "604dc219fa9deb8d19b9dc3542f5235a98aed2aedb38694d25614bd6e605e1d6",
+    "build_viewer.py": "1edbcd4c9bb58ebad9fdfe6177d1028783c224b59bbbd002823074138ed55e59",
+    "design.json": "52f9682beefbe1cba27747c10281f78cef73cd0f328916ca65c158a96aa839ab",
+    "evidence-and-operations.md": "a61bd0b5b7c4707972eef5044192c5aeaddfe857722ec7c1c3c02098bbb17579",
+    "evidence-report.json": "17766c63d59ecafdc42b8c7e3ee1045b4b91f863d620a130ad61ebc49c585570",
+    "evidence.py": "0cc880b09a85fab97de56edcf6e097371a86a252ba1523e1b1a41aa9143af01e",
+    "independent_review.py": "7e418dc0a172164c7cc66cae738ba3f2b57f2525cfa8031561dffd1b9f0fe0aa",
+    "integrate.py": "0d074836f1cc2f96901c66a114249549d5f1c78a31fd7d941b3a4990a3a23649",
+    "integrated-report.json": "bae69a0dbbdc22798f0b9903ad18858deda6aa76c2486ef2535c6114ce91ec63",
+    "integration-review.md": "29c8fa2552a43030f43e2e746dbe2834af40b52282086b73f3129eb6fb9dc0bd",
+    "motion-report.json": "4f654ccd1483223381b171aa278d4ce43798369e6330b172c3f22266d1c2f750",
+    "motion.py": "d700892c79f3e1af20060ba558d49875c663c735ea976c2e8a03c47b4fd0469e",
+    "operation-report.json": "ff01886b6c7dd178ed3af751544158b48ba861b3f35508c4ef8576e1c774ba44",
+    "operation.py": "46394be97cd6b0bc0822183d9e6a7d0771856842958e7647ff71f88fb6352724",
+    "outcome-report.json": "9fb23b27c6f3629b1db283c8bbfc67bae18b8eb7395f9bce5af5895a9c550f8a",
+    "outcomes.py": "b22d918fec1db0602f0b25b93cf4506c449f17e69fbb2909b0dc9aa3f6724a12",
+    "site-report.json": "2edf4e4b97c19108a00788428865e9f30b889297fa6d5678042af288de30ae7a",
+    "site.py": "20994cffee461a0a3ec33a5456095b134576d5d01e196acccc170ca479ef30e9",
+    "verification-assembly-replay.json": "6261e61ce51c83f18d914d34d956ca8184f501d9072e2c51d28f037b7c6874c0",
+    "verification-assembly.json": "bad742d75dfc6c1e4b926c82bb55e0b244e0b4be99a9e5f848b65f19fe301920",
+    "verification-evidence.json": "aad65c1e5b2c0b49a53546e9def4d30c0ed204ae814cc524d6061d0151943811",
+    "verification-motion-replay.json": "e8913550392d2f04a0c2b06e580bffbc01e56a25907a44bc551a4364f1021d4e",
+    "verification-motion.json": "0fa1468c5974038ac5a0bcd6af8f8b808b0db2ac40e086eed16f8d224b660e8a",
+    "verification-outcomes.json": "6ad2b1081c62fd6e57d6fa0033580889ae2a00d75dc13b302867b20181bbdb59",
+    "verification-site.json": "3c77289af2542fc3d7bb16a790a15b6e79880b89378500b446dc9cd30fb0e5dc",
+    "verification-viewer.json": "c747a0bc93fb9f180d64e3b2f5e3aa494af2168cf611f5cc91dba83ccf4ddca2",
+    "verify_assembly.py": "99e1ee9b01013323e7828268782e7ee6e8de40c78486d483744cf66d90b61d9c",
+    "verify_evidence.py": "c3a4cd36886ef6ddca7ef28c0536af4f6345331d94b2b20a2cf1cf596b59a0b7",
+    "verify_motion.py": "6836102e2c6bb90574542e3e1ca785b45071cd1f316eee988219e1c53351d2a4",
+    "verify_outcomes.py": "653bb8c1449e0f1dae6f299331b9405dc858acf2f272b2dc22721cf4e9d798e2",
+    "verify_release.py": "71246ee484d2ae234f54c53f20b2b3886ffae147e84ef98252072a79b637857f",
+    "verify_site.py": "0df2903624cc14924d994785dfe7a4bb9a24ed05807431f862f132306935f7fc",
+    "workbench.html": "2eb5da1e7c421494d39f98df31a92beb11392140ba9d25880bd307c57002a61e"
+  },
+  "physical_approval": false,
+  "real_browser_rendering_verified": false,
+  "mobile_touch_verified": false,
+  "scope": "Reproducible software-model identities and independent checks; no physical bridge, site, operation or casualty benefit is approved"
+}

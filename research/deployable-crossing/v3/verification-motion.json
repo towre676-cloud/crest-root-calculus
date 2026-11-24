@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "format": "crest-root-independent-motion-verification/3",
+  "checks_passed": true,
+  "physical_approval": false,
+  "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+  "geometry_and_mass_source_sha256": "8b3fa46801e8a95c8b89fd58e7823e97e9059dd9b3e96ba8b0351a30d3483a2f",
+  "motion_report_sha256": "4f654ccd1483223381b171aa278d4ce43798369e6330b172c3f22266d1c2f750",
+  "assembly_report_sha256": "f969202a08dd688f85cf2b13255ac9403df06d02783085df5b01f0d9188a5541",
+  "source_sha256": {
+    "motion.py": "d700892c79f3e1af20060ba558d49875c663c735ea976c2e8a03c47b4fd0469e",
+    "assembly.py": "e9fa9560c186da405dc2e8368a8badd74959fe451cbfa707ebfbc8d10de256ec",
+    "verify_assembly.py": "99e1ee9b01013323e7828268782e7ee6e8de40c78486d483744cf66d90b61d9c",
+    "verify_motion.py": "6836102e2c6bb90574542e3e1ca785b45071cd1f316eee988219e1c53351d2a4",
+    "v2/engineering.py": "ad7b8974e17e820fd02dd2595bd30df07de438acc9e6ea9296ec0a4f4af274f1"
+  },
+  "certificates": {
+    "rigid_paths": {
+      "polynomial_rotation_identities": 60,
+      "analytic_pose_controls": 30,
+      "endpoint_checks": 44
+    },
+    "deployment_support": {
+      "records": 24,
+      "direct_mass_wrench_controls": 120,
+      "whole_interval_edge_minima": 96,
+      "force_box_coverage": "All four corners; each signed edge margin is affine in the two independent fixture force coordinates"
+    },
+    "separation": {
+      "transformed_prism_controls": 15,
+      "whole_interval_gap_minima": 6,
+      "scope": "Declared centerline prisms and radius-inflated trimmed prisms; no contact/capacity claim inside the reserved seam zone"
+    },
+    "sweep_enclosures": {
+      "interval_boxes": 68,
+      "whole_interval_polynomial_enclosure_inequalities": 46104,
+      "basis": "Point-coordinate numerator inequalities over every full interval; linear bar segments and floor prisms follow by convexity, with the declared radius allowance"
+    },
+    "display_frames": {
+      "frames": 27,
+      "node_controls": 1080,
+      "member_length_controls": 3078,
+      "role": "Display consistency only; continuum certificates are checked independently above"
+    },
+    "capture": {
+      "nominal_connector_checks": 4,
+      "loaded_connector_checks": 4,
+      "loaded_source": "independent_half_cantilevers/dead",
+      "scope": "Declared geometric capture box only; actual engagement, tolerance stack, contact and capacity remain unmodeled"
+    },
+    "assembled_support": {
+      "independent_full_wrench_transports": 48,
+      "affine_release_certificates": 8,
+      "whole_release_edge_minima": 32,
+      "scope": "Vertical normal reaction existence; horizontal force, yaw, friction, anchorage and capacity are separate obligations"
+    },
+    "reference_clearance": {
+      "cases": 6,
+      "member_endpoint_envelope_checks": 684,
+      "scope": "Arithmetic against declared flat datum/reference only; this audit does not determine regulatory applicability or actual surveyed clearance"
+    }
+  },
+  "controls": {
+    "scenario_controls": [
+      "zero_retreat_overlap",
+      "absent_fixed_base_mass_support_failure",
+      "excess_fixture_force_support_failure",
+      "no_lift_equality_is_boundary",
+      "tightened_loaded_capture_failure"
+    ],
+    "tampering_rejections": [
+      "tampered_rotation",
+      "tampered_path_minimum",
+      "tampered_prism_gap",
+      "clipped_swept_envelope",
+      "substituted_undeformed_capture",
+      "tampered_root_wrench_transport",
+      "tampered_clearance",
+      "mismatched_structural_provenance"
+    ],
+    "total_controls": 13
+  },
+  "complete_production_replay": false,
+  "review_findings": [
+    "No transform, normal-support moment-sign, interval-minimum, separation or capture-provenance defect found for the declared reference inputs",
+    "Support certificates establish existence of vertical coplanar reactions only, not sliding/yaw resistance, individual pad loads or capacity",
+    "Sweeps concern declared nominal member/floor/mass-point geometry; actual guards, locks, fixture bodies and reserved-zone engagement remain outside the model",
+    "Reference-clearance arithmetic uses a hypothetical flat datum and declared small-displacement axial shapes; legal applicability and as-built clearance are not established"
+  ]
+}

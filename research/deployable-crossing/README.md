@@ -1,5 +1,7 @@
 # Two mobile halves of a pedestrian bridge
 
+**Current: [Tillamook v3](v3/README.md).** One shared assembly connects structural modes, continuous motion, full base reactions, mapped access, synthetic evidence and operating guards. The v3 packet preserves the earlier studies below as historical research. [Complete offline v3 ZIP](https://github.com/towre676-cloud/crest-root-calculus/raw/refs/heads/main/downloads/crest-root-tillamook-crossing-v3-2026-11-23.zip) · [v2 mapped study](v2/README.md)
+
 **A feasibility study for a deployable crossing.** The proposed machine places a wheeled unit on each roadside, establishes stable supports, raises and extends two half-spans, and connects them above the road. Pedestrians then use a complete elevated crossing. Crest–Root can help analyze the geometry, deployment states, and mathematical margins of such a system. The code in this directory implements a first set of exact research screens; it is not a structural design, an operational controller, or a construction approval.
 
 [Download the independent study and verifier](https://github.com/towre676-cloud/crest-root-calculus/raw/refs/heads/main/downloads/crest-root-deployable-crossing-2026-11-23.zip) · [Equations and proof obligations](proof.md) · [Primary sources](sources.md)

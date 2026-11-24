@@ -1,0 +1,55 @@
+{
+  "schema": "crest-root-deployable-crossing-design-v3",
+  "id": "rational-deck-truss-reference-23m",
+  "basis": "Illustrative reference hypotheses for mathematical screening; no member selection, measured hardware, load rating or approval",
+  "units": {"length": "m", "force": "kN", "mass": "kg"},
+  "geometry": {
+    "span_m": "23",
+    "panels_per_half": 4,
+    "brick_ratio": {"panel": 275, "width": 252, "depth": 240},
+    "floor_width_m": "2",
+    "floor_thickness_m": "0.1",
+    "member_envelope_radius_m": "0.05",
+    "joint_contact_zone_length_m": "0.15"
+  },
+  "material": {"young_modulus_kN_m2": "200000000", "density_kg_m3": "7850"},
+  "member_areas_m2": {
+    "longitudinal": "0.003",
+    "transverse": "0.0025",
+    "vertical": "0.0025",
+    "xy_diagonal": "0.002",
+    "xz_diagonal": "0.002",
+    "yz_diagonal": "0.002"
+  },
+  "mass": {
+    "floor_kg_m2": "60",
+    "rail_kg_m": "12",
+    "rail_center_above_walking_surface_m": "0.55",
+    "joint_kg_per_physical_node": "5"
+  },
+  "gravity_m_s2": "9.80665",
+  "crowd": {
+    "symmetric_pressure_kN_m2": "5",
+    "asymmetric_pressure_kN_m2": "5",
+    "asymmetric_region": "global_y_positive_half_of_floor"
+  },
+  "motion": {
+    "retreat_m": "0.2",
+    "yaw_interval_count": 32,
+    "nominal_capture_half_widths_m": ["0.02", "0.02", "0.02"],
+    "horizontal_fixture_force_bounds_kN": {"x": ["-10", "10"], "y": ["-6", "6"]},
+    "horizontal_fixture_force_height_m": "6"
+  },
+  "base_interfaces": {
+    "truss_bottom_elevation_m": "5.5332",
+    "transport_truss_bottom_m": "1",
+    "pivot_position_in_base_m": ["0", "5", "0"],
+    "pad_rectangle_m": {"x_min": "-2.5", "x_max": "2.5", "y_min": "-6", "y_max": "6"},
+    "fixed_mass_items_per_base": [
+      {"id": "chassis", "mass_kg": "8000", "center_in_base_m": ["0", "0", "0.75"]},
+      {"id": "stationary_fixture", "mass_kg": "2500", "center_in_base_m": ["0", "0", "1"]},
+      {"id": "ballast", "mass_kg": "10000", "center_in_base_m": ["0", "0", "0.25"]}
+    ],
+    "interpretation": "Declared ideal lift/slew/short-slide interfaces and point masses; actual hardware, anchorage, transport and foundation behavior are unmodeled"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "schema": "crest-root-assembly-verification-v3",
+  "checks_passed": true,
+  "physical_approval": false,
+  "report_sha256": "f969202a08dd688f85cf2b13255ac9403df06d02783085df5b01f0d9188a5541",
+  "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+  "verifier_sha256": "99e1ee9b01013323e7828268782e7ee6e8de40c78486d483744cf66d90b61d9c",
+  "method": "Independent exact mechanics identities, modular rank lower bounds plus exact nullspace witnesses, analytic half-cantilever and invalid-join controls",
+  "certificates": {
+    "geometry": {
+      "physical_nodes": 40,
+      "physical_members": 114,
+      "mass_items": 178,
+      "category_mass_checks": 4
+    },
+    "rank_certificates": {
+      "independent_half_cantilevers/dead": {
+        "rank": 96,
+        "free_dofs": 96,
+        "witnesses": 0
+      },
+      "joined_clamped/dead": {
+        "rank": 84,
+        "free_dofs": 84,
+        "witnesses": 0
+      },
+      "joined_service/dead": {
+        "rank": 101,
+        "free_dofs": 101,
+        "witnesses": 0
+      },
+      "joined_service/dead_plus_symmetric_crowd": {
+        "rank": 101,
+        "free_dofs": 101,
+        "witnesses": 0
+      },
+      "joined_service/dead_plus_asymmetric_crowd": {
+        "rank": 101,
+        "free_dofs": 101,
+        "witnesses": 0
+      },
+      "lower_only_join_after_release/dead": {
+        "rank": 106,
+        "free_dofs": 107,
+        "witnesses": 1
+      },
+      "premature_release_before_join/dead": {
+        "rank": 108,
+        "free_dofs": 113,
+        "witnesses": 5
+      },
+      "joined_release_midpoint/dead": {
+        "rank": 84,
+        "free_dofs": 84,
+        "witnesses": 0
+      }
+    },
+    "linear_solution_certificates": {
+      "independent_half_cantilevers/dead": {
+        "constitutive_bars": 114,
+        "physical_node_equilibrium_checks": 40,
+        "root_resultants": 2,
+        "connector_pairs": 4
+      },
+      "joined_clamped/dead": {
+        "constitutive_bars": 114,
+        "physical_node_equilibrium_checks": 40,
+        "root_resultants": 2,
+        "connector_pairs": 4
+      },
+      "joined_service/dead": {
+        "constitutive_bars": 114,
+        "physical_node_equilibrium_checks": 40,
+        "root_resultants": 2,
+        "connector_pairs": 4
+      },
+      "joined_service/dead_plus_symmetric_crowd": {
+        "constitutive_bars": 114,
+        "physical_node_equilibrium_checks": 40,
+        "root_resultants": 2,
+        "connector_pairs": 4
+      },
+      "joined_service/dead_plus_asymmetric_crowd": {
+        "constitutive_bars": 114,
+        "physical_node_equilibrium_checks": 40,
+        "root_resultants": 2,
+        "connector_pairs": 4
+      },
+      "joined_release_midpoint/dead": {
+        "constitutive_bars": 114,
+        "physical_node_equilibrium_checks": 40,
+        "root_resultants": 2,
+        "connector_pairs": 4
+      }
+    },
+    "release": {
+      "temporary_root_dofs": 17,
+      "actual_solved_midpoint": true,
+      "member_affinity_checks": 114
+    },
+    "independent_invalid_mode": {
+      "independent_rigid_half_pitch_witness": true,
+      "exact_virtual_work": "23021724967423/40000000000",
+      "meaning": "First-order mechanism with nonzero gravity virtual work; no finite folding path claim"
+    },
+    "capture_mapping": true
+  },
+  "negative_controls_rejected": [
+    "float_span",
+    "negative_area",
+    "zero_gravity",
+    "floor_outside_truss",
+    "invalid_force_bounds",
+    "irrational_bar_metric",
+    "tampered_member_force",
+    "tampered_mechanism_support",
+    "tampered_gravity_load",
+    "tampered_release_midpoint",
+    "tampered_design_digest",
+    "tampered_geometry_digest"
+  ],
+  "negative_control_count": 12,
+  "full_solver_replay": false,
+  "scope": "Arithmetic consistency and completeness for this declared linear reference assembly; no capacity, stability beyond the linear model, or operation approval"
+}

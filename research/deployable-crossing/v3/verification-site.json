@@ -1,0 +1,57 @@
+{
+  "format": "crest-root-integrated-site-independent/3",
+  "design_sha256": "c82b8359a7e5fcb07c52bfb33628b5fd386c07b23b4d37f9b43b25fbc221358f",
+  "passed": true,
+  "engines": {
+    "gdal": "3.10.3",
+    "geos": "3.13.1"
+  },
+  "comparison": {
+    "static_scenarios": 216,
+    "sweep_placements": 18,
+    "static_hit_sets": 1080,
+    "static_hazard_sets": 1296,
+    "static_hazard_coverage": 1296,
+    "static_hazard_status": 1296,
+    "sweep_hit_sets": 90,
+    "sweep_hazard_sets": 108,
+    "sweep_hazard_coverage": 108,
+    "sweep_hazard_status": 108,
+    "mismatch_count": 0,
+    "mismatches": [],
+    "invalid_geometries": [],
+    "independent_summary": {
+      "placement_count": 18,
+      "scenario_count": 216,
+      "without_direct_building_or_road_conflict": 2,
+      "also_without_sweep_bound_building_intersection": 2,
+      "approved_sites": 0,
+      "possible_sweep_building_conflicts": 10
+    }
+  },
+  "input_sha256": {
+    "v3/site-report.json": "2edf4e4b97c19108a00788428865e9f30b889297fa6d5678042af288de30ae7a",
+    "v2/data/atlas-subset.json": "24b3a78c2e4e7cac3f55005e806d4476a39a2940cd03e27fef03ba7d6fbcc79b",
+    "v3/design.json": "52f9682beefbe1cba27747c10281f78cef73cd0f328916ca65c158a96aa839ab",
+    "v2/data/hazards/manifest.json": "e1c5fcbb076aa68bba351eb802775fc16eae82b0e248fc6ab19f83c69c6dc99b",
+    "v2/data/hazards/fema_nfhl_28.clipped.geojson": "d5004f5820072ed19e41e5efa3a80a5ebfe82eadfb22bac7570864d4ef4d10d3",
+    "v2/data/hazards/fema_nfhl_28.summary.json": "636d38c5119cd6b346b2521a56d816e274cf7840241efa032c9c7aa8df268b61",
+    "v2/data/hazards/dogami_tsunami_12.clipped.geojson": "7c8e2b6880ea169c0587d96e5533548e1b5c5e5e7e02dd373b23f7eae7eed9d5",
+    "v2/data/hazards/dogami_tsunami_12.summary.json": "778bfef98458e38bff50638a927928aab8dfba498809ad4ba76cc69740fbd018",
+    "v2/data/hazards/dogami_tsunami_78.clipped.geojson": "45cc104c470fbc77fe367782df6f2f5857328fe0af4568919371a53d9248f87a",
+    "v2/data/hazards/dogami_tsunami_78.summary.json": "55ad9eff76ad54407e3f841774e5030988bfa8832f6db03d2d1a1dd80b8c2429",
+    "v2/data/hazards/dogami_landslide_3.clipped.geojson": "14578b379e30a6fc4db70ac101df005b56a46814ca488c83ba93bb2e4a8b1663",
+    "v2/data/hazards/dogami_landslide_3.summary.json": "9f70b4f49815ea0bbc0cc4fcb3ac5ef72932239171b8bea2013bcb86c232e5df",
+    "v2/data/hazards/dogami_ls_coverage_0.clipped.geojson": "91ad23387f271b591ca2601eda20efe71121999647c21b899bd4e3018fd3d233",
+    "v2/data/hazards/dogami_ls_coverage_0.summary.json": "785439fcd4e60ba1d99d2b9b9e7aa32892a1239f027bd1664a485a0f7f6ca6e2",
+    "v2/data/hazards/dogami_ls_deep_1.clipped.geojson": "aed90522125896395efae633d243d779ee5590863d8367b2fcedf0bbd5b4bf54",
+    "v2/data/hazards/dogami_ls_deep_1.summary.json": "82e4781179279bad69b24a651963b2893bc3ab7c656ec1f3b5291f8756c12d84"
+  },
+  "source_code_sha256": {
+    "site.py": "20994cffee461a0a3ec33a5456095b134576d5d01e196acccc170ca479ef30e9",
+    "verify_site.py": "0df2903624cc14924d994785dfe7a4bb9a24ed05807431f862f132306935f7fc"
+  },
+  "method": "GDAL/GEOS intersections with holes and multipart geometry preserved; exact GEOS distance for the 3 m sensitivity; independent set-difference source-coverage checks. Source and GIS calculations use binary64.",
+  "scope": "Recorded 2D predicates and coverage only. Does not replay layout construction, terrain extrema, continuous motion or physical clearance. Conservative sweep hits are possible obstructions; no hazard-free or approved classification follows.",
+  "physical_approval": false
+}
