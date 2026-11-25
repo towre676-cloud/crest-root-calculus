@@ -11,14 +11,15 @@ def poly(expr):
     return sp.Poly(expr, X, domain=sp.QQ)
 
 
-def replay(branch, k, maximum, denominator=None):
+def replay(branch, exponent, maximum, denominator=None, target=None):
     values = coefficients(branch)
     pole_values = coefficients(denominator) if denominator is not None else None
-    report = compute(values, k, k, None, maximum, pole_values)
-    verify(values, k, report)
+    report = compute(values, exponent, target or exponent, None, maximum, pole_values)
+    verify(values, exponent, report)
     rows = []
     for chart in report["charts"]:
-        power = chart["vertical_input_power"]
+        k = chart["target_exponent"]
+        power = chart["vertical_input_power"]*k//exponent
         source_denominator = polynomial(chart["vertical_denominator"])
         for row in chart["strata"]:
             q = polynomial(row["denominator"])
@@ -82,6 +83,12 @@ def main():
         record = matches[0]
         assert polynomial(record["numerator"]) == a
         assert polynomial(record["vertical_pole_denominator"]) == poly(expected_vertical)
+
+    lifted = poly(X+7)**6*cubic
+    lifted_report, rows = replay(lifted, 6, 10, q, target=3)
+    assert lifted_report["removed_power_factor"] == ["7", "1"]
+    assert [(row["total_degree"], row["geometric_points"]) for row in rows] == [(4, 0), (10, 1)]
+    assert lifted_report["charts"][0]["vertical_input_power"] == 2
 
     removed_stratum = deepcopy(report)
     removed_stratum["charts"][0]["strata"].pop()

@@ -259,8 +259,9 @@ def plan(values, exponent, target, character, degree, finite_poles):
 def compute(values, exponent, target=None, character=None, degree=None, finite_poles=None):
     header, charts = plan(values, exponent, target, character, degree, finite_poles)
     return {**header, "charts": [{**chart, "strata": [
-        certified_stratum(branch, chart["target_exponent"], *stratum)
-        for stratum in strata]} for chart, branch, strata in charts]}
+        {"total_degree": chart["vertical_input_degree_index"]*d,
+         **certified_stratum(branch, chart["target_exponent"], poles, d, m, e)}
+        for poles, d, m, e in strata]} for chart, branch, strata in charts]}
 
 
 def verify(values, exponent, report):
@@ -274,6 +275,7 @@ def verify(values, exponent, report):
         for stratum, entry in zip(strata, row["strata"], strict=True):
             actual = certified_stratum(branch, chart["target_exponent"], *stratum,
                                        check=True, supplied=entry["certificate"])
+            actual["total_degree"] = chart["vertical_input_degree_index"]*stratum[1]
             if actual != entry:
                 raise ArithmeticError("The certified stratum or map list has changed.")
 
