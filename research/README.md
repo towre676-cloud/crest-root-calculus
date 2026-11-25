@@ -20,6 +20,8 @@ The rational-coordinate solver allows finite horizontal poles on the working bra
 
 ## Elliptic degrees with repeated factors
 
+For CM elliptic powers, ideal classes and the finite kernel give an exact degree law and the leading counting constant. Two genus-two Jacobians with the same rational polarized data have different constants, in the ratio 3:4. For the Gaussian two-torsion gluing a divisor formula gives every multiplicity. [Paper, theorems and exact replay](elliptic-quotients/cm-spectra/README.md)
+
 For a polarized variety isogenous to a non-CM elliptic self-product, the finite isogeny kernel corrects the polarization degree in each primitive lattice direction. Two explicit genus-two families share the same rational polarized isogeny data over a common field and have different complete spectra and counting constants. One contains the repeated-factor curve with branch pairs at ±1, ±2 and ±4. [Proof and exact replay](elliptic-quotients/isotypic-gluing/README.md)
 
 The equation-only bielliptic reconstruction recovers the finite gluing exactly from the branch orbit labels and an isogeny on the elliptic factors. Its degree law and counting constant include even and composite isogeny degrees. [Theorem and standalone replay](elliptic-quotients/bielliptic-reconstruction/README.md)
