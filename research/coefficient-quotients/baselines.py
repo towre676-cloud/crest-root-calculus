@@ -9,7 +9,7 @@ import tempfile
 import sympy as sp
 from sympy.polys.densetools import _dup_left_decompose, _dup_right_decompose
 
-from discover import X, coefficients, constant_degrees, normalization, polynomial
+from discover import X, coefficients, constant_degrees, polynomial
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent / "solver-comparison"))
@@ -32,7 +32,7 @@ def dense(source, *, corrected=True):
 
 
 def singular(source):
-    expression = str(source.as_expr()).replace("**", "^")
+    expression = "+".join(f"({c})*x^{d}" for (d,), c in source.terms())
     library = os.environ.get("CREST_DECOMP_LIB", "decomp.lib")
     script = f'''ring r=0,x,dp;
 LIB "{library}";
@@ -59,7 +59,7 @@ quit;
         path = Path(directory) / "decompose.sing"
         path.write_text(script, encoding="ascii")
         run = subprocess.run([executable, "-q", str(path)], capture_output=True, text=True, check=True)
-    if "?" in run.stdout or "DONE" not in run.stdout:
+    if "?" in run.stdout or "much slower" in run.stdout or "DONE" not in run.stdout:
         raise ArithmeticError(run.stdout[-2600:] + run.stderr[-2000:])
     lines = [line for line in run.stdout.splitlines() if line.startswith(("MAP ", "INNER ", "OUTER "))]
     maps = []

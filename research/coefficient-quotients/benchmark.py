@@ -150,7 +150,9 @@ def invoke(payload, timeout):
 def study(directory, freeze, protocol):
     inputs, provenance = (read(directory / name) for name in ("inputs.json", "provenance.json"))
     schedule, reference = expected_and_schedule(inputs, provenance, protocol["shuffle_seed"])
-    write(directory / "constant-reference.json", reference)
+    reference_path = directory / "constant-reference.json"
+    write(reference_path, reference)
+    protocol["file_sha256"][reference_path.name] = digest(reference_path.read_bytes())
     rows = []
     for index, (case, family, method, repetition, stratum) in enumerate(schedule, 1):
         outcome = invoke({**inputs[case], "method": method, "stratum": stratum}, TIMEOUTS[family])
@@ -183,7 +185,7 @@ def main():
         if digest((HERE.parent.parent / relative).read_bytes()) != hash_value:
             raise ArithmeticError(f"Frozen source changed before timing: {relative}")
     cpus = sorted(os.sched_getaffinity(0))
-    selected = cpus[0]
+    selected = cpus[-1]
     os.sched_setaffinity(0, {selected})
     protocol = {"shuffle_seed": freeze["schedule_seed"], "selected_cpu": selected, "limits_seconds": TIMEOUTS,
                 "repetitions": REPETITIONS, "host": platform.platform(), "python": platform.python_version(),
@@ -191,6 +193,9 @@ def main():
                 "file_sha256": {n: digest((cli.directory / n).read_bytes())
                                 for n in ("freeze.json", "inputs.json", "provenance.json")},
                 "executables": {}}
+    install = os.environ.get("CREST_DECOMP_LIB")
+    if install:
+        protocol["decomp_library_sha256"] = digest(Path(install).read_bytes())
     import shutil
     for label, env, program in [("gp", "CREST_QUOTIENT_GP", "gp"),
                                  ("singular", "CREST_QUOTIENT_SINGULAR", "Singular")]:
