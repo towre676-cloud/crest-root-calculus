@@ -1,0 +1,463 @@
+{
+ "curves": {
+  "C (torsion study, multiplicity one)": {
+   "spectrum_through_X": {
+    "2": 2
+   },
+   "X": 6,
+   "minimal_degree": 2,
+   "relation_residual": "5.12e-71",
+   "riemann_residual": "3.38e-71",
+   "maps": [
+    {
+     "verified": true,
+     "factor_exponents": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "N": "157/3*x^2 - 111",
+     "D": "x^2 - 9",
+     "g2": "3556/3",
+     "g3": "-192104/27",
+     "differential": "(1) dx/y + (0) x dx/y",
+     "degree_of_R": 2,
+     "map_degree": 2,
+     "sample_set": 0,
+     "plucker": [
+      2,
+      -1,
+      0,
+      1,
+      0,
+      0
+     ],
+     "interpolation_singular_value": "1.18e-37"
+    },
+    {
+     "verified": true,
+     "factor_exponents": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "N": "13/3*x^2 + 1",
+     "D": "x^2 - 9",
+     "g2": "196/3",
+     "g3": "1144/27",
+     "differential": "(0) dx/y + (1) x dx/y",
+     "degree_of_R": 2,
+     "map_degree": 2,
+     "sample_set": 0,
+     "plucker": [
+      0,
+      1,
+      -2,
+      -1,
+      2,
+      -2
+     ],
+     "interpolation_singular_value": "1.59e-37"
+    }
+   ],
+   "f": [
+    -36,
+    0,
+    49,
+    0,
+    -14,
+    0,
+    1
+   ]
+  },
+  "C' (torsion study, multiplicity one, no involution)": {
+   "spectrum_through_X": {
+    "4": 2
+   },
+   "X": 6,
+   "minimal_degree": 4,
+   "relation_residual": "2.21e-72",
+   "riemann_residual": "4.4e-73",
+   "maps": [
+    {
+     "verified": true,
+     "factor_exponents": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "N": "57959/6*x^4 - 4840*x^3 - 357071/3*x^2 + 1829399/6",
+     "D": "x^4 + 15*x^3 + 119/2*x^2 - 343/2",
+     "g2": "45914176/3",
+     "g3": "129706610176/27",
+     "differential": "(0) dx/y + (1) x dx/y",
+     "degree_of_R": 4,
+     "map_degree": 4,
+     "sample_set": 0,
+     "plucker": [
+      6,
+      -5,
+      2,
+      1,
+      2,
+      -2
+     ],
+     "interpolation_singular_value": "5.51e-38"
+    },
+    {
+     "verified": true,
+     "factor_exponents": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "N": "145079/24*x^4 - 360701/12*x^2 + 13310*x + 464519/24",
+     "D": "x^4 - 17/4*x^2 + 15/4*x - 7/8",
+     "g2": "833014336/3",
+     "g3": "-21780733078016/27",
+     "differential": "(1) dx/y + (0) x dx/y",
+     "degree_of_R": 4,
+     "map_degree": 4,
+     "sample_set": 0,
+     "plucker": [
+      2,
+      -1,
+      -2,
+      -3,
+      6,
+      -6
+     ],
+     "interpolation_singular_value": "8.11e-38"
+    }
+   ],
+   "f": [
+    -3003,
+    -14850,
+    11968,
+    6600,
+    -3575,
+    -990,
+    154
+   ]
+  },
+  "T1: Richelot neighbour of C_2, pairing (1,-2)(-1,-4)(2,4)": {
+   "spectrum_through_X": {
+    "4": 4
+   },
+   "X": 6,
+   "minimal_degree": 4,
+   "relation_residual": "6.1e-72",
+   "riemann_residual": "3.99e-73",
+   "maps": [
+    {
+     "verified": true,
+     "factor_exponents": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "N": "(-70848/169*w + 1338240/1859)*x^4 + (9009504/1859*w - 1567512/1859)*x^3 + (2408832/1859*w - 1075020/1859)*x^2 + (-3282624/169*w - 12717216/1859)*x + (-31456512/1859*w + 21482688/1859)",
+     "D": "x^4 + (-36/13*w - 126/143)*x^3 + (4140/1859*w - 14161/1859)*x^2 + (29664/1859*w + 4248/1859)*x + (-2304/1859*w + 20672/1859)",
+     "g2": "-12587328",
+     "g3": "-16196986368",
+     "differential": "(1) dx/y + (-1/2*w) x dx/y",
+     "degree_of_R": 4,
+     "map_degree": 4,
+     "sample_set": 0,
+     "plucker": [
+      4,
+      -6,
+      5,
+      2,
+      -3,
+      2
+     ],
+     "interpolation_singular_value": "4.06e-38"
+    },
+    {
+     "verified": true,
+     "factor_exponents": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "N": "(70848/169*w + 1338240/1859)*x^4 + (-9009504/1859*w - 1567512/1859)*x^3 + (-2408832/1859*w - 1075020/1859)*x^2 + (3282624/169*w - 12717216/1859)*x + (31456512/1859*w + 21482688/1859)",
+     "D": "x^4 + (36/13*w - 126/143)*x^3 + (-4140/1859*w - 14161/1859)*x^2 + (-29664/1859*w + 4248/1859)*x + (2304/1859*w + 20672/1859)",
+     "g2": "-12587328",
+     "g3": "-16196986368",
+     "differential": "(1) dx/y + (1/2*w) x dx/y",
+     "degree_of_R": 4,
+     "map_degree": 4,
+     "sample_set": 0,
+     "plucker": [
+      0,
+      2,
+      -1,
+      2,
+      -1,
+      2
+     ],
+     "interpolation_singular_value": "4.06e-38"
+    },
+    {
+     "verified": true,
+     "factor_exponents": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "N": "5642256/1331*x^4 - 26103552/1331*x^2 - 22671360/1331*x + 21789696/1331",
+     "D": "x^4 - 752/121*x^2 - 5760/1331*x - 1024/1331",
+     "g2": "108444672",
+     "g3": "-182930669568",
+     "differential": "(1) dx/y + (0) x dx/y",
+     "degree_of_R": 4,
+     "map_degree": 4,
+     "sample_set": 0,
+     "plucker": [
+      4,
+      -4,
+      1,
+      4,
+      -3,
+      2
+     ],
+     "interpolation_singular_value": "1.82e-38"
+    },
+    {
+     "verified": true,
+     "factor_exponents": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "N": "419676/11*x^4 - 531360/11*x^3 - 3628992/11*x^2 + 16161216/11",
+     "D": "x^4 - 360/11*x^3 + 3008/11*x^2 - 16384/11",
+     "g2": "6777792",
+     "g3": "2858291712",
+     "differential": "(0) dx/y + (1) x dx/y",
+     "degree_of_R": 4,
+     "map_degree": 4,
+     "sample_set": 1,
+     "plucker": [
+      0,
+      0,
+      3,
+      0,
+      -1,
+      2
+     ],
+     "interpolation_singular_value": "4.72e-38"
+    }
+   ],
+   "f": [
+    -1792,
+    7200,
+    5268,
+    -900,
+    -1605,
+    -90,
+    154
+   ]
+  },
+  "T2: Richelot neighbour of C_2, pairing (1,2)(-1,-4)(-2,4)": {
+   "spectrum_through_X": {
+    "4": 4
+   },
+   "X": 6,
+   "minimal_degree": 4,
+   "relation_residual": "6.82e-72",
+   "riemann_residual": "4.19e-73",
+   "maps": [
+    {
+     "verified": true,
+     "factor_exponents": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "N": "(867888/625*w + 746241/625)*x^4 + (4482612/625*w - 1038366/625)*x^3 + (-1093716/625*w - 641937/625)*x^2 + (-3377088/125*w - 983016/125)*x + (4817664/625*w + 10894848/625)",
+     "D": "x^4 + (-144/25*w + 9/50)*x^3 + (-1224/625*w - 27947/2500)*x^2 + (10188/625*w - 2034/625)*x + (-1584/625*w + 14212/625)",
+     "g2": "-12587328",
+     "g3": "-16196986368",
+     "differential": "(1) dx/y + (-1/2*w) x dx/y",
+     "degree_of_R": 4,
+     "map_degree": 4,
+     "sample_set": 0,
+     "plucker": [
+      2,
+      -4,
+      5,
+      2,
+      -4,
+      3
+     ],
+     "interpolation_singular_value": "2.8e-38"
+    },
+    {
+     "verified": true,
+     "factor_exponents": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "N": "(-867888/625*w + 746241/625)*x^4 + (-4482612/625*w - 1038366/625)*x^3 + (1093716/625*w - 641937/625)*x^2 + (3377088/125*w - 983016/125)*x + (-4817664/625*w + 10894848/625)",
+     "D": "x^4 + (144/25*w + 9/50)*x^3 + (1224/625*w - 27947/2500)*x^2 + (-10188/625*w - 2034/625)*x + (1584/625*w + 14212/625)",
+     "g2": "-12587328",
+     "g3": "-16196986368",
+     "differential": "(1) dx/y + (1/2*w) x dx/y",
+     "degree_of_R": 4,
+     "map_degree": 4,
+     "sample_set": 0,
+     "plucker": [
+      2,
+      0,
+      -1,
+      2,
+      0,
+      1
+     ],
+     "interpolation_singular_value": "2.8e-38"
+    },
+    {
+     "verified": true,
+     "factor_exponents": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "N": "21279/4*x^4 - 22140*x^3 - 101967*x^2 + 352641",
+     "D": "x^4 + 45/2*x^3 + 517/4*x^2 - 1331/4",
+     "g2": "6777792",
+     "g3": "2858291712",
+     "differential": "(0) dx/y + (1) x dx/y",
+     "degree_of_R": 4,
+     "map_degree": 4,
+     "sample_set": 0,
+     "plucker": [
+      2,
+      0,
+      -3,
+      -2,
+      2,
+      -3
+     ],
+     "interpolation_singular_value": "7.46e-38"
+    },
+    {
+     "verified": true,
+     "factor_exponents": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "N": "252519/64*x^4 - 56703/4*x^2 - 16605/2*x + 104919/4",
+     "D": "x^4 - 47/16*x^2 + 45/32*x - 11/64",
+     "g2": "108444672",
+     "g3": "-182930669568",
+     "differential": "(1) dx/y + (0) x dx/y",
+     "degree_of_R": 4,
+     "map_degree": 4,
+     "sample_set": 0,
+     "plucker": [
+      6,
+      -4,
+      1,
+      2,
+      -2,
+      1
+     ],
+     "interpolation_singular_value": "4.1e-38"
+    }
+   ],
+   "f": [
+    -9856,
+    1440,
+    6420,
+    900,
+    -1317,
+    -450,
+    28
+   ]
+  }
+ },
+ "C_2_spectrum_through_150": {
+  "periods": {
+   "2": 4,
+   "10": 8,
+   "26": 8,
+   "34": 8,
+   "50": 8,
+   "58": 8,
+   "74": 8,
+   "82": 8,
+   "106": 8,
+   "122": 8,
+   "130": 16,
+   "146": 8
+  },
+  "pr17_theorem": {
+   "2": 4,
+   "10": 8,
+   "26": 8,
+   "34": 8,
+   "50": 8,
+   "58": 8,
+   "74": 8,
+   "82": 8,
+   "106": 8,
+   "122": 8,
+   "130": 16,
+   "146": 8
+  },
+  "equal": true
+ },
+ "all_verified": true
+}
