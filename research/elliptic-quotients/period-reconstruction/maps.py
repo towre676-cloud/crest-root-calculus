@@ -7,7 +7,7 @@ The target lattice is l(Pi Z^4) = Z l(Pi m1) + Z l(Pi m2) for a complement {m1, 
 L^perp.  With a Weierstrass base point r0 the map is P -> l(AJ_{r0}(P)), so its abscissa
 X = wp(l(AJ(P))) is a rational function R(x) of degree d.  R is interpolated from sample
 points, its coefficients and lam, g2, g3 are recognised as algebraic numbers, and the
-result is verified exactly: (4R^3 - g2 R - g3) D f must be a constant times a square.
+result is verified exactly by substituting the horizontal and vertical coordinates.
 """
 from __future__ import annotations
 
@@ -24,6 +24,8 @@ from periods import roots_of, nearest_point
 
 pari = cypari2.Pari()
 pari.allocatemem(10 ** 9)
+# GP string conversion uses its display precision, independently of ellwp precision.
+pari.set_real_precision_bits(320)
 mp.mp.dps = 70
 
 
@@ -116,7 +118,7 @@ def aj(f, r0, xs, roots):
         def integrand(s, m=m):
             x = r0 + (xs - r0) * s * s
             return x ** m * 2 * sq / g_sqrt(x)
-        out.append(mp.quad(integrand, mp.linspace(0, 1, 13)))
+        out.append(mp.quad(integrand, mp.linspace(0, 1, 13), method="gauss-legendre"))
     return out
 
 

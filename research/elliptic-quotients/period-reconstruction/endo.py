@@ -183,7 +183,7 @@ def plucker_integral(u, Ju, bound=10 ** 9, tol=1e-30):
 
 
 def complete_spectrum(f, X):
-    """All elliptic subvarieties of degree <= X, by Hermite's bound H(u,u) <= 2X/sqrt(3)."""
+    """Propose elliptic directions using a numerical form and the Hermite bound."""
     Pi, E, S = period_matrix(f)
     first, ev, det = riemann_check(Pi, E)
     if max(ev) < 0:

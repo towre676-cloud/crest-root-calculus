@@ -35,8 +35,8 @@ for name, f in CASES.items():
     o = first_quotient(f, 6)
     o["f"] = f
     out["curves"][name] = o
-    print(name, "minimal degree", o["minimal_degree"], "spectrum", o["spectrum_through_X"],
-          "maps verified", [m["verified"] for m in o["maps"]], flush=True)
+    print(name, "minimal degree", o.get("minimal_degree"), "spectrum", o.get("spectrum_through_X"),
+          "maps verified", [m["verified"] for m in o.get("maps", [])], flush=True)
 expected = [(2, 2), (4, 2), (4, 4), (4, 4)]
 out["all_verified"] = out["C_2_spectrum_through_150"]["equal"] and all(
     o.get("minimal_degree") == degree and len(o.get("maps", [])) == number

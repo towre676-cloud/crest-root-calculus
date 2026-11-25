@@ -58,7 +58,7 @@ The exact replay enumerates all fifteen pairings of the six branch points. The t
 
 ## What the computations certify
 
-The polynomial identity certifies the recognized maps and their degrees. Exact Richelot transport establishes the complete spectra for these specific neighbours. For other inputs, the real period matrices, endomorphism and Néron–Severi candidates, and lattice membership tests are still computed at 70 digits. Hermite's bound is rigorous for the exact positive form. The numerical search does not by itself supply a generally certified absence test or multiplicity count. General equation-only certification would require certified period enclosures and a way to certify the lattice identifications, or independent algebraic bounds. Costa, Mascot, Sijsling and Voight already give rigorous endomorphism-ring algorithms, including numerical proposals followed by algebraic certification. The specific result here is the four-class finite-torsion transport law and its exact spectrum for this Richelot family. Literature priority for the law remains open. [Richelot construction](https://www.math.uzh.ch/sepp/magma-2.20.4-cr/html/text1441.htm) · [Costa, Mascot, Sijsling and Voight](https://doi.org/10.1090/mcom/3373)
+The polynomial identity certifies the recognized maps and their degrees. Exact Richelot transport establishes the complete spectra for these specific neighbours. For other inputs, the real period matrices, endomorphism and Néron–Severi candidates, and final lattice membership checks use 70-digit arithmetic. The preliminary vector filter uses double precision. Hermite's bound is rigorous for the exact positive form. The numerical search does not by itself supply a generally certified absence test or multiplicity count. General equation-only certification would require certified period enclosures and a way to certify the lattice identifications, or independent algebraic bounds. Costa, Mascot, Sijsling and Voight already give rigorous endomorphism-ring algorithms, including numerical proposals followed by algebraic certification. Bruin and Doerksen classify four-torsion gluings and develop the Richelot constructions of split Jacobians. The specific result here is the four-class finite-torsion transport law and its exact spectrum for this Richelot family. Literature priority for the law remains open. [Richelot construction](https://www.math.uzh.ch/sepp/magma-2.20.4-cr/html/text1441.htm) · [Costa, Mascot, Sijsling and Voight](https://doi.org/10.1090/mcom/3373) · [Bruin and Doerksen](https://doi.org/10.4153/CJM-2011-039-3)
 
 ## Replay
 
@@ -66,7 +66,7 @@ The polynomial identity certifies the recognized maps and their degrees. Exact R
 pip install sympy
 python -B verify_exact.py
 
-pip install cypari2 mpmath numpy
+pip install sympy cypari2 mpmath numpy
 python -B replay.py --output period-replay.json
 ~~~
 
