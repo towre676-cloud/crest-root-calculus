@@ -16,6 +16,8 @@ The cyclic search allows mixed branch multiplicities in the source, arbitrary su
 
 For a polarized variety isogenous to a non-CM elliptic self-product, the finite isogeny kernel corrects the polarization degree in each primitive lattice direction. Two explicit genus-two families share the same rational polarized isogeny data over a common field and have different complete spectra and counting constants. One contains the repeated-factor curve with branch pairs at ±1, ±2 and ±4. [Proof and exact replay](elliptic-quotients/isotypic-gluing/README.md)
 
+The equation-only bielliptic reconstruction recovers the finite gluing exactly from the branch orbit labels and an isogeny on the elliptic factors. Its degree law and counting constant include even and composite isogeny degrees. [Theorem and standalone replay](elliptic-quotients/bielliptic-reconstruction/README.md)
+
 ## Finite map reconstruction and solver comparisons
 
 The reconstruction engine now computes every nonconstant rational morphism between two supplied smooth hyperelliptic curves when the target has genus at least two. It supports both odd- and even-degree equations and derives the complete degree list from Riemann–Hurwitz. A finite coefficient algebra supplies the reconstruction bounds. The output includes exact map formulas, local lifting records and checks against the original equations. An optional Frobenius test can exclude rational maps in every degree before elimination. [The theorem, implementation and examples](bounded-correspondences/README.md)
