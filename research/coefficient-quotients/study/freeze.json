@@ -1,0 +1,20 @@
+{
+  "discovery_commit": "55054c12bc561ac083dc1f44de2023c9e0db69db",
+  "sha256": {
+    "research/coefficient-quotients/discover.py": "c4521225b6ee4f22a8f5c0126beb6e3e48637e059a448eb90248965bc4d2a98c",
+    "research/coefficient-quotients/baselines.py": "38159e809a9386c7f8ecdc3e4d54bd3be86284c23bf6c67f58fc2d9a9d8119c1",
+    "research/coefficient-quotients/decompose.gp": "9c81dc46e2ec2ba629d4f8510f31e8905283a727813f3d8d9ae22b3a7f916b91",
+    "research/coefficient-quotients/panel.py": "54dbf875f8496c6fd521bf04279b43dfab9f3c51573744d2e174a0dd1caf2256",
+    "research/coefficient-quotients/benchmark.py": "e77ed1ce8febc11d844c8f747d606ed2e6fc768f15ef80d92bf8e74e1de2cf0c",
+    "research/coefficient-quotients/freeze.py": "94c9a643059ea9b37beafad08cfd7aec0fc8e9b2f8b95e4e193eb0075e59c152",
+    "research/bounded-correspondences/finite.py": "71a8dc5d7b61b50aa3c84e232a19e63e1d5696e6345658e2cc574919d5cdc40f",
+    "research/bounded-correspondences/composition.py": "df08f6b5b57d73066d5626df4b5e0a4c46ae3ca79168ea7f7370c7ef5b8035f2",
+    "research/bounded-correspondences/maps.py": "c9b71976ae05dbf2d541e62864ebd20ff95273201cd3cc220183e6e9440433e2",
+    "research/solver-comparison/map_worker.py": "01c136027d090f8196d4abde83a6485d8685605268952ae35e7b86caaa4c9daa",
+    "research/solver-comparison/worker.py": "16b6fb907f7135511d5d69300619237079e3d237f957cef6ca76c658282d974a",
+    "research/periodic-spectra/spectral_curve.py": "11b8a90b46e679f816db294f495541268b6da1565caf5cad0de83f3960a0a39b"
+  },
+  "created_utc": "2026-11-25T01:48:27.110348+00:00",
+  "panel_seed": 1146642577771410726,
+  "schedule_seed": 11268775932186753651
+}

@@ -1,0 +1,364 @@
+{
+  "attempts": 768,
+  "constant_inputs": 36,
+  "nonconstant_inputs": 20,
+  "raw_cubic_cross_checks": 4,
+  "algebra": {
+    "constant_degree_checks": 123,
+    "nonconstant_strata": 34,
+    "nonconstant_maps_all_strata": 10,
+    "constant_maps": 29
+  },
+  "by_method": {
+    "corrected-dense": {
+      "completed": 108
+    },
+    "crest": {
+      "completed": 108
+    },
+    "crest-no-sieve": {
+      "completed": 108
+    },
+    "derivative": {
+      "completed": 60
+    },
+    "gp": {
+      "completed": 108
+    },
+    "singular": {
+      "completed": 108
+    },
+    "stock-sympy": {
+      "completed": 69,
+      "wrong_answer": 39
+    },
+    "without-derivative": {
+      "completed": 36,
+      "timeout": 24
+    }
+  },
+  "constant_comparisons": {
+    "crest-no-sieve": {
+      "cpu": {
+        "paired_inputs": 36,
+        "first_wins": 16,
+        "second_wins": 20,
+        "median_ratio": 0.977104
+      },
+      "wall": {
+        "paired_inputs": 36,
+        "first_wins": 16,
+        "second_wins": 20,
+        "median_ratio": 0.979133
+      },
+      "solver": {
+        "paired_inputs": 36,
+        "first_wins": 20,
+        "second_wins": 16,
+        "median_ratio": 1.016847
+      }
+    },
+    "corrected-dense": {
+      "cpu": {
+        "paired_inputs": 36,
+        "first_wins": 17,
+        "second_wins": 19,
+        "median_ratio": 0.994103
+      },
+      "wall": {
+        "paired_inputs": 36,
+        "first_wins": 17,
+        "second_wins": 19,
+        "median_ratio": 0.99411
+      },
+      "solver": {
+        "paired_inputs": 36,
+        "first_wins": 4,
+        "second_wins": 32,
+        "median_ratio": 0.77319
+      }
+    },
+    "singular": {
+      "cpu": {
+        "paired_inputs": 36,
+        "first_wins": 24,
+        "second_wins": 12,
+        "median_ratio": 1.051114
+      },
+      "wall": {
+        "paired_inputs": 36,
+        "first_wins": 24,
+        "second_wins": 12,
+        "median_ratio": 1.05101
+      },
+      "solver": {
+        "paired_inputs": 36,
+        "first_wins": 36,
+        "second_wins": 0,
+        "median_ratio": 4.095785
+      }
+    },
+    "gp": {
+      "cpu": {
+        "paired_inputs": 36,
+        "first_wins": 28,
+        "second_wins": 8,
+        "median_ratio": 1.072769
+      },
+      "wall": {
+        "paired_inputs": 36,
+        "first_wins": 26,
+        "second_wins": 10,
+        "median_ratio": 1.071548
+      },
+      "solver": {
+        "paired_inputs": 36,
+        "first_wins": 33,
+        "second_wins": 3,
+        "median_ratio": 4.462125
+      }
+    },
+    "stock-sympy": {
+      "cpu": {
+        "paired_inputs": 23,
+        "first_wins": 11,
+        "second_wins": 12,
+        "median_ratio": 0.998397
+      },
+      "wall": {
+        "paired_inputs": 23,
+        "first_wins": 11,
+        "second_wins": 12,
+        "median_ratio": 0.998653
+      },
+      "solver": {
+        "paired_inputs": 23,
+        "first_wins": 4,
+        "second_wins": 19,
+        "median_ratio": 0.88219
+      }
+    }
+  },
+  "cohorts": {
+    "algebraic-cover": {
+      "cases": 10,
+      "with_quotient": 10,
+      "quotients": 14,
+      "solver_comparisons": {
+        "corrected-dense": {
+          "paired_inputs": 10,
+          "first_wins": 0,
+          "second_wins": 10,
+          "median_ratio": 0.713542
+        },
+        "singular": {
+          "paired_inputs": 10,
+          "first_wins": 10,
+          "second_wins": 0,
+          "median_ratio": 3.814234
+        },
+        "gp": {
+          "paired_inputs": 10,
+          "first_wins": 7,
+          "second_wins": 3,
+          "median_ratio": 2.825867
+        }
+      }
+    },
+    "genus-zero-control": {
+      "cases": 1,
+      "with_quotient": 0,
+      "quotients": 0,
+      "solver_comparisons": {
+        "corrected-dense": {
+          "paired_inputs": 1,
+          "first_wins": 1,
+          "second_wins": 0,
+          "median_ratio": 1.040913
+        },
+        "singular": {
+          "paired_inputs": 1,
+          "first_wins": 1,
+          "second_wins": 0,
+          "median_ratio": 11.554681
+        },
+        "gp": {
+          "paired_inputs": 1,
+          "first_wins": 1,
+          "second_wins": 0,
+          "median_ratio": 21.928403
+        }
+      }
+    },
+    "inflated-cover": {
+      "cases": 5,
+      "with_quotient": 5,
+      "quotients": 5,
+      "solver_comparisons": {
+        "corrected-dense": {
+          "paired_inputs": 5,
+          "first_wins": 0,
+          "second_wins": 5,
+          "median_ratio": 0.783261
+        },
+        "singular": {
+          "paired_inputs": 5,
+          "first_wins": 5,
+          "second_wins": 0,
+          "median_ratio": 2.663535
+        },
+        "gp": {
+          "paired_inputs": 5,
+          "first_wins": 5,
+          "second_wins": 0,
+          "median_ratio": 1.761047
+        }
+      }
+    },
+    "jacobi-spring": {
+      "cases": 6,
+      "with_quotient": 3,
+      "quotients": 3,
+      "solver_comparisons": {
+        "corrected-dense": {
+          "paired_inputs": 6,
+          "first_wins": 2,
+          "second_wins": 4,
+          "median_ratio": 0.855414
+        },
+        "singular": {
+          "paired_inputs": 6,
+          "first_wins": 6,
+          "second_wins": 0,
+          "median_ratio": 5.688553
+        },
+        "gp": {
+          "paired_inputs": 6,
+          "first_wins": 6,
+          "second_wins": 0,
+          "median_ratio": 6.389458
+        }
+      }
+    },
+    "multiple-degrees": {
+      "cases": 2,
+      "with_quotient": 2,
+      "quotients": 6,
+      "solver_comparisons": {
+        "corrected-dense": {
+          "paired_inputs": 2,
+          "first_wins": 0,
+          "second_wins": 2,
+          "median_ratio": 0.543965
+        },
+        "singular": {
+          "paired_inputs": 2,
+          "first_wins": 2,
+          "second_wins": 0,
+          "median_ratio": 6.017588
+        },
+        "gp": {
+          "paired_inputs": 2,
+          "first_wins": 2,
+          "second_wins": 0,
+          "median_ratio": 2.933262
+        }
+      }
+    },
+    "one-coefficient-perturbation": {
+      "cases": 10,
+      "with_quotient": 0,
+      "quotients": 0,
+      "solver_comparisons": {
+        "corrected-dense": {
+          "paired_inputs": 10,
+          "first_wins": 0,
+          "second_wins": 10,
+          "median_ratio": 0.871872
+        },
+        "singular": {
+          "paired_inputs": 10,
+          "first_wins": 10,
+          "second_wins": 0,
+          "median_ratio": 2.552624
+        },
+        "gp": {
+          "paired_inputs": 10,
+          "first_wins": 10,
+          "second_wins": 0,
+          "median_ratio": 5.398498
+        }
+      }
+    },
+    "prime-degree-control": {
+      "cases": 1,
+      "with_quotient": 0,
+      "quotients": 0,
+      "solver_comparisons": {
+        "corrected-dense": {
+          "paired_inputs": 1,
+          "first_wins": 1,
+          "second_wins": 0,
+          "median_ratio": 1.039179
+        },
+        "singular": {
+          "paired_inputs": 1,
+          "first_wins": 1,
+          "second_wins": 0,
+          "median_ratio": 10.597015
+        },
+        "gp": {
+          "paired_inputs": 1,
+          "first_wins": 1,
+          "second_wins": 0,
+          "median_ratio": 30.284515
+        }
+      }
+    },
+    "stock-regression-control": {
+      "cases": 1,
+      "with_quotient": 1,
+      "quotients": 1,
+      "solver_comparisons": {
+        "corrected-dense": {
+          "paired_inputs": 1,
+          "first_wins": 0,
+          "second_wins": 1,
+          "median_ratio": 0.433444
+        },
+        "singular": {
+          "paired_inputs": 1,
+          "first_wins": 1,
+          "second_wins": 0,
+          "median_ratio": 3.866633
+        },
+        "gp": {
+          "paired_inputs": 1,
+          "first_wins": 1,
+          "second_wins": 0,
+          "median_ratio": 8.05014
+        }
+      }
+    }
+  },
+  "nonconstant_comparisons": {
+    "cpu": {
+      "paired_inputs": 12,
+      "first_wins": 8,
+      "second_wins": 4,
+      "median_ratio": 1.060616
+    },
+    "wall": {
+      "paired_inputs": 12,
+      "first_wins": 8,
+      "second_wins": 4,
+      "median_ratio": 1.06239
+    },
+    "solver": {
+      "paired_inputs": 12,
+      "first_wins": 10,
+      "second_wins": 2,
+      "median_ratio": 1.802409
+    }
+  }
+}
