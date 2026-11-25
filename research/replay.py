@@ -1,4 +1,4 @@
-"""Replay the 23 November research release from either a checkout or the ZIP."""
+"""Replay the research checks from a checkout or a current research packet."""
 import argparse
 import json
 import os
@@ -21,7 +21,8 @@ def run(script, receipt=None, args=()):
         expected = json.loads((script.parent/receipt).read_text(encoding="utf-8"))
         if json.loads(result.stdout) != expected:
             raise ArithmeticError(f"The receipt for {script.parent.name} differs")
-    print(f"Verified {script.parent.name}/{script.name}", flush=True)
+    command = " ".join((f"{script.parent.name}/{script.name}", *args))
+    print(f"Verified {command}", flush=True)
 
 
 def main():
@@ -30,12 +31,21 @@ def main():
                         help="Number of processes for independent local polynomial checks")
     parser.add_argument("--recount", action="store_true",
                         help="Recompute every stored higher-support matrix from the curve equations")
+    parser.add_argument("--quotients-only", action="store_true",
+                        help="Run the three checks for coefficient-only quotient discovery")
     options=parser.parse_args()
     if options.workers<1:
         parser.error("Choose at least one worker")
     local_args=["--workers",str(options.workers)]
     if options.recount:
         local_args.append("--recount")
+    quotients = HERE / "coefficient-quotients"
+    run(quotients / "offline_replay.py", args=["frozen"])
+    run(quotients / "offline_replay.py", args=["native"])
+    run(quotients / "verify_double_covers.py")
+    if options.quotients_only:
+        print("All 3 coefficient-only verification groups passed.")
+        return
     run(HERE.parent / "applications/atlas/original/replay.py")
     # The blind spectrum replay also recomputes both individual bielliptic proofs.
     run(ELLIPTIC / "blind-degree-spectra/verify.py", "receipt.json")
@@ -69,7 +79,7 @@ def main():
     run(HERE / "local-pattern-obstruction/verify.py", "receipt.json")
     run(HERE / "solver-comparison/verify.py")
     run(HERE / "periodic-spectra/audit_native.py")
-    print("All 32 research verification groups passed.")
+    print("All 35 research verification groups passed.")
 
 
 if __name__ == "__main__":

@@ -8,7 +8,7 @@
 
 **Tillamook crossing, version 3.** One 3D assembly now drives structural modes, continuous deployment, full base reactions, the actual Tillamook map, measurement evidence and operating-state guards. Integration exposed an 8.142 m walking level, a lower-only center-joint mechanism, and severe access-space limits: only two of 216 mapped layouts avoid the direct intersections tested, with neither approved. The offline workbench shows the same design across all views. [Read v3](research/deployable-crossing/v3/README.md) · [Download the complete offline packet](https://github.com/towre676-cloud/crest-root-calculus/raw/refs/heads/main/downloads/crest-root-tillamook-crossing-v3-2026-11-23.zip) · [Earlier v2 study](research/deployable-crossing/v2/README.md) · [Original feasibility study](research/deployable-crossing/README.md)
 
-**Discover a hidden quotient from one equation.** The coefficient-only search finds every rational polynomial quotient within its stated scope, including maps with a nonconstant vertical multiplier. [Read the theorem, run the solver and inspect the comparisons](research/coefficient-quotients/README.md)
+**Discover a hidden quotient from one equation.** Give the solver a hyperelliptic equation and it can find simpler curves and the exact maps to them. It finds every rational degree-two quotient to positive genus, including when two points lie above target infinity. It also exhausts polynomial quotient maps in the stated classes. [Run the examples, read the proofs and inspect the comparisons](research/coefficient-quotients/README.md)
 
 ## Seven applications you can run
 
@@ -331,17 +331,28 @@ The integrated research archive is unusually large because it keeps historical w
 
 Given two smooth hyperelliptic equations with a target of genus at least two, the new program derives a finite degree bound and reconstructs every nonconstant rational map. Both odd- and even-degree equations are supported. Its exact coefficient identities and local lifting records can be replayed. The executed examples include a curve with no real points and a genus-three double cover with exactly eight geometric maps and two rational maps. A second theorem gives a complete search for elliptic maps with the specified singleton infinity fibre. [The map theorem and programs](research/bounded-correspondences/README.md)
 
-The new solver study compares complete answers under matching conditions across marked quartics, polynomial covers and local zeta functions. It includes native Singular, SymPy's functional decomposition and PARI/GP, with raw timings and time limits. [Measured comparisons](research/solver-comparison/README.md) · [Why complete point counts can still miss rational existence](research/local-pattern-obstruction/README.md)
+If only the source is supplied, the coefficient-only solver exhausts all degree-two positive-genus quotients of a hyperelliptic curve over the rationals. For higher degrees it exhausts the constant-multiplier polynomial class, and the odd-degree singleton-infinity class with a nonconstant multiplier. Each result includes explicit map formulas or a certificate of exclusion. [Coefficient-only proofs and programs](research/coefficient-quotients/README.md)
+
+For nonconstant multipliers, the derivative reduction finished 20 of 20 benchmark strata and the stronger native Singular route finished 18. On those 18 paired inputs the median ratios in Crest–Root's favor were 4.34× in solver CPU and 1.17× in fresh-process wall time. In the constant class, corrected classical decomposition won 32 of 36 solver-CPU comparisons. [Matched benchmarks](research/coefficient-quotients/README.md#observed-results) · [Earlier solver comparisons](research/solver-comparison/README.md)
+
+From a current checkout, run the three quotient checks or the full set of 35 research checks:
+
+~~~sh
+python -B research/replay.py --quotients-only
+python -B research/replay.py --workers 4
+~~~
+
+Use Python 3.11 or newer with NumPy and SymPy. The repository's current-source ZIP includes the new solvers and receipts. The dated research packet documents the earlier release. [Current source ZIP](https://github.com/towre676-cloud/crest-root-calculus/archive/refs/heads/main.zip) · [23 November research packet](downloads/crest-root-open-research-2026-11-23.zip)
 
 ## Periodic materials: a measured challenge against PARI
 
 The new periodic-spectra module computes the entire exact characteristic polynomial of an integer spring ring, discovers its actual repeated cell, and verifies every coefficient independently. Across 20 fixed inputs, Crest beats PARI/GP's general matrix route on all 20, with a median CPU ratio of 31.9 in Crest's favor. The stronger control changes the verdict: compiled PARI using the same periodic reduction wins 19 of 20 inputs, including all 12 periodic spring systems. All 420 scheduled rows and 1,331 cold/batch observations are preserved, with no incorrect outputs or timeouts. [Proof, programs and candid comparison](research/periodic-spectra/README.md)
 
-The spectral-curve companion proves how repeating a cell can produce a degree-30 plane equation whose smooth normalization still has genus two. This is a classical identity, not a new higher-degree quotient theorem. The next challenge asks whether the project can discover and certify useful hidden quotient maps from expanded coefficients, with corrected classical decomposition and native PARI as baselines. The application assessment also sets out an exact reaction-diffusion challenge. [Next challenge and application priorities](research/periodic-spectra/opportunities.md) · [Focused download](downloads/crest-root-periodic-spectra-2026-11-23.zip) · [All research](downloads/crest-root-open-research-2026-11-23.zip)
+The spectral-curve companion proves how repeating a cell can produce a degree-30 plane equation whose smooth normalization still has genus two. The identity gives a degree-one change of model. In the follow-up coefficient-only study, three of six Jacobi examples also yield positive-genus degree-two quotients. The application assessment sets out an exact reaction-diffusion challenge. [Application assessment](research/periodic-spectra/opportunities.md) · [Focused download](downloads/crest-root-periodic-spectra-2026-11-23.zip) · [All research](downloads/crest-root-open-research-2026-11-23.zip)
 
 ## The 57 research questions
 
-The latest work settles the marked chart-I cofactor problem and delivers a Riemann–Roch engine for curves without a rational point. A genus-two solver reconstructs explicit correspondences from pairs of equations. On the genus-37 example from §61 the proven Mordell–Weil rank is now between 45 and 64, with four of the genus-two sector ranks determined exactly. The register tracks 10 settled items, 18 partial items, 27 open items and two dormant projects. [Latest results](research/README.md) · [Full status table](research/backlog-2026-11-23.md)
+The 23 November register records the completed marked chart-I cofactor problem and a Riemann–Roch engine for curves without a rational point. A genus-two solver reconstructs explicit correspondences from pairs of equations. On the genus-37 example from §61 the proven Mordell–Weil rank is now between 45 and 64, with four of the genus-two sector ranks determined exactly. Its dated snapshot tracks 10 settled items, 18 partial items, 27 open items and two dormant projects. The coefficient-only work advances the source-to-target reconstruction questions within the scopes above. [Latest results](research/README.md) · [Full status table](research/backlog-2026-11-23.md)
 
 
 Two new quartic equations now have complete answers for their elliptic quotients. One has a unique primitive map of degree four and no involutions. The other has a double cover and two primitive degree-four maps. Both results extend to infinite families. In the cubic tower, the genus-10,207 seventh-stage Jacobian has 255 geometrically simple, pairwise nonisogenous factors. At stage ten, 1,293 of the 2,047 displayed factors are individually certified geometrically simple and pairwise nonisogenous. A separate calculation at 193 raises the stage-ten lower bound to 1,599 distinct geometric simple classes. The archive contains the equations and verification programs for both problems. [Research results and replay](research/README.md) · [57-item register](research/backlog-2026-11-23.md) · [Verified research packet](downloads/crest-root-open-research-2026-11-23.zip)
@@ -350,7 +361,7 @@ Two new quartic equations now have complete answers for their elliptic quotients
 
 The Part XXX work provides a **theoretical terminating decision procedure for geometric degree-three quotient classes of smooth plane quartics over the rationals**, together with concrete certificates for worked examples. However, the finite fields and lifting precision required by the general procedure can become impractically large. A prior twelve-chart elimination procedure also exceeded 1,600 seconds on representative inputs. The fast examples above are not a promise of fast performance on arbitrary curves.
 
-There is also an important distinction between a genus-one quotient **defined over** the rationals and one that has a **rational point**. The latter question is not automatically resolved by discovering its quotient class.
+A genus-one quotient defined over the rationals can still lack a rational point. The solver returns its equation and cover, so finding a rational origin remains a separate problem. Source-only discovery for higher degrees with general infinity fibres remains open. An exact example also shows that all good-prime point counts can agree while the number of rational solutions differs. [Proof of the point-count obstruction](research/local-pattern-obstruction/README.md)
 
 ## How can I help?
 
