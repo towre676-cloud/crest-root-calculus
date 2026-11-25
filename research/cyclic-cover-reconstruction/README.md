@@ -24,13 +24,14 @@ The input coefficient list is in ascending powers. Use **--target-exponent**, **
 | Genus-six cubic-cover fixture | Degree 8 recovered with one parameter in place of three, and degrees 5 and 11 excluded in the weight-one chart |
 | Saturated recovery | The zero-parameter route recovers exact maps for exponents 3, 4, 5, 7, 9 and 11 |
 | Mixed branch multiplicities | Exact maps at exponents 3, 4, 5 and 7, plus a control for repeated target factors |
-| Character and exponent changes | Both Picard maps recovered from the other vertical character, and a sextic cyclic source yields maps of total degrees 2 and 3 through cubic and quadratic subfields |
+| Character and exponent changes | Both Picard maps recovered from the other vertical character, and an exponent-six source yields maps of total degrees 2 and 3 through cubic and quadratic subfields |
+| Automatic equivariance | A genus-seven cubic cover has one degree-two quotient in the stated singleton-infinity target class at exponent 3. The pole bound covers the entire degree-two search. |
 
 The verifier uses independent leading-coefficient elimination on the Picard positive and negative cases and a mixed exponent-four case. It also substitutes the exported maps in the original function-field equations, checks coverage and rejects a missing stratum. [Independent replay](verify.py)
 
 ## Measured against the same native elimination kernel
 
-The frozen study gives each method the same source coefficients, exponent and test stratum. It includes 20 generated strata across seven exponents, with positive saturated, nonsaturated and mixed controls and one-coefficient perturbations. The full study preserves 120 fresh-process observations with a four-second limit, two repetitions per input-method pair, and matching exact output checks. All routes use Singular 4.4.1 for the final nonempty multivariate incidence. The derivative route simplifies its preliminary derivative equations in SymPy and decides some strata directly. Solver CPU includes constructing the incidence, eliminating it, reconstructing the result and checking the maps.
+The frozen study gives each method the same source coefficients, exponent and test stratum. It includes 20 generated strata across six exponents, with positive saturated, nonsaturated and mixed controls and one-coefficient perturbations. The full study preserves 120 fresh-process observations with a four-second limit, two repetitions per input-method pair, and matching exact output checks. All routes use Singular 4.4.1 for the final nonempty multivariate incidence. The derivative route simplifies its preliminary derivative equations in SymPy and decides some strata directly. Solver CPU includes constructing the incidence, eliminating it, reconstructing the result and checking the maps.
 
 | Route | Correct in both runs | Median solver CPU ratio over derivative route | Median fresh-process wall ratio |
 |---|---:|---:|---:|
@@ -38,7 +39,7 @@ The frozen study gives each method the same source coefficients, exponent and te
 | Formal-root elimination of $U,G$, without derivative reduction | 10/20 | 1.84 | 1.11 |
 | Eliminate the original identity with all of $U,V,G$ unknown | 10/20 | 1.39 | 1.16 |
 
-Each baseline ratio uses its ten jointly completed inputs. The derivative route won eight of ten paired solver-CPU comparisons against the formal-root baseline and seven against the raw baseline. All 80 completed observations agreed with the exact reference. The other 40 timed out. This is a fixed-stratum benchmark on one generated panel and one host. [Frozen inputs](study/inputs.json) · [Provenance](study/provenance.json) · [Protocol](study/protocol.json) · [All measurements and executable fingerprints](study/measurements.json)
+Each baseline ratio uses its ten jointly completed inputs. The derivative route won eight of ten paired solver-CPU comparisons against the formal-root baseline and seven against the raw baseline. All 80 completed observations agreed with the exact reference. Each baseline reached the time limit on four saturated fixtures, three nonsaturated fixtures and their three perturbations. This is a fixed-stratum benchmark on one generated panel and one host. [Frozen inputs](study/inputs.json) · [Provenance](study/provenance.json) · [Protocol](study/protocol.json) · [All measurements and executable fingerprints](study/measurements.json)
 
 The stored benchmark audit runs without Singular. To rerun timing, use a fresh study directory with the frozen inputs and protocol and run **study.py run --directory** with the directory path. The timing runner requires Linux and Singular. Run **study.py audit** to recompute the mathematical answers and check the archived observations.
 
