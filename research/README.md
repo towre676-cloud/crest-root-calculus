@@ -18,6 +18,10 @@ For a polarized variety isogenous to a non-CM elliptic self-product, the finite 
 
 The equation-only bielliptic reconstruction recovers the finite gluing exactly from the branch orbit labels and an isogeny on the elliptic factors. Its degree law and counting constant include even and composite isogeny degrees. [Theorem and standalone replay](elliptic-quotients/bielliptic-reconstruction/README.md)
 
+### The first quotient without an involution
+
+Period reconstruction proposes elliptic lattice directions directly from a genus-two equation. Exact substitution certifies both coordinates of each recognized map. For the two repeated-factor Richelot neighbours without elliptic involutions, a separate finite-torsion proof gives the complete geometric degree spectrum and certifies the degree-four minimum. [Method, proof and replay](elliptic-quotients/period-reconstruction/README.md)
+
 ## Finite map reconstruction and solver comparisons
 
 The reconstruction engine now computes every nonconstant rational morphism between two supplied smooth hyperelliptic curves when the target has genus at least two. It supports both odd- and even-degree equations and derives the complete degree list from Riemann–Hurwitz. A finite coefficient algebra supplies the reconstruction bounds. The output includes exact map formulas, local lifting records and checks against the original equations. An optional Frobenius test can exclude rational maps in every degree before elimination. [The theorem, implementation and examples](bounded-correspondences/README.md)
