@@ -15,11 +15,12 @@ From the repository root with Python 3.11+ and SymPy 1.14:
 ~~~sh
 python -B research/coefficient-quotients/discover.py research/coefficient-quotients/example.json --nonconstant
 python -B research/coefficient-quotients/verify.py
+python -B research/coefficient-quotients/native_control.py --verify
 ~~~
 
 The input is a JSON list of integer or rational-string coefficients in ascending order. The example is the degree-nine branch polynomial from the proof. Its genus-four curve has a degree-five map to an elliptic curve, with $V$ cubic and $W$ linear. The output includes the second admissible stratum and its exact exclusion. For an inflated input $y_P^2=P$, the original vertical coordinate in the map is $y_P V/A$.
 
-Each variable-multiplier stratum includes its geometric support count and its complete rational list. The verifier replays the rational coefficient algebra, checks each identity in the original equations, and checks four cubic strata by separate leading-coefficient elimination. It independently constructs all six Jacobi examples from full transfer products. SymPy is the only additional dependency for replaying the stored mathematical results.
+Each variable-multiplier stratum includes its geometric support count and its complete rational list. The verifier replays the rational coefficient algebra, checks each identity in the original equations, and checks four cubic strata by separate leading-coefficient elimination. It independently constructs all six Jacobi examples from full transfer products and checks an inflated genus-five source with an unknown genus-two target. SymPy is the only additional dependency for replaying the stored mathematical results.
 
 ## Frozen comparison
 
@@ -55,4 +56,22 @@ The solver-phase ratios include normalization, quotient discovery and exact outp
 
 The derivative solver completes all **20/20** supplied nonconstant strata within the four-second fresh-process limit. The ablation, which uses the same formal-root and finite-algebra engines while omitting the derivative restriction and complementary parametrization, completes **12/20**. All four quintic cover fixtures and four of their perturbations exhaust its budget in every repetition. On the 12 jointly completed inputs the derivative solver wins 10 and has a **1.80× median solver-phase CPU advantage**. The median fresh-process wall ratio is **1.06×**. The complete nonconstant replay additionally certifies every other admissible stratum for these sources and recovers ten rational quotient maps across the 20 inputs.
 
-Across **768** attempts there were **705** correct completions, **39** stock-SymPy wrong answers and **24** ablation timeouts. The derivative comparison is an ablation of the implementation on a designated nonconstant class. It shows where the new coefficient reduction matters and leaves a native external comparison for that class open. [Summary by cohort and metric](study/summary.json)
+Across **768** attempts there were **705** correct completions, **39** stock-SymPy wrong answers and **24** ablation timeouts. The derivative comparison is an ablation of the implementation on a designated nonconstant class. It measures the effect of the new coefficient reduction within the implementation. [Summary by cohort and metric](study/summary.json)
+
+### Native control for nonconstant multipliers
+
+A separate post-study run compares the derivative algorithm with two Singular 4.4.1 routes on the same 20 frozen strata. The first feeds Singular the formal-root incidence in the coefficients of $V$, without the derivative reduction. The second feeds it the original coefficient identity with all of $U,V,G$ unknown. Both use Singular's exact Gröbner routine and the same local rational-point extraction and output checks. All three routes were rerun contemporaneously in two fresh processes per stratum with the same four-second limit. The comparison reuses the first holdout, so it is a control for the use of a native solver on those inputs.
+
+| Route | Completed inputs | Derivative wins in paired solver CPU | Median route / derivative solver CPU | Median route / derivative process wall |
+|---|---:|---:|---:|---:|
+| Derivative reduction | 20/20 | — | 1.00 | 1.00 |
+| Singular after the formal-root reduction | 18/20 | 15/18 | 4.34 | 1.17 |
+| Singular on the original coefficient identity | 12/20 | 7/12 | 1.23 | 1.13 |
+
+All 100 completed native-control observations matched the verified map lists and geometric support counts. The other 20 reached the limit. The read-only replay verifies the archived schedule and answers without requiring Singular. To time the control again on Linux, use the following command with a fresh receipt path.
+
+~~~sh
+python -B research/coefficient-quotients/native_control.py --run --receipt /path/to/new-receipt.json
+~~~
+
+[Full native-control receipt](study/native-control.json)

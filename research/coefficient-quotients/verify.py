@@ -260,12 +260,34 @@ def audit(directory):
                                         for m in ("cpu", "wall", "solver")}}
 
 
+def higher_genus_control():
+    """Replay the full public search on an inflated quintic target fixture."""
+    u = sp.Poly(X**3-3*X, X, domain=sp.QQ)
+    v = sp.Poly(X**2-1, X, domain=sp.QQ)
+    g = sp.Poly(-sp.Rational(7,5)*(X**2-4)*(X**3+X+3), X, domain=sp.QQ)
+    f = g.compose(u).exquo(v**2)
+    inflator = sp.Poly(X**2+X+1, X, domain=sp.QQ)
+    result = discover(coefficients(f*inflator**2), nonconstant=True)
+    check(result["source"] == coefficients(f) and result["square"] == coefficients(inflator),
+          "Higher-genus control lost the nonsquare rational unit or normalization factor.")
+    expected = {(5, 3, 2): 0, (7, 3, 5): 0, (9, 3, 8): 0, (3, 5, 2): 1}
+    actual = {(row["degree"], row["target_degree"], row["vertical_degree"]): row["geometric_points"]
+              for row in result["nonconstant"]}
+    check(actual == expected, "The higher-genus target control lost a stratum.")
+    for row in result["nonconstant"]:
+        verify_variable_row(f, row)
+    target = next(row for row in result["nonconstant"] if row["target_degree"] == 5)
+    check(target["maps"] == [{"inner": coefficients(u), "outer": coefficients(g),
+                              "vertical": coefficients(v)}], "Wrong map to the genus-two target.")
+
+
 if __name__ == "__main__":
     directory = HERE / "study"
     results = audit(directory)
+    higher_genus_control()
     if "--write-summary" in sys.argv:
         write(directory / "summary.json", results)
     else:
         check(results == read(directory / "summary.json"), "The summary differs from the frozen replay.")
-    print(f"Verified {results['attempts']} scheduled attempts, {results['algebra']['nonconstant_strata']} full-search strata,"
-          f" and {results['raw_cubic_cross_checks']} raw elimination controls.")
+    print(f"Verified {results['attempts']} scheduled attempts, {results['algebra']['nonconstant_strata']} held-out strata,"
+          f" {results['raw_cubic_cross_checks']} raw elimination controls, and an inflated genus-two target.")

@@ -1,0 +1,3184 @@
+{
+  "source_hashes": {
+    "inputs.json": "357674714f733d88d8b54a0c2ff5baeaf073d00db2963b4136a28483fa43dbde",
+    "provenance.json": "37502d6ae63c11324cfb83cc8f57f4793fbb45592d5fb70b2ba3d08ae8723482",
+    "measurements.json": "f59db4b061d70e902f78512c915257b036907b6df183c8dbe17c0dc8c32b55e9",
+    "freeze.json": "deac03a9893382b345adc46ccebd67850a386486a5f214536f11db7241f4cba8",
+    "native_control.py": "cf03f2acc08898e9c21c63458b3b1d66b402111f1e33ff916f85b23cd167ad93"
+  },
+  "native_executable_sha256": "9a038df213763358a86e602d1659ab16a10add6e38ac12732bbf04d288839f68",
+  "selected_cpu": 8,
+  "limit_seconds": 4,
+  "repetitions": 2,
+  "schedule_seed": 775144,
+  "rows": [
+    {
+      "case": "q004",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "singular-original-identity",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.3623479779998888,
+      "process_cpu": 0.36125700000000016,
+      "solver_cpu": 0.075237,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "9",
+              "-6",
+              "1"
+            ],
+            "outer": [
+              "0",
+              "40",
+              "-14",
+              "1"
+            ],
+            "vertical": [
+              "3",
+              "-4",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q009",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "singular-original-identity",
+      "repetition": 1,
+      "status": "timeout",
+      "wall": 4.006076776000555,
+      "process_cpu": 0.2970440000000001
+    },
+    {
+      "case": "q051",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "derivative",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.24679368099987187,
+      "process_cpu": 0.24676499999999946,
+      "solver_cpu": 0.0023960000000000092,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q051",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "singular-formal-root",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.3052743090001968,
+      "process_cpu": 0.30527200000000043,
+      "solver_cpu": 0.05705199999999999,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q042",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "derivative",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.3382522740002969,
+      "process_cpu": 0.3381340000000006,
+      "solver_cpu": 0.08831399999999998,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q014",
+      "stratum": [
+        5,
+        3,
+        4
+      ],
+      "method": "singular-original-identity",
+      "repetition": 2,
+      "status": "timeout",
+      "wall": 4.008844138999848,
+      "process_cpu": 0.327785
+    },
+    {
+      "case": "q055",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "singular-formal-root",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 1.1731004990006113,
+      "process_cpu": 1.1727950000000003,
+      "solver_cpu": 0.8822639999999999,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "0",
+              "50",
+              "40",
+              "45/4",
+              "1"
+            ],
+            "outer": [
+              "0",
+              "4375",
+              "-737/4",
+              "1"
+            ],
+            "vertical": [
+              "0",
+              "10",
+              "7",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q035",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "singular-original-identity",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.31813690699982544,
+      "process_cpu": 0.3165369999999994,
+      "solver_cpu": 0.04961200000000002,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q051",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "singular-original-identity",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.29891434000001027,
+      "process_cpu": 0.29889100000000024,
+      "solver_cpu": 0.04612399999999997,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q008",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "singular-formal-root",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.30453217899957963,
+      "process_cpu": 0.3045070000000001,
+      "solver_cpu": 0.05068699999999998,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q017",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "singular-original-identity",
+      "repetition": 1,
+      "status": "timeout",
+      "wall": 4.010194075000072,
+      "process_cpu": 0.2955449999999997
+    },
+    {
+      "case": "q050",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "derivative",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.37356242399982875,
+      "process_cpu": 0.37247200000000014,
+      "solver_cpu": 0.059146000000000004,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q025",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "singular-formal-root",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.42419710400008626,
+      "process_cpu": 0.423146,
+      "solver_cpu": 0.070555,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "9",
+              "-6",
+              "1"
+            ],
+            "outer": [
+              "0",
+              "24",
+              "-10",
+              "1"
+            ],
+            "vertical": [
+              "3",
+              "-4",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q008",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "singular-formal-root",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.30688986600034696,
+      "process_cpu": 0.30687700000000007,
+      "solver_cpu": 0.05172799999999997,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q001",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "derivative",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.33447536699986813,
+      "process_cpu": 0.33444699999999994,
+      "solver_cpu": 0.039560999999999985,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "0",
+              "-3",
+              "1"
+            ],
+            "outer": [
+              "0",
+              "44",
+              "15",
+              "1"
+            ],
+            "vertical": [
+              "0",
+              "-2",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q027",
+      "stratum": [
+        5,
+        3,
+        4
+      ],
+      "method": "singular-original-identity",
+      "repetition": 1,
+      "status": "timeout",
+      "wall": 4.0085376209999595,
+      "process_cpu": 0.28787199999999924
+    },
+    {
+      "case": "q036",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "derivative",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.3186988900006327,
+      "process_cpu": 0.3186819999999999,
+      "solver_cpu": 0.051132999999999984,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "24",
+              "9",
+              "1"
+            ],
+            "outer": [
+              "6560",
+              "1048",
+              "56",
+              "1"
+            ],
+            "vertical": [
+              "2",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q056",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "derivative",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.36296814500019536,
+      "process_cpu": 0.361915999999999,
+      "solver_cpu": 0.10118200000000002,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "-40",
+              "-30",
+              "-10/3",
+              "15/4",
+              "1"
+            ],
+            "outer": [
+              "857692/27",
+              "-35146/9",
+              "1247/12",
+              "1"
+            ],
+            "vertical": [
+              "-4",
+              "-4",
+              "1",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q008",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "derivative",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.3020725559999846,
+      "process_cpu": 0.3020320000000005,
+      "solver_cpu": 0.04803299999999999,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q015",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "singular-formal-root",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.30615075399964553,
+      "process_cpu": 0.30614199999999947,
+      "solver_cpu": 0.05735499999999999,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "24",
+              "9",
+              "1"
+            ],
+            "outer": [
+              "6640",
+              "1052",
+              "56",
+              "1"
+            ],
+            "vertical": [
+              "2",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q009",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "singular-formal-root",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 1.03785699799937,
+      "process_cpu": 1.0377079999999985,
+      "solver_cpu": 0.7437079999999999,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q001",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "derivative",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.2991715829994064,
+      "process_cpu": 0.29917000000000193,
+      "solver_cpu": 0.03296300000000002,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "0",
+              "-3",
+              "1"
+            ],
+            "outer": [
+              "0",
+              "44",
+              "15",
+              "1"
+            ],
+            "vertical": [
+              "0",
+              "-2",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q036",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "derivative",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.34331040600045526,
+      "process_cpu": 0.3432700000000004,
+      "solver_cpu": 0.05333899999999997,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "24",
+              "9",
+              "1"
+            ],
+            "outer": [
+              "6560",
+              "1048",
+              "56",
+              "1"
+            ],
+            "vertical": [
+              "2",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q001",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "singular-formal-root",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.3388201759998992,
+      "process_cpu": 0.33776000000000117,
+      "solver_cpu": 0.07400799999999999,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "0",
+              "-3",
+              "1"
+            ],
+            "outer": [
+              "0",
+              "44",
+              "15",
+              "1"
+            ],
+            "vertical": [
+              "0",
+              "-2",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q051",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "singular-original-identity",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.3191965350006285,
+      "process_cpu": 0.3181530000000006,
+      "solver_cpu": 0.04769599999999996,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q011",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "derivative",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.3796977229994809,
+      "process_cpu": 0.3796609999999987,
+      "solver_cpu": 0.09968599999999994,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "24",
+              "-9",
+              "1"
+            ],
+            "outer": [
+              "-5328",
+              "909",
+              "-52",
+              "1"
+            ],
+            "vertical": [
+              "-4",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q005",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "singular-original-identity",
+      "repetition": 2,
+      "status": "timeout",
+      "wall": 4.003289184000096,
+      "process_cpu": 0.263358000000002
+    },
+    {
+      "case": "q009",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "derivative",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.4399614819994895,
+      "process_cpu": 0.43545999999999907,
+      "solver_cpu": 0.090584,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q015",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "singular-original-identity",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.30273444399972504,
+      "process_cpu": 0.3016780000000008,
+      "solver_cpu": 0.054987000000000036,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "24",
+              "9",
+              "1"
+            ],
+            "outer": [
+              "6640",
+              "1052",
+              "56",
+              "1"
+            ],
+            "vertical": [
+              "2",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q051",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "singular-formal-root",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.3003481590003503,
+      "process_cpu": 0.30027399999999815,
+      "solver_cpu": 0.057572999999999985,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q005",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "singular-formal-root",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.9730636750000485,
+      "process_cpu": 0.9729950000000027,
+      "solver_cpu": 0.7197450000000001,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "80",
+              "90",
+              "140/3",
+              "45/4",
+              "1"
+            ],
+            "outer": [
+              "192736/27",
+              "10991/9",
+              "749/12",
+              "1"
+            ],
+            "vertical": [
+              "8",
+              "14",
+              "7",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q003",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "singular-formal-root",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.32293006800045987,
+      "process_cpu": 0.3229439999999997,
+      "solver_cpu": 0.06205500000000003,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q014",
+      "stratum": [
+        5,
+        3,
+        4
+      ],
+      "method": "singular-original-identity",
+      "repetition": 1,
+      "status": "timeout",
+      "wall": 4.007610903999193,
+      "process_cpu": 0.24920799999999943
+    },
+    {
+      "case": "q017",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "singular-formal-root",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.8731478019999486,
+      "process_cpu": 0.8730919999999998,
+      "solver_cpu": 0.6016109999999999,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q042",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "singular-original-identity",
+      "repetition": 2,
+      "status": "timeout",
+      "wall": 4.007537350999883,
+      "process_cpu": 0.2599079999999976
+    },
+    {
+      "case": "q056",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "singular-formal-root",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 1.016739484000027,
+      "process_cpu": 1.0166479999999982,
+      "solver_cpu": 0.7618449999999999,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "-40",
+              "-30",
+              "-10/3",
+              "15/4",
+              "1"
+            ],
+            "outer": [
+              "857692/27",
+              "-35146/9",
+              "1247/12",
+              "1"
+            ],
+            "vertical": [
+              "-4",
+              "-4",
+              "1",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q055",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "derivative",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.3642766289995052,
+      "process_cpu": 0.3642740000000053,
+      "solver_cpu": 0.09597099999999997,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "0",
+              "50",
+              "40",
+              "45/4",
+              "1"
+            ],
+            "outer": [
+              "0",
+              "4375",
+              "-737/4",
+              "1"
+            ],
+            "vertical": [
+              "0",
+              "10",
+              "7",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q009",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "derivative",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.3629686080003012,
+      "process_cpu": 0.36293799999999976,
+      "solver_cpu": 0.08908499999999997,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q042",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "derivative",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.43715651399998023,
+      "process_cpu": 0.3950390000000006,
+      "solver_cpu": 0.10699899999999998,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q024",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "singular-original-identity",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.3008641450005598,
+      "process_cpu": 0.2998150000000024,
+      "solver_cpu": 0.045799000000000034,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q015",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "derivative",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.31105889300033596,
+      "process_cpu": 0.3109880000000018,
+      "solver_cpu": 0.053035,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "24",
+              "9",
+              "1"
+            ],
+            "outer": [
+              "6640",
+              "1052",
+              "56",
+              "1"
+            ],
+            "vertical": [
+              "2",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q005",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "derivative",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.3620274389995757,
+      "process_cpu": 0.3620059999999974,
+      "solver_cpu": 0.10325099999999998,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "80",
+              "90",
+              "140/3",
+              "45/4",
+              "1"
+            ],
+            "outer": [
+              "192736/27",
+              "10991/9",
+              "749/12",
+              "1"
+            ],
+            "vertical": [
+              "8",
+              "14",
+              "7",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q017",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "singular-original-identity",
+      "repetition": 2,
+      "status": "timeout",
+      "wall": 4.008352296999874,
+      "process_cpu": 0.25138899999999964
+    },
+    {
+      "case": "q001",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "singular-formal-root",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.31915454499994667,
+      "process_cpu": 0.31915200000000254,
+      "solver_cpu": 0.06600999999999999,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "0",
+              "-3",
+              "1"
+            ],
+            "outer": [
+              "0",
+              "44",
+              "15",
+              "1"
+            ],
+            "vertical": [
+              "0",
+              "-2",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q005",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "singular-formal-root",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 1.0002819789997375,
+      "process_cpu": 1.0001670000000011,
+      "solver_cpu": 0.716932,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "80",
+              "90",
+              "140/3",
+              "45/4",
+              "1"
+            ],
+            "outer": [
+              "192736/27",
+              "10991/9",
+              "749/12",
+              "1"
+            ],
+            "vertical": [
+              "8",
+              "14",
+              "7",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q024",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "singular-formal-root",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.2996355870000116,
+      "process_cpu": 0.2996039999999951,
+      "solver_cpu": 0.05035199999999998,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q003",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "singular-original-identity",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.31453299799977685,
+      "process_cpu": 0.3145190000000042,
+      "solver_cpu": 0.05283999999999994,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q017",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "singular-formal-root",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 1.039483809999183,
+      "process_cpu": 1.0383209999999998,
+      "solver_cpu": 0.634755,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q050",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "singular-original-identity",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.29239644199969916,
+      "process_cpu": 0.292384000000002,
+      "solver_cpu": 0.04446699999999998,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q035",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "singular-formal-root",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.3048699689998102,
+      "process_cpu": 0.3037920000000014,
+      "solver_cpu": 0.05828399999999995,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q025",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "singular-original-identity",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.30521659100031684,
+      "process_cpu": 0.3052039999999998,
+      "solver_cpu": 0.059421,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "9",
+              "-6",
+              "1"
+            ],
+            "outer": [
+              "0",
+              "24",
+              "-10",
+              "1"
+            ],
+            "vertical": [
+              "3",
+              "-4",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q024",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "singular-formal-root",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.292863827000474,
+      "process_cpu": 0.29281999999999897,
+      "solver_cpu": 0.04923299999999997,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q025",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "derivative",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.2901647380003851,
+      "process_cpu": 0.2901629999999997,
+      "solver_cpu": 0.03158799999999998,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "9",
+              "-6",
+              "1"
+            ],
+            "outer": [
+              "0",
+              "24",
+              "-10",
+              "1"
+            ],
+            "vertical": [
+              "3",
+              "-4",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q009",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "singular-original-identity",
+      "repetition": 2,
+      "status": "timeout",
+      "wall": 4.00844081500054,
+      "process_cpu": 0.24932200000000293
+    },
+    {
+      "case": "q003",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "derivative",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.2928919539999697,
+      "process_cpu": 0.2928789999999992,
+      "solver_cpu": 0.002910999999999997,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q001",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "singular-original-identity",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.37541377099933015,
+      "process_cpu": 0.3743550000000013,
+      "solver_cpu": 0.08282600000000001,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "0",
+              "-3",
+              "1"
+            ],
+            "outer": [
+              "0",
+              "44",
+              "15",
+              "1"
+            ],
+            "vertical": [
+              "0",
+              "-2",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q042",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "singular-formal-root",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.9886038139993616,
+      "process_cpu": 0.9885529999999996,
+      "solver_cpu": 0.6824030000000001,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q014",
+      "stratum": [
+        5,
+        3,
+        4
+      ],
+      "method": "singular-formal-root",
+      "repetition": 2,
+      "status": "timeout",
+      "wall": 4.009674974000518,
+      "process_cpu": 0.5654000000000003
+    },
+    {
+      "case": "q014",
+      "stratum": [
+        5,
+        3,
+        4
+      ],
+      "method": "singular-formal-root",
+      "repetition": 1,
+      "status": "timeout",
+      "wall": 4.0056584330004625,
+      "process_cpu": 0.4738670000000056
+    },
+    {
+      "case": "q024",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "derivative",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.3527077620001364,
+      "process_cpu": 0.34807699999999997,
+      "solver_cpu": 0.061616000000000004,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q017",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "derivative",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.5354183899999043,
+      "process_cpu": 0.5180579999999964,
+      "solver_cpu": 0.111818,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q036",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "singular-original-identity",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.4422917570000209,
+      "process_cpu": 0.41953200000000024,
+      "solver_cpu": 0.06094999999999995,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "24",
+              "9",
+              "1"
+            ],
+            "outer": [
+              "6560",
+              "1048",
+              "56",
+              "1"
+            ],
+            "vertical": [
+              "2",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q036",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "singular-formal-root",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.34057839599972795,
+      "process_cpu": 0.3405680000000011,
+      "solver_cpu": 0.055319000000000035,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "24",
+              "9",
+              "1"
+            ],
+            "outer": [
+              "6560",
+              "1048",
+              "56",
+              "1"
+            ],
+            "vertical": [
+              "2",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q055",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "singular-original-identity",
+      "repetition": 2,
+      "status": "timeout",
+      "wall": 4.01349096299964,
+      "process_cpu": 0.2557329999999993
+    },
+    {
+      "case": "q024",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "singular-original-identity",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.3951532689998203,
+      "process_cpu": 0.395149,
+      "solver_cpu": 0.054791000000000034,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q036",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "singular-formal-root",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.3436319499996898,
+      "process_cpu": 0.343553,
+      "solver_cpu": 0.06218399999999996,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "24",
+              "9",
+              "1"
+            ],
+            "outer": [
+              "6560",
+              "1048",
+              "56",
+              "1"
+            ],
+            "vertical": [
+              "2",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q008",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "derivative",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.37720804099990346,
+      "process_cpu": 0.3771890000000049,
+      "solver_cpu": 0.056310999999999944,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q055",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "singular-formal-root",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 1.1020584480002071,
+      "process_cpu": 1.1009599999999935,
+      "solver_cpu": 0.7836190000000001,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "0",
+              "50",
+              "40",
+              "45/4",
+              "1"
+            ],
+            "outer": [
+              "0",
+              "4375",
+              "-737/4",
+              "1"
+            ],
+            "vertical": [
+              "0",
+              "10",
+              "7",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q004",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "singular-original-identity",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.3186435879997589,
+      "process_cpu": 0.318642999999998,
+      "solver_cpu": 0.06189499999999998,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "9",
+              "-6",
+              "1"
+            ],
+            "outer": [
+              "0",
+              "40",
+              "-14",
+              "1"
+            ],
+            "vertical": [
+              "3",
+              "-4",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q035",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "derivative",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.2524353489998248,
+      "process_cpu": 0.2523569999999964,
+      "solver_cpu": 0.0021559999999999913,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q008",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "singular-original-identity",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.32587703299941495,
+      "process_cpu": 0.3258679999999998,
+      "solver_cpu": 0.049018000000000034,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q042",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "singular-formal-root",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.9582608009995965,
+      "process_cpu": 0.9582039999999985,
+      "solver_cpu": 0.6672689999999999,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q056",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "singular-formal-root",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 1.0658162070003527,
+      "process_cpu": 1.064672999999992,
+      "solver_cpu": 0.7906569999999999,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "-40",
+              "-30",
+              "-10/3",
+              "15/4",
+              "1"
+            ],
+            "outer": [
+              "857692/27",
+              "-35146/9",
+              "1247/12",
+              "1"
+            ],
+            "vertical": [
+              "-4",
+              "-4",
+              "1",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q009",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "singular-formal-root",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.9749063809995278,
+      "process_cpu": 0.9748380000000054,
+      "solver_cpu": 0.715236,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q027",
+      "stratum": [
+        5,
+        3,
+        4
+      ],
+      "method": "singular-formal-root",
+      "repetition": 2,
+      "status": "timeout",
+      "wall": 4.008632379000119,
+      "process_cpu": 0.4921849999999992
+    },
+    {
+      "case": "q050",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "derivative",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.3028827359994466,
+      "process_cpu": 0.3028799999999947,
+      "solver_cpu": 0.047407000000000005,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q025",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "singular-formal-root",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.32626528899982077,
+      "process_cpu": 0.3251850000000047,
+      "solver_cpu": 0.06540699999999994,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "9",
+              "-6",
+              "1"
+            ],
+            "outer": [
+              "0",
+              "24",
+              "-10",
+              "1"
+            ],
+            "vertical": [
+              "3",
+              "-4",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q011",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "derivative",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.30013905800024077,
+      "process_cpu": 0.3001209999999972,
+      "solver_cpu": 0.053673,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "24",
+              "-9",
+              "1"
+            ],
+            "outer": [
+              "-5328",
+              "909",
+              "-52",
+              "1"
+            ],
+            "vertical": [
+              "-4",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q042",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "singular-original-identity",
+      "repetition": 1,
+      "status": "timeout",
+      "wall": 4.010580807999759,
+      "process_cpu": 0.2617130000000003
+    },
+    {
+      "case": "q036",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "singular-original-identity",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.382804200999999,
+      "process_cpu": 0.3827919999999949,
+      "solver_cpu": 0.07129000000000002,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "24",
+              "9",
+              "1"
+            ],
+            "outer": [
+              "6560",
+              "1048",
+              "56",
+              "1"
+            ],
+            "vertical": [
+              "2",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q003",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "singular-original-identity",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.3150361360003444,
+      "process_cpu": 0.3138310000000004,
+      "solver_cpu": 0.04774000000000003,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q005",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "singular-original-identity",
+      "repetition": 1,
+      "status": "timeout",
+      "wall": 4.011184117000084,
+      "process_cpu": 0.26410699999998855
+    },
+    {
+      "case": "q015",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "singular-formal-root",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.3508778010000242,
+      "process_cpu": 0.3508470000000088,
+      "solver_cpu": 0.057640000000000025,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "24",
+              "9",
+              "1"
+            ],
+            "outer": [
+              "6640",
+              "1052",
+              "56",
+              "1"
+            ],
+            "vertical": [
+              "2",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q056",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "singular-original-identity",
+      "repetition": 2,
+      "status": "timeout",
+      "wall": 4.006294085000263,
+      "process_cpu": 0.30395099999999786
+    },
+    {
+      "case": "q055",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "derivative",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.5333280360000572,
+      "process_cpu": 0.5332390000000089,
+      "solver_cpu": 0.173551,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "0",
+              "50",
+              "40",
+              "45/4",
+              "1"
+            ],
+            "outer": [
+              "0",
+              "4375",
+              "-737/4",
+              "1"
+            ],
+            "vertical": [
+              "0",
+              "10",
+              "7",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q015",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "singular-original-identity",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.42210354800045025,
+      "process_cpu": 0.42209200000000635,
+      "solver_cpu": 0.06804200000000005,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "24",
+              "9",
+              "1"
+            ],
+            "outer": [
+              "6640",
+              "1052",
+              "56",
+              "1"
+            ],
+            "vertical": [
+              "2",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q024",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "derivative",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.32114380700022593,
+      "process_cpu": 0.321128999999992,
+      "solver_cpu": 0.04791699999999999,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q027",
+      "stratum": [
+        5,
+        3,
+        4
+      ],
+      "method": "derivative",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.26607358300043416,
+      "process_cpu": 0.26604700000000747,
+      "solver_cpu": 0.0029730000000000034,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q035",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "singular-formal-root",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.31576466699971206,
+      "process_cpu": 0.3157539999999983,
+      "solver_cpu": 0.05872199999999997,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q004",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "singular-formal-root",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.39520717300001706,
+      "process_cpu": 0.3951929999999919,
+      "solver_cpu": 0.09962399999999996,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "9",
+              "-6",
+              "1"
+            ],
+            "outer": [
+              "0",
+              "40",
+              "-14",
+              "1"
+            ],
+            "vertical": [
+              "3",
+              "-4",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q027",
+      "stratum": [
+        5,
+        3,
+        4
+      ],
+      "method": "singular-formal-root",
+      "repetition": 1,
+      "status": "timeout",
+      "wall": 4.006908688999829,
+      "process_cpu": 0.549869000000001
+    },
+    {
+      "case": "q050",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "singular-formal-root",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.35401997299959476,
+      "process_cpu": 0.3539919999999981,
+      "solver_cpu": 0.07012200000000005,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q011",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "singular-original-identity",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.34419300300032774,
+      "process_cpu": 0.34418200000000354,
+      "solver_cpu": 0.08374900000000002,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "24",
+              "-9",
+              "1"
+            ],
+            "outer": [
+              "-5328",
+              "909",
+              "-52",
+              "1"
+            ],
+            "vertical": [
+              "-4",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q015",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "derivative",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.309304432999852,
+      "process_cpu": 0.308250000000001,
+      "solver_cpu": 0.049958999999999976,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "24",
+              "9",
+              "1"
+            ],
+            "outer": [
+              "6640",
+              "1052",
+              "56",
+              "1"
+            ],
+            "vertical": [
+              "2",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q003",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "derivative",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.25546483600010106,
+      "process_cpu": 0.2544189999999986,
+      "solver_cpu": 0.002232999999999985,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q035",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "singular-original-identity",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.32326577000003454,
+      "process_cpu": 0.32087400000000343,
+      "solver_cpu": 0.05066899999999999,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q025",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "derivative",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.4510540370001763,
+      "process_cpu": 0.4510609999999886,
+      "solver_cpu": 0.09879400000000002,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "9",
+              "-6",
+              "1"
+            ],
+            "outer": [
+              "0",
+              "24",
+              "-10",
+              "1"
+            ],
+            "vertical": [
+              "3",
+              "-4",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q056",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "derivative",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.4073157060001904,
+      "process_cpu": 0.40626600000000934,
+      "solver_cpu": 0.11315800000000001,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "-40",
+              "-30",
+              "-10/3",
+              "15/4",
+              "1"
+            ],
+            "outer": [
+              "857692/27",
+              "-35146/9",
+              "1247/12",
+              "1"
+            ],
+            "vertical": [
+              "-4",
+              "-4",
+              "1",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q011",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "singular-original-identity",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.32583050199991703,
+      "process_cpu": 0.3247619999999998,
+      "solver_cpu": 0.05823700000000001,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "24",
+              "-9",
+              "1"
+            ],
+            "outer": [
+              "-5328",
+              "909",
+              "-52",
+              "1"
+            ],
+            "vertical": [
+              "-4",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q001",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "singular-original-identity",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.3239088840000477,
+      "process_cpu": 0.3238889999999941,
+      "solver_cpu": 0.06431700000000001,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "0",
+              "-3",
+              "1"
+            ],
+            "outer": [
+              "0",
+              "44",
+              "15",
+              "1"
+            ],
+            "vertical": [
+              "0",
+              "-2",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q050",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "singular-formal-root",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.3039316880003753,
+      "process_cpu": 0.3039279999999991,
+      "solver_cpu": 0.05078099999999999,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q027",
+      "stratum": [
+        5,
+        3,
+        4
+      ],
+      "method": "singular-original-identity",
+      "repetition": 2,
+      "status": "timeout",
+      "wall": 4.009754079000231,
+      "process_cpu": 0.258375000000008
+    },
+    {
+      "case": "q027",
+      "stratum": [
+        5,
+        3,
+        4
+      ],
+      "method": "derivative",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.2772889560001204,
+      "process_cpu": 0.27727900000000005,
+      "solver_cpu": 0.0031970000000000054,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q050",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "singular-original-identity",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.3328941460003989,
+      "process_cpu": 0.33289199999999397,
+      "solver_cpu": 0.04811199999999999,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q011",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "singular-formal-root",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.32900023000001966,
+      "process_cpu": 0.32898600000000044,
+      "solver_cpu": 0.05848500000000001,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "24",
+              "-9",
+              "1"
+            ],
+            "outer": [
+              "-5328",
+              "909",
+              "-52",
+              "1"
+            ],
+            "vertical": [
+              "-4",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q017",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "derivative",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.5324834120001469,
+      "process_cpu": 0.5324659999999923,
+      "solver_cpu": 0.11302899999999999,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q014",
+      "stratum": [
+        5,
+        3,
+        4
+      ],
+      "method": "derivative",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.324394817999746,
+      "process_cpu": 0.3243849999999995,
+      "solver_cpu": 0.036567000000000016,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "25",
+              "-50",
+              "35",
+              "-10",
+              "1"
+            ],
+            "outer": [
+              "0",
+              "20",
+              "-9",
+              "1"
+            ],
+            "vertical": [
+              "5",
+              "-20",
+              "21",
+              "-8",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q056",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "singular-original-identity",
+      "repetition": 1,
+      "status": "timeout",
+      "wall": 4.014074749999963,
+      "process_cpu": 0.26256999999999664
+    },
+    {
+      "case": "q014",
+      "stratum": [
+        5,
+        3,
+        4
+      ],
+      "method": "derivative",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.33168563800063566,
+      "process_cpu": 0.3316459999999921,
+      "solver_cpu": 0.03454700000000002,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "25",
+              "-50",
+              "35",
+              "-10",
+              "1"
+            ],
+            "outer": [
+              "0",
+              "20",
+              "-9",
+              "1"
+            ],
+            "vertical": [
+              "5",
+              "-20",
+              "21",
+              "-8",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q051",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "derivative",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.2587287649994323,
+      "process_cpu": 0.2587270000000004,
+      "solver_cpu": 0.0020959999999999868,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q004",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "singular-formal-root",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.3917441769999641,
+      "process_cpu": 0.39173999999999864,
+      "solver_cpu": 0.09496699999999994,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "9",
+              "-6",
+              "1"
+            ],
+            "outer": [
+              "0",
+              "40",
+              "-14",
+              "1"
+            ],
+            "vertical": [
+              "3",
+              "-4",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q011",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "singular-formal-root",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.42886402099975385,
+      "process_cpu": 0.42883300000000446,
+      "solver_cpu": 0.058865,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "24",
+              "-9",
+              "1"
+            ],
+            "outer": [
+              "-5328",
+              "909",
+              "-52",
+              "1"
+            ],
+            "vertical": [
+              "-4",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q005",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "derivative",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.4057381129996429,
+      "process_cpu": 0.4057339999999954,
+      "solver_cpu": 0.10067799999999999,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "80",
+              "90",
+              "140/3",
+              "45/4",
+              "1"
+            ],
+            "outer": [
+              "192736/27",
+              "10991/9",
+              "749/12",
+              "1"
+            ],
+            "vertical": [
+              "8",
+              "14",
+              "7",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q025",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "singular-original-identity",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.3107412850004039,
+      "process_cpu": 0.30967300000000364,
+      "solver_cpu": 0.06070599999999998,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "9",
+              "-6",
+              "1"
+            ],
+            "outer": [
+              "0",
+              "24",
+              "-10",
+              "1"
+            ],
+            "vertical": [
+              "3",
+              "-4",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q004",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "derivative",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.2739673469995978,
+      "process_cpu": 0.27395899999999784,
+      "solver_cpu": 0.030341000000000007,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "9",
+              "-6",
+              "1"
+            ],
+            "outer": [
+              "0",
+              "40",
+              "-14",
+              "1"
+            ],
+            "vertical": [
+              "3",
+              "-4",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q004",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "derivative",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.2751337459994829,
+      "process_cpu": 0.2751340000000013,
+      "solver_cpu": 0.030757000000000007,
+      "output": {
+        "geometric_points": 1,
+        "maps": [
+          {
+            "inner": [
+              "0",
+              "9",
+              "-6",
+              "1"
+            ],
+            "outer": [
+              "0",
+              "40",
+              "-14",
+              "1"
+            ],
+            "vertical": [
+              "3",
+              "-4",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "case": "q003",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "singular-formal-root",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.3081435629992484,
+      "process_cpu": 0.3070909999999998,
+      "solver_cpu": 0.057891,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q055",
+      "stratum": [
+        5,
+        3,
+        3
+      ],
+      "method": "singular-original-identity",
+      "repetition": 1,
+      "status": "timeout",
+      "wall": 4.006041730999641,
+      "process_cpu": 0.24846500000000304
+    },
+    {
+      "case": "q008",
+      "stratum": [
+        3,
+        3,
+        1
+      ],
+      "method": "singular-original-identity",
+      "repetition": 2,
+      "status": "completed",
+      "wall": 0.34976935899976525,
+      "process_cpu": 0.3497259999999969,
+      "solver_cpu": 0.050956999999999975,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    },
+    {
+      "case": "q035",
+      "stratum": [
+        3,
+        3,
+        2
+      ],
+      "method": "derivative",
+      "repetition": 1,
+      "status": "completed",
+      "wall": 0.25759003899929667,
+      "process_cpu": 0.25758799999999127,
+      "solver_cpu": 0.0021879999999999955,
+      "output": {
+        "geometric_points": 0,
+        "maps": []
+      }
+    }
+  ],
+  "summary": {
+    "derivative": {
+      "statuses": {
+        "completed": 40
+      },
+      "verified_rows": 40,
+      "versus_derivative": {
+        "solver_cpu": {
+          "paired": 20,
+          "derivative_wins": 0,
+          "native_wins": 0,
+          "median_ratio": 1.0
+        },
+        "process_cpu": {
+          "paired": 20,
+          "derivative_wins": 0,
+          "native_wins": 0,
+          "median_ratio": 1.0
+        },
+        "wall": {
+          "paired": 20,
+          "derivative_wins": 0,
+          "native_wins": 0,
+          "median_ratio": 1.0
+        }
+      }
+    },
+    "singular-formal-root": {
+      "statuses": {
+        "completed": 36,
+        "timeout": 4
+      },
+      "verified_rows": 36,
+      "versus_derivative": {
+        "solver_cpu": {
+          "paired": 18,
+          "derivative_wins": 15,
+          "native_wins": 3,
+          "median_ratio": 4.341799
+        },
+        "process_cpu": {
+          "paired": 18,
+          "derivative_wins": 15,
+          "native_wins": 3,
+          "median_ratio": 1.174554
+        },
+        "wall": {
+          "paired": 18,
+          "derivative_wins": 15,
+          "native_wins": 3,
+          "median_ratio": 1.174429
+        }
+      }
+    },
+    "singular-original-identity": {
+      "statuses": {
+        "completed": 24,
+        "timeout": 16
+      },
+      "verified_rows": 24,
+      "versus_derivative": {
+        "solver_cpu": {
+          "paired": 12,
+          "derivative_wins": 7,
+          "native_wins": 5,
+          "median_ratio": 1.23016
+        },
+        "process_cpu": {
+          "paired": 12,
+          "derivative_wins": 8,
+          "native_wins": 4,
+          "median_ratio": 1.125046
+        },
+        "wall": {
+          "paired": 12,
+          "derivative_wins": 8,
+          "native_wins": 4,
+          "median_ratio": 1.125874
+        }
+      }
+    }
+  }
+}
