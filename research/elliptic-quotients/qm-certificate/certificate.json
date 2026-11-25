@@ -1,0 +1,29 @@
+{
+ "relations": {
+  "alpha^2 = 2": true,
+  "gamma^2 + gamma - 1 = 0": true,
+  "gamma not in Q(alpha)": true,
+  "beta = alpha gamma - gamma alpha has rational square": true,
+  "alpha beta = - beta alpha": true
+ },
+ "beta_squared": "-6",
+ "hilbert_symbols_(2,b)_p": {
+  "2": -1,
+  "3": -1,
+  "5": 1,
+  "7": 1
+ },
+ "division_algebra": true,
+ "frobenius_fields": {
+  "-40": [
+   7,
+   2
+  ],
+  "-228": [
+   11,
+   2
+  ]
+ },
+ "not_CM_square": true,
+ "no_elliptic_quotient": true
+}
