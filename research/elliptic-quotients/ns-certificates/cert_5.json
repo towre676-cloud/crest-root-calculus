@@ -1,0 +1,151 @@
+{
+ "curve": "k=3 bielliptic, gluing transposition beta=[2, 1, 0]",
+ "f": [
+  27337500,
+  0,
+  7341705,
+  0,
+  360094,
+  0,
+  4913
+ ],
+ "gram_prime": [
+  1021,
+  1049
+ ],
+ "provider_degrees": [
+  2,
+  2,
+  8
+ ],
+ "gram": [
+  [
+   2,
+   2,
+   2,
+   8
+  ],
+  [
+   2,
+   0,
+   4,
+   12
+  ],
+  [
+   2,
+   4,
+   0,
+   4
+  ],
+  [
+   8,
+   12,
+   4,
+   0
+  ]
+ ],
+ "rank_gram": 3,
+ "rank_certificate": {
+  "pair": [
+   0,
+   1
+  ],
+  "isogeny_witness": "explicit global 3-isogeny (PARI ellisomat, Velu), reduced exactly",
+  "non_cm_witness": {
+   "-20": 29,
+   "-15": 31
+  },
+  "rank_Hom": 1,
+  "rho_upper": 3
+ },
+ "saturation_log": [
+  {
+   "l": 2,
+   "level": 1,
+   "field": [
+    23,
+    2
+   ],
+   "divisible_combination": [
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "l": 2,
+   "level": 2,
+   "field": [
+    23,
+    2
+   ],
+   "divisible_combination": null
+  }
+ ],
+ "NS_basis_in_generators": [
+  [
+   "0",
+   "0",
+   "0",
+   "1/2"
+  ],
+  [
+   "1",
+   "0",
+   "0",
+   "0"
+  ],
+  [
+   "0",
+   "0",
+   "1",
+   "0"
+  ]
+ ],
+ "NS_gram": [
+  [
+   0,
+   4,
+   2
+  ],
+  [
+   4,
+   2,
+   2
+  ],
+  [
+   2,
+   2,
+   0
+  ]
+ ],
+ "NS_discriminant": 24,
+ "theta": [
+  0,
+  1,
+  0
+ ],
+ "spectrum_through_X": {
+  "2": 2,
+  "4": 4,
+  "14": 4,
+  "26": 4,
+  "28": 8,
+  "38": 4,
+  "52": 8,
+  "62": 4,
+  "74": 4,
+  "76": 8,
+  "86": 4,
+  "98": 4,
+  "122": 4,
+  "124": 8,
+  "134": 4,
+  "146": 4,
+  "148": 8
+ },
+ "X": 150,
+ "status": "certified",
+ "seconds": 62.5,
+ "expected_type": "transposition"
+}
