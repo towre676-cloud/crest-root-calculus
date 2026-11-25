@@ -1,0 +1,5 @@
+{
+ "member": "True",
+ "tangent_linear": "True",
+ "tangent": "[['Mod(1/2*t^2 - 1/2, t^4 + 1)', 'Mod(1/2*t^3 - t^2 - 1/2*t, t^4 + 1)'], ['Mod(1/2*t^3 + t^2 - 1/2*t, t^4 + 1)', 'Mod(-1/2*t^2 - 1/2, t^4 + 1)']]"
+}

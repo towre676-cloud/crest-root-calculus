@@ -1,0 +1,155 @@
+{
+ "curve": "T1: Richelot neighbour of C_2, pairing (1,-2)(-1,-4)(2,4)",
+ "f": [
+  -1792,
+  7200,
+  5268,
+  -900,
+  -1605,
+  -90,
+  154
+ ],
+ "gram_prime": [
+  1009,
+  1021
+ ],
+ "provider_degrees": [
+  4,
+  4,
+  4,
+  4
+ ],
+ "gram": [
+  [
+   2,
+   4,
+   4,
+   4,
+   4
+  ],
+  [
+   4,
+   0,
+   16,
+   8,
+   8
+  ],
+  [
+   4,
+   16,
+   0,
+   8,
+   8
+  ],
+  [
+   4,
+   8,
+   8,
+   0,
+   16
+  ],
+  [
+   4,
+   8,
+   8,
+   16,
+   0
+  ]
+ ],
+ "rank_gram": 3,
+ "rank_certificate": {
+  "pair": [
+   2,
+   3
+  ],
+  "isogeny_witness": "deg mu(f_0, f_2) > 0 in the Gram matrix",
+  "non_cm_witness": {
+   "-4": 17,
+   "-7": 29
+  },
+  "rank_Hom": 1,
+  "rho_upper": 3
+ },
+ "saturation_log": [
+  {
+   "l": 2,
+   "level": 1,
+   "field": [
+    17,
+    2
+   ],
+   "divisible_combination": [
+    0,
+    1,
+    1
+   ]
+  },
+  {
+   "l": 2,
+   "level": 2,
+   "field": [
+    17,
+    4
+   ],
+   "divisible_combination": null
+  }
+ ],
+ "NS_basis_in_generators": [
+  [
+   "1",
+   "0",
+   "0",
+   "0",
+   "0"
+  ],
+  [
+   "0",
+   "0",
+   "1/2",
+   "0",
+   "1/2"
+  ],
+  [
+   "0",
+   "0",
+   "0",
+   "0",
+   "1"
+  ]
+ ],
+ "NS_gram": [
+  [
+   2,
+   4,
+   4
+  ],
+  [
+   4,
+   4,
+   4
+  ],
+  [
+   4,
+   4,
+   0
+  ]
+ ],
+ "NS_discriminant": 32,
+ "theta": [
+  1,
+  0,
+  0
+ ],
+ "spectrum_through_X": {
+  "4": 4,
+  "20": 8,
+  "52": 8,
+  "68": 8,
+  "100": 8,
+  "116": 8,
+  "148": 8
+ },
+ "X": 150,
+ "status": "certified",
+ "seconds": 56.5
+}
