@@ -1,0 +1,571 @@
+\documentclass[11pt,letterpaper]{amsart}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{mathtools,amssymb,booktabs}
+\usepackage[margin=1.32in,includehead,headsep=17pt]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+  pdftitle={Elliptic Quotient Spectra under Complex Multiplication},
+  pdfauthor={Crest--Root Calculus},
+  pdfsubject={Polarized isogenies, finite kernels, and optimal elliptic quotients}
+}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\numberwithin{equation}{section}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\C}{\mathbb C}
+\newcommand{\OO}{\mathcal O}
+\newcommand{\NN}{\mathrm N}
+\newcommand{\av}{\operatorname{Avg}}
+\newcommand{\vol}{\operatorname{vol}}
+\newcommand{\abs}[1]{\lvert #1\rvert}
+
+\title[Elliptic quotient spectra under complex multiplication]{Elliptic Quotient Spectra under Complex Multiplication}
+\author{Crest--Root Calculus}
+\date{25 November 2026}
+\subjclass[2020]{Primary 14H30, 14K22. Secondary 11G50, 11H06, 14K12.}
+\keywords{elliptic subcovers, complex multiplication, polarized isogenies,
+finite kernels, Hermitian forms, height counting}
+
+\begin{document}
+\begin{abstract}
+Let a polarized complex abelian variety be isogenous to a power of an
+elliptic curve with complex multiplication. We express the degree of
+each elliptic subvariety as a Hermitian norm divided by the order of an
+intersection with the finite isogeny kernel. The relevant norm is
+normalized by the ideal class of the direction. Counting primitive
+vectors in ideal lattices gives an asymptotic with an explicit leading
+constant. The finite correction is a product of local averages of
+powers of the kernel intersection orders. For two genus-two Jacobians
+with the same rational polarized isogeny data over a common number
+field, the leading constants are in the ratio \(3:4\). For the
+non-product \(j=1728\) two-torsion gluing we give the multiplicity of
+every optimal degree as a divisor formula and obtain a remainder of
+order \(X\log(2+X)\). Exact equation and lattice replays accompany the
+proofs.
+\end{abstract}
+\maketitle
+
+\section{Introduction}
+
+For a smooth curve \(C\) of genus two over \(\C\), an elliptic quotient
+is a nonconstant morphism \(f:C\to E\) to an elliptic curve. Call it
+\emph{optimal} if it does not factor through a nontrivial isogeny onto
+\(E\). We identify maps that differ by a translation or an isomorphism
+of their targets. An optimal class corresponds to an elliptic
+subvariety of the Jacobian \(J(C)\). Its degree is the degree of the
+canonical polarization on that subvariety
+\cite{KaniI,KaniII,Guerra19}. We write \(m_C(d)\) for the number of
+classes of degree \(d\), and \(N_C(X)=\sum_{d\le X}m_C(d)\).
+
+These counts record integral data. An isogeny identifies elliptic
+directions on its source and target, but can change the degree of a
+direction by a factor that depends on how its torsion meets the
+isogeny kernel. Two kernels of equal order can therefore produce
+different degree distributions. The question treated here is how to
+compute this change for every direction, including when the relevant
+complex multiplication field has nontrivial class group.
+
+Our main result, Theorem~\ref{thm:height}, gives a counting law for
+every polarized variety isogenous to a CM elliptic power in
+characteristic zero. The formula uses the determinant of the
+pulled-back Hermitian form, the ideal class number and a finite
+average on torsion. The theorem applies to a specified isogeny. Any
+CM elliptic power has such a presentation using an elliptic curve
+with maximal order, since elliptic curves in a fixed CM isogeny
+class are isogenous to \(\C/\OO\) for the full ring of integers.
+
+The finite factor has geometric consequences. In
+Section~\ref{sec:minus7}, two gluings of a single elliptic square have
+the same pulled-back polarization and the same rational symplectic
+Tate modules over a common field. They have different exact
+multiplicities and different leading constants. Section~\ref{sec:gaussian}
+computes every multiplicity in the Gaussian case by reducing to the
+four-squares formula, followed by ideal M\"obius inversion. This gives
+an independent description of the CM lattices in the accompanying
+certificates.
+
+Kani's refined Humbert invariant already identifies covers using
+primitive representations of an intrinsic quadratic form
+\cite{KaniI,KaniII}. Guerra treats the degree of elliptic subvarieties,
+counts in products and comparison under polarized isogenies
+\cite[Sections 6 and 7]{Guerra19}. Ideal classes, fundamental
+domains for units and M\"obius inversion also occur in Schanuel's
+projective height count \cite{Schanuel}. Our calculation evaluates the
+restricted isogeny degree as a function of the primitive residue
+class and inserts that function into the leading constant. The
+examples use this term to distinguish spectra in a fixed polarized
+rational isogeny class.
+
+\section{Directions and the counting theorem}
+
+Fix an imaginary quadratic field \(F\) with ring of integers \(\OO\),
+discriminant \(D_F<0\), class number \(h_F\), and \(w_F=\abs{\OO^\times}\).
+Choose the complex embedding and set \(\Delta=\sqrt{\abs{D_F}}/2\).
+Thus \(\Delta\) is the covolume of \(\OO\) in \(\C\).
+Let \(E=\C/\OO\) and
+\[
+  \Psi:E^r\longrightarrow A
+\]
+be an isogeny onto a polarized abelian variety \((A,\mathcal L)\) of
+dimension \(r\ge2\). Let \(K=\ker\Psi\) and choose a positive integer
+\(n\) killing \(K\). With the product principal polarization on \(E^r\)
+as reference, \(\Psi^*\mathcal L\) is represented by a positive
+definite Hermitian matrix \(H\) with entries in \(\OO\). Its norm is
+\(Q(v)=v^*Hv\).
+
+For a nonzero integral ideal \(\mathfrak a\), call \(v=(v_1,\dots,v_r)\)
+primitive in \(\mathfrak a^r\) if \(\sum_i v_i\OO=\mathfrak a\).
+Choose one ideal for each ideal class. Define
+\[
+ E_{\mathfrak a}=\C/\mathfrak a^{-1},\qquad
+ \iota_v:E_{\mathfrak a}\longrightarrow E^r,\quad
+ z\longmapsto(v_1z,\ldots,v_rz).
+\]
+The map is well-defined and its kernel is zero, since
+\(\{z\in\C:\ v_i z\in\OO\text{ for all }i\}=\mathfrak a^{-1}\).
+The integers \(n\) and
+\begin{equation}\label{eq:ka}
+ k_{\mathfrak a}(\bar v)=
+ \#\{P\in E_{\mathfrak a}[n]:\ \iota_v(P)\in K\},
+ \qquad \bar v=v\bmod n\mathfrak a ,
+\end{equation}
+give a finite calculation. The right side of \eqref{eq:ka} only uses
+\(\bar v\), since multiplying the difference of two lifts by
+\(P\in E_{\mathfrak a}[n]\) gives zero coordinatewise in \(E\).
+For the unit ideal write \(k=k_{\OO}\). Call a residue
+\(\bar v\in(\OO/n\OO)^r\) admissible if, for each prime ideal
+\(\mathfrak p\mid n\OO\), its coordinates are not all zero modulo
+\(\mathfrak p\).
+
+\begin{theorem}\label{thm:height}
+Every elliptic subvariety of \(A\) is represented by one primitive
+\(v\in\mathfrak a^r\) for one of the chosen \(\mathfrak a\), up to
+multiplication of \(v\) by a unit. Its degree is
+\begin{equation}\label{eq:degree}
+ d(v)=\frac{Q(v)}{\NN(\mathfrak a)\,k_{\mathfrak a}(\bar v)}.
+\end{equation}
+Let \(N_A(X)\) count elliptic subvarieties of polarization degree at
+most \(X\). Then
+\begin{align}
+ N_A(X)&=c_A X^r+O_{F,H,n}(X^{r-1/2}), \label{eq:main}\\
+ c_A&=\frac{h_F}{w_F\,\Delta^r\,\zeta_F(r)}
+        \frac{\pi^r}{r!\det H}\,
+        \av_{\bar v\ {\rm admissible}} k(\bar v)^r. \label{eq:constant}
+\end{align}
+The last average factors over the rational primes dividing \(n\).
+\end{theorem}
+
+\begin{proof}
+An isogeny takes connected elliptic subvarieties bijectively to
+connected elliptic subvarieties, with inverse given by the identity
+component of the inverse image. In \(E^r\) these subvarieties
+correspond to \(F\)-lines in \(F^r\). Indeed, an elliptic subvariety
+projects nontrivially to some copy of \(E\), hence is isogenous to
+\(E\). After choosing an isogeny from \(E\), its coordinates are
+endomorphisms of \(E\), and the resulting line is independent of the
+chosen isogeny. Scaling a line by an element of \(F^\times\) makes
+the ideal generated by its coordinates coincide with its chosen
+representative \(\mathfrak a\). The subsequent ambiguity is exactly
+\(\OO^\times\).
+
+In positive orientation the principal Riemann form on \(E\) is
+\(\operatorname{Im}(\bar zw)/\Delta\).
+Pulling \(H\) back along \(\iota_v\) multiplies this form by \(Q(v)\).
+A fundamental parallelogram for \(\mathfrak a^{-1}\) has area
+\(\Delta/\NN(\mathfrak a)\), so \(\iota_v^*\Psi^*\mathcal L\) has
+degree \(Q(v)/\NN(\mathfrak a)\). Since \(\iota_v\) is injective,
+\(\ker(\Psi\iota_v)\) lies in \(E_{\mathfrak a}[n]\) and has order
+\(k_{\mathfrak a}(\bar v)\). Dividing by the degree of this restricted
+isogeny proves \eqref{eq:degree}.
+
+To compare residue classes across ideal classes, choose
+\(\lambda\in\mathfrak a\) generating \(\mathfrak a/n\mathfrak a\)
+as a module over \(\OO/n\OO\). Such a generator exists by local
+principality and the Chinese remainder theorem. Multiplication by
+\(\lambda\) induces an isomorphism
+\[
+ \OO/n\OO \longrightarrow \mathfrak a/n\mathfrak a,\qquad
+ E_{\mathfrak a}[n]\longrightarrow E[n].
+\]
+For the second isomorphism, observe that
+\(\lambda\mathfrak a^{-1}\subset\OO\) has index coprime to \(n\).
+For \(\bar v=\lambda\bar u\), the torsion equations
+\(\iota_v(P)\in K\) and \(\iota_u(\lambda P)\in K\) coincide.
+Thus the kernel orders and the admissible residues have the same
+joint distribution in every ideal class. When \(n=1\), use the
+single residue and kernel order one.
+
+Fix an admissible residue \(\bar v\) in an ideal class
+\(\mathfrak a\). Write \(k_0=k_{\mathfrak a}(\bar v)\) and
+\(B=\{z\in\C^r:Q(z)\le1\}\). We count nonzero vectors in the residue
+and in \(\sqrt{X\NN(\mathfrak a)k_0}\,B\). Primitivity is detected by
+the M\"obius function \(\mu_F\) of integral ideals. For an ideal
+\(\mathfrak b\) coprime to \(n\OO\), the intersection with
+\((\mathfrak b\mathfrak a)^r\) is a coset of
+\((n\mathfrak b\mathfrak a)^r\). The number of its points is
+\begin{equation}\label{eq:latt}
+ \frac{\vol(B)(Xk_0)^r}{n^{2r}\Delta^r\NN(\mathfrak b)^r}
+       +O_{F,H,n}\bigl((X/\NN(\mathfrak b))^{r-1/2}+1\bigr).
+\end{equation}
+For the error, every ideal lattice \(\mathfrak b\mathfrak a\) is a
+complex homothety of one of finitely many fixed representatives.
+The rotation and scale act diagonally on \(\C^r\). Therefore a
+fundamental cell has diameter bounded by a constant times
+\(\sqrt{\NN(\mathfrak b\mathfrak a)}\) and volume
+\(\bigl(\Delta\NN(\mathfrak b\mathfrak a)\bigr)^r\), before the fixed
+scaling by \(n\). The cells meeting the ellipsoid boundary lie in a
+boundary layer of that thickness. After normalization this gives
+\eqref{eq:latt}, uniformly for all translates. Omitting the origin
+changes the error by at most one.
+
+For a nonzero vector counted by such an ideal, some coordinate
+satisfies \(0\ne v_i\in\mathfrak b\mathfrak a\).
+Then \(\NN(\mathfrak b\mathfrak a)\le\abs{v_i}^2\ll_{H,n}X\NN(\mathfrak a)\).
+Hence the sum may stop at \(\NN(\mathfrak b)\ll_{H,n}X\).
+There are \(O_F(Y)\) integral ideals of norm at most \(Y\).
+For instance, in each ideal class they correspond, up to units, to
+elements of a fixed fractional ideal of squared absolute value
+bounded by a constant times \(Y\).
+As \(r-1/2>1\), summing the errors in \eqref{eq:latt} gives
+\(O_{F,H,n}(X^{r-1/2})\). Extending the main sum to infinity costs
+\(O_{F,H,n}(X)\) and contributes
+\[
+ \sum_{(\mathfrak b,n)=1}\frac{\mu_F(\mathfrak b)}{\NN(\mathfrak b)^r}
+ =
+ \frac{1}{\zeta_F(r)\prod_{\mathfrak p\mid n\OO}(1-\NN(\mathfrak p)^{-r})}.
+\]
+The number of admissible residues in one class is
+\(n^{2r}\prod_{\mathfrak p\mid n\OO}(1-\NN(\mathfrak p)^{-r})\).
+Their sum therefore produces the indicated average. The unit action
+on each nonzero vector is free, and multiplication by a unit leaves
+both its norm and kernel order invariant. Divide by \(w_F\), sum
+over the \(h_F\) classes and use
+\(\vol(B)=\pi^r/(r!\det H)\). Finally, the primary decompositions of
+\(K\) and \(E[n]\) factor the kernel order over rational primes.
+Admissibility factors over the same primes, so the uniform average
+factors.
+\end{proof}
+
+\begin{corollary}\label{cor:surface}
+For a genus-two Jacobian with a CM-square isogeny presentation as
+above, \eqref{eq:main} counts its geometric optimal quotient classes.
+In the two-torsion graph case \(K=\operatorname{graph}(\gamma)\)
+on \(E^2\), with \(H=2I\), the only finite calculation is
+\begin{equation}\label{eq:graph}
+ k(a,b)=\#\{t\in\OO/2\OO:\ bt=\gamma(at)\}.
+\end{equation}
+Here a choice of \(\OO/2\OO\)-generator identifies \(E[2]\) with
+\(\OO/2\OO\), and \(\gamma\) denotes its additive action in those
+coordinates.
+\end{corollary}
+
+For the geometric assertion, the polarized dual of an elliptic
+inclusion is a quotient with connected kernel. Composing it with
+an Abel--Jacobi morphism gives the optimal map. Conversely the
+pullback of an optimal map is an elliptic inclusion, and
+\(f_*f^*=[\deg f]\) identifies its degree with the polarization
+degree. Changing the base point affects the induced curve map only
+by a translation. Equation \eqref{eq:graph} then follows directly
+from the graph condition. Changes of generator only relabel the
+finite computation.
+
+\section{Two CM Jacobians with common rational data}\label{sec:minus7}
+
+Let \(F=\Q(\sqrt{-7})\) and
+\[
+  E:\quad Y^2=u^3-35u+98.
+\]
+Its \(j\)-invariant is \(-3375\), the \(j\)-invariant of the maximal
+order of discriminant \(-7\) \cite{Cox}. The class number is one
+by the imaginary quadratic Minkowski bound. Since \(2\) splits,
+\(\OO/2\OO=\mathbb F_2\times\mathbb F_2\). Label the nonzero
+elements \(e_1=(1,0)\), \(e_2=(0,1)\), \(s=e_1+e_2\).
+The points \(e_1,e_2\) on \(E[2]\) have horizontal coordinates
+\[
+ a_1=(7+\sqrt{-7})/2,\qquad a_2=(7-\sqrt{-7})/2
+\]
+in either order, and \(s\) has coordinate \(a_3=-7\).
+In fact complex conjugation acts on \(\OO\) by field conjugation and
+interchanges the split idempotents, hence interchanges the two
+eigenlines and fixes their sum.
+
+Put \(\gamma_A=(e_1\ e_2)\) and \(\gamma_B=(e_2\ s)\).
+Each graph is maximal isotropic for the product pairing on two-torsion.
+The only automorphisms of \(E\) preserving the origin are \(\pm1\),
+which act trivially on \(E[2]\). Neither of the two graphs is an
+automorphism graph, so the corresponding principally polarized
+quotients with pullback \(2I\) are genus-two Jacobians
+\cite[Proposition 3]{HLP}.
+
+\begin{proposition}\label{prop:minus7}
+The two resulting genus-two curves \(C_A,C_B\) have isomorphic
+polarized rational Tate modules at every prime over a common number
+field, and equal Frobenius polynomials at its common good places.
+Their geometric quotient counts satisfy
+\[
+ N_{C_A}(X)\sim \frac{3}{7L(2,\chi_{-7})}X^2,\qquad
+ N_{C_B}(X)\sim \frac{4}{7L(2,\chi_{-7})}X^2 ,
+\]
+where \(\chi_{-7}\) is the quadratic Dirichlet character of \(F\).
+\end{proposition}
+
+\begin{proof}
+The following three rows for each graph are indexed by \(a=e_1,e_2,s\).
+A dash marks a nonadmissible pair. The row for \(a=0\) has one
+admissible entry, \(b=s\), with kernel order one.
+\begin{equation}\label{eq:split-table}
+\begin{array}{c|cccc|cccc}
+ &\multicolumn{4}{c|}{\gamma_A}&\multicolumn{4}{c}{\gamma_B}\\
+ a\backslash b&0&e_1&e_2&s&0&e_1&e_2&s\\ \midrule
+ e_1 & -&-&2&1&-&-&1&2\\
+ e_2 & -&2&-&1&-&1&-&2\\
+ s   & 1&1&1&2&1&2&2&2
+\end{array}
+\end{equation}
+Each entry follows by testing the four \(t\) in \eqref{eq:graph}
+with coordinatewise multiplication. Equivalently the histograms
+are \(6,3\) and \(4,5\) for orders \(1,2\), respectively.
+Thus \(\av k^2=2\) and \(8/3\). In \eqref{eq:constant} use
+\(w_F=2\), \(\Delta^2=7/4\), \(\det H=4\) and
+\(\zeta_F(2)=\zeta(2)L(2,\chi_{-7})\).
+
+Over a common field on which the isogenies are defined, both
+polarizations pull back to the same \(2I\). On rational Tate modules
+the isogenies are isomorphisms, respect the pairings with that
+common source polarization, and commute with Galois. This also
+gives equality of the Frobenius polynomials at the stated places.
+\end{proof}
+
+The spectra already differ at degree three. A slope contributing
+degree three must have total norm three and \(k=2\).
+The norm \(a^2+ab+2b^2\) has two elements of norm one,
+four of norm two, and none of norm three, as follows by completing
+the square. The norm-one residues are \(s\), and the norm-two
+residues are \(e_1,e_2\), two of each. Table~\eqref{eq:split-table}
+gives order one for all such slopes for \(\gamma_A\) and order two
+for all such slopes for \(\gamma_B\). Counting the two choices
+of coordinate order and dividing by the two units gives
+\(m_{C_A}(3)=0\) and \(m_{C_B}(3)=8\).
+
+Here are equations for both curves and both maps in each case.
+Let \(b_i=a_{\gamma(i)}\) with labels \(1,2,3\) as above. Put
+\[
+ q=\frac{b_2-b_1}{b_3-b_1},\qquad
+ z=\frac{q(a_1-a_3)a_2-(a_1-a_2)a_3}{(a_1-a_2)-q(a_1-a_3)},
+ \qquad r_i=a_i+z.
+\]
+Define \(\lambda=(b_2-b_1)/(1/r_2-1/r_1)\),
+\(\mu=b_1-\lambda/r_1\), and choose \(\eta\) with
+\(\eta^2=\mu^3-35\mu+98\). For \(\gamma_A,\gamma_B\) the
+denominators are nonzero, as are \(r_i,\lambda,\eta\). The equation
+and maps are
+\begin{equation}\label{eq:models}
+ C_\gamma:\quad y^2=\prod_i(x^2-r_i),\qquad
+ f_1=(x^2-z,y),\qquad f_2=(\mu+\lambda/x^2,\eta y/x^3).
+\end{equation}
+Indeed, the defining equations give \(\mu+\lambda/r_i=b_i\).
+Thus \(x^6\bigl((\mu+\lambda/x^2)^3-35(\mu+\lambda/x^2)+98\bigr)\)
+has the three indicated roots in \(x^2\) and leading coefficient
+\(\eta^2\). This verifies both map equations. The six branch
+points are distinct, giving smooth genus two. Involution
+\((x,y)\mapsto(-x,y)\) acts with opposite signs on the two elliptic
+factors on Jacobians, so the pullbacks are orthogonal. The
+pullbacks of two-torsion points at \(a_i\) and \(b_i\) coincide:
+both give the sum of the two Weierstrass points over \(x^2=r_i\)
+minus a hyperelliptic fibre. The graph therefore lies in the kernel
+of \(f_1^*+f_2^*\), and both groups have order four. This verifies
+the asserted gluing for the written models. For \(\gamma_A\) one
+obtains \(z=5/3\) and the rational sextic
+\(x^6-5x^4-\frac{80}{3}x^2+\frac{4096}{27}\).
+
+\section{The full Gaussian multiplicity formula}\label{sec:gaussian}
+
+Take \(F=\Q(i)\), \(E:y^2=x^3-x\), and \(H=2I\).
+The images of the origin-preserving automorphisms in the permutation
+group of the three nonzero two-torsion points form a subgroup
+\(U\) of order two. If \(\gamma\in U\), the gluing comes from an
+automorphism and the principally polarized quotient is a product
+\cite{HLP}. The other four permutations form one double coset under
+\(U\). Acting by an automorphism on either factor preserves \(2I\),
+so all four non-product gluings have the same geometric spectrum.
+
+Choose a generator of \(E[2]\) over \(R=\Z[i]/2\Z[i]\), and use the
+permutation interchanging \(1\) and \(1+i\), with \(i\) fixed.
+Let \(\chi_4(p)=1\) for primes \(p\equiv1\bmod4\) and
+\(\chi_4(p)=-1\) for primes \(p\equiv3\bmod4\). For a positive odd
+integer \(m\) set
+\[
+ B(m)=m\prod_{p\mid m}\left(1-\frac{\chi_4(p)}{p}\right),\qquad B(1)=1.
+\]
+
+\begin{theorem}\label{thm:gauss}
+For the non-product Gaussian gluing the geometric multiplicities
+are, for all odd \(m\),
+\[
+\begin{array}{c|c}
+ d & m_C(d)\\ \midrule
+ m,\ m\equiv3\bmod4 & 2B(m)\\
+ m,\ m\equiv1\bmod4 & 0\\
+ 2m & 2(1+\mathbf 1_{m\equiv1\bmod4})B(m)\\
+ 4m & 2B(m)\\
+ 8\mid d & 0 .
+\end{array}
+\]
+In particular there are four classes of degree two and eight of
+degree three. If \(G=L(2,\chi_4)\) is Catalan's constant, then
+\begin{equation}\label{eq:gauss-asympt}
+ N_C(X)=\frac{15}{32G}X^2+O(X\log(2+X)).
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The ring \(R\) has units \(1,i\) and nonunits \(0,1+i\).
+The admissible pairs have at least one unit. Substituting the four
+possible \(t\) into \eqref{eq:graph} gives order two for equal
+unit residues, or when a unit is paired with \(1+i\). The other
+pairs have order one. In particular, the histogram is six of
+each order among the twelve admissible pairs.
+
+Let \(P(n)\) count primitive Gaussian pairs \((a,b)\) of total norm
+\(n=|a|^2+|b|^2\), modulo the four units.
+Jacobi's four-square formula gives \(8\sum_{d\mid n,\,4\nmid d}d\)
+without the primitivity condition or the unit quotient
+\cite{HardyWright}. If a Gaussian ideal of norm \(j\) divides both
+coordinates, dividing by any of its generators scales the norm
+by \(j\). Ideal M\"obius inversion now expresses \(P(n)/2\) as the
+Dirichlet convolution of \(\sum_{d\mid n,\,4\nmid d}d\) with
+\(b(j)=\sum_{\NN(\mathfrak a)=j}\mu_F(\mathfrak a)\).
+The local generating series, with \(t\) marking the exponent of
+the indicated odd prime \(p\), are
+\[
+ \frac{1-\chi_4(p)t}{1-pt}.
+\]
+At \(2\) the series is \(1+2t\): the initial four-square
+divisor factor is \((1+2t)/(1-t)\) and the ideal M\"obius factor
+is \(1-t\). Consequently
+\[
+ P(m)=2B(m),\qquad P(2m)=4B(m),\qquad P(4m)=0
+ \quad(m\text{ odd}),
+\]
+and \(P(n)=0\) for every multiple of four.
+
+For odd \(n\) exactly one coordinate is a unit modulo \(2\).
+The other is \(1+i\) when \(n\equiv3\bmod4\), giving degree \(n\).
+It is zero when \(n\equiv1\bmod4\), giving degree \(2n\).
+For \(n\equiv2\bmod4\) both coordinates are units modulo \(2\).
+Multiplying just one by \(i\) preserves primitiveness and norm and
+induces a bijection between the equal and unequal residues, even
+after dividing by common units. Half these classes have degree
+\(n\) and half degree \(2n\). Combining the contributions gives
+the table.
+
+Finally \(B(m)=\sum_{j\mid m}\mu(j)\chi_4(j)\,m/j\).
+For either odd residue \(a\bmod4\), sum first over odd \(j\) and
+then over \(u=m/j\equiv aj^{-1}\bmod4\). The sum of positive
+integers \(u\le Y\) in that residue is \(Y^2/8+O(Y+1)\). This
+yields
+\[
+ \sum_{\substack{m\le X\\m\equiv a\bmod4}} B(m)
+   =\frac{X^2}{8G}+O(X\log(2+X)).
+\]
+The four nonzero contributions from \(d=m,2m,4m\) have combined
+coefficient \(15/(32G)\). This also agrees with
+\eqref{eq:constant}, whose local average is \(5/2\) in this case.
+\end{proof}
+
+\section{Exact verification and scope}
+
+The companion replay checks the two maps in \eqref{eq:models}
+symbolically and evaluates the full finite kernel tables in both
+quadratic rings. It then enumerates primitive vectors by Euclidean
+division, with an integer norm cutoff. This is independent of the
+four-square convolution. A nonprincipal ideal of norm two in
+\(\Q(\sqrt{-5})\) tests the residue transfer used in the proof of
+Theorem~\ref{thm:height}. For the Gaussian case the replay compares
+every degree through \(150\) with both previously certified
+N\'eron--Severi lattices. All three routes give \(11{,}574\)
+geometric classes at \(94\) degrees.
+
+The degree law assumes a specified finite kernel on the product
+isogeny. From a curve equation, an independent route computes the
+integral N\'eron--Severi lattice from verified elliptic maps or
+correspondences, certified period enclosures and a verified bound
+on the endomorphism rank. Its elliptic classes are the primitive
+isotropic classes of positive polarization degree, as in
+\cite{KaniI,KaniII}. On nine models the bounded homology search
+checks \(1{,}204\) quotient directions individually against exact
+lattices. The quaternionic model has a zero spectrum, which can
+also be read from its N\'eron--Severi form by reduction modulo \(9\).
+These calculations use the established endomorphism-ring framework
+of \cite{CMSV,Lombardo}. Discovery of all the algebraic inputs of
+that computation from an arbitrary curve equation is a separate
+algorithmic problem.
+
+For a quick reproducibility check, run the following from the
+repository root with Python and SymPy installed.
+\[
+\begin{gathered}
+\text{\ttfamily python -B research/elliptic-quotients/cm-spectra/verify.py}
+\end{gathered}
+\]
+The code, the exact lattice data, and the \TeX{} source are available
+in the \href{https://github.com/towre676-cloud/crest-root-calculus}
+{Crest--Root Calculus repository}.
+
+\begin{thebibliography}{99}
+\raggedright
+\bibitem{CMSV}
+E.~Costa, N.~Mascot, J.~Sijsling, and J.~Voight,
+\emph{Rigorous computation of the endomorphism ring of a Jacobian},
+Math. Comp. \textbf{88} (2019), 1303--1339.
+\href{https://doi.org/10.1090/mcom/3373}{doi:10.1090/mcom/3373}.
+
+\bibitem{Cox}
+D.~A.~Cox, \emph{Primes of the form \(x^2+ny^2\)}, 2nd ed.,
+John Wiley \& Sons, Hoboken, 2013.
+
+\bibitem{Guerra19}
+L.~Guerra, \emph{On elliptic curves of bounded degree in a polarized
+Abelian variety}, Rend. Istit. Mat. Univ. Trieste \textbf{51}
+(2019), 105--123.
+\href{https://doi.org/10.13137/2464-8728/27068}{doi:10.13137/2464-8728/27068}.
+
+\bibitem{HardyWright}
+G.~H.~Hardy and E.~M.~Wright,
+\emph{An introduction to the theory of numbers}, 6th ed.,
+Oxford University Press, Oxford, 2008.
+
+\bibitem{HLP}
+E.~W.~Howe, F.~Lepr\'evost, and B.~Poonen,
+\emph{Large torsion subgroups of split Jacobians of curves of genus
+two or three}, Forum Math. \textbf{12} (2000), 315--364.
+\href{https://arxiv.org/abs/math/9809210}{arXiv:math/9809210}.
+
+\bibitem{KaniI}
+E.~Kani, \emph{Elliptic subcovers of a curve of genus 2.
+I. The isogeny defect}, Ann. Math. Qu\'e. \textbf{42} (2018), 281--303.
+\href{https://doi.org/10.1007/s40316-018-0105-6}{doi:10.1007/s40316-018-0105-6}.
+
+\bibitem{KaniII}
+E.~Kani, \emph{Elliptic subcovers of a curve of genus 2.
+II. The refined Humbert invariant},
+J. Number Theory \textbf{193} (2018), 302--335.
+\href{https://doi.org/10.1016/j.jnt.2018.05.011}{doi:10.1016/j.jnt.2018.05.011}.
+
+\bibitem{Lombardo}
+D.~Lombardo, \emph{Computing the geometric endomorphism ring of a
+genus 2 Jacobian}, Math. Comp. \textbf{88} (2019), 889--929.
+\href{https://doi.org/10.1090/mcom/3358}{doi:10.1090/mcom/3358}.
+
+\bibitem{Schanuel}
+S.~H.~Schanuel, \emph{Heights in number fields},
+Bull. Soc. Math. France \textbf{107} (1979), 433--449.
+\href{https://doi.org/10.24033/bsmf.1905}{doi:10.24033/bsmf.1905}.
+\end{thebibliography}
+\end{document}
