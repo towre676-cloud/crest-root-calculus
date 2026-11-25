@@ -207,6 +207,17 @@ def check_case(discriminant, prime, report_forms=False):
                 raise ArithmeticError("A polarized graph orbit crossed two Humbert classes.")
             form_fibers[center_key].add(representative)
 
+    scalar_graphs = by_norm[prime-1]
+    if len(scalar_graphs) != prime+1 or graphs+len(scalar_graphs) != prime*(prime*prime-1):
+        raise ArithmeticError("The scalar and nonscalar graphs did not exhaust the determinant coset.")
+    scalar_weight = prime**4 + prime**2
+    nonscalar_weight = prime**2*(prime+1) + prime**2-prime
+    for x, y in scalar_graphs:
+        norm = x*x + t*x*y + n*y*y
+        first_diagonal, remainder = divmod(1+norm, prime)
+        if remainder or first_diagonal*prime-norm != 1:
+            raise ArithmeticError("The scalar polarization is not integral and unimodular.")
+
     if graphs != (prime+1)*(prime*prime-prime-1):
         raise ArithmeticError("The nonscalar graph count disagrees with the determinant coset.")
     if genus_counts != {1: (prime*prime-2*prime-1)//2, -1: (prime*prime-1)//2}:
@@ -220,6 +231,8 @@ def check_case(discriminant, prime, report_forms=False):
                 raise ArithmeticError("Unexpected number of polarized surfaces in a Humbert fiber.")
 
     out = {"discriminant": discriminant, "prime": prime, "nonscalar_graphs": graphs,
+           "scalar_graphs": len(scalar_graphs),
+           "scalar_to_nonscalar_leading_constant": str(Fraction(scalar_weight, nonscalar_weight)),
            "theta_level": level, "weight_two_sturm_bound_at_theta_level": sturm_index(level),
            "prime_coprime_degree_density_by_genus": {
                sign: str(Fraction(prime*(prime+sign), prime**2+2*prime-1)) for sign in (-1, 1)},

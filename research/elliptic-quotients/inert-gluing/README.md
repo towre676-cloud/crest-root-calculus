@@ -68,6 +68,19 @@ Indeed, $(\rho-a)t=b\bar t$, and the values of $\bar t/t$ are the norm-one subgr
 
 It follows that the entire labelled degree function depends only on $a$. Conversely, it determines $a$ with these source labels fixed. Slopes $(1,z)$ for integral lifts $z\in O$ give the full set of residues satisfying the displayed norm equation. If two scalar parts had the same set, subtracting their trace equations would put its $\ell+1$ elements on a line through zero over $\mathbb F_\ell$, which has only $\ell$ elements. Hence the scalar parts agree. The finite-kernel calculation also shows that the leading counting constant is common across the whole nonscalar family, since each scalar part has exactly $\ell+1$ discounted residue slopes out of $\ell^2+1$.
 
+### Separation from scalar gluings
+
+When $b=0$, the anti-isometry condition is $N(a)=-1$. The $O$-stable quotient lattice has basis $(1,\widetilde a)/\ell$, $(0,1)$ over $O$, for any integral lift $\widetilde a$. In this basis the polarization is the integral Hermitian form
+$$
+ \begin{pmatrix}
+ (1+N_{F/\mathbb Q}(\widetilde a))/\ell & \overline{\widetilde a}\\
+ \widetilde a & \ell
+ \end{pmatrix}
+$$
+of determinant one. This gives the scalar input to a lattice checker even when its polarization is a product.
+
+For a scalar gluing the restricted kernel has order $\ell^2$ at the single residue slope $\rho=a$, and order one elsewhere. Its total weight in the leading count is $\ell^4+\ell^2$. In the nonscalar case that weight is $\ell^2(\ell+1)+\ell^2-\ell$, with the same volume and primitive-density factors. The scalar weight is strictly larger for every odd $\ell$. Thus no scalar genus-two gluing shares the entire spectrum of a nonscalar one at fixed $F,\ell$.
+
 ### The unmarked spectrum determines the genus at fixed level
 
 Put $\varepsilon=\bigl(\frac{1+N(a)}{\ell}\bigr)$. Let $N(X)$ count all geometric optimal classes of degree at most $X$ and $N_{\ell\nmid d}(X)$ count those with degree coprime to $\ell$. Then
