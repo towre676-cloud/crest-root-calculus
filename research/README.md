@@ -6,7 +6,7 @@
 
 ## Quotient discovery from one expanded equation
 
-The coefficient-only search removes square factors with their rational unit and exhausts all constant-multiplier polynomial decompositions to lower positive genus. For odd-degree models with a singleton infinity fibre, it also exhausts maps to unknown targets when the vertical multiplier is nonconstant. Writing the derivative as a product reduces the number of incidence parameters and solves the saturated strata without multivariate elimination. [Theorem, programs, held-out comparisons and proof](coefficient-quotients/README.md)
+The coefficient-only search removes square factors with their rational unit and exhausts all constant-multiplier polynomial decompositions to lower positive genus. For odd-degree models with a singleton infinity fibre, it also exhausts maps to unknown targets when the vertical multiplier is nonconstant. Writing the derivative as a product reduces the number of incidence parameters and solves the saturated strata without multivariate elimination. A separate complete degree-two search discovers all rational positive-genus quotients of odd or even hyperelliptic equations, with arbitrary infinity fibres. Both searches reconstruct explicit target equations and maps. [Theorems, programs and comparisons](coefficient-quotients/README.md)
 
 ## Finite map reconstruction and solver comparisons
 
@@ -34,7 +34,7 @@ Run `python -S research/deployable-crossing/v2/verify_release.py` for the focuse
 
 The next concrete mechanical application is a pair of transportable half-spans that extend from opposite roadsides and connect above the road. The first study implements exact planar support-reaction bounds, rigid-half constraint ranks, scalar joining envelopes, and access-ramp arithmetic. It distinguishes the unconnected deployment state from the occupied bridge and documents close existing concepts and built mechanisms. The supplied cases are synthetic mathematical controls; structural capacity, a real coupling, accessible approaches, and site-specific operation remain engineering work. [Study, proof and primary sources](deployable-crossing/README.md) · [Focused source ZIP](https://github.com/towre676-cloud/crest-root-calculus/raw/refs/heads/main/downloads/crest-root-deployable-crossing-2026-11-23.zip)
 
-Run `python research/deployable-crossing/verify.py` for the independent standard-library checks and `python research/deployable-crossing/study.py` for the recorded examples. The optional `--symbolic` verifier also uses SymPy. This separate focused study is not part of the earlier 32-group replay or its archived packet.
+Run `python research/deployable-crossing/verify.py` for the independent standard-library checks and `python research/deployable-crossing/study.py` for the recorded examples. The optional `--symbolic` verifier also uses SymPy. The deployable-crossing replay commands are maintained with their individual releases.
 
 ## Results from the priority research
 
@@ -90,11 +90,12 @@ python -m pip install numpy "sympy>=1.12,<2"
 python research/replay.py
 ```
 
-On Windows, `py` can replace `python`. The replay runs 32 verification groups, including the original twelve-row solver with its historical limits, both positive and negative controls, new coefficient-only searches, finite-map certificates, the stored comparison receipts and both periodic-spectra studies. The default checks every dimension and separation certificate and rebuilds selected higher-support matrices. Add `--recount --workers 4` to rebuild every archived higher-support observation. The optional C++17 count over the field of 214,358,881 elements uses about 2.2 GB of table storage. The individual programs can also run separately. Repeating the timed comparisons requires the native solvers and POSIX environment described in the [earlier comparison instructions](solver-comparison/README.md) and [periodic-spectra instructions](periodic-spectra/README.md).
+On Windows, `py` can replace `python`. The replay runs 35 verification groups, including the two quotient benchmark audits, the independent degree-two checks, the original twelve-row solver with its historical limits, finite-map certificates and both periodic-spectra studies. Use the option **--quotients-only** to run the three newest checks. The 23 November packet retains its 32-group replay. To build a verified current research ZIP, run **python research/build_packet.py --only full**. The default checks every dimension and separation certificate and rebuilds selected higher-support matrices. Add `--recount --workers 4` to rebuild every archived higher-support observation. The optional C++17 count over the field of 214,358,881 elements uses about 2.2 GB of table storage. The individual programs can also run separately. Repeating the timed comparisons requires the native solvers and POSIX environment described in the [earlier comparison instructions](solver-comparison/README.md) and [periodic-spectra instructions](periodic-spectra/README.md).
 
 | To use a research program | Command from the repository root |
 |---|---|
 | Recover every rational map to a supplied hyperelliptic target of genus at least two | `python research/bounded-correspondences/rational_maps.py research/bounded-correspondences/examples/mobius.json` |
+| Recover every rational degree-two quotient from one equation | `python research/coefficient-quotients/double_covers.py research/coefficient-quotients/double-cover-example.json` |
 | Recover every map with a singleton infinity fibre, including an elliptic target | `python research/bounded-correspondences/maps.py research/bounded-correspondences/examples/cubic.json` |
 | Replay the exact map certificates and exclusion controls | `python research/bounded-correspondences/verify.py` |
 | Verify the three solver-comparison studies and recompute their mathematical outputs | `python research/solver-comparison/verify.py --recompute` |

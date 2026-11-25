@@ -8,14 +8,18 @@ Give the solver a single expanded rational polynomial $P$. It returns a squarefr
 
 The arbitrary local-to-global problem remains open. This theorem uses the input equation and a bounded coefficient incidence. The [equal-count obstruction](../local-pattern-obstruction/README.md) explains why a general rational reconstruction cannot depend on point counts alone.
 
+## Degree two with arbitrary infinity fibres
+
+Every rational degree-two cover has a unique deck involution. The new search recovers all such involutions apart from the genus-zero hyperelliptic quotient, then constructs the fixed field and the explicit map. It accepts both odd- and even-degree inputs. The verifier cross-checks the projective chart against independent branch-point permutations on four split curves, among nine exact inputs. One elliptic example has two source points above target infinity. Genus-one outputs may still need a rational point to supply an elliptic origin. [Proof and example](double-cover-proof.md)
+
 ## Run and verify
 
 From the repository root with Python 3.11+ and SymPy 1.14:
 
 ~~~sh
 python -B research/coefficient-quotients/discover.py research/coefficient-quotients/example.json --nonconstant
-python -B research/coefficient-quotients/verify.py
-python -B research/coefficient-quotients/native_control.py --verify
+python -B research/coefficient-quotients/double_covers.py research/coefficient-quotients/double-cover-example.json
+python -B research/replay.py --quotients-only
 ~~~
 
 The input is a JSON list of integer or rational-string coefficients in ascending order. The example is the degree-nine branch polynomial from the proof. Its genus-four curve has a degree-five map to an elliptic curve, with $V$ cubic and $W$ linear. The output includes the second admissible stratum and its exact exclusion. For an inflated input $y_P^2=P$, the original vertical coordinate in the map is $y_P V/A$.

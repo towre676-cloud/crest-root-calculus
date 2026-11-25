@@ -1,6 +1,6 @@
 """Deterministically package the complete research release and periodic study.
 
-Run from any working directory. Only the two named ZIPs are replaced;
+Run from any working directory. Only the two named outputs are built;
 historical exports and the introductory PDF are read or left untouched.
 No mathematics is rerun here: the archive checks verify bytes and manifests.
 """
@@ -18,9 +18,11 @@ from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
 ROOT = Path(__file__).resolve().parents[1]
 STAMP = (2026, 11, 23, 0, 0, 0)
 DATE = "2026-11-23"
-EXPECTED_GROUPS = 32
+CURRENT_DATE = "2026-11-24"
+EXPECTED_GROUPS = 35
+ARCHIVED_FULL = ROOT / "downloads" / f"crest-root-open-research-{DATE}.zip"
 PACKETS = {
-    "full": (f"crest-root-open-research-{DATE}.zip", "crest-root-research/"),
+    "full": ("crest-root-open-research-current.zip", "crest-root-research/"),
     "periodic": (f"crest-root-periodic-spectra-{DATE}.zip", "crest-root-periodic-spectra/"),
 }
 SKIP_DIRS = {"__pycache__", "node_modules", "venv", "build", "dist"}
@@ -125,7 +127,7 @@ The archive's MANIFEST.json records the size and SHA-256 of every other file.
 The complete research packet additionally contains all 32 research
 verification groups and the introductory PDF.
 """
-    return f"""# Crest–Root open research, 23 November 2026
+    return f"""# Crest–Root open research, {CURRENT_DATE}
 
 Read [the research guide](research/README.md), the
 [57-item register](research/backlog-2026-11-23.md), or the
@@ -141,6 +143,9 @@ reconstruction, local-to-global certificates, the equal-count obstruction,
 earlier solver comparisons, the marked chart-I solver, point-free
 Riemann–Roch, genus-two correspondences, genus-37 rank certificates, quartic
 degree spectra, the historical atlas and higher-support tower certificates.
+The [coefficient-only quotient guide](research/coefficient-quotients/README.md)
+includes the full fixed-degree search, degree-two covers with arbitrary
+infinity fibres, and the archived comparisons with Singular and PARI/GP.
 
 After extracting, open a terminal in this folder. Windows commands:
 
@@ -192,7 +197,7 @@ def entries(kind, groups):
     content = {path.relative_to(ROOT).as_posix(): path.read_bytes() for path in source_paths(kind)}
     content["README.md"] = packet_readme(kind, groups).encode("utf-8")
     manifest = {
-        "schema": 1, "packet": kind, "release_date": DATE,
+        "schema": 1, "packet": kind, "release_date": CURRENT_DATE if kind == "full" else DATE,
         "manifest_scope": "Every archive file except MANIFEST.json itself; paths are relative to the packet root.",
         "files": {name: {"bytes": len(data), "sha256": digest(data)}
                   for name, data in sorted(content.items())},
@@ -286,7 +291,10 @@ def main():
         filename, prefix = PACKETS[kind]
         target = options.output_dir / filename
         content = entries(kind, groups)
-        preservation = check_previous_full_archive(target, content) if kind == "full" else {}
+        preservation = {}
+        if kind == "full":
+            preservation = check_previous_full_archive(target, content)
+            preservation["historical_baseline"] = check_previous_full_archive(ARCHIVED_FULL, content)
         if options.check:
             verify_archive(target, prefix, content)
         else:
