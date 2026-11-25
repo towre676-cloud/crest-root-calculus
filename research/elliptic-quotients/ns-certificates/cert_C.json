@@ -1,0 +1,94 @@
+{
+ "curve": "C (torsion study, multiplicity one)",
+ "f": [
+  -36,
+  0,
+  49,
+  0,
+  -14,
+  0,
+  1
+ ],
+ "gram_prime": 101,
+ "provider_degrees": [
+  2,
+  2
+ ],
+ "gram": [
+  [
+   2,
+   2,
+   2
+  ],
+  [
+   2,
+   0,
+   4
+  ],
+  [
+   2,
+   4,
+   0
+  ]
+ ],
+ "rank_gram": 2,
+ "rank_certificate": {
+  "pair": [
+   0,
+   1
+  ],
+  "non_isogeny_witness": {
+   "p": 13,
+   "traces": [
+    2,
+    -6
+   ]
+  },
+  "rank_Hom": 0,
+  "rho_upper": 2
+ },
+ "saturation_log": [
+  {
+   "l": 2,
+   "level": 1,
+   "field": [
+    11,
+    1
+   ],
+   "divisible_combination": null
+  }
+ ],
+ "NS_basis_in_generators": [
+  [
+   "1",
+   "0",
+   "0"
+  ],
+  [
+   "0",
+   "0",
+   "1"
+  ]
+ ],
+ "NS_gram": [
+  [
+   2,
+   2
+  ],
+  [
+   2,
+   0
+  ]
+ ],
+ "NS_discriminant": -4,
+ "theta": [
+  1,
+  0
+ ],
+ "spectrum_through_X": {
+  "2": 2
+ },
+ "X": 150,
+ "status": "certified",
+ "seconds": 0.1
+}
