@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 STAMP = (2026, 11, 23, 0, 0, 0)
 DATE = "2026-11-23"
 CURRENT_DATE = "2026-11-24"
-EXPECTED_GROUPS = 35
+EXPECTED_GROUPS = 36
 ARCHIVED_FULL = ROOT / "downloads" / f"crest-root-open-research-{DATE}.zip"
 PACKETS = {
     "full": ("crest-root-open-research-current.zip", "crest-root-research/"),
@@ -146,6 +146,9 @@ degree spectra, the historical atlas and higher-support tower certificates.
 The [coefficient-only quotient guide](research/coefficient-quotients/README.md)
 includes the full fixed-degree search, degree-two covers with arbitrary
 infinity fibres, and the archived comparisons with Singular and PARI/GP.
+The [cyclic-cover study](research/cyclic-cover-reconstruction/README.md)
+extends source-only reconstruction to mixed Kummer branches and records a
+new native Singular comparison.
 
 After extracting, open a terminal in this folder. Windows commands:
 

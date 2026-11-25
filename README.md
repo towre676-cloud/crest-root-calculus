@@ -10,6 +10,8 @@
 
 **Discover a hidden quotient from one equation.** Give the solver a hyperelliptic equation and it can find simpler curves and the exact maps to them. It finds every rational degree-two quotient to positive genus, including when two points lie above target infinity. It also exhausts polynomial quotient maps in the stated classes. [Run the examples, read the proofs and inspect the comparisons](research/coefficient-quotients/README.md)
 
+**Cyclic covers.** The coefficient-only search now handles higher powers, mixed branch multiplicities, and maps through smaller cyclic subfields. In a degree range controlled by the poles at infinity, it covers all maps in the stated model class without a symmetry assumption. [Proof, runnable sample and benchmark](research/cyclic-cover-reconstruction/README.md)
+
 ## Seven applications you can run
 
 **Try a real decision.** Can a second reading settle a chip’s width? Which street still needs a leak search? Does a retired battery need another test? The workshop also compares home retrofits, reconstructs material structures, schedules telescope observations, and runs the original degree-three map solver on published curves. Each app accepts your own inputs and shows which conclusions the measurements support.
@@ -335,7 +337,9 @@ If only the source is supplied, the coefficient-only solver exhausts all degree-
 
 For nonconstant multipliers, the derivative reduction finished 20 of 20 benchmark strata and the stronger native Singular route finished 18. On those 18 paired inputs the median ratios in Crest–Root's favor were 4.34× in solver CPU and 1.17× in fresh-process wall time. In the constant class, corrected classical decomposition won 32 of 36 solver-CPU comparisons. [Matched benchmarks](research/coefficient-quotients/README.md#observed-results) · [Earlier solver comparisons](research/solver-comparison/README.md)
 
-From a current checkout, run the three quotient checks or the full set of 35 research checks:
+The cyclic extension recovers both the degree-two and degree-five maps from the Picard quartic, and a degree-eight map from a genus-six input using one complementary parameter. Its derivative route finished 20 of 20 fixed-stratum inputs, versus 10 for each of two matched Singular baselines. Among the ten shared formal-root cases, the median advantage was 1.84× in solver CPU and 1.11× in fresh-process wall time. [Cyclic-cover results and receipts](research/cyclic-cover-reconstruction/README.md)
+
+From a current checkout, run the four quotient checks or the full set of 36 research checks:
 
 ~~~sh
 python -B research/replay.py --quotients-only

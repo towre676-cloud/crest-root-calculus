@@ -32,7 +32,7 @@ def main():
     parser.add_argument("--recount", action="store_true",
                         help="Recompute every stored higher-support matrix from the curve equations")
     parser.add_argument("--quotients-only", action="store_true",
-                        help="Run the three checks for coefficient-only quotient discovery")
+                        help="Run the four checks for coefficient-only quotient discovery")
     options=parser.parse_args()
     if options.workers<1:
         parser.error("Choose at least one worker")
@@ -43,8 +43,9 @@ def main():
     run(quotients / "offline_replay.py", args=["frozen"])
     run(quotients / "offline_replay.py", args=["native"])
     run(quotients / "verify_double_covers.py")
+    run(HERE / "cyclic-cover-reconstruction" / "verify.py")
     if options.quotients_only:
-        print("All 3 coefficient-only verification groups passed.")
+        print("All 4 coefficient-only verification groups passed.")
         return
     run(HERE.parent / "applications/atlas/original/replay.py")
     # The blind spectrum replay also recomputes both individual bielliptic proofs.
@@ -79,7 +80,7 @@ def main():
     run(HERE / "local-pattern-obstruction/verify.py", "receipt.json")
     run(HERE / "solver-comparison/verify.py")
     run(HERE / "periodic-spectra/audit_native.py")
-    print("All 35 research verification groups passed.")
+    print("All 36 research verification groups passed.")
 
 
 if __name__ == "__main__":
