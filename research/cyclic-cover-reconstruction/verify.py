@@ -57,7 +57,8 @@ def coefficient_checks():
             "Picard quartic lost or gained a map.")
     require(positive["automatic_equivariance_through"] == {"3": 1}, "Wrong Picard pole threshold.")
     negative = roundtrip(F+poly(X), 3)
-    require(not maps(negative), "The perturbed Picard quartic acquired a map.")
+    require(all(row["geometric_points"] == 0 for chart in negative["charts"] for row in chart["strata"]),
+            "The perturbed Picard quartic acquired a geometric map.")
     for source in (F, F+poly(X)):
         for index, degrees in enumerate(((2, 2, 0), (5, 2, 2))):
             row = (positive if source == F else negative)["charts"][0]["strata"][index]
@@ -113,8 +114,11 @@ def extra_character_checks():
     require(gcd(high.degree(),2)==1, "Invalid valuation control.")
     _, source, _, min_pole = source_model(coefficients(high),2)
     require(source.degree() == 7 and min_pole == 7, "Power normalization altered the pole threshold.")
-    bound = roundtrip(poly(X**7-X+1),3,3,degree=2)
-    require(bound["automatic_equivariance_through"] == {"3":2}, "Automatic-equivariance range changed.")
+    u, g = poly(X**2+X), poly(X**4+X+1)
+    bound = roundtrip(g.compose(u),3,3,degree=2)
+    require(bound["source_genus"] == 7 and bound["automatic_equivariance_through"] == {"3":2}
+            and maps(bound) == [(3,1,2,known_map(u,poly(1),g))],
+            "The cover in the automatic-equivariance range changed.")
     require(compute(coefficients(F),6,4)["charts"] == [], "A nondividing cyclic exponent survived the equivariant filter.")
 
 
