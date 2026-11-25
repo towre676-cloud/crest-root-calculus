@@ -28,6 +28,8 @@ The finite-kernel replay independently certifies the complete geometric spectra 
 
 The Néron–Severi replay covers twelve split curves, including distinct isogenous factors and CM cases. A separate quaternionic example has no elliptic maps, certified by two exact correspondences. [Certificates and scope](elliptic-quotients/RECONSTRUCTION-THEOREM.md)
 
+A nine-curve replay now encloses the periods and checks bounded elliptic and endomorphism searches by exact lattice enumeration. Eight split examples match the torsion-certified lattices. On the quaternionic example the exact correspondences generate the maximal order of reduced discriminant 6. [Construction and replay](elliptic-quotients/rigorous-search/README.md)
+
 ## Finite map reconstruction and solver comparisons
 
 The reconstruction engine now computes every nonconstant rational morphism between two supplied smooth hyperelliptic curves when the target has genus at least two. It supports both odd- and even-degree equations and derives the complete degree list from Riemann–Hurwitz. A finite coefficient algebra supplies the reconstruction bounds. The output includes exact map formulas, local lifting records and checks against the original equations. An optional Frobenius test can exclude rational maps in every degree before elimination. [The theorem, implementation and examples](bounded-correspondences/README.md)

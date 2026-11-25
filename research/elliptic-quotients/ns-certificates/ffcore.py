@@ -12,11 +12,12 @@ from __future__ import annotations
 import itertools
 import sys
 from fractions import Fraction
+from pathlib import Path
 
 import flint
 import sympy
 
-sys.path.insert(0, "../exact-completeness")
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "exact-completeness"))
 from jac import Jacobian, odd_model, weil_poly, jac_order  # noqa: E402
 
 
