@@ -12,6 +12,10 @@ The coefficient-only search removes square factors with their rational unit and 
 
 The cyclic search allows mixed branch multiplicities in the source, arbitrary surjective characters and smaller target exponents dividing the source exponent. It finds exact normalized quotient formulas and verifies the full list of admissible degrees. A pole-order bound gives a range in which every singleton-infinity map to the stated target models is automatically equivariant. The held-out native comparison isolates the contribution of the derivative reduction. [Theorem, study and replay](cyclic-cover-reconstruction/README.md)
 
+## Elliptic degrees with repeated factors
+
+For a polarized variety isogenous to a non-CM elliptic self-product, the finite isogeny kernel corrects the polarization degree in each primitive lattice direction. Two explicit genus-two families share the same rational polarized isogeny data over a common field and have different complete spectra and counting constants. One contains the repeated-factor curve with branch pairs at ±1, ±2 and ±4. [Proof and exact replay](elliptic-quotients/isotypic-gluing/README.md)
+
 ## Finite map reconstruction and solver comparisons
 
 The reconstruction engine now computes every nonconstant rational morphism between two supplied smooth hyperelliptic curves when the target has genus at least two. It supports both odd- and even-degree equations and derives the complete degree list from Riemann–Hurwitz. A finite coefficient algebra supplies the reconstruction bounds. The output includes exact map formulas, local lifting records and checks against the original equations. An optional Frobenius test can exclude rational maps in every degree before elimination. [The theorem, implementation and examples](bounded-correspondences/README.md)
