@@ -1,0 +1,1578 @@
+{
+  "seed": 1146642577771410726,
+  "cohorts": {
+    "algebraic-cover": 10,
+    "cubic-proper": 3,
+    "cubic-saturated": 3,
+    "genus-zero-control": 1,
+    "inflated-cover": 5,
+    "jacobi-spring": 6,
+    "multiple-degrees": 2,
+    "one-coefficient-perturbation": 20,
+    "prime-degree-control": 1,
+    "quintic-proper": 3,
+    "quintic-saturated": 1,
+    "stock-regression-control": 1
+  },
+  "cases": {
+    "q001": {
+      "study": "nonconstant",
+      "cohort": "cubic-saturated",
+      "construction": "cubic-saturated",
+      "inner": [
+        "0",
+        "-3",
+        "0",
+        "1"
+      ],
+      "outer": [
+        "-36",
+        "-4",
+        "9",
+        "1"
+      ],
+      "vertical": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "shift": -1,
+      "degree_stratum": [
+        3,
+        3,
+        2
+      ]
+    },
+    "q002": {
+      "study": "constant",
+      "cohort": "prime-degree-control",
+      "construction": "degree seven"
+    },
+    "q003": {
+      "study": "nonconstant",
+      "cohort": "one-coefficient-perturbation",
+      "construction": "cubic-saturated",
+      "inner": [
+        "0",
+        "-3",
+        "0",
+        "1"
+      ],
+      "outer": [
+        "16",
+        "-4",
+        "-4",
+        "1"
+      ],
+      "vertical": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "shift": -2,
+      "degree_stratum": [
+        3,
+        3,
+        2
+      ],
+      "perturbation": [
+        0,
+        "3"
+      ]
+    },
+    "q004": {
+      "study": "nonconstant",
+      "cohort": "cubic-saturated",
+      "construction": "cubic-saturated",
+      "inner": [
+        "0",
+        "-3",
+        "0",
+        "1"
+      ],
+      "outer": [
+        "32",
+        "-4",
+        "-8",
+        "1"
+      ],
+      "vertical": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "shift": -2,
+      "degree_stratum": [
+        3,
+        3,
+        2
+      ]
+    },
+    "q005": {
+      "study": "nonconstant",
+      "cohort": "quintic-proper",
+      "construction": "quintic-proper",
+      "inner": [
+        "0",
+        "0",
+        "0",
+        "-10/3",
+        "5/4",
+        "1"
+      ],
+      "outer": [
+        "0",
+        "-143/9",
+        "-163/12",
+        "1"
+      ],
+      "vertical": [
+        "0",
+        "-2",
+        "1",
+        "1"
+      ],
+      "shift": 2,
+      "degree_stratum": [
+        5,
+        3,
+        3
+      ]
+    },
+    "q006": {
+      "study": "constant",
+      "cohort": "one-coefficient-perturbation",
+      "construction": "chebyshev-inner",
+      "inner": [
+        "977507781732009123",
+        "1233292841550275",
+        "622403714025",
+        "157053685",
+        "19815",
+        "1"
+      ],
+      "outer": [
+        "-3070",
+        "-595",
+        "2819",
+        "1944",
+        "352",
+        "-3255",
+        "-755",
+        "1"
+      ],
+      "coefficient_bound": 4096,
+      "affine": null,
+      "perturbation": [
+        1,
+        "1"
+      ]
+    },
+    "q007": {
+      "study": "constant",
+      "cohort": "jacobi-spring",
+      "diagonal": [
+        13,
+        13,
+        13
+      ],
+      "bonds": [
+        -5,
+        -5,
+        -5
+      ],
+      "repetitions": 6,
+      "pinning": [
+        3,
+        3,
+        3
+      ],
+      "declared_nonminimal": true
+    },
+    "q008": {
+      "study": "nonconstant",
+      "cohort": "one-coefficient-perturbation",
+      "construction": "cubic-proper",
+      "inner": [
+        "0",
+        "-3",
+        "0",
+        "1"
+      ],
+      "outer": [
+        "8",
+        "4",
+        "2",
+        "1"
+      ],
+      "vertical": [
+        "-1",
+        "1"
+      ],
+      "shift": 3,
+      "degree_stratum": [
+        3,
+        3,
+        1
+      ],
+      "perturbation": [
+        0,
+        "4"
+      ]
+    },
+    "q009": {
+      "study": "nonconstant",
+      "cohort": "one-coefficient-perturbation",
+      "construction": "quintic-proper",
+      "inner": [
+        "0",
+        "0",
+        "0",
+        "20/3",
+        "-25/4",
+        "1"
+      ],
+      "outer": [
+        "0",
+        "-1904/9",
+        "1775/12",
+        "1"
+      ],
+      "vertical": [
+        "0",
+        "4",
+        "-5",
+        "1"
+      ],
+      "shift": 2,
+      "degree_stratum": [
+        5,
+        3,
+        3
+      ],
+      "perturbation": [
+        0,
+        "9"
+      ]
+    },
+    "q010": {
+      "study": "constant",
+      "cohort": "one-coefficient-perturbation",
+      "construction": "chebyshev-inner",
+      "inner": [
+        "7",
+        "6",
+        "1"
+      ],
+      "outer": [
+        "2",
+        "-1",
+        "-3",
+        "1"
+      ],
+      "coefficient_bound": 3,
+      "affine": null,
+      "perturbation": [
+        1,
+        "1"
+      ]
+    },
+    "q011": {
+      "study": "nonconstant",
+      "cohort": "cubic-proper",
+      "construction": "cubic-proper",
+      "inner": [
+        "0",
+        "-3",
+        "0",
+        "1"
+      ],
+      "outer": [
+        "18",
+        "9",
+        "2",
+        "1"
+      ],
+      "vertical": [
+        "-1",
+        "1"
+      ],
+      "shift": -3,
+      "degree_stratum": [
+        3,
+        3,
+        1
+      ]
+    },
+    "q012": {
+      "study": "constant",
+      "cohort": "algebraic-cover",
+      "construction": "chebyshev-inner",
+      "inner": [
+        "10484965000250064016787909163967550240857300339265591049933710726306042400319344042309349439",
+        "343480060861462057255059781912214519608773017878832746627027234106435491512853812984784",
+        "5274452165248374733015462091179562228354558850620911397466506916739838450845387240",
+        "50396305784823167497484592195789546426455583229590685858003662096916940393040",
+        "335348699766741275407607774233620074212828060886670344705164080263678220",
+        "1647868044423912447125179335890461241954556781168532382410217478768",
+        "6185551543257746062249982954404887911970556853826835419673864",
+        "18092348871541334839985085733134358940743251230729358896",
+        "41673697931813605943418013925634639879339487899042",
+        "75844497872992047224310571682210049117281168",
+        "108701787042618783672192218114779925224",
+        "121397519387552965648108596731152",
+        "103565029749384895641593748",
+        "65244564516082093296",
+        "28625436590504",
+        "7814576",
+        "1"
+      ],
+      "outer": [
+        "997807",
+        "-160072",
+        "626587",
+        "1"
+      ],
+      "coefficient_bound": 1048576,
+      "affine": [
+        "2/3",
+        "2",
+        "5/7"
+      ]
+    },
+    "q013": {
+      "study": "constant",
+      "cohort": "inflated-cover",
+      "construction": "dense",
+      "inner": [
+        "-2",
+        "2",
+        "-2",
+        "-2",
+        "1",
+        "1",
+        "-1",
+        "0",
+        "-2",
+        "-1",
+        "1",
+        "-1",
+        "1"
+      ],
+      "outer": [
+        "2",
+        "-1",
+        "0",
+        "-2",
+        "-2",
+        "2",
+        "1"
+      ],
+      "coefficient_bound": 2,
+      "affine": null,
+      "inflator": [
+        "343",
+        "147",
+        "364",
+        "148",
+        "21",
+        "1"
+      ]
+    },
+    "q014": {
+      "study": "nonconstant",
+      "cohort": "quintic-saturated",
+      "construction": "quintic-saturated",
+      "inner": [
+        "0",
+        "5",
+        "0",
+        "-5",
+        "0",
+        "1"
+      ],
+      "outer": [
+        "12",
+        "-4",
+        "-3",
+        "1"
+      ],
+      "vertical": [
+        "1",
+        "0",
+        "-3",
+        "0",
+        "1"
+      ],
+      "shift": -2,
+      "degree_stratum": [
+        5,
+        3,
+        4
+      ]
+    },
+    "q015": {
+      "study": "nonconstant",
+      "cohort": "cubic-proper",
+      "construction": "cubic-proper",
+      "inner": [
+        "0",
+        "-3",
+        "0",
+        "1"
+      ],
+      "outer": [
+        "16",
+        "8",
+        "2",
+        "1"
+      ],
+      "vertical": [
+        "-1",
+        "1"
+      ],
+      "shift": 3,
+      "degree_stratum": [
+        3,
+        3,
+        1
+      ]
+    },
+    "q016": {
+      "study": "constant",
+      "cohort": "genus-zero-control",
+      "construction": "constant times square"
+    },
+    "q017": {
+      "study": "nonconstant",
+      "cohort": "one-coefficient-perturbation",
+      "construction": "quintic-proper",
+      "inner": [
+        "0",
+        "0",
+        "0",
+        "-10",
+        "5/4",
+        "1"
+      ],
+      "outer": [
+        "0",
+        "-3591",
+        "-401/4",
+        "1"
+      ],
+      "vertical": [
+        "0",
+        "-6",
+        "1",
+        "1"
+      ],
+      "shift": 2,
+      "degree_stratum": [
+        5,
+        3,
+        3
+      ],
+      "perturbation": [
+        0,
+        "8"
+      ]
+    },
+    "q018": {
+      "study": "constant",
+      "cohort": "algebraic-cover",
+      "construction": "chebyshev-inner",
+      "inner": [
+        "977507781732009123",
+        "1233292841550275",
+        "622403714025",
+        "157053685",
+        "19815",
+        "1"
+      ],
+      "outer": [
+        "-3070",
+        "-595",
+        "2819",
+        "1944",
+        "352",
+        "-3255",
+        "-755",
+        "1"
+      ],
+      "coefficient_bound": 4096,
+      "affine": null
+    },
+    "q019": {
+      "study": "constant",
+      "cohort": "algebraic-cover",
+      "construction": "dense",
+      "inner": [
+        "47566",
+        "-124388",
+        "103643",
+        "70968",
+        "-160679",
+        "43902",
+        "-67325",
+        "1"
+      ],
+      "outer": [
+        "149319",
+        "-46061",
+        "61694",
+        "69514",
+        "-36054",
+        "28614",
+        "-223640",
+        "-184093",
+        "1"
+      ],
+      "coefficient_bound": 262144,
+      "affine": [
+        "2/5",
+        "-3",
+        "2/7"
+      ]
+    },
+    "q020": {
+      "study": "constant",
+      "cohort": "one-coefficient-perturbation",
+      "construction": "dense",
+      "inner": [
+        "7",
+        "10",
+        "-11",
+        "12",
+        "13",
+        "0",
+        "1"
+      ],
+      "outer": [
+        "-8",
+        "-9",
+        "-8",
+        "0",
+        "-9",
+        "15",
+        "1"
+      ],
+      "coefficient_bound": 16,
+      "affine": null,
+      "perturbation": [
+        1,
+        "1"
+      ]
+    },
+    "q021": {
+      "study": "constant",
+      "cohort": "inflated-cover",
+      "construction": "chebyshev-inner",
+      "inner": [
+        "977507781732009123",
+        "1233292841550275",
+        "622403714025",
+        "157053685",
+        "19815",
+        "1"
+      ],
+      "outer": [
+        "-3070",
+        "-595",
+        "2819",
+        "1944",
+        "352",
+        "-3255",
+        "-755",
+        "1"
+      ],
+      "coefficient_bound": 4096,
+      "affine": null,
+      "inflator": [
+        "-7",
+        "1",
+        "-7",
+        "1"
+      ]
+    },
+    "q022": {
+      "study": "constant",
+      "cohort": "one-coefficient-perturbation",
+      "construction": "dense",
+      "inner": [
+        "47566",
+        "-124388",
+        "103643",
+        "70968",
+        "-160679",
+        "43902",
+        "-67325",
+        "1"
+      ],
+      "outer": [
+        "149319",
+        "-46061",
+        "61694",
+        "69514",
+        "-36054",
+        "28614",
+        "-223640",
+        "-184093",
+        "1"
+      ],
+      "coefficient_bound": 262144,
+      "affine": [
+        "2/5",
+        "-3",
+        "2/7"
+      ],
+      "perturbation": [
+        1,
+        "1"
+      ]
+    },
+    "q023": {
+      "study": "constant",
+      "cohort": "jacobi-spring",
+      "diagonal": [
+        29,
+        29,
+        29,
+        29
+      ],
+      "bonds": [
+        -11,
+        -13,
+        -4,
+        -10
+      ],
+      "repetitions": 1,
+      "pinning": [
+        8,
+        5,
+        12,
+        15
+      ],
+      "declared_nonminimal": false
+    },
+    "q024": {
+      "study": "nonconstant",
+      "cohort": "one-coefficient-perturbation",
+      "construction": "cubic-proper",
+      "inner": [
+        "0",
+        "-3",
+        "0",
+        "1"
+      ],
+      "outer": [
+        "18",
+        "9",
+        "2",
+        "1"
+      ],
+      "vertical": [
+        "-1",
+        "1"
+      ],
+      "shift": -3,
+      "degree_stratum": [
+        3,
+        3,
+        1
+      ],
+      "perturbation": [
+        0,
+        "6"
+      ]
+    },
+    "q025": {
+      "study": "nonconstant",
+      "cohort": "cubic-saturated",
+      "construction": "cubic-saturated",
+      "inner": [
+        "0",
+        "-3",
+        "0",
+        "1"
+      ],
+      "outer": [
+        "16",
+        "-4",
+        "-4",
+        "1"
+      ],
+      "vertical": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "shift": -2,
+      "degree_stratum": [
+        3,
+        3,
+        2
+      ]
+    },
+    "q026": {
+      "study": "constant",
+      "cohort": "algebraic-cover",
+      "construction": "dense",
+      "inner": [
+        "-2",
+        "2",
+        "-2",
+        "-2",
+        "1",
+        "1",
+        "-1",
+        "0",
+        "-2",
+        "-1",
+        "1",
+        "-1",
+        "1"
+      ],
+      "outer": [
+        "2",
+        "-1",
+        "0",
+        "-2",
+        "-2",
+        "2",
+        "1"
+      ],
+      "coefficient_bound": 2,
+      "affine": null
+    },
+    "q027": {
+      "study": "nonconstant",
+      "cohort": "one-coefficient-perturbation",
+      "construction": "quintic-saturated",
+      "inner": [
+        "0",
+        "5",
+        "0",
+        "-5",
+        "0",
+        "1"
+      ],
+      "outer": [
+        "12",
+        "-4",
+        "-3",
+        "1"
+      ],
+      "vertical": [
+        "1",
+        "0",
+        "-3",
+        "0",
+        "1"
+      ],
+      "shift": -2,
+      "degree_stratum": [
+        5,
+        3,
+        4
+      ],
+      "perturbation": [
+        0,
+        "10"
+      ]
+    },
+    "q028": {
+      "study": "constant",
+      "cohort": "one-coefficient-perturbation",
+      "construction": "chebyshev-inner",
+      "inner": [
+        "10484965000250064016787909163967550240857300339265591049933710726306042400319344042309349439",
+        "343480060861462057255059781912214519608773017878832746627027234106435491512853812984784",
+        "5274452165248374733015462091179562228354558850620911397466506916739838450845387240",
+        "50396305784823167497484592195789546426455583229590685858003662096916940393040",
+        "335348699766741275407607774233620074212828060886670344705164080263678220",
+        "1647868044423912447125179335890461241954556781168532382410217478768",
+        "6185551543257746062249982954404887911970556853826835419673864",
+        "18092348871541334839985085733134358940743251230729358896",
+        "41673697931813605943418013925634639879339487899042",
+        "75844497872992047224310571682210049117281168",
+        "108701787042618783672192218114779925224",
+        "121397519387552965648108596731152",
+        "103565029749384895641593748",
+        "65244564516082093296",
+        "28625436590504",
+        "7814576",
+        "1"
+      ],
+      "outer": [
+        "997807",
+        "-160072",
+        "626587",
+        "1"
+      ],
+      "coefficient_bound": 1048576,
+      "affine": [
+        "2/3",
+        "2",
+        "5/7"
+      ],
+      "perturbation": [
+        1,
+        "1"
+      ]
+    },
+    "q029": {
+      "study": "constant",
+      "cohort": "inflated-cover",
+      "construction": "dense",
+      "inner": [
+        "71",
+        "93",
+        "1"
+      ],
+      "outer": [
+        "-84",
+        "85",
+        "99",
+        "18",
+        "63",
+        "90",
+        "1"
+      ],
+      "coefficient_bound": 100,
+      "affine": null,
+      "inflator": [
+        "-512",
+        "192",
+        "-536",
+        "193",
+        "-24",
+        "1"
+      ]
+    },
+    "q030": {
+      "study": "constant",
+      "cohort": "algebraic-cover",
+      "construction": "dense",
+      "inner": [
+        "7",
+        "10",
+        "-11",
+        "12",
+        "13",
+        "0",
+        "1"
+      ],
+      "outer": [
+        "-8",
+        "-9",
+        "-8",
+        "0",
+        "-9",
+        "15",
+        "1"
+      ],
+      "coefficient_bound": 16,
+      "affine": null
+    },
+    "q031": {
+      "study": "constant",
+      "cohort": "one-coefficient-perturbation",
+      "construction": "chebyshev-inner",
+      "inner": [
+        "47",
+        "84",
+        "50",
+        "12",
+        "1"
+      ],
+      "outer": [
+        "-4",
+        "3",
+        "2",
+        "2",
+        "0",
+        "1"
+      ],
+      "coefficient_bound": 4,
+      "affine": [
+        "2/7",
+        "-3",
+        "2/7"
+      ],
+      "perturbation": [
+        1,
+        "1"
+      ]
+    },
+    "q032": {
+      "study": "constant",
+      "cohort": "one-coefficient-perturbation",
+      "construction": "dense",
+      "inner": [
+        "-8",
+        "-1",
+        "-7",
+        "1"
+      ],
+      "outer": [
+        "-9",
+        "-5",
+        "7",
+        "1"
+      ],
+      "coefficient_bound": 10,
+      "affine": [
+        "2/3",
+        "-3",
+        "5/7"
+      ],
+      "perturbation": [
+        1,
+        "1"
+      ]
+    },
+    "q033": {
+      "study": "constant",
+      "cohort": "multiple-degrees",
+      "construction": "commuting Chebyshev steps",
+      "inner": [
+        "-2",
+        "0",
+        "9",
+        "0",
+        "-6",
+        "0",
+        "1"
+      ],
+      "outer": [
+        "3",
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    "q034": {
+      "study": "constant",
+      "cohort": "algebraic-cover",
+      "construction": "dense",
+      "inner": [
+        "-8",
+        "-1",
+        "-7",
+        "1"
+      ],
+      "outer": [
+        "-9",
+        "-5",
+        "7",
+        "1"
+      ],
+      "coefficient_bound": 10,
+      "affine": [
+        "2/3",
+        "-3",
+        "5/7"
+      ]
+    },
+    "q035": {
+      "study": "nonconstant",
+      "cohort": "one-coefficient-perturbation",
+      "construction": "cubic-saturated",
+      "inner": [
+        "0",
+        "-3",
+        "0",
+        "1"
+      ],
+      "outer": [
+        "-36",
+        "-4",
+        "9",
+        "1"
+      ],
+      "vertical": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "shift": -1,
+      "degree_stratum": [
+        3,
+        3,
+        2
+      ],
+      "perturbation": [
+        0,
+        "5"
+      ]
+    },
+    "q036": {
+      "study": "nonconstant",
+      "cohort": "cubic-proper",
+      "construction": "cubic-proper",
+      "inner": [
+        "0",
+        "-3",
+        "0",
+        "1"
+      ],
+      "outer": [
+        "8",
+        "4",
+        "2",
+        "1"
+      ],
+      "vertical": [
+        "-1",
+        "1"
+      ],
+      "shift": 3,
+      "degree_stratum": [
+        3,
+        3,
+        1
+      ]
+    },
+    "q037": {
+      "study": "constant",
+      "cohort": "inflated-cover",
+      "construction": "chebyshev-inner",
+      "inner": [
+        "7",
+        "6",
+        "1"
+      ],
+      "outer": [
+        "2",
+        "-1",
+        "-3",
+        "1"
+      ],
+      "coefficient_bound": 3,
+      "affine": null,
+      "inflator": [
+        "-6",
+        "1",
+        "-6",
+        "1"
+      ]
+    },
+    "q038": {
+      "study": "constant",
+      "cohort": "multiple-degrees",
+      "construction": "commuting Chebyshev steps",
+      "inner": [
+        "2",
+        "0",
+        "-12",
+        "4",
+        "9",
+        "-6",
+        "1"
+      ],
+      "outer": [
+        "3",
+        "-1",
+        "0",
+        "1"
+      ]
+    },
+    "q039": {
+      "study": "constant",
+      "cohort": "jacobi-spring",
+      "diagonal": [
+        20,
+        17,
+        10
+      ],
+      "bonds": [
+        -13,
+        -1,
+        -6
+      ],
+      "repetitions": 4,
+      "pinning": [
+        1,
+        3,
+        3
+      ],
+      "declared_nonminimal": false
+    },
+    "q040": {
+      "study": "constant",
+      "cohort": "algebraic-cover",
+      "construction": "chebyshev-inner",
+      "inner": [
+        "7",
+        "6",
+        "1"
+      ],
+      "outer": [
+        "2",
+        "-1",
+        "-3",
+        "1"
+      ],
+      "coefficient_bound": 3,
+      "affine": null
+    },
+    "q041": {
+      "study": "constant",
+      "cohort": "one-coefficient-perturbation",
+      "construction": "dense",
+      "inner": [
+        "-2",
+        "2",
+        "-2",
+        "-2",
+        "1",
+        "1",
+        "-1",
+        "0",
+        "-2",
+        "-1",
+        "1",
+        "-1",
+        "1"
+      ],
+      "outer": [
+        "2",
+        "-1",
+        "0",
+        "-2",
+        "-2",
+        "2",
+        "1"
+      ],
+      "coefficient_bound": 2,
+      "affine": null,
+      "perturbation": [
+        1,
+        "1"
+      ]
+    },
+    "q042": {
+      "study": "nonconstant",
+      "cohort": "one-coefficient-perturbation",
+      "construction": "quintic-proper",
+      "inner": [
+        "0",
+        "0",
+        "0",
+        "-10/3",
+        "5/4",
+        "1"
+      ],
+      "outer": [
+        "0",
+        "-143/9",
+        "-163/12",
+        "1"
+      ],
+      "vertical": [
+        "0",
+        "-2",
+        "1",
+        "1"
+      ],
+      "shift": 2,
+      "degree_stratum": [
+        5,
+        3,
+        3
+      ],
+      "perturbation": [
+        0,
+        "7"
+      ]
+    },
+    "q043": {
+      "study": "constant",
+      "cohort": "jacobi-spring",
+      "diagonal": [
+        17,
+        22,
+        25
+      ],
+      "bonds": [
+        -6,
+        -14,
+        -9
+      ],
+      "repetitions": 5,
+      "pinning": [
+        2,
+        2,
+        2
+      ],
+      "declared_nonminimal": false
+    },
+    "q044": {
+      "study": "constant",
+      "cohort": "one-coefficient-perturbation",
+      "construction": "dense",
+      "inner": [
+        "71",
+        "93",
+        "1"
+      ],
+      "outer": [
+        "-84",
+        "85",
+        "99",
+        "18",
+        "63",
+        "90",
+        "1"
+      ],
+      "coefficient_bound": 100,
+      "affine": null,
+      "perturbation": [
+        1,
+        "1"
+      ]
+    },
+    "q045": {
+      "study": "constant",
+      "cohort": "jacobi-spring",
+      "diagonal": [
+        27,
+        27,
+        27,
+        27
+      ],
+      "bonds": [
+        -5,
+        -10,
+        -3,
+        -12
+      ],
+      "repetitions": 5,
+      "pinning": [
+        10,
+        12,
+        14,
+        12
+      ],
+      "declared_nonminimal": false
+    },
+    "q046": {
+      "study": "constant",
+      "cohort": "algebraic-cover",
+      "construction": "dense",
+      "inner": [
+        "71",
+        "93",
+        "1"
+      ],
+      "outer": [
+        "-84",
+        "85",
+        "99",
+        "18",
+        "63",
+        "90",
+        "1"
+      ],
+      "coefficient_bound": 100,
+      "affine": null
+    },
+    "q047": {
+      "study": "constant",
+      "cohort": "algebraic-cover",
+      "construction": "dense",
+      "inner": [
+        "1",
+        "4",
+        "-3",
+        "-3",
+        "2",
+        "3",
+        "2",
+        "5",
+        "1",
+        "1"
+      ],
+      "outer": [
+        "-4",
+        "2",
+        "-2",
+        "0",
+        "6",
+        "1"
+      ],
+      "coefficient_bound": 7,
+      "affine": [
+        "2/7",
+        "1",
+        "-3/7"
+      ]
+    },
+    "q048": {
+      "study": "constant",
+      "cohort": "inflated-cover",
+      "construction": "dense",
+      "inner": [
+        "7",
+        "10",
+        "-11",
+        "12",
+        "13",
+        "0",
+        "1"
+      ],
+      "outer": [
+        "-8",
+        "-9",
+        "-8",
+        "0",
+        "-9",
+        "15",
+        "1"
+      ],
+      "coefficient_bound": 16,
+      "affine": null,
+      "inflator": [
+        "4",
+        "4",
+        "5",
+        "4",
+        "1"
+      ]
+    },
+    "q049": {
+      "study": "constant",
+      "cohort": "stock-regression-control",
+      "construction": "nonzero consecutive right-component coefficients",
+      "inner": [
+        "0",
+        "0",
+        "2",
+        "1"
+      ],
+      "outer": [
+        "1",
+        "1",
+        "0",
+        "1"
+      ]
+    },
+    "q050": {
+      "study": "nonconstant",
+      "cohort": "one-coefficient-perturbation",
+      "construction": "cubic-proper",
+      "inner": [
+        "0",
+        "-3",
+        "0",
+        "1"
+      ],
+      "outer": [
+        "16",
+        "8",
+        "2",
+        "1"
+      ],
+      "vertical": [
+        "-1",
+        "1"
+      ],
+      "shift": 3,
+      "degree_stratum": [
+        3,
+        3,
+        1
+      ],
+      "perturbation": [
+        0,
+        "2"
+      ]
+    },
+    "q051": {
+      "study": "nonconstant",
+      "cohort": "one-coefficient-perturbation",
+      "construction": "cubic-saturated",
+      "inner": [
+        "0",
+        "-3",
+        "0",
+        "1"
+      ],
+      "outer": [
+        "32",
+        "-4",
+        "-8",
+        "1"
+      ],
+      "vertical": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "shift": -2,
+      "degree_stratum": [
+        3,
+        3,
+        2
+      ],
+      "perturbation": [
+        0,
+        "1"
+      ]
+    },
+    "q052": {
+      "study": "constant",
+      "cohort": "algebraic-cover",
+      "construction": "chebyshev-inner",
+      "inner": [
+        "47",
+        "84",
+        "50",
+        "12",
+        "1"
+      ],
+      "outer": [
+        "-4",
+        "3",
+        "2",
+        "2",
+        "0",
+        "1"
+      ],
+      "coefficient_bound": 4,
+      "affine": [
+        "2/7",
+        "-3",
+        "2/7"
+      ]
+    },
+    "q053": {
+      "study": "constant",
+      "cohort": "one-coefficient-perturbation",
+      "construction": "dense",
+      "inner": [
+        "1",
+        "4",
+        "-3",
+        "-3",
+        "2",
+        "3",
+        "2",
+        "5",
+        "1",
+        "1"
+      ],
+      "outer": [
+        "-4",
+        "2",
+        "-2",
+        "0",
+        "6",
+        "1"
+      ],
+      "coefficient_bound": 7,
+      "affine": [
+        "2/7",
+        "1",
+        "-3/7"
+      ],
+      "perturbation": [
+        1,
+        "1"
+      ]
+    },
+    "q054": {
+      "study": "constant",
+      "cohort": "jacobi-spring",
+      "diagonal": [
+        31,
+        31,
+        31,
+        31,
+        31,
+        31
+      ],
+      "bonds": [
+        -12,
+        -5,
+        -10,
+        -4,
+        -8,
+        -14
+      ],
+      "repetitions": 3,
+      "pinning": [
+        5,
+        14,
+        16,
+        17,
+        19,
+        9
+      ],
+      "declared_nonminimal": false
+    },
+    "q055": {
+      "study": "nonconstant",
+      "cohort": "quintic-proper",
+      "construction": "quintic-proper",
+      "inner": [
+        "0",
+        "0",
+        "0",
+        "-10",
+        "5/4",
+        "1"
+      ],
+      "outer": [
+        "0",
+        "-3591",
+        "-401/4",
+        "1"
+      ],
+      "vertical": [
+        "0",
+        "-6",
+        "1",
+        "1"
+      ],
+      "shift": 2,
+      "degree_stratum": [
+        5,
+        3,
+        3
+      ]
+    },
+    "q056": {
+      "study": "nonconstant",
+      "cohort": "quintic-proper",
+      "construction": "quintic-proper",
+      "inner": [
+        "0",
+        "0",
+        "0",
+        "20/3",
+        "-25/4",
+        "1"
+      ],
+      "outer": [
+        "0",
+        "-1904/9",
+        "1775/12",
+        "1"
+      ],
+      "vertical": [
+        "0",
+        "4",
+        "-5",
+        "1"
+      ],
+      "shift": 2,
+      "degree_stratum": [
+        5,
+        3,
+        3
+      ]
+    }
+  }
+}

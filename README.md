@@ -8,6 +8,8 @@
 
 **Tillamook crossing, version 3.** One 3D assembly now drives structural modes, continuous deployment, full base reactions, the actual Tillamook map, measurement evidence and operating-state guards. Integration exposed an 8.142 m walking level, a lower-only center-joint mechanism, and severe access-space limits: only two of 216 mapped layouts avoid the direct intersections tested, with neither approved. The offline workbench shows the same design across all views. [Read v3](research/deployable-crossing/v3/README.md) · [Download the complete offline packet](https://github.com/towre676-cloud/crest-root-calculus/raw/refs/heads/main/downloads/crest-root-tillamook-crossing-v3-2026-11-23.zip) · [Earlier v2 study](research/deployable-crossing/v2/README.md) · [Original feasibility study](research/deployable-crossing/README.md)
 
+**Discover a hidden quotient from one equation.** The coefficient-only search finds every rational polynomial quotient within its stated scope, including maps with a nonconstant vertical multiplier. [Read the theorem, run the solver and inspect the comparisons](research/coefficient-quotients/README.md)
+
 ## Seven applications you can run
 
 **Try a real decision.** Can a second reading settle a chip’s width? Which street still needs a leak search? Does a retired battery need another test? The workshop also compares home retrofits, reconstructs material structures, schedules telescope observations, and runs the original degree-three map solver on published curves. Each app accepts your own inputs and shows which conclusions the measurements support.
