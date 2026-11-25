@@ -1,0 +1,19 @@
+{
+  "source_sha256": {
+    "research/cyclic-cover-reconstruction/cyclic.py": "3566c7b4bca2714f6d8cad7b2d20cd830be52c66943359f98b29af4ac7cc161c",
+    "research/cyclic-cover-reconstruction/fixtures.py": "deca066f9adbaffec24380730418a9d656927d55a93eb8a8a9ecfcc5fe84e9ca",
+    "research/cyclic-cover-reconstruction/raw.py": "799826647a12781f20f09aef3a06ce94fc5f5f10a011bef8aeba898d7a9d7468",
+    "research/cyclic-cover-reconstruction/study.py": "d77089f1d1688dc49c3d98fe227c0f4767cae7ff7803df41b3e6009396057567",
+    "research/coefficient-quotients/discover.py": "c4521225b6ee4f22a8f5c0126beb6e3e48637e059a448eb90248965bc4d2a98c",
+    "research/coefficient-quotients/native_control.py": "cf03f2acc08898e9c21c63458b3b1d66b402111f1e33ff916f85b23cd167ad93",
+    "research/coefficient-quotients/benchmark.py": "e77ed1ce8febc11d844c8f747d606ed2e6fc768f15ef80d92bf8e74e1de2cf0c",
+    "research/coefficient-quotients/baselines.py": "38159e809a9386c7f8ecdc3e4d54bd3be86284c23bf6c67f58fc2d9a9d8119c1",
+    "research/bounded-correspondences/finite.py": "71a8dc5d7b61b50aa3c84e232a19e63e1d5696e6345658e2cc574919d5cdc40f",
+    "research/solver-comparison/map_worker.py": "01c136027d090f8196d4abde83a6485d8685605268952ae35e7b86caaa4c9daa",
+    "research/solver-comparison/worker.py": "16b6fb907f7135511d5d69300619237079e3d237f957cef6ca76c658282d974a"
+  },
+  "panel_seed": 12725747067450963098,
+  "shuffle_seed": 6623827913917381353,
+  "limit_seconds": 4,
+  "repetitions": 2
+}
