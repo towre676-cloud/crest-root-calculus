@@ -339,7 +339,9 @@ For nonconstant multipliers, the derivative reduction finished 20 of 20 benchmar
 
 The cyclic extension recovers both the degree-two and degree-five maps from the Picard quartic, and a degree-eight map from a genus-six input using one complementary parameter. Its derivative route finished 20 of 20 fixed-stratum inputs, versus 10 for each of two matched Singular baselines. Among the ten shared formal-root cases, the median advantage was 1.84× in solver CPU and 1.11× in fresh-process wall time. [Cyclic-cover results and receipts](research/cyclic-cover-reconstruction/README.md)
 
-From a current checkout, run the four quotient checks or the full set of 36 research checks:
+The rational-coordinate extension recovers cyclic quotients with several points over target infinity. It determines possible denominators from the source branch data, including mixed and higher pole orders, and verifies the recovered maps in the original equation. [Proof, examples, and literature comparison](research/cyclic-cover-reconstruction/branch-poles.md)
+
+From a current checkout, run the five quotient checks or the full set of 37 research checks:
 
 ~~~sh
 python -B research/replay.py --quotients-only
