@@ -30,7 +30,7 @@ When \(p\mid N\), both elliptic factors must be ordinary. The étale and connect
 | 11 | \(y^2=x^5+x^4+6x^3+6x^2+x+5\) | \(5,-6\) | 11 | \(\mathbb F_{11^{55}}\) |
 | 13 | \(y^2=x^5+2x^4+2x^3+5x^2+6\) | \(7,-6\) | 13 | \(\mathbb F_{13^{156}}\) |
 
-Since \(4\sqrt p<p\) for \(p\ge17\), these are all possible active residue primes. The verifier recounts each curve and checks both Mumford witnesses. The optional witness search works over a field of degree \(p\,\operatorname{ord}_{\mathbb F_p^	imes}(a)\) and extracts an independent torsion direction using cyclic subgroup arithmetic when a first point lands in the Frobenius eigenline. In each case the old prime-to-\(p\) result is 1. The refined output exposes the full special-fibre degree separately. [Witnesses](residue_examples.json)
+Since \(4\sqrt p<p\) for \(p\ge17\), these are all possible active residue primes. The verifier recounts each curve and checks both Mumford witnesses in the field specified by the stored irreducible modulus. The optional witness search works over a field of degree \(p\,\operatorname{ord}_{\mathbb F_p^	imes}(a)\) and extracts an independent torsion direction using cyclic subgroup arithmetic when a first point lands in the Frobenius eigenline. In each case the old prime-to-\(p\) result is 1. The refined output exposes the full special-fibre degree separately. [Witnesses](residue_examples.json)
 
 ## Certified results
 
