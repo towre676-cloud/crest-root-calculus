@@ -65,3 +65,5 @@ python -B research/elliptic-quotients/square-spectrum-kernel/joint.py
 ~~~
 
 The verification outputs are [individual genera](within-receipt.json) and [fixed levels](joint-receipt.json).
+
+The [neighbour and oldform study](../hecke-observation/README.md) gives a second separation method using only prime-power quotient degrees. It also computes the Shimura lifts on two eigensystems and determines which square coefficients distinguish copies of the same weight-two newform.
