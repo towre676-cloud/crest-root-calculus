@@ -1,0 +1,229 @@
+[
+ {
+  "d": -3,
+  "l": 5,
+  "genera": [
+   {
+    "size": 3,
+    "dim_V": 0,
+    "max_rho": 0.0,
+    "certified": true
+   },
+   {
+    "size": 3,
+    "dim_V": 0,
+    "max_rho": 0.0,
+    "certified": true
+   }
+  ]
+ },
+ {
+  "d": -4,
+  "l": 7,
+  "genera": [
+   {
+    "size": 6,
+    "dim_V": 0,
+    "max_rho": 0.0,
+    "certified": true
+   },
+   {
+    "size": 6,
+    "dim_V": 0,
+    "max_rho": 0.0,
+    "certified": true
+   }
+  ]
+ },
+ {
+  "d": -7,
+  "l": 5,
+  "genera": [
+   {
+    "size": 6,
+    "dim_V": 1,
+    "max_rho": 0.3333333333333333,
+    "max_rho_exact": "1/3",
+    "certified": true
+   },
+   {
+    "size": 5,
+    "dim_V": 0,
+    "max_rho": 0.0,
+    "certified": true
+   }
+  ]
+ },
+ {
+  "d": -8,
+  "l": 5,
+  "genera": [
+   {
+    "size": 5,
+    "dim_V": 0,
+    "max_rho": 0.0,
+    "certified": true
+   },
+   {
+    "size": 6,
+    "dim_V": 1,
+    "max_rho": 0.3333333333333333,
+    "max_rho_exact": "1/3",
+    "certified": true
+   }
+  ]
+ },
+ {
+  "d": -8,
+  "l": 7,
+  "genera": [
+   {
+    "size": 10,
+    "dim_V": 1,
+    "max_rho": 0.16666666666666666,
+    "max_rho_exact": "1/6",
+    "certified": true
+   },
+   {
+    "size": 9,
+    "dim_V": 0,
+    "max_rho": 0.0,
+    "certified": true
+   }
+  ]
+ },
+ {
+  "d": -11,
+  "l": 7,
+  "genera": [
+   {
+    "size": 17,
+    "dim_V": 2,
+    "max_rho": 0.25,
+    "max_rho_exact": "1/4",
+    "certified": true
+   },
+   {
+    "size": 15,
+    "dim_V": 0,
+    "max_rho": 0.0,
+    "certified": true
+   }
+  ]
+ },
+ {
+  "d": -3,
+  "l": 11,
+  "genera": [
+   {
+    "size": 9,
+    "dim_V": 0,
+    "max_rho": 0.0,
+    "certified": true
+   },
+   {
+    "size": 9,
+    "dim_V": 0,
+    "max_rho": 0.0,
+    "certified": true
+   }
+  ]
+ },
+ {
+  "d": -4,
+  "l": 11,
+  "genera": [
+   {
+    "size": 11,
+    "dim_V": 0,
+    "max_rho": 0.0,
+    "certified": true
+   },
+   {
+    "size": 12,
+    "dim_V": 1,
+    "max_rho": 0.26666666666666666,
+    "max_rho_exact": "4/15",
+    "certified": true
+   }
+  ]
+ },
+ {
+  "d": -7,
+  "l": 13,
+  "genera": [
+   {
+    "size": 25,
+    "dim_V": 0,
+    "max_rho": 0.0,
+    "certified": true
+   },
+   {
+    "size": 28,
+    "dim_V": 3,
+    "max_rho": 0.15476190476190477,
+    "max_rho_exact": "13/84",
+    "certified": true
+   }
+  ]
+ },
+ {
+  "d": -8,
+  "l": 13,
+  "genera": [
+   {
+    "size": 25,
+    "dim_V": 2,
+    "max_rho": 0.15714285714285714,
+    "max_rho_exact": "11/70",
+    "certified": true
+   },
+   {
+    "size": 28,
+    "dim_V": 5,
+    "max_rho": 0.3761904761904762,
+    "max_rho_exact": "79/210",
+    "certified": true
+   }
+  ]
+ },
+ {
+  "d": -3,
+  "l": 17,
+  "genera": [
+   {
+    "size": 17,
+    "dim_V": 1,
+    "max_rho": 0.16666666666666666,
+    "max_rho_exact": "1/6",
+    "certified": true
+   },
+   {
+    "size": 18,
+    "dim_V": 2,
+    "max_rho": 0.25,
+    "max_rho_exact": "1/4",
+    "certified": true
+   }
+  ]
+ },
+ {
+  "d": -4,
+  "l": 19,
+  "genera": [
+   {
+    "size": 28,
+    "dim_V": 0,
+    "max_rho": 0.0,
+    "certified": true
+   },
+   {
+    "size": 30,
+    "dim_V": 2,
+    "max_rho": 0.17777777777777778,
+    "max_rho_exact": "8/45",
+    "certified": true
+   }
+  ]
+ }
+]

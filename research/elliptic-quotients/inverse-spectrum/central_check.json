@@ -1,0 +1,32 @@
+{
+ "338c1": {
+  "conductor": 338,
+  "rootno": 1,
+  "twist_by": -8,
+  "twist_conductor": 10816,
+  "twist_rootno": 1,
+  "twist_analytic_rank": 2,
+  "twist_leading_coeff": "11.699390116033165088825763702",
+  "untwisted_analytic_rank": 0
+ },
+ "676b1": {
+  "conductor": 676,
+  "rootno": 1,
+  "twist_by": -8,
+  "twist_conductor": 10816,
+  "twist_rootno": 1,
+  "twist_analytic_rank": 2,
+  "twist_leading_coeff": "7.2888971375610498998643721972",
+  "untwisted_analytic_rank": 0
+ },
+ "867e1": {
+  "conductor": 867,
+  "rootno": 1,
+  "twist_by": -3,
+  "twist_conductor": 2601,
+  "twist_rootno": 1,
+  "twist_analytic_rank": 2,
+  "twist_leading_coeff": "3.7368974219812118444186196354",
+  "untwisted_analytic_rank": 0
+ }
+}

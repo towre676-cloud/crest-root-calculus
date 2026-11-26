@@ -1,0 +1,326 @@
+[
+ {
+  "d": -3,
+  "l": 5,
+  "primes": [
+   7,
+   13
+  ],
+  "closure": 6,
+  "gluing": 4,
+  "coprime_degrees_used": 80,
+  "genera": [
+   {
+    "closure_size": 3,
+    "gluing_in_genus": 2,
+    "coprime_kernel": 0,
+    "min_pair_module": 2,
+    "margin": 2
+   },
+   {
+    "closure_size": 3,
+    "gluing_in_genus": 2,
+    "coprime_kernel": 0,
+    "min_pair_module": 2,
+    "margin": 2
+   }
+  ]
+ },
+ {
+  "d": -4,
+  "l": 7,
+  "primes": [
+   5,
+   13
+  ],
+  "closure": 12,
+  "gluing": 9,
+  "coprime_degrees_used": 129,
+  "genera": [
+   {
+    "closure_size": 6,
+    "gluing_in_genus": 5,
+    "coprime_kernel": 0,
+    "min_pair_module": 3,
+    "margin": 3
+   },
+   {
+    "closure_size": 6,
+    "gluing_in_genus": 4,
+    "coprime_kernel": 0,
+    "min_pair_module": 3,
+    "margin": 3
+   }
+  ]
+ },
+ {
+  "d": -7,
+  "l": 5,
+  "primes": [
+   11,
+   23
+  ],
+  "closure": 11,
+  "gluing": 7,
+  "coprime_degrees_used": 103,
+  "genera": [
+   {
+    "closure_size": 6,
+    "gluing_in_genus": 4,
+    "coprime_kernel": 1,
+    "min_pair_module": 3,
+    "margin": 2
+   },
+   {
+    "closure_size": 5,
+    "gluing_in_genus": 3,
+    "coprime_kernel": 0,
+    "min_pair_module": 4,
+    "margin": 4
+   }
+  ]
+ },
+ {
+  "d": -8,
+  "l": 5,
+  "primes": [
+   3,
+   11
+  ],
+  "closure": 11,
+  "gluing": 7,
+  "coprime_degrees_used": 120,
+  "genera": [
+   {
+    "closure_size": 5,
+    "gluing_in_genus": 3,
+    "coprime_kernel": 0,
+    "min_pair_module": 3,
+    "margin": 3
+   },
+   {
+    "closure_size": 6,
+    "gluing_in_genus": 4,
+    "coprime_kernel": 1,
+    "min_pair_module": 2,
+    "margin": 1
+   }
+  ]
+ },
+ {
+  "d": -8,
+  "l": 7,
+  "primes": [
+   3,
+   19
+  ],
+  "closure": 19,
+  "gluing": 14,
+  "coprime_degrees_used": 129,
+  "genera": [
+   {
+    "closure_size": 10,
+    "gluing_in_genus": 8,
+    "coprime_kernel": 1,
+    "min_pair_module": 3,
+    "margin": 2
+   },
+   {
+    "closure_size": 9,
+    "gluing_in_genus": 6,
+    "coprime_kernel": 0,
+    "min_pair_module": 3,
+    "margin": 3
+   }
+  ]
+ },
+ {
+  "d": -11,
+  "l": 7,
+  "primes": [
+   3,
+   5
+  ],
+  "closure": 32,
+  "gluing": 14,
+  "coprime_degrees_used": 117,
+  "genera": [
+   {
+    "closure_size": 17,
+    "gluing_in_genus": 8,
+    "coprime_kernel": 2,
+    "min_pair_module": 13,
+    "margin": 11
+   },
+   {
+    "closure_size": 15,
+    "gluing_in_genus": 6,
+    "coprime_kernel": 0,
+    "min_pair_module": 13,
+    "margin": 13
+   }
+  ]
+ },
+ {
+  "d": -3,
+  "l": 11,
+  "primes": [
+   7,
+   13
+  ],
+  "closure": 18,
+  "gluing": 15,
+  "coprime_degrees_used": 91,
+  "genera": [
+   {
+    "closure_size": 9,
+    "gluing_in_genus": 8,
+    "coprime_kernel": 0,
+    "min_pair_module": 4,
+    "margin": 4
+   },
+   {
+    "closure_size": 9,
+    "gluing_in_genus": 7,
+    "coprime_kernel": 0,
+    "min_pair_module": 4,
+    "margin": 4
+   }
+  ]
+ },
+ {
+  "d": -4,
+  "l": 11,
+  "primes": [
+   5,
+   13
+  ],
+  "closure": 23,
+  "gluing": 19,
+  "coprime_degrees_used": 136,
+  "genera": [
+   {
+    "closure_size": 11,
+    "gluing_in_genus": 9,
+    "coprime_kernel": 0,
+    "min_pair_module": 6,
+    "margin": 6
+   },
+   {
+    "closure_size": 12,
+    "gluing_in_genus": 10,
+    "coprime_kernel": 1,
+    "min_pair_module": 5,
+    "margin": 4
+   }
+  ]
+ },
+ {
+  "d": -7,
+  "l": 13,
+  "primes": [
+   11,
+   23
+  ],
+  "closure": 53,
+  "gluing": 45,
+  "coprime_degrees_used": 119,
+  "genera": [
+   {
+    "closure_size": 25,
+    "gluing_in_genus": 21,
+    "coprime_kernel": 0,
+    "min_pair_module": 20,
+    "margin": 20
+   },
+   {
+    "closure_size": 28,
+    "gluing_in_genus": 24,
+    "coprime_kernel": 3,
+    "min_pair_module": 21,
+    "margin": 18
+   }
+  ]
+ },
+ {
+  "d": -8,
+  "l": 13,
+  "primes": [
+   3,
+   11
+  ],
+  "closure": 53,
+  "gluing": 45,
+  "coprime_degrees_used": 138,
+  "genera": [
+   {
+    "closure_size": 25,
+    "gluing_in_genus": 21,
+    "coprime_kernel": 2,
+    "min_pair_module": 7,
+    "margin": 5
+   },
+   {
+    "closure_size": 28,
+    "gluing_in_genus": 24,
+    "coprime_kernel": 5,
+    "min_pair_module": 6,
+    "margin": 1
+   }
+  ]
+ },
+ {
+  "d": -3,
+  "l": 17,
+  "primes": [
+   7,
+   13
+  ],
+  "closure": 35,
+  "gluing": 31,
+  "coprime_degrees_used": 94,
+  "genera": [
+   {
+    "closure_size": 17,
+    "gluing_in_genus": 15,
+    "coprime_kernel": 1,
+    "min_pair_module": 10,
+    "margin": 9
+   },
+   {
+    "closure_size": 18,
+    "gluing_in_genus": 16,
+    "coprime_kernel": 2,
+    "min_pair_module": 13,
+    "margin": 11
+   }
+  ]
+ },
+ {
+  "d": -4,
+  "l": 19,
+  "primes": [
+   5,
+   13
+  ],
+  "closure": 58,
+  "gluing": 52,
+  "coprime_degrees_used": 142,
+  "genera": [
+   {
+    "closure_size": 28,
+    "gluing_in_genus": 25,
+    "coprime_kernel": 0,
+    "min_pair_module": 15,
+    "margin": 15
+   },
+   {
+    "closure_size": 30,
+    "gluing_in_genus": 27,
+    "coprime_kernel": 2,
+    "min_pair_module": 16,
+    "margin": 14
+   }
+  ]
+ }
+]

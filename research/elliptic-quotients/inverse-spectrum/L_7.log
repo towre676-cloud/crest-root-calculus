@@ -1,0 +1,7 @@
+PARI stack size set to 2000000000 bytes, maximum size set to 2000003072
+PARI stack size set to 6000000000 bytes, maximum size set to 6000001024
+PARI stack size set to 8000000000 bytes, maximum size set to 8000000000
+RES d=-7 l=3 glued=20 products=0 classes=3 genera(size,maxwit,sq-eq)=[(2, 2, 0), (1, None, 0)] 0.9s
+RES d=-7 l=5 glued=114 products=0 classes=7 genera(size,maxwit,sq-eq)=[(4, 4, 0), (3, 3, 0)] 5.8s
+RES d=-7 l=13 glued=2170 products=0 classes=45 genera(size,maxwit,sq-eq)=[(21, 9, 0), (24, 12, 0)] 231.7s
+RES d=-7 l=17 glued=4878 products=0 classes=76 genera(size,maxwit,sq-eq)=[(36, 13, 0), (40, 16, 0)] 548.2s

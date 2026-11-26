@@ -1,0 +1,99 @@
+{
+ "D-163_l5": {
+  "classes": 7,
+  "q_a=0": [
+   [
+    4,
+    0,
+    2
+   ],
+   [
+    0,
+    25,
+    0
+   ],
+   [
+    2,
+    0,
+    164
+   ]
+  ],
+  "q_a=sqrt-163": [
+   [
+    4,
+    0,
+    -2
+   ],
+   [
+    0,
+    25,
+    -10
+   ],
+   [
+    -2,
+    -10,
+    168
+   ]
+  ],
+  "same_genus": true,
+  "first_degree": 42,
+  "counts_mod_sign": [
+   4,
+   0
+  ]
+ },
+ "Z[8i]_l7": {
+  "classes": 14,
+  "q0_occurs": true,
+  "q1_occurs": true,
+  "a_of_q0": [
+   [
+    0,
+    0
+   ]
+  ],
+  "a_of_q1": [
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    6
+   ]
+  ],
+  "same_genus": true,
+  "first_degree": 16,
+  "counts_mod_sign": [
+   1,
+   0
+  ]
+ },
+ "Z[15i]_l7": {
+  "classes": 14,
+  "q0_occurs": true,
+  "q1_occurs": true,
+  "a_of_q0": [
+   [
+    0,
+    0
+   ]
+  ],
+  "a_of_q1": [
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    6
+   ]
+  ],
+  "same_genus": true,
+  "first_degree": 30,
+  "counts_mod_sign": [
+   1,
+   0
+  ]
+ }
+}

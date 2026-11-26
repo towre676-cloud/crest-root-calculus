@@ -1,0 +1,23 @@
+PARI stack size set to 2000000000 bytes, maximum size set to 2000003072
+PARI stack size set to 6000000000 bytes, maximum size set to 6000001024
+PARI stack size set to 8000000000 bytes, maximum size set to 8000000000
+  ***   Warning: not enough memory, new PARI stack 6000001024
+PARI stack size set to 6000001024 bytes, maximum size set to 6000001024
+d=-7 l=3 closure=6 h=3 R=1 dimO=3 pairs=1 min=1 | h=3 R=2 dimO=3 pairs=0 min=None  0.3s
+d=-19 l=3 closure=13 h=7 R=1 dimO=6 pairs=15 min=0 | h=6 R=2 dimO=6 pairs=6 min=1  1.4s
+d=-4 l=7 closure=12 h=6 R=1 dimO=6 pairs=10 min=1 | h=6 R=2 dimO=6 pairs=6 min=1  1.8s
+d=-3 l=11 closure=18 h=9 R=2 dimO=9 pairs=21 min=1 | h=9 R=1 dimO=9 pairs=28 min=1  2.7s
+d=-8 l=7 closure=19 h=10 R=2 dimO=9 pairs=28 min=2/3 | h=9 R=3 dimO=9 pairs=15 min=1  2.8s
+d=-11 l=7 closure=32 h=17 R=2 dimO=15 pairs=105 min=13/21 | h=15 R=3 dimO=15 pairs=66 min=1  7.7s
+d=-3 l=17 closure=35 h=18 R=2 dimO=16 pairs=120 min=3/4 | h=17 R=2 dimO=16 pairs=105 min=2/3  12.1s
+d=-7 l=13 closure=53 h=25 R=4 dimO=25 pairs=210 min=1 | h=28 R=4 dimO=25 pairs=276 min=19/24  27.8s
+d=-4 l=19 closure=58 h=30 R=3 dimO=28 pairs=351 min=7/9 | h=28 R=3 dimO=28 pairs=300 min=1  38.6s
+d=-3 l=23 closure=59 h=29 R=3 dimO=29 pairs=325 min=1 | h=30 R=2 dimO=29 pairs=378 min=9/11  31.9s
+d=-11 l=13 closure=89 h=47 R=4 dimO=42 pairs=903 min=2/3 | h=42 R=4 dimO=42 pairs=703 min=1  68.8s
+d=-43 l=7 closure=97 h=43 R=3 dimO=43 pairs=780 min=1 | h=54 R=2 dimO=43 pairs=1326 min=2/3  85.8s
+d=-3 l=29 closure=88 h=43 R=3 dimO=43 pairs=780 min=1 | h=45 R=3 dimO=43 pairs=861 min=6/7  81.9s
+d=-11 l=17 closure=144 h=69 R=5 dimO=68 pairs=2016 min=311/360 | h=75 R=5 dimO=68 pairs=2415 min=29/40  293.0s
+d=-67 l=7 closure=146 h=64 R=3 dimO=64 pairs=1830 min=1 | h=82 R=2 dimO=64 pairs=3160 min=2/3  233.3s
+d=-11 l=19 closure=177 h=92 R=5 dimO=82 pairs=3741 min=31433/44916 | h=85 R=6 dimO=82 pairs=3081 min=37129/44916  324.8s
+d=-8 l=23 closure=151 h=78 R=6 dimO=73 pairs=2556 min=10/11 | h=73 R=7 dimO=73 pairs=2145 min=1  226.5s
+d=-3 l=47 closure=213 h=108 R=4 dimO=105 pairs=5356 min=21/23 | h=105 R=5 dimO=105 pairs=4950 min=1  547.7s

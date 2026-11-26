@@ -1,0 +1,299 @@
+[
+ {
+  "d": -3,
+  "l": 5,
+  "p": 7,
+  "gluing_classes": 4,
+  "closure_classes": 6,
+  "genus_sizes_closure": [
+   3,
+   3
+  ],
+  "genus_sizes_gluing": [
+   2,
+   2
+  ],
+  "charpoly_factors_by_genus": [
+   {
+    "x - 8": 1,
+    "x - 3": 1,
+    "x": 1
+   },
+   {
+    "x - 8": 1,
+    "x - 3": 1,
+    "x": 1
+   }
+  ],
+  "shared_eigenvalue_dim": 3,
+  "K_closure": 2,
+  "K_closure_within_genus": 0,
+  "K_closure_cross": 2,
+  "K_gluing": 1,
+  "K_gluing_within_genus": 0,
+  "K_gluing_cross": 1
+ },
+ {
+  "d": -4,
+  "l": 7,
+  "p": 3,
+  "gluing_classes": 9,
+  "closure_classes": 12,
+  "genus_sizes_closure": [
+   6,
+   6
+  ],
+  "genus_sizes_gluing": [
+   5,
+   4
+  ],
+  "charpoly_factors_by_genus": [
+   {
+    "x - 4": 1,
+    "x - 1": 1,
+    "x^2 - 8": 1,
+    "x^2 - 2": 1
+   },
+   {
+    "x - 4": 1,
+    "x - 1": 1,
+    "x^2 - 8": 1,
+    "x^2 - 2": 1
+   }
+  ],
+  "shared_eigenvalue_dim": 6,
+  "K_closure": 5,
+  "K_closure_within_genus": 0,
+  "K_closure_cross": 5,
+  "K_gluing": 3,
+  "K_gluing_within_genus": 0,
+  "K_gluing_cross": 3
+ },
+ {
+  "d": -7,
+  "l": 5,
+  "p": 3,
+  "gluing_classes": 7,
+  "closure_classes": 11,
+  "genus_sizes_closure": [
+   6,
+   5
+  ],
+  "genus_sizes_gluing": [
+   4,
+   3
+  ],
+  "charpoly_factors_by_genus": [
+   {
+    "x - 4": 1,
+    "x - 1": 1,
+    "x^2 - x - 4": 1,
+    "x^2 + 2*x - 4": 1
+   },
+   {
+    "x - 4": 1,
+    "x^2 - x - 4": 1,
+    "x^2 + 2*x - 4": 1
+   }
+  ],
+  "shared_eigenvalue_dim": 5,
+  "K_closure": 5,
+  "K_closure_within_genus": 1,
+  "K_closure_cross": 4,
+  "K_gluing": 2,
+  "K_gluing_within_genus": 0,
+  "K_gluing_cross": 2
+ },
+ {
+  "d": -8,
+  "l": 5,
+  "p": 3,
+  "gluing_classes": 7,
+  "closure_classes": 11,
+  "genus_sizes_closure": [
+   5,
+   6
+  ],
+  "genus_sizes_gluing": [
+   3,
+   4
+  ],
+  "charpoly_factors_by_genus": [
+   {
+    "x - 4": 1,
+    "x - 3": 1,
+    "x - 2": 1,
+    "x": 1,
+    "x + 1": 1
+   },
+   {
+    "x - 4": 1,
+    "x - 3": 1,
+    "x - 2": 1,
+    "x": 1,
+    "x + 1": 1,
+    "x + 2": 1
+   }
+  ],
+  "shared_eigenvalue_dim": 5,
+  "K_closure": 5,
+  "K_closure_within_genus": 1,
+  "K_closure_cross": 4,
+  "K_gluing": 2,
+  "K_gluing_within_genus": 0,
+  "K_gluing_cross": 2
+ },
+ {
+  "d": -8,
+  "l": 7,
+  "p": 3,
+  "gluing_classes": 14,
+  "closure_classes": 19,
+  "genus_sizes_closure": [
+   10,
+   9
+  ],
+  "genus_sizes_gluing": [
+   8,
+   6
+  ],
+  "charpoly_factors_by_genus": [
+   {
+    "x - 4": 1,
+    "x - 3": 1,
+    "x - 1": 1,
+    "x": 1,
+    "x^2 - 8": 1,
+    "x^2 - 2": 2
+   },
+   {
+    "x - 4": 1,
+    "x - 3": 1,
+    "x - 1": 1,
+    "x^2 - 8": 1,
+    "x^2 - 2": 2
+   }
+  ],
+  "shared_eigenvalue_dim": 9,
+  "K_closure": 9,
+  "K_closure_within_genus": 1,
+  "K_closure_cross": 8,
+  "K_gluing": 5,
+  "K_gluing_within_genus": 0,
+  "K_gluing_cross": 5
+ },
+ {
+  "d": -11,
+  "l": 7,
+  "p": 3,
+  "gluing_classes": 14,
+  "closure_classes": 32,
+  "genus_sizes_closure": [
+   17,
+   15
+  ],
+  "genus_sizes_gluing": [
+   8,
+   6
+  ],
+  "charpoly_factors_by_genus": [
+   {
+    "x - 4": 1,
+    "x - 2": 1,
+    "x + 1": 2,
+    "x^3 - 3*x^2 + 1": 1,
+    "x^10 - 26*x^8 + 245*x^6 - 1038*x^4 + 1884*x^2 - 968": 1
+   },
+   {
+    "x - 4": 1,
+    "x + 1": 1,
+    "x^3 - 3*x^2 + 1": 1,
+    "x^10 - 26*x^8 + 245*x^6 - 1038*x^4 + 1884*x^2 - 968": 1
+   }
+  ],
+  "shared_eigenvalue_dim": 15,
+  "K_closure": 14,
+  "K_closure_within_genus": 1,
+  "K_closure_cross": 13,
+  "K_gluing": 4,
+  "K_gluing_within_genus": 0,
+  "K_gluing_cross": 4
+ },
+ {
+  "d": -3,
+  "l": 11,
+  "p": 7,
+  "gluing_classes": 15,
+  "closure_classes": 18,
+  "genus_sizes_closure": [
+   9,
+   9
+  ],
+  "genus_sizes_gluing": [
+   8,
+   7
+  ],
+  "charpoly_factors_by_genus": [
+   {
+    "x - 8": 1,
+    "x - 3": 2,
+    "x^2 - 20": 1,
+    "x^4 - 7*x^2 + 4": 1
+   },
+   {
+    "x - 8": 1,
+    "x - 3": 2,
+    "x^2 - 20": 1,
+    "x^4 - 7*x^2 + 4": 1
+   }
+  ],
+  "shared_eigenvalue_dim": 9,
+  "K_closure": 8,
+  "K_closure_within_genus": 0,
+  "K_closure_cross": 8,
+  "K_gluing": 6,
+  "K_gluing_within_genus": 0,
+  "K_gluing_cross": 6
+ },
+ {
+  "d": -4,
+  "l": 11,
+  "p": 3,
+  "gluing_classes": 19,
+  "closure_classes": 23,
+  "genus_sizes_closure": [
+   11,
+   12
+  ],
+  "genus_sizes_gluing": [
+   9,
+   10
+  ],
+  "charpoly_factors_by_genus": [
+   {
+    "x - 4": 1,
+    "x - 2": 2,
+    "x^2 - 3*x + 1": 1,
+    "x^2 - x - 8": 1,
+    "x^2 + 2*x - 2": 1,
+    "x^2 + 3*x + 1": 1
+   },
+   {
+    "x - 4": 1,
+    "x - 2": 2,
+    "x - 1": 1,
+    "x^2 - 3*x + 1": 1,
+    "x^2 - x - 8": 1,
+    "x^2 + 2*x - 2": 1,
+    "x^2 + 3*x + 1": 1
+   }
+  ],
+  "shared_eigenvalue_dim": 11,
+  "K_closure": 11,
+  "K_closure_within_genus": 1,
+  "K_closure_cross": 10,
+  "K_gluing": 8,
+  "K_gluing_within_genus": 0,
+  "K_gluing_cross": 8
+ }
+]

@@ -15,7 +15,7 @@ elliptic subcovers correspond to primitive representations of n^2 by q (Kani).
 from __future__ import annotations
 
 import itertools
-from math import gcd
+from math import gcd, isqrt
 from fractions import Fraction as Fr
 
 import cypari2
@@ -24,9 +24,9 @@ pari = cypari2.Pari()
 
 
 class K:
-    def __init__(self, d):
+    def __init__(self, d, c=None):
         self.d = d
-        self.c = Fr(d * d - d, 4)          # w^2 = d w - c
+        self.c = Fr(d * d - d, 4) if c is None else Fr(c)  # w^2 = d w - c
 
     def mul(self, x, y):
         p1, q1 = x
@@ -69,8 +69,8 @@ def pf(Kf, B, v):
     return e(0, 1) * e(2, 3) - e(0, 2) * e(1, 3) + e(0, 3) * e(1, 2)
 
 
-def ns_and_q(d, l, psi):
-    Kf = K(d)
+def ns_and_q(d, l, psi, c=None):
+    Kf = K(d, c)
     B = lattice_J(Kf, l, psi)
     theta = (Fr(l), Fr(l), Fr(0), Fr(0))
     Et = [[E_of(Kf, theta, B[i], B[j]) for j in range(4)] for i in range(4)]
@@ -122,3 +122,34 @@ def q_from_ns(G, t):
     first = [sum(cols[0][i] * Bq[i][j] * cols[0][j] for i in range(4) for j in range(4))]
     assert first == [0]
     return q3
+
+
+def gram(q):
+    return pari.matrix(3, 3, [value for row in q for value in row])
+
+
+def reduce_form(q):
+    matrix = gram(q)
+    change = pari.qflllgram(matrix)
+    reduced = pari.mattranspose(change) * matrix * change
+    return [[int(reduced[i, j]) for j in range(3)] for i in range(3)]
+
+
+def isometric(q1, q2):
+    return pari.qfisom(gram(q1), gram(q2)) != 0
+
+
+def primitive_square_spectrum(q, cutoff):
+    """Return the counts of primitive square representations up to sign."""
+    matrix = gram(q)
+    vectors = pari.qfminim(matrix, cutoff**2, 10**8, 2)[2]
+    counts = {}
+    for column in vectors:
+        v = [int(value) for value in column]
+        if gcd(*v) != 1:
+            continue
+        value = sum(v[i]*q[i][j]*v[j] for i in range(3) for j in range(3))
+        degree = isqrt(value)
+        if degree**2 == value:
+            counts[degree] = counts.get(degree, 0) + 1
+    return dict(sorted(counts.items()))
