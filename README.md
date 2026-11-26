@@ -23,7 +23,7 @@ The calculation explains the difference. A direction in the common elliptic squa
 
 At level three, two opposite secants of the finite conic contain the same internal point. This forces equality of the geometric elliptic-quotient counts in **every degree prime to three** for the corresponding pair of Humbert lattices. In the discriminant −19 example the counts first differ at degree three, with **zero versus four**. Both archived bielliptic equations descend from degree 24 to a quartic field, and their common pair of CM elliptic quotient invariants agrees exactly. The certified two-torsion gluing identifies each equation with its opposite-secant lattice. [Incidence theorem](research/elliptic-quotients/opposite-secant-spectra/README.md) · [Equations and certificates](research/elliptic-quotients/twin-curves/README.md)
 
-At discriminant −43, a second certified pair has explicit quartic-field equations. Its quotient counts also agree in every degree prime to three. Its first difference is at degree six, with **zero versus four** optimal classes. [The second pair and its verifier](research/elliptic-quotients/twin-curves/README.md#discriminant-43)
+At discriminant −43, a second certified pair has explicit quartic-field equations. Its quotient counts also agree in every degree prime to three. Its first difference is at degree six, with **zero versus four** optimal classes. Six further Mestre sextics now have integral models over the same quartic field and exact invariant checks. [The second pair, the six models and their verifiers](research/elliptic-quotients/twin-curves/README.md#discriminant-43)
 
 [![Two elliptic quotients determine the gluing and the lattice of each discriminant −19 twin](docs/visuals/D19-quartic-descent.webp)](docs/visuals/README.md)
 
