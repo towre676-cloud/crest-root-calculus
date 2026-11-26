@@ -78,3 +78,5 @@ python -B "$study/half_density.py"
 See the [coprime witnesses](coprime.json), the [sector certificates](sectors.json) and the [twist identities](half-density.json). The supplied comparison is commit `35d459c517b13fedfdf594962a7e292093000e43`.
 
 Coprime-degree injectivity beyond the census remains open. At odd discriminants it is now sufficient for the uniform single-prime problem. The sector criterion also applies when a level might have more than one quadratic twist.
+
+The [incidence transfer](../forced-square-kernel/README.md) computes the forced relations in the full split genus and identifies its residual kernel with the nonsplit one. It also gives uniform separation with residue-orbit labels at good degrees of order at most $\ell^2$ for fixed $D$.
