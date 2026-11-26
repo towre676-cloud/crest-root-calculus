@@ -132,8 +132,10 @@ class Certifier:
         def witness(point):
             image = phi_apply(J, point, b)
             if not J.is_zero(image):
-                return {"level": 1, "r": r, "point": mumford_record(point),
-                        "phi_point": mumford_record(image), "method": "ordinary torsion projection"}
+                modulus = [int(c) for c in J.F.modulus().coeffs()]
+                return {"level": 1, "r": r, "field_modulus": modulus,
+                        "point": mumford_record(point), "phi_point": mumford_record(image),
+                        "method": "ordinary torsion projection"}
             return None
 
         for _ in range(24):

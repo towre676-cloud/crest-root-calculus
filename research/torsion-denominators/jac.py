@@ -52,9 +52,15 @@ def odd_model(coeffs, p):
 class Jacobian:
     """Jacobian of Y^2 = g(u), deg g = 5, over F_q with q = p^r."""
 
-    def __init__(self, gcoeffs, p, r):
+    def __init__(self, gcoeffs, p, r, *, modulus=None):
         self.p, self.r = p, r
-        self.F = flint.fq_default_ctx(p, r)
+        if modulus is None:
+            self.F = flint.fq_default_ctx(p, r)
+        else:
+            poly = flint.fmpz_mod_poly_ctx(p)(modulus)
+            if poly.degree() != r or int(poly.leading_coefficient()) != 1:
+                raise ValueError("The field modulus must be monic of the specified degree.")
+            self.F = flint.fq_default_ctx(modulus=poly)
         self.R = flint.fq_default_poly_ctx(self.F)
         self.x = self.R.gen()
         self.f = sum((self.F(int(c)) * self.x ** i for i, c in enumerate(gcoeffs)), self.R(0))

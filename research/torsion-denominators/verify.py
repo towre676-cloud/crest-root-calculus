@@ -84,7 +84,7 @@ def check_certificate(cert):
             witness = rec.get("witness")
             if witness:
                 assert witness["level"] == s + 1 <= rec["v_N"]
-                J = Jacobian(g, p, witness["r"])
+                J = Jacobian(g, p, witness["r"], modulus=witness.get("field_modulus"))
                 W = decode(J, witness["point"])
                 image = phi_apply(J, W, b)
                 assert J.is_zero(J.mul(ell ** witness["level"], W)) and not J.is_zero(image)
@@ -119,7 +119,7 @@ if __name__ == "__main__":
         certs = json.loads((HERE / filename).read_text())
         for c in certs:
             if filename == "residue_examples.json":
-                assert all(block["primes"][str(c["p"])]["witness"] for block in c["blocks"])
+                assert all(block["primes"][str(c["p"])]["witness"]["field_modulus"] for block in c["blocks"])
             print(c["name"], "p =", c["p"], "degrees", check_certificate(c))
     print("explicit map C' -> E1: u has degree", check_map(), "in z, so the map has degree 4")
     print("all checks passed")
