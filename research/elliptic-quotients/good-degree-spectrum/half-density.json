@@ -1,0 +1,7 @@
+[
+  {"D":-7,"ell":3,"centers":[[1,0],[1,1]],"square_lift_level":126,"cusp_level":63,"sturm_bound":48,"dilation_coefficient":-1,"cusp_coefficients_through_16":[0,0,-2,0,0,4,0,0,2,0,0,-4,0,0,-2,0,0]},
+  {"D":-19,"ell":3,"centers":[[1,0],[1,1]],"square_lift_level":342,"cusp_level":171,"sturm_bound":120,"dilation_coefficient":1,"cusp_coefficients_through_16":[0,0,-2,0,0,-4,0,0,6,0,0,8,0,0,-8,0,0]},
+  {"D":-43,"ell":3,"centers":[[1,0],[1,1]],"square_lift_level":774,"cusp_level":387,"sturm_bound":264,"dilation_coefficient":1,"cusp_coefficients_through_16":[0,0,-2,0,0,-4,0,0,-2,0,0,0,0,0,8,0,0]},
+  {"D":-67,"ell":3,"centers":[[1,0],[1,1]],"square_lift_level":1206,"cusp_level":603,"sturm_bound":408,"dilation_coefficient":1,"cusp_coefficients_through_16":[0,0,-2,0,0,-4,0,0,-2,0,0,0,0,0,0,0,0]},
+  {"D":-163,"ell":3,"centers":[[1,0],[1,1]],"square_lift_level":2934,"cusp_level":1467,"sturm_bound":984,"dilation_coefficient":1,"cusp_coefficients_through_16":[0,0,-2,0,0,-4,0,0,-2,0,0,0,0,0,0,0,0]}
+]

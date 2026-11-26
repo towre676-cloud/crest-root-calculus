@@ -89,3 +89,5 @@ python -B "$study/two_adic.py" 101:19,23,31:1,4,16
 The integer Krylov replay also checks the all-powers collisions at $p=17$ for $(-3,5)$ and at $p=17,29$ for $(-8,7)$. It finds $2$, $11$, and $3$ tied pairs respectively.
 
 The level-wide existence problem remains open. The results above make its consequence unconditional whenever one prime is found, and give an actual level where half of all auxiliary primes fail for the same arithmetic reason.
+
+The [coprime-degree census](../good-degree-spectrum/README.md) extends the density classification to all 210 inert levels in the class-number-one family through gluing prime 199. It also proves that the odd-discriminant square lifts are Steinberg at the prime dividing the discriminant.
