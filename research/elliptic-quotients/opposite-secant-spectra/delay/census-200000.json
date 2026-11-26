@@ -1,0 +1,619 @@
+{
+  "determinant_limit": 200000,
+  "initial_degree_cap": 128,
+  "reduced_matrices": 184803,
+  "parent_isometry_classes": 150300,
+  "nonisometric_pairs": 364337,
+  "archived_pairs_matched": 31,
+  "determinant_bands": {
+    "0": {
+      "all_pairs": 789,
+      "product_pairs": 74,
+      "jacobian_pairs": 576,
+      "jacobian_separated": 569,
+      "max_first_difference": 21,
+      "locally_obstructed_pairs": 139,
+      "jacobian_square_isospectral": 7,
+      "neighbour_sturm": 5,
+      "neighbour_isometry": 2
+    },
+    "10000": {
+      "all_pairs": 2555,
+      "product_pairs": 146,
+      "jacobian_pairs": 1956,
+      "jacobian_separated": 1946,
+      "max_first_difference": 30,
+      "locally_obstructed_pairs": 453,
+      "jacobian_square_isospectral": 10,
+      "neighbour_isometry": 7,
+      "neighbour_sturm": 3
+    },
+    "20000": {
+      "all_pairs": 4481,
+      "product_pairs": 202,
+      "jacobian_pairs": 3434,
+      "jacobian_separated": 3420,
+      "max_first_difference": 60,
+      "locally_obstructed_pairs": 845,
+      "jacobian_square_isospectral": 14,
+      "neighbour_sturm": 8,
+      "neighbour_isometry": 6
+    },
+    "30000": {
+      "all_pairs": 6313,
+      "product_pairs": 244,
+      "jacobian_pairs": 4945,
+      "jacobian_separated": 4926,
+      "max_first_difference": 51,
+      "locally_obstructed_pairs": 1124,
+      "jacobian_square_isospectral": 19,
+      "neighbour_sturm": 13,
+      "neighbour_isometry": 6
+    },
+    "40000": {
+      "all_pairs": 8070,
+      "product_pairs": 265,
+      "jacobian_pairs": 6308,
+      "jacobian_separated": 6290,
+      "max_first_difference": 63,
+      "locally_obstructed_pairs": 1497,
+      "jacobian_square_isospectral": 18,
+      "neighbour_isometry": 16,
+      "neighbour_sturm": 2
+    },
+    "50000": {
+      "all_pairs": 9881,
+      "product_pairs": 306,
+      "jacobian_pairs": 7775,
+      "jacobian_separated": 7760,
+      "max_first_difference": 57,
+      "locally_obstructed_pairs": 1800,
+      "jacobian_square_isospectral": 15,
+      "neighbour_isometry": 11,
+      "neighbour_sturm": 4
+    },
+    "60000": {
+      "all_pairs": 11593,
+      "product_pairs": 320,
+      "jacobian_pairs": 9119,
+      "jacobian_separated": 9110,
+      "max_first_difference": 54,
+      "locally_obstructed_pairs": 2154,
+      "jacobian_square_isospectral": 9,
+      "neighbour_isometry": 2,
+      "neighbour_sturm": 7
+    },
+    "70000": {
+      "all_pairs": 13452,
+      "product_pairs": 348,
+      "jacobian_pairs": 10665,
+      "jacobian_separated": 10651,
+      "max_first_difference": 57,
+      "locally_obstructed_pairs": 2439,
+      "jacobian_square_isospectral": 14,
+      "neighbour_isometry": 9,
+      "neighbour_sturm": 5
+    },
+    "80000": {
+      "all_pairs": 15358,
+      "product_pairs": 382,
+      "jacobian_pairs": 12122,
+      "jacobian_separated": 12111,
+      "max_first_difference": 66,
+      "locally_obstructed_pairs": 2854,
+      "jacobian_square_isospectral": 11,
+      "neighbour_isometry": 8,
+      "neighbour_sturm": 3
+    },
+    "90000": {
+      "all_pairs": 17535,
+      "product_pairs": 402,
+      "jacobian_pairs": 13838,
+      "jacobian_separated": 13825,
+      "max_first_difference": 63,
+      "locally_obstructed_pairs": 3295,
+      "jacobian_square_isospectral": 13,
+      "neighbour_isometry": 7,
+      "neighbour_sturm": 6
+    },
+    "100000": {
+      "all_pairs": 19487,
+      "product_pairs": 433,
+      "jacobian_pairs": 15427,
+      "jacobian_separated": 15411,
+      "max_first_difference": 75,
+      "locally_obstructed_pairs": 3627,
+      "jacobian_square_isospectral": 16,
+      "neighbour_isometry": 9,
+      "neighbour_sturm": 7
+    },
+    "110000": {
+      "all_pairs": 20822,
+      "product_pairs": 446,
+      "jacobian_pairs": 16599,
+      "jacobian_separated": 16585,
+      "max_first_difference": 75,
+      "locally_obstructed_pairs": 3777,
+      "jacobian_square_isospectral": 14,
+      "neighbour_isometry": 6,
+      "neighbour_sturm": 8
+    },
+    "120000": {
+      "all_pairs": 22473,
+      "product_pairs": 457,
+      "jacobian_pairs": 17982,
+      "jacobian_separated": 17974,
+      "max_first_difference": 66,
+      "locally_obstructed_pairs": 4034,
+      "jacobian_square_isospectral": 8,
+      "neighbour_isometry": 7,
+      "neighbour_sturm": 1
+    },
+    "130000": {
+      "all_pairs": 24569,
+      "product_pairs": 469,
+      "jacobian_pairs": 19483,
+      "jacobian_separated": 19466,
+      "max_first_difference": 69,
+      "locally_obstructed_pairs": 4617,
+      "jacobian_square_isospectral": 17,
+      "neighbour_sturm": 5,
+      "neighbour_isometry": 12
+    },
+    "140000": {
+      "all_pairs": 26424,
+      "product_pairs": 513,
+      "jacobian_pairs": 21005,
+      "jacobian_separated": 20976,
+      "max_first_difference": 75,
+      "locally_obstructed_pairs": 4906,
+      "jacobian_square_isospectral": 29,
+      "neighbour_isometry": 5,
+      "neighbour_sturm": 24
+    },
+    "150000": {
+      "all_pairs": 28858,
+      "product_pairs": 518,
+      "jacobian_pairs": 22870,
+      "jacobian_separated": 22861,
+      "max_first_difference": 90,
+      "locally_obstructed_pairs": 5470,
+      "jacobian_square_isospectral": 9,
+      "neighbour_isometry": 8,
+      "neighbour_sturm": 1
+    },
+    "160000": {
+      "all_pairs": 29958,
+      "product_pairs": 527,
+      "jacobian_pairs": 23870,
+      "jacobian_separated": 23855,
+      "max_first_difference": 75,
+      "locally_obstructed_pairs": 5561,
+      "jacobian_square_isospectral": 15,
+      "neighbour_isometry": 9,
+      "neighbour_sturm": 6
+    },
+    "170000": {
+      "all_pairs": 32139,
+      "product_pairs": 553,
+      "jacobian_pairs": 25867,
+      "jacobian_separated": 25856,
+      "max_first_difference": 78,
+      "locally_obstructed_pairs": 5719,
+      "jacobian_square_isospectral": 11,
+      "neighbour_sturm": 5,
+      "neighbour_isometry": 6
+    },
+    "180000": {
+      "all_pairs": 34131,
+      "product_pairs": 552,
+      "jacobian_pairs": 27129,
+      "jacobian_separated": 27109,
+      "max_first_difference": 102,
+      "locally_obstructed_pairs": 6450,
+      "jacobian_square_isospectral": 20,
+      "neighbour_isometry": 14,
+      "neighbour_sturm": 6
+    },
+    "190000": {
+      "all_pairs": 35449,
+      "product_pairs": 586,
+      "jacobian_pairs": 28304,
+      "jacobian_separated": 28293,
+      "max_first_difference": 96,
+      "locally_obstructed_pairs": 6559,
+      "jacobian_square_isospectral": 11,
+      "neighbour_isometry": 9,
+      "neighbour_sturm": 2
+    }
+  },
+  "maxima": {
+    "by_determinant": {
+      "parent_gram": [
+        [
+          8,
+          0,
+          4
+        ],
+        [
+          0,
+          13,
+          2
+        ],
+        [
+          4,
+          2,
+          32
+        ]
+      ],
+      "child_grams": [
+        [
+          [
+            72,
+            24,
+            36
+          ],
+          [
+            24,
+            21,
+            14
+          ],
+          [
+            36,
+            14,
+            48
+          ]
+        ],
+        [
+          [
+            72,
+            48,
+            12
+          ],
+          [
+            48,
+            45,
+            10
+          ],
+          [
+            12,
+            10,
+            32
+          ]
+        ]
+      ],
+      "gram_determinant": 27792,
+      "parent_squared_minima": [
+        8,
+        13,
+        32
+      ],
+      "first_difference": 60,
+      "signed_excess": -4,
+      "realization_witness": 7,
+      "local_obstruction": null,
+      "sturm_bound": 4656
+    },
+    "by_minimum": {
+      "parent_gram": [
+        [
+          28,
+          6,
+          8
+        ],
+        [
+          6,
+          28,
+          -8
+        ],
+        [
+          8,
+          -8,
+          33
+        ]
+      ],
+      "child_grams": [
+        [
+          [
+            252,
+            18,
+            24
+          ],
+          [
+            18,
+            28,
+            -8
+          ],
+          [
+            24,
+            -8,
+            33
+          ]
+        ],
+        [
+          [
+            252,
+            18,
+            192
+          ],
+          [
+            18,
+            28,
+            4
+          ],
+          [
+            192,
+            4,
+            177
+          ]
+        ]
+      ],
+      "gram_determinant": 182988,
+      "parent_squared_minima": [
+        28,
+        28,
+        33
+      ],
+      "first_difference": 81,
+      "signed_excess": -4,
+      "realization_witness": 37,
+      "local_obstruction": null,
+      "sturm_bound": 36288
+    },
+    "by_degree": {
+      "parent_gram": [
+        [
+          9,
+          1,
+          2
+        ],
+        [
+          1,
+          9,
+          -2
+        ],
+        [
+          2,
+          -2,
+          264
+        ]
+      ],
+      "child_grams": [
+        [
+          [
+            81,
+            3,
+            6
+          ],
+          [
+            3,
+            9,
+            -2
+          ],
+          [
+            6,
+            -2,
+            264
+          ]
+        ],
+        [
+          [
+            9,
+            3,
+            4
+          ],
+          [
+            3,
+            81,
+            48
+          ],
+          [
+            4,
+            48,
+            292
+          ]
+        ]
+      ],
+      "gram_determinant": 189360,
+      "parent_squared_minima": [
+        9,
+        9,
+        264
+      ],
+      "first_difference": 102,
+      "signed_excess": -4,
+      "realization_witness": 59,
+      "local_obstruction": null,
+      "sturm_bound": 38016
+    },
+    "obstructed_by_minimum": {
+      "parent_gram": [
+        [
+          20,
+          0,
+          0
+        ],
+        [
+          0,
+          25,
+          0
+        ],
+        [
+          0,
+          0,
+          32
+        ]
+      ],
+      "child_grams": [
+        [
+          [
+            180,
+            0,
+            0
+          ],
+          [
+            0,
+            25,
+            0
+          ],
+          [
+            0,
+            0,
+            32
+          ]
+        ],
+        [
+          [
+            20,
+            0,
+            0
+          ],
+          [
+            0,
+            25,
+            0
+          ],
+          [
+            0,
+            0,
+            288
+          ]
+        ]
+      ],
+      "gram_determinant": 144000,
+      "parent_squared_minima": [
+        20,
+        25,
+        32
+      ],
+      "first_difference": 105,
+      "signed_excess": -8,
+      "realization_witness": null,
+      "local_obstruction": 5,
+      "sturm_bound": 5760
+    }
+  },
+  "ordinary_neighbour_witness_norms": {
+    "12": 9,
+    "13": 8,
+    "20": 2,
+    "21": 2,
+    "24": 1,
+    "28": 2,
+    "5": 53,
+    "8": 44
+  },
+  "smallest_square_isospectral": {
+    "gram_determinant": 1440,
+    "parent_gram": [
+      [
+        5,
+        1,
+        2
+      ],
+      [
+        1,
+        5,
+        2
+      ],
+      [
+        2,
+        2,
+        8
+      ]
+    ],
+    "child_grams": [
+      [
+        [
+          45,
+          18,
+          21
+        ],
+        [
+          18,
+          12,
+          10
+        ],
+        [
+          21,
+          10,
+          17
+        ]
+      ],
+      [
+        [
+          45,
+          3,
+          36
+        ],
+        [
+          3,
+          5,
+          4
+        ],
+        [
+          36,
+          4,
+          36
+        ]
+      ]
+    ],
+    "secants": [
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ]
+    ],
+    "proof": "neighbour_isometry",
+    "parent_sturm_bound": 24,
+    "coprime_square_witness": 7,
+    "first_ordinary_theta_difference": 5
+  },
+  "equal_family_replay": [
+    {
+      "t": 0,
+      "child_determinant": 1440,
+      "first_ordinary_theta_difference": 5
+    },
+    {
+      "t": 1,
+      "child_determinant": 27360,
+      "first_ordinary_theta_difference": 41
+    },
+    {
+      "t": 2,
+      "child_determinant": 53280,
+      "first_ordinary_theta_difference": 77
+    },
+    {
+      "t": 4,
+      "child_determinant": 105120,
+      "first_ordinary_theta_difference": 149
+    },
+    {
+      "t": 5,
+      "child_determinant": 131040,
+      "first_ordinary_theta_difference": 185
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # First differences and equal elliptic quotient spectra
 
-The level-three opposite-secant construction can produce **equal quotient counts in every degree**, even when the refined Humbert forms are inequivalent. A family below proves this for infinitely many pairs of genus-two curves. Separately, an exhaustive sweep with child Gram determinant at most 100,000 finds 130 such pairs and measures the first difference for every pair in the sweep whose spectra differ.
+The level-three opposite-secant construction can produce **equal quotient counts in every degree**, even when the refined Humbert forms are inequivalent. A family below proves this for infinitely many pairs of genus-two curves. An exhaustive sweep through child Gram determinant 200,000 finds 280 such pairs and measures the first difference for every pair in the sweep whose spectra differ.
 
 Here $r_F(n)$ is the number of vectors of norm $n$ in a ternary lattice $F$, with both signs counted. Write $s_F(m)=r_F(m^2)$. Divisor inversion passes between these ordinary counts and primitive square counts. In particular the first differing degree and its signed excess are the same for either convention. On a refined Humbert lattice the primitive counts give geometric optimal elliptic quotient classes. [Kani, elliptic subcovers](https://doi.org/10.1007/s40316-018-0105-6)
 
@@ -100,6 +100,18 @@ Of the 130 equalities, **74** follow from neighbour isometries and **56** from S
 
 Here $\lambda_3(G)$ denotes the **squared** third successive minimum. The table is evidence about finite first differences. It puts no upper bound on the asymptotic exponent. Write $\Delta(X)$ for the largest finite first difference over pairs of determinant at most $X$. The [delayed-difference family](../README.md#an-infinite-family-with-an-unbounded-first-difference) gives $\Delta(X)\gg\sqrt X$. The Shimura–Sturm argument gives $\Delta(X)\ll X\log\log X$ at large $X$, because the theta level of an integral Gram lattice is at most four times its determinant. A power bound between these remains open.
 
+## Extension through child determinant 200,000
+
+The extended replay recovers all 31 archived pairs and agrees with the original totals in each earlier determinant band. It enumerates 150,300 parent isometry classes and 364,337 pairs of inequivalent children. Of these, 289,274 pairs meet the primitive Jacobian criterion. Their spectra differ for 288,994 pairs and agree in every degree for 280. Neighbour isometries account for 159 of the equalities. The other 121 have a nonzero ordinary neighbour theta difference by norm 28 and zero square coefficients by Sturm.
+
+| Extremum over pairs with differing spectra | First difference $\delta$ | Child determinant | Parent squared minima |
+|---|---:|---:|---|
+| Largest $\delta$ | 102 | 189,360 | $(9,9,264)$ |
+| Largest $\delta/\sqrt{\det L}$, about 0.360 | 60 | 27,792 | $(8,13,32)$ |
+| Largest $\delta/\sqrt{\lambda_3(G)}$, about 14.10 | 81 | 182,988 | $(28,28,33)$ |
+
+The last two extrema measure different effects. The largest finite degree occurs on an elongated parent, while the greatest normalized delay relative to the third minimum occurs when all three squared minima are close together. The finite sweep leaves the asymptotic question open. [Exact extended receipt](census-200000.json)
+
 ### Exact enumeration and local tests
 
 For a Minkowski-reduced ternary Gram matrix with diagonal $a\le b\le c$ and off-diagonal entries $u,v,w$, the inequalities are $2|u|,2|v|\le a$, $2|w|\le b$, and $2(\pm u\pm v\pm w)\ge-a-b$ for the four sign patterns of positive product. Its diagonal entries are the squared minima, and $abc\le2\det G$. The generator enumerates these bounded integer entries, imposing the mod-four condition via diagonal residues and off-diagonal parities. Exact isometries remove duplicates at fixed determinant and minima. Each split child has a cyclic order-nine part of its discriminant group at three, so its unique integral index-three overlattice is its parent. Exact parent automorphisms then remove duplicate unordered pairs. [Minkowski inequalities and determinant bound](https://doi.org/10.1017/S1446788700024964)
@@ -113,6 +125,7 @@ From the repository root, with a C++17 compiler and the [opposite-secant replay 
 ~~~sh
 study=research/elliptic-quotients/opposite-secant-spectra/delay
 python -B "$study/census.py" --verify "$study/census.json"
+python -B "$study/census.py" --determinant-limit 200000 --verify "$study/census-200000.json"
 ~~~
 
 The census uses integer square-shell enumeration and exact PARI isometries. PARI independently checks each finite extremum and the primitive transfer identity through degree 81, including the corresponding counts on the parent neighbours. The family replay tests five parameters, including the ordinary theta difference and the exact neighbour isometries. The two proofs above apply to the entire stated families.

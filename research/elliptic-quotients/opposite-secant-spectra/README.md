@@ -2,7 +2,7 @@
 
 Distinct genus-two curves can have identical counts of optimal elliptic quotients in **every degree prime to 3**. An explicit infinite family of such pairs has an unbounded first distinguishing degree, even within a single CM field as the conductor varies. The same construction explains all 31 coincidences in the level-three census.
 
-The 3-neighbours of the parent lattice determine the first differing degree. They also give an infinite family with identical counts in **every degree** and inequivalent Humbert forms. The complete sweep through child Gram determinant 100,000 finds 130 pairs with this stronger equality. [Proof and exact census](delay/README.md)
+The 3-neighbours of the parent lattice determine the first differing degree. They also give an infinite family with identical counts in **every degree** and inequivalent Humbert forms. The complete sweep through child Gram determinant 200,000 finds 280 pairs with this stronger equality. [Proof and exact census](delay/README.md)
 
 ## The space observed by good degrees
 
