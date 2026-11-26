@@ -71,3 +71,5 @@ python -B "$study/packets.py" | diff - "$study/packets.json"
 ~~~
 
 The exact-symbol replay at conductor 10816 can require more than a gigabyte of PARI stack. The [projector receipt](projectors.json), [transfer receipt](transport.json) and [central-value receipt](packets.json) record the exact results. The supplied comparison is commit `a055a0042ba135662940b1db6b3fc1a58c032c43`.
+
+The [rank and pairwise certificates](../residual-rank-certificate/README.md) give rigorous nonzero second-derivative intervals for the three even-sign twists. They also bound the kernel's projection on 223,958 same-genus gluing-pair differences.
