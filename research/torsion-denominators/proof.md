@@ -21,7 +21,22 @@ $$
 
 Fix $\ell\mid N$ with $\ell\ne p$, and let $\psi\in\operatorname{End}(A_k)$. Then $\psi\in\ell^s\operatorname{End}(A_k)$ if and only if $\psi(A[\ell^s])=0$. Necessity is clear. Conversely, $[\ell^s]$ is a separable isogeny with kernel $A[\ell^s]\subseteq\ker\psi$, so $\psi$ factors as $\chi\circ[\ell^s]$ with $\chi\in\operatorname{End}(A_k)$. The same holds in $\operatorname{End}\otimes\mathbb Z_{(\ell)}$: if $u\psi\in\ell^s\operatorname{End}$ with $\ell\nmid u$, then $u\psi$ kills $A[\ell^s]$, and $u$ acts invertibly there. Hence $me_a$ is $\ell$-integral exactly when $\varphi_a$ kills $A[\ell^{v_\ell(N)-v_\ell(m)}]$, and the least admissible $v_\ell(m)$ is $v_\ell(N)-s_\ell$. Vanishing on $A[\ell^{s}]$ implies vanishing on $A[\ell^{s'}]$ for $s'\le s$, which gives the initial-segment property. Finally, $A[\ell^s]$ is étale, so testing on $k$-points suffices. On $A(\mathbb F_{p^r})$ one has $F^r=1$, so $V=[p]\,F^{r-1}$ there. $\square$
 
-**Remark (the residue characteristic).** The $p$-part of $d_a$ is invisible to étale torsion. It is governed by the action of $\varphi_a$ on the $p$-divisible group. Corollary 3 sidesteps it with a second prime.
+## The residue-characteristic degree
+
+**Lemma (ordinary self-adjoint divisibility).** Let \(A\) be an ordinary principally polarized abelian variety over an algebraically closed field \(k\) of characteristic \(p\). For a Rosati-self-adjoint endomorphism \(\alpha\) and \(s\ge1\),
+\[
+ \alpha\in p^s\operatorname{End}(A)
+ \quad\Longleftrightarrow\quad
+ \alpha(A[p^s](k))=0.
+\]
+
+Over \(k\), the finite group scheme \(A[p^s]\) is the product of its étale and multiplicative parts \(E\) and \(M\). Both are stable under endomorphisms. The perfect polarization pairing identifies \(M\) with the Cartier dual of \(E\). Equivalently, \(E\) and \(M\) have trivial internal pairings and pair perfectly with each other. The geometric points detect the whole action on \(E\). If this action is zero, then for \(e\in E\) and \(m\in M\) the pairing of \(e\) with \(\alpha(m)\) equals that of \(\alpha(e)\) with \(m\), as group-scheme maps. The latter pairing is trivial. Thus the action on \(M\) is also zero. The finite flat isogeny \([p^s]\) is the quotient by its scheme-theoretic kernel, so \(\alpha\) factors through it. The reverse implication follows by restriction. [Chai and Oort, ordinary \(p\)-divisible groups](https://math.nyu.edu/~tschinke/books/cmi-chai-oort/CMIPchaioort.pdf) · [Milne, duality of isogeny kernels](https://www.jmilne.org/math/xnotes/AVs.pdf)
+
+**Corollary (the full degree over \(\mathbb F_p\)).** In Theorem 1, the formula extends to \(\ell=p\) with \(s_p\) tested on the geometric \(p\)-power torsion. If \(p\mid N\), then \(N=p\) and the common optimal degree on the special fibre is \(p\).
+
+Indeed, \(p\mid N\) gives \(a\equiv b\bmod p\). An elliptic curve over \(\mathbb F_p\) is ordinary exactly when its trace is nonzero modulo \(p\), and two supersingular elliptic curves are geometrically isogenous. The two geometrically distinct blocks must therefore both be ordinary. The lemma applies to the self-adjoint \(\varphi_a\). It yields the same denominator calculation, now at \(p\). The integer \(N\) is positive and at most \(4\sqrt p\). If \(p\ge5\) this permits only one positive multiple of \(p\). For \(p=3\), the only pair at distance \(6\) has traces \(3,-3\), both supersingular. For \(p=2\), two distinct ordinary traces would be \(1,-1\), of geometrically isogenous quadratic twists. Thus every active residue-characteristic case has \(N=p\). Since \(d_a\mid N\) and \(d_a\ge2\), it has \(d_a=p\). A nonzero torsion image provides an independent certificate of the nonintegrality of \(\varphi_a/p\). If \(p\nmid N\), the projector is already integral at \(p\).
+
+This is a special-fibre statement. The transfer in Corollary 3 uses the prime-to-\(p\) part at each prime.
 
 **Remark (degree at least two).** A degree-one map between smooth projective curves of genus $\ge1$ is an isomorphism, so $d_a\ge2$. If $N$ is a power of $\ell$, a kill at level $v_\ell(N)$ is therefore impossible. A certified kill at level $v_\ell(N)-1$ then determines $d_a=\ell$ with no witness. This closure is used once, for $C$ at $p=23$, and it is recorded explicitly in the certificate.
 
@@ -41,7 +56,7 @@ $$
 
 ## Corollary 4 (Richelot pairs in one prime)
 
-Suppose $X$ has an involution with elliptic quotient $E_1$ of degree two, and $X'$ is a non-product Richelot neighbour. Proposition 5 gives a map $X'\to E_1$ of degree four, so the optimal degree $n'$ divides $4$. Since $n'\ge2$, it is a power of two. One odd multiplicity-one prime therefore determines $n'\in\{2,4\}$ completely.
+Suppose $X$ has an involution with elliptic quotient $E_1$ of degree two, $X'$ is a non-product Richelot neighbour, and $X'$ has an odd multiplicity-one good prime. Proposition 5 gives a map $X'\to E_1$ of degree four, so the optimal degree $n'$ divides $4$. Since $n'\ge2$, it is a power of two. One odd multiplicity-one prime therefore determines $n'\in\{2,4\}$ completely.
 
 ## Proposition 5 (the degree-four map)
 

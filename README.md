@@ -29,9 +29,11 @@ At level three, two opposite secants of the finite conic contain the same intern
 
 | Task | Proven coverage | Start here |
 |---|---|---|
-| Find a quotient from an equation | All rational degree-two quotients to positive genus. For cyclic covers, specified equivariant classes with mixed branch multiplicities, smaller target exponents, and branch-supported finite poles. | [Coefficient-only search](research/coefficient-quotients/README.md) · [Cyclic cover search](research/cyclic-cover-reconstruction/README.md) |
+| Find a quotient from an equation | All rational degree-two quotients to positive genus. For cyclic covers, equivariant maps with arbitrary infinity fibres, mixed source and target branching, and smaller target exponents. Elliptic targets require a degree cap. | [Coefficient-only search](research/coefficient-quotients/README.md) · [Arbitrary fibres](research/cyclic-cover-reconstruction/arbitrary-fibres.md) |
 | Find maps to a given curve | All nonconstant rational maps between the supplied smooth hyperelliptic models when the target has genus at least two. There is a separate theorem for elliptic targets with a singleton infinity fibre. | [Finite map reconstruction](research/bounded-correspondences/README.md) |
 | Determine elliptic degrees with repeated factors | All geometric optimal degrees for the stated non-CM gluing families. A CM counting theorem and a closed multiplicity formula for every degree in the non-product $j=1728$ two-torsion gluing. | [Non-CM families](research/elliptic-quotients/isotypic-gluing/README.md) · [CM spectra](research/elliptic-quotients/cm-spectra/README.md) |
+| Determine the spectrum of a non-CM genus-two cyclic cubic | Every optimal geometric degree and its multiplicity, and an exact criterion for rational descent. The elliptic maps break the cubic symmetry. | [Cubic genus-two degree law](research/elliptic-quotients/bielliptic-reconstruction/cubic-genus-two.md) |
+| Compute the full optimal degree on a split genus-two reduction | Torsion certificates at every prime, including the residue characteristic, for geometrically distinct elliptic factors over a prime field. A separate exact sweep determines the characteristic-zero minima on all 69 Richelot neighbours. | [Degree certificate and family sweep](research/torsion-denominators/README.md) |
 | Prove that a list of elliptic quotients is complete | Exact Néron–Severi lattices for twelve split examples, with a separate nine-model bounded period-and-lattice replay. A certified quaternionic example has no elliptic quotient in any degree. | [Certificate framework](research/elliptic-quotients/RECONSTRUCTION-THEOREM.md) · [Bounded period replay](research/elliptic-quotients/rigorous-search/README.md) |
 
 The programs use complementary checks. An exact substitution proves that a proposed map exists. Exhaustive enumeration or an integral lattice certificate can prove that every allowed map has been accounted for. The period replay uses certified algebraic maps or correspondences and rank bounds. Each solver documents the hypotheses that let it give a complete answer. [Research index and comparisons](research/README.md)
@@ -51,7 +53,7 @@ This checks the four degree-two formulas on the two genus-two models. It also co
 python -B research/replay.py --quotients-only
 ~~~
 
-This runs the coefficient-only replays, including the finite-pole cyclic search. The [certified period replay](research/elliptic-quotients/rigorous-search/README.md) uses `python-flint` and `cypari2` in addition to SymPy. For Windows, use `py` in place of `python` if that is how you start Python.
+This runs the coefficient-only replays, including the arbitrary-fibre cyclic search and the separate genus-two cyclic cubic spectrum. The [certified period replay](research/elliptic-quotients/rigorous-search/README.md) uses `python-flint` and `cypari2` in addition to SymPy. For Windows, use `py` in place of `python` if that is how you start Python.
 
 ## Explore the ideas
 

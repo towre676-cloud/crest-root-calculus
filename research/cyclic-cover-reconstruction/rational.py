@@ -122,43 +122,61 @@ def recover_numerator(wanted, denominator, d, domain):
     return inner, remaining
 
 
-def complementary(f, denominator, derivative_factor, k, d, m, e, names, domain):
+def top_root(source, vertical, denominator, k, m, first, length, t):
+    """Leading numerator series from the first nonzero homogenized target term."""
+    series = t.ring
+    f = reverse(source, length, series, t)
+    f *= series.domain.exquo(series.domain.one, source.rep.LC())
+    power = rs_pow(vertical, k, t, length)
+    right = rs_mul(f, power, t, length)
+    if first != m:
+        right = rs_mul(right, rs_pow(denominator, first-m, t, length), t, length)
+    return rs_nth_root(right, first, t, length)
+
+
+def complementary(f, denominator, derivative_factor, k, d, m, e, names, domain,
+                  *, first=None, derivative_power=None):
+    first = m if first is None else first
+    P = k-1 if derivative_power is None else derivative_power
     q = denominator.degree()
     gap = d-q
-    w = d+q-1-derivative_factor.degree()-(k-1)*e
-    known = min(e, gap-1)
+    w = d+q-1-derivative_factor.degree()-P*e
+    known = min(e, abs(gap)-1)
     series, t = ring("t", domain)
-    fv = reverse(f, known+1, series, t)
-    fv *= domain.exquo(domain.one, f.rep.LC())
     den = reverse(denominator, known+1, series, t)
     fixed = reverse(derivative_factor, known+1, series, t)
     residual = series.one+sum((c*t**i for i, c in enumerate(names[:w], 1)), series.zero)
     vertical = series.one
     for j in range(1, known+1):
-        root = rs_nth_root(rs_mul(fv, rs_pow(vertical, k, t, j+1), t, j+1), m, t, j+1)
+        root = top_root(f, vertical, den, k, m, first, j+1, t)
         lhs = gap*root*den-t*root.diff(t)*den+t*root*den.diff(t)
-        rhs = gap*rs_mul(rs_pow(vertical, k-1, t, j+1), fixed*residual, t, j+1)
-        divisor = m*gap*(k-1)-k*(gap-j)
-        coeff = domain.exquo(m*(lhs-rhs).get((j,), domain.zero), domain.convert(divisor))
+        rhs = gap*rs_mul(rs_pow(vertical, P, t, j+1), fixed*residual, t, j+1)
+        divisor = first*gap*P-k*(gap-j)
+        coeff = domain.exquo(first*(lhs-rhs).get((j,), domain.zero), domain.convert(divisor))
         vertical += coeff*t**j
     vertical += sum((c*t**j for j, c in enumerate(names[w:], known+1)), series.zero)
     v = sp.Poly.from_list([vertical.get((j,), domain.zero) for j in range(e+1)], X, domain=domain)
     factor = sp.Poly.from_list([domain.one, *names[:w]], X, domain=domain)
-    inner, remainder = recover_numerator(gap*derivative_factor*v**(k-1)*factor, denominator, d, domain)
+    inner, remainder = recover_numerator(gap*derivative_factor*v**P*factor, denominator, d, domain)
     return inner, v, remainder
 
 
-def direct(f, denominator, derivative_factor, k, d, m, e, names, domain):
-    vertical = sp.Poly.from_list([domain.one, *names[:e]], X, domain=domain)
-    inflated = f*vertical**k
+def direct(f, denominator, derivative_factor, k, d, m, e, names, domain,
+           *, first=None, derivative_power=None):
+    first = m if first is None else first
+    P = k-1 if derivative_power is None else derivative_power
     gap = d-denominator.degree()
+    length = min(d+1, abs(gap))
     series, t = ring("t", domain)
-    reversed_f = reverse(inflated, gap, series, t)
-    reversed_f *= domain.exquo(domain.one, inflated.rep.LC())
-    root = rs_nth_root(reversed_f, m, t, gap)
-    inner = sp.Poly.from_list([*[root.get((j,), domain.zero) for j in range(gap)],
-                              domain.zero, *names[e:]], X, domain=domain)
-    remainder = wronskian(inner, denominator).rem(derivative_factor*vertical**(k-1))
+    vertical = sp.Poly.from_list([domain.one, *names[:e]], X, domain=domain)
+    v = reverse(vertical, length, series, t)
+    den = reverse(denominator, length, series, t)
+    root = top_root(f, v, den, k, m, first, length, t)
+    leading = [root.get((j,), domain.zero) for j in range(length)]
+    if gap > 0:
+        leading.append(domain.zero)  # The coefficient at power deg Q fixes translation.
+    inner = sp.Poly.from_list([*leading, *names[e:]], X, domain=domain)
+    remainder = wronskian(inner, denominator).rem(derivative_factor*vertical**P)
     return inner, vertical, remainder
 
 

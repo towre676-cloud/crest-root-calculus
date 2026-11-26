@@ -1,8 +1,8 @@
 """Family sweep: Richelot neighbours of y^2 = (x^2-a^2)(x^2-b^2)(x^2-c^2).
 
-Each neighbour has a degree-4 elliptic map (the Richelot correspondence pushed into the
-quotient by x -> -x), so each block's optimal degree d divides 4 and d in {2, 4}.  The
-torsion certificate determines d at two coprime good primes.  An independent oracle
+Each neighbour has a degree-four map from its Richelot correspondence.
+If a good odd prime has geometrically distinct elliptic blocks, the common
+optimal degree divides four and the torsion certificate determines it there.  An independent oracle
 decides whether a non-hyperelliptic involution exists (d = 2 iff it does, for genus two).
 """
 import json

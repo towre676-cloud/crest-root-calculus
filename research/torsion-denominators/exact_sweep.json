@@ -1,0 +1,2136 @@
+{
+  "sources": [
+    {
+      "source": [
+        1,
+        2,
+        3
+      ],
+      "separation": {
+        "prime": 13,
+        "traces": [
+          -6,
+          2
+        ],
+        "power": 120
+      },
+      "degrees": {
+        "2": 6,
+        "4": 8
+      }
+    },
+    {
+      "source": [
+        1,
+        2,
+        4
+      ],
+      "separation": null,
+      "degrees": {
+        "2": 9,
+        "4": 4
+      }
+    },
+    {
+      "source": [
+        1,
+        2,
+        5
+      ],
+      "separation": {
+        "prime": 13,
+        "traces": [
+          2,
+          -6
+        ],
+        "power": 120
+      },
+      "degrees": {
+        "2": 6,
+        "4": 8
+      }
+    },
+    {
+      "source": [
+        1,
+        3,
+        4
+      ],
+      "separation": {
+        "prime": 17,
+        "traces": [
+          2,
+          -6
+        ],
+        "power": 120
+      },
+      "degrees": {
+        "2": 6,
+        "4": 8
+      }
+    },
+    {
+      "source": [
+        2,
+        3,
+        5
+      ],
+      "separation": {
+        "prime": 13,
+        "traces": [
+          -6,
+          2
+        ],
+        "power": 120
+      },
+      "degrees": {
+        "2": 6,
+        "4": 8
+      }
+    }
+  ],
+  "rows": [
+    {
+      "source": [
+        1,
+        2,
+        3
+      ],
+      "pairing": [
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          -2,
+          -3
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        3
+      ],
+      "pairing": [
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        3
+      ],
+      "pairing": [
+        [
+          1,
+          2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          3,
+          -3
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        3
+      ],
+      "pairing": [
+        [
+          1,
+          2
+        ],
+        [
+          -1,
+          3
+        ],
+        [
+          -2,
+          -3
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "distinct source factors, Richelot degree-four map and no elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        3
+      ],
+      "pairing": [
+        [
+          1,
+          2
+        ],
+        [
+          -1,
+          -3
+        ],
+        [
+          -2,
+          3
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "distinct source factors, Richelot degree-four map and no elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        3
+      ],
+      "pairing": [
+        [
+          1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          3,
+          -3
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        3
+      ],
+      "pairing": [
+        [
+          1,
+          -2
+        ],
+        [
+          -1,
+          3
+        ],
+        [
+          2,
+          -3
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "distinct source factors, Richelot degree-four map and no elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        3
+      ],
+      "pairing": [
+        [
+          1,
+          -2
+        ],
+        [
+          -1,
+          -3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "distinct source factors, Richelot degree-four map and no elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        3
+      ],
+      "pairing": [
+        [
+          1,
+          3
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2,
+          -3
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "distinct source factors, Richelot degree-four map and no elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        3
+      ],
+      "pairing": [
+        [
+          1,
+          3
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          2,
+          -3
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "distinct source factors, Richelot degree-four map and no elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        3
+      ],
+      "pairing": [
+        [
+          1,
+          3
+        ],
+        [
+          -1,
+          -3
+        ],
+        [
+          2,
+          -2
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        3
+      ],
+      "pairing": [
+        [
+          1,
+          -3
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2,
+          3
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "distinct source factors, Richelot degree-four map and no elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        3
+      ],
+      "pairing": [
+        [
+          1,
+          -3
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "distinct source factors, Richelot degree-four map and no elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        3
+      ],
+      "pairing": [
+        [
+          1,
+          -3
+        ],
+        [
+          -1,
+          3
+        ],
+        [
+          2,
+          -2
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          -2,
+          -4
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          -4
+        ],
+        [
+          -2,
+          4
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          4,
+          -4
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          2
+        ],
+        [
+          -1,
+          4
+        ],
+        [
+          -2,
+          -4
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          2
+        ],
+        [
+          -1,
+          -4
+        ],
+        [
+          -2,
+          4
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "finite-kernel spectrum for T2"
+    },
+    {
+      "source": [
+        1,
+        2,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          4,
+          -4
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          -2
+        ],
+        [
+          -1,
+          4
+        ],
+        [
+          2,
+          -4
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          -2
+        ],
+        [
+          -1,
+          -4
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "finite-kernel spectrum for T1"
+    },
+    {
+      "source": [
+        1,
+        2,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          4
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2,
+          -4
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "finite-kernel spectrum for T1 with x replaced by -x"
+    },
+    {
+      "source": [
+        1,
+        2,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          4
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          2,
+          -4
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "finite-kernel spectrum for T2 with x replaced by -x"
+    },
+    {
+      "source": [
+        1,
+        2,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          4
+        ],
+        [
+          -1,
+          -4
+        ],
+        [
+          2,
+          -2
+        ]
+      ],
+      "geometric_elliptic_involutions": 2,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          -4
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2,
+          4
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          -4
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        5
+      ],
+      "pairing": [
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          -2,
+          -5
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        5
+      ],
+      "pairing": [
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          -5
+        ],
+        [
+          -2,
+          5
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        5
+      ],
+      "pairing": [
+        [
+          1,
+          2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          5,
+          -5
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        5
+      ],
+      "pairing": [
+        [
+          1,
+          2
+        ],
+        [
+          -1,
+          5
+        ],
+        [
+          -2,
+          -5
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "distinct source factors, Richelot degree-four map and no elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        5
+      ],
+      "pairing": [
+        [
+          1,
+          2
+        ],
+        [
+          -1,
+          -5
+        ],
+        [
+          -2,
+          5
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "distinct source factors, Richelot degree-four map and no elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        5
+      ],
+      "pairing": [
+        [
+          1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          5,
+          -5
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        5
+      ],
+      "pairing": [
+        [
+          1,
+          -2
+        ],
+        [
+          -1,
+          5
+        ],
+        [
+          2,
+          -5
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "distinct source factors, Richelot degree-four map and no elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        5
+      ],
+      "pairing": [
+        [
+          1,
+          -2
+        ],
+        [
+          -1,
+          -5
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "distinct source factors, Richelot degree-four map and no elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        5
+      ],
+      "pairing": [
+        [
+          1,
+          5
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2,
+          -5
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "distinct source factors, Richelot degree-four map and no elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        5
+      ],
+      "pairing": [
+        [
+          1,
+          5
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          2,
+          -5
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "distinct source factors, Richelot degree-four map and no elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        5
+      ],
+      "pairing": [
+        [
+          1,
+          5
+        ],
+        [
+          -1,
+          -5
+        ],
+        [
+          2,
+          -2
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        5
+      ],
+      "pairing": [
+        [
+          1,
+          -5
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2,
+          5
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "distinct source factors, Richelot degree-four map and no elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        5
+      ],
+      "pairing": [
+        [
+          1,
+          -5
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "distinct source factors, Richelot degree-four map and no elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        5
+      ],
+      "pairing": [
+        [
+          1,
+          -5
+        ],
+        [
+          -1,
+          5
+        ],
+        [
+          2,
+          -2
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        3,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          -1
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          -3,
+          -4
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        3,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          -1
+        ],
+        [
+          3,
+          -4
+        ],
+        [
+          -3,
+          4
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        3,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          3
+        ],
+        [
+          -1,
+          -3
+        ],
+        [
+          4,
+          -4
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        3,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          3
+        ],
+        [
+          -1,
+          4
+        ],
+        [
+          -3,
+          -4
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "distinct source factors, Richelot degree-four map and no elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        3,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          3
+        ],
+        [
+          -1,
+          -4
+        ],
+        [
+          -3,
+          4
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "distinct source factors, Richelot degree-four map and no elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        3,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          -3
+        ],
+        [
+          -1,
+          3
+        ],
+        [
+          4,
+          -4
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        3,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          -3
+        ],
+        [
+          -1,
+          4
+        ],
+        [
+          3,
+          -4
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "distinct source factors, Richelot degree-four map and no elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        3,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          -3
+        ],
+        [
+          -1,
+          -4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "distinct source factors, Richelot degree-four map and no elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        3,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          4
+        ],
+        [
+          -1,
+          3
+        ],
+        [
+          -3,
+          -4
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "distinct source factors, Richelot degree-four map and no elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        3,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          4
+        ],
+        [
+          -1,
+          -3
+        ],
+        [
+          3,
+          -4
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "distinct source factors, Richelot degree-four map and no elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        3,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          4
+        ],
+        [
+          -1,
+          -4
+        ],
+        [
+          3,
+          -3
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        3,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          -4
+        ],
+        [
+          -1,
+          3
+        ],
+        [
+          -3,
+          4
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "distinct source factors, Richelot degree-four map and no elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        3,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          -4
+        ],
+        [
+          -1,
+          -3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "distinct source factors, Richelot degree-four map and no elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        3,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          -4
+        ],
+        [
+          -1,
+          4
+        ],
+        [
+          3,
+          -3
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        2,
+        3,
+        5
+      ],
+      "pairing": [
+        [
+          2,
+          -2
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          -3,
+          -5
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        2,
+        3,
+        5
+      ],
+      "pairing": [
+        [
+          2,
+          -2
+        ],
+        [
+          3,
+          -5
+        ],
+        [
+          -3,
+          5
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        2,
+        3,
+        5
+      ],
+      "pairing": [
+        [
+          2,
+          3
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          5,
+          -5
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        2,
+        3,
+        5
+      ],
+      "pairing": [
+        [
+          2,
+          3
+        ],
+        [
+          -2,
+          5
+        ],
+        [
+          -3,
+          -5
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "distinct source factors, Richelot degree-four map and no elliptic involution"
+    },
+    {
+      "source": [
+        2,
+        3,
+        5
+      ],
+      "pairing": [
+        [
+          2,
+          3
+        ],
+        [
+          -2,
+          -5
+        ],
+        [
+          -3,
+          5
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "distinct source factors, Richelot degree-four map and no elliptic involution"
+    },
+    {
+      "source": [
+        2,
+        3,
+        5
+      ],
+      "pairing": [
+        [
+          2,
+          -3
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          5,
+          -5
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        2,
+        3,
+        5
+      ],
+      "pairing": [
+        [
+          2,
+          -3
+        ],
+        [
+          -2,
+          5
+        ],
+        [
+          3,
+          -5
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "distinct source factors, Richelot degree-four map and no elliptic involution"
+    },
+    {
+      "source": [
+        2,
+        3,
+        5
+      ],
+      "pairing": [
+        [
+          2,
+          -3
+        ],
+        [
+          -2,
+          -5
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "distinct source factors, Richelot degree-four map and no elliptic involution"
+    },
+    {
+      "source": [
+        2,
+        3,
+        5
+      ],
+      "pairing": [
+        [
+          2,
+          5
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          -3,
+          -5
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "distinct source factors, Richelot degree-four map and no elliptic involution"
+    },
+    {
+      "source": [
+        2,
+        3,
+        5
+      ],
+      "pairing": [
+        [
+          2,
+          5
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          3,
+          -5
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "distinct source factors, Richelot degree-four map and no elliptic involution"
+    },
+    {
+      "source": [
+        2,
+        3,
+        5
+      ],
+      "pairing": [
+        [
+          2,
+          5
+        ],
+        [
+          -2,
+          -5
+        ],
+        [
+          3,
+          -3
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        2,
+        3,
+        5
+      ],
+      "pairing": [
+        [
+          2,
+          -5
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          -3,
+          5
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "distinct source factors, Richelot degree-four map and no elliptic involution"
+    },
+    {
+      "source": [
+        2,
+        3,
+        5
+      ],
+      "pairing": [
+        [
+          2,
+          -5
+        ],
+        [
+          -2,
+          -3
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "distinct source factors, Richelot degree-four map and no elliptic involution"
+    },
+    {
+      "source": [
+        2,
+        3,
+        5
+      ],
+      "pairing": [
+        [
+          2,
+          -5
+        ],
+        [
+          -2,
+          5
+        ],
+        [
+          3,
+          -3
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    }
+  ],
+  "previously_inconclusive": [
+    {
+      "source": [
+        1,
+        2,
+        3
+      ],
+      "pairing": [
+        [
+          1,
+          2
+        ],
+        [
+          -1,
+          -3
+        ],
+        [
+          -2,
+          3
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "distinct source factors, Richelot degree-four map and no elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        3
+      ],
+      "pairing": [
+        [
+          1,
+          3
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          2,
+          -3
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "distinct source factors, Richelot degree-four map and no elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        3
+      ],
+      "pairing": [
+        [
+          1,
+          -3
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2,
+          3
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "distinct source factors, Richelot degree-four map and no elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          -2,
+          -4
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          -4
+        ],
+        [
+          -2,
+          4
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          4,
+          -4
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          2
+        ],
+        [
+          -1,
+          4
+        ],
+        [
+          -2,
+          -4
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          2
+        ],
+        [
+          -1,
+          -4
+        ],
+        [
+          -2,
+          4
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "finite-kernel spectrum for T2"
+    },
+    {
+      "source": [
+        1,
+        2,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          -2
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          4,
+          -4
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          -2
+        ],
+        [
+          -1,
+          4
+        ],
+        [
+          2,
+          -4
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          -2
+        ],
+        [
+          -1,
+          -4
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "finite-kernel spectrum for T1"
+    },
+    {
+      "source": [
+        1,
+        2,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          4
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2,
+          -4
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "finite-kernel spectrum for T1 with x replaced by -x"
+    },
+    {
+      "source": [
+        1,
+        2,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          4
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          2,
+          -4
+        ]
+      ],
+      "geometric_elliptic_involutions": 0,
+      "minimum": 4,
+      "certificate": "finite-kernel spectrum for T2 with x replaced by -x"
+    },
+    {
+      "source": [
+        1,
+        2,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          4
+        ],
+        [
+          -1,
+          -4
+        ],
+        [
+          2,
+          -2
+        ]
+      ],
+      "geometric_elliptic_involutions": 2,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          -4
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2,
+          4
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    },
+    {
+      "source": [
+        1,
+        2,
+        4
+      ],
+      "pairing": [
+        [
+          1,
+          -4
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "geometric_elliptic_involutions": 1,
+      "minimum": 2,
+      "certificate": "geometric elliptic involution"
+    }
+  ]
+}

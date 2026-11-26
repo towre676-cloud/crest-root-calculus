@@ -6,6 +6,8 @@ Writing $G(U)=BV^k$ and $U'=dV^{k-1}W$ gives a parameter count of $\min(\deg V,\
 
 In some degrees, equivariance follows from the source equation. If $kD$ is less than the smallest pole order of any noninvariant function regular off source infinity, any degree-$D$ map in the stated model and infinity class has invariant horizontal coordinate. Its vertical coordinate then transforms by a character. The search covers every such map in that range. For squarefree source branches the pole threshold is the degree of the source radicand. [Pole-order proof](proof.md#when-equivariance-follows-from-the-pole-order)
 
+The [arbitrary-fibre solver](arbitrary-fibres.md) recovers unbranched horizontal pole locations from the source, permits source infinity to map to a finite target branch point, and extends the complementary recurrence to mixed target ramification. It searches to a degree cap for elliptic targets and derives a bound for higher-genus targets. A separate [genus-two cubic theorem](../elliptic-quotients/bielliptic-reconstruction/cubic-genus-two.md) determines the optimal spectra even when every elliptic map breaks the cubic action.
+
 ## Reproduce the results
 
 Use Python 3.11 or newer and SymPy 1.14.
@@ -47,4 +49,4 @@ The stored benchmark audit runs without Singular. To rerun timing, use a fresh s
 
 Classical polynomial decomposition covers the constant multiplier. Kozen, Landau and Zippel give a broader resultant framework for algebraic functions. Mendoza computes the Kummer semigroup that underlies the pole-order argument, and effective de Franchis–Severi already gives target enumeration in genus at least two. The complementary derivative recurrence and its explicit cyclic reconstruction scope are the precise candidate contribution. Priority remains open. [Detailed comparison and proof](proof.md#scope-and-antecedents)
 
-The [rational-coordinate solver](branch-poles.md) also recovers quotients with several points over infinity when all finite horizontal poles lie on the source branch locus. It allows higher and mixed pole orders. General infinity fibres, target radicands with mixed multiplicities, and maps that break the cyclic symmetry beyond the automatic range remain open. The benchmark does not measure full unknown-degree discovery or imply a general speed advantage.
+The [branch-supported rational-coordinate solver](branch-poles.md) retains the specialized fixed-denominator path. The general equivariant incidence is complete within the stated degree bounds, with unknown pole locations and mixed target branching. General non-equivariant discovery and matched runtime studies for the larger incidence remain open. The frozen benchmark measures the displayed polynomial strata. [General fibre theorem](arbitrary-fibres.md)
