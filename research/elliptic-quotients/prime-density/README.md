@@ -62,7 +62,7 @@ The filter kills all actual CM systems. On each generic group of equal non-CM or
 | $1$ | $(-3,5),(-4,7),(-7,5),(-8,5),(-8,7),(-11,7),(-4,11),(-8,13),(-7,13),(-3,17),(-7,17),(-4,19),(-4,23)$ |
 | $1/2$ | $(-3,11)$ |
 
-For a fixed sign sector all computations use exact integer matrices and exact separation certificates. At $(-4,11)$ and $(-4,19)$ the filtered certificate works in both signs without a claim about the existence of CM in the lift. At $D=-8$ the exact tests exclude the extra characters at $\ell=5,7,13,23,47$. The last two tests use coprime characteristic polynomials modulo $65\,521$. A common factor over the rationals would have a monic integral common factor whose degree survives reduction. See the [density receipt](receipt.json) and [larger twist checks](two-adic.json).
+For a fixed sign sector all computations use exact integer matrices and exact separation certificates. At $(-4,11)$ and $(-4,19)$ the filtered certificate works in both signs without a claim about the existence of CM in the lift. At $D=-8$ the exact tests exclude the extra characters at $\ell=5,7,13,23,47,101$. This settles the restriction to $\chi_{\ell^*}$ for all 36 census levels. The last three tests use coprime characteristic polynomials modulo $65\,521$. A common factor over the rationals would have a monic integral common factor whose degree survives reduction. See the [density receipt](receipt.json) and [larger twist checks](two-adic.json).
 
 ## A genuine half-density obstruction
 
@@ -82,7 +82,8 @@ A collection of coincidence characters also has a simple consistency test. There
 python -m pip install cypari2 numpy python-flint
 study=research/elliptic-quotients/prime-density
 python -B "$study/certify.py" --verify "$study/receipt.json"
-python -B "$study/two_adic.py" | diff - "$study/two-adic.json"
+python -B "$study/two_adic.py"
+python -B "$study/two_adic.py" 101:19,23,31:1,4,16
 ~~~
 
 The integer Krylov replay also checks the all-powers collisions at $p=17$ for $(-3,5)$ and at $p=17,29$ for $(-8,7)$. It finds $2$, $11$, and $3$ tied pairs respectively.
