@@ -55,6 +55,17 @@ Both models have the same unordered pair of degree-two elliptic quotient \(j\)-i
 \]
 They agree exactly across the two curves. The resulting quadratic divides \(H_{-171}\) over \(F\). For an independent moduli check, \(I_2^5/I_{10}=16^5(v+15)^5/(64d_0^2)\) in the stated Clebsch normalization. Its two minimal polynomials are irreducible quartics and differ. Thus the two algebraic models have quartic moduli fields and lie in distinct Galois orbits.
 
+
+## Discriminant −43
+
+The pair \(\mathtt{p3}\) has explicit models over \(F=\mathbb Q(\theta)\), with \(\theta^4-\theta^3+6\theta^2-\theta+7=0\). Their geometric optimal elliptic quotient counts agree in **every degree prime to 3**. Both have two classes in degree 2. Their first difference is in degree **6**, with **zero** classes for \(\mathtt{p3\_q1}\) and **four** for \(\mathtt{p3\_q2}\). [Quartic equations](models_certified_-43.json) · [Lattice certificate](certified_link_-43_p3.json) · [Opposite-secant theorem](../opposite-secant-spectra/README.md)
+
+The certificate evaluates the descent formula and all three absolute Igusa invariants of each sextic in exact number-field arithmetic. The first invariant generates \(F\). The two elliptic quotient \(j\)-invariants satisfy the conductor-three ring class polynomial \(H_{-387}\) exactly, so the four CM ideal classes exhaust the possibilities. Arb excludes the wrong ideal classes and half-period bijections at each of the four embeddings. The resulting two-torsion gluing gives an integral Humbert form isometric to the intended archive form, and the verifier records its change of basis to the opposite-secant lattice. Primitive square representations give the quotient counts. [Exact verifier](verify_d43.py)
+
+For the six lattices in pairs \(\mathtt{p0},\mathtt{p1},\mathtt{p2}\), the companion records **six exact algebraic sextics over degree-eight fields**. Their absolute Igusa invariants reproduce the archived quartic triples exactly, under the field embedding identified by the first invariant. The assignment of those triples to the six lattices uses numerical recognition. Descent of the six equations to the quartic field is unresolved. The octic construction makes the Mestre conic split by adjoining a square root of a ratio of its diagonal coefficients. [Archived equations](mestre_models_-43.json) · [Exact invariant replay](verify_mestre_d43.py)
+
+The numerical discovery computes orbit values by the CM ideal action and solves for the coefficients of the invariants in a quartic power basis. Rational approximation with a smooth-denominator filter produces candidate triples. The pipeline restores its requested precision after importing the archived theta helpers. The filter is a discovery heuristic. For \(\mathtt{p3}\) the independent equation-to-lattice certificate supplies the proof. [Orbit discovery](orbit.py) · [Recognition](recognise_F.py) · [Mestre construction](mestre_models.py)
+
 ## Reproduce
 
 From this directory, with SymPy, python-flint and cypari2 installed:
@@ -62,8 +73,8 @@ From this directory, with SymPy, python-flint and cypari2 installed:
 ~~~sh
 python -B descend.py --verify
 python -B certify_link.py --verify
+python -B verify_d43.py
+python -B verify_mestre_d43.py
 ~~~
 
 The descent replay checks both change-of-variables identities, the common CM quotient pair and the absolute invariant that separates the moduli orbits. The gluing replay rebuilds the equation-to-lattice certificate. The original theta and recognition chain is in [pipeline.py](pipeline.py), with controls in [validate.py](validate.py). It uses PARI through cypari2, mpmath, NumPy and python-flint. The archived [degree-24 worksheet](twins_-19.md) gives the handoff calculation.
-
-All eight \(D=-43\) forms have candidate polarizations on explicit products of CM elliptic curves, recorded in [twin_lattices_-43.json](twin_lattices_-43.json). The historical search selected no moduli polynomial. Its Python floating-point cutoff underflowed at high precision. The updated driver compares residuals in PARI throughout. The field degrees and exact curve models are open.

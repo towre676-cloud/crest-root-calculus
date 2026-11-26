@@ -123,6 +123,9 @@ The good-degree counts of a refined Humbert lattice form a Hecke module generate
 
 The two archived discriminant −19 curve models now have explicit equations over the same quartic field. The verifier compares them with their degree-24 originals, checks their shared CM elliptic quotient pair and distinguishes their Galois orbits by an absolute Igusa invariant. A separate certificate identifies both models with their secant lattices at all 24 embeddings of the original field. Exact ring class polynomial checks constrain the elliptic quotients, Arb separates their ideal classes and labels the half-periods, and integral isometries identify the resulting Humbert forms. [Models and proof](elliptic-quotients/twin-curves/README.md) · [Lattice-to-curve animation](../docs/visuals/README.md)
 
+At discriminant \(-43\) the bielliptic pair also has exact quartic-field equations, certified against its opposite-secant lattices at all four embeddings. The quotient counts agree in every degree prime to three and first differ at degree six, with zero versus four. Six further Mestre equations have exactly checked algebraic invariants and a numerical lattice identification. [Models and verifiers](elliptic-quotients/twin-curves/README.md#discriminant-43)
+
+
 ## Run the research
 
 Install Python 3.11 or later and extract the packet, or clone the repository. From the directory containing `research`, run

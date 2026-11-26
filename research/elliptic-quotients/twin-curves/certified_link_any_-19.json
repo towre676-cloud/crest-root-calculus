@@ -1,0 +1,262 @@
+{
+ "embedding_0": {
+  "q1": {
+   "E1_class": {
+    "conductor": 3,
+    "basis": [
+     [
+      "5",
+      "0"
+     ],
+     [
+      "27",
+      "3"
+     ]
+    ]
+   },
+   "E2_class": {
+    "conductor": 3,
+    "basis": [
+     [
+      "7",
+      "0"
+     ],
+     [
+      "26",
+      "3"
+     ]
+    ]
+   },
+   "half_period_labels_E1": [
+    1,
+    2,
+    0
+   ],
+   "half_period_labels_E2": [
+    2,
+    1,
+    0
+   ],
+   "psi_root_matching": [
+    1,
+    2,
+    0
+   ],
+   "humbert_form": [
+    [
+     4,
+     2,
+     0
+    ],
+    [
+     2,
+     12,
+     -4
+    ],
+    [
+     0,
+     -4,
+     17
+    ]
+   ],
+   "isometric_to_twin": {
+    "q1": true,
+    "q2": false
+   }
+  },
+  "q2": {
+   "E1_class": {
+    "conductor": 3,
+    "basis": [
+     [
+      "5",
+      "0"
+     ],
+     [
+      "30",
+      "3"
+     ]
+    ]
+   },
+   "E2_class": {
+    "conductor": 3,
+    "basis": [
+     [
+      "7",
+      "0"
+     ],
+     [
+      "26",
+      "3"
+     ]
+    ]
+   },
+   "half_period_labels_E1": [
+    1,
+    2,
+    0
+   ],
+   "half_period_labels_E2": [
+    0,
+    2,
+    1
+   ],
+   "psi_root_matching": [
+    2,
+    1,
+    0
+   ],
+   "humbert_form": [
+    [
+     4,
+     0,
+     -2
+    ],
+    [
+     0,
+     5,
+     -2
+    ],
+    [
+     -2,
+     -2,
+     36
+    ]
+   ],
+   "isometric_to_twin": {
+    "q1": false,
+    "q2": true
+   }
+  }
+ },
+ "embedding_1": {
+  "q1": {
+   "E1_class": {
+    "conductor": 3,
+    "basis": [
+     [
+      "5",
+      "0"
+     ],
+     [
+      "30",
+      "3"
+     ]
+    ]
+   },
+   "E2_class": {
+    "conductor": 3,
+    "basis": [
+     [
+      "7",
+      "0"
+     ],
+     [
+      "26",
+      "3"
+     ]
+    ]
+   },
+   "half_period_labels_E1": [
+    1,
+    2,
+    0
+   ],
+   "half_period_labels_E2": [
+    2,
+    0,
+    1
+   ],
+   "psi_root_matching": [
+    1,
+    2,
+    0
+   ],
+   "humbert_form": [
+    [
+     4,
+     -2,
+     0
+    ],
+    [
+     -2,
+     12,
+     -4
+    ],
+    [
+     0,
+     -4,
+     17
+    ]
+   ],
+   "isometric_to_twin": {
+    "q1": true,
+    "q2": false
+   }
+  },
+  "q2": {
+   "E1_class": {
+    "conductor": 3,
+    "basis": [
+     [
+      "5",
+      "0"
+     ],
+     [
+      "27",
+      "3"
+     ]
+    ]
+   },
+   "E2_class": {
+    "conductor": 3,
+    "basis": [
+     [
+      "7",
+      "0"
+     ],
+     [
+      "26",
+      "3"
+     ]
+    ]
+   },
+   "half_period_labels_E1": [
+    1,
+    2,
+    0
+   ],
+   "half_period_labels_E2": [
+    1,
+    2,
+    0
+   ],
+   "psi_root_matching": [
+    2,
+    1,
+    0
+   ],
+   "humbert_form": [
+    [
+     4,
+     0,
+     -2
+    ],
+    [
+     0,
+     5,
+     2
+    ],
+    [
+     -2,
+     2,
+     36
+    ]
+   ],
+   "isometric_to_twin": {
+    "q1": false,
+    "q2": true
+   }
+  }
+ }
+}

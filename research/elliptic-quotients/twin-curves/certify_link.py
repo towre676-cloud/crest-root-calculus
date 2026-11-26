@@ -26,7 +26,6 @@ from polarised import ideals, ns_general
 PARI = Pari()
 D = -19
 PRECISION = 1200
-FIELD = K(D)
 TWINS = ("q1", "q2")
 CERTIFICATE = HERE / "certified_link_-19.json"
 
@@ -65,16 +64,16 @@ def eval_L(expression, eta):
     return total
 
 
-def ideal_candidates(class_polynomial):
-    # Every admissible j is already proved to satisfy H_-171.
+def ideal_candidates(class_polynomial, discriminant=D):
+    # The exact preflight has put both j-values in the conductor-three list.
     candidates = []
-    w = (acb(D) + acb(D).sqrt()) / 2
+    w = (acb(discriminant) + acb(discriminant).sqrt()) / 2
 
     def as_complex(element):
         p, q = element
         return acb(arb(p.numerator)/p.denominator) + acb(arb(q.numerator)/q.denominator)*w
 
-    for basis in ideals(D, 3):
+    for basis in ideals(discriminant, 3):
         alpha, beta = map(as_complex, basis)
         tau = beta / alpha
         require(tau.imag > 0, "The ideal basis must be positively oriented.")
@@ -157,19 +156,20 @@ def glued_lattice(a1, a2, perm):
     return [tuple(Fr(int(hnf[i, j]), den) for i in range(4)) for j in range(4)]
 
 
-def humbert_from_gluing(a1, a2, perm):
+def humbert_from_gluing(a1, a2, perm, discriminant=D):
     basis = glued_lattice(a1, a2, perm)
+    field = K(discriminant)
 
     def principal(a):
         alpha, beta = a
-        return 1/abs(FIELD.mul(alpha, FIELD.conj(beta))[1])
+        return 1/abs(field.mul(alpha, field.conj(beta))[1])
 
     theta = (2*principal(a1), 2*principal(a2), Fr(0), Fr(0))
-    et = [[E_of(FIELD, theta, x, y) for y in basis] for x in basis]
+    et = [[E_of(field, theta, x, y) for y in basis] for x in basis]
     require(all(e.denominator == 1 for row in et for e in row), "The polarization is not integral.")
     em = PARI.matrix(4, 4, [int(e) for row in et for e in row])
     require(em.matdet() == 1, "The polarization is not principal.")
-    ns, G = ns_general(FIELD, basis)
+    ns, G = ns_general(field, basis)
     columns = PARI.matrix(4, 4, [str(row[i]) for i in range(4) for row in ns])
     classes = PARI.matsolve(columns, PARI.matrix(4, 1, [str(x) for x in theta]))
     coords = [Fr(str(classes[i, 0])) for i in range(4)]
@@ -214,10 +214,14 @@ def incidence_targets():
 
 def certify_equation(model, eta, candidates, target):
     s1, s2 = (eval_L(model[f"s{i}"], eta) for i in (1, 2))
+    return certify_gluing(s1, s2, candidates, target)
+
+
+def certify_gluing(s1, s2, candidates, target, discriminant=D):
     roots1, a1, labels1 = label_elliptic_quotient(s1, s2, candidates)
     roots2, a2, labels2 = label_elliptic_quotient(s2, s1, candidates)
     perm = reciprocal_permutation(roots1, roots2, labels1, labels2)
-    data = humbert_from_gluing(a1, a2, perm)
+    data = humbert_from_gluing(a1, a2, perm, discriminant)
     return {
         "E1_ideal_basis": encode_basis(a1),
         "E2_ideal_basis": encode_basis(a2),
