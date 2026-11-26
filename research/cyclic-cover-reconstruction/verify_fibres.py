@@ -90,6 +90,31 @@ def complementary_control():
     assert (a+28*q)**2-64*q**2 == f*v**3
 
 
+def composite_exponent_controls():
+    # Multiplicity two leaves two points above its target root at exponent four.
+    a = X**3+X
+    g = (X-1)**2*(X+1)
+    rows = targeted(poly(g.subs(X, a)), 4, 3,
+                    lambda s: s.infinity == "pole" and s.degree == 3
+                    and s.profile == ((1, 1), (2, 1)) and s.multiplier_degree == 0
+                    and s.denominator_degree(4) == 0,
+                    include_mixed=True)
+    one_map(rows, a, 1, g, 1)
+
+    # The unbranched pole is inferred and source infinity maps to a triple root.
+    q = (X-1)**4
+    g = X**3*(X-1)**2
+    rows = targeted(poly(X**3*(X-q)**2), 4, 4,
+                    lambda s: s.infinity == "root" and s.degree == 4
+                    and s.profile == ((2, 1), (3, 1)) and s.first == 3
+                    and s.numerator_degree == 1 and s.multiplier_degree == 0
+                    and s.unbranched_degree == 1 and s.poles.horizontal.degree() == 0,
+                    include_mixed=True)
+    _, result = one_map(rows, X, q, g, 1)
+    assert result["unbranched_pole_factor"] == ["-1", "1"]
+    assert result["vertical_pole_denominator"] == coefficients(poly((X-1)**5))
+
+
 def non_equivariant_control():
     x, xi, eta = sp.symbols("x xi eta")
     t = (1-2*x)/(x*x-1)
@@ -162,8 +187,9 @@ def main():
 
     independent_unbranched_identity()
     complementary_control()
+    composite_exponent_controls()
     non_equivariant_control()
-    print("Verified arbitrary fibres, mixed target branching, subfields, no-map and non-equivariant controls.")
+    print("Verified arbitrary fibres, mixed branching at exponents three and four, subfields, and exclusion controls.")
 
 
 if __name__ == "__main__":
