@@ -75,7 +75,11 @@ def star_periods_arb(fco):
     """fco: list of 7 acb coefficients (low to high) of the moved sextic."""
     P = acb_poly(fco)
     roots = P.roots(tol=arb(2) ** (-(ctx.prec - 20)), maxprec=8 * ctx.prec)
-    lc = fco[6]
+    return star_periods_from_roots(roots, fco[6])
+
+
+def star_periods_from_roots(roots, lc):
+    """Periods of the sextic lc times the product over six supplied branch points."""
     if lc.contains(0) or len(roots) != 6 or any(
         x.overlaps(y) for i, x in enumerate(roots) for y in roots[:i]
     ):

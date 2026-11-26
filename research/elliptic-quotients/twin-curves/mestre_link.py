@@ -166,14 +166,14 @@ def humbert_from_order(data, lattice):
     return reduce_form(q_from_ns(ns, theta))
 
 
-def certify_cm_order(data, multiplier):
+def certify_cm_order(data, multiplier, discriminant=-43):
     """Isolate the integral scalar-CM matrix, with integrality from the isogeny chain."""
     J, _ = frame(data)
-    enclosure = J * (multiplier * arb(43).sqrt())
+    enclosure = J * (multiplier * arb(-discriminant).sqrt())
     entries = [enclosure[i, j].unique_fmpz() for i in range(4) for j in range(4)]
     require(all(entry is not None for entry in entries), "The scalar-CM enclosure is inconclusive.")
     C = pari.matrix(4, 4, list(map(int, entries)))
-    require(C*C == -43 * multiplier**2 * pari.matid(4), "The scalar-CM matrix has the wrong square.")
+    require(C*C == discriminant * multiplier**2 * pari.matid(4), "The scalar-CM matrix has the wrong square.")
     units = [pari.matrix(4, 4, [int(i == j) for i in range(16)]) for j in range(16)]
     commutators = [flat(C*unit - unit*C) for unit in units]
     linear_map = pari.matrix(16, 16, [commutators[j][i] for i in range(16) for j in range(16)])

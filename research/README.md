@@ -125,6 +125,8 @@ The two archived discriminant −19 curve models now have explicit equations ove
 
 At discriminant \(-43\) all four opposite-secant pairs have explicit quartic equations and certified Humbert forms. The bielliptic pair first differs at degree six, with zero versus four optimal classes. Exact Richelot isogeny chains and integral scalar-CM matrices identify the lattices of the six other equations. [Models and verifiers](elliptic-quotients/twin-curves/README.md#discriminant-43)
 
+At discriminant \(-163\), all 19 pairs now have exact equations and certified Humbert forms. An exact CM torsion field supplies three bielliptic starting models. Richelot paths give the other equations in factored algebraic form. The pair with the latest first difference has quartic-field sextics and zero versus four optimal classes at degree 21. [Equations and replays](elliptic-quotients/twin-curves/README.md#discriminant-163)
+
 
 ## Run the research
 

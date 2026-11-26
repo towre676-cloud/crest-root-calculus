@@ -96,6 +96,42 @@ All four pairs agree in every degree prime to \(3\) by the opposite-secant theor
 
 The archived octic models and the initial recognition computation record how the equations were discovered. [Octic models](mestre_models_-43.json) · [Orbit discovery](orbit.py) · [Recognition](recognise_F.py)
 
+## Discriminant −163
+
+**All nineteen opposite-secant pairs have exact equations and certified Humbert forms.** In each pair the geometric optimal quotient counts agree in every degree prime to three. The pair that first differs at degree 21 has zero versus four optimal classes at that degree. Both curves have sextics over the common quartic field
+\[
+\mathbb Q(\theta),\qquad \theta^4-2\theta^3-9\theta^2+10\theta+28=0 .
+\]
+[Quartic sextics](quartic_models_-163.json) · [Exact descent](descend_d163.py) · [All 19 spectrum certificates](richelot_certified_-163.json)
+
+### Starting equations from elliptic torsion
+
+Take \(E:y^2=x^3-2174420x+1234136692+\tfrac14\). The certificate gives all roots of its two-division cubic and its three-division quartic in a single degree-24 field. Vélu's formulas for the four cyclic order-three kernels give cubics whose \(j\)-invariants satisfy \(H_{-1467}\) exactly. Their three roots are the images of the original two-torsion. For two such cubics and a chosen root bijection, write \(x\mapsto(ax+b)/(cx+d)\) for the corresponding projective transformation. With \(\alpha_j\) the roots of the first cubic, set \(u_j=\alpha_j+d/c\). Then
+\[
+C:\quad y^2=\prod_{j=1}^3(x^2-u_j).
+\]
+Its elliptic factors have branch roots \(u_j\) and \(1/u_j\), which are affine transforms of the matched cubic roots. The replay checks the reciprocal identity exactly. The two-torsion graph yields the principal polarization by the same argument used at discriminant −19.
+
+The two starting equations in the twin census are \(\mathtt{p16\_q1},\mathtt{p16\_q2}\). Their glued lattices match the prescribed archive at all 24 embeddings. Exact embeddings place their dihedral invariants in the common quartic field. The descended equations have the same absolute Igusa invariants. [Torsion field](d163_torsion_field.json) · [Starting equations](models_certified_-163.json) · [Gluing replay](verify_d163.py)
+
+### Algebraic equations along Richelot paths
+
+A record in [the equation file](richelot_models_-163.json) specifies a parent, a Möbius chart and a matching of six branch roots. It gives each of the 36 other equations in factored form.
+
+1. At a starting sextic take the roots in the order specified by the rational isolating rectangles. The auxiliary starting curve is another even sextic constructed from its recorded elliptic indices and torsion permutation. Its roots are the ordered pairs of square roots of its three \(u_j\).
+2. The three indices of the chart select roots mapped to \(0,1,\infty\). Apply \(t\mapsto1/(t-2-3i)\), then list the images of \(0,1\), the three remaining roots in inherited order, and \(\infty\). Each matched pair gives a monic quadratic \(A,B,C\).
+3. The child equation has right-hand side \([A,B][B,C][C,A]\) divided by its leading coefficient, with \([A,B]=A'B-AB'\). Its ordered roots come from the quadratic formula on each bracket in turn. The replay specifies the radical branches.
+
+The exact equations use at most five Richelot steps and quadratic radicals. The verifier checks a nonzero Richelot determinant and six distinct roots at every step. Each starting Jacobian has scalar multiplication by \(6\sqrt{-163}\). After \(s\) Richelot steps the integral matrix \(6\cdot2^s\sqrt{163}\,J\) exists on homology, where \(J\) is the complex structure. Arb isolates its integer entries. Its integral centralizer gives the full endomorphism ring and its Rosati-symmetric part gives the Néron–Severi lattice. All 19 computed Humbert form pairs are matched to the opposite secants by exact integral isometries. [Richelot formula](https://msp.org/ant/2011/5-4/ant-v5-n4-s.pdf) · [Equation-to-lattice replay](verify_d163_paths.py)
+
+| First differing degree | Pairs |
+|---:|---:|
+| 3 | 3 |
+| 6 | 6 |
+| 9 | 6 |
+| 12 | 3 |
+| 21 | 1 |
+
 ## Reproduce
 
 From this directory, with SymPy, python-flint and cypari2 installed:
@@ -108,6 +144,9 @@ python -B verify_mestre_d43.py
 python -B mestre_obstruction_d43.py
 python -B verify_mestre_descent_d43.py
 python -B mestre_link.py
+python -B verify_d163.py
+python -B descend_d163.py
+python -B verify_d163_paths.py
 ~~~
 
 The descent replay checks both change-of-variables identities, the common CM quotient pair and the absolute invariant that separates the moduli orbits. The gluing replay rebuilds the equation-to-lattice certificate. The original theta and recognition chain is in [pipeline.py](pipeline.py), with controls in [validate.py](validate.py). It uses PARI through cypari2, mpmath, NumPy and python-flint. The archived [degree-24 worksheet](twins_-19.md) gives the handoff calculation.

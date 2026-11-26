@@ -45,11 +45,12 @@ with the same rational polarized isogeny data over a common number
 field, the leading constants are in the ratio \(3:4\). For the
 non-product \(j=1728\) two-torsion gluing we give the multiplicity of
 every optimal degree as a divisor formula and obtain a remainder of
-order \(X\log(2+X)\). We give five pairs of explicit genus-two curves over
-quartic fields whose optimal quotient counts agree in every degree
-prime to three. Four pairs first differ at degree three, and one
-first differs at degree six. Exact two-torsion gluings and Richelot
-isogenies identify their refined Humbert forms from their equations.
+order \(X\log(2+X)\). We give equations for twenty-four pairs of genus-two curves
+whose optimal quotient counts agree in every degree prime to three.
+Their first differences occur at degrees \(3,6,9,12,21\).
+Six pairs have quartic models, including the pair first distinguished
+at degree \(21\). Exact two-torsion gluings and Richelot isogenies
+identify their refined Humbert forms from their equations.
 \end{abstract}
 \maketitle
 
@@ -694,6 +695,37 @@ three, with counts \((0,2)\), \((2,0)\), and \((2,0)\), respectively.
 Their equality in every degree prime to three follows from the same
 opposite-secant proposition.
 
+\subsection{The nineteen pairs at discriminant \texorpdfstring{\(-163\)}{-163}}
+
+The four cyclic three-isogenies from
+\(E:y^2=x^3-2174420x+1234136692+\tfrac14\)
+give elliptic curves with CM by the order of discriminant \(-1467\).
+The replay checks their \(j\)-invariants against the ring class
+polynomial. Applying the three-isogenies to the roots of the
+two-division cubic of \(E\) gives their two-torsion abscissae in
+one explicit degree-24 field.
+
+Two matches of the torsion labels give the bielliptic pair
+\texttt{p16}. Their lattices are verified at all 24 embeddings.
+Their absolute Igusa invariants agree exactly with those of the
+descended equations over the field defined by
+\(\theta^4-2\theta^3-9\theta^2+10\theta+28=0\). Both curves have two
+optimal classes of degree two and identical counts in every degree
+less than \(21\). Their degree-\(21\) counts are zero and four.
+
+An auxiliary gluing and the two models of \texttt{p16} are the
+starting curves for the other \(36\) equations. Each equation is
+specified by at most five Richelot steps. The companion lists the
+M\"obius charts, branch matchings and quadratic radicals defining
+the equations. Nonzero Richelot determinants and disjoint branch
+enclosures certify the steps. The argument of the preceding
+subsection gives an integral matrix \(6\cdot 2^s\sqrt{163}\,J\)
+after \(s\) steps. Its integral centralizer recovers the endomorphism
+ring. Exact isometries identify all the models with the intended
+opposite-secant forms. Among the nineteen pairs at this discriminant,
+the first distinguishing degrees \(3,6,9,12,21\) occur
+\(3,6,6,3,1\) times, respectively.
+
 \section{Exact verification and scope}
 
 The companion replay checks the two maps in \eqref{eq:models}
@@ -737,7 +769,9 @@ cypari2 to reproduce their Humbert forms. Run
 \texttt{python -B verify\_d43.py} in the same directory to certify the
 bielliptic pair at discriminant \(-43\). Run
 \texttt{python -B mestre\_link.py} to identify the six other quartic
-equations. The
+equations. Run \texttt{python -B verify\_d163\_paths.py} and
+\texttt{python -B descend\_d163.py} for the nineteen pairs and the
+quartic descent at discriminant \(-163\). The
 \href{https://github.com/towre676-cloud/crest-root-calculus/tree/main/docs/visuals}{visual companion}
 shows the lattice-to-curve computation and the certificate in reverse.
 
