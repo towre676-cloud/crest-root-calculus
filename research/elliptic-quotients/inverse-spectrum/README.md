@@ -66,3 +66,5 @@ python -B research/elliptic-quotients/inverse-spectrum/census.py --prime-limit 1
 The [closed-form census](census.py) needs only the standard library. It enumerates scalar orbits for the nine maximal orders of class number one, sorts forms by genus and partitions each genus by exact degree multiplicities. If a pair remains tied, the reported result gives its cutoff. The routines treat a first difference as a separation certificate and use no modular-form computation for that decision. The [common theta level and Sturm comparison](../inert-gluing/README.md#uniform-level-for-the-square-comparison) apply to any remaining candidate at a fixed maximal-order inert level.
 
 All-degree spectral injectivity for inequivalent forms in the maximal-order inert family is still a conjecture. The counterexample and conductor family concern the position of a difference.
+
+The [linear spectrum study](../square-spectrum-kernel/README.md) treats sums at the original 17 levels. It gives exact all-degree identities among sums of spectra of different Humbert forms, including combinations that involve both genera.

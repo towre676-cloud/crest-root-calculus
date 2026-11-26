@@ -1,0 +1,281 @@
+[
+ {
+  "d": -3,
+  "l": 5,
+  "forms": 2,
+  "full_rank": 2,
+  "square_rank": 2,
+  "square_bound_used": 120,
+  "sturm": 120
+ },
+ {
+  "d": -3,
+  "l": 5,
+  "forms": 2,
+  "full_rank": 2,
+  "square_rank": 2,
+  "square_bound_used": 120,
+  "sturm": 120
+ },
+ {
+  "d": -3,
+  "l": 11,
+  "forms": 8,
+  "full_rank": 8,
+  "square_rank": 8,
+  "square_bound_used": 300,
+  "sturm": 528
+ },
+ {
+  "d": -3,
+  "l": 11,
+  "forms": 7,
+  "full_rank": 7,
+  "square_rank": 7,
+  "square_bound_used": 300,
+  "sturm": 528
+ },
+ {
+  "d": -3,
+  "l": 17,
+  "forms": 15,
+  "full_rank": 15,
+  "square_rank": 14,
+  "square_bound_used": 300,
+  "sturm": 1224
+ },
+ {
+  "d": -3,
+  "l": 17,
+  "forms": 16,
+  "full_rank": 16,
+  "square_rank": 15,
+  "square_bound_used": 300,
+  "sturm": 1224
+ },
+ {
+  "d": -4,
+  "l": 19,
+  "forms": 25,
+  "full_rank": 25,
+  "square_rank": 25,
+  "square_bound_used": 300,
+  "sturm": 1520
+ },
+ {
+  "d": -4,
+  "l": 19,
+  "forms": 27,
+  "full_rank": 27,
+  "square_rank": 27,
+  "square_bound_used": 300,
+  "sturm": 1520
+ },
+ {
+  "d": -4,
+  "l": 23,
+  "forms": 39,
+  "full_rank": 39,
+  "square_rank": 39,
+  "square_bound_used": 300,
+  "sturm": 2208
+ },
+ {
+  "d": -4,
+  "l": 23,
+  "forms": 36,
+  "full_rank": 36,
+  "square_rank": 36,
+  "square_bound_used": 300,
+  "sturm": 2208
+ },
+ {
+  "d": -4,
+  "l": 7,
+  "forms": 5,
+  "full_rank": 5,
+  "square_rank": 5,
+  "square_bound_used": 224,
+  "sturm": 224
+ },
+ {
+  "d": -4,
+  "l": 7,
+  "forms": 4,
+  "full_rank": 4,
+  "square_rank": 4,
+  "square_bound_used": 224,
+  "sturm": 224
+ },
+ {
+  "d": -4,
+  "l": 11,
+  "forms": 9,
+  "full_rank": 9,
+  "square_rank": 9,
+  "square_bound_used": 300,
+  "sturm": 528
+ },
+ {
+  "d": -4,
+  "l": 11,
+  "forms": 10,
+  "full_rank": 10,
+  "square_rank": 10,
+  "square_bound_used": 300,
+  "sturm": 528
+ },
+ {
+  "d": -7,
+  "l": 3,
+  "forms": 2,
+  "full_rank": 2,
+  "square_rank": 2,
+  "square_bound_used": 96,
+  "sturm": 96
+ },
+ {
+  "d": -7,
+  "l": 5,
+  "forms": 4,
+  "full_rank": 4,
+  "square_rank": 4,
+  "square_bound_used": 240,
+  "sturm": 240
+ },
+ {
+  "d": -7,
+  "l": 5,
+  "forms": 3,
+  "full_rank": 3,
+  "square_rank": 3,
+  "square_bound_used": 240,
+  "sturm": 240
+ },
+ {
+  "d": -7,
+  "l": 13,
+  "forms": 21,
+  "full_rank": 21,
+  "square_rank": 21,
+  "square_bound_used": 300,
+  "sturm": 1456
+ },
+ {
+  "d": -7,
+  "l": 13,
+  "forms": 24,
+  "full_rank": 24,
+  "square_rank": 24,
+  "square_bound_used": 300,
+  "sturm": 1456
+ },
+ {
+  "d": -7,
+  "l": 17,
+  "forms": 36,
+  "full_rank": 36,
+  "square_rank": 36,
+  "square_bound_used": 300,
+  "sturm": 2448
+ },
+ {
+  "d": -7,
+  "l": 17,
+  "forms": 40,
+  "full_rank": 40,
+  "square_rank": 39,
+  "square_bound_used": 300,
+  "sturm": 2448
+ },
+ {
+  "d": -8,
+  "l": 5,
+  "forms": 3,
+  "full_rank": 3,
+  "square_rank": 3,
+  "square_bound_used": 240,
+  "sturm": 240
+ },
+ {
+  "d": -8,
+  "l": 5,
+  "forms": 4,
+  "full_rank": 4,
+  "square_rank": 4,
+  "square_bound_used": 240,
+  "sturm": 240
+ },
+ {
+  "d": -8,
+  "l": 7,
+  "forms": 8,
+  "full_rank": 8,
+  "square_rank": 8,
+  "square_bound_used": 300,
+  "sturm": 448
+ },
+ {
+  "d": -8,
+  "l": 7,
+  "forms": 6,
+  "full_rank": 6,
+  "square_rank": 6,
+  "square_bound_used": 300,
+  "sturm": 448
+ },
+ {
+  "d": -8,
+  "l": 13,
+  "forms": 21,
+  "full_rank": 21,
+  "square_rank": 20,
+  "square_bound_used": 300,
+  "sturm": 1456
+ },
+ {
+  "d": -8,
+  "l": 13,
+  "forms": 24,
+  "full_rank": 24,
+  "square_rank": 22,
+  "square_bound_used": 300,
+  "sturm": 1456
+ },
+ {
+  "d": -11,
+  "l": 7,
+  "forms": 8,
+  "full_rank": 8,
+  "square_rank": 8,
+  "square_bound_used": 300,
+  "sturm": 672
+ },
+ {
+  "d": -11,
+  "l": 7,
+  "forms": 6,
+  "full_rank": 6,
+  "square_rank": 6,
+  "square_bound_used": 300,
+  "sturm": 672
+ },
+ {
+  "d": -11,
+  "l": 13,
+  "forms": 21,
+  "full_rank": 21,
+  "square_rank": 21,
+  "square_bound_used": 300,
+  "sturm": 2184
+ },
+ {
+  "d": -11,
+  "l": 13,
+  "forms": 24,
+  "full_rank": 24,
+  "square_rank": 24,
+  "square_bound_used": 300,
+  "sturm": 2184
+ }
+]
