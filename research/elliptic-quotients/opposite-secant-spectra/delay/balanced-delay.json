@@ -1,0 +1,146 @@
+[
+  {
+    "k": 2,
+    "squared_minima_lower_bound": 2677166371479278450287,
+    "squared_minima_upper_bound": 2677166371479279107395,
+    "parent_gram": [
+      [
+        2677166371479278989009,
+        -52533,
+        -9
+      ],
+      [
+        -52533,
+        2677166371479278791969,
+        3
+      ],
+      [
+        -9,
+        3,
+        2677166371479278778841
+      ]
+    ],
+    "child_gram_determinant": 172690557962117475530029843425877313986616885686623431835850011516,
+    "common_first_degree": 51741341029,
+    "first_distinguishing_degree": 465672069261,
+    "primitive_counts_at_first_difference": [
+      2,
+      0
+    ],
+    "normalized_delay_target": 9,
+    "distinguishing_vector": [
+      1,
+      4,
+      8
+    ],
+    "checked_by_direct_lattice_shells": true
+  },
+  {
+    "k": 5,
+    "squared_minima_lower_bound": 48458862437719185080433156359683,
+    "squared_minima_upper_bound": 48458862437719185080433242107759,
+    "parent_gram": [
+      [
+        48458862437719185080433234666361,
+        -3543147,
+        -27
+      ],
+      [
+        -3543147,
+        48458862437719185080433199588021,
+        3
+      ],
+      [
+        -27,
+        3,
+        48458862437719185080433199233721
+      ]
+    ],
+    "child_gram_determinant": 1024146663005400542176234913046010980904912398342634112477227450207516724657623594786922684451612,
+    "common_first_degree": 6961240007191189,
+    "first_distinguishing_degree": 355023240366750639,
+    "primitive_counts_at_first_difference": [
+      2,
+      0
+    ],
+    "normalized_delay_target": 51,
+    "distinguishing_vector": [
+      1,
+      10,
+      50
+    ],
+    "checked_by_direct_lattice_shells": true
+  },
+  {
+    "k": 8,
+    "squared_minima_lower_bound": 37511407609443387628559750540911941163,
+    "squared_minima_upper_bound": 37511407609443387628559750542755010087,
+    "parent_gram": [
+      [
+        37511407609443387628559750542649781961,
+        -51018813,
+        -45
+      ],
+      [
+        -51018813,
+        37511407609443387628559750541836664277,
+        3
+      ],
+      [
+        -45,
+        3,
+        37511407609443387628559750541833475625
+      ]
+    ],
+    "child_gram_determinant": 475042639444636866804105374842524352269379159985704094769913357181744754888706318824598212499354342048549130160924,
+    "common_first_degree": 6124655713543691725,
+    "first_distinguishing_degree": 790080587047136232525,
+    "primitive_counts_at_first_difference": [
+      2,
+      0
+    ],
+    "normalized_delay_target": 129,
+    "distinguishing_vector": [
+      1,
+      16,
+      128
+    ],
+    "checked_by_direct_lattice_shells": true
+  },
+  {
+    "k": 20,
+    "squared_minima_lower_bound": 2044369791210689610079739337320963508720200357983,
+    "squared_minima_upper_bound": 2044369791210689610079739337320963509009646934355,
+    "parent_gram": [
+      [
+        2044369791210689610079739337320963509002673349929,
+        -3443740317,
+        -117
+      ],
+      [
+        -3443740317,
+        2044369791210689610079739337320963508865009739617,
+        3
+      ],
+      [
+        -117,
+        3,
+        2044369791210689610079739337320963508864923646169
+      ]
+    ],
+    "child_gram_determinant": 76899032231481779877928412599250754111358667962575878209999667861739217806198707833703694304859854621128453197365029021605024133456839377997247324,
+    "common_first_degree": 1429814600292880493035237,
+    "first_distinguishing_degree": 1145281494834597274921224837,
+    "primitive_counts_at_first_difference": [
+      2,
+      0
+    ],
+    "normalized_delay_target": 801,
+    "distinguishing_vector": [
+      1,
+      40,
+      800
+    ],
+    "checked_by_direct_lattice_shells": false
+  }
+]

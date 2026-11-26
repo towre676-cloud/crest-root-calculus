@@ -2,6 +2,8 @@
 
 The level-three opposite-secant construction can produce **equal quotient counts in every degree**, even when the refined Humbert forms are inequivalent. A family below proves this for infinitely many pairs of genus-two curves. An exhaustive sweep through child Gram determinant 200,000 finds 280 such pairs and measures the first difference for every pair in the sweep whose spectra differ.
 
+A separate effective family has finite first differences beyond any fixed multiple of the third successive-minimum length, even while the three parent minima become asymptotically equal. Along that family $\delta\gg\lambda_3(G)^{4/7}$ for the **squared** third minimum. [Construction and exact replay](balanced-delay.md)
+
 Here $r_F(n)$ is the number of vectors of norm $n$ in a ternary lattice $F$, with both signs counted. Write $s_F(m)=r_F(m^2)$. Divisor inversion passes between these ordinary counts and primitive square counts. In particular the first differing degree and its signed excess are the same for either convention. On a refined Humbert lattice the primitive counts give geometric optimal elliptic quotient classes. [Kani, elliptic subcovers](https://doi.org/10.1007/s40316-018-0105-6)
 
 ## Reduction to the parent genus
@@ -110,7 +112,7 @@ The extended replay recovers all 31 archived pairs and agrees with the original 
 | Largest $\delta/\sqrt{\det L}$, about 0.360 | 60 | 27,792 | $(8,13,32)$ |
 | Largest $\delta/\sqrt{\lambda_3(G)}$, about 14.10 | 81 | 182,988 | $(28,28,33)$ |
 
-The last two extrema measure different effects. The largest finite degree occurs on an elongated parent, while the greatest normalized delay relative to the third minimum occurs when all three squared minima are close together. The finite sweep leaves the asymptotic question open. [Exact extended receipt](census-200000.json)
+The last two extrema measure different effects. The largest finite degree occurs on an elongated parent, while the greatest normalized delay relative to the third minimum occurs when all three squared minima are close together. The [nearly round construction](balanced-delay.md) proves that the latter normalized delay is unbounded. The optimal exponent in the child determinant remains open. [Exact extended receipt](census-200000.json)
 
 ### Exact enumeration and local tests
 
