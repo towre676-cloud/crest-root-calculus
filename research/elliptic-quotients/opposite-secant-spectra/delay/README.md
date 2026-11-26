@@ -30,6 +30,15 @@ $$
 $$
 with both sides infinite if the indicated sets are empty. At the first difference the excess is $A(m)$ itself. In particular matching the two unordered pairs of neighbours by isometry proves equality of the entire quotient spectra.
 
+The transfer also gives the complete difference sequence. Let $D_{mathrm{prim}}(m)$ be the signed difference of the two primitive square counts and let $A_{mathrm{prim}}(m)$ be the corresponding signed sum of the four parent-neighbour counts. Then
+$$
+ D_{mathrm{prim}}(m)=
+ sum_{j=1}^{v_3(m)}(-1)^{j-1}A_{mathrm{prim}}(m/3^j),
+ qquad
+ A_{mathrm{prim}}(m)=D_{mathrm{prim}}(3m)+D_{mathrm{prim}}(m).
+$$
+Indeed $B_0(m)=0$ if $3\nmid m$ and $B_0(3m)$ is the ordinary child difference at $3m$. The ordinary relation is therefore $D(3m)=A(m)-D(m)$. With $T_3 f(m)=f(m/3)$ when $3\mid m$ and zero otherwise, this is $(1+T_3)D=T_3A$. Divisor inversion commutes with $T_3$, so the relation holds for primitive counts and can be expanded at each $m$ as the displayed finite sum.
+
 When neighbour isometries do not settle the question, apply the $t=1$ Shimura lift to the signed sum of the four neighbour theta series. It is cuspidal in weight $3/2$ because all four neighbours lie in one genus. At theta level $N_G$, its lift is holomorphic of weight two, trivial character and level $N_G/2$. Holomorphic weight two suffices for Sturm's test, including when a unary component has a noncuspidal image. Its coefficient of index $n$ is $A(n)$ plus a linear combination of $A(d)$ for proper divisors $d\mid n$. Thus the least nonzero $A(m)$ is at most $[\mathrm{SL}_2(\mathbb Z):\Gamma_0(N_G/2)]/6$, unless all $A(m)$ vanish. This moves the Sturm test to the **parent level**. Compared with the child theta level, which has an extra factor of nine at three, the resulting first-degree bound is about three times smaller. [Shimura–Niwa level and holomorphy, in Purkait, Theorem 3.1](https://doi.org/10.5802/jtnb.865)
 
 ## An infinite family with identical full spectra
@@ -81,7 +90,7 @@ The sweep ranges over **integral Gram** parents of determinant prime to three wi
 | Realized pairs with a finite first difference | 70,608 |
 | Realized pairs with exactly equal full spectra | 130 |
 
-Of the 130 equalities, **74** follow from neighbour isometries and **56** from Shimura–Sturm on the parent. The smallest has determinant 1,440 and is $t=0$ in the family above. All 31 pairs in the earlier census are recovered by exact child isometry tests. The determinant cutoff concerns lattices. These counts do not give the number of curve isomorphism classes realizing each lattice.
+Of the 130 equalities, **74** follow from neighbour isometries and **56** from Shimura–Sturm on the parent. In each of those 56 cases the signed sum of the four ordinary neighbour theta series is nonzero, even though its square coefficients all vanish. The first nonzero ordinary norm is 5 in 35 cases, 8 in 15, 12 in two, 13 in three and 20 in one. The smallest equal-spectrum pair has determinant 1,440 and is $t=0$ in the family above. All 31 pairs in the earlier census are recovered by exact child isometry tests. The determinant cutoff concerns lattices. These counts do not give the number of curve isomorphism classes realizing each lattice.
 
 | Extremum over pairs with differing spectra | First difference $\delta$ | Child determinant | Parent squared minima |
 |---|---:|---:|---|
@@ -106,4 +115,4 @@ study=research/elliptic-quotients/opposite-secant-spectra/delay
 python -B "$study/census.py" --verify "$study/census.json"
 ~~~
 
-The census uses integer square-shell enumeration and exact PARI isometries. PARI independently checks each finite extremum, including the corresponding first difference on the parent neighbours. The family replay tests five parameters, including the ordinary theta difference and the exact neighbour isometries. The two proofs above apply to the entire stated families.
+The census uses integer square-shell enumeration and exact PARI isometries. PARI independently checks each finite extremum and the primitive transfer identity through degree 81, including the corresponding counts on the parent neighbours. The family replay tests five parameters, including the ordinary theta difference and the exact neighbour isometries. The two proofs above apply to the entire stated families.

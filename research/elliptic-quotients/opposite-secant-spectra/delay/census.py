@@ -85,9 +85,18 @@ def shell_batch(binary, cap, cases):
     return rows
 
 
+def primitive_square_counts(ordinary):
+    primitive = ordinary.copy()
+    for degree in range(1,len(primitive)):
+        for multiple in range(2*degree,len(primitive),degree):
+            primitive[multiple] -= primitive[degree]
+    return primitive
+
+
 def neighbour_comparison(binary, pending, field):
     certificates = {}
     theta_jobs = {}
+    ordinary_witnesses = {}
     for index, (parent, edges, _) in pending:
         det, a, b, c, u, v, w = parent
         gram = ((a,u,v),(u,b,w),(v,w,c))
@@ -98,6 +107,12 @@ def neighbour_comparison(binary, pending, field):
         if any(left[0].qfisom(right[j]) and left[1].qfisom(right[1-j]) for j in (0,1)):
             certificates[index] = ("neighbour_isometry", 0, 0)
             continue
+        # Exact ordinary coefficients detect equality failure before restriction to squares.
+        ordinary_counts = [q.qfrep(128) for q in (*left,*right)]
+        ordinary_witnesses[index] = next(
+            (n for n,(a,b,c,d) in enumerate(zip(*ordinary_counts,strict=True),1) if a+b != c+d),
+            None,
+        )
         bound = sturm_bound(g,g)
         jobs = []
         for q in (*left,*right):
@@ -123,7 +138,7 @@ def neighbour_comparison(binary, pending, field):
             differences = (a+b-c-d for a,b,c,d in zip(*(counts[job] for job in group),strict=True))
             first = next(((3*m,d) for m,d in enumerate(differences,1) if d),None)
             certificates[index] = ("neighbour_sturm", *(first or (0,0)))
-    return certificates
+    return certificates, ordinary_witnesses
 
 
 def certify_case(case, row):
@@ -136,20 +151,30 @@ def certify_case(case, row):
         raise ArithmeticError("Unexpected determinant or isometry in the pair.")
     if any(int(g.qfrep(1)[0]) for g in forms):
         raise ArithmeticError("The pair contains a product.")
-    counts = [g.qfrep(delta**2) for g in forms]
-    differences = [2*int(counts[0][m*m-1]-counts[1][m*m-1]) for m in range(1,delta+1)]
-    if not differences or any(differences[:-1]) or differences[-1] != excess:
+    replay_bound = max(delta,81)
+    counts = [g.qfrep(replay_bound**2) for g in forms]
+    differences = [0] + [2*int(counts[0][m*m-1]-counts[1][m*m-1])
+                         for m in range(1,replay_bound+1)]
+    if any(differences[:delta]) or differences[delta] != excess:
         raise ArithmeticError("Independent PARI shell counts disagree.")
     if witness and (gcd(witness,6*det) != 1 or
                     any(not g.qfrep(witness**2)[witness**2-1] for g in forms)):
         raise ArithmeticError("Independent realization witness check failed.")
     points, _ = normal_partition(gram,residue_field(-4,3))
     local = dict(zip(points,neighbours(gram_matrix(gram),3),strict=True))
-    left, right = [[local[point].qfrep((delta//3)**2) for point in edge] for edge in edges]
-    differences_at_parent = [2*int(left[0][m*m-1]+left[1][m*m-1]-right[0][m*m-1]-right[1][m*m-1])
-                             for m in range(1,delta//3+1)]
-    if any(differences_at_parent[:-1]) or differences_at_parent[-1] != excess:
+    left, right = [[local[point].qfrep((replay_bound//3)**2) for point in edge] for edge in edges]
+    differences_at_parent = [0] + [
+        2*int(left[0][m*m-1]+left[1][m*m-1]-right[0][m*m-1]-right[1][m*m-1])
+        for m in range(1,replay_bound//3+1)
+    ]
+    if any(differences_at_parent[:delta//3]) or differences_at_parent[delta//3] != excess:
         raise ArithmeticError("Exact neighbour theta counts disagree with the first difference.")
+    primitive_child = primitive_square_counts(differences)
+    primitive_parent = primitive_square_counts(differences_at_parent)
+    for m in range(1,replay_bound+1):
+        predicted = primitive_parent[m//3]-primitive_child[m//3] if m%3 == 0 else 0
+        if primitive_child[m] != predicted:
+            raise ArithmeticError("Independent primitive counts disagree with the transfer.")
     return {"parent_gram": gram, "child_grams": [matrix_entries(g) for g in forms],
             "gram_determinant": 9*det, "parent_squared_minima": [a,b,c],
             "first_difference": delta, "signed_excess": excess,
@@ -207,7 +232,7 @@ def census(limit, initial_cap):
         rows = shell_batch(shells_bin, initial_cap, cases)
         retry = [(i,case) for i,(case,row) in enumerate(zip(cases,rows))
                  if not case[2] and not row[0] and not row[3]]
-        certificates = neighbour_comparison(shells_bin,retry,field)
+        certificates, ordinary_witnesses = neighbour_comparison(shells_bin,retry,field)
         for i, (_,delta,excess) in certificates.items():
             _, _, witness, is_product, checked = rows[i]
             if delta and delta <= checked:
@@ -216,6 +241,7 @@ def census(limit, initial_cap):
 
     archive = json.loads((HERE.parent/"certificate.json").read_text())["level_three"]
     bins = defaultdict(Counter)
+    ordinary_witness_histogram = Counter()
     ranked = defaultdict(list)
     checks = []
     for i,(case,row) in enumerate(zip(cases,rows)):
@@ -238,7 +264,11 @@ def census(limit, initial_cap):
             band["jacobian_pairs"] += 1
             if not delta:
                 band["jacobian_square_isospectral"] += 1
-                band[certificates[i][0]] += 1
+                method = certificates[i][0]
+                band[method] += 1
+                if method == "neighbour_sturm":
+                    witness_norm = ordinary_witnesses[i]
+                    ordinary_witness_histogram[str(witness_norm) if witness_norm else "unseen"] += 1
             else:
                 band["jacobian_separated"] += 1
                 band["max_first_difference"] = max(band["max_first_difference"],delta)
@@ -296,6 +326,7 @@ def census(limit, initial_cap):
             "parent_isometry_classes": sum(map(len,by_minima.values())),
             "nonisometric_pairs": len(cases), "archived_pairs_matched": archived_pairs,
             "determinant_bands": dict(sorted(bins.items())), "maxima": maxima,
+            "ordinary_neighbour_witness_norms": dict(sorted(ordinary_witness_histogram.items())),
             "smallest_square_isospectral": sample, "equal_family_replay": check_equal_family(field)}
 
 
