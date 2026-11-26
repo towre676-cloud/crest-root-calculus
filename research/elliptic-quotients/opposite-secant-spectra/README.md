@@ -2,6 +2,8 @@
 
 Distinct genus-two curves can have identical counts of optimal elliptic quotients in **every degree prime to 3**. An explicit infinite family of such pairs has an unbounded first distinguishing degree, even within a single CM field as the conductor varies. The same construction explains all 31 coincidences in the level-three census.
 
+The 3-neighbours of the parent lattice determine the first differing degree. They also give an infinite family with identical counts in **every degree** and inequivalent Humbert forms. The complete sweep through child Gram determinant 100,000 finds 130 pairs with this stronger equality. [Proof and exact census](delay/README.md)
+
 ## The space observed by good degrees
 
 Write $r_L(n)$ for the number of vectors of norm $n$ in a ternary lattice $L$, including both signs. Write $u_L(m)$ for the number of primitive vectors of norm $m^2$. On the refined Humbert lattice of a genus-two Jacobian the primitive vectors correspond to the geometric optimal elliptic subcovers. On a principally polarized product the two norm-one vectors correspond to the two elliptic factors. [Kani, The isogeny defect](https://doi.org/10.1007/s40316-018-0105-6)
