@@ -1,0 +1,86 @@
+[
+  {
+    "D": -8,
+    "ell": 13,
+    "nonsplit_kernel_dimension": 2,
+    "packets": [
+      {
+        "label": "676b1",
+        "ainvs": [
+          0,
+          1,
+          0,
+          -4,
+          -12
+        ],
+        "conductor": 676,
+        "auxiliary_prime": 3,
+        "neighbor_eigenvalue": -2,
+        "shimura_class": 5,
+        "comparison_bound": 728,
+        "oldform_dilations": {
+          "1": -4,
+          "2": -8
+        },
+        "twist": -8,
+        "twisted_conductor": 10816,
+        "twisted_root_number": 1,
+        "central_L_over_real_period": "0"
+      },
+      {
+        "label": "338c1",
+        "ainvs": [
+          1,
+          0,
+          0,
+          81,
+          467
+        ],
+        "conductor": 338,
+        "auxiliary_prime": 3,
+        "neighbor_eigenvalue": 1,
+        "shimura_class": 5,
+        "comparison_bound": 728,
+        "oldform_dilations": {
+          "1": 2,
+          "2": 2,
+          "4": 8
+        },
+        "twist": -8,
+        "twisted_conductor": 10816,
+        "twisted_root_number": 1,
+        "central_L_over_real_period": "0"
+      }
+    ]
+  },
+  {
+    "D": -3,
+    "ell": 17,
+    "nonsplit_kernel_dimension": 1,
+    "packets": [
+      {
+        "label": "867e1",
+        "ainvs": [
+          0,
+          1,
+          1,
+          6,
+          -1
+        ],
+        "conductor": 867,
+        "auxiliary_prime": 5,
+        "neighbor_eigenvalue": 3,
+        "shimura_class": 5,
+        "comparison_bound": 612,
+        "oldform_dilations": {
+          "1": -4,
+          "2": 4
+        },
+        "twist": -3,
+        "twisted_conductor": 2601,
+        "twisted_root_number": 1,
+        "central_L_over_real_period": "0"
+      }
+    ]
+  }
+]

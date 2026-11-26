@@ -1,0 +1,255 @@
+[
+  {
+    "D": -8,
+    "ell": 13,
+    "depleted_weight_two_level": 2704,
+    "sturm_bound": 728,
+    "split": {
+      "classes": 28,
+      "exact_kernel_dimension": 5,
+      "forced_dimension": 3,
+      "max_total": "79/210",
+      "max_residual": "9/35",
+      "at_maximum": [
+        {
+          "gram": [
+            [
+              169,
+              143,
+              0
+            ],
+            [
+              143,
+              125,
+              0
+            ],
+            [
+              0,
+              0,
+              8
+            ]
+          ],
+          "automorphisms": 4,
+          "scalar_parameter": [
+            1,
+            0
+          ],
+          "forced": "5/42",
+          "residual": "9/35"
+        }
+      ]
+    },
+    "nonsplit": {
+      "classes": 25,
+      "exact_kernel_dimension": 2,
+      "forced_dimension": 0,
+      "max_total": "11/70",
+      "max_residual": "11/70",
+      "at_maximum": [
+        {
+          "gram": [
+            [
+              169,
+              65,
+              156
+            ],
+            [
+              65,
+              29,
+              60
+            ],
+            [
+              156,
+              60,
+              152
+            ]
+          ],
+          "automorphisms": 2,
+          "scalar_parameter": [
+            4,
+            3
+          ],
+          "forced": "0",
+          "residual": "11/70"
+        },
+        {
+          "gram": [
+            [
+              169,
+              78,
+              130
+            ],
+            [
+              78,
+              40,
+              60
+            ],
+            [
+              130,
+              60,
+              108
+            ]
+          ],
+          "automorphisms": 2,
+          "scalar_parameter": [
+            3,
+            4
+          ],
+          "forced": "0",
+          "residual": "11/70"
+        }
+      ]
+    }
+  },
+  {
+    "D": -3,
+    "ell": 17,
+    "depleted_weight_two_level": 3468,
+    "sturm_bound": 1224,
+    "split": {
+      "classes": 18,
+      "exact_kernel_dimension": 2,
+      "forced_dimension": 1,
+      "max_total": "1/4",
+      "max_residual": "1/6",
+      "at_maximum": [
+        {
+          "gram": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1156,
+              34
+            ],
+            [
+              0,
+              34,
+              4
+            ]
+          ],
+          "automorphisms": 8,
+          "scalar_parameter": null,
+          "forced": "1/12",
+          "residual": "1/6"
+        }
+      ]
+    },
+    "nonsplit": {
+      "classes": 17,
+      "exact_kernel_dimension": 1,
+      "forced_dimension": 0,
+      "max_total": "1/6",
+      "max_residual": "1/6",
+      "at_maximum": [
+        {
+          "gram": [
+            [
+              289,
+              85,
+              170
+            ],
+            [
+              85,
+              29,
+              52
+            ],
+            [
+              170,
+              52,
+              104
+            ]
+          ],
+          "automorphisms": 4,
+          "scalar_parameter": [
+            0,
+            5
+          ],
+          "forced": "0",
+          "residual": "1/6"
+        },
+        {
+          "gram": [
+            [
+              289,
+              17,
+              34
+            ],
+            [
+              17,
+              5,
+              4
+            ],
+            [
+              34,
+              4,
+              8
+            ]
+          ],
+          "automorphisms": 4,
+          "scalar_parameter": [
+            0,
+            1
+          ],
+          "forced": "0",
+          "residual": "1/6"
+        },
+        {
+          "gram": [
+            [
+              289,
+              187,
+              187
+            ],
+            [
+              187,
+              125,
+              123
+            ],
+            [
+              187,
+              123,
+              125
+            ]
+          ],
+          "automorphisms": 4,
+          "scalar_parameter": [
+            2,
+            2
+          ],
+          "forced": "0",
+          "residual": "1/6"
+        },
+        {
+          "gram": [
+            [
+              289,
+              34,
+              0
+            ],
+            [
+              34,
+              8,
+              2
+            ],
+            [
+              0,
+              2,
+              4
+            ]
+          ],
+          "automorphisms": 4,
+          "scalar_parameter": [
+            5,
+            5
+          ],
+          "forced": "0",
+          "residual": "1/6"
+        }
+      ]
+    }
+  }
+]

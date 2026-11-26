@@ -1,0 +1,29 @@
+[
+  {
+    "D": -8,
+    "ell": 13,
+    "split_classes": 28,
+    "nonsplit_classes": 25,
+    "residual_dimension": 2,
+    "direct_equals_transport": true,
+    "max_residual": "9/35"
+  },
+  {
+    "D": -3,
+    "ell": 17,
+    "split_classes": 18,
+    "nonsplit_classes": 17,
+    "residual_dimension": 1,
+    "direct_equals_transport": true,
+    "max_residual": "1/6"
+  },
+  {
+    "D": -11,
+    "ell": 7,
+    "split_classes": 17,
+    "nonsplit_classes": 15,
+    "residual_dimension": 0,
+    "direct_equals_transport": true,
+    "max_residual": "0"
+  }
+]

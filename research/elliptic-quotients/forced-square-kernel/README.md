@@ -70,3 +70,5 @@ python -B "$study/rank.py" --verify "$study/rank.json"
 ~~~
 
 Unmarked coprime-degree injectivity at arbitrary inert gluing primes remains open. The exact transfer isolates the missing arithmetic information as the span of internal-point residue-count vectors across the ambient classes. The local incidence rank and the forced relations are already determined.
+
+The [exact residual study](../exact-residual-spectrum/README.md) upgrades the two nonzero residual dimensions in the original 12-level sample to full Sturm certificates. It computes the forced and residual projector matrices and identifies all three associated twists with even-sign central zeros.
