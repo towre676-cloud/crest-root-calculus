@@ -383,6 +383,13 @@
       "sturm_bound": 7296
     }
   },
+  "ordinary_neighbour_witness_norms": {
+    "12": 2,
+    "13": 3,
+    "20": 1,
+    "5": 35,
+    "8": 15
+  },
   "smallest_square_isospectral": {
     "gram_determinant": 1440,
     "parent_gram": [
