@@ -45,8 +45,10 @@ with the same rational polarized isogeny data over a common number
 field, the leading constants are in the ratio \(3:4\). For the
 non-product \(j=1728\) two-torsion gluing we give the multiplicity of
 every optimal degree as a divisor formula and obtain a remainder of
-order \(X\log(2+X)\). Exact equation and lattice replays accompany the
-proofs.
+order \(X\log(2+X)\). A further pair of explicit genus-two curves over a
+quartic field has equal optimal quotient counts at every degree prime
+to three and different counts at degree three. Their identification
+with the corresponding Humbert lattices is certified from the equations.
 \end{abstract}
 \maketitle
 
@@ -595,14 +597,43 @@ elliptic quotients agrees exactly. The monic quadratic with those
 two roots divides the conductor-three class polynomial
 \(H_{-171}\) over \(F\).
 
-The association of the original algebraic models with the two
-period matrices was made by high-precision recognition. Exact
-arithmetic checks the identity of the models under descent and the
-stored moduli data. A certified identification of those analytic
-periods with the recognized algebraic moduli remains a separate step.
-For \(D=-43\) the companion search supplies polarized product
-candidates for all eight forms. Exact curve models remain open in
-that case.
+\subsection{Certified identification with the secant lattices}
+
+Write \(f(x)=g(x^2)\) and \(g^\vee(U)=-U^3g(1/U)\). The maps
+\((x,y)\mapsto(x^2,y)\) and \((x,y)\mapsto(x^{-2},y/x^3)\) land on
+\(Y^2=g(U)\) and \(Y^2=-g^\vee(U)\), respectively. For each root
+\(\rho\) of \(g\), the pullbacks of \((\rho,0)\) and \((\rho^{-1},0)\)
+as divisor classes coincide. Their difference as divisors is
+\(\operatorname{div}(x)\), since they share the two Weierstrass
+points above \(\rho\) and subtract the fibres over \(x=\infty\)
+and \(x=0\), respectively. The Jacobian is therefore the quotient
+of the product by the graph of this bijection on two-torsion.
+Its polarization pulls back to twice the product polarization
+\cite{HLP,KaniII}.
+
+For each embedding of the equation field, exact divisibility by
+\(H_{-171}\) restricts the elliptic \(j\)-invariants to the four
+conductor-three CM classes. Certified complex enclosures separate
+those four values and identify the two quotient lattices. To label
+their nonzero two-torsion, let \(G_2,G_3\) be the Weierstrass
+invariants of one normalized lattice and \(g_2,g_3\) those of the
+centred cubic in Weierstrass form. The scaling \(\lambda\) satisfies
+\(g_2=\lambda^{-4}G_2\) and \(g_3=\lambda^{-6}G_3\), so
+\(\lambda^{-2}=g_3G_2/(G_3g_2)\). All these invariants are nonzero
+for the lattices in question. Each scaled half-period value must
+match a root of the centred cubic. Disjoint enclosures exclude five
+of the six bijections, leaving the unique matching.
+
+Adjoining lifts of the resulting graph gives the integral Jacobian
+lattice. The replay verifies the descended polarization and computes
+its refined Humbert form using rational arithmetic. It checks integral
+change-of-basis matrices to \(Q_1\) and \(Q_2\), respectively, at all
+\(24\) embeddings of the original equation field. The exact descent
+then identifies the quartic models with the two secants. Thus their
+geometric optimal quotient counts agree in every degree prime to
+\(3\), and are \(0\) and \(4\), respectively, at degree \(3\).
+For \(D=-43\) polarized product candidates are available for all
+eight forms. Exact curve models remain open in that case.
 
 \section{Exact verification and scope}
 
@@ -641,9 +672,11 @@ repository root with Python and SymPy installed.
 \]
 Run \texttt{python -B descend.py --verify} from the
 \href{https://github.com/towre676-cloud/crest-root-calculus/tree/main/research/elliptic-quotients/twin-curves}{twin-curves directory}
-to check the quartic models. The
+to check the quartic models, then run
+\texttt{python -B certify\_link.py --verify} with python-flint and
+cypari2 to reproduce their Humbert forms. The
 \href{https://github.com/towre676-cloud/crest-root-calculus/tree/main/docs/visuals}{visual companion}
-shows the lattice-to-curve computation.
+shows the lattice-to-curve computation and the certificate in reverse.
 
 The code, the exact lattice data, and the \TeX{} source are available
 in the \href{https://github.com/towre676-cloud/crest-root-calculus}

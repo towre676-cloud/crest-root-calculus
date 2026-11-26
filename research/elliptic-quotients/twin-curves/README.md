@@ -4,7 +4,7 @@ The discriminant −19 pair comes from two principal polarizations on one unpola
 \[
 F=\mathbb Q(\theta),\qquad \theta^4-\theta^3-3\theta^2+2\theta+4=0.
 \]
-Exact arithmetic verifies the descent, the shared elliptic quotient pair and distinct Galois orbits of the models. The connection between the recognized moduli and the analytic periods uses high-precision recognition. The opposite-secant equality of the two lattice spectra has a separate exact proof. [Visual companion](../../../docs/visuals/README.md)
+Exact arithmetic verifies the descent, the shared elliptic quotient pair and distinct Galois orbits of the models. The connection between the explicit equations and the twin lattices is now certified without recognition: Arb enclosures and exact lattice algebra recover each equation's refined Humbert form, as described in the section on the certified link below. The opposite-secant equality of the two lattice spectra has a separate exact proof. [Visual companion](../../../docs/visuals/README.md)
 
 ## From the lattice to the archived equations
 
@@ -36,6 +36,14 @@ For the change of variables set \(s=s_1^3,\ t=s_2^3,\ \delta=s-t,\ P=X+\delta,\ 
 \]
 Expanding with \(st=v^3\) and \(\delta^2=\Delta\) gives the quartic-field equation. The two substitutions are checked coefficient by coefficient in the original degree-24 fields, after clearing the square-root factor. The existence of a field-of-moduli model in the extra-involution case is classical. [Cardona–Quer](https://arxiv.org/abs/math/0207015)
 
+## Certified identification of the two models
+
+Put \(g_1(U)=U^3-s_1U^2+s_2U-1\) and \(g_2(U)=U^3-s_2U^2+s_1U-1\). The degree-two maps \((x,y)\mapsto(x^2,y)\) and \((x,y)\mapsto(x^{-2},y/x^3)\) land on \(Y^2=g_1(U)\) and \(Y^2=-g_2(U)\), respectively. If \(\rho_i\) is a root of \(g_1\), the two torsion points \((\rho_i,0)\) and \((\rho_i^{-1},0)\) pull back to the same pair of Weierstrass points. The first pullback subtracts the fibre at \(x=\infty\), and the second subtracts the fibre at \(x=0\). Their difference is \(\operatorname{div}(x)\). Thus the kernel of \(E_1\times E_2\to\operatorname{Jac}(C)\) is the graph of \(\psi(\rho_i,0)=(\rho_i^{-1},0)\), and the polarization pulls back to \(2(\theta_1+\theta_2)\). [Howe–Leprévost–Poonen](https://arxiv.org/abs/math/9809210)
+
+The certificate verifies exactly that the quotient \(j\)-invariants satisfy the ring class polynomial \(H_{-171}\). This proves that each is the modular \(j\) of an ideal lattice of \(\mathcal O_3\). Arb encloses the four possible modular \(j\)-values and singles out one for each quotient. After centring each elliptic cubic and putting it in the form \(Y^2=4X^3-g_2 X-g_3\), the invariants determine the \(\wp\)-coordinate scaling \(\lambda^{-2}\) by the ratio \((g_3/g_3^\tau)(g_2^\tau/g_2)\). Here \(g_2^\tau,g_3^\tau\) are the invariants of the selected ideal lattice. Arb excludes five of the six bijections between the cubic roots and the three scaled half-period values. It also certifies the reciprocal root pairing. Existence of both matchings follows from the equality of \(j\)-invariants and the reciprocal cubic identity, respectively.
+
+The matched half-periods generate the graph subgroup. Adjoining their lifts to the product lattice gives the Jacobian lattice, on which the doubled product polarization is integral and unimodular. The code computes its refined Humbert form in exact arithmetic. It checks an integral isometry to the corresponding opposite-secant lattice for each model, excludes an isometry to the other, and checks the first discrepancy in quotient counts. The replay performs these checks at all 24 isolated embeddings of the original equation field. The exact descent transfers the outcome to the quartic models. [Certificate](certified_link_-19.json) · [Verifier](certify_link.py)
+
 ## Exact comparisons
 
 The first degree at which the two Humbert lattices differ is three, with **zero versus four** optimal classes. At every degree prime to three their ordinary square counts coincide by the shared internal residue line of the two opposite secants. Möbius inversion gives the same equality for primitive counts. [Incidence proof and exact replay](../opposite-secant-spectra/README.md)
@@ -49,12 +57,13 @@ They agree exactly across the two curves. The resulting quadratic divides \(H_{-
 
 ## Reproduce
 
-From this directory, with SymPy installed:
+From this directory, with SymPy, python-flint and cypari2 installed:
 
 ~~~sh
 python -B descend.py --verify
+python -B certify_link.py --verify
 ~~~
 
-The verifier checks both change-of-variables identities, the common CM quotient pair and the absolute invariant whose minimal polynomials separate the moduli orbits. The original theta and recognition chain is in [pipeline.py](pipeline.py), with controls in [validate.py](validate.py). It uses PARI through cypari2, mpmath, NumPy and python-flint. The archived [degree-24 worksheet](twins_-19.md) gives the handoff calculation.
+The descent replay checks both change-of-variables identities, the common CM quotient pair and the absolute invariant that separates the moduli orbits. The gluing replay rebuilds the equation-to-lattice certificate. The original theta and recognition chain is in [pipeline.py](pipeline.py), with controls in [validate.py](validate.py). It uses PARI through cypari2, mpmath, NumPy and python-flint. The archived [degree-24 worksheet](twins_-19.md) gives the handoff calculation.
 
 All eight \(D=-43\) forms have candidate polarizations on explicit products of CM elliptic curves, recorded in [twin_lattices_-43.json](twin_lattices_-43.json). The historical search selected no moduli polynomial. Its Python floating-point cutoff underflowed at high precision. The updated driver compares residuals in PARI throughout. The field degrees and exact curve models are open.

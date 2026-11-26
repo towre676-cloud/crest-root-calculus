@@ -21,9 +21,9 @@ The calculation explains the difference. A direction in the common elliptic squa
 
 ## What a restricted spectrum can miss
 
-At level three, two opposite secants of the finite conic contain the same internal point. This forces equality of the geometric elliptic-quotient counts in **every degree prime to three** for the corresponding pair of Humbert lattices. In the discriminant −19 example the counts first differ at degree three, with **zero versus four**. Both archived bielliptic equations descend from degree 24 to a quartic field, and their common pair of CM elliptic quotient invariants agrees exactly. The association of those equations with the analytic periods uses numerical recognition. [Incidence theorem](research/elliptic-quotients/opposite-secant-spectra/README.md) · [Equations and exact descent](research/elliptic-quotients/twin-curves/README.md)
+At level three, two opposite secants of the finite conic contain the same internal point. This forces equality of the geometric elliptic-quotient counts in **every degree prime to three** for the corresponding pair of Humbert lattices. In the discriminant −19 example the counts first differ at degree three, with **zero versus four**. Both archived bielliptic equations descend from degree 24 to a quartic field, and their common pair of CM elliptic quotient invariants agrees exactly. The certified two-torsion gluing identifies each equation with its opposite-secant lattice. [Incidence theorem](research/elliptic-quotients/opposite-secant-spectra/README.md) · [Equations and certificates](research/elliptic-quotients/twin-curves/README.md)
 
-[![The discriminant −19 models descend from degree 24 to degree four](docs/visuals/D19-quartic-descent.webp)](docs/visuals/README.md)
+[![Two elliptic quotients determine the gluing and the lattice of each discriminant −19 twin](docs/visuals/D19-quartic-descent.webp)](docs/visuals/README.md)
 
 ## What you can compute
 
