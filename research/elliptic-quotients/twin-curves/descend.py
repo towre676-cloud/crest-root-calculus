@@ -78,17 +78,17 @@ def check_change(coefficients, s1, s2, embed, L):
         raise ArithmeticError("The degree-24 change of variables failed.")
 
 
-def elliptic_j_pair(u, v, disc, F):
+def elliptic_j_pair(u, v, disc, F, class_polynomial=H_MINUS_171):
     """Verify the unordered quotient pair using its quadratic over F."""
     inv = 256 * disc.invert(F)
     trace = (inv * (u**2 - 2*v**3 - 9*u*v + 54*v**2 - 27*u)).rem(F)
     product = (inv**2 * (v**2 - 3*u + 9*v)**3).rem(F)
     remainder = (poly(0), poly(0))
-    for coeff in H_MINUS_171:
+    for coeff in class_polynomial:
         a, b = remainder
         remainder = ((poly(coeff)-b*product).rem(F), (a+b*trace).rem(F))
     if any(remainder) or not (trace**2-4*product).rem(F):
-        raise ArithmeticError("The two distinct quotient invariants must be roots of H_-171.")
+        raise ArithmeticError("The two distinct quotient invariants must be roots of the ring class polynomial.")
     return [str(a.as_expr()) for a in (trace, product)]
 
 

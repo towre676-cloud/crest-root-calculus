@@ -45,10 +45,11 @@ with the same rational polarized isogeny data over a common number
 field, the leading constants are in the ratio \(3:4\). For the
 non-product \(j=1728\) two-torsion gluing we give the multiplicity of
 every optimal degree as a divisor formula and obtain a remainder of
-order \(X\log(2+X)\). A further pair of explicit genus-two curves over a
-quartic field has equal optimal quotient counts at every degree prime
-to three and different counts at degree three. Their identification
-with the corresponding Humbert lattices is certified from the equations.
+order \(X\log(2+X)\). We give two pairs of explicit genus-two curves
+over quartic fields whose optimal quotient counts agree in every degree
+prime to three. The first differences occur at degrees three and six,
+respectively. Their identifications with the corresponding Humbert
+lattices are certified from the equations.
 \end{abstract}
 \maketitle
 
@@ -632,8 +633,27 @@ change-of-basis matrices to \(Q_1\) and \(Q_2\), respectively, at all
 then identifies the quartic models with the two secants. Thus their
 geometric optimal quotient counts agree in every degree prime to
 \(3\), and are \(0\) and \(4\), respectively, at degree \(3\).
-For \(D=-43\) polarized product candidates are available for all
-eight forms. Exact curve models remain open in that case.
+
+\subsection{A second certified pair at discriminant \texorpdfstring{\(-43\)}{-43}}
+
+The companion data give two further sextics over the quartic field
+\(F_{-43}=\Q(\theta)\), where \(\theta^4-\theta^3+6\theta^2-\theta+7=0\).
+They use the descent formula in \eqref{eq:fieldmodel}. For each, the
+absolute invariants are checked in \(F_{-43}\), and the two elliptic
+quotient \(j\)-invariants satisfy the conductor-three polynomial
+\(H_{-387}\) by exact substitution. The same Arb and integral lattice
+calculations identify the equations at all four embeddings with the
+opposite-secant pair denoted \texttt{p3} in the data. The first difference
+is at degree six, with zero and four geometric optimal classes. Both
+curves have two degree-two classes. Equality in every degree prime to
+three follows from the opposite-secant proposition.
+
+For the six remaining discriminant \(-43\) lattices, the companion
+records Mestre sextics over quadratic extensions of \(F_{-43}\) and
+checks their absolute invariant triples exactly. The correspondence
+between those six triples and the polarized lattices is based on
+numerical recognition. The six models are outside the spectrum claim
+for explicit equations above.
 
 \section{Exact verification and scope}
 
@@ -674,7 +694,9 @@ Run \texttt{python -B descend.py --verify} from the
 \href{https://github.com/towre676-cloud/crest-root-calculus/tree/main/research/elliptic-quotients/twin-curves}{twin-curves directory}
 to check the quartic models, then run
 \texttt{python -B certify\_link.py --verify} with python-flint and
-cypari2 to reproduce their Humbert forms. The
+cypari2 to reproduce their Humbert forms. Run
+\texttt{python -B verify\_d43.py} in the same directory to certify the
+second pair. The
 \href{https://github.com/towre676-cloud/crest-root-calculus/tree/main/docs/visuals}{visual companion}
 shows the lattice-to-curve computation and the certificate in reverse.
 
