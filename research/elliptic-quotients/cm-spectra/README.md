@@ -26,6 +26,10 @@ The paper proves an explicit asymptotic in every dimension $r\ge 2$ and for ever
 
 The count through degree $X$ is $15X^2/(32L(2,\chi_{-4}))+O(X\log(2+X))$.
 
+## An unbounded first difference
+
+For every positive $M\equiv9\bmod24$, Theorem 5.5 constructs two genus-two curves whose optimal elliptic quotient counts agree in every degree prime to three and every degree below $M$. The counts differ by four at $M$. The two refined Humbert forms are inequivalent, and both arise from explicit two-torsion gluings. A Pell subsequence gives arbitrarily late first differences in the fixed CM field $\mathbb Q(\sqrt{-481})$ as the conductor varies. [Lattice construction and replay](../opposite-secant-spectra/bielliptic.md)
+
 ## Run the checks
 
 From the repository root:

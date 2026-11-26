@@ -2,6 +2,7 @@
 \IfFileExists{lmodern.sty}{\usepackage[T1]{fontenc}\usepackage{lmodern}}{}
 \usepackage{mathtools,amssymb,booktabs}
 \usepackage[margin=1.32in,includehead,headsep=17pt]{geometry}
+\raggedbottom
 \usepackage[hidelinks]{hyperref}
 \hypersetup{
   pdftitle={Elliptic Quotient Spectra under Complex Multiplication},
@@ -45,7 +46,13 @@ with the same rational polarized isogeny data over a common number
 field, the leading constants are in the ratio \(3:4\). For the
 non-product \(j=1728\) two-torsion gluing we give the multiplicity of
 every optimal degree as a divisor formula and obtain a remainder of
-order \(X\log(2+X)\). We give equations for all thirty-one pairs in the level-three census of of genus-two curves
+order \(X\log(2+X)\). We then construct, for every positive \(M\equiv9\bmod24\),
+two genus-two curves with complex multiplication whose refined Humbert
+forms are inequivalent, whose numbers of optimal elliptic quotients
+agree in every degree prime to three and in every degree below \(M\),
+and which first differ at degree exactly \(M\). The delay is unbounded
+even within the fixed CM field \(\Q(\sqrt{-481})\). In the level-three
+census we give equations for all thirty-one pairs of genus-two curves
 whose optimal quotient counts agree in every degree prime to three.
 Their first differences occur at degrees \(3,6,9,12,21\).
 Thirteen pairs have quartic models, including the pair first distinguished
@@ -104,6 +111,31 @@ restricted isogeny degree as a function of the primitive residue
 class and inserts that function into the leading constant. The
 examples use this term to distinguish spectra in a fixed polarized
 rational isogeny class.
+
+Section~\ref{sec:twins} turns to the inverse question of how much of
+the refined Humbert form the counts \(m_C(d)\) retain. Our strongest
+result there, Theorem~\ref{thm:delay}, gives for every positive
+\(M\equiv9\bmod24\) two genus-two curves with complex multiplication by
+orders in \(\Q(\sqrt{-f})\), \(f=(25M^2-101)/4\). Their refined Humbert
+forms are inequivalent. Their counts agree in every degree prime to
+\(3\) and in every degree below \(M\), and at degree \(M\) they differ
+by four classes. Corollary~\ref{cor:delay-fields} shows that the CM
+fields in this family are infinitely many, and also that the CM field
+can be held fixed while the conductor varies. The level-three census
+that follows gives equations for all thirty-one pairs in the stated
+setting, with first differences at degrees \(3,6,9,12,21\).
+
+Kim and Oh exhibit inequivalent ternary forms with identical
+representation numbers of squares \cite{KimOh}. Kani and K\i r count the
+genus-two curves with a given refined Humbert invariant. For curves of
+CM product type this number is finite but unbounded across the family
+\cite{KaniKir}. Distinct curves with the same refined Humbert form have
+the same full geometric quotient spectrum. K\i r gives a general
+construction of curves from prescribed refined Humbert forms
+\cite{KirConstruction}. Here the two forms are inequivalent and are
+realized by an explicit family of two-torsion gluings. The opposite-secant
+incidence modulo three gives equality in every degree prime to three,
+and Theorem~\ref{thm:delay} prescribes the first difference.
 
 \section{Directions and the counting theorem}
 
@@ -489,7 +521,7 @@ Equality of counts after deleting the degrees divisible by one prime
 can occur for inequivalent refined Humbert lattices. The case of level
 three admits an exact explanation that works for every retained degree.
 
-\begin{proposition}
+\begin{proposition}\label{prop:secant}
 Let \(G\) be an integral ternary lattice whose nondegenerate reduction
 modulo \(3\) has square determinant. Its isotropic conic has four
 projective points. Let \(L\) and \(L'\) be the inverse images of two
@@ -521,11 +553,254 @@ of basis,
 Their determinant is \(684\). The first difference is at \(m=3\),
 where the primitive counts are \(0\) and \(4\). Their \(m=2\) counts
 are \(2\) each. Both satisfy the realization criterion for primitive CM
-refined Humbert forms \cite{KaniCM}. They do not represent one, so
+refined Humbert forms \cite[Theorem 1]{KaniCM}. They do not represent one, so
 the realizing principally polarized surfaces are Jacobians. Kani's
 subcover correspondence identifies the primitive counts with geometric
 optimal classes \cite{KaniI}. The opposite-secant proof is independent
 of period recognition. The exact lattice and model data are recorded in the companion repository.
+
+\subsection{An infinite family with unbounded first difference}
+\label{sec:delay}
+
+Throughout this subsection the determinant of a lattice is the
+determinant of the Gram matrix of its quadratic form, as for \(Q_1,Q_2\)
+above. Let \(f\) be an integer with
+\[
+ f\equiv181\pmod{300},\qquad f>157,\qquad k=\frac{4f+1}{25}\in\Z .
+\]
+Let \(G_f=\Z^3\) with the positive definite form
+\begin{equation}\label{eq:Qf}
+ Q_f(x,y,z)=25x^2+4y^2+2xz+kz^2
+ =\Bigl(5x+\frac z5\Bigr)^2+4y^2+4f\Bigl(\frac z5\Bigr)^2 ,
+\end{equation}
+and associated bilinear form \(B\) with \(B(v,v)=Q_f(v)\). Define the
+sublattices of index three
+\[
+ L_0=\{x\equiv0\bmod3\},\qquad L_1=\{x\equiv z\bmod3\}.
+\]
+Then \(\det G_f=4(25k-1)=16f\) and \(\det L_0=\det L_1=144f\). The
+completed square in \eqref{eq:Qf} is a change of variables of
+determinant one that is integral away from \(5\). At \(5\) both
+\(G_f\) and \(\langle1,4,4f\rangle\) are unimodular of rank three and
+determinant \(16f\). Hence \(G_f\) lies in the genus of
+\(\langle1,4,4f\rangle\).
+
+\begin{lemma}\label{lem:delay-secant}
+For every \(m\) prime to \(3\), the lattices \(L_0\) and \(L_1\) contain
+exactly the same vectors of norm \(m^2\). In particular their ordinary
+and primitive representation numbers of \(m^2\) agree.
+\end{lemma}
+
+\begin{proof}
+Since \(f\equiv1\bmod3\), we have \(k\equiv2\bmod3\). Modulo three
+\(Q_f\equiv y^2+(x+z)^2+z^2\), a sum of three squares. On either plane
+\(x\equiv0\) or \(x\equiv z\) the term \((x+z)^2+z^2\) reduces to
+\(2z^2\), so \(Q_f\equiv y^2+2z^2\). A nonzero square residue forces
+\(z\equiv0\) and then \(x\equiv0\). Both lattices therefore contain the
+same vectors of norm prime to \(3\) that are congruent to a square. This
+is the opposite-secant situation of Proposition~\ref{prop:secant}. The
+two planes are secants through the anisotropic point \([0:1:0]\), so
+their four endpoints exhaust the isotropic conic. The primitive
+assertion follows by divisor inversion, as in that proof.
+\end{proof}
+
+\begin{lemma}\label{lem:delay-distinct}
+The lattices \(L_0\) and \(L_1\) are not isometric.
+\end{lemma}
+
+\begin{proof}
+First we determine the automorphisms of \(G_f\). If \(z\ne0\), then
+\eqref{eq:Qf} gives \(Q_f\ge4fz^2/25>25\), since \(f>157\). In the
+layer \(z=0\) the form is \(25x^2+4y^2\). Its only vectors of norms \(4\)
+and \(25\) are \(\pm e_2\) and \(\pm e_1\), respectively. An
+automorphism \(g\) therefore satisfies \(ge_1=\varepsilon e_1\) and
+\(ge_2=\delta e_2\) with signs \(\varepsilon,\delta\). Write
+\(ge_3=(a,b,c)\). Unimodularity of \(g\) gives \(c=\pm1\). From
+\(B(e_2,e_3)=0\) we get \(b=0\), and from \(B(e_1,e_3)=1\) we get
+\(\varepsilon(25a+c)=1\). Hence \(a=0\) and \(c=\varepsilon\). Thus
+\(g=\operatorname{diag}(\varepsilon,\delta,\varepsilon)\), which
+preserves each of \(L_0\) and \(L_1\).
+
+Next, put \(w_0=(2,0,2)\) and \(w_1=(0,0,1)\). Modulo three,
+\(B(v,w_0)\equiv x\) and \(B(v,w_1)\equiv x-z\). Hence
+\(L_i=\{v:B(v,w_i)\equiv0\bmod3\}\), and \(Q_f(w_i)\equiv2\bmod3\).
+The element \(w_i/3\) lies in the dual lattice \(L_i^\#\). Its order in
+\(L_i^\#/L_i\) is nine, because \(w_i\notin L_i\). Since \(3\nmid16f\),
+the \(3\)-primary part of \(L_i^\#/L_i\) has order \(9\). It is
+therefore cyclic and contains a unique subgroup of order three. An
+integral lattice containing \(L_i\) with index three lies in
+\(L_i^\#\) and corresponds to such a subgroup. Hence \(G_f\) is the
+unique integral lattice containing \(L_i\) with index three. An
+isometry \(L_0\to L_1\) would consequently extend to an automorphism
+of \(G_f\) carrying \(L_0\) onto \(L_1\). The first paragraph excludes
+this.
+\end{proof}
+
+\begin{lemma}\label{lem:delay-real}
+There are genus-two curves \(C_{f,0}\) and \(C_{f,1}\) over
+\(\overline\Q\) whose refined Humbert forms are \(L_0\) and \(L_1\).
+Their Jacobians are of CM product type with CM field \(\Q(\sqrt{-f})\)
+and scalar endomorphism order \(\Z[3\sqrt{-f}]\). The two curves are
+not isomorphic.
+\end{lemma}
+
+\begin{proof}
+Put \(\tau=3\sqrt{-f}\) with \(\operatorname{Im}\tau>0\), and let
+\(\OO_f=\Z[\tau]\). Use \(E=\C/\OO_f\) and
+\(E_h=\C/\mathfrak a_h\), where
+\[
+ \mathfrak a_h=\langle225,\tau-h\rangle,\qquad
+ c_h=\frac{h^2+9f}{225}=
+ \begin{cases}
+ (k+231)/4 & h=114,\\
+ (k+27)/4 & h=39 .
+ \end{cases}
+\]
+The binary form \((225,-2h,c_h)\) is integral, has discriminant
+\(-36f\), and is primitive since \(c_h\equiv2\bmod3\) and \(5\nmid h\).
+It gives the proper invertible \(\OO_f\)-ideal \(\mathfrak a_h\).
+Both elliptic curves therefore have algebraic models with endomorphism
+order \(\OO_f\). In the displayed bases glue their two-torsion by the
+identity matrix \(S\) for \(h=114\), and by
+\(S=\left(\begin{smallmatrix}1&1\\0&1\end{smallmatrix}\right)\) for
+\(h=39\). The graph is maximal isotropic for the product Weil pairing.
+The quotient is thus principally polarized, with principal class
+\(\theta\) pulling back to twice the product polarization.
+
+To compute its N\'eron--Severi lattice, write a class on the product
+using the two restriction degrees \(p,q\) and the off-diagonal
+homomorphism \(\alpha=225A+(\tau-h)B\in\mathfrak a_h\).
+In the ordered bases its alternating form and the matrix of
+\(\alpha:E\to E_h\) are
+\[
+ F=\begin{pmatrix}pJ&T^{\mathsf T}J\\JT&qJ\end{pmatrix},
+ \qquad J=\begin{pmatrix}0&1\\-1&0\end{pmatrix},
+ \qquad T=\begin{pmatrix}A&hA-c_h B\\ B&225A-hB\end{pmatrix}.
+\]
+The quotient lattice adjoins half the columns of
+\(W=\binom{I_2}{S}\). The condition \(FW\equiv0\bmod2\) gives
+\(B\equiv0\bmod2\) and \(p\equiv q\equiv A\bmod2\).
+The upper-right entry of \(W^{\mathsf T}FW\) is
+\(p+q+226A-(h+S_{12})B\), so the remaining descent condition
+\(W^{\mathsf T}FW\equiv0\bmod4\) is \(p\equiv q\bmod4\).
+These conditions suffice since the displayed vectors generate the
+quotient lattice.
+
+Intersection numbers on the quotient are one quarter of those on the
+product. For the descended class \(D\) this gives
+\[
+ D\cdot\theta=(p+q)/2,\qquad D^2=(pq-\det T)/2.
+\]
+After quotienting by \(\Z\theta\), write \(y=(p-q)/4\) and \(B=2B'\).
+The free integral coordinates \((y,A,B')\) give the refined norm
+\[
+ (D\cdot\theta)^2-2D^2
+    =4y^2+225A^2-4hAB'+4c_h B'^2.
+\]
+For \(h=114\) substitute \((A,B')=(x-z,-z)\), and for \(h=39\)
+substitute \((A,B')=(x,-z)\). The resulting forms are
+\(Q_f(3x,y,z)\) and \(Q_f(3x+z,y,z)\), respectively.
+They have no norm-one vector. Hence both polarized surfaces are
+Jacobian surfaces, and Lemma~\ref{lem:delay-distinct} proves the curves
+are distinct.
+
+Finally multiplication by \(\tau\) acts on the two lattice bases by
+\[
+ T_0=\begin{pmatrix}0&-9f\\1&0\end{pmatrix},\qquad
+ T_h=\begin{pmatrix}h&-c_h\\225&-h\end{pmatrix}.
+\]
+In each case \(T_hS\equiv ST_0\bmod2\), so \(\OO_f\) acts by scalars on
+the quotient. Conversely the quotient lattice intersects the
+first coordinate axis in \(\OO_f\), because its added halves are
+the graph of an isomorphism. Every scalar endomorphism therefore
+preserves \(\OO_f\) and belongs to it.
+\end{proof}
+
+\begin{theorem}\label{thm:delay}
+Let \(t\) be a nonnegative integer, \(M=24t+9\) and \(f=(25M^2-101)/4\). Then
+\(f=3600t^2+2700t+481\) satisfies the hypotheses above, and
+\[
+ m_{C_{f,0}}(d)=m_{C_{f,1}}(d)\quad\text{if }3\nmid d\text{ or }d<M,
+ \qquad
+ m_{C_{f,0}}(M)=m_{C_{f,1}}(M)+4 .
+\]
+In particular the first degree at which the two quotient spectra
+differ is exactly \(M\).
+\end{theorem}
+
+\begin{proof}
+Expanding gives \(f=3600t^2+2700t+481\equiv181\pmod{300}\) and
+\(f\ge481\). Moreover \(k=M^2-4\). By Kani's subcover correspondence
+\cite{KaniI}, \(m_C(d)\) is the number of primitive vectors of norm
+\(d^2\) in the refined Humbert lattice, counted as in the census above.
+Lemma~\ref{lem:delay-secant} gives equality for \(3\nmid d\).
+
+Let \(v=(x,y,z)\) have \(Q_f(v)\le M^2\). The layer \(z=0\) contributes
+the same vectors to both lattices, since each meets it in
+\(\{x\equiv0\}\). If \(\abs z\ge2\), then
+\(Q_f\ge16f/25=4M^2-404/25>M^2\). If \(\abs z=1\) and \(x\ne0\), then
+\(25x^2+2xz\ge23\) and \(Q_f\ge k+23=M^2+19\). There remain the vectors
+\((0,y,\pm1)\) of norm \(M^2-4+4y^2\). For \(y=0\) this norm is not a
+square, since it lies strictly between \((M-1)^2\) and \(M^2\). For
+\(y=\pm1\) it equals \(M^2\), and \(\abs y\ge2\) exceeds the bound. Thus,
+outside the common layer, the only vectors of square norm at most \(M^2\)
+are the four vectors \((0,\pm1,\pm1)\) of norm \(M^2\). They satisfy
+\(x\equiv0\) and \(x\not\equiv z\), so they lie in \(L_0\) only, and they
+are primitive there. Ordinary representation numbers of \(d^2\)
+therefore agree for \(d<M\) and differ by four at \(d=M\). Divisor
+inversion transfers both statements to primitive vectors. An
+imprimitive vector of norm \(M^2\) is a multiple of a vector of norm
+\((M/e)^2\) with \(e>1\), and those counts agree.
+\end{proof}
+
+\begin{corollary}\label{cor:delay-fields}
+The CM fields \(\Q(\sqrt{-f})\) in Theorem~\ref{thm:delay} are
+infinitely many. Moreover the first difference is unbounded within the
+fixed field \(\Q(\sqrt{-481})\). Put
+\(U=(964140+43961\sqrt{481})^2\) and write
+\[
+ (45+2\sqrt{481})\,U^j=5M_j+2s_j\sqrt{481}\qquad(j\ge0).
+\]
+Then \(M_j\equiv9\pmod{24}\), \(f_j=(25M_j^2-101)/4=481s_j^2\), and
+\(M_j\to\infty\). The curves \(C_{f_j,0},C_{f_j,1}\) have scalar endomorphism
+order of conductor \(3s_j\) in \(\Q(\sqrt{-481})\) and first differ
+at degree \(M_j\).
+\end{corollary}
+
+\begin{proof}
+Let \(P(t)=3600t^2+2700t+481\). Its discriminant is \(3600\cdot101\).
+Infinitely many primes divide its values on nonnegative integers:
+if \(R\) were the product of all such primes, the unbounded integers
+\(P(481Rn)/481\) would be congruent to \(1\bmod R\).
+Given a finite set \(S\) of primes, take \(p\notin S\) with
+\(p\nmid30\cdot101\) dividing some \(P(t_0)\). As \(p\) does not divide the discriminant,
+\(P'(t_0)\not\equiv0\bmod p\). One of \(t_0\) and \(t_0+p\) then gives
+a value divisible by \(p\) exactly once. The squarefree part of that
+value is divisible by \(p\). Its field therefore differs from every
+\(\Q(\sqrt{-d})\) with \(d\) supported on \(S\). Since \(S\) is
+arbitrary, the fields are infinite in number.
+
+For the fixed field, \(964140^2-481\cdot43961^2=-1\), so \(U\) has norm
+one. A direct check gives \(U\equiv1\) modulo \(120\Z[\sqrt{481}]\).
+Hence the left side is congruent to \(45+2\sqrt{481}\) modulo \(120\).
+Thus its rational part is \(5M_j\) with \(M_j\equiv9\pmod{24}\), and
+its irrational part is \(2s_j\sqrt{481}\) with \(s_j\equiv1\pmod{60}\).
+Taking norms gives \(25M_j^2-1924s_j^2=101\), so
+\(f_j=481s_j^2\). Since \(481=13\cdot37\) and \(-1924\) is a
+fundamental discriminant, the CM discriminant is
+\(-36f_j=-1924(3s_j)^2\). Finally \(U>1\), so \(M_j\to\infty\).
+\end{proof}
+
+Uniform equations for the curves of Lemma~\ref{lem:delay-real} come
+from two-torsion gluings of the CM elliptic curves
+\(\C/\langle1,3\sqrt{-f}\rangle\) and
+\(\C/\langle225,3\sqrt{-f}-h\rangle\) with \(h\in\{114,39\}\). They
+are factored sextics \(y^2=\prod_{i=1}^3(x^2-u_i)\), with \(u_i\)
+specified by labelled half-period values. The companion constructs
+them and verifies both integral polarizations for every parameter,
+including the fixed-field subsequence. Direct enumeration of the
+representation numbers for \(M=9\) and \(M=33\) agrees with
+Theorem~\ref{thm:delay}.
 
 \subsection{An explicit descent for the bielliptic models}
 
@@ -749,11 +1024,6 @@ opposite-secant forms. Among the nineteen pairs at this discriminant,
 the first distinguishing degrees \(3,6,9,12,21\) occur
 \(3,6,6,3,1\) times, respectively.
 
-The infinite family with unbounded first distinguishing degree also
-admits uniform factored sextics. The companion constructs them by
-matching labelled two-torsion on CM elliptic curves and verifies
-the two integral polarizations for every parameter, including the
-fixed-field Pell subsequence.
 
 \section{Exact verification and scope}
 
@@ -862,9 +1132,25 @@ J. Number Theory \textbf{193} (2018), 302--335.
 \href{https://doi.org/10.1016/j.jnt.2018.05.011}{doi:10.1016/j.jnt.2018.05.011}.
 
 \bibitem{KaniCM}
-E.~Kani, \emph{The Refined Humbert Invariant for Abelian Product
-Surfaces with Complex Multiplication},
-\href{https://mast.queensu.ca/~kani/papers/refHum5.pdf}{manuscript}.
+E.~Kani, \emph{The refined Humbert invariant for abelian product
+surfaces with complex multiplication}, preprint, revised April 2026.
+\href{https://www.queensu.ca/academia/kani/sites/acadkaniwww/files/uploaded_files/Preprints/refHum5.pdf}{Author's manuscript}.
+
+\bibitem{KaniKir}
+E.~Kani and H.~K\i r, \emph{The number of curves of genus 2 with a
+given refined Humbert invariant}, preprint, 2026.
+\href{https://arxiv.org/abs/2608.24122}{arXiv:2608.24122}.
+
+\bibitem{KimOh}
+K.~Kim and B.-K.~Oh, \emph{The number of representations of squares by
+integral ternary quadratic forms}, J. Number Theory \textbf{180}
+(2017), 629--642.
+\href{https://doi.org/10.1016/j.jnt.2017.05.012}{doi:10.1016/j.jnt.2017.05.012}.
+
+\bibitem{KirConstruction}
+H.~K\i r, \emph{Constructing genus 2 curves with given refined Humbert
+invariants}, preprint, 2026.
+\href{https://arxiv.org/abs/2602.14319}{arXiv:2602.14319}.
 
 \bibitem{Lombardo}
 D.~Lombardo, \emph{Computing the geometric endomorphism ring of a
