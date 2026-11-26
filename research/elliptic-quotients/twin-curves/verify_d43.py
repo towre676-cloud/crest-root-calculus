@@ -50,9 +50,9 @@ def check_models(moduli, models, F, class_polynomial):
     return result
 
 
-def pair_spectrum(targets, twins=TWINS):
+def pair_spectrum(targets, twins=TWINS, discriminant=DISCRIMINANT):
     data = read(HERE.parent / "opposite-secant-spectra" / "certificate.json")
-    level = next(row for row in data["level_three"] if row["D"] == DISCRIMINANT)
+    level = next(row for row in data["level_three"] if row["D"] == discriminant)
     pairs = []
     for pair in level["twin_pairs"]:
         left, right = (gram(pair[key]) for key in ("left", "right"))
