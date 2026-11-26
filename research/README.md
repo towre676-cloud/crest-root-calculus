@@ -83,7 +83,7 @@ Run `python research/deployable-crossing/verify.py` for the independent standard
 | G06, G11, F12 | An infinite family of quartics has genus-one degrees exactly $2n^2,4n^2$ over the rationals and pointed elliptic degrees exactly $4n^2,8n^2$. | [Index-four descent](elliptic-quotients/index-four-descent/README.md) |
 | P02 | The public Part XXX edition matches the archive through §148, including its internal links. | [Read the monograph](https://towre676-cloud.github.io/crest-root-calculus/) · [Publication verification](monograph-publication/README.md) |
 
-The [full register](backlog-2026-11-23.md) records 10 settled items, 18 partial items, 27 open items and two dormant projects. For the rank proof, installing PARI/GP enables regeneration of the number-field arithmetic as part of the replay. The Python-only replay checks the published binary matrices and independently verifies all lower-bound divisor identities.
+The [full research register](backlog-2026-11-23.md) records 10 closed items, 19 partial items, 26 open items and two dormant projects from the original 57. Its [current research table](backlog-2026-11-23.md#current-research-avenues) gives the precise scope of the newer results and the questions that remain. For the rank proof, installing PARI/GP enables regeneration of the number-field arithmetic as part of the replay. The Python-only replay checks the published binary matrices and independently verifies all lower-bound divisor identities.
 
 ## Degree four on an arbitrary smooth plane quartic
 
