@@ -96,4 +96,6 @@ python -B research/cyclic-cover-reconstruction/fibres.py source.json --max-degre
 python -B research/cyclic-cover-reconstruction/fibres.py source.json --higher-genus-only --mixed-targets
 ~~~
 
+Two exponent-four strata check partial target ramification. The first recovers \(u=x^3+x\) with \(G(u)=(u-1)^2(u+1)\). The second recovers \(u=x/(x-1)^4\) with \(G(u)=u^3(u-1)^2\) from \(B=x^3\bigl(x-(x-1)^4\bigr)^2\). In the latter, the solver discovers \(x=1\) as an unbranched pole, and source infinity maps to the triple root at \(u=0\). Both certificates replay the original equation identities.
+
 The JSON input has the keys **exponent** and **coefficients** in ascending order, as in [the earlier example](branch-poles.json). **--mixed-targets** enables mixed profiles, and **--verify** checks an existing report. The specialized [branch-supported solver](branch-poles.md) retains its faster fixed-denominator route. This general incidence proves completeness in its scope. Its running time can grow substantially with the cap and the number of profiles.
