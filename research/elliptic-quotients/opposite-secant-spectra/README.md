@@ -82,7 +82,7 @@ The first difference also grows without bound in the **fixed field** $\mathbb Q(
 $$
  (45+2\sqrt{481})U^j=5M_j+2s_j\sqrt{481},\qquad j\ge0.
 $$
-Then $M_j\equiv9\pmod{24}$, $s_j\equiv1\pmod{60}$, and $25M_j^2-1924s_j^2=101$. So $f_j=481s_j^2$ satisfies Theorem 2 and $-4f_j$ is the discriminant of the order of conductor $s_j$ in that field. The sequence $M_j$ grows without bound. The construction gives explicit forms and a geometric realization by Kani's theorem. Equations for the realizing curves have not been computed.
+Then $M_j\equiv9\pmod{24}$, $s_j\equiv1\pmod{60}$, and $25M_j^2-1924s_j^2=101$. So $f_j=481s_j^2$ satisfies Theorem 2 and $-4f_j$ is the discriminant of the order of conductor $s_j$ in that field. The sequence $M_j$ grows without bound. The two forms now have [uniform bielliptic sextic equations](bielliptic.md) over algebraic number fields. The same construction applies to the entire fixed-field subsequence.
 
 ## Uniform exclusion of forced two-class collisions above level three
 
