@@ -45,8 +45,10 @@ def main():
     run(quotients / "verify_double_covers.py")
     run(HERE / "cyclic-cover-reconstruction" / "verify.py")
     run(HERE / "cyclic-cover-reconstruction" / "verify_rational.py")
+    run(HERE / "cyclic-cover-reconstruction" / "verify_fibres.py")
+    run(ELLIPTIC / "bielliptic-reconstruction" / "verify_cubic.py")
     if options.quotients_only:
-        print("All 5 coefficient-only verification groups passed.")
+        print("All 7 coefficient-only verification groups passed.")
         return
     run(HERE.parent / "applications/atlas/original/replay.py")
     # The blind spectrum replay also recomputes both individual bielliptic proofs.
@@ -81,7 +83,7 @@ def main():
     run(HERE / "local-pattern-obstruction/verify.py", "receipt.json")
     run(HERE / "solver-comparison/verify.py")
     run(HERE / "periodic-spectra/audit_native.py")
-    print("All 37 research verification groups passed.")
+    print("All 39 research verification groups passed.")
 
 
 if __name__ == "__main__":

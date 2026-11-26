@@ -8,7 +8,7 @@ from pathlib import Path
 
 import sympy as sp
 
-from reconstruct import kernel_order, leading_constant, reconstruct, spectrum, x
+from reconstruct import kernel_order, leading_constant, non_cm_witness, reconstruct, spectrum, x
 
 
 HERE = Path(__file__).resolve().parent
@@ -109,10 +109,38 @@ def check_equations(gp):
     assert conjugate["quotients"][0]["status"] == "geometric elliptic factors are nonisogenous"
 
 
+def check_number_field_equations(gp):
+    for coefficients, count, field_degree, k, fixed in (
+        ([0, 2, 0, 1, 0, 1], 2, 4, 1, 1),
+        ([2, 0, 0, 1, 0, 0, 1], 3, 6, 3, 3),
+    ):
+        result = reconstruct(coefficients, 150, gp)
+        assert result["quotients"] == [] and result["rational_reduced_involutions"] == 0
+        assert result["geometric_reduced_involutions"] == count
+        record, = result["number_field_quotients"]
+        assert record["conjugate_involutions"] == count
+        assert len(record["label_field"]) == field_degree+1
+        assert (record["k"], record["fixed_nonzero_two_torsion"]) == (k, fixed)
+        assert record["spectrum"] == spectrum(k, fixed, 150)
+
+    result = reconstruct([1, 0, 0, 1, 0, 0, 1], 150, gp)
+    record, = result["quotients"]
+    assert set(record["j"]) == {"6912", "790272"}
+    assert record["spectrum"] == spectrum(3, 3, 150)
+    assert non_cm_witness(sp.Integer(54000), sp.QQ) is None
+
+    root = sp.sqrt(2)
+    witness = non_cm_witness(root, sp.QQ.algebraic_field(root))
+    assert witness["test"] == "distinct ordinary endomorphism fields"
+    assert {row["quadratic_field"] for row in witness["reductions"]} == {-3, -6}
+    print("Verified nonrational involution fields and integral non-CM tests.")
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--gp", default="gp")
     args = parser.parse_args()
     check_finite_law()
     check_equations(args.gp)
+    check_number_field_equations(args.gp)
     print("All exact bielliptic reconstruction checks passed.")

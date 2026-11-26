@@ -16,7 +16,9 @@ The coefficient-only search removes square factors with their rational unit and 
 
 The cyclic search allows mixed branch multiplicities in the source, arbitrary surjective characters and smaller target exponents dividing the source exponent. It finds exact normalized quotient formulas and verifies the full list of admissible degrees. A pole-order bound gives a range in which every singleton-infinity map to the stated target models is automatically equivariant. The held-out native comparison isolates the contribution of the derivative reduction. [Theorem, study and replay](cyclic-cover-reconstruction/README.md)
 
-The rational-coordinate solver allows finite horizontal poles on the working branch locus. It bounds their orders and uses the divided Wronskian to reduce the coefficient search. [Several points over infinity](cyclic-cover-reconstruction/branch-poles.md)
+The rational-coordinate solver now recovers unbranched pole locations and handles mixed target multiplicities. A two-chart recurrence covers both possible images of source infinity. Its denominators are nonzero by the pole congruence. Exponent two also covers all rational hyperelliptic quotients of odd-model sources to unknown hyperelliptic targets, with a cap when elliptic targets are included. [General fibres and exact replay](cyclic-cover-reconstruction/arbitrary-fibres.md)
+
+In non-CM genus two, the cyclic cubic source class has a separate exact spectrum. The dihedral action determines its three-isogeny and the labelled two-torsion gluing. An Eisenstein norm gives every geometric degree and multiplicity. A sixth-power test decides whether either elliptic quotient descends to the rationals. None of the elliptic maps respects the order-three action. [Geometric spectrum](elliptic-quotients/bielliptic-reconstruction/cubic-genus-two.md)
 
 ## Elliptic degrees with repeated factors
 
@@ -31,6 +33,10 @@ The equation-only bielliptic reconstruction recovers the finite gluing exactly f
 Period reconstruction proposes elliptic lattice directions directly from a genus-two equation. Exact substitution certifies both coordinates of each recognized map. For the two repeated-factor Richelot neighbours without elliptic involutions, a separate finite-torsion proof gives the complete geometric degree spectrum and certifies the degree-four minimum. [Method, proof and replay](elliptic-quotients/period-reconstruction/README.md)
 
 The finite-kernel replay independently certifies the complete geometric spectra of both no-involution examples and the multiplicity-one pair. A guarded absolute-simplicity certificate also proves the absence of elliptic subcovers on a control equation. [Exact completeness, with proofs and receipts](elliptic-quotients/exact-completeness/README.md)
+
+## Full local elliptic degrees and the Richelot sweep
+
+In the multiplicity-one genus-two case over a prime field, ordinary self-adjoint divisibility extends the torsion formula to the residue prime. Explicit witnesses realize all possible nonzero cases at \(p=3,5,7,11,13\). The exact geometric family sweep determines all 69 Richelot-neighbour minima, including the 16 earlier inconclusive rows. [Proof and replays](torsion-denominators/README.md)
 
 ## Néron–Severi and quaternionic certificates
 
