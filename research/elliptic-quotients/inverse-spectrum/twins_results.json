@@ -1,0 +1,262 @@
+[
+ {
+  "d": -3,
+  "l": 5,
+  "primes": [
+   7,
+   13
+  ],
+  "closure": 6,
+  "gluing": 4,
+  "genera": [
+   {
+    "closure_size": 3,
+    "K_within": 0,
+    "min_Hecke_module_dim_of_pair": 2,
+    "pairs": 1,
+    "certified_by_Hecke": true
+   },
+   {
+    "closure_size": 3,
+    "K_within": 0,
+    "min_Hecke_module_dim_of_pair": 2,
+    "pairs": 1,
+    "certified_by_Hecke": true
+   }
+  ]
+ },
+ {
+  "d": -4,
+  "l": 7,
+  "primes": [
+   3,
+   5
+  ],
+  "closure": 12,
+  "gluing": 9,
+  "genera": [
+   {
+    "closure_size": 6,
+    "K_within": 0,
+    "min_Hecke_module_dim_of_pair": 3,
+    "pairs": 10,
+    "certified_by_Hecke": true
+   },
+   {
+    "closure_size": 6,
+    "K_within": 0,
+    "min_Hecke_module_dim_of_pair": 3,
+    "pairs": 6,
+    "certified_by_Hecke": true
+   }
+  ]
+ },
+ {
+  "d": -7,
+  "l": 5,
+  "primes": [
+   3,
+   11
+  ],
+  "closure": 11,
+  "gluing": 7,
+  "genera": [
+   {
+    "closure_size": 6,
+    "K_within": 1,
+    "min_Hecke_module_dim_of_pair": 3,
+    "pairs": 6,
+    "certified_by_Hecke": true
+   },
+   {
+    "closure_size": 5,
+    "K_within": 0,
+    "min_Hecke_module_dim_of_pair": 4,
+    "pairs": 3,
+    "certified_by_Hecke": true
+   }
+  ]
+ },
+ {
+  "d": -8,
+  "l": 5,
+  "primes": [
+   3,
+   7
+  ],
+  "closure": 11,
+  "gluing": 7,
+  "genera": [
+   {
+    "closure_size": 5,
+    "K_within": 0,
+    "min_Hecke_module_dim_of_pair": 3,
+    "pairs": 3,
+    "certified_by_Hecke": true
+   },
+   {
+    "closure_size": 6,
+    "K_within": 1,
+    "min_Hecke_module_dim_of_pair": 2,
+    "pairs": 6,
+    "certified_by_Hecke": true
+   }
+  ]
+ },
+ {
+  "d": -8,
+  "l": 7,
+  "primes": [
+   3,
+   5
+  ],
+  "closure": 19,
+  "gluing": 14,
+  "genera": [
+   {
+    "closure_size": 10,
+    "K_within": 1,
+    "min_Hecke_module_dim_of_pair": 3,
+    "pairs": 28,
+    "certified_by_Hecke": true
+   },
+   {
+    "closure_size": 9,
+    "K_within": 0,
+    "min_Hecke_module_dim_of_pair": 3,
+    "pairs": 15,
+    "certified_by_Hecke": true
+   }
+  ]
+ },
+ {
+  "d": -11,
+  "l": 7,
+  "primes": [
+   3,
+   5
+  ],
+  "closure": 32,
+  "gluing": 14,
+  "genera": [
+   {
+    "closure_size": 17,
+    "K_within": 1,
+    "min_Hecke_module_dim_of_pair": 13,
+    "pairs": 28,
+    "certified_by_Hecke": true
+   },
+   {
+    "closure_size": 15,
+    "K_within": 0,
+    "min_Hecke_module_dim_of_pair": 13,
+    "pairs": 15,
+    "certified_by_Hecke": true
+   }
+  ]
+ },
+ {
+  "d": -3,
+  "l": 11,
+  "primes": [
+   7,
+   13
+  ],
+  "closure": 18,
+  "gluing": 15,
+  "genera": [
+   {
+    "closure_size": 9,
+    "K_within": 0,
+    "min_Hecke_module_dim_of_pair": 4,
+    "pairs": 28,
+    "certified_by_Hecke": true
+   },
+   {
+    "closure_size": 9,
+    "K_within": 0,
+    "min_Hecke_module_dim_of_pair": 4,
+    "pairs": 21,
+    "certified_by_Hecke": true
+   }
+  ]
+ },
+ {
+  "d": -4,
+  "l": 11,
+  "primes": [
+   3,
+   5
+  ],
+  "closure": 23,
+  "gluing": 19,
+  "genera": [
+   {
+    "closure_size": 11,
+    "K_within": 0,
+    "min_Hecke_module_dim_of_pair": 5,
+    "pairs": 36,
+    "certified_by_Hecke": true
+   },
+   {
+    "closure_size": 12,
+    "K_within": 1,
+    "min_Hecke_module_dim_of_pair": 5,
+    "pairs": 45,
+    "certified_by_Hecke": true
+   }
+  ]
+ },
+ {
+  "d": -7,
+  "l": 13,
+  "primes": [
+   3,
+   5
+  ],
+  "closure": 53,
+  "gluing": 45,
+  "genera": [
+   {
+    "closure_size": 25,
+    "K_within": 0,
+    "min_Hecke_module_dim_of_pair": 20,
+    "pairs": 210,
+    "certified_by_Hecke": true
+   },
+   {
+    "closure_size": 28,
+    "K_within": 3,
+    "min_Hecke_module_dim_of_pair": 21,
+    "pairs": 276,
+    "certified_by_Hecke": true
+   }
+  ]
+ },
+ {
+  "d": -8,
+  "l": 13,
+  "primes": [
+   3,
+   5
+  ],
+  "closure": 53,
+  "gluing": 45,
+  "genera": [
+   {
+    "closure_size": 25,
+    "K_within": 2,
+    "min_Hecke_module_dim_of_pair": 7,
+    "pairs": 210,
+    "certified_by_Hecke": true
+   },
+   {
+    "closure_size": 28,
+    "K_within": 5,
+    "min_Hecke_module_dim_of_pair": 6,
+    "pairs": 276,
+    "certified_by_Hecke": true
+   }
+  ]
+ }
+]

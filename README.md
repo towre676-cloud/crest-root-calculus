@@ -4,7 +4,7 @@
 
 A quotient map sends several points of one curve to the same point of a simpler curve. Its **degree** is the number of source points above a typical target point. Crest–Root builds exact tools to find these maps, verify their formulas, and determine when the list is complete. It grew from experiments with point counts into a program about what those counts reveal and what extra information a proof needs.
 
-[Download the research paper (PDF)](downloads/Crest-Root-Elliptic-Quotient-Spectra.pdf) · [Read the introduction](downloads/crest-root-introduction.pdf) · [Explore the illustrated monograph](https://towre676-cloud.github.io/crest-root-calculus/)
+[Download the research paper (PDF)](downloads/Crest-Root-Elliptic-Quotient-Spectra.pdf) · [Read the introduction](downloads/crest-root-introduction.pdf) · [Browse the visual companion](docs/visuals/README.md) · [Explore the illustrated monograph](https://towre676-cloud.github.io/crest-root-calculus/)
 
 ## Why the degree spectrum matters
 
@@ -18,6 +18,12 @@ Two genus-two Jacobians in the paper come from the **same elliptic square**, wit
 | Ratio of leading coefficients for the count through degree $X$ | 3 | 4 |
 
 The calculation explains the difference. A direction in the common elliptic square has a degree given by a quadratic norm. The finite subgroup identified by the quotient can divide that degree. Changing the subgroup changes which directions receive the division. The theorem computes this correction for polarized varieties isogenous to CM elliptic powers, in every dimension $r\ge 2$, including fields with nontrivial ideal class group. [Theorem and exact replay](research/elliptic-quotients/cm-spectra/README.md)
+
+## What a restricted spectrum can miss
+
+At level three, two opposite secants of the finite conic contain the same internal point. This forces equality of the geometric elliptic-quotient counts in **every degree prime to three** for the corresponding pair of Humbert lattices. In the discriminant −19 example the counts first differ at degree three, with **zero versus four**. Both archived bielliptic equations descend from degree 24 to a quartic field, and their common pair of CM elliptic quotient invariants agrees exactly. The association of those equations with the analytic periods uses numerical recognition. [Incidence theorem](research/elliptic-quotients/opposite-secant-spectra/README.md) · [Equations and exact descent](research/elliptic-quotients/twin-curves/README.md)
+
+[![The discriminant −19 models descend from degree 24 to degree four](docs/visuals/D19-quartic-descent.webp)](docs/visuals/README.md)
 
 ## What you can compute
 

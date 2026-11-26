@@ -1,0 +1,119 @@
+[
+ {
+  "d": -3,
+  "l": 5,
+  "gluing_classes": 4,
+  "closure_classes": 6,
+  "closed": false,
+  "primes": [
+   7,
+   13
+  ],
+  "square_kernel_dim_closure": 2,
+  "square_kernel_dim_gluing": 1,
+  "kernel_Hecke_stable": true,
+  "eigen_factors_T_p0": [
+   {
+    "poly": "x - 8",
+    "mult": 2,
+    "dim": 2,
+    "square_null_dim": 0
+   },
+   {
+    "poly": "x - 3",
+    "mult": 2,
+    "dim": 2,
+    "square_null_dim": 1
+   },
+   {
+    "poly": "x",
+    "mult": 2,
+    "dim": 2,
+    "square_null_dim": 1
+   }
+  ],
+  "kernel_is_sum_of_eigenspaces": true
+ },
+ {
+  "d": -4,
+  "l": 7,
+  "gluing_classes": 9,
+  "closure_classes": 12,
+  "closed": false,
+  "primes": [
+   3,
+   5
+  ],
+  "square_kernel_dim_closure": 5,
+  "square_kernel_dim_gluing": 3,
+  "kernel_Hecke_stable": true,
+  "eigen_factors_T_p0": [
+   {
+    "poly": "x - 4",
+    "mult": 2,
+    "dim": 2,
+    "square_null_dim": 0
+   },
+   {
+    "poly": "x - 1",
+    "mult": 2,
+    "dim": 2,
+    "square_null_dim": 1
+   },
+   {
+    "poly": "x^2 - 8",
+    "mult": 2,
+    "dim": 4,
+    "square_null_dim": 2
+   },
+   {
+    "poly": "x^2 - 2",
+    "mult": 2,
+    "dim": 4,
+    "square_null_dim": 2
+   }
+  ],
+  "kernel_is_sum_of_eigenspaces": true
+ },
+ {
+  "d": -7,
+  "l": 5,
+  "gluing_classes": 7,
+  "closure_classes": 11,
+  "closed": false,
+  "primes": [
+   3,
+   11
+  ],
+  "square_kernel_dim_closure": 5,
+  "square_kernel_dim_gluing": 2,
+  "kernel_Hecke_stable": true,
+  "eigen_factors_T_p0": [
+   {
+    "poly": "x - 4",
+    "mult": 2,
+    "dim": 2,
+    "square_null_dim": 0
+   },
+   {
+    "poly": "x - 1",
+    "mult": 1,
+    "dim": 1,
+    "square_null_dim": 1
+   },
+   {
+    "poly": "x^2 - x - 4",
+    "mult": 2,
+    "dim": 4,
+    "square_null_dim": 2
+   },
+   {
+    "poly": "x^2 + 2*x - 4",
+    "mult": 2,
+    "dim": 4,
+    "square_null_dim": 2
+   }
+  ],
+  "kernel_is_sum_of_eigenspaces": true
+ }
+]

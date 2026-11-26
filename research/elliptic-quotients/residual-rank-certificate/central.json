@@ -1,0 +1,113 @@
+[
+  {
+    "curve": "676b1",
+    "D": -8,
+    "twisted_conductor": 10816,
+    "twisted_root_number": 1,
+    "minimal_twist_ainvs": [
+      0,
+      1,
+      0,
+      -17,
+      79
+    ],
+    "twisted_a3": -2,
+    "twisted_L_second_derivative": [
+      "7.288897137561",
+      "7.288897137562"
+    ],
+    "untwisted_L_at_one": [
+      "1.496541884049",
+      "1.496541884050"
+    ],
+    "completed_derivative_tail_below_1e_20": true,
+    "twisted_analytic_rank": 2,
+    "untwisted_analytic_rank": 0,
+    "twisted_mordell_weil_rank": 2,
+    "untwisted_mordell_weil_rank": 0,
+    "descent_points": [
+      [
+        -5,
+        8
+      ],
+      [
+        3,
+        8
+      ]
+    ]
+  },
+  {
+    "curve": "338c1",
+    "D": -8,
+    "twisted_conductor": 10816,
+    "twisted_root_number": 1,
+    "minimal_twist_ainvs": [
+      0,
+      1,
+      0,
+      5183,
+      -233921
+    ],
+    "twisted_a3": 1,
+    "twisted_L_second_derivative": [
+      "11.699390116033",
+      "11.699390116034"
+    ],
+    "untwisted_L_at_one": [
+      "2.573914226693",
+      "2.573914226694"
+    ],
+    "completed_derivative_tail_below_1e_20": true,
+    "twisted_analytic_rank": 2,
+    "untwisted_analytic_rank": 0,
+    "twisted_mordell_weil_rank": 2,
+    "untwisted_mordell_weil_rank": 0,
+    "descent_points": [
+      [
+        111,
+        1312
+      ],
+      [
+        303,
+        5408
+      ]
+    ]
+  },
+  {
+    "curve": "867e1",
+    "D": -3,
+    "twisted_conductor": 2601,
+    "twisted_root_number": 1,
+    "minimal_twist_ainvs": [
+      0,
+      0,
+      1,
+      51,
+      72
+    ],
+    "twisted_a3": 0,
+    "twisted_L_second_derivative": [
+      "3.736897421981",
+      "3.736897421982"
+    ],
+    "untwisted_L_at_one": [
+      "4.428336432042",
+      "4.428336432043"
+    ],
+    "completed_derivative_tail_below_1e_20": true,
+    "twisted_analytic_rank": 2,
+    "untwisted_analytic_rank": 0,
+    "twisted_mordell_weil_rank": 2,
+    "untwisted_mordell_weil_rank": 0,
+    "descent_points": [
+      [
+        -1,
+        4
+      ],
+      [
+        17,
+        76
+      ]
+    ]
+  }
+]

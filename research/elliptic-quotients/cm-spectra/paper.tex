@@ -1,6 +1,5 @@
 \documentclass[11pt,letterpaper]{amsart}
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
+\IfFileExists{lmodern.sty}{\usepackage[T1]{fontenc}\usepackage{lmodern}}{}
 \usepackage{mathtools,amssymb,booktabs}
 \usepackage[margin=1.32in,includehead,headsep=17pt]{geometry}
 \usepackage[hidelinks]{hyperref}
@@ -27,7 +26,7 @@
 
 \title[Elliptic quotient spectra under complex multiplication]{Elliptic Quotient Spectra under Complex Multiplication}
 \author{Crest--Root Calculus}
-\date{25 November 2026}
+\date{26 November 2026}
 \subjclass[2020]{Primary 14H30, 14K22. Secondary 11G50, 11H06, 14K12.}
 \keywords{elliptic subcovers, complex multiplication, polarized isogenies,
 finite kernels, Hermitian forms, height counting}
@@ -479,6 +478,132 @@ coefficient \(15/(32G)\). This also agrees with
 \eqref{eq:constant}, whose local average is \(5/2\) in this case.
 \end{proof}
 
+\section{Coprime spectra and models over the field of moduli}
+\label{sec:twins}
+
+Equality of counts after deleting the degrees divisible by one prime
+can occur for inequivalent refined Humbert lattices. The case of level
+three admits an exact explanation that works for every retained degree.
+
+\begin{proposition}
+Let \(G\) be an integral ternary lattice whose nondegenerate reduction
+modulo \(3\) has square determinant. Its isotropic conic has four
+projective points. Let \(L\) and \(L'\) be the inverse images of two
+opposite secants, where opposite means that their endpoints partition
+the four isotropic points. If \(3\nmid m\), the counts of ordinary and
+primitive vectors of norm \(m^2\) agree in \(L\) and \(L'\).
+\end{proposition}
+
+\begin{proof}
+The reduction is isometric over \(\mathbb F_3\) to
+\(x^2+y^2+z^2\), by the classification of nondegenerate forms over
+a finite field of odd characteristic. The conic is the four points
+\([\,\pm1:\pm1:1\,]\). In this model, a vector of nonzero square norm
+reduces to a coordinate axis. Each secant contains just one such
+axis, and opposite secants contain the same one. Every vector of
+norm \(m^2\), \(3\nmid m\), therefore lies in \(L\) exactly when it
+lies in \(L'\). If a vector of norm \(m^2\) has content \(a\) in an
+integral lattice basis, then \(a\mid m\). Divisor inversion gives the
+primitive assertion.
+\end{proof}
+
+For \(D=-19\) two such lattices have Gram matrices, up to integral change
+of basis,
+\[
+ Q_1=\begin{pmatrix}4&-2&0\\-2&12&-4\\0&-4&17\end{pmatrix},
+ \qquad
+ Q_2=\begin{pmatrix}4&0&2\\0&5&-2\\2&-2&36\end{pmatrix}.
+\]
+Their determinant is \(684\). The first difference is at \(m=3\),
+where the primitive counts are \(0\) and \(4\). Their \(m=2\) counts
+are \(2\) each. Both satisfy the realization criterion for primitive CM
+refined Humbert forms \cite{KaniCM}. They do not represent one, so
+the realizing principally polarized surfaces are Jacobians. Kani's
+subcover correspondence identifies the primitive counts with geometric
+optimal classes \cite{KaniI}. The opposite-secant proof is independent
+of period recognition. The exact lattice and model data are recorded in the companion repository.
+
+\subsection{An explicit descent for the bielliptic models}
+
+Let
+\[
+ f(x)=x^6-s_1x^4+s_2x^2-1,\qquad
+ u=s_1^3+s_2^3,\quad v=s_1s_2,\quad \Delta=u^2-4v^3.
+\]
+Suppose \(f\) is squarefree, \(v\Delta\ne0\), and \(u,v\in F\), where
+\(F\) has characteristic zero. A model over \(F\) is
+\begin{equation}\label{eq:fieldmodel}
+ Y^2=aX^6+bX^5+cX^4+dX^3+\Delta cX^2+\Delta^2 bX+\Delta^3a,
+\end{equation}
+where
+\begin{align*}
+ a&=u-v^2,& b&=3\Delta+3u^2-2uv^2,\\
+ c&=\Delta(15u+v^2),& d&=2\Delta(5\Delta+5u^2+2uv^2).
+\end{align*}
+Here model means a curve geometrically isomorphic to \(y^2=f(x)\).
+The existence of a field-of-moduli model for the extra-involution
+case belongs to Cardona and Quer \cite{CardonaQuer}. The formula
+above gives a direct change of variables for the archived sextics.
+
+Indeed, put \(s=s_1^3,\ t=s_2^3,\ \delta=s-t\) and write
+\(P=X+\delta,\ Q=X-\delta\). Equation~\eqref{eq:fieldmodel}
+is the binary sextic
+\[
+ \delta^{-1}
+ \left(s^2P^6-sv^2P^4Q^2+tv^2P^2Q^4-t^2Q^6\right).
+\]
+It is invariant under simultaneous interchange \(s\leftrightarrow t\)
+and \(P\leftrightarrow Q\) after division by \(\delta\). Expansion,
+using \(\delta^2=\Delta\), gives the displayed coefficients. Over
+an algebraic closure make the substitutions
+\[
+ x=\frac{s_1^2}{v}\frac{P}{Q},\qquad
+ Y=\frac{t}{\sqrt{\delta}}Q^3y.
+\]
+Since \(st=v^3\), direct multiplication gives
+\(t^2Q^6f(x)=s^2P^6-sv^2P^4Q^2+tv^2P^2Q^4-t^2Q^6\).
+This proves the asserted isomorphism and smoothness.
+
+\subsection{The recorded pair}
+
+For the recorded \(D=-19\) models, both descended equations use
+\[
+ F=\Q[\theta],\qquad \theta^4-\theta^3-3\theta^2+2\theta+4=0 .
+\]
+For example, the two values of \(v\), in order \(Q_1,Q_2\), are
+\[
+\begin{aligned}
+ &34441728\theta^3+4808832\theta^2-114871680\theta-100220535,\\
+ &-1693056\theta^3-4394880\theta^2-3681408\theta-825975 .
+\end{aligned}
+\]
+The companion data give the two \(u\) values and expanded sextics.
+The replay checks both field embeddings and the coefficient identity
+over the original degree-\(24\) field. Independently, on the original
+sextic the Clebsch-normalized absolute ratio \(I_2^5/I_{10}\) is
+\[
+ \frac{16^5(v+15)^5}{64(v^2-4u+18v-27)^2}.
+\]
+Here \(I_2=16(v+15)\) is the degree-two transvectant invariant, and
+the denominator is the discriminant of \(f\). The replay verifies
+that the ratio agrees with the recorded absolute invariant after
+the normalization factor is applied. Its two minimal polynomials
+are irreducible quartics and differ. Thus the models' moduli fields
+are quartic and their moduli points are in distinct Galois orbits.
+The unordered pair of \(j\)-invariants of their two degree-two
+elliptic quotients agrees exactly. The monic quadratic with those
+two roots divides the conductor-three class polynomial
+\(H_{-171}\) over \(F\).
+
+The association of the original algebraic models with the two
+period matrices was made by high-precision recognition. Exact
+arithmetic checks the identity of the models under descent and the
+stored moduli data. A certified identification of those analytic
+periods with the recognized algebraic moduli remains a separate step.
+For \(D=-43\) the companion search supplies polarized product
+candidates for all eight forms. Exact curve models remain open in
+that case.
+
 \section{Exact verification and scope}
 
 The companion replay checks the two maps in \eqref{eq:models}
@@ -514,12 +639,25 @@ repository root with Python and SymPy installed.
 \text{\ttfamily python -B research/elliptic-quotients/cm-spectra/verify.py}
 \end{gathered}
 \]
+Run \texttt{python -B descend.py --verify} from the
+\href{https://github.com/towre676-cloud/crest-root-calculus/tree/main/research/elliptic-quotients/twin-curves}{twin-curves directory}
+to check the quartic models. The
+\href{https://github.com/towre676-cloud/crest-root-calculus/tree/main/docs/visuals}{visual companion}
+shows the lattice-to-curve computation.
+
 The code, the exact lattice data, and the \TeX{} source are available
 in the \href{https://github.com/towre676-cloud/crest-root-calculus}
 {Crest--Root Calculus repository}.
 
 \begin{thebibliography}{99}
 \raggedright
+\bibitem{CardonaQuer}
+G.~Cardona and J.~Quer,
+\emph{Field of moduli and field of definition for curves of genus 2},
+in \emph{Computational Aspects of Algebraic Curves}, Lecture Notes Ser.
+Comput. \textbf{13}, World Scientific, 2005, 71--83.
+\href{https://arxiv.org/abs/math/0207015}{arXiv:math/0207015}.
+
 \bibitem{CMSV}
 E.~Costa, N.~Mascot, J.~Sijsling, and J.~Voight,
 \emph{Rigorous computation of the endomorphism ring of a Jacobian},
@@ -557,6 +695,11 @@ E.~Kani, \emph{Elliptic subcovers of a curve of genus 2.
 II. The refined Humbert invariant},
 J. Number Theory \textbf{193} (2018), 302--335.
 \href{https://doi.org/10.1016/j.jnt.2018.05.011}{doi:10.1016/j.jnt.2018.05.011}.
+
+\bibitem{KaniCM}
+E.~Kani, \emph{The Refined Humbert Invariant for Abelian Product
+Surfaces with Complex Multiplication},
+\href{https://mast.queensu.ca/~kani/papers/refHum5.pdf}{manuscript}.
 
 \bibitem{Lombardo}
 D.~Lombardo, \emph{Computing the geometric endomorphism ring of a

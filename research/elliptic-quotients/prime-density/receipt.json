@@ -1,0 +1,746 @@
+{
+  "levels": [
+    {
+      "D": -3,
+      "ell": 5,
+      "level_bound": 150,
+      "primes": [
+        7,
+        11,
+        13,
+        17,
+        19,
+        23
+      ],
+      "closure": 6,
+      "excluded_twists": [
+        {
+          "character": 5,
+          "weights": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      ],
+      "remaining_twists": [],
+      "excluded_cm_characters": [],
+      "remaining_cm_characters": [],
+      "witnesses": [
+        {
+          "p": 7,
+          "signature": [],
+          "exponent": 2,
+          "CM_filtered": false
+        }
+      ],
+      "density_lower_bound": "1"
+    },
+    {
+      "D": -4,
+      "ell": 7,
+      "level_bound": 392,
+      "primes": [
+        3,
+        5,
+        11,
+        13,
+        17,
+        19,
+        23
+      ],
+      "closure": 12,
+      "excluded_twists": [],
+      "remaining_twists": [
+        -7
+      ],
+      "excluded_cm_characters": [
+        -7
+      ],
+      "remaining_cm_characters": [],
+      "witnesses": [
+        {
+          "p": 3,
+          "signature": [
+            -1
+          ],
+          "exponent": 4,
+          "CM_filtered": false
+        },
+        {
+          "p": 11,
+          "signature": [
+            1
+          ],
+          "exponent": 2,
+          "CM_filtered": false
+        }
+      ],
+      "density_lower_bound": "1"
+    },
+    {
+      "D": -7,
+      "ell": 5,
+      "level_bound": 350,
+      "primes": [
+        3,
+        11,
+        13,
+        17,
+        19,
+        23
+      ],
+      "closure": 11,
+      "excluded_twists": [
+        {
+          "character": 5,
+          "weights": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      ],
+      "remaining_twists": [],
+      "excluded_cm_characters": [],
+      "remaining_cm_characters": [],
+      "witnesses": [
+        {
+          "p": 3,
+          "signature": [],
+          "exponent": 3,
+          "CM_filtered": false
+        }
+      ],
+      "density_lower_bound": "1"
+    },
+    {
+      "D": -8,
+      "ell": 5,
+      "level_bound": 400,
+      "primes": [
+        3,
+        7,
+        11,
+        13,
+        17,
+        19,
+        23
+      ],
+      "closure": 11,
+      "excluded_twists": [
+        {
+          "character": -20,
+          "weights": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "character": -4,
+          "weights": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "remaining_twists": [
+        5
+      ],
+      "excluded_cm_characters": [],
+      "remaining_cm_characters": [],
+      "witnesses": [
+        {
+          "p": 3,
+          "signature": [
+            -1
+          ],
+          "exponent": 4,
+          "CM_filtered": false
+        },
+        {
+          "p": 11,
+          "signature": [
+            1
+          ],
+          "exponent": 2,
+          "CM_filtered": false
+        }
+      ],
+      "density_lower_bound": "1"
+    },
+    {
+      "D": -8,
+      "ell": 7,
+      "level_bound": 784,
+      "primes": [
+        3,
+        5,
+        11,
+        13,
+        17,
+        19,
+        23
+      ],
+      "closure": 19,
+      "excluded_twists": [
+        {
+          "character": -4,
+          "weights": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "character": 28,
+          "weights": [
+            1,
+            4,
+            9,
+            16,
+            25,
+            36,
+            49
+          ]
+        }
+      ],
+      "remaining_twists": [
+        -7
+      ],
+      "excluded_cm_characters": [
+        -7
+      ],
+      "remaining_cm_characters": [],
+      "witnesses": [
+        {
+          "p": 3,
+          "signature": [
+            -1
+          ],
+          "exponent": 4,
+          "CM_filtered": false
+        },
+        {
+          "p": 11,
+          "signature": [
+            1
+          ],
+          "exponent": 3,
+          "CM_filtered": false
+        }
+      ],
+      "density_lower_bound": "1"
+    },
+    {
+      "D": -11,
+      "ell": 7,
+      "level_bound": 1078,
+      "primes": [
+        3,
+        5,
+        13,
+        17,
+        19,
+        23
+      ],
+      "closure": 32,
+      "excluded_twists": [],
+      "remaining_twists": [
+        -7
+      ],
+      "excluded_cm_characters": [
+        -7
+      ],
+      "remaining_cm_characters": [],
+      "witnesses": [
+        {
+          "p": 3,
+          "signature": [
+            -1
+          ],
+          "exponent": 5,
+          "CM_filtered": false
+        },
+        {
+          "p": 23,
+          "signature": [
+            1
+          ],
+          "exponent": 3,
+          "CM_filtered": false
+        }
+      ],
+      "density_lower_bound": "1"
+    },
+    {
+      "D": -3,
+      "ell": 11,
+      "level_bound": 726,
+      "primes": [
+        5,
+        7,
+        13,
+        17,
+        19,
+        23
+      ],
+      "closure": 18,
+      "excluded_twists": [],
+      "remaining_twists": [
+        -11
+      ],
+      "excluded_cm_characters": [
+        -11
+      ],
+      "remaining_cm_characters": [],
+      "witnesses": [
+        {
+          "p": 7,
+          "signature": [
+            -1
+          ],
+          "exponent": 3,
+          "CM_filtered": false
+        }
+      ],
+      "density_lower_bound": "1/2"
+    },
+    {
+      "D": -4,
+      "ell": 11,
+      "level_bound": 968,
+      "primes": [
+        3,
+        5,
+        7,
+        13,
+        17,
+        19,
+        23
+      ],
+      "closure": 23,
+      "excluded_twists": [],
+      "remaining_twists": [
+        -11
+      ],
+      "excluded_cm_characters": [],
+      "remaining_cm_characters": [
+        -11
+      ],
+      "witnesses": [
+        {
+          "p": 3,
+          "signature": [
+            1
+          ],
+          "exponent": 1,
+          "CM_filtered": true
+        },
+        {
+          "p": 7,
+          "signature": [
+            -1
+          ],
+          "exponent": 1,
+          "CM_filtered": true
+        }
+      ],
+      "density_lower_bound": "1"
+    },
+    {
+      "D": -8,
+      "ell": 13,
+      "level_bound": 2704,
+      "primes": [
+        3,
+        5,
+        7,
+        11,
+        17,
+        19,
+        23
+      ],
+      "closure": 53,
+      "excluded_twists": [
+        {
+          "character": -52,
+          "weights": [
+            1,
+            4,
+            9,
+            16,
+            25,
+            36,
+            49
+          ]
+        },
+        {
+          "character": -4,
+          "weights": [
+            1,
+            4,
+            9,
+            16,
+            25,
+            36,
+            49
+          ]
+        }
+      ],
+      "remaining_twists": [
+        13
+      ],
+      "excluded_cm_characters": [],
+      "remaining_cm_characters": [],
+      "witnesses": [
+        {
+          "p": 3,
+          "signature": [
+            1
+          ],
+          "exponent": 6,
+          "CM_filtered": false
+        },
+        {
+          "p": 5,
+          "signature": [
+            -1
+          ],
+          "exponent": 4,
+          "CM_filtered": false
+        }
+      ],
+      "density_lower_bound": "1"
+    },
+    {
+      "D": -7,
+      "ell": 13,
+      "level_bound": 2366,
+      "primes": [
+        3,
+        5,
+        11,
+        17,
+        19,
+        23
+      ],
+      "closure": 53,
+      "excluded_twists": [
+        {
+          "character": 13,
+          "weights": [
+            1,
+            4,
+            9,
+            16,
+            25,
+            36
+          ]
+        }
+      ],
+      "remaining_twists": [],
+      "excluded_cm_characters": [],
+      "remaining_cm_characters": [],
+      "witnesses": [
+        {
+          "p": 3,
+          "signature": [],
+          "exponent": 5,
+          "CM_filtered": false
+        }
+      ],
+      "density_lower_bound": "1"
+    },
+    {
+      "D": -3,
+      "ell": 17,
+      "level_bound": 1734,
+      "primes": [
+        5,
+        7,
+        11,
+        13,
+        19,
+        23
+      ],
+      "closure": 35,
+      "excluded_twists": [
+        {
+          "character": 17,
+          "weights": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      ],
+      "remaining_twists": [],
+      "excluded_cm_characters": [],
+      "remaining_cm_characters": [],
+      "witnesses": [
+        {
+          "p": 5,
+          "signature": [],
+          "exponent": 4,
+          "CM_filtered": false
+        }
+      ],
+      "density_lower_bound": "1"
+    },
+    {
+      "D": -7,
+      "ell": 17,
+      "level_bound": 4046,
+      "primes": [
+        3,
+        5,
+        11,
+        13,
+        19,
+        23
+      ],
+      "closure": 86,
+      "excluded_twists": [
+        {
+          "character": 17,
+          "weights": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      ],
+      "remaining_twists": [],
+      "excluded_cm_characters": [],
+      "remaining_cm_characters": [],
+      "witnesses": [
+        {
+          "p": 3,
+          "signature": [],
+          "exponent": 6,
+          "CM_filtered": false
+        }
+      ],
+      "density_lower_bound": "1"
+    },
+    {
+      "D": -4,
+      "ell": 19,
+      "level_bound": 2888,
+      "primes": [
+        3,
+        5,
+        7,
+        11,
+        13,
+        17,
+        23
+      ],
+      "closure": 58,
+      "excluded_twists": [],
+      "remaining_twists": [
+        -19
+      ],
+      "excluded_cm_characters": [],
+      "remaining_cm_characters": [
+        -19
+      ],
+      "witnesses": [
+        {
+          "p": 3,
+          "signature": [
+            -1
+          ],
+          "exponent": 2,
+          "CM_filtered": true
+        },
+        {
+          "p": 5,
+          "signature": [
+            1
+          ],
+          "exponent": 2,
+          "CM_filtered": true
+        }
+      ],
+      "density_lower_bound": "1"
+    },
+    {
+      "D": -4,
+      "ell": 23,
+      "level_bound": 4232,
+      "primes": [
+        3,
+        5,
+        7,
+        11,
+        13,
+        17,
+        19
+      ],
+      "closure": 82,
+      "excluded_twists": [],
+      "remaining_twists": [
+        -23
+      ],
+      "excluded_cm_characters": [
+        -23
+      ],
+      "remaining_cm_characters": [],
+      "witnesses": [
+        {
+          "p": 3,
+          "signature": [
+            1
+          ],
+          "exponent": 6,
+          "CM_filtered": false
+        },
+        {
+          "p": 5,
+          "signature": [
+            -1
+          ],
+          "exponent": 5,
+          "CM_filtered": false
+        }
+      ],
+      "density_lower_bound": "1"
+    }
+  ],
+  "split_prime_collision": {
+    "D": -3,
+    "ell": 11,
+    "centers": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "twisting_character": -11,
+    "level_of_cusp_form": 363,
+    "square_lift_sturm_bound": 264,
+    "cusp_coefficients_through_64": [
+      0,
+      0,
+      -2,
+      0,
+      0,
+      0,
+      -2,
+      -4,
+      -2,
+      0,
+      4,
+      0,
+      0,
+      8,
+      0,
+      0,
+      0,
+      4,
+      -2,
+      -4,
+      0,
+      -4,
+      0,
+      0,
+      -2,
+      0,
+      0,
+      0,
+      -4,
+      4,
+      4,
+      0,
+      -10,
+      0,
+      0,
+      -8,
+      0,
+      0,
+      0,
+      8,
+      20,
+      12,
+      0,
+      12,
+      0,
+      0,
+      -8,
+      0,
+      0,
+      0,
+      -6,
+      4,
+      8,
+      0,
+      -2,
+      0,
+      0,
+      -4,
+      0,
+      0,
+      0,
+      0,
+      -16,
+      -4,
+      0
+    ],
+    "nonseparating_character_sign": 1
+  },
+  "failed_primes": [
+    {
+      "D": -3,
+      "ell": 5,
+      "p": 17,
+      "tested_through_exponent": 5,
+      "tied_pairs": 2
+    },
+    {
+      "D": -8,
+      "ell": 7,
+      "p": 17,
+      "tested_through_exponent": 18,
+      "tied_pairs": 11
+    },
+    {
+      "D": -8,
+      "ell": 7,
+      "p": 29,
+      "tested_through_exponent": 18,
+      "tied_pairs": 3
+    }
+  ]
+}

@@ -1,0 +1,316 @@
+[
+ {
+  "d": -3,
+  "l": 5,
+  "primes": [
+   7,
+   11,
+   13
+  ],
+  "closure": 6,
+  "gluing": 4,
+  "m_tested": [
+   7,
+   11,
+   13,
+   49,
+   77,
+   91,
+   121,
+   143,
+   169,
+   343,
+   539,
+   637,
+   847,
+   1001
+  ],
+  "entries_tested": 84,
+  "formula_exact": true,
+  "product_classes": 2,
+  "r1_on_products": [
+   2,
+   2
+  ],
+  "product_classes_among_gluing": 0
+ },
+ {
+  "d": -4,
+  "l": 7,
+  "primes": [
+   3,
+   5,
+   11
+  ],
+  "closure": 12,
+  "gluing": 9,
+  "m_tested": [
+   3,
+   5,
+   9,
+   11,
+   15,
+   25,
+   27,
+   33,
+   45,
+   55,
+   75,
+   99,
+   121,
+   125,
+   165,
+   275,
+   363,
+   605
+  ],
+  "entries_tested": 216,
+  "formula_exact": true,
+  "product_classes": 3,
+  "r1_on_products": [
+   2,
+   2,
+   2
+  ],
+  "product_classes_among_gluing": 0
+ },
+ {
+  "d": -7,
+  "l": 5,
+  "primes": [
+   3,
+   11,
+   13
+  ],
+  "closure": 11,
+  "gluing": 7,
+  "m_tested": [
+   3,
+   9,
+   11,
+   13,
+   27,
+   33,
+   39,
+   99,
+   117,
+   121,
+   143,
+   169,
+   363,
+   429,
+   507
+  ],
+  "entries_tested": 165,
+  "formula_exact": true,
+  "product_classes": 4,
+  "r1_on_products": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "product_classes_among_gluing": 0
+ },
+ {
+  "d": -8,
+  "l": 5,
+  "primes": [
+   3,
+   7,
+   11
+  ],
+  "closure": 11,
+  "gluing": 7,
+  "m_tested": [
+   3,
+   7,
+   9,
+   11,
+   21,
+   27,
+   33,
+   49,
+   63,
+   77,
+   99,
+   121,
+   147,
+   231,
+   343,
+   363,
+   539,
+   847
+  ],
+  "entries_tested": 198,
+  "formula_exact": true,
+  "product_classes": 4,
+  "r1_on_products": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "product_classes_among_gluing": 0
+ },
+ {
+  "d": -8,
+  "l": 7,
+  "primes": [
+   3,
+   5,
+   11
+  ],
+  "closure": 19,
+  "gluing": 14,
+  "m_tested": [
+   3,
+   5,
+   9,
+   11,
+   15,
+   25,
+   27,
+   33,
+   45,
+   55,
+   75,
+   99,
+   121,
+   125,
+   165,
+   275,
+   363,
+   605
+  ],
+  "entries_tested": 342,
+  "formula_exact": true,
+  "product_classes": 5,
+  "r1_on_products": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "product_classes_among_gluing": 0
+ },
+ {
+  "d": -11,
+  "l": 7,
+  "primes": [
+   3,
+   5,
+   13
+  ],
+  "closure": 32,
+  "gluing": 14,
+  "m_tested": [
+   3,
+   5,
+   9,
+   13,
+   15,
+   25,
+   27,
+   39,
+   45,
+   65,
+   75,
+   117,
+   125,
+   169,
+   195,
+   325,
+   507,
+   845
+  ],
+  "entries_tested": 576,
+  "formula_exact": true,
+  "product_classes": 5,
+  "r1_on_products": [
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "product_classes_among_gluing": 0
+ },
+ {
+  "d": -3,
+  "l": 11,
+  "primes": [
+   7,
+   13,
+   17
+  ],
+  "closure": 18,
+  "gluing": 15,
+  "m_tested": [
+   7,
+   13,
+   17,
+   49,
+   91,
+   119,
+   169,
+   221,
+   289,
+   343,
+   637,
+   833
+  ],
+  "entries_tested": 216,
+  "formula_exact": true,
+  "product_classes": 3,
+  "r1_on_products": [
+   2,
+   2,
+   2
+  ],
+  "product_classes_among_gluing": 0
+ },
+ {
+  "d": -4,
+  "l": 11,
+  "primes": [
+   3,
+   5,
+   7
+  ],
+  "closure": 23,
+  "gluing": 19,
+  "m_tested": [
+   3,
+   5,
+   7,
+   9,
+   15,
+   21,
+   25,
+   27,
+   35,
+   45,
+   49,
+   63,
+   75,
+   105,
+   125,
+   147,
+   175,
+   245,
+   343
+  ],
+  "entries_tested": 437,
+  "formula_exact": true,
+  "product_classes": 4,
+  "r1_on_products": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "product_classes_among_gluing": 0
+ }
+]

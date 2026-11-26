@@ -1,0 +1,185 @@
+[
+ {
+  "d": -3,
+  "l": 5,
+  "p": 7,
+  "kind_in_K": "split",
+  "closure": 6,
+  "gluing": 4,
+  "krylov_rank": 3,
+  "unseparated_pairs": 0,
+  "pairs": []
+ },
+ {
+  "d": -3,
+  "l": 5,
+  "p": 13,
+  "kind_in_K": "split",
+  "closure": 6,
+  "gluing": 4,
+  "krylov_rank": 3,
+  "unseparated_pairs": 0,
+  "pairs": []
+ },
+ {
+  "d": -3,
+  "l": 5,
+  "p": 19,
+  "kind_in_K": "split",
+  "closure": 6,
+  "gluing": 4,
+  "krylov_rank": 3,
+  "unseparated_pairs": 0,
+  "pairs": []
+ },
+ {
+  "d": -3,
+  "l": 5,
+  "p": 31,
+  "kind_in_K": "split",
+  "closure": 6,
+  "gluing": 4,
+  "krylov_rank": 3,
+  "unseparated_pairs": 0,
+  "pairs": []
+ },
+ {
+  "d": -3,
+  "l": 5,
+  "p": 37,
+  "kind_in_K": "split",
+  "closure": 6,
+  "gluing": 4,
+  "krylov_rank": 3,
+  "unseparated_pairs": 0,
+  "pairs": []
+ },
+ {
+  "d": -3,
+  "l": 5,
+  "p": 11,
+  "kind_in_K": "inert",
+  "closure": 6,
+  "gluing": 4,
+  "krylov_rank": 3,
+  "unseparated_pairs": 0,
+  "pairs": []
+ },
+ {
+  "d": -3,
+  "l": 5,
+  "p": 17,
+  "kind_in_K": "inert",
+  "closure": 6,
+  "gluing": 4,
+  "krylov_rank": 2,
+  "unseparated_pairs": 2,
+  "pairs": [
+   [
+    [
+     [
+      4,
+      -2,
+      2
+     ],
+     [
+      -2,
+      8,
+      -4
+     ],
+     [
+      2,
+      -4,
+      13
+     ]
+    ],
+    [
+     [
+      4,
+      -2,
+      0
+     ],
+     [
+      -2,
+      4,
+      0
+     ],
+     [
+      0,
+      0,
+      25
+     ]
+    ]
+   ],
+   [
+    [
+     [
+      5,
+      1,
+      1
+     ],
+     [
+      1,
+      5,
+      -1
+     ],
+     [
+      1,
+      -1,
+      13
+     ]
+    ],
+    [
+     [
+      4,
+      -2,
+      2
+     ],
+     [
+      -2,
+      5,
+      -2
+     ],
+     [
+      2,
+      -2,
+      20
+     ]
+    ]
+   ]
+  ]
+ },
+ {
+  "d": -3,
+  "l": 5,
+  "p": 23,
+  "kind_in_K": "inert",
+  "closure": 6,
+  "gluing": 4,
+  "krylov_rank": 3,
+  "unseparated_pairs": 0,
+  "pairs": []
+ },
+ {
+  "d": -3,
+  "l": 5,
+  "p": 29,
+  "kind_in_K": "inert",
+  "closure": 6,
+  "gluing": 4,
+  "krylov_rank": 3,
+  "unseparated_pairs": 0,
+  "pairs": []
+ },
+ {
+  "d": -3,
+  "l": 5,
+  "p": 41,
+  "kind_in_K": "inert",
+  "closure": 6,
+  "gluing": 4,
+  "krylov_rank": 3,
+  "unseparated_pairs": 0,
+  "pairs": []
+ }
+]

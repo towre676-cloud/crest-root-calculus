@@ -1,0 +1,24 @@
+PARI stack size set to 2000000000 bytes, maximum size set to 2000003072
+PARI stack size set to 6000000000 bytes, maximum size set to 6000001024
+  ***   Warning: not enough memory, new PARI stack 8000000000
+PARI stack size set to 8000000000 bytes, maximum size set to 8000000000
+form 0 done 1s
+form 1 done 3s
+form 2 done 4s
+form 4 done 5s
+form 5 done 6s
+form 6 done 7s
+form 8 done 8s
+form 9 done 9s
+form 10 done 9s
+form 11 done 10s
+form 13 done 11s
+form 14 done 11s
+form 17 done 12s
+form 18 done 12s
+form 19 done 12s
+form 20 done 13s
+form 21 done 14s
+form 22 done 14s
+form 23 done 15s
+RESULT {'d': -8, 'l': 13, 'genus': 1, 'sturm': 1456, 'kernel_vanishes_at_all_squares_m<=sturm': True, 'seconds': 15}
