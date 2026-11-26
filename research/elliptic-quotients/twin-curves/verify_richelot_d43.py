@@ -11,9 +11,9 @@ def invariants(rhs):
     return absolute_invariants(PARI, [rhs.polcoef(i, "x") for i in range(7)])
 
 
-def quartic_signatures(models):
+def quartic_signatures(models, field_polynomial=FIELD_POLYNOMIAL):
     """Encode each triple as a quartic root and two polynomials in that root."""
-    field = PARI(FIELD_POLYNOMIAL)
+    field = PARI(field_polynomial)
     require(field.polisirreducible(), "The common coefficient field is reducible.")
     result = {}
     for name, model in models.items():
@@ -62,12 +62,18 @@ def verify_edge(record, source, target):
             "The Richelot target does not match the quartic model.")
 
 
-def verify_paths():
-    sources = read(HERE / "models_certified_-43.json")
-    models = read(HERE / "mestre_quartic_models_-43.json")
-    signatures = quartic_signatures(sources | models)
+def verify_paths(discriminant=-43):
+    if discriminant == -43:
+        sources = read(HERE / "models_certified_-43.json")
+        field = FIELD_POLYNOMIAL
+    else:
+        record = read(HERE / f"certified_bielliptic_{discriminant}.json")
+        sources = record["models"]
+        field = record["field"].replace("x", "w")
+    models = read(HERE / f"mestre_quartic_models_{discriminant}.json")
+    signatures = quartic_signatures(sources | models, field)
     distances = {name: 0 for name in sources}
-    records = read(HERE / "richelot_paths_-43.json")
+    records = read(HERE / f"richelot_paths_{discriminant}.json")
     require(len(records) == len(models), "Expected one incoming Richelot edge for each quartic sextic.")
     for record in records:
         source, target = record["source"], record["target"]

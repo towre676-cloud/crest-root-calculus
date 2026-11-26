@@ -45,10 +45,10 @@ with the same rational polarized isogeny data over a common number
 field, the leading constants are in the ratio \(3:4\). For the
 non-product \(j=1728\) two-torsion gluing we give the multiplicity of
 every optimal degree as a divisor formula and obtain a remainder of
-order \(X\log(2+X)\). We give equations for twenty-four pairs of genus-two curves
+order \(X\log(2+X)\). We give equations for all thirty-one pairs in the level-three census of of genus-two curves
 whose optimal quotient counts agree in every degree prime to three.
 Their first differences occur at degrees \(3,6,9,12,21\).
-Six pairs have quartic models, including the pair first distinguished
+Thirteen pairs have quartic models, including the pair first distinguished
 at degree \(21\). Exact two-torsion gluings and Richelot isogenies
 identify their refined Humbert forms from their equations.
 \end{abstract}
@@ -695,6 +695,29 @@ three, with counts \((0,2)\), \((2,0)\), and \((2,0)\), respectively.
 Their equality in every degree prime to three follows from the same
 opposite-secant proposition.
 
+\subsection{Seven quartic pairs at discriminant \texorpdfstring{\(-67\)}{-67}}
+
+The fourteen models at discriminant \(-67\) all have equations over
+\(F_{-67}=\Q(\theta)\), where
+\(\theta^4-\theta^3-6\theta^2+5\theta+13=0\). The two curves in
+\texttt{p6} are bielliptic. The ring class polynomial \(H_{-603}\)
+and the half-period labels give their exact two-torsion gluing
+certificates at all four embeddings. The other twelve models are
+integral Mestre sextics. The replay checks each quartic point on its
+Mestre conic and verifies the three absolute invariants of its sextic.
+
+Twelve exact Richelot edges connect these models to the two
+bielliptic curves, in paths of length at most five. The branch-root
+witnesses are in one degree-24 field. Exact Igusa triple comparisons
+at each edge certify the isogenies up to geometric isomorphism and
+Galois conjugacy. As above, after \(s\) steps the homology matrix
+\(6\cdot 2^s\sqrt{67}\,J\) is integral. The integral centralizer
+recovers the endomorphism ring. The resulting Humbert lattice of each
+equation matches its opposite-secant form at all four embeddings.
+Among these seven pairs three first differ at degree \(3\) and three
+at degree \(6\). The bielliptic pair first differs at degree \(9\),
+with zero and four geometric optimal classes, respectively.
+
 \subsection{The nineteen pairs at discriminant \texorpdfstring{\(-163\)}{-163}}
 
 The four cyclic three-isogenies from
@@ -725,6 +748,12 @@ ring. Exact isometries identify all the models with the intended
 opposite-secant forms. Among the nineteen pairs at this discriminant,
 the first distinguishing degrees \(3,6,9,12,21\) occur
 \(3,6,6,3,1\) times, respectively.
+
+The infinite family with unbounded first distinguishing degree also
+admits uniform factored sextics. The companion constructs them by
+matching labelled two-torsion on CM elliptic curves and verifies
+the two integral polarizations for every parameter, including the
+fixed-field Pell subsequence.
 
 \section{Exact verification and scope}
 
@@ -769,7 +798,7 @@ cypari2 to reproduce their Humbert forms. Run
 \texttt{python -B verify\_d43.py} in the same directory to certify the
 bielliptic pair at discriminant \(-43\). Run
 \texttt{python -B mestre\_link.py} to identify the six other quartic
-equations. Run \texttt{python -B verify\_d163\_paths.py} and
+equations. Run \texttt{python -B verify\_d67.py} for the seven pairs at discriminant \(-67\). Run \texttt{python -B verify\_d163\_paths.py} and
 \texttt{python -B descend\_d163.py} for the nineteen pairs and the
 quartic descent at discriminant \(-163\). The
 \href{https://github.com/towre676-cloud/crest-root-calculus/tree/main/docs/visuals}{visual companion}
