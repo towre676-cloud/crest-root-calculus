@@ -72,6 +72,10 @@ If \(\delta\) is rational but \(s\notin\mathbb Q(\zeta_3)\), some element fixes 
 
 Finally, if \(\delta,s\in\mathbb Q\), the ratio is the sixth power of \(s/\delta\). Galois fixes \(\iota\) and acts on the matrix algebra through conjugation by \(\iota\) when it inverts \(\rho\). The only invariant directions are the two eigenspaces of \(\iota\). The reciprocal lifts are rational, and their degree-two quotients have a rational point from the source point at infinity. Both directions therefore give rational optimal maps. For the excluded cases, a nonconstant rational map would still induce a rational elliptic direction by taking the image of its adjoint, so the same obstruction applies in every degree.
 
+## Relation to the dihedral classification
+
+Cardona and Quer classify the dihedral genus-two twists and compute their rational endomorphism algebras from the Galois action. Their Table 4 already distinguishes fields, which give a rationally simple Jacobian, from the split algebra. The sixth-power test above reads that distinction directly from this cyclic coefficient chart. The contribution here is the exact conversion from the input, the two-torsion identity for the three-isogeny, and the resulting all-degree multiplicity formula with an executable rational descent test. Priority for the closed multiplicity formula remains open. [Cardona and Quer, Table 4](https://arxiv.org/abs/math/0203165)
+
 ## Replay
 
 ~~~sh
