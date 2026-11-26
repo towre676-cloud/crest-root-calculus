@@ -64,15 +64,37 @@ The certificate evaluates the descent formula and all three absolute Igusa invar
 
 ### Quartic descent for the six Mestre models
 
-There are six further **integral sextics over the same quartic field** (F), one for each label in (mathtt{p0},mathtt{p1},mathtt{p2}). The coefficient arrays are constant-first in the variable of the sextic and use (w=	heta) for the field generator. Each sextic has its archived absolute Igusa invariants exactly. The assignment of these six invariant triples to the CM lattices is currently based on high-precision recognition. [Quartic equations and conic points](mestre_quartic_models_-43.json) · [Exact descent replay](verify_mestre_descent_d43.py) · [Earlier octic equations](mestre_models_-43.json)
+The six models in \(\mathtt{p0},\mathtt{p1},\mathtt{p2}\) have integral sextics over the same quartic field \(F\). The arrays list coefficients in ascending order and use \(w=\theta\). Each of the six stored Mestre conic points is checked by exact substitution. A pencil of lines through that point parametrises the conic and pulls the Mestre cubic back to a sextic. The replay recomputes its absolute Igusa invariants in \(F\). [Quartic sextics and points](mestre_quartic_models_-43.json) · [Descent replay](verify_mestre_descent_d43.py)
 
-Each ternary Mestre matrix (G) admits a nonzero isotropic vector over (F). One proof tests its Hilbert symbols at the 333 candidate finite places across the six conics. After clearing denominators in (G), the candidate rational primes divide (2N_{F/mathbb Q}(det G)). At every other place the reduction is a nonsingular conic over a finite field, so a point lifts by Hensel's lemma. At the candidate places the Hilbert symbol of ((-d_1/d_0,-d_2/d_0)), for a diagonal Gram matrix (operatorname{diag}(d_0,d_1,d_2)), is (+1). At odd primes it is computed by the valuation and residue formula. At dyadic primes the code reduces the unit parts modulo (mathfrak p^{2e+1}), where (e=v_{mathfrak p}(2)), so the discarded factor is a local square. The field is totally imaginary. Hasse–Minkowski gives a point over (F) for each conic. [Local certificate](mestre_obstruction_-43.json) · [Local replay](mestre_obstruction_d43.py)
+For the construction, each integral conic was minimised prime by prime using generators of the prime ideals, which exist because \(F\) has class number one. The reduction's radical permits a change of lattice and rescaling that lower the determinant valuation. In the rank-two case with valuation one, an isotropic line of the nonsingular binary block and the radical give the plane used for that rescaling. The six reduced matrices have unit determinants. Short vectors supply points and removing the fractional coefficient ideal gives the displayed integral models up to quadratic twist.
 
-For the explicit construction, the integral conics were minimised prime by prime. At each place the radical of the reduction allows a basis change and rescaling that decrease the determinant valuation. In the rank-two case with determinant valuation one, the local point forces an isotropic line in the nonsingular binary block modulo the prime. Together with the radical this gives a two-dimensional subspace on which the form vanishes modulo the prime, allowing one coordinate to be multiplied by a uniformiser before dividing the form by it. The field has class number one, which allows the changes to use generators of its prime ideals. All six reduced matrices have determinant a unit.
+An independent test checks local solubility at 333 candidate finite places across the six conics. For an integral Gram matrix \(G\), the rational primes to test divide \(2N_{F/\mathbb Q}(\det G)\). At every other place a nonsingular point exists over the residue field and lifts by Hensel's lemma. For a diagonalisation \(\operatorname{diag}(d_0,d_1,d_2)\), the Hilbert symbol of \((-d_1/d_0,-d_2/d_0)\) is \(+1\) at every candidate place. At dyadic places the unit parts are reduced modulo \(\mathfrak p^{2e+1}\), where \(e=v_{\mathfrak p}(2)\). The field is totally imaginary. [Local certificate](mestre_obstruction_-43.json) · [Local replay](mestre_obstruction_d43.py)
 
-Short vectors in the integral lattice of the reduced conic propose points. Each point is checked exactly in the original matrix. A pencil of lines through the point parametrises the conic and pulls the Mestre cubic back to a sextic. Removing the fractional coefficient ideal gives the displayed integral model up to quadratic twist. The sextic's absolute Igusa invariants are recomputed directly over (F). The exact point and invariant checks are independent of the precision used in the short-vector search.
+### Exact lattice identification via Richelot paths
 
-The numerical discovery computes orbit values by the CM ideal action and solves for the coefficients of the invariants in a quartic power basis. Rational approximation with a smooth-denominator filter produces candidate triples. The pipeline restores its requested precision after importing the archived theta helpers. The filter is a discovery heuristic. For \(\mathtt{p3}\) the independent equation-to-lattice certificate supplies the proof. [Orbit discovery](orbit.py) · [Recognition](recognise_F.py) · [Mestre construction](mestre_models.py)
+Two chains of Richelot isogenies connect the six quartic equations to the certified bielliptic models.
+
+| Starting model | One step | Two steps | Three steps |
+|---|---|---|---|
+| $\mathtt{p3\_q1}$ | $\mathtt{p2\_q2}$ | $\mathtt{p0\_q2}$ | $\mathtt{p1\_q1}$ |
+| $\mathtt{p3\_q2}$ | $\mathtt{p2\_q1}$ | $\mathtt{p0\_q1}$ | $\mathtt{p1\_q2}$ |
+
+For each edge, the verifier multiplies three quadratics with distinct roots and checks its absolute Igusa triple against the source. It checks that the three quadratics are linearly independent, then checks the triple of the product of their Richelot brackets against the target. In each match the first invariant is a root of an irreducible quartic, and the other two are evaluated as exact polynomials in that same root. This certifies geometric isomorphism under a single field embedding for each triple. The edge witnesses therefore give isogenies up to Galois conjugacy, which suffices for scalar complex multiplication. [Exact Richelot witnesses](richelot_paths_-43.json) · [Richelot verifier](verify_richelot_d43.py)
+
+Both factors of each bielliptic starting model have CM by the order of conductor three in \(\mathbb Q(\sqrt{-43})\). Scalar multiplication by \(3i\sqrt{43}\) thus preserves their product lattice. If an isogeny has kernel killed by \(e\), multiplication by \(e\) factors back through the isogeny. Composing with the scalar endomorphism and the original isogeny gives that scalar multiplied by \(e\) on the codomain. The bielliptic gluing and each Richelot step have kernels killed by two. Consequently, after \(s\) steps, \(6\cdot 2^s\sqrt{43}\,J\) is an **integral** homology matrix, where \(J\) represents multiplication by \(i\) on real homology.
+
+Galois conjugation changes the tangent scalar at most by the sign of \(\sqrt{-43}\), so the integrality bound holds at every embedding. Arb encloses the matrix from each quartic equation at all four embeddings. Each entry's enclosure isolates one integer. The integrality theorem makes that integer the exact entry. The full geometric endomorphism ring is the integral centralizer of this matrix, computed by an integer kernel. Taking its Rosati-symmetric part gives the Néron–Severi lattice and hence the refined Humbert form. Every computed form matches exactly its intended archive form. An optional bounded Rosati search independently reproduces the same order. [Equation-to-lattice verifier](mestre_link.py) · [Exact results](mestre_link_quartic_-43.json)
+
+All four pairs agree in every degree prime to \(3\) by the opposite-secant theorem. Their first differing geometric counts are:
+
+| Pair | First distinguishing degree | \(\mathtt{q1}\) | \(\mathtt{q2}\) |
+|---|---:|---:|---:|
+| \(\mathtt{p0}\) | 3 | 0 | 2 |
+| \(\mathtt{p1}\) | 3 | 2 | 0 |
+| \(\mathtt{p2}\) | 3 | 2 | 0 |
+| \(\mathtt{p3}\) | 6 | 0 | 4 |
+
+The archived octic models and the initial recognition computation record how the equations were discovered. [Octic models](mestre_models_-43.json) · [Orbit discovery](orbit.py) · [Recognition](recognise_F.py)
 
 ## Reproduce
 
@@ -85,6 +107,7 @@ python -B verify_d43.py
 python -B verify_mestre_d43.py
 python -B mestre_obstruction_d43.py
 python -B verify_mestre_descent_d43.py
+python -B mestre_link.py
 ~~~
 
 The descent replay checks both change-of-variables identities, the common CM quotient pair and the absolute invariant that separates the moduli orbits. The gluing replay rebuilds the equation-to-lattice certificate. The original theta and recognition chain is in [pipeline.py](pipeline.py), with controls in [validate.py](validate.py). It uses PARI through cypari2, mpmath, NumPy and python-flint. The archived [degree-24 worksheet](twins_-19.md) gives the handoff calculation.

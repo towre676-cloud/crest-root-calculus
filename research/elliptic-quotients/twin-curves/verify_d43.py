@@ -50,27 +50,27 @@ def check_models(moduli, models, F, class_polynomial):
     return result
 
 
-def pair_spectrum(targets):
+def pair_spectrum(targets, twins=TWINS):
     data = read(HERE.parent / "opposite-secant-spectra" / "certificate.json")
     level = next(row for row in data["level_three"] if row["D"] == DISCRIMINANT)
     pairs = []
     for pair in level["twin_pairs"]:
         left, right = (gram(pair[key]) for key in ("left", "right"))
         for a, b in ((left, right), (right, left)):
-            if PARI.qfisom(targets[TWINS[0]], a) and PARI.qfisom(targets[TWINS[1]], b):
+            if PARI.qfisom(targets[twins[0]], a) and PARI.qfisom(targets[twins[1]], b):
                 pairs.append((pair, a, b))
     require(len(pairs) == 1, "The archived forms are not a unique opposite-secant pair.")
     pair, a, b = pairs[0]
     first = pair["first_degree"]
-    transitions = [isometry(targets[name], form) for name, form in zip(TWINS, (a, b), strict=True)]
+    transitions = [isometry(targets[name], form) for name, form in zip(twins, (a, b), strict=True)]
     counts = {}
-    for name in TWINS:
+    for name in twins:
         reps = PARI.qfrep(targets[name], first**2)
         primitive = []
         for m in range(1, first+1):
             primitive.append(2*int(reps[m*m-1]) - sum(primitive[j-1] for j in range(1, m) if m % j == 0))
         counts[name] = primitive
-    left, right = (counts[name] for name in TWINS)
+    left, right = (counts[name] for name in twins)
     require(left[:-1] == right[:-1] and left[-1] != right[-1], "The first distinguishing degree changed.")
     return {"first_degree": first, "primitive_counts": counts, "isometries_to_opposite_secants": transitions}
 
