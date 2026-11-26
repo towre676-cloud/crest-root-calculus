@@ -1,0 +1,58 @@
+[
+  {
+    "D": -8,
+    "ell": 23,
+    "modulus": 65521,
+    "closure": 151,
+    "primes": [
+      3,
+      31
+    ],
+    "weights": [
+      1,
+      2
+    ],
+    "excluded_characters": [
+      -4,
+      92
+    ],
+    "gcd_degrees": {
+      "-4": 0,
+      "92": 0
+    }
+  },
+  {
+    "D": -8,
+    "ell": 47,
+    "modulus": 65521,
+    "closure": 589,
+    "primes": [
+      3,
+      5,
+      7,
+      11,
+      13,
+      17,
+      19,
+      23
+    ],
+    "weights": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "excluded_characters": [
+      -4,
+      188
+    ],
+    "gcd_degrees": {
+      "-4": 0,
+      "188": 0
+    }
+  }
+]

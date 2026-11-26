@@ -74,3 +74,5 @@ python -B "$study/controls.py" | diff - "$study/controls.json"
 ~~~
 
 The original ten pair-module tests in the supplied commit `9d0fff6fdb6408edd4aedab484bb9be04552b7a8` were also reproduced. The [joint square-kernel study](../square-spectrum-kernel/README.md) gives the all-degree counts of relations. For a uniform prime-power result, the open issue is whether every inert level admits a good auxiliary prime whose norm-one profile separates all of its gluing classes.
+
+The [density theorem](../prime-density/README.md) turns each finite separating prime into a positive-density result. It also proves that the separating primes have density exactly one-half at $D=-3,\ell=11$.
