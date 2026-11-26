@@ -96,6 +96,22 @@ All four pairs agree in every degree prime to \(3\) by the opposite-secant theor
 
 The archived octic models and the initial recognition computation record how the equations were discovered. [Octic models](mestre_models_-43.json) · [Orbit discovery](orbit.py) · [Recognition](recognise_F.py)
 
+## Discriminant −67
+
+**All seven pairs have exact equations over the same quartic field and certified Humbert forms.** The field is
+\[
+F_{-67}=\mathbb Q(\theta),\qquad \theta^4-\theta^3-6\theta^2+5\theta+13=0 .
+\]
+The discovery computation locates the fourteen polarizations on products of conductor-three ideals and recovers their Igusa invariants from the CM orbits. The following checks work with the exact sextics. [Polarized lattices](twin_lattices_-67.json) · [Discovered invariants](invariants_F_-67.json) · [Recognition code](recognise_direct.py)
+
+For the two bielliptic models in \(\mathtt{p6}\), the quotient \(j\)-invariants are roots of \(H_{-603}\) by exact substitution. The labelled two-torsion gluing yields the intended Humbert form at all four embeddings. The curves agree at every degree below \(9\), where their counts are zero and four. [Bielliptic equations and certificate](certified_bielliptic_-67.json)
+
+Each of the twelve other models is an integral sextic over \(F_{-67}\). To construct the equations, conic minimization reduces the integral Gram determinants to units. A short-vector search yields a point on each conic, checked by substitution in the original form. A pencil through that point parametrizes the conic and gives the Mestre sextic. The replay also computes all three absolute Igusa invariants of every output over \(F_{-67}\). The first invariant generates the field in every case. [Quartic models and conic points](mestre_quartic_models_-67.json)
+
+The two bielliptic models anchor twelve Richelot edges. All the edges have branch-root witnesses in a common explicit degree-24 field. The verifier checks the nonzero Richelot determinant and both invariant triples exactly at each edge. Thus the resulting paths give \(6\cdot 2^s\sqrt{67}\,J\) as an integral homology matrix for a model \(s\) steps from its anchor, with \(s\le5\). At all four embeddings of every quartic model, Arb isolates the integer entries. The integral centralizer gives the full endomorphism ring and the Rosati-symmetric lattice. Each resulting Humbert form matches precisely its own archive form. [Richelot witnesses](richelot_paths_-67.json) · [Exact verifier](verify_d67.py) · [Lattice and spectrum receipt](mestre_link_quartic_-67.json)
+
+The exact lattices match the opposite-secant pairs. Within each pair the geometric optimal quotient counts agree in every degree prime to three. Three pairs first differ at degree \(3\), three at degree \(6\), and the bielliptic pair at degree \(9\).
+
 ## Discriminant −163
 
 **All nineteen opposite-secant pairs have exact equations and certified Humbert forms.** In each pair the geometric optimal quotient counts agree in every degree prime to three. The pair that first differs at degree 21 has zero versus four optimal classes at that degree. Both curves have sextics over the common quartic field
@@ -144,6 +160,7 @@ python -B verify_mestre_d43.py
 python -B mestre_obstruction_d43.py
 python -B verify_mestre_descent_d43.py
 python -B mestre_link.py
+python -B verify_d67.py
 python -B verify_d163.py
 python -B descend_d163.py
 python -B verify_d163_paths.py

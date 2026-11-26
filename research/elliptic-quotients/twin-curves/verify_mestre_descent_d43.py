@@ -1,19 +1,21 @@
-"""Verify the six quartic Mestre points and integral sextics."""
+"""Verify quartic Mestre points and integral sextics."""
+
+import argparse
 
 from igusa_exact import absolute_invariants
-from mestre_obstruction_d43 import FIELD_POLYNOMIAL, INVARIANTS, PARI, conic_matrix
+from mestre_obstruction_d43 import INVARIANTS, PARI, conic_matrix
 from verify_mestre_d43 import HERE, read, require
 
 
-def replay():
-    recognized = read(HERE / "invariants_F_-43.json")
-    models = read(HERE / "mestre_quartic_models_-43.json")
+def replay(discriminant=-43):
+    recognized = read(HERE / f"invariants_F_{discriminant}.json")
+    models = read(HERE / f"mestre_quartic_models_{discriminant}.json")
     formulas = read(HERE / "mestre_formulas.json")
-    field = PARI(FIELD_POLYNOMIAL)
+    field = PARI(next(iter(recognized.values()))["F"]).subst("x", "w")
     require(field.poldegree() == 4 and field.polisirreducible(), "Expected a quartic field.")
     nf = PARI.nfinit(field)
-    require(len(models) == 6 and set(models) == {name for name in recognized if not recognized[name].get("u")},
-            "The receipt must contain the six non-dihedral cases.")
+    require(len(models) == {-43: 6, -67: 12}[discriminant] and set(models) == {name for name in recognized if not recognized[name].get("u")},
+            "The receipt must contain all the non-dihedral cases.")
 
     for name, model in sorted(models.items()):
         values = recognized[name]
@@ -34,4 +36,6 @@ def replay():
 
 
 if __name__ == "__main__":
-    replay()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--discriminant", type=int, choices=(-43, -67), default=-43)
+    replay(parser.parse_args().discriminant)

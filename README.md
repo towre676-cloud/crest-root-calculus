@@ -25,6 +25,8 @@ At level three, two opposite secants of the finite conic contain the same intern
 
 At discriminant −43, **four certified pairs** have explicit equations over one quartic field. Each pair has the same counts in every degree prime to three. Three pairs first differ at degree three. The fourth first differs at degree six, with **zero versus four** optimal classes. Exact Richelot isogenies from the bielliptic pair certify the endomorphism lattices of the other six equations. [The four pairs and their verifiers](research/elliptic-quotients/twin-curves/README.md#discriminant-43)
 
+At discriminant −67, seven certified pairs have equations over one quartic field. The bielliptic pair first differs at degree 9, with **zero versus four**. All 31 pairs in the level-three census now have exact equations. [Equations and replay](research/elliptic-quotients/twin-curves/README.md#discriminant-67)
+
 At discriminant −163, **all nineteen pairs** have exact equations and certified lattice links. The latest first difference is degree 21, with **zero versus four** optimal classes. That pair has equations over a quartic field. [The nineteen pairs and their equations](research/elliptic-quotients/twin-curves/README.md#discriminant-163)
 
 [![Two elliptic quotients determine the gluing and the lattice of each discriminant −19 twin](docs/visuals/D19-quartic-descent.webp)](docs/visuals/README.md)
