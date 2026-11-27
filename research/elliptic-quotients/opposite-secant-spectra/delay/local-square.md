@@ -4,7 +4,7 @@ The determinant-200,000 sweep found 121 opposite-secant pairs whose quotient spe
 
 Two cases in that remaining group have an exact central-value explanation. Their signed sums belong to the weight-two packet of the elliptic curve 232.b. The discriminant −232 twist has central value zero and root number +1. A twist in a square class indistinguishable at the bad primes has nonzero central value.
 
-The [sublattice criterion](local-geometry.md) gives an independent geometric proof for all 18 five-adic cases and 37 two-adic cases. Its isometries persist in three infinite families.
+The [sublattice criterion](local-geometry.md) gives an independent geometric proof for all 18 five-adic cases. Its layered two-adic form covers all 90 two-adic cases. Its isometries persist in three infinite families.
 
 ## A finite test for exclusion of local squares
 
