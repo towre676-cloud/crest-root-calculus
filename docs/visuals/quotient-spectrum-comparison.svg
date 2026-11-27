@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="610" viewBox="0 0 820 610" role="img" aria-labelledby="title desc">
+  <title id="title">Elliptic quotient spectra for two certified curve pairs</title>
+  <desc id="desc">Counts of optimal geometric elliptic quotient classes at degrees 2 through 10. The discriminant minus 19 curves first differ at degree three, with zero versus four classes. For the determinant 1440 curves the markers overlap at every plotted degree. A separate theorem proves equality in all degrees.</desc>
+  <rect x="1" y="1" width="818" height="608" rx="24" fill="#f2f6fa" stroke="#d8e2eb" stroke-width="2"/>
+  <g font-family="system-ui, sans-serif">
+    <text x="38" y="51" fill="#182c42" font-size="35" font-weight="700" text-anchor="start">When quotient spectra agree</text>
+    <text x="38" y="85" fill="#435a70" font-size="23" font-weight="400" text-anchor="start">Optimal elliptic quotient classes at each degree</text>
+    <circle cx="52" cy="115" r="9" fill="#fff" stroke="#006d71" stroke-width="3"/>
+    <text x="69" y="122" fill="#006d71" font-size="20" font-weight="650" text-anchor="start">Curve A</text>
+    <path d="M 184 109 L 190 115 184 121 178 115 Z" fill="#b84613"/>
+    <text x="201" y="122" fill="#b84613" font-size="20" font-weight="650" text-anchor="start">Curve B</text>
+    <circle cx="324" cy="115" r="9" fill="#fff" stroke="#006d71" stroke-width="3"/>
+    <path d="M 324 109 L 330 115 324 121 318 115 Z" fill="#b84613"/>
+    <text x="341" y="122" fill="#435a70" font-size="20" font-weight="400" text-anchor="start">Equal counts</text>
+    <rect x="34" y="140" width="752" height="201" rx="15" fill="#fff" stroke="#d8e2eb"/>
+    <text x="54" y="171" fill="#182c42" font-size="24" font-weight="700" text-anchor="start">Discriminant −19</text>
+    <text x="54" y="199" fill="#435a70" font-size="20" font-weight="400" text-anchor="start">First difference at degree 3 · 0 versus 4 classes</text>
+    <rect x="186" y="217" width="34" height="101" rx="9" fill="#fdf0e1"/>
+    <line x1="104" y1="309" x2="744" y2="309" stroke="#d8e2eb" stroke-width="2"/>
+    <text x="91" y="316" fill="#435a70" font-size="19" font-weight="400" text-anchor="end">0</text>
+    <line x1="104" y1="281" x2="744" y2="281" stroke="#d8e2eb" stroke-width="1"/>
+    <text x="91" y="288" fill="#435a70" font-size="19" font-weight="400" text-anchor="end">4</text>
+    <line x1="104" y1="253" x2="744" y2="253" stroke="#d8e2eb" stroke-width="1"/>
+    <text x="91" y="260" fill="#435a70" font-size="19" font-weight="400" text-anchor="end">8</text>
+    <line x1="104" y1="225" x2="744" y2="225" stroke="#d8e2eb" stroke-width="1"/>
+    <text x="91" y="232" fill="#435a70" font-size="19" font-weight="400" text-anchor="end">12</text>
+    <circle cx="129" cy="295" r="9" fill="#fff" stroke="#006d71" stroke-width="3"/>
+    <path d="M 129 289 L 135 295 129 301 123 295 Z" fill="#b84613"/>
+    <text x="129" y="334" fill="#182c42" font-size="20" font-weight="400" text-anchor="middle">2</text>
+    <circle cx="203" cy="309" r="9" fill="#fff" stroke="#006d71" stroke-width="3"/>
+    <path d="M 203 275 L 209 281 203 287 197 281 Z" fill="#b84613"/>
+    <text x="203" y="334" fill="#182c42" font-size="20" font-weight="700" text-anchor="middle">3</text>
+    <circle cx="277" cy="309" r="9" fill="#fff" stroke="#006d71" stroke-width="3"/>
+    <path d="M 277 303 L 283 309 277 315 271 309 Z" fill="#b84613"/>
+    <text x="277" y="334" fill="#182c42" font-size="20" font-weight="400" text-anchor="middle">4</text>
+    <circle cx="351" cy="309" r="9" fill="#fff" stroke="#006d71" stroke-width="3"/>
+    <path d="M 351 303 L 357 309 351 315 345 309 Z" fill="#b84613"/>
+    <text x="351" y="334" fill="#182c42" font-size="20" font-weight="400" text-anchor="middle">5</text>
+    <circle cx="425" cy="281" r="9" fill="#fff" stroke="#006d71" stroke-width="3"/>
+    <path d="M 425 275 L 431 281 425 287 419 281 Z" fill="#b84613"/>
+    <text x="425" y="334" fill="#182c42" font-size="20" font-weight="400" text-anchor="middle">6</text>
+    <circle cx="499" cy="281" r="9" fill="#fff" stroke="#006d71" stroke-width="3"/>
+    <path d="M 499 275 L 505 281 499 287 493 281 Z" fill="#b84613"/>
+    <text x="499" y="334" fill="#182c42" font-size="20" font-weight="400" text-anchor="middle">7</text>
+    <circle cx="573" cy="281" r="9" fill="#fff" stroke="#006d71" stroke-width="3"/>
+    <path d="M 573 275 L 579 281 573 287 567 281 Z" fill="#b84613"/>
+    <text x="573" y="334" fill="#182c42" font-size="20" font-weight="400" text-anchor="middle">8</text>
+    <circle cx="647" cy="225" r="9" fill="#fff" stroke="#006d71" stroke-width="3"/>
+    <path d="M 647 303 L 653 309 647 315 641 309 Z" fill="#b84613"/>
+    <text x="647" y="334" fill="#182c42" font-size="20" font-weight="400" text-anchor="middle">9</text>
+    <circle cx="721" cy="281" r="9" fill="#fff" stroke="#006d71" stroke-width="3"/>
+    <path d="M 721 275 L 727 281 721 287 715 281 Z" fill="#b84613"/>
+    <text x="721" y="334" fill="#182c42" font-size="20" font-weight="400" text-anchor="middle">10</text>
+    <rect x="34" y="354" width="752" height="201" rx="15" fill="#fff" stroke="#d8e2eb"/>
+    <text x="54" y="385" fill="#182c42" font-size="24" font-weight="700" text-anchor="start">Gram determinant 1,440</text>
+    <text x="54" y="413" fill="#435a70" font-size="20" font-weight="400" text-anchor="start">Equal at every degree by theorem</text>
+    <line x1="104" y1="523" x2="744" y2="523" stroke="#d8e2eb" stroke-width="2"/>
+    <text x="91" y="530" fill="#435a70" font-size="19" font-weight="400" text-anchor="end">0</text>
+    <line x1="104" y1="495" x2="744" y2="495" stroke="#d8e2eb" stroke-width="1"/>
+    <text x="91" y="502" fill="#435a70" font-size="19" font-weight="400" text-anchor="end">4</text>
+    <line x1="104" y1="467" x2="744" y2="467" stroke="#d8e2eb" stroke-width="1"/>
+    <text x="91" y="474" fill="#435a70" font-size="19" font-weight="400" text-anchor="end">8</text>
+    <line x1="104" y1="439" x2="744" y2="439" stroke="#d8e2eb" stroke-width="1"/>
+    <text x="91" y="446" fill="#435a70" font-size="19" font-weight="400" text-anchor="end">12</text>
+    <circle cx="129" cy="523" r="9" fill="#fff" stroke="#006d71" stroke-width="3"/>
+    <path d="M 129 517 L 135 523 129 529 123 523 Z" fill="#b84613"/>
+    <text x="129" y="548" fill="#182c42" font-size="20" font-weight="400" text-anchor="middle">2</text>
+    <circle cx="203" cy="509" r="9" fill="#fff" stroke="#006d71" stroke-width="3"/>
+    <path d="M 203 503 L 209 509 203 515 197 509 Z" fill="#b84613"/>
+    <text x="203" y="548" fill="#182c42" font-size="20" font-weight="400" text-anchor="middle">3</text>
+    <circle cx="277" cy="509" r="9" fill="#fff" stroke="#006d71" stroke-width="3"/>
+    <path d="M 277 503 L 283 509 277 515 271 509 Z" fill="#b84613"/>
+    <text x="277" y="548" fill="#182c42" font-size="20" font-weight="400" text-anchor="middle">4</text>
+    <circle cx="351" cy="509" r="9" fill="#fff" stroke="#006d71" stroke-width="3"/>
+    <path d="M 351 503 L 357 509 351 515 345 509 Z" fill="#b84613"/>
+    <text x="351" y="548" fill="#182c42" font-size="20" font-weight="400" text-anchor="middle">5</text>
+    <circle cx="425" cy="509" r="9" fill="#fff" stroke="#006d71" stroke-width="3"/>
+    <path d="M 425 503 L 431 509 425 515 419 509 Z" fill="#b84613"/>
+    <text x="425" y="548" fill="#182c42" font-size="20" font-weight="400" text-anchor="middle">6</text>
+    <circle cx="499" cy="509" r="9" fill="#fff" stroke="#006d71" stroke-width="3"/>
+    <path d="M 499 503 L 505 509 499 515 493 509 Z" fill="#b84613"/>
+    <text x="499" y="548" fill="#182c42" font-size="20" font-weight="400" text-anchor="middle">7</text>
+    <circle cx="573" cy="523" r="9" fill="#fff" stroke="#006d71" stroke-width="3"/>
+    <path d="M 573 517 L 579 523 573 529 567 523 Z" fill="#b84613"/>
+    <text x="573" y="548" fill="#182c42" font-size="20" font-weight="400" text-anchor="middle">8</text>
+    <circle cx="647" cy="481" r="9" fill="#fff" stroke="#006d71" stroke-width="3"/>
+    <path d="M 647 475 L 653 481 647 487 641 481 Z" fill="#b84613"/>
+    <text x="647" y="548" fill="#182c42" font-size="20" font-weight="400" text-anchor="middle">9</text>
+    <circle cx="721" cy="509" r="9" fill="#fff" stroke="#006d71" stroke-width="3"/>
+    <path d="M 721 503 L 727 509 721 515 715 509 Z" fill="#b84613"/>
+    <text x="721" y="548" fill="#182c42" font-size="20" font-weight="400" text-anchor="middle">10</text>
+    <text x="425" y="590" fill="#435a70" font-size="21" font-weight="400" text-anchor="middle">Degree of quotient map</text>
+  </g>
+</svg>

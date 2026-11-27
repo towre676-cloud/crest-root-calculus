@@ -1,6 +1,18 @@
 # The mathematics behind the figures
 
-These notes give the equations used to draw [four of the illustrations on the main page](../../README.md). The section numbers and receipt paths refer to the integrated Part XXX research archive. The [origin-story figure notes](origins.md) cover the other five illustrations.
+The section numbers and receipt paths refer to the integrated Part XXX research archive. Open an illustration on its own to see the animation, or choose the still version. [Project overview](../../README.md) · [Autoplay exhibits](../visuals/README.md)
+
+| Illustration | Still version | Equations and data |
+| --- | --- | --- |
+| [The cusp and the parabola](cusp-lifts.svg) | [Still](still/cusp-lifts.svg) | [Two clocks, two curves](origins.md#two-clocks-two-curves) |
+| [Counting an 80-slot chain](chain-count.svg) | [Still](still/chain-count.svg) | [The neighbour rule and exact count](origins.md#the-80-slot-chain) |
+| [The split quadric](quadric-rulings.svg) | [Still](still/quadric-rulings.svg) | [Point counts on the surface](#the-split-quadric) |
+| [How the prime product grows](prime-steps.svg) | [Still](still/prime-steps.svg) | [Prime by prime](origins.md#prime-by-prime) |
+| [Auditing the lowest-zero fit](lowest-zero-audit.svg) | [Still](still/lowest-zero-audit.svg) | [The 201 records and what the fit measured](origins.md#checking-the-apparent-law) |
+| [A fibre of the Klein quartic](klein-fibre.svg) | [Still](still/klein-fibre.svg) | [The degree-three map](#the-klein-quartic) |
+| [The C-star scan](cstar-modulo-five.svg) | [Still](still/cstar-modulo-five.svg) | [Residue counts and marked points](#the-c-star-scan) |
+| [The Fermat lifting test](lifting-depth.svg) | [Still](still/lifting-depth.svg) | [The perturbation equations](#the-fermat-lifting-test) |
+| [When the bounds meet](proof-bounds.svg) | [Still](still/proof-bounds.svg) | [The two decision records](origins.md#when-the-bounds-meet) |
 
 ## The Klein quartic
 

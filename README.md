@@ -1,97 +1,111 @@
 # Crest–Root Calculus
 
-**Find the simpler curves hidden inside a complicated equation, and prove which ones are there.**
+**Find the simpler curves hidden inside an equation, write down the maps to them, and prove when the list is complete.**
 
-A quotient map sends several points of one curve to the same point of a simpler curve. Its **degree** is the number of source points above a typical target point. Crest–Root builds exact tools to find these maps, verify their formulas, and determine when the list is complete. It grew from experiments with point counts into a program about what those counts reveal and what extra information a proof needs.
+A **quotient map** sends several points on one curve to the same point on a simpler curve. Its **degree** is the number of source points above a typical target point. Crest–Root uses exact arithmetic to discover these maps, verify them by substitution, and count them under stated hypotheses. The project began with a question about counting points modulo primes. It now also asks **which features of the whole curve those counts can recover**.
 
-[Download the research paper (PDF)](downloads/Crest-Root-Elliptic-Quotient-Spectra.pdf) · [Read the introduction](downloads/crest-root-introduction.pdf) · [Browse the visual companion](docs/visuals/README.md) · [Explore the illustrated monograph](https://towre676-cloud.github.io/crest-root-calculus/)
+[What you can compute](#what-you-can-compute) · [Research results](#what-the-quotient-counts-reveal) · [Run the verifiers](#run-the-verifiers) · [Visual companion](docs/visuals/README.md) · [Illustrated monograph](https://towre676-cloud.github.io/crest-root-calculus/)
 
-## Why the degree spectrum matters
+<picture>
+  <source media="(max-width: 640px) and (prefers-reduced-motion: reduce)" srcset="docs/figures/still/klein-fibre-mobile.svg" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="docs/figures/still/klein-fibre.svg" />
+  <source media="(max-width: 640px)" srcset="docs/figures/klein-fibre-mobile.svg" />
+  <img src="docs/figures/klein-fibre.svg" alt="Three points related by cycling the coordinates of the Klein quartic move together and share one image on an elliptic curve. The three coordinate vertices all map to (0, 1)." />
+</picture>
 
-A curve can have several fundamentally different maps to elliptic curves. An **optimal** map cannot be obtained by following another elliptic map with a further isogeny. The spectrum records the degrees of the optimal maps and how many classes occur at each degree.
-
-Two genus-two Jacobians in the paper come from the **same elliptic square**, with the same pulled-back polarization. Over a common field, they have the same rational Tate modules with their pairings and the same Frobenius polynomials at good places. The way their two-torsion points are identified changes the answers.
-
-| What we count | First curve | Second curve |
-|---|---:|---:|
-| Optimal classes of degree three | 0 | 8 |
-| Ratio of leading coefficients for the count through degree $X$ | 3 | 4 |
-
-The calculation explains the difference. A direction in the common elliptic square has a degree given by a quadratic norm. The finite subgroup identified by the quotient can divide that degree. Changing the subgroup changes which directions receive the division. The theorem computes this correction for polarized varieties isogenous to CM elliptic powers, in every dimension $r\ge 2$, including fields with nontrivial ideal class group. [Theorem and exact replay](research/elliptic-quotients/cm-spectra/README.md)
-
-## What a restricted spectrum can miss
-
-At level three, two opposite secants of the finite conic contain the same internal point. This forces equality of the geometric elliptic-quotient counts in **every degree prime to three** for the corresponding pair of Humbert lattices. In the discriminant −19 example the counts first differ at degree three, with **zero versus four**. Both archived bielliptic equations descend from degree 24 to a quartic field, and their common pair of CM elliptic quotient invariants agrees exactly. The certified two-torsion gluing identifies each equation with its opposite-secant lattice. [Incidence theorem](research/elliptic-quotients/opposite-secant-spectra/README.md) · [Equations and certificates](research/elliptic-quotients/twin-curves/README.md)
-
-At discriminant −43, **four certified pairs** have explicit equations over one quartic field. Each pair has the same counts in every degree prime to three. Three pairs first differ at degree three. The fourth first differs at degree six, with **zero versus four** optimal classes. Exact Richelot isogenies from the bielliptic pair certify the endomorphism lattices of the other six equations. [The four pairs and their verifiers](research/elliptic-quotients/twin-curves/README.md#discriminant-43)
-
-At discriminant −67, seven certified pairs have equations over one quartic field. The bielliptic pair first differs at degree 9, with **zero versus four**. All 31 pairs in the level-three census now have exact equations. [Equations and replay](research/elliptic-quotients/twin-curves/README.md#discriminant-67)
-
-At discriminant −163, **all nineteen pairs** have exact equations and certified lattice links. The latest first difference is degree 21, with **zero versus four** optimal classes. That pair has equations over a quartic field. [The nineteen pairs and their equations](research/elliptic-quotients/twin-curves/README.md#discriminant-163)
-
-Even **every degree** can agree for curves with inequivalent refined Humbert forms. The determinant-1,440 pair has explicit genus-two equations over the degree-16 ring class field of discriminant −360. Each model has two exact degree-three covers and its full lattice is certified at every field embedding. Both curves descend geometrically to explicit octic sextics. The broader family has uniform determinantal equations, including the four curves at the next two parameters. [Equations and certificates](research/elliptic-quotients/full-spectrum-curves/README.md)
-
-An infinite family proves full-spectrum equality, and an exact sweep through Gram determinant 200,000 found 280 such pairs. In 13 cases local support alone cannot explain the equality. A decomposition into Hecke components traces the missing square coefficients to eight twisted central zeros, including two newform orbits with quadratic coefficient fields. [Infinite family and census](research/elliptic-quotients/opposite-secant-spectra/delay/README.md) · [Central zeros and replay](research/elliptic-quotients/opposite-secant-spectra/delay/residual-packets.md) · [Geometric proofs for all 108 local-obstruction cases](research/elliptic-quotients/opposite-secant-spectra/delay/local-geometry.md)
-
-[![Two elliptic quotients determine the gluing and the lattice of each discriminant −19 twin](docs/visuals/D19-quartic-descent.webp)](docs/visuals/README.md)
+On the Klein quartic, cycling the three coordinates moves among three points with the same elliptic image. This is a **degree-three** quotient. The three marked vertices give a fibre you can check by hand. [Formula and exact identity](docs/figures/README.md#the-klein-quartic) · [Runnable fibre example](examples/fibres/README.md)
 
 ## What you can compute
 
-| Task | Proven coverage | Start here |
-|---|---|---|
-| Find a quotient from an equation | All rational degree-two quotients to positive genus. For cyclic covers, equivariant maps with arbitrary infinity fibres, mixed source and target branching, and smaller target exponents. Elliptic targets require a degree cap. | [Coefficient-only search](research/coefficient-quotients/README.md) · [Arbitrary fibres](research/cyclic-cover-reconstruction/arbitrary-fibres.md) |
-| Find maps to a given curve | All nonconstant rational maps between the supplied smooth hyperelliptic models when the target has genus at least two. There is a separate theorem for elliptic targets with a singleton infinity fibre. | [Finite map reconstruction](research/bounded-correspondences/README.md) |
-| Determine elliptic degrees with repeated factors | All geometric optimal degrees for the stated non-CM gluing families. A CM counting theorem and a closed multiplicity formula for every degree in the non-product $j=1728$ two-torsion gluing. | [Non-CM families](research/elliptic-quotients/isotypic-gluing/README.md) · [CM spectra](research/elliptic-quotients/cm-spectra/README.md) |
-| Determine the spectrum of a non-CM genus-two cyclic cubic | Every optimal geometric degree and its multiplicity, and an exact criterion for rational descent. The elliptic maps break the cubic symmetry. | [Cubic genus-two degree law](research/elliptic-quotients/bielliptic-reconstruction/cubic-genus-two.md) |
-| Compute the full optimal degree on a split genus-two reduction | Torsion certificates at every prime, including the residue characteristic, for geometrically distinct elliptic factors over a prime field. A separate exact sweep determines the characteristic-zero minima on all 69 Richelot neighbours. | [Degree certificate and family sweep](research/torsion-denominators/README.md) |
-| Prove that a list of elliptic quotients is complete | Exact Néron–Severi lattices for twelve split examples, with a separate nine-model bounded period-and-lattice replay. A certified quaternionic example has no elliptic quotient in any degree. | [Certificate framework](research/elliptic-quotients/RECONSTRUCTION-THEOREM.md) · [Bounded period replay](research/elliptic-quotients/rigorous-search/README.md) |
+| Start with | What the program can certify | Solver and proof |
+| --- | --- | --- |
+| **One hyperelliptic equation** | Every rational degree-two quotient to a positive-genus curve, including quotients with arbitrary infinity fibres. For odd-degree models the coefficient solver also recovers unknown hyperelliptic targets in higher degrees, with a degree cap for elliptic targets. | [Coefficient-only discovery](research/coefficient-quotients/README.md) · [General fibres](research/cyclic-cover-reconstruction/arbitrary-fibres.md) |
+| **One cyclic-cover equation** | All maps in the stated equivariant class, allowing mixed branching on both curves, arbitrary infinity fibres and smaller target exponents. The derivative recurrence reconstructs map coefficients in that search. | [Cyclic reconstruction](research/cyclic-cover-reconstruction/README.md) · [Arbitrary fibres and completeness](research/cyclic-cover-reconstruction/arbitrary-fibres.md) |
+| **Two smooth hyperelliptic equations** | Every nonconstant rational map to the supplied target when it has genus at least two. The target genus gives a finite degree bound. An elliptic-target theorem covers maps with a singleton infinity fibre. | [Finite map reconstruction](research/bounded-correspondences/README.md) |
+| **An elliptically split genus-two Jacobian** | Complete geometric degree spectra for specified CM and non-CM gluing families. For non-CM cyclic cubics of genus two, the spectrum also gives every multiplicity and there is an exact test for rational descent. | [CM spectra](research/elliptic-quotients/cm-spectra/README.md) · [Non-CM gluings](research/elliptic-quotients/isotypic-gluing/README.md) · [Cyclic cubic law](research/elliptic-quotients/bielliptic-reconstruction/cubic-genus-two.md) |
+| **A split genus-two reduction with geometrically distinct elliptic factors** | Torsion certificates determine the full optimal degree over the prime field, including its residue-characteristic part. A separate exact replay determines the characteristic-zero minima for all 69 Richelot neighbours in the study. | [Degree certificates and family sweep](research/torsion-denominators/README.md) |
+| **A proposed complete list of elliptic quotients** | Exact Néron–Severi lattices for twelve split examples, a separate nine-model bounded period search, and a quaternionic case certified to have no elliptic quotient in any degree. | [Certificate framework](research/elliptic-quotients/RECONSTRUCTION-THEOREM.md) · [Certified periods and lattice enumeration](research/elliptic-quotients/rigorous-search/README.md) |
 
-The programs use complementary checks. An exact substitution proves that a proposed map exists. Exhaustive enumeration or an integral lattice certificate can prove that every allowed map has been accounted for. The period replay uses certified algebraic maps or correspondences and rank bounds. Each solver documents the hypotheses that let it give a complete answer. [Research index and comparisons](research/README.md) · [Research status table](research/backlog-2026-11-23.md#current-research-avenues)
+### How a candidate becomes a proof
 
-## Run the mathematics
+Arithmetic modulo a prime can give a finite list of candidates. More precision can eliminate candidates, while an explicit formula checked by substitution proves existence. On the quartic **C⋆**, the field with 25 elements bounds the number of geometric degree-three classes by one, and an exact formula attains the bound. For the perturbed Fermat quartic shown beside it, all 16 candidates disappear at the next precision. [Counts and equations](docs/figures/origins.md#when-the-bounds-meet)
 
-From the repository root with Python 3.11 or newer:
+<picture>
+  <source media="(max-width: 640px) and (prefers-reduced-motion: reduce)" srcset="docs/figures/still/proof-bounds-mobile.svg" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="docs/figures/still/proof-bounds.svg" />
+  <source media="(max-width: 640px)" srcset="docs/figures/proof-bounds-mobile.svg" />
+  <img src="docs/figures/proof-bounds.svg" alt="The lower and upper bounds for C-star meet at one exact geometric quotient class. For the perturbed Fermat quartic the bounds meet at zero after passing from modulus 13 to 169." />
+</picture>
 
-~~~sh
+## What the quotient counts reveal
+
+The **elliptic quotient spectrum** counts optimal elliptic maps degree by degree. An optimal map does not factor through a smaller elliptic map followed by an isogeny. Maps related by an isomorphism of their targets count as one class. A **geometric** count allows the coefficients of the maps to lie in an algebraic closure.
+
+| Data that agree | What the exact calculations show |
+| --- | --- |
+| **Rational polarized isogeny data** | Two genus-two Jacobians built from the same elliptic square have the same rational polarized Tate data over a common field and the same Frobenius polynomials at good places there. Changing the two-torsion gluing gives **0 versus 8** classes in degree three and a **3:4** ratio of leading counting constants. The finite-kernel formula explains this change for polarized varieties isogenous to CM elliptic powers, including nontrivial ideal class groups. [Counting theorem and replay](research/elliptic-quotients/cm-spectra/README.md) |
+| **Every quotient count in degrees prime to three** | A level-three opposite-secant construction gives **31 certified pairs** from the class-number-one census, each with exact equations and identified integral lattices. The discriminant −19 pair first differs at degree **3**, a −43 pair at **6**, a −67 pair at **9**, and a −163 pair at **21**. An infinite family has arbitrarily late first differences, even in a fixed CM field as the conductor varies. [Equations and certificates](research/elliptic-quotients/twin-curves/README.md) · [Unbounded first differences](research/elliptic-quotients/opposite-secant-spectra/README.md#an-infinite-family-with-an-unbounded-first-difference) |
+| **Every quotient count in every degree** | The smallest pair in the full-spectrum census has inequivalent refined Humbert forms of Gram determinant **1,440**. Both genus-two curves have explicit sextics over degree-eight fields. Their degree-16 models carry two exact degree-three covers each, and the lattice certificate checks all 16 embeddings. The broader infinite family has uniform determinantal equations. [Equations, descent and certificates](research/elliptic-quotients/full-spectrum-curves/README.md) · [Uniform family construction](research/elliptic-quotients/full-spectrum-curves/family-equations.md) |
+
+[![Two quotient spectra from certified lattices. The discriminant minus 19 curves first differ in degree three, with zero versus four classes. The determinant 1440 curves have overlapping counts at every plotted degree, and their spectra agree in all degrees.](docs/visuals/quotient-spectrum-comparison.svg)](docs/visuals/README.md#quotient-spectrum-comparison)
+
+The exact opposite-secant sweep through child Gram determinant **200,000** found **280 full-spectrum equalities among 289,274 eligible lattice pairs**. Neighbour isometries certify 159. Explicit sublattice isometries now give geometric proofs for **all 108 local square-class exclusions**, covering 90 cases at two and 18 at five. The other 13 use exact Hecke decompositions with eight certified twisted central zeros. [Census and bounds](research/elliptic-quotients/opposite-secant-spectra/delay/README.md#extension-through-child-determinant-200000) · [Geometric proofs](research/elliptic-quotients/opposite-secant-spectra/delay/local-geometry.md) · [Hecke certificates](research/elliptic-quotients/opposite-secant-spectra/delay/residual-packets.md)
+
+[![The discriminant minus 19 construction links two elliptic quotients, labelled two-torsion gluing, and an exact lattice certificate for each quartic-field model.](docs/visuals/D19-quartic-descent.webp)](docs/visuals/README.md)
+
+The discriminant −19 exhibit follows the construction from the lattice to the branch points and back from the equation to the lattice certificate. [Download the autoplay exhibits](docs/visuals/README.md)
+
+### Open questions
+
+The program still seeks a uniform criterion for full-spectrum equality beyond the census, expanded sextics for the positive parameters in the determinantal family, and a general reconstruction theorem recovering characteristic-zero maps from local information with suitable extra data. Published benchmarks compare specific solver tasks and inputs. A broad performance comparison and literature-priority questions remain open. [Research register](research/backlog-2026-11-23.md#current-research-avenues) · [Solver comparisons](research/solver-comparison/README.md) · [Obstruction from all-prime point counts](research/local-pattern-obstruction/README.md)
+
+## Run the verifiers
+
+From the repository root with Python 3.11 or newer. On Windows, use `py` in place of `python` if that is how you start Python.
+
+```sh
 python -m pip install sympy
 python -B research/elliptic-quotients/cm-spectra/verify.py
-~~~
-
-This checks the four degree-two formulas on the two genus-two models. It also compares the Gaussian divisor formula, direct enumeration and both exact lattice spectra through degree 150. The three routes give **11,574 classes at 94 distinct degrees**.
-
-~~~sh
 python -B research/replay.py --quotients-only
-~~~
+```
 
-This runs the coefficient-only replays, including the arbitrary-fibre cyclic search and the separate genus-two cyclic cubic spectrum. The [certified period replay](research/elliptic-quotients/rigorous-search/README.md) uses `python-flint` and `cypari2` in addition to SymPy. For Windows, use `py` in place of `python` if that is how you start Python.
+The first run checks four exact degree-two maps on the two genus-two models. It also compares a Gaussian divisor formula, direct enumeration and exact lattice counts, agreeing on **11,574 classes at 94 distinct degrees** through degree 150. The second run checks seven groups, including arbitrary-fibre cyclic reconstruction and the non-CM genus-two cubic spectrum. [CM verifier and data](research/elliptic-quotients/cm-spectra/README.md) · [Period and number-field verifiers with additional dependencies](research/elliptic-quotients/rigorous-search/README.md)
 
-## Explore the ideas
+## How the project began
 
-![Three source points above one point on an elliptic curve.](docs/figures/still/klein-fibre.svg)
+Two equations each have **five** solutions on a clock with five positions. On a clock with 25 positions the parabola has **25** solutions and the cusp has **45**. All 20 extra solutions come from the refinements of the single point at the cusp's tip. [Check a dot by hand](docs/figures/origins.md#two-clocks-two-curves)
 
-Start with the [illustrated origins](docs/figures/origins.md). Two curves have the same number of solutions on a clock with five positions. On a clock with 25 positions their counts separate, and one place in the equation explains the difference. The move from local observations to a global explanation is the thread through this project.
+<picture>
+  <source media="(max-width: 640px) and (prefers-reduced-motion: reduce)" srcset="docs/figures/still/cusp-lifts-mobile.svg" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="docs/figures/still/cusp-lifts.svg" />
+  <source media="(max-width: 640px)" srcset="docs/figures/cusp-lifts-mobile.svg" />
+  <img src="docs/figures/cusp-lifts.svg" alt="Both curves have five solution pairs modulo five. Modulo 25 the parabola has five refinements per pair. The cusp has 25 above (0, 0) and five above each other pair." />
+</picture>
 
-| Try this | What it teaches |
-|---|---|
-| [Find one fibre on a curve](examples/fibres/README.md) | Follow several source points to one target point. |
-| [Design a lantern puzzle](examples/lanterns/README.md) | Count every valid pattern and jump straight to one by number. |
-| [Test a solver against a deceptive pair](examples/solver-tests/README.md) | See what can go wrong when two cases agree on every check tried so far. |
-| [Audit a score](examples/scores/README.md) | Remove a shared ingredient and see which comparisons survive. |
+A later experiment plotted an elliptic-curve score against a contribution already included in that score. Removing the contribution exposed how little of the apparent relation was independent evidence. The original claim was withdrawn and the remaining variation became a separate question. [The 201-curve audit and data](docs/figures/origins.md#checking-the-apparent-law)
 
-[Open the offline workbook](examples/workbook.html) · [Download the repository ZIP](https://github.com/towre676-cloud/crest-root-calculus/archive/refs/heads/main.zip)
+<picture>
+  <source media="(max-width: 640px) and (prefers-reduced-motion: reduce)" srcset="docs/figures/still/lowest-zero-audit-mobile.svg" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="docs/figures/still/lowest-zero-audit.svg" />
+  <source media="(max-width: 640px)" srcset="docs/figures/lowest-zero-audit-mobile.svg" />
+  <img src="docs/figures/lowest-zero-audit.svg" alt="Equal-scale plots of 201 twists compare the whole score and the score after removing the lowest pair of zeros. The highlighted value falls from 10.73 to 0.94." />
+</picture>
 
-## Applications
+[All nine mathematical illustrations](docs/figures/README.md) · [Offline workbook](examples/workbook.html) · [Beginner introduction (PDF)](downloads/crest-root-introduction.pdf)
 
-The same approach is useful whenever a measurement, simulation or sample leaves a gap between the evidence and the decision.
+## Examples and applications
 
-- [Linkwright](linkwright/README.md) uses a configuration curve and continuous motion checks for linkages.
-- [Spectral mixtures and solar export](research/configuration-and-certificates/README.md) show how model assumptions change an inference about a measured powder or a limit on a feeder.
-- [Tillamook crossing](research/deployable-crossing/v3/README.md) connects a mapped site to one structural and deployment model for a proposed pedestrian crossing. It is a feasibility study.
-- [The offline workshop](applications/README.md) includes seven interactive examples, from measurement and battery screening to finding a degree-three map. [Download the workshop](https://raw.githubusercontent.com/towre676-cloud/crest-root-calculus/main/downloads/crest-root-applications.zip)
+| Explore | What you can try |
+| --- | --- |
+| [Four worked examples](examples/workbook.html) | Follow a fibre, count and index an 80-slot lantern puzzle, test a deceptive pair, or audit a score that shares terms with its predictor. |
+| [Linkwright](linkwright/README.md) | Check four-bar linkage closure and continuous motion using its configuration curve. |
+| [Spectral mixtures and solar export](research/configuration-and-certificates/README.md) | See how model assumptions affect a mineral-mixture inference or a feeder export limit. |
+| [Tillamook crossing](research/deployable-crossing/v3/README.md) | Explore a feasibility study linking a mapped site to a structural and deployment model for a proposed pedestrian crossing. |
+| [Offline application workshop](applications/README.md) | Run seven interactive examples, including measurement, battery screening and degree-three map discovery. [Download ZIP](downloads/crest-root-applications.zip) |
 
-## Papers and reproducibility
+## Papers and source
 
 - [Elliptic Quotient Spectra under Complex Multiplication (PDF)](downloads/Crest-Root-Elliptic-Quotient-Spectra.pdf) · [TeX source](research/elliptic-quotients/cm-spectra/paper.tex)
-- [Cyclic Quotient Reconstruction (PDF)](downloads/Crest-Root-Cyclic-Quotient-Reconstruction.pdf) · [Cyclic benchmarks and proof](research/cyclic-cover-reconstruction/README.md)
+- [Cyclic Quotient Reconstruction (PDF)](downloads/Crest-Root-Cyclic-Quotient-Reconstruction.pdf) · [Proof and benchmarks](research/cyclic-cover-reconstruction/README.md)
 - [What Is Crest–Root Calculus? (PDF)](downloads/crest-root-introduction.pdf) · [Illustrated monograph](https://towre676-cloud.github.io/crest-root-calculus/)
-- [Research index](research/README.md) · [Open questions](research/backlog-2026-11-23.md)
+- [Research index](research/README.md) · [Research register](research/backlog-2026-11-23.md) · [Repository ZIP](https://github.com/towre676-cloud/crest-root-calculus/archive/refs/heads/main.zip)
