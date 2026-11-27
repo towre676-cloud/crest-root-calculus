@@ -57,7 +57,11 @@ whose optimal quotient counts agree in every degree prime to three.
 Their first differences occur at degrees \(3,6,9,12,21\).
 Thirteen pairs have quartic models, including the pair first distinguished
 at degree \(21\). Exact two-torsion gluings and Richelot isogenies
-identify their refined Humbert forms from their equations.
+identify their refined Humbert forms from their equations. We also give
+two nonisomorphic genus-two curves over the ring class field of
+discriminant \(-360\) with identical elliptic quotient counts in all
+degrees. Both have explicit degree-three covers and certified inequivalent
+refined Humbert forms of determinant \(1440\).
 \end{abstract}
 \maketitle
 
@@ -136,6 +140,10 @@ construction of curves from prescribed refined Humbert forms
 realized by an explicit family of two-torsion gluings. The opposite-secant
 incidence modulo three gives equality in every degree prime to three,
 and Theorem~\ref{thm:delay} prescribes the first difference.
+Section~\ref{sec:full-spectrum} proves that the counts can also agree
+in every degree for inequivalent forms. We give explicit algebraic
+models and exact quotient maps for the determinant-\(1440\) pair, then
+describe the infinite families and the scope of the determinant census.
 
 \section{Directions and the counting theorem}
 
@@ -1025,6 +1033,201 @@ the first distinguishing degrees \(3,6,9,12,21\) occur
 \(3,6,6,3,1\) times, respectively.
 
 
+\section{Equality in every degree and explicit algebraic models}
+\label{sec:full-spectrum}
+
+\begin{theorem}\label{thm:full-spectrum-pair}
+There are smooth genus-two curves \(C_A,C_B\) over the ring class field
+of discriminant \(-360\) with the same geometric elliptic quotient
+counts in every degree. The curves are geometrically nonisomorphic.
+Their refined Humbert forms have Gram determinant \(1440\), and each
+curve has exactly two optimal classes in degree three and zero in
+degree two. Both curves and their degree-three quotient maps admit
+explicit equations.
+\end{theorem}
+
+\begin{proof}
+Use the parent form and the two index-three sublattices
+\[
+ G=\begin{pmatrix}5&1&2\\1&5&2\\2&2&8\end{pmatrix},\qquad
+ L_A=\{x+2y+2z\equiv0\pmod3\},\qquad
+ L_B=\{x+z\equiv0\pmod3\}.
+\]
+The corresponding secants have endpoints \((0,1,2),(1,1,0)\) and
+\((1,0,2),(1,1,2)\), respectively. For an endpoint \(v\), choose a
+lift \(w\) with \(Q_G(w)\equiv0\pmod9\). Put
+\(H_v=\{u\in G\mid B_G(u,w)\equiv0\pmod3\}\) and
+\(M_v=H_v+\Z(w/3)\). These are the tangent sublattice and the
+corresponding 3-neighbour. In the listed endpoint order, integer
+bases of \(3M_v\) are the columns of
+\[
+ W_1=\begin{pmatrix}9&0&0\\0&3&2\\0&0&1\end{pmatrix},\quad
+ W_2=\begin{pmatrix}3&0&1\\0&3&1\\0&0&3\end{pmatrix},\quad
+ W_3=\begin{pmatrix}3&0&2\\0&9&0\\0&0&1\end{pmatrix},\quad
+ W_4=\begin{pmatrix}9&6&2\\0&3&2\\0&0&1\end{pmatrix}.
+\]
+The maps \((x,y,z)\mapsto(-y,-x,-z)\) and
+\[
+ R_0=\frac19\begin{pmatrix}2&-7&-8\\-7&2&-8\\6&6&3\end{pmatrix}
+\]
+preserve \(G\) and take the third neighbour to the first and the
+fourth to the second, respectively. This follows by checking the
+norm and the induced integral change of basis. For example,
+\(W_2^{-1}R_0 W_4\) has rows \((0,-1,-1),(-3,-2,-1),(2,2,1)\)
+and determinant of absolute value one.
+
+For a ternary lattice \(L\), write \(s_L(m)\) for the number of
+vectors of norm \(m^2\). Let \(A(m)\) be the signed difference of the
+sum of the two neighbour counts on each secant, and let \(B_0(m)\)
+be the same signed sum on the tangent sublattices \(H_v\). Put
+\(D(m)=s_{L_A}(m)-s_{L_B}(m)\). If an integral vector of norm
+\(9m^2\) reduces to a nonzero endpoint, division by three takes it
+bijectively to a vector of norm \(m^2\) on the corresponding
+\(M_v\setminus H_v\). The common zero-residue contributions cancel,
+so \(D(3m)=A(m)-B_0(m)\). The only isotropic residues on a tangent
+plane lie on its endpoint line. The norm on the tangent plane
+modulo that line has class \(-\det G=2\) over \(\mathbb F_3\).
+Thus \(B_0(m)=0\) for \(3\nmid m\), and counting endpoint residues
+again gives \(B_0(3m)=D(3m)\). The opposite-secant identity gives
+\(D(m)=0\) for \(3\nmid m\), hence \(B_0=D\). The isometries give
+\(A(m)=0\) for all \(m\), hence \(D(m)=0\) for all \(m\).
+Divisor inversion yields equality of primitive square counts.
+The two reduced Gram matrices and their quotient counts are
+\[
+ \begin{gathered}
+ Q_A=\begin{pmatrix}9&2&2\\2&12&-4\\2&-4&16\end{pmatrix},\qquad
+ Q_B=\begin{pmatrix}5&-1&1\\-1&9&-1\\1&-1&33\end{pmatrix},\\
+ \begin{array}{c|cc}
+       &m(2)&m(3)\\ \hline
+  Q_A&0&2\\
+  Q_B&0&2
+ \end{array}
+ \end{gathered}
+\]
+Their respective minimum norms are \(9\) and \(5\), so they are
+inequivalent. It remains to identify them with the forms of the
+explicit curves.
+
+Let \(\mathcal H\) be the ring class field of
+\(\Z[3\sqrt{-10}]\), whose order has discriminant \(-360\) and class
+number eight. The exact coefficient tables specify \(\mathcal H\)
+by a monic polynomial of degree sixteen and give coefficients in its
+power basis. The tables and the verifier accompany this article in
+the \href{https://github.com/towre676-cloud/crest-root-calculus/tree/main/research/elliptic-quotients/full-spectrum-curves}{full-spectrum curves directory}.
+For each of the two rows, set
+\[
+ \begin{gathered}
+ C\colon y^2=QR,\qquad Q=x^3+x^2+q_1x+q_0,\qquad
+ P_2=x^2+\tfrac23 x+p_0,\\
+ f_1=v+\kappa x/Q,\qquad f_2=P_2/R,\\
+ g_1(X)=X^3+3j_1(1728-j_1)X+2j_1(1728-j_1)^2,\\
+ g_2(X)=\operatorname{Res}_x(Q,XR-P_2)/\operatorname{Res}_x(Q,R).
+ \end{gathered}
+\]
+The verifier checks squarefreeness and degree six for \(QR\),
+degree three for \(f_i\), and the exact polynomial identities
+\[
+ Q^3g_1(f_1)=c_1RS_1^2,\qquad R^3g_2(f_2)=c_2QS_2^2 .
+\]
+Writing \(D_1=Q\) and \(D_2=R\), the maps to the elliptic twists
+\(Y_i^2=c_i g_i(X_i)\) are \((X_i,Y_i)=(f_i,c_iS_i y/D_i^2)\).
+They have degree three and are defined over \(\mathcal H\). The two
+elliptic \(j\)-invariants are distinct exact roots of the class
+polynomial of discriminant \(-360\). In particular both targets
+have CM by exactly the stated order.
+
+Let \(\chi\) be the sum of the pullbacks from the two elliptic
+quotients to the Jacobian and let \(\psi\) be its polarization
+adjoint. The pullbacks embed their elliptic targets as optimal
+subvarieties since a factorization of either degree-three map
+would require a degree-one map from genus two to genus one. The
+distinct targets give distinct subvarieties, so \(\chi\) is an
+isogeny. The diagonal entries of \(\psi\chi\) are multiplication
+by three, and its off-diagonal entries are \(\beta,\beta^\vee\).
+Multiplication by the adjugate gives \([9-\deg\beta]\). The
+pullback polarization is positive definite, so
+\(1\le9-\deg\beta\le9\). Consequently \(\ker\chi\) is killed by
+\(2520=\operatorname{lcm}(1,\ldots,9)\). The product scalar
+\(3\sqrt{-10}\) therefore induces the integral homology matrix
+\(7560\sqrt{10}\,J\) on the Jacobian, where \(J\) is the complex
+structure. This follows by composing the product scalar with
+\(\chi\) and an isogeny going back whose composite with \(\chi\)
+is multiplication by \(2520\).
+
+At each of the sixteen embeddings of \(\mathcal H\), certified
+period enclosures isolate a unique integer in every entry of this
+matrix. It is already proved integral, so this check identifies
+the exact matrix. Its integral centralizer is the endomorphism
+ring since commuting with it is equivalent to commuting with
+\(J\). The symmetric sublattice for the Rosati involution and
+the polarization yield the refined Humbert form, as in
+Sections~\ref{sec:minus7} and~\ref{sec:twins}. Exact isometries
+match the two outputs with \(Q_A,Q_B\) respectively at all sixteen
+embeddings. Kani's correspondence \cite{KaniI,KaniII} now applies
+the primitive square identity to the geometric quotient counts.
+\end{proof}
+
+The field of moduli of each model has degree eight. Evaluating the
+three absolute Igusa invariants in the degree-sixteen field gives
+an invariant \(J_2^5/J_{10}\) of degree eight. Exact linear algebra
+places the other two invariants in the field it generates. Both
+fields are isomorphic to the field defined by
+\[x^8-5x^6+12x^4-5x^2+1=0.\]
+This calculation uses the smooth chart \(J_2\ne0\). Descent of the
+sextics to the respective fields of moduli remains open.
+
+\subsection{Infinite families and the finite census}
+
+The same two original neighbour isometries preserve \((x-y)^2\).
+Thus adding \(36t(x-y)^2\) to \(G\), with the secants fixed,
+produces an infinite family of equal full spectra. The companion
+proves realization and inequivalence for \(t\ge0\),
+\(t\not\equiv3\pmod5\). Its child determinant is
+\(1440(1+18t)\). The exact algebraic equations in
+Theorem~\ref{thm:full-spectrum-pair} are for \(t=0\).
+
+Three further infinite families have nonzero signed ordinary
+neighbour theta sums. Let \(P_p\) retain the coefficients at unit
+squares over \(\Q_p\), and let \(U(p^2)\) send the coefficient at
+\(p^2n\) to index \(n\). For the signed sum \(h\), identities
+\(P_p U(p^2)^j h=0\) for \(0\le j<r\), together with
+\(U(p^2)^r h=0\), imply the vanishing of every local-square
+coefficient. They are certified by expressing the residue conditions
+as signed sums of sublattice theta series and checking integral
+isometries inside those lists. For example, in the split rank-two
+case at \(p=5\), the norm reduces to a unit times \(xy\) modulo
+\(p^2\). The condition \(p^2\mid xy\) is the union of three
+sublattices, distinguished by \(p^2\mid x\), \(p\mid x,y\), or
+\(p^2\mid y\). The full conditions and matching matrices are in
+the \href{https://github.com/towre676-cloud/crest-root-calculus/blob/main/research/elliptic-quotients/opposite-secant-spectra/delay/local-geometry.md}{local cancellation certificate}.
+
+\begin{center}
+\begin{tabular}{ccr}
+\toprule
+Prime & Valuation layers \(r\) & Child Gram determinant \\
+\midrule
+2 & 1 & \(4608(2+9t)\) \\
+2 & 2 & \(18432(5+36t)\) \\
+5 & 1 & \(36000(1+45t)\) \\
+\bottomrule
+\end{tabular}
+\end{center}
+Each family is realized by genus-two Jacobians for all integers
+\(t\ge0\). The ordinary neighbour coefficient at norm eight for
+the second family is \(-4\), so its first \(U(4)\) iterate is
+nonzero. The second layer is necessary for this certificate.
+
+The \href{https://github.com/towre676-cloud/crest-root-calculus/blob/main/research/elliptic-quotients/opposite-secant-spectra/delay/README.md}{opposite-secant census}
+through child Gram determinant \(200{,}000\) has \(280\) equal full
+spectra among \(289{,}274\) realized pairs. Of the equalities,
+\(159\) follow from neighbour isometries and \(108\) from local
+square exclusion of the entire signed theta sum. For the other
+\(13\), exact Hecke decomposition and twisted modular symbols
+identify eight Galois orbits of weight-two newforms with central
+zeros. Four of these thirteen sums also have locally excluded
+components. This is a finite classification. A uniform criterion
+that predicts all full-spectrum collisions remains open.
+
 \section{Exact verification and scope}
 
 The companion replay checks the two maps in \eqref{eq:models}
@@ -1070,13 +1273,15 @@ bielliptic pair at discriminant \(-43\). Run
 \texttt{python -B mestre\_link.py} to identify the six other quartic
 equations. Run \texttt{python -B verify\_d67.py} for the seven pairs at discriminant \(-67\). Run \texttt{python -B verify\_d163\_paths.py} and
 \texttt{python -B descend\_d163.py} for the nineteen pairs and the
-quartic descent at discriminant \(-163\). The
+quartic descent at discriminant \(-163\). The determinant-\(1440\)
+models and their geometric lattices are certified by
+\texttt{python -B exact\_models.py --verify} in the full-spectrum
+curves directory. The
 \href{https://github.com/towre676-cloud/crest-root-calculus/tree/main/docs/visuals}{visual companion}
 shows the lattice-to-curve computation and the certificate in reverse.
 
-The code, the exact lattice data, and the \TeX{} source are available
-in the \href{https://github.com/towre676-cloud/crest-root-calculus}
-{Crest--Root Calculus repository}.
+The \href{https://github.com/towre676-cloud/crest-root-calculus}{companion repository}
+contains the code, exact lattice data, and \TeX{} source.
 
 \begin{thebibliography}{99}
 \raggedright

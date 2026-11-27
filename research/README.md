@@ -22,7 +22,7 @@ In non-CM genus two, the cyclic cubic source class has a separate exact spectrum
 
 ## Elliptic degrees with repeated factors
 
-For CM elliptic powers, ideal classes and the finite kernel give an exact degree law and the leading counting constant. Two genus-two Jacobians with the same rational polarized data have different constants, in the ratio 3:4. For the Gaussian two-torsion gluing a divisor formula gives every multiplicity. [Paper, theorems and exact replay](elliptic-quotients/cm-spectra/README.md)
+For CM elliptic powers, ideal classes and the finite kernel give an exact degree law and the leading counting constant. Two genus-two Jacobians with the same rational polarized data have different constants, in the ratio 3:4. For the Gaussian two-torsion gluing a divisor formula gives every multiplicity. [Paper, theorems and exact replay](elliptic-quotients/cm-spectra/README.md) The determinant-1,440 example has full quotient-spectrum equality with inequivalent lattices, explicit equations, and two exact degree-three covers on each member. [Full-spectrum models](elliptic-quotients/full-spectrum-curves/README.md)
 
 For a polarized variety isogenous to a non-CM elliptic self-product, the finite isogeny kernel corrects the polarization degree in each primitive lattice direction. Two explicit genus-two families share the same rational polarized isogeny data over a common field and have different complete spectra and counting constants. One contains the repeated-factor curve with branch pairs at ±1, ±2 and ±4. [Proof and exact replay](elliptic-quotients/isotypic-gluing/README.md)
 
