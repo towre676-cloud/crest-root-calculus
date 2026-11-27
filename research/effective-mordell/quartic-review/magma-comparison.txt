@@ -1,0 +1,29 @@
+University of Sydney Magma Calculator, 27 November 2026
+https://magma.maths.usyd.edu.au/calc/
+Magma V2.29-10. Seed 1530513429. Default RationalPointsGenus2 settings.
+
+Submitted calculation
+
+P<x> := PolynomialRing(Rationals());
+f := 6*x^5+28*x^3+54*x;
+for d in [26,1] do
+ start := Cputime();
+ pts, complete, h := RationalPointsGenus2(HyperellipticCurve(d*f));
+ print d, pts, complete;
+ if not complete then print "Search height",h; end if;
+ print "CPU seconds",Cputime(start);
+end for;
+
+Observed output
+
+26 {@ (1 : 0 : 0), (0 : 0 : 1) @}
+false
+Search height 20000
+CPU seconds 6.480
+1 { (0 : 0 : 1), (1 : 0 : 0) }
+true
+CPU seconds 4.480
+
+The service reported total time 10.990 seconds and total memory usage
+129.59 MB. The comparison is on completeness of the returned point sets.
+These remote CPU times do not give a matched-hardware speed comparison.

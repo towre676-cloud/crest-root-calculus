@@ -1,0 +1,17 @@
+mb:=map<PowerStructure(RngOrd)->Integers()|o:->MinkowskiBound(o)>;
+fb:=map<PowerStructure(RngOrd)->Integers()|o:->Maximum(2,BachBound(o) div 10)>;
+SetClassGroupBoundMaps(fb,mb);
+Q:=Rationals(); K<s>:=QuadraticField(-3);
+c:=-8+4*s;
+E:=EllipticCurve([K|0,4*c*s,0,3*(c*s)^2,0]);
+l,h:=RankBounds(E);
+ok,G,mp:=PseudoMordellWeilGroup(E);
+assert l eq 1 and h eq 1 and ok;
+u:=map<E->ProjectiveSpace(Q,1)|[E.1,c*E.3]>;
+V,R:=Chabauty(mp,u : IndexBound:=2);
+assert IsPowerOf(R,2);
+u:=Extend(u);
+L:=Codomain(u);
+values:={u(mp(P)):P in V};
+assert values eq {L![1,0],L![0,1],L![1,1],L![-9,1]};
+print l,h,ok,R,values;

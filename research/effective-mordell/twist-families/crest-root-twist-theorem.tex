@@ -1,0 +1,254 @@
+\documentclass[12pt]{article}
+\usepackage[letterpaper,left=.92in,right=.92in,top=.76in,bottom=.82in]{geometry}
+\usepackage{lmodern,amsmath,amssymb,booktabs,array,xcolor,hyperref,fancyhdr}
+\definecolor{ink}{HTML}{172E3A}\definecolor{green}{HTML}{17605E}
+\hypersetup{colorlinks=true,urlcolor=green,linkcolor=green,pdftitle={Rational points on quartic-cover twists of a genus-two curve}}
+\pagestyle{fancy}\fancyhf{}\lhead{\small\textsf{Crest--Root Calculus}}\rhead{\small\textsf{Arithmetic geometry}}
+\cfoot{\small\textsf{\thepage}}\setlength{\headheight}{14pt}
+\setlength{\parindent}{0pt}\setlength{\parskip}{5pt plus 1pt}
+\newcommand{\Q}{\mathbb Q}\newcommand{\Z}{\mathbb Z}
+\newcommand{\heading}[1]{{\Large\bfseries\color{ink}#1}\par\vspace{3pt}}
+\newcommand{\sub}[1]{\par\smallskip{\bfseries\color{green}#1}\par}
+\begin{document}
+{\small\sffamily\color{green} RESEARCH NOTE \quad $\cdot$ \quad 27 NOVEMBER 2026}\par
+{\LARGE\bfseries\color{ink} Rational points on quartic-cover twists\\of a genus-two curve}\par
+\medskip
+Let $C_d$ denote the smooth projective model of
+\[
+ y^2=dF(x),\qquad F(x)=6x^5+28x^3+54x,\qquad d\in\Z_{>0}.
+\]
+Stoll gives $C_1$ as a genus-two curve of minimal rational elliptic cover degree four [1]. Explicit quotient maps recovered by Crest--Root give a uniform theorem and complete finite panels.
+
+\textbf{Theorem 1.} Let $u$ be a positive squarefree integer all of whose prime factors are $5\bmod 12$. Include $u=1$. Take $n=u$ or $n=qu$ for a single prime $q\equiv7\bmod24$. For $d=n$ and $d=3n$,
+\[
+ C_d(\Q)=\{(0,0),\infty\}.
+\]
+In particular this treats every prime parameter $5,7,$ or $17\bmod24$, all products of distinct primes $5$ or $17\bmod24$, and those products times one prime $7\bmod24$.
+
+\textbf{Theorem 2.} Of the 61 positive squarefree parameters $d\le100$, exactly 59 have $C_d(\Q)=\{(0,0),\infty\}$. The remaining point sets are
+\[
+ C_{22}(\Q)=\{(0,0),(1,\pm44),\infty\},\qquad
+ C_{66}(\Q)=\{(0,0),(3,\pm396),\infty\}.
+\]
+These are indexed by parameters. The identity $x^6 F(3/x)=27F(x)$ gives an isomorphism $C_d\longrightarrow C_{3d}$ via $(x,y)\mapsto(3/x,9y/x^3)$, extended to the smooth curves. It identifies both exceptional point sets.
+
+An independently computed extension through $d=200$ adds 61 parameters. Its three exceptional abscissas are $50$ at $d=107$, $1/4$ at $d=118$, and $2$ at $d=131$. In total, 117 of the 122 parameters have only the two rational Weierstrass points.
+
+\sub{The two elliptic quotients}
+Write $Y=Hy$. The table gives rational maps to $E_{a,d}:Y^2=X^3+ad^2X$.
+\[
+\begin{array}{rlll}
+\toprule
+a & X & H & (dX/Y)/(dx/y)\\ \midrule
+-108 & -32dx/(x^2+1)^2 & 8d(3x^2-1)/(x^2+1)^3 &4\\
+-12 & -32dx^3/(x^2+9)^2 & -8dx(x^2-27)/(x^2+9)^3 & -4x\\
+\bottomrule
+\end{array}
+\]
+Substitution proves the two identities $X^3+ad^2X=dF H^2$. The independent pulled-back differentials give a rational isogeny from the Jacobian to the product of the two targets. Each $X$ has just one finite rational zero, at $x=0$, and no rational affine pole. Hence a target with rational group $\{O,(0,0)\}$ determines $C_d(\Q)$ immediately.
+
+\newpage
+\heading{An infinite congruence family}
+\textit{Proof of Theorem 1.} We select $m\in\{n,3n\}$ and prove that
+$E_-:Y^2=X^3-12m^2X$ has rational group of order two. This is one of the two displayed targets on $C_n$. The isomorphism above deals with $C_{3n}$.
+
+Use the 2-isogenous curve $E_+:Y^2=X^3+3m^2X$. On $Y^2=X^3+bX$, the 2-isogeny descent map takes a nonzero finite abscissa to its squareclass, $O$ to 1, and $(0,0)$ to $b$. A class is represented by a squarefree signed divisor $e$ of $b$, with
+\[
+ Z^2=eU^4+(b/e)V^4,\qquad \gcd(U,V)=1 .
+\]
+The two image sizes have product $2^{r+2}$, where $r$ is the common rational rank [2]. We prove the images are precisely $\{1,3\}$ on $E_+$ and $\{1,-3\}$ on $E_-$.
+
+If an odd prime $\ell\mid n$ also divides $e$, it appears exactly once in each of $e$ and $b/e$. Primitivity and reduction after division by $\ell$ force both $U,V$ to be units at $\ell$ and $-b/\ell^2$ to be a quadratic residue there. On $E_-$ this would require $(3/\ell)=1$. Every permitted $\ell$ is $5$ or $7\bmod12$, for which $(3/\ell)=-1$. On $E_+$ a prime $\ell\mid u$ is excluded by $(-3/\ell)=-1$. Positivity excludes negative $e$ on $E_+$. Thus $E_+$ has only $1,3$ unless $q$ occurs, in which case it suffices to exclude the class $q$.
+
+On $E_-$ divide out the known class $-3$. The three remaining classes to exclude are $-1,2,-2$. For $e=-1$ reduction modulo 3 forces $3\mid U$. The term $12m^2V^4$ then has valuation 1 or 3, strictly below that of $U^4$, an impossibility for a square. For $e=2$ the equation is $Z^2=2(U^4-3m^2V^4)$. Opposite parities give valuation one. With both variables odd the right side is $12\bmod16$.
+
+If $n=u$, choose $m=n$ for $u\equiv5\bmod8$ and $m=3n$ for $u\equiv1\bmod8$. These exhaust the possibilities. Now $m^2\equiv9\bmod16$. For $e=-2$, opposite parities again give valuation one, while odd $U,V$ give $2(-U^4+3m^2V^4)\equiv20\bmod32$, a nonsquare.
+
+If $n=qu$, choose $m=n$ for $u\equiv1\bmod8$ and $m=3n$ otherwise, so $k=m/q\equiv\pm1\bmod8$. On $E_+$ the class $q$ gives $Z^2=q(U^4+3k^2V^4)$. Opposite parities give $7$ or $5\bmod8$, and odd variables give $12\bmod16$. On $E_-$ the class $-2$ requires $Z^2=-2U^4+6m^2V^4$. If $q\nmid U$, this forces $(-2/q)=1$. If $q\mid U$, division by $q^2$ forces $(6/q)=1$. For $q\equiv7\bmod24$ both symbols are $-1$.
+
+Both images therefore have order two. The rank is zero. At the good primes 11 and 19, the reduction of $E_-$ has 12 and 20 points: the character sums cancel under $X\mapsto-X$. Rational torsion has order dividing four. Its only nonzero rational 2-torsion point is $(0,0)$, and a half of that point would require $X^2=-12m^2$ by the duplication formula. Thus $E_-(\Q)=\{O,(0,0)\}$, proving the theorem. \hfill$\square$
+
+\newpage
+\heading{The fixed squarefree panel}
+The direct quotient test proves 46 cases up to 100, including 29 of the 42 parameters from 31 through 100. Both elliptic targets have torsion order two in every case. The parameters for which both ranks are positive are
+\[
+14,\ 22,\ 38,\ 42,\ 43,\ 46,\ 55,\ 61,\ 62,\ 65,\ 66,\ 70,\ 86,\ 94,\ 95.
+\]
+PARI's lower and upper rational rank bounds agree in every row [3]. The two ranks sum to three at $d=43,55,61,65,95$ and to two at the remaining ten parameters on this list.
+
+\sub{Rational squareclasses}
+Any other rational point has $x>0$, since $d>0$ and $F(x)$ has the sign of $x$. Write $x=a t^2$ with $a>0$ squarefree. For $p\nmid 6d$, the constant term $54d$ in $dF(x)/x$ is a unit when $v_p(x)>0$. The leading term $6dx^5$ determines the valuation when $v_p(x)<0$. Thus $a\mid\operatorname{rad}(6d)$. If $t=U/V$ in lowest terms, the following integer must be a square:
+\[
+ ad\left(6a^4U^8+28a^2U^4V^4+54V^8\right).
+\]
+For each prime power in the receipt the finite test uses all pairs $(U,1)$ and $(1,V)$ with $p\mid V$ modulo that power. Scaling by a unit changes the expression by an eighth power. An empty list of square residues excludes the class.
+
+For any remaining $a$, put $A=6da$, $B=28da$, $D=54da$ and $v=y/t$. Then $v^2=Ax^4+Bx^2+D$. The map $(x,v)\mapsto(U_1,V_1)=(Ax^2,Axv)$ lands on
+\[
+ V_1^2=U_1(U_1^2+B U_1+AD).
+\]
+For rank zero we enumerate its entire rational torsion group and test $x^2=U_1/A$, $x/a\in\Q^{\times2}$, and $dF(x)\in\Q^2$. In this panel none of those rank-zero fibres yields a positive $x$. This disposes of twelve of the fifteen parameters. The positive-rank branches that survive are $(d,a)=(22,1),(55,10),(66,3)$. The isomorphism $C_{22}\simeq C_{66}$ reduces these to the first two.
+
+\sub{A quadratic factorization}
+Write $K=\Q(s)$, $s^2=-2$, $c=7+4s$. Then
+\[
+ N_{K/\Q}(3x^2+c)=9x^4+42x^2+81,\qquad
+ N_{K/\Q}(3x^2+c)=\frac{3}{2da}(y/t)^2 .
+\]
+For both remaining branches the norm has squareclass $33$. Clear fourth-power denominators and set $\beta=3a^2 U^4+cV^4$. The two coefficients in the ring $\Z[s]$ give a finite sieve on the squareclass of $\beta$. The next page shows why this sieve is exhaustive.
+
+\newpage
+\heading{The rank-two and rank-three exceptions to the direct test}
+The ring $\Z[s]$ is norm-Euclidean: rounding the two rational coordinates gives a norm error at most $1/4+2/4<1$. Its units are $\pm1$. Away from $2,3$ and primes dividing $a$, a common prime divisor of $\beta,\bar\beta$ divides $8sV^4$, and divisibility of $V$ would contradict primitivity. Thus outside these primes and 11 every exponent in $\beta$ is even. When $a=10$, the extra prime 5 is inert. If $5\nmid V$ then $\beta$ is a unit there, since $N(c)=81$. If $5\mid V$, the two summands have valuations 2 and at least 4. The exponent at 5 is even in either case. The exponent at the ramified prime over 2 is even by the norm. Finally $3=(1+s)(1-s)$ and $11=(3+s)(3-s)$. Odd norm valuation at each forces precisely one odd exponent in each pair. Therefore $\delta\beta$ is a square for one of the eight choices
+\[
+ \delta=\pm(1\pm s)(3\pm s).
+\]
+
+The receipt tests $\delta\beta$ at both embeddings modulo 27 and 1331 and in $\Z[s]/16$ at the ramified prime. The normalized pairs are exhaustive because common unit scaling changes the expression by a fourth power. For $d=55$, six classes fail modulo 27 and the last two fail modulo 16. Hence $C_{55}$ has just $(0,0)$ and infinity, although its Jacobian has rank three. For $d=22$, only $\delta=-5-2s$ survives.
+
+For $d=22$ set $x=t^2$ and take $h\in K$ with $h^2=\delta(3x^2+c)$. Then
+\[
+ X=3\delta x,\qquad Y=3\delta th,\qquad
+ (X,Y)\in E(K),\quad E:\ Y^2=X^3+3\delta^2 c X .
+\]
+The projection $\pi(X,Y)=X/(3\delta)$ must be rational. The included Magma calculation gives rank bounds $[1,1]$ and a certified odd-index subgroup $\Z/2\oplus\Z$. Elliptic Chabauty gives index obstruction $R=32$ and projected values $\infty,1,0,1$. The odd index is coprime to $R$, which proves that the set of rational projection values on $E(K)$ is exactly $\{\infty,0,1\}$ by the documented index criterion [4]. This proof uses the Minkowski class-group bound. Substitution at $x=1$ gives $y=\pm44$. Transport gives $x=3$, $y=\pm396$ on $C_{66}$. This proves Theorem 2. \hfill$\square$
+
+\sub{What the software comparison measures}
+On $C_{22}$ and $C_{55}$, the default \texttt{RationalPointsGenus2} in Magma V2.29-10 found exactly the points above and returned \texttt{false} for completeness on both inputs [5]. The targeted proof uses Magma's elliptic Chabauty on $C_{22}$ and finite local tests for the last branch on $C_{55}$. On $C_{78}$ the public calculator reached its 60-second limit. This input is rationally isomorphic to the earlier $C_{26}$ control. A timeout supplies no completeness flag.
+
+\newpage
+\heading{An extension through parameter 200}
+\textbf{Theorem 3.} For $101\le d\le200$ squarefree, the only points beyond $(0,0)$ and $\infty$ are
+\[
+\begin{array}{rrr}
+\toprule d&x&y\\\midrule
+107&50&\pm448330\\
+118&1/4&\pm649/16\\
+131&2&\pm262\\\bottomrule
+\end{array}
+\]
+There are 61 parameters in this second interval. The direct quartic quotients settle 41. The rational squareclass descent settles 14 further parameters. Six require the quadratic factorization. At $d=165,191$ the local tests exclude all remaining classes. The table lists every surviving class for the other four parameters. Here $c=7+4s$, a class $\delta$ asserts $h^2=\delta(3x^2+c)$, and $x=a t^2$. Put $X=3a\delta x$, $Y=3a^2\delta th$. Then
+\[
+  Y^2=X^3+3a^2\delta^2cX,\qquad x=X/(3a\delta)\in\Q .
+\]
+\[
+\begin{array}{rrrcl}
+\toprule d&a&\delta&\text{rank over }K&\text{certificate}\\\midrule
+107&2&-17+4s&0&\text{torsion order two}\\
+107&2&-11+10s&1&R=4,\quad x\in\{\infty,0,50\}\\
+118&1&7-8s&2&\text{globally excluded on the next page}\\
+118&1&13-2s&1&R=128,\quad x\in\{\infty,0,1/4\}\\
+131&2&1-14s&0&\text{torsion order two}\\
+131&2&19+4s&1&R=8,\quad x\in\{\infty,0,2\}\\
+166&1&-11-8s&1&R=64,\quad x\in\{\infty,0\}\\\bottomrule
+\end{array}
+\]
+For rank zero the nonidentity torsion point is $(0,0)$. Each rank-one certificate uses an odd-index group and a power-of-two obstruction as before. The $R$-values are from the recorded runs; only their prime divisors matter.
+
+\sub{Why the quadratic squareclass list is exhaustive}
+The norm squareclass of $\beta=3a^2U^4+cV^4$ is $6da$. At an odd prime $p\ne3$, if $p\nmid V$ the difference $\beta-\bar\beta$ precludes a common prime divisor above $p$. If $p\mid V$, the simultaneous exponents equal 0 for $p\nmid a$ and 2 for $p\mid a$, since $a$ is squarefree. Thus an odd norm exponent at such a prime requires a split prime, with exactly one conjugate generator in $\delta$. An even norm exponent contributes neither. At $3$, which splits, an even norm exponent permits either both generators or neither; an odd exponent permits exactly one. The parity at the ramified prime over 2 is determined by the norm. Multiplication by either unit completes the list. The program then tests necessary local square conditions in $\Z[s]$ and retains every surviving class.
+
+\newpage
+\heading{A three-prime Mordell--Weil sieve at $d=118$}
+Every point with $x>0$ on the surviving rational branch has $x=t^2$. It induces a point $P$ on the rational elliptic curve
+\[
+ H:\quad V^2=U(U^2+3304U+324\cdot118^2),\qquad U=708t^4.
+\]
+The group has rank one and rational torsion $\langle T\rangle$, $T=(0,0)$. Set $G=(177/4,114873/8)$, corresponding to $x=1/4$ up to sign of the ordinate. The subgroup generated by $G,T$ has index prime to $N=3360=2^5\cdot3\cdot5\cdot7$. Indeed the descent squareclass of $U(G)$ is 177, while $U(T)$ has the trivial descent class. Thus $G$ generates the free part modulo 2. For the odd primes the following good reductions prove saturation:
+\[
+\begin{array}{rrrr}
+\toprule \ell&p&\#H(\mathbb F_p)&\operatorname{ord}(\bar G)\\\midrule
+3&13&12&12\\5&43&40&20\\7&53&56&56\\\bottomrule
+\end{array}
+\]
+The order of $\bar G$ has the entire $\ell$-part of the group order, so $G$ cannot be an $\ell$-multiple over $\Q$. Odd torsion has already been excluded. Thus $P\equiv nG+eT\bmod NH(\Q)$, with $e=0$ or 1. The squareclass of $U(P)=708t^4$ equals 177, forcing $n$ odd.
+
+Suppose $e=1$. For a good prime $p$ in the next table, the order of $H(\mathbb F_p)$ divides $N$. Hence $\bar P=n\bar G+\bar T$. In the affine chart its first coordinate must belong to $708(\mathbb F_p)^4$, including zero, or $P$ may reduce to infinity. Enumerating this finite set gives the following complete constraints:
+\[
+\begin{array}{rrrl}
+\toprule p&\#H(\mathbb F_p)&\operatorname{ord}(\bar G)&
+ \text{allowed odd }n\bmod\operatorname{ord}(\bar G)\\\midrule
+5&8&8&3,5\\
+61&60&12&1,5,7,11\\
+661&672&48&1,3,21,23,25,27,45,47\\\bottomrule
+\end{array}
+\]
+The first and third rows leave $3,21,27,45\bmod48$, all multiples of three; the second row excludes every one. Thus $e=0$ and $P-G\in2H(\Q)$.
+
+Over $K$ there is a 2-torsion root $r=-236c$. The descent homomorphism defined by $U-r$ therefore has equal squareclass on $P$ and $G$ (translate the root to zero to use the usual 2-isogeny descent). Since $U(P)-r=236(3x^2+c)$, the squareclass of $3x^2+c$ agrees with its value at $x=1/4$. The identity
+\[
+  (13-2s)(3/16+c)=\bigl((43+7s)/4\bigr)^2
+\]
+places every possible point in the rank-one $\delta=13-2s$ branch. The elliptic Chabauty certificate on the preceding page finishes the proof. \hfill$\square$
+
+\newpage
+\heading{A degree-four quotient visible only over a quadratic field}
+Consider the smooth projective model
+\[
+ D:\quad y^2=4x^5-30x^4-15x^3-5x^2-24x .
+\]
+At the good prime 23, direct enumeration gives 24 points over $\mathbb F_{23}$ and 558 over $\mathbb F_{23^2}$. The Frobenius polynomial $T^4+14T^2+529$ is irreducible over $\Q$. A rational elliptic quotient would give a quadratic Frobenius factor at this prime by good reduction and the rational Tate module. Thus the Jacobian of $D$ is simple over $\Q$, and $D$ admits no rational elliptic quotient.
+
+The original equation-only solver at commit \texttt{093779c} outputs a conjugate pair of degree-four covers over $K=\Q(s)$, $s^2=-2$. One target is
+\[
+ E:\quad Y^2=X^3+(945+1620s)X+61290-10692s .
+\]
+The full coefficients of $N,S,H$ in the chart $z=1/(x-1)$ are in \texttt{quadratic-cover.json}. An independent verifier checks that $N/S^2$ has degree four, the map identity and its holomorphic differential hold in $K[z]$, and the cubic is smooth. The point proof only needs this single verified cover.
+
+The $K$-rank bounds are $[0,0]$, and the torsion group is $(\Z/2)^2$. For each target abscissa, clear denominators in the original $x$-coordinate, expand on the basis $1,s$, and take the monic gcd over $\Q$ of the two coefficients. This retains every rational abscissa, including the change-of-chart centre.
+\[
+\begin{array}{ll}
+\toprule
+\text{Target abscissa}&\text{Gcd for finite source abscissas}\\\midrule
+\infty & 1\\
+18s-33 & x+1\\
+30-36s & x(x-8)\\
+18s+3 & x^2-\tfrac12x+\tfrac34\\
+\bottomrule
+\end{array}
+\]
+The final quadratic has negative discriminant. The three rational roots give $y=0$, and the original quintic has one point at infinity. Thus
+\[
+ D(\Q)=\{(-1,0),(0,0),(8,0),\infty\}.
+\]
+Magma's default genus-two routine also certified all four in 0.680 CPU seconds.
+
+\sub{Why this test has Jacobian rank zero}
+A nonconstant $K$-map from the Jacobian $J_K$ to $E$ gives a nonzero $\Q$-homomorphism $J\to\operatorname{Res}_{K/\Q} E$. Both sides have dimension two, and $J$ is $\Q$-simple. The homomorphism is an isogeny. Hence $\operatorname{rank}J(\Q)=\operatorname{rank}E(K)=0$. This also explains a general limit of this type of test: a finite quadratic target on a $\Q$-simple abelian surface forces rational Jacobian rank zero.
+
+\newpage
+\heading{Reproduction and sources}
+The proof of Theorem 1 uses the two rational maps and local arithmetic; its validity has no computation cutoff. The code independently checks 155 choices of $n$, including composites. The finite-panel proofs and the quadratic-only example use the exact calculations in the accompanying archive.
+
+\smallskip
+\begin{tabular}{@{}p{.29\linewidth}p{.65\linewidth}@{}}
+\toprule
+\textbf{File} & \textbf{Contents}\\ \midrule
+\texttt{descent.py} & Exact elliptic rank bounds and torsion on the fixed 31--100 panel, rational squareclass covers, local modular obstructions, and quadratic ring sieves.\\
+\texttt{verify\_family.py} & Symbolic maps, the triple-twist isomorphism, all 61 final point sets, and independent finite checks of the uniform result.\\
+\texttt{verify\_quadratic.py} & Exact degree, identity, differential, rational-fibre gcds, finite-field counts, and Frobenius irreducibility for $D$.\\
+\texttt{verify\_extension.py} & The complete 101--200 panel and the rational three-prime sieve. Its quadratic squareclass enumeration uses \texttt{quadratic\_descent.py}.\\
+\texttt{points.py} & Query an arbitrary positive parameter against the infinite criterion or certified tables, including rational isomorphisms.\\
+\texttt{arithmetic.m} and \texttt{extension.m} & Rank over $K$, odd-index certificate, rational projection set, and torsion computation with rigorous class-group bounds.\\
+\texttt{comparisons.txt} & Observed flags, seeds, and calculator timeouts; companion Magma input is also included.\\
+\bottomrule
+\end{tabular}
+
+The named base curve and the strategy of taking fibres over a finite elliptic group are due here to Stoll [1]. Two-isogeny descent and elliptic Chabauty are established methods [2,4,6]. The results in this note are the explicit uniform criterion and point computations on the specified family, with a second worked example requiring a quadratic quotient. Priority for these exact family statements has not been established. ProofAtlas \#87 asks for a terminating method or effective height bound for \emph{every} smooth projective curve of genus at least two over a number field [7].
+
+\sub{References}
+{\small
+[1] M. Stoll, \href{https://mathe2.uni-bayreuth.de/stoll/papers/rank1.pdf}{\emph{Determining the rational points on a curve of genus 2 and Mordell--Weil rank 1}}, Example 5.3(4) and discussion of elliptic subcovers.
+
+[2] A. Lozano-Robledo, \href{https://alozano.clas.uconn.edu/wp-content/uploads/sites/490/2021/04/MATH-5020-Elliptic-Curves-Lecture-28.pdf}{\emph{Elliptic Curves}, Lecture 28}, descent via a rational 2-isogeny.
+
+[3] The PARI Group, \href{https://pari.math.u-bordeaux.fr/dochtml/html/Elliptic_curves.html}{\emph{Elliptic curves}}, functions \texttt{ellrank} and \texttt{elltors}.
+
+[4] Magma Handbook, \href{https://magma.maths.usyd.edu.au/magma/handbook/text/1568}{\emph{Elliptic Curve Chabauty}} and \href{https://magma.maths.usyd.edu.au/magma/handbook/text/416}{\emph{Setting the Class Group Bounds}}.
+
+[5] Magma Handbook, \href{https://magma.maths.usyd.edu.au/magma/handbook/text/1613}{\emph{Rational points on curves of genus 2}}.
+
+[6] D. R. Hast, \href{https://people.maths.bris.ac.uk/~jb12407/ANTS-XV/papers/ANTS-XV_hast.pdf}{\emph{Explicit two-cover descent for genus 2 curves}}, including applications of elliptic Chabauty in Jacobian ranks two and three.
+
+[7] ProofAtlas, \href{https://www.proofatlas.ai/open-problems/}{\emph{Effective Mordell Conjecture for Curves of Genus at Least Two}}, ranking entry 87, November 2026 edition.}
+\end{document}

@@ -1,0 +1,44 @@
+{
+  "engine": "Magma V2.29-10",
+  "script": "final_three.m",
+  "seed": 4120333681,
+  "seconds": 5.599,
+  "result": [
+    [
+      "19",
+      "[1,1]",
+      "odd subgroup index",
+      8,
+      [
+        "infinity",
+        "0",
+        "1/4",
+        "4"
+      ]
+    ],
+    [
+      "95",
+      "[1,1]",
+      "odd subgroup index",
+      4,
+      [
+        "infinity",
+        "0",
+        "1",
+        "225"
+      ]
+    ],
+    [
+      "182",
+      "[1,1]",
+      "odd subgroup index",
+      8,
+      [
+        "infinity",
+        "0",
+        "4",
+        "-1"
+      ]
+    ]
+  ]
+}

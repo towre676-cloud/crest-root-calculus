@@ -1,0 +1,42 @@
+University of Sydney public Magma calculator, V2.29-10
+27 November 2026. Standard RationalPointsGenus2 calls on individual inputs.
+
+Input             Points (affine plus infinity)             Complete    CPU seconds    Seed
+d=22              (0,0), (1,-44), (1,44), infinity         false       1.950          4120338324
+d=55              (0,0), infinity                          false       1.900          4221129103
+Q-simple quintic  (-1,0), (0,0), (8,0), infinity            true       0.680          3118145824
+d=78              Service stopped after its 60-second limit. No returned flag.        1244193349
+
+Prior single-session controls on Stoll d=26 and d=1, seed 1530513429
+d=26              (0,0), infinity                          false       6.480          search height 20000
+d=1               (0,0), infinity                          true        4.480
+
+The sequential submissions [78,22,14] and [43,61,65,95] each exhausted the
+shared 60-second service limit (seeds 1530524418, 1564460745). Neither gives
+individual completeness flags. The later separate d=22 call is reported above.
+
+Specialized arithmetic.m, joint run, using Minkowski class group proof bounds:
+1 1 true 32 { (1 : 1), (0 : 1), (1 : 0) }
+0 0 4 { 18*s - 33, 18*s + 3, -36*s + 30 }
+Seed 3766635064. Total 3.359 CPU seconds, 64.12 MB.
+The separate d=22 run (seed 3067358801) returned group Z/2 + Z,
+index obstruction 32, and projected points [infinity,1,0,1].
+The separate Q-simple target run returned ranks 0,0 and torsion Z/2 + Z/2
+(seed 427536430). All claims about these two K-groups are asserted in arithmetic.m.
+
+The benchmark is the completeness flag, with no matched-machine speed claim.
+
+Additional parameters beyond the fixed panel
+Default d=131 exceeded the calculator's 60-second limit in a dedicated
+submission (seed 2667330187). No point list or completeness flag returned.
+The two d=131 auxiliary elliptic calculations returned rank 0 and torsion 2
+for delta=1-14*s, and rank 1, certified odd index, R=8 and rational projected
+values {infinity,0,2} for delta=19+4*s (seed 2633906307, 3.319 seconds).
+For d=107,118,166, the five auxiliary curves, their ranks and their rational
+projection sets are recorded in the research note. Seed 2499162238, 6.179 seconds.
+The delta=7-8*s branch of d=118 has rank 2 over K. The rational three-prime
+sieve on a different elliptic curve excludes it independently of this rank.
+The standalone default comparison on d=118 also timed out after 60 seconds
+(seed 2031869120). The combined final extension.m run passed all six
+assertions on the auxiliary curves (seed 1997918929, 8.679 seconds, 64.12 MB).
+Its four rank-one index obstructions were respectively 4, 128, 8, 64.

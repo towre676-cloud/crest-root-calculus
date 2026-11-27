@@ -1,0 +1,7162 @@
+[
+  {
+    "d": 201,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -201,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 202,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -202,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 203,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -203,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 205,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -205,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 206,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -206,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 209,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -209,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 210,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -210,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 211,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -211,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 213,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -213,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 214,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -214,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 215,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -215,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 217,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -217,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 218,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -218,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 219,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -219,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 221,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -221,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 222,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -222,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 223,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -223,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 226,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -226,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 227,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -227,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 229,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -229,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 230,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -230,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 231,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -231,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 233,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -233,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 235,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -235,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 237,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -237,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 238,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -238,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 239,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -239,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 241,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -241,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 246,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -246,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 247,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -247,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 249,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -249,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 251,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -251,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 253,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -253,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 254,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -254,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 255,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -255,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 257,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -257,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 258,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -258,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 259,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -259,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 262,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -262,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 263,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -263,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 265,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -265,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 266,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -266,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 267,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -267,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 269,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -269,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 271,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -271,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 273,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -273,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 274,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -274,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 277,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -277,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 278,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -278,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 281,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -281,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 282,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -282,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 283,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": [
+      [
+        1,
+        283
+      ],
+      [
+        283,
+        1
+      ]
+    ]
+  },
+  {
+    "d": -283,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": [
+      [
+        1,
+        283
+      ],
+      [
+        283,
+        1
+      ]
+    ]
+  },
+  {
+    "d": 285,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -285,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 286,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -286,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 287,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -287,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 290,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -290,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 291,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -291,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 293,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -293,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 295,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -295,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 298,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -298,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 299,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -299,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 301,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -301,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 302,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -302,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 303,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -303,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 305,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -305,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 307,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": [
+      [
+        1,
+        307
+      ],
+      [
+        307,
+        1
+      ]
+    ]
+  },
+  {
+    "d": -307,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": [
+      [
+        1,
+        307
+      ],
+      [
+        307,
+        1
+      ]
+    ]
+  },
+  {
+    "d": 309,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -309,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 310,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -310,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 311,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -311,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 313,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -313,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 314,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -314,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 317,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -317,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 318,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -318,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 319,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -319,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 321,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -321,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 322,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -322,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 323,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -323,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 326,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -326,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 327,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -327,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 329,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -329,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 330,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -330,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 331,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -331,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 334,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -334,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 335,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -335,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 337,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -337,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 339,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -339,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 341,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -341,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 345,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -345,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 346,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -346,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 347,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -347,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 349,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -349,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 353,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -353,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 354,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -354,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 355,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -355,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 357,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -357,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 358,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -358,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 359,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -359,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 362,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -362,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 365,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -365,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 366,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -366,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 367,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": [
+      [
+        3,
+        367
+      ],
+      [
+        367,
+        3
+      ]
+    ]
+  },
+  {
+    "d": -367,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": [
+      [
+        3,
+        367
+      ],
+      [
+        367,
+        3
+      ]
+    ]
+  },
+  {
+    "d": 370,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -370,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 371,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -371,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 373,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -373,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 374,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -374,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 377,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -377,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 379,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -379,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 381,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -381,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 382,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -382,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 383,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -383,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 385,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -385,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 386,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -386,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 389,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -389,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 390,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -390,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 391,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -391,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 393,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -393,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 394,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -394,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 395,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -395,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 397,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -397,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 398,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -398,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 399,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -399,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 401,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -401,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 402,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -402,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 403,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -403,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 406,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -406,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 407,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -407,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 409,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -409,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 410,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -410,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 411,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -411,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 413,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -413,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 415,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -415,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 417,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -417,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 418,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -418,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 419,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -419,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 421,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -421,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 422,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -422,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 426,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -426,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 427,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -427,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 429,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -429,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 430,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -430,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 431,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -431,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 433,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 8,
+    "remaining_squareclass_pairs": [
+      [
+        3,
+        433
+      ],
+      [
+        433,
+        3
+      ]
+    ]
+  },
+  {
+    "d": -433,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 8,
+    "remaining_squareclass_pairs": [
+      [
+        3,
+        433
+      ],
+      [
+        433,
+        3
+      ]
+    ]
+  },
+  {
+    "d": 434,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 8,
+    "remaining_squareclass_pairs": [
+      [
+        21,
+        31
+      ],
+      [
+        31,
+        21
+      ]
+    ]
+  },
+  {
+    "d": -434,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 8,
+    "remaining_squareclass_pairs": [
+      [
+        21,
+        31
+      ],
+      [
+        31,
+        21
+      ]
+    ]
+  },
+  {
+    "d": 435,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -435,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 437,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -437,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 438,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -438,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 439,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -439,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 442,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -442,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 443,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -443,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 445,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -445,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 446,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -446,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 447,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -447,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 449,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -449,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 451,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -451,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 453,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -453,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 454,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -454,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 455,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 8,
+    "remaining_squareclass_pairs": [
+      [
+        21,
+        13
+      ],
+      [
+        13,
+        21
+      ]
+    ]
+  },
+  {
+    "d": -455,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 8,
+    "remaining_squareclass_pairs": [
+      [
+        21,
+        13
+      ],
+      [
+        13,
+        21
+      ]
+    ]
+  },
+  {
+    "d": 457,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -457,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 458,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -458,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 461,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -461,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 462,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -462,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 463,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -463,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 465,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 8,
+    "remaining_squareclass_pairs": [
+      [
+        3,
+        31
+      ],
+      [
+        31,
+        3
+      ]
+    ]
+  },
+  {
+    "d": -465,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 8,
+    "remaining_squareclass_pairs": [
+      [
+        3,
+        31
+      ],
+      [
+        31,
+        3
+      ]
+    ]
+  },
+  {
+    "d": 466,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -466,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 467,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -467,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 469,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -469,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 470,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -470,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 471,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -471,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 473,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -473,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 474,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -474,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 478,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -478,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 479,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -479,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 481,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -481,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 482,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -482,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 483,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -483,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 485,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -485,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 487,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": [
+      [
+        3,
+        487
+      ],
+      [
+        487,
+        3
+      ]
+    ]
+  },
+  {
+    "d": -487,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": [
+      [
+        3,
+        487
+      ],
+      [
+        487,
+        3
+      ]
+    ]
+  },
+  {
+    "d": 489,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -489,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 491,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -491,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 493,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -493,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 494,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -494,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 497,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -497,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 498,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -498,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 499,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -499,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 501,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -501,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 502,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -502,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 503,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -503,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 505,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -505,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 506,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -506,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 509,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -509,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 510,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -510,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 511,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -511,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 514,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -514,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 515,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -515,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 517,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -517,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 518,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -518,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 519,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -519,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 521,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -521,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 523,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -523,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 526,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -526,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 527,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -527,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 530,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -530,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 533,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -533,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 534,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -534,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 535,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -535,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 537,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -537,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 538,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -538,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 541,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -541,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 542,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -542,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 543,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -543,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 545,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -545,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 546,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -546,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 547,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -547,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 551,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -551,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 553,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -553,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 554,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -554,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 555,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -555,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 557,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -557,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 559,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 8,
+    "remaining_squareclass_pairs": [
+      [
+        1,
+        129
+      ],
+      [
+        129,
+        1
+      ]
+    ]
+  },
+  {
+    "d": -559,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 8,
+    "remaining_squareclass_pairs": [
+      [
+        1,
+        129
+      ],
+      [
+        129,
+        1
+      ]
+    ]
+  },
+  {
+    "d": 561,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -561,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 562,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -562,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 563,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -563,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 565,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -565,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 566,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -566,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 569,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -569,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 570,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -570,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 571,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -571,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 573,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -573,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 574,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -574,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 577,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -577,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 579,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -579,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 581,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -581,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 582,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -582,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 583,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -583,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 586,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -586,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 587,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -587,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 589,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -589,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 590,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -590,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 591,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -591,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 593,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -593,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 595,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -595,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 597,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -597,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 598,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -598,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 599,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -599,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 601,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -601,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 602,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -602,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 606,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -606,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 607,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -607,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 609,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -609,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 610,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -610,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 611,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -611,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 613,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -613,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 614,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -614,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 615,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -615,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 617,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -617,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 618,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -618,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 619,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": [
+      [
+        1,
+        619
+      ],
+      [
+        619,
+        1
+      ]
+    ]
+  },
+  {
+    "d": -619,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": [
+      [
+        1,
+        619
+      ],
+      [
+        619,
+        1
+      ]
+    ]
+  },
+  {
+    "d": 622,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -622,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 623,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -623,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 626,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -626,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 627,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -627,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 629,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -629,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 631,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -631,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 633,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -633,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 634,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -634,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 635,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -635,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 638,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -638,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 641,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -641,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 642,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -642,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 643,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": [
+      [
+        1,
+        643
+      ],
+      [
+        643,
+        1
+      ]
+    ]
+  },
+  {
+    "d": -643,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": [
+      [
+        1,
+        643
+      ],
+      [
+        643,
+        1
+      ]
+    ]
+  },
+  {
+    "d": 645,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -645,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 646,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -646,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 647,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -647,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 649,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -649,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 651,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -651,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 653,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -653,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 654,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -654,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 655,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -655,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 658,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -658,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 659,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -659,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 661,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -661,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 662,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -662,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 663,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -663,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 665,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 8,
+    "remaining_squareclass_pairs": [
+      [
+        7,
+        19
+      ],
+      [
+        19,
+        7
+      ]
+    ]
+  },
+  {
+    "d": -665,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 8,
+    "remaining_squareclass_pairs": [
+      [
+        7,
+        19
+      ],
+      [
+        19,
+        7
+      ]
+    ]
+  },
+  {
+    "d": 667,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -667,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 669,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -669,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 670,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -670,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 671,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -671,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 673,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -673,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 674,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -674,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 677,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -677,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 678,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -678,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 679,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -679,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 681,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -681,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 682,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -682,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 683,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -683,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 685,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -685,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 687,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -687,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 689,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -689,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 690,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -690,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 691,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": [
+      [
+        1,
+        691
+      ],
+      [
+        691,
+        1
+      ]
+    ]
+  },
+  {
+    "d": -691,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": [
+      [
+        1,
+        691
+      ],
+      [
+        691,
+        1
+      ]
+    ]
+  },
+  {
+    "d": 694,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -694,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 695,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -695,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 697,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -697,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 698,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -698,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 699,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -699,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 701,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -701,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 703,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -703,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 705,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -705,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 706,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -706,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 707,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -707,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 709,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -709,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 710,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -710,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 713,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -713,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 714,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -714,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 715,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -715,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 717,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -717,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 718,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -718,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 719,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -719,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 721,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -721,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 723,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -723,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 727,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -727,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 730,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -730,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 731,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -731,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 733,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -733,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 734,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -734,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 737,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -737,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 739,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -739,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 741,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -741,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 742,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -742,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 743,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -743,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 745,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -745,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 746,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -746,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 749,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -749,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 751,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -751,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 753,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -753,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 754,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -754,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 755,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -755,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 757,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -757,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 758,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -758,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 759,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -759,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 761,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -761,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 762,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -762,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 763,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -763,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 766,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -766,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 767,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -767,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 769,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -769,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 770,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -770,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 771,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -771,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 773,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -773,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 777,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -777,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 778,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -778,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 779,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -779,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 781,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -781,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 782,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -782,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 785,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -785,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 786,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -786,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 787,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": [
+      [
+        1,
+        787
+      ],
+      [
+        787,
+        1
+      ]
+    ]
+  },
+  {
+    "d": -787,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": [
+      [
+        1,
+        787
+      ],
+      [
+        787,
+        1
+      ]
+    ]
+  },
+  {
+    "d": 789,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -789,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 790,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -790,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 791,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -791,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 793,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -793,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 794,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -794,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 795,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -795,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 797,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -797,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 798,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -798,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 799,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -799,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 802,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -802,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 803,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -803,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 805,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -805,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 806,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -806,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 807,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -807,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 809,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -809,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 811,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": [
+      [
+        1,
+        811
+      ],
+      [
+        811,
+        1
+      ]
+    ]
+  },
+  {
+    "d": -811,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": [
+      [
+        1,
+        811
+      ],
+      [
+        811,
+        1
+      ]
+    ]
+  },
+  {
+    "d": 813,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -813,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 814,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -814,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 815,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -815,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 817,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 8,
+    "remaining_squareclass_pairs": [
+      [
+        19,
+        817
+      ],
+      [
+        57,
+        43
+      ],
+      [
+        57,
+        817
+      ],
+      [
+        43,
+        57
+      ],
+      [
+        817,
+        19
+      ],
+      [
+        817,
+        57
+      ]
+    ]
+  },
+  {
+    "d": -817,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 8,
+    "remaining_squareclass_pairs": [
+      [
+        19,
+        817
+      ],
+      [
+        57,
+        43
+      ],
+      [
+        57,
+        817
+      ],
+      [
+        43,
+        57
+      ],
+      [
+        817,
+        19
+      ],
+      [
+        817,
+        57
+      ]
+    ]
+  },
+  {
+    "d": 818,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -818,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 821,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -821,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 822,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -822,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 823,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -823,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 826,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -826,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 827,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -827,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 829,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -829,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 830,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -830,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 831,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -831,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 834,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -834,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 835,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -835,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 838,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -838,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 839,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -839,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 842,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -842,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 843,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -843,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 849,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -849,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 851,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -851,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 853,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -853,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 854,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -854,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 857,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -857,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 858,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -858,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 859,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": [
+      [
+        1,
+        859
+      ],
+      [
+        859,
+        1
+      ]
+    ]
+  },
+  {
+    "d": -859,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": [
+      [
+        1,
+        859
+      ],
+      [
+        859,
+        1
+      ]
+    ]
+  },
+  {
+    "d": 861,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -861,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 862,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -862,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 863,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -863,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 865,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -865,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 866,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -866,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 869,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -869,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 870,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -870,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 871,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -871,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 874,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -874,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 877,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -877,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 878,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -878,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 879,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -879,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 881,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -881,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 883,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -883,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 885,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -885,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 886,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -886,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 887,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -887,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 889,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -889,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 890,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -890,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 893,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -893,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 894,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -894,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 895,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -895,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 897,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -897,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 898,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -898,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 899,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -899,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 901,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -901,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 902,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -902,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 903,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -903,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 905,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -905,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 906,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -906,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 907,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -907,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 910,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -910,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 911,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -911,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 913,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -913,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 914,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -914,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 915,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -915,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 917,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -917,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 919,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -919,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 921,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -921,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 922,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -922,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 923,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -923,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 926,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -926,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 929,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -929,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 930,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -930,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 933,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -933,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 934,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -934,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 935,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -935,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 937,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -937,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 938,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -938,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 939,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -939,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 941,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -941,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 942,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -942,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 943,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -943,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 946,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -946,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 947,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -947,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 949,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -949,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 951,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -951,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 953,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -953,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 955,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -955,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 957,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -957,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 958,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -958,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 959,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -959,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 962,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -962,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 965,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -965,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 966,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -966,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 967,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -967,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 969,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -969,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 970,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -970,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 971,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -971,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 973,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -973,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 974,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -974,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 977,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -977,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 978,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -978,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 979,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -979,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 982,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -982,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 983,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -983,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 985,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -985,
+    "status": "complete",
+    "method": "multiquadratic tower",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 986,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -986,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 987,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -987,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 989,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -989,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 991,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": [
+      [
+        3,
+        991
+      ],
+      [
+        991,
+        3
+      ]
+    ]
+  },
+  {
+    "d": -991,
+    "status": "partial",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": [
+      [
+        3,
+        991
+      ],
+      [
+        991,
+        3
+      ]
+    ]
+  },
+  {
+    "d": 993,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -993,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 994,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -994,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 995,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -995,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 997,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -997,
+    "status": "complete",
+    "method": "quadratic divisors and rational elliptic quotient",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": 998,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  },
+  {
+    "d": -998,
+    "status": "complete",
+    "method": "quadratic divisors and squareclass descent",
+    "point_count": 4,
+    "remaining_squareclass_pairs": []
+  }
+]

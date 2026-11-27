@@ -1,0 +1,12 @@
+--- a/fixed_curve.py
++++ b/fixed_curve.py
+@@ -125,7 +125,8 @@
+                 for X in [-xx,xx]:
+                     for Y in [-v/s,v/s]:add(X,Y)
+     elif degree==4 and subfields==[-7,-1,7]:
+-        method='exact rational and non-Gaussian abscissas; nonreal Gaussian abscissas unresolved'
++        method='Gaussian descent and relative elliptic Chabauty at 37'
++        complete=True
+         i,s=root(-1),root(7)
+         for a,y in ((p(2),3*s),(p(1)/2,3*i*s/8)):
+             for xx in (-a,a):

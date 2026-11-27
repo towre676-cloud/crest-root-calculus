@@ -1,0 +1,148 @@
+\documentclass[12pt]{article}
+\usepackage[letterpaper,left=.86in,right=.86in,top=.8in,bottom=.76in]{geometry}
+\usepackage{amsmath,amssymb,booktabs,lmodern,xcolor,hyperref,fancyhdr}
+\definecolor{ink}{HTML}{193743}\definecolor{accent}{HTML}{1A615D}
+\hypersetup{colorlinks=true,urlcolor=accent,linkcolor=accent,pdftitle={Exactly 38 points on a genus-two curve over a biquadratic field}}
+\pagestyle{fancy}\fancyhf{}\lhead{\small\sffamily Crest--Root Calculus}\rhead{\small\sffamily Arithmetic geometry}\cfoot{\small\sffamily\thepage}\setlength{\headheight}{15pt}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt plus 1pt}
+\newcommand{\Q}{\mathbb Q}\newcommand{\Z}{\mathbb Z}\newcommand{\F}{\mathbb F}
+\newcommand{\head}[1]{{\Large\bfseries\color{ink}#1}\par\smallskip}
+\newcommand{\subh}[1]{\par\smallskip{\bfseries\color{accent}#1}\par}
+\begin{document}
+{\small\sffamily\color{accent} RESEARCH NOTE \quad 27 NOVEMBER 2026}\par
+{\LARGE\bfseries\color{ink}Exactly 38 points on a genus-two curve\\over a biquadratic field}\par
+Let $C$ be the smooth projective model of $y^2=x^6-1$ and let $B=\Q(i,\sqrt7)$. Write $k=\Q(i)$, $K=\Q(\sqrt{-3})$ and $L=kK$.
+
+\textbf{Theorem.} The set $C(B)$ has exactly 38 elements. Fourteen have rational abscissa, counting the two points at infinity. The other 24 have abscissa outside $k$. In particular, there is no point with abscissa in $k\setminus\Q$.
+
+The fourteen points in the first group are $\infty_+,\infty_-$ and
+\[
+ (\pm1,0),\qquad (0,\pm i),\qquad
+ (\pm2,\pm3\sqrt7),\qquad (\pm1/2,\pm3i\sqrt7/8).
+\]
+The signs in each coordinate vary independently. The other 24 come in twelve pairs conjugate over $k$. Their exact coordinates, and those of the twelve affine points displayed above, are supplied in the power basis of $w_B^4-12w_B^2+64=0$.
+
+Our input from the earlier genus-two descent is the residual system
+\[
+       A^2=s^4+3,\qquad 7D^2=s^4+27,\qquad s,A,D\in k .
+\]
+The squareclass descent in Claude's handoff gives a degree-four number field and two rank-two elliptic projection problems. We prove the complete projection sets by relative Chabauty at 37 and a simultaneous Mordell--Weil sieve at 13 and 109. Consequently the displayed system has exactly the sixteen triples
+\[
+              s\in\{1,-1,i,-i\},\qquad A=\pm2,\qquad D=\pm2 .
+\]
+The conclusion uses exact arithmetic, good reduction and first-order formal-group identities. Every finite table in the proof can be replayed with PARI and Python. A bounded search for generators' multiples is unnecessary.
+
+\subh{Scope}
+The genus-two result transfers by exact finite fibres. Over the same field $B$, the smooth projective curve $Y^2=X^{12}-1$ of genus five has exactly 24 points. The smooth plane curve $(X^2+X/2)^6-(Y^6+Y/2)^2=1$ of genus 55 has exactly four. The cover maps take $(X,Y)$ to $(X^2,Y)$ and $(X^2+X/2,Y^6+Y/2)$, respectively. The verifier includes their fibres at infinity and their coordinate lists.
+
+An unconditional terminating algorithm for arbitrary curves of genus at least two over arbitrary number fields is the broader Effective Mordell problem.
+
+\newpage
+\head{From the genus-two curve to an elliptic projection}
+By the two standard elliptic factors and their rational twists, the Jacobian of $C$ over $k$ has rank zero. Good reduction at 5 and 13 bounds its torsion by 36, and exact Cantor addition produces all 36 classes. For a point with $x\in B\setminus k$, its conjugate pair is an effective degree-two divisor outside the hyperelliptic pencil. Its representative in its class is unique. In the odd model $z=1/(x-1)$, $v=z^3y$, twelve irreducible quadratic Mumford supports (with their ordinates) split over $B$. These yield 24 points. The calculation and its reduction orders are included in the replay.
+
+If $x\in k$, then $y\in k$ or $\sqrt7\,y\in k$. In the first case the torsion fibres of $Y^2=X^3-1$ at $X=x^2$ give $x=0,\pm1$. In the second case consider $v^2=7(x^6-1)$ over $k$. Factoring in the Gaussian integers gives squareclasses $a,b$ for $x^2+x+1,x^2-x+1$ supported over 2, 3 and 7. Local square tests and rank-zero elliptic fibres leave only rational abscissas $0,\pm1,\pm2,\pm1/2$, or the classes $(7,3)$ and its reflection. On the latter component $x^2-1=3r_0^2$ and $s=(x-1)/r_0$ give
+\[
+ x=\frac{3+s^2}{3-s^2},\qquad v=\frac{42sAD}{(3-s^2)^3}.
+\]
+Substitution gives the two quartics on page 1. The earlier proof and the exact elimination of the other classes accompany this note.
+
+Let $w$ be a primitive twelfth root satisfying $w^4-w^2+1=0$, put $v_0=w^2-1$, $\pi=2v_0+1$ and $i=w^3$. Write $\tau(w)=w^5$, $\sigma(w)=-w$. Here $\tau$ fixes $k$ and $\sigma$ fixes $K$. For a solution, write $s^2+\pi=\delta\alpha^2$ and $s^2+3\pi=\gamma\beta^2$. Away from primes over $2,3,7$, a common factor of either expression and its $\tau$-conjugate divides their difference for integral $s$, while a denominator of $s$ contributes even valuation. The quartic norm equations then give even valuations outside this support.
+
+The class number of $L$ is one. The $S$-squareclass group has dimension six from the torsion unit, a fundamental unit, and the four primes over $2,3,7$. The replay certifies the class group and tests the 64 representatives for distinctness. Norm conditions leave 256 candidate pairs, residue-field tests leave 48, and the integral tests modulo $9,8,16$ leave
+\[
+       (\delta,\gamma)=(w,w^3+2w)\quad\text{or}\quad(w,2w^3+w).
+\]
+Write $\theta=\delta\gamma$, respectively $\theta_1=3w^2-1$ or $\theta_2=3w^2-2$, and $\eta=\theta\pi$. With $W=\theta\alpha\beta$, the map $(X,Y)=(\theta s^2,\theta sW)$ lands on
+\[
+        E_\theta:\ Y^2=X(X+\eta)(X+3\eta),\qquad u=X/\theta=s^2.
+\]
+Since $\tau(\theta_1)=-\theta_2$ and $\tau(\pi)=-\pi$, $\tau$ sends $E_{\theta_1}$ to $E_{\theta_2}$ and negates the Gaussian projection value. This reduces the proof to $\theta=\theta_1$. On the quartic system, $s\mapsto is$ also exchanges the squareclasses: the new classes are $-\tau(\delta),-\tau(\gamma)$ modulo squares. Ordinary Gaussian conjugation fixes the solution $s=1$.
+
+\newpage
+\head{The global group and its finite images}
+Put $E=E_{\theta_1}$ and label $T_0=O$, $T_1=(-\eta,0)$, $T_2=(-3\eta,0)$, $T_3=(0,0)$. On $E(L)$ take
+\[
+ G_1=(1-v_0,6-3v_0),\qquad
+ G_2=(3-3v_0,-9v_0 i).
+\]
+The elliptic curve and its $-1$ twist each have rank one over $K$. The full rational-two-torsion descent gives Selmer order eight for each, and the exhibited points have infinite order. The local Kummer images are generated by squareclasses of actual local points until they reach their known orders. The class group of $K$ is certified trivial. Quadratic character decomposition now gives $\operatorname{rank}E(L)=2$. One has $\sigma G_1=G_1$, $\sigma G_2=-G_2$, and $E(L)_{\rm tors}=E[2]$. Thus $\Gamma=\langle G_1,G_2,E[2]\rangle$ has finite index. Each of the fifteen nonzero classes of $\Gamma/2\Gamma$ has nontrivial Kummer image over $L$, so its index is odd.
+
+For $\ell=3,31$, test all directions $(a:b)\in\mathbb P^1(\F_\ell)$ by reducing $aG_1+bG_2$ in all four embeddings at $q=37,109$, respectively. Write $e_q$ for the exponent of the local elliptic group. In every direction at least one component survives multiplication by $e_q/\ell$. An $\ell$-divisible point would be killed there. This proves that neither $\ell$ divides the index. Torsion has order four and is $\ell$-divisible at these odd primes.
+\[
+\begin{array}{c|c|c|c}
+ q & E(\F_q)\text{ in each component} & \operatorname{ord}(\overline G_1),\operatorname{ord}(\overline G_2)
+  & \text{excluded directions}\\ \hline
+ 37 & \Z/18\times\Z/2 & 9,9 & 4\text{ of }4\\
+ 109 & \Z/62\times\Z/2 & 62,62 &32\text{ of }32
+\end{array}
+\]
+At 13 the two possible finite groups have exponents 6 and 8. Thus the joint reductions of $\Gamma$ at 13, 37 and 109 exhaust the reductions of $E(L)$: their exponents contain only the primes $2,3,31$. Indeed a multiple of the index congruent to one modulo all these exponents transports any global point into $\Gamma$ without changing its reductions.
+
+At 37 order the embeddings by $w=(29,14,8,23)$ in $\F_{37}$. The two pairs compared for $u\in k$ are $(1,2)$ and $(3,4)$, and $\sigma$ interchanges $(1,3)$ and $(2,4)$. The reductions of $\theta$ are $(6,32,6,32)$. Enumerating $aG_1+bG_2+T_j$ for $a,b\bmod9$ gives the entire list below. Equality of the two reductions within each pair is the only filter.
+\[
+\begin{array}{c|c|l}
+ \overline u\text{ in all four components}&j&(a,b)\bmod9\\ \hline
+ \infty&0&(0,0)\\
+ 0&3&(0,0)\\
+ 1&2&(0,1),(0,8),(2,0),(7,0)\\
+ -9&1&(0,1),(0,8),(2,0),(7,0)
+\end{array}
+\]
+Translation by $T_3$ sends $u$ to $-9/u$, since the coefficient of $X$ in the cubic is $3\eta^2=-9\theta^2$. It suffices to handle the disks at $\infty$ and $1$.
+
+\newpage
+\head{Uniqueness inside the 37-adic residue disks}
+Use $t=-X/Y$ as the formal parameter at $O$ and the logarithm normalized by $dX/(2Y)$. In the formal kernel at 37, $\log=t+O(t^2)$ to first order, including after division by the first nonzero power of 37. This follows by integrating the power series for the invariant differential; for degree $n\ge2$ and valuation $r\ge1$, $nr-v_{37}(n)\ge r+1$.
+
+For $j=1,2$ compute $9G_j$ exactly, evaluate $-X/Y$ at the four simple lifts of $w$ modulo $37^2$, divide by 37 and reduce again. The resulting formal logarithm directions are
+\[
+ h_1=(7,0,7,0),\qquad h_2=(24,15,13,22).
+\]
+These columns are independent over $\F_{37}$. For every global point $D$ reducing to $O$ in all four coordinates, its vector of logarithms is in the $\Q_{37}$-span of $\log(9G_1),\log(9G_2)$, by finite index. After division by its smallest component valuation, its leading vector is $a h_1+b h_2$, with $(a,b)\ne(0,0)$ when $D\ne O$. Indeed the columns divided by 37 have a unit minor, so a leading coefficient cannot cancel in all four entries. The local logarithm is injective on the formal kernel.
+
+In the infinity disk the regular function $1/u=\theta/X$ starts with $\theta t^2$. Equality in the two pairs implies the following equations on the leading vector:
+\[
+\begin{aligned}
+6(7a+24b)^2&=32(15b)^2,\\
+6(7a-24b)^2&=32(-15b)^2\qquad\pmod{37}.
+\end{aligned}
+\]
+Subtracting forces $ab=0$. Substitution forces $a=b=0$, since $6\cdot7^2$ and $6\cdot24^2-32\cdot15^2$ are nonzero modulo 37. Thus this disk contains only $O$, and the zero disk only $T_3$.
+
+Suppose two projected points lie in the same disk at $u=1$. Their difference lies in the formal kernel. If the difference is nonzero, the normalized leading vector has to satisfy two linear equations. In component $j$ the derivative of $u$ with respect to the invariant differential is $2\overline Y_j/\overline\theta_j$. Multiply the entries of $ah_1+bh_2$ by these derivatives and subtract within each embedding pair. The resulting matrices are
+\[
+\begin{array}{c|cc|c}
+ (a_0,b_0)\text{ labeling the disk}&\text{first row}&\text{second row}&\det\bmod37\\ \hline
+(0,1)&(25,36)&(12,36)&24\\
+(0,8)&(12,1)&(25,1)&24\\
+(2,0)&(12,1)&(12,36)&13\\
+(7,0)&(25,36)&(25,1)&13
+\end{array}
+\]
+All are invertible. Every such disk contains at most one global point with Gaussian projection. Exact finite differences modulo $37^2$ after translation by $9G_j$ independently verify all entries.
+
+\newpage
+\head{A parity obstruction eliminates the two extra disks}
+The disks $(0,1)$ and $(0,8)$ at $u=1$ already contain $G_2+T_2$ and $-G_2+T_2$. Direct substitution gives $u=1$ at each. By uniqueness these disks are finished.
+
+In either of the disks $(2,0)$ and $(7,0)$ the representative $a_0G_1+T_2$ is defined over $K$. The disk is thus fixed by $\sigma$. If $P$ in it has $u(P)\in k$, then $\sigma P$ also has Gaussian projection and lies in the very same disk. Uniqueness gives $\sigma P=P$, hence $P\in E(K)$ and $u(P)\in K\cap k=\Q$.
+
+Let $m=[E(L):\Gamma]$. Choose a multiple $n$ of $m$ congruent to one modulo the exponents at 13, 37 and 109. Then $nP\in\Gamma$ is fixed by $\sigma$, giving $nP=aG_1+T_j$ for an integer $a$: the coefficient of the anti-invariant nontorsion point $G_2$ must vanish. The reduction at 37 forces $j=2$, by the table on page 3. At the two primes of $K$ over 13, rationality of $u(P)$ requires equal values of $u(aG_1+T_2)$ on reduction. The entire period is 24. At 109 the same test has period 62:
+\[
+ \begin{array}{c|c|c}
+ q&\text{period of }a&\text{permitted residues of }a\\\hline
+ 13&24&4,20\\
+ 109&62&31
+ \end{array}
+\]
+The first row requires $a$ even and the second requires $a$ odd. Both disks are empty. Translation by $T_3$ determines the disks over $-9$. The complete unrestricted projection sets are therefore
+\[
+  u(E_{\theta_1}(L))\cap\mathbb P^1(k)=\{\infty,0,1,-9\},\qquad
+  u(E_{\theta_2}(L))\cap\mathbb P^1(k)=\{\infty,0,-1,9\}.
+\]
+There are six elliptic points in each list when counted before projection. On the original affine quartics, $s^2=0$ would force $A^2=3$, and $s^2=\pm9$ would force $A^2=84$. Both are impossible in $\Q(i)$. The remaining $s$ are $\pm1,\pm i$ and give $A,D=\pm2$. Restoring the reflection of $x$ gives only the already listed rational abscissas. This finishes the proof of all 38 points.
+
+\subh{Reproducibility and attribution}
+The initial Gaussian descent and the twelve quadratic supports come from the earlier Crest--Root computation. Claude supplied the $S$-unit sieve, the rank calculations, two-saturation, and the suggested relative Chabauty approach. The new parts are the mod-37 proof, the local index tests, the fixed-subgroup parity obstruction and the resulting classification. The delivered verifier checks the squareclasses, ranks, local tables, elliptic translates, signs, and all coordinates. For the general number-field Chabauty framework see S. Siksek, \href{https://doi.org/10.2140/ant.2013.7.765}{Explicit Chabauty over number fields}. The \href{https://www.proofatlas.ai/open-problems/}{ProofAtlas statement of Effective Mordell} quantifies over every number field and every smooth projective curve of genus at least two.
+\end{document}

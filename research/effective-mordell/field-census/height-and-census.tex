@@ -1,0 +1,169 @@
+\documentclass[12pt]{article}
+\usepackage[letterpaper,left=.85in,right=.85in,top=.8in,bottom=.8in]{geometry}
+\usepackage{lmodern,amsmath,amssymb,booktabs,array,xcolor,hyperref,fancyhdr}
+\definecolor{ink}{HTML}{172E3A}\definecolor{teal}{HTML}{17605E}
+\hypersetup{colorlinks=true,urlcolor=teal,linkcolor=teal,pdftitle={Effective Mordell on a fixed genus-two curve: height and field classifications}}
+\pagestyle{fancy}\fancyhf{}\lhead{\small\textsf{Crest--Root Calculus}}\rhead{\small\textsf{Arithmetic geometry}}
+\cfoot{\small\textsf{\thepage}}\setlength{\headheight}{15pt}\setlength{\parindent}{0pt}\setlength{\parskip}{5pt plus 1pt}
+\newcommand{\Q}{\mathbb Q}\newcommand{\Z}{\mathbb Z}\newcommand{\C}{C_6}
+\newcommand{\heading}[1]{{\Large\bfseries\color{ink}#1}\par\smallskip}
+\newcommand{\subh}[1]{\par\smallskip{\bfseries\color{teal}#1}\par}
+\begin{document}
+{\small\sffamily\color{teal}RESEARCH NOTE \quad $\cdot$ \quad 27 NOVEMBER 2026}\par
+{\LARGE\bfseries\color{ink}Effective Mordell on a fixed genus-two curve\\Height bounds and field classifications}\par
+Let $\C$ be the smooth projective model of $y^2=x^6-1$ over $\Q$, with points $\infty_+,\infty_-$ at infinity. Write $E:Y^2=X^3-1$, let $\zeta_n$ be a primitive $n$th root of unity, and let $H$ be the absolute multiplicative Weil height on the projective line.
+
+\textbf{Theorem 1.} Let $K$ be any number field. If $E(K(i))$ has rank at most one, every finite abscissa of $\C(K)$ has $H(x)<4.279$. If $E(K(\zeta_{12}))$ has rank at most two, every finite abscissa has $H(x)<4.965$. Either hypothesis gives an explicit stopping rule for enumeration. The same bounds hold pointwise when the two elliptic images generate a space of the indicated dimension over $\mathbb R$, respectively one complex line for the complex multiplication action.
+
+\textbf{Theorem 2.} Over $L=\Q(\zeta_{24})$, the complete set $\C(L)$ has 46 points. Both standard elliptic targets have rank two and the Jacobian has rank four. Our enumeration uses canonical heights, exact saturation of a Mordell--Weil lattice and exact fibres over $L$.
+
+\textbf{Theorem 3.} For all 243 quadratic fields $\Q(\sqrt d)$ with signed squarefree $0<|d|\le 200$, $d\ne1$, the complete point lists comprise 232 fields with four points, one with six, and ten with eight. There also exists an explicitly decidable set of rational primes of natural density $927/1024$ for which both signs of $d=\pm p$ give only $(\pm1,0)$ and the two infinities.
+
+\textbf{Theorem 4.} There are infinitely many real quadratic fields $K$ and points on $\C(K)$ with rational abscissa $x$ satisfying $H(x)\gg\sqrt{|\Delta_K|}(\log|\Delta_K|)^{1/4}$, with an absolute positive implied constant. In particular, $H(x)/\sqrt{|\Delta_K|}$ is unbounded.
+
+A field-varying algorithm for this one curve would imply Effective Mordell for all hyperelliptic and superelliptic curves of genus at least two by the reductions of Bogomolov--Tschinkel and Poonen [1]. ProofAtlas \#87 calls for all curves and all number fields [2]. Our height theorem has an elliptic rank hypothesis, and the further field and cover classifications have the scopes given below. The explicit computations and proofs of the remaining local and global steps accompany this note.
+
+\newpage
+\heading{A uniform height bound from two elliptic images}
+Put $h=\log H$ and $\lambda=2\widehat h$ on $E$, normalized so that it is the limit of $4^{-n}h(X(2^nP))$. Use $X(O)=\infty$. The duplication morphism on abscissas has affine coordinates $F=X^4+8X$, $G=4X^3-4$, homogenized to degree four. The identities
+\[
+9X^7=(9X^3-8)F-16XG,\qquad 36=4X^2F-(X^3+9)G
+\]
+bound the inverse height loss by $\log132$ after homogenizing and taking common multiplier 36. The forward height gain is at most $\log9$. Summing at all places and telescoping gives
+\[
+       -A\le\lambda(P)-h(X(P))\le B,\qquad
+       A=\tfrac13\log132,\quad B=\tfrac13\log9 .
+\]
+For $x\ne0$ use $P=(x^2,y)$ and $Q=(x^{-2},iy/x^3)$ on $E$. Their naive abscissa heights are both $t=2h(x)$. On $P\pm Q$ the abscissa is the degree-four rational function
+\[
+ r_j(x)=\frac{-2jx^3-3x^2+2jx}{(x^2-1)(x-j)^2},\qquad j=\pm i .
+\]
+Writing $r_j=N/D$, the identities $aN+bD=3$ and $a'N+b'D=3x^7$ hold with
+\[
+\begin{aligned}
+a&=4jx^3+5x^2-4jx-6,& b&=-8x^2+6jx+3,\\
+a'&=-6x^3+4jx^2+5x-4j,&b'&=3x^3-6jx^2-8x .
+\end{aligned}
+\]
+The coefficient sums in either pair total 36. The product formula gives $4h(x)\le h(r_j(x))+C$, $C=\log36$. With a primitive cube root $\omega$ present, the same bound holds on $P+uQ$ for each unit $u\in\{\pm1,\pm\omega,\pm\omega^2\}$ acting through $[\omega](X,Y)=(\omega X,Y)$. Replacing $x$ by a third-root-of-unity multiple rotates the relative elliptic images and preserves height.
+
+In one real dimension choose the opposite sign. In one complex dimension choose a phase giving an angle of at least $150^\circ$ between the images. The complex action is an isometry for $\lambda$, and $[\omega]^2+[\omega]+1=0$ on the free part. Thus if $a=\lambda(P)$, $b=\lambda(Q)$, one sum $R=P+uQ$ satisfies
+\[
+ \lambda(R)\le a+b-c\sqrt{ab},\qquad
+ c=2\ \text{or}\ \sqrt3
+\]
+respectively. This includes zero vectors. The Mordell--Weil rank hypotheses ensure precisely the required ambient dimension.
+
+\newpage
+\heading{The stopping rule and its range}
+Both $a,b$ belong to $[t-A,t+B]$. When $t<A$ the claimed inequalities already hold. Otherwise the maximum of $a+b-c\sqrt{ab}$ over this square occurs at a corner, by convexity in each variable. The two possible maximal corners are $(t+B,t+B)$ and $(t-A,t+B)$. The inverse bound for $r_j$ gives $2t-A-C\le\lambda(R)$. At the first corner this implies
+\[
+ t\le \frac{A+C+(2-c)B}{c}.
+\]
+At the second it implies $(t-A)(t+B)\le ((B+C)/c)^2$. Hence
+\[
+ H(x)\le\exp\!\left(\frac12\max\!\left\{
+ \frac{A+C+(2-c)B}{c},\,
+ \frac{A-B+\sqrt{(A+B)^2+4((B+C)/c)^2}}{2}
+ \right\}\right).
+\]
+Interval arithmetic gives $4.2783008413$ and $4.9646249014$ as upward-rounded bounds. The excluded input $x=0$ has height one. The rank test is over a field containing the relevant automorphisms; the height is absolute, so the bound descends to the original field.
+
+For degree $n=[K:\Q]$, an abscissa of degree $e$ has $e\mid n$. Its primitive minimal polynomial has $j$th coefficient of absolute value at most $\binom ej 5^e$, by its Mahler measure. Enumeration of these finite boxes, followed by factorization in $K$ and exact square tests, is therefore a terminating algorithm whenever the rank hypothesis has been certified. This bound on coefficients is intentionally generous. For practical calculations the field-specific proofs instead use divisors, squareclass descent, or a saturated group of elliptic points. The general height argument belongs to the Demjanenko--Manin tradition [3].
+
+\subh{Why the adjacent biquadratic field remains distinct}
+For $B_7=\Q(i,\sqrt7)$, both direct elliptic quotients are isogenous to the same positive-rank curve. Its rank is two over $B_7$ and four over $B_7(\zeta_{12})$. To verify the latter, decompose by quadratic characters: $d=7,-7,21,-21$ contribute rank one each, and the other four characters contribute zero. Theorem 1 therefore gives no all-points bound for $B_7$. The existing 38 verified points and the separate Gaussian quartic descent remain the starting point there.
+
+\newpage
+\heading{All 46 points over the 24th cyclotomic field}
+Put $q=\sqrt{-2}$ and let $u$ run through the six sixth roots of unity. Apart from the two infinities, the complete list is
+\[
+ (u,0),\quad (0,\pm i),\quad
+ (\zeta_{12}u,\pm q),\quad (qu,\pm3i),\quad
+ (qu/2,\pm3q/4).
+\]
+The abscissa sixth powers in the four nonzero rows are $1,-1,-8,-1/8$. The rows are disjoint, and every displayed pair satisfies the equation.
+
+Here is the termination certificate used to exclude any other point. The group of $L/\Q$ is an elementary abelian group of order eight. Of its characters $d\in\{1,-1,2,-2,3,-3,6,-6\}$, only $d=-2,6$ contribute rank on $E_d:Y^2=X^3-d^3$, each one. On these two rational curves use $G_{-2}=(1,3)$ and $G_6=(10,28)$. To prove each generates the free part, a hypothetical divisor by an integer of magnitude at least two has canonical height at most $\lambda(G_d)/4$. Since $X/d$ is the elliptic abscissa on the untwisted model, the duplication comparison bounds $H(X/d)<10$ for such a generator. An exact rational search through this window finds only known multiples and rational torsion. Each $\lambda(G_d)>1/4$ follows from the rational height of $X(4G_d)/d$ and the same comparison.
+
+Transport these two points to $E(L)$ using $(X,Y)\mapsto(X/d,Y/(d\sqrt d))$. The free directions are orthogonal by their different Galois characters. The signed character sums of a point are rational twist points, and summing them gives eight times the original point. The two transported generators therefore span a subgroup of index a power of two in the free lattice; every coset has exponent dividing eight. The torsion has order twelve. Checking all nonzero pairs of basis coefficients modulo two, and all torsion translates, for halves saturates the lattice at two. The resulting index is eight. Relative to the two original free generators, a basis has coordinates $(1/4,1/4),(0,1/2)$ modulo torsion.
+
+For transparency the executable retains the looser $H(x)<14$ bound, already implied by Theorem 1. It gives $\lambda(P)<7$ for $P=(x^2,y)$. Orthogonality and the $1/4$ lower bounds give absolute value less than six for each original-basis coefficient. The verifier visits all lattice points in this containing rectangle and all torsion translates. It tests 13,259 finite elliptic points for a square abscissa. Exactly the 44 affine pairs above remain.
+
+\newpage
+\heading{The quadratic census and the prime-density theorem}
+Across all 243 quadratic fields with signed squarefree $0<|d|\le200$, $d\ne1$, the 232 four-point lists consist of $(\pm1,0),\infty_+,\infty_-$. The unique six-point field is $\Q(i)$. The ten eight-point fields have radicands $-2,-3,\pm7,\pm19,\pm95,\pm182$.
+
+For the final positive cases write $(d,m,n,h)=(19,5,3,28),(95,8,7,39),(182,3,1,2)$. Then $m^6-n^6=dh^2$. The four extra points over the positive field have coordinates $(\pm m/n,\pm h\sqrt d/n^3)$, and over the negative field $(\pm n/m,\pm h\sqrt{-d}/m^3)$. Extending the same calculation to $201\le |d|\le1000$ settles 936 of the further 972 fields; all 936 have four points. This makes 1,179 complete lists among 1,215 signed radicands through 1,000. Each pair of signs above is independent. The exhaustive quadratic-divisor calculation handles nonrational abscissas; for rational ones the equation reduces to $z^2=d(x^6-1)$.
+
+The descent in the accompanying proof first assigns squareclasses to $x^2+x+1$ and $x^2-x+1$. A conic parameterization gives a simultaneous pair of quartics, and their norms split over $\Q(\sqrt{-3})$. Local square tests exhaust twelve remaining positive radicands. For the other three, a rank-one elliptic curve over this quadratic field has the following complete rational projections, each obtained using a certified odd-index subgroup.
+\[
+\begin{array}{c|c|c}
+d & \text{index obstruction} & \text{projection values}\\ \hline
+19&8&0,\infty,1/4,4\\
+95&4&0,\infty,1,225\\
+182&8&0,\infty,-1,4
+\end{array}
+\]
+For $182$ a different triple of factors is required, since the first elliptic target has rank two. The combined Magma computation asserts all rank bounds and projection sets.
+
+For prime radicands, all but finitely many primes inert in the Eisenstein integers give the four base points for both signs. For a split prime $p=g\bar g$, each unresolved rational pair has 32 global Eisenstein labels, with four possible rational pairs. Eight local prime tests on $g$ leave no label for 13,280 of 16,384 joint local-unit squareclass signatures. Emptiness is invariant under global units and conjugation. Ray class field theory and Chebotarev's theorem give equal densities on the resulting quotient; inert and split rational primes each have density $1/2$. The certified subfamily therefore has natural density
+\[
+             \frac12+\frac12\frac{13280}{16384}=\frac{927}{1024}.
+\]
+This fraction measures the proved subfamily. Additional primes can also have only the four base points. Exact local moduli, divisor arguments and the finite count are supplied in the package.
+
+\newpage
+\heading{Further field and curve classifications}
+The unrestricted class-group module computes the two local isogeny Selmer groups on each direct elliptic target. It enumerates ideals modulo squares, using the certified class group and units, then tests dyadic and triadic residue disks by Hensel lifting. Compactness and nonsingularity of the quartics give termination of each local test. Rank upper bound zero makes torsion enumeration exhaustive. Each accepted PARI class group and unit group passes \texttt{bnfcertify}. The program gives no a priori stopping guarantee for class-group certification on arbitrary input. In a set of 539 distinct tested field models, 123 full point lists follow from this rank-zero test. A positive Selmer upper bound alone leaves the point problem open.
+
+The Gaussian tower results give complete point lists in non-Galois fields of unbounded degree. For example, start over $\Q(i)$ and choose Gaussian prime factors above rational primes $p\equiv17\pmod{24}$ with odd real part. Adjoin their square roots. Every finite subfield of this tower has exactly its sixth-root branch points, its points $(0,\pm i)$ when defined, and both infinities. The more general theorem and the field recognizer also handle certain products of Gaussian primes above rational primes $5\bmod24$. Independent quartic calculations give exactly 18 points over $\Q(\zeta_8)$ and 20 over $\Q(\sqrt{-2},\sqrt{-3})$.
+
+On an octic family set $k=\Q(\zeta_{12})$ and $L_d=k(\sqrt d)$ with squarefree $2\le d\le200$, $3\nmid d$. There are 91 distinct fields. The rank test gives zero in 23 and two in 26. In these 49 fields, the only list with any points beyond the ten over $k$ is the 46-point list for $d=2$. The other 42 have positive ranks beyond the bound. For every positive squarefree $d$ prime to 3, a point with $x\notin k$ can occur only for $d=2,7,11$, by an exhaustive quadratic-divisor calculation on the order-144 group $J(k)$. Under the same rank bound, all $d$ with odd part at least 31,250 give exactly the ten base points. The norm of the numerator ideal of $x^6-1$ bounds the odd part by $2H(x)^6$ whenever a new ordinate occurs above $x\in k$.
+
+Certified lists also transfer to curves of larger genus by taking exact fibres. For instance the smooth plane curve
+\[
+       (X^2+X/2)^6-(Y^6+Y/2)^2=1
+\]
+has genus 55. It has two points over $\Q$, four over $\Q(\sqrt{17})$, and two over $\Q(\sqrt7)$. Both points gained over $\Q(\sqrt{17})$ have $Y=0$ and $X=(-1\pm\sqrt{17})/4$. The transfer proof gives smooth nonhyperelliptic families of unbounded genus and infinitely many geometric isomorphism classes at each displayed plane degree.
+
+\newpage
+\heading{Using the recovered quartic maps}
+Let $C^+:v^2=x^6+1$, $E^+:Y^2=X^3+1$, $F=\Q(\zeta_3)$, and suppose $E^+(KF)$ has rank at most two. Among the twelve geometric degree-four maps recovered over $F$, two have the same target $V^2=U^3-15U+22$ and independent differentials. The file \texttt{quartic-covers.json} records their coefficients. Writing $u=U-2$, the degree-two isogeny to $E^+$ is
+\[
+    (U,V)\longmapsto\left((u+2-3/u)/4,\;V(1+3/u^2)/8\right).
+\]
+Call the two composite maps $P_1,P_2$. Their abscissas are rational functions of $x$, each of degree $d=8$. The abscissas of $P_1+\rho P_2$, for the six CM units $\rho$, have degrees $16,16,4,28,28,4$. These positive degrees make each sum usable for a lower height bound.
+
+For an abscissa function $r$ of degree $e$, the verifier computes integers $m,M$ with $eh(x)-\log m\le h(r(x))\le eh(x)+\log M$. It clears denominators over the Eisenstein integers and computes integral B\'ezout identities on both affine charts with a common integer multiplier. The archimedean bound uses coefficient sums, $|\zeta_6|=1$, and the product formula cancels the common multiplier. For both composite maps one obtains $M=171$ and $m=22408$. Duplication on $E^+$ gives $A=(\log132)/3$, $B=(\log9)/3$ as before.
+
+Set $U_0=\log M+B$, $L_0=\log m+A$. For one of the six sums, writing $a,b$ for the two canonical heights in the normalization $\lambda=2\widehat h$, the plane-angle inequality gives
+\[
+  \lambda(P_1+\rho P_2)\le \max(a,b)-(c-1)\min(a,b)
+  \le(2-c)dh(x)+U_0+(c-1)L_0
+\]
+for $c=265/153<\sqrt3$. The reverse bound is $e_\rho h(x)-\log m_\rho-A$. Each $e_\rho>(2-c)d$; comparing the six resulting rational powers using integers gives $H(x)<48659$. This proves directly that the recovered quartic maps can supply a stopping rule.
+
+On this source, the simpler maps $(x^2,v)$ and $(x^{-2},v/x^3)$ both have target $E^+$. Their two signed sums have inverse coefficient bound 36, and multiplication of $x$ by a cube root of unity transports this bound to all rotations. The proof of Theorem 1 then gives $H(x)<4.279$ if $E^+(K)$ has rank at most one and $H(x)<4.965$ if $E^+(K(\zeta_3))$ has rank at most two. Both calculations are replayed in \texttt{quartic\_bridge.py} and \texttt{height\_constants.py}.
+
+\newpage
+\heading{A necessary growth rate for a general bound}
+Write $D_K=|\Delta_K|$. On $E':Y^2=X(X^2+21X+441)$, the point $P=(84,882)$ has $2P=(225/16,7335/64)$. Nagell--Lutz on the integral short model with abscissa $X+7$ proves $P$ is nontorsion. On odd multiples $mP$ the squareclass of $X$ is $21$, by the rational two-isogeny descent homomorphism. Thus $x=\sqrt{X/21}>0$ and $z=Y/(21x)$ are rational and $z^2=21(x^4+x^2+1)$.
+
+The real elliptic group is a connected circle because the cubic has just one real root. Choose odd multiples approaching a real point with $X=21$ from the side $X>21$. If $x=a/b>1$ in lowest terms, their squareclasses on $\C$ give
+\[
+  K=\Q(\sqrt{21(a^2-b^2)}),\qquad
+  \frac{D_K}{H(x)^2}\le 84(1-x^{-2}).
+\]
+These are real quadratic fields since $\C(\Q)$ has no $x>1$. Density already shows $H(x)/\sqrt{D_K}$ unbounded. Distinct fields occur infinitely often by Faltings' theorem.
+
+For the stated rate, write the odd multiples as $P+j(2P)$, where $2P$ is an irrational circle rotation by $\alpha$. At each convergent $p/q$ the first $q$ iterates lie within $1/q$ of the corresponding $1/q$ grid points. Choosing a grid point between $2/q$ and $3/q$ beyond the target places an actual iterate between $1/q$ and $4/q$ beyond it. Thus infinitely many $m=2j+1\le2q$ have $0<x-1\ll1/m$. Here $X$ is a smooth local coordinate at the target. The fixed-curve canonical-height comparison and $X=21x^2$ give $\log H(x)=m^2\widehat h(P)+O(1)$. It follows that
+\[
+    D_K\ll H(x)^2/m\ll H(x)^2/(\log H(x))^{1/2},
+\]
+which proves Theorem 4. The exact example $m=213$ has $H(x)/\sqrt{D_K}>1.53$.
+
+There is a separate rank obstruction. Choose fresh primes $q>3$ avoiding preceding radicands, put $n=q+1$ and write $n^6-1=ds^2$ with $d$ squarefree. The new prime has valuation one. The source point $(n,s\sqrt d)$ yields rational nontorsion points on twists $E_d,E_{-d}$, since both transported abscissas have logarithmic height $2\log n>A$. Applying the CM endomorphism $\sqrt{-3}$ gives characters $-3d,3d$ as well. After $r$ steps the resulting multiquadratic extension of $\Q(\zeta_{12})$ has absolute degree $4\cdot2^r$ and elliptic rank at least $4r$, from distinct characters. The six-radical certificate already has rank at least 24. Full details accompany the code.
+
+{\small\textbf{Sources.} [1] B. Poonen, \href{https://math.mit.edu/~poonen/papers/etale.pdf}{Unramified covers of Galois covers of low genus curves}, Theorem 1.5, Corollaries 1.8--1.9 and Remark 1.2. [2] \href{https://www.proofatlas.ai/open-problems/}{ProofAtlas, problem 87}. [3] M. Girard and L. Kulesz, \href{https://www.cambridge.org/core/journals/lms-journal-of-computation-and-mathematics/article/computation-of-sets-of-rational-points-of-genus3-curves-via-the-demjanenkomanin-method/9C0415EF619474507379844F76E6DF84}{Computation of sets of rational points of genus-3 curves via the Dem'janenko--Manin method}. [4] J. S. Milne, \href{https://jmilne.org/math/CourseNotes/CFT.pdf}{Class Field Theory}. [5] N. Garcia-Fritz and H. Pasten, \href{https://arxiv.org/abs/2503.10443}{Effective Mordell for curves with enough automorphisms}. Priority for the particular classifications here has not been established.}
+\end{document}

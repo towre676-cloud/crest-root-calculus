@@ -1,0 +1,2959 @@
+[
+  {
+    "d": 2,
+    "rank": [
+      2,
+      2
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w",
+        "-2*w^3"
+      ],
+      [
+        "-w",
+        "2*w^3"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "-w^3",
+        "-2*w^3"
+      ],
+      [
+        "-w^3",
+        "2*w^3"
+      ],
+      [
+        "-w^3 + w",
+        "-2*w^3"
+      ],
+      [
+        "-w^3 + w",
+        "2*w^3"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w",
+        "-2*w^3"
+      ],
+      [
+        "w",
+        "2*w^3"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ],
+      [
+        "w^3",
+        "-2*w^3"
+      ],
+      [
+        "w^3",
+        "2*w^3"
+      ],
+      [
+        "w^3 - w",
+        "-2*w^3"
+      ],
+      [
+        "w^3 - w",
+        "2*w^3"
+      ]
+    ],
+    "torsion": 4,
+    "rational_primitive": [
+      [
+        "1",
+        "3"
+      ],
+      [
+        "33",
+        "-189"
+      ]
+    ],
+    "rational_height_lower": [
+      "11/24",
+      "41/24"
+    ],
+    "basis_index": 2,
+    "basis_change": [
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "lattice_checks": 204,
+    "outside_quartic_base": 24,
+    "projective_points_verified": 46
+  },
+  {
+    "d": 5,
+    "rank": [
+      0,
+      0
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 7,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 72,
+    "projective_points_verified": 130
+  },
+  {
+    "d": 10,
+    "rank": [
+      2,
+      2
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "rational_primitive": [
+      [
+        "-6",
+        "28"
+      ],
+      [
+        "946/9",
+        "28756/27"
+      ]
+    ],
+    "rational_height_lower": [
+      "15/8",
+      "143/24"
+    ],
+    "basis_index": 2,
+    "basis_change": [
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "lattice_checks": 52,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 11,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 48,
+    "projective_points_verified": 58
+  },
+  {
+    "d": 13,
+    "rank": [
+      0,
+      0
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 14,
+    "rank": [
+      2,
+      2
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "rational_primitive": [
+      [
+        "-7",
+        "49"
+      ],
+      [
+        "217",
+        "3185"
+      ]
+    ],
+    "rational_height_lower": [
+      "23/24",
+      "13/4"
+    ],
+    "basis_index": 2,
+    "basis_change": [
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "lattice_checks": 92,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 17,
+    "rank": [
+      0,
+      0
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 19,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 22,
+    "rank": [
+      2,
+      2
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "rational_primitive": [
+      [
+        "26",
+        "168"
+      ],
+      [
+        "15042/169",
+        "-1419768/2197"
+      ]
+    ],
+    "rational_height_lower": [
+      "55/24",
+      "173/24"
+    ],
+    "basis_index": 2,
+    "basis_change": [
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "lattice_checks": 44,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 23,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 26,
+    "rank": [
+      6,
+      6
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 29,
+    "rank": [
+      0,
+      0
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 31,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 34,
+    "rank": [
+      2,
+      2
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "rational_primitive": [
+      [
+        "450",
+        "9548"
+      ],
+      [
+        "22820554/50625",
+        "108382412908/11390625"
+      ]
+    ],
+    "rational_height_lower": [
+      "61/12",
+      "125/8"
+    ],
+    "basis_index": 2,
+    "basis_change": [
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "lattice_checks": 28,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 35,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 37,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 38,
+    "rank": [
+      6,
+      6
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 41,
+    "rank": [
+      0,
+      0
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 43,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 46,
+    "rank": [
+      2,
+      2
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "rational_primitive": [
+      [
+        "2",
+        "312"
+      ],
+      [
+        "97338",
+        "-30368520"
+      ]
+    ],
+    "rational_height_lower": [
+      "11/4",
+      "26/3"
+    ],
+    "basis_index": 2,
+    "basis_change": [
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "lattice_checks": 28,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 47,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 53,
+    "rank": [
+      0,
+      0
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 55,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 58,
+    "rank": [
+      2,
+      2
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "rational_primitive": [
+      [
+        "-38/9",
+        "11924/27"
+      ],
+      [
+        "142222930/3249",
+        "1696111577468/185193"
+      ]
+    ],
+    "rational_height_lower": [
+      "45/8",
+      "69/4"
+    ],
+    "basis_index": 2,
+    "basis_change": [
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "lattice_checks": 28,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 59,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 61,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 62,
+    "rank": [
+      2,
+      2
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "rational_primitive": [
+      [
+        "-3503/81",
+        "289261/729"
+      ],
+      [
+        "482459665/1034289",
+        "10255783755581/1051871913"
+      ]
+    ],
+    "rational_height_lower": [
+      "125/24",
+      "16"
+    ],
+    "basis_index": 2,
+    "basis_change": [
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "lattice_checks": 28,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 65,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 67,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 70,
+    "rank": [
+      2,
+      2
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "rational_primitive": [
+      [
+        "14",
+        "588"
+      ],
+      [
+        "7014",
+        "-587412"
+      ]
+    ],
+    "rational_height_lower": [
+      "31/24",
+      "17/4"
+    ],
+    "basis_index": 2,
+    "basis_change": [
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "lattice_checks": 76,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 71,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 73,
+    "rank": [
+      0,
+      0
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 74,
+    "rank": [
+      2,
+      2
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "rational_primitive": [
+      [
+        "-47",
+        "549"
+      ],
+      [
+        "1517073/2209",
+        "1836742635/103823"
+      ]
+    ],
+    "rational_height_lower": [
+      "47/12",
+      "97/8"
+    ],
+    "basis_index": 2,
+    "basis_change": [
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "lattice_checks": 28,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 77,
+    "rank": [
+      0,
+      0
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 79,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 82,
+    "rank": [
+      2,
+      2
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "rational_primitive": [
+      [
+        "-1420478/19881",
+        "1210989556/2803221"
+      ],
+      [
+        "3616131073029368650/10028760449402601",
+        "5680689952668306026692533292/1004317167788078804361099"
+      ]
+    ],
+    "rational_height_lower": [
+      "161/12",
+      "325/8"
+    ],
+    "basis_index": 2,
+    "basis_change": [
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "lattice_checks": 4,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 83,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 85,
+    "rank": [
+      0,
+      0
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 86,
+    "rank": [
+      2,
+      2
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "rational_primitive": [
+      [
+        "602",
+        "14792"
+      ],
+      [
+        "29842/49",
+        "4955320/343"
+      ]
+    ],
+    "rational_height_lower": [
+      "43/24",
+      "137/24"
+    ],
+    "basis_index": 2,
+    "basis_change": [
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "lattice_checks": 52,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 89,
+    "rank": [
+      0,
+      0
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 91,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 94,
+    "rank": [
+      2,
+      2
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "rational_primitive": [
+      [
+        "1458626/121",
+        "1761635400/1331"
+      ],
+      [
+        "775840924205956218/64359591688249",
+        "683370530239614118213624200/516321155822251372307"
+      ]
+    ],
+    "rational_height_lower": [
+      "295/24",
+      "893/24"
+    ],
+    "basis_index": 2,
+    "basis_change": [
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "lattice_checks": 4,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 95,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 97,
+    "rank": [
+      0,
+      0
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 101,
+    "rank": [
+      0,
+      0
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 103,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 106,
+    "rank": [
+      2,
+      2
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "rational_primitive": [
+      [
+        "12730/81",
+        "1641916/729"
+      ],
+      [
+        "1148688088306/3281571225",
+        "-615863082083919796/187984807624125"
+      ]
+    ],
+    "rational_height_lower": [
+      "26/3",
+      "211/8"
+    ],
+    "basis_index": 2,
+    "basis_change": [
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "lattice_checks": 4,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 107,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 109,
+    "rank": [
+      0,
+      0
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 110,
+    "rank": [
+      6,
+      6
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 113,
+    "rank": [
+      0,
+      0
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 115,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 118,
+    "rank": [
+      6,
+      6
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 119,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 122,
+    "rank": [
+      2,
+      2
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "rational_primitive": [
+      [
+        "1201",
+        "41643"
+      ],
+      [
+        "1739586993/1442401",
+        "71534212850331/1732323601"
+      ]
+    ],
+    "rational_height_lower": [
+      "37/6",
+      "227/12"
+    ],
+    "basis_index": 2,
+    "basis_change": [
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "lattice_checks": 28,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 127,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 130,
+    "rank": [
+      2,
+      2
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "rational_primitive": [
+      [
+        "-55",
+        "1425"
+      ],
+      [
+        "344865/121",
+        "202263075/1331"
+      ]
+    ],
+    "rational_height_lower": [
+      "23/8",
+      "217/24"
+    ],
+    "basis_index": 2,
+    "basis_change": [
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "lattice_checks": 28,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 131,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 133,
+    "rank": [
+      0,
+      0
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 134,
+    "rank": [
+      2,
+      2
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "rational_primitive": [
+      [
+        "10921/100",
+        "1925781/1000"
+      ],
+      [
+        "2434160049/2656900",
+        "-114909913711593/4330747000"
+      ]
+    ],
+    "rational_height_lower": [
+      "5",
+      "61/4"
+    ],
+    "basis_index": 2,
+    "basis_change": [
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "lattice_checks": 28,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 137,
+    "rank": [
+      0,
+      0
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 139,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 142,
+    "rank": [
+      2,
+      2
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "rational_primitive": [
+      [
+        "995042/20449",
+        "5046695640/2924207"
+      ],
+      [
+        "858",
+        "23544"
+      ]
+    ],
+    "rational_height_lower": [
+      "161/12",
+      "35/8"
+    ],
+    "basis_index": 2,
+    "basis_change": [
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "lattice_checks": 28,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 143,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 145,
+    "rank": [
+      0,
+      0
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 146,
+    "rank": [
+      2,
+      2
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "rational_primitive": [
+      [
+        "28130/121",
+        "5269964/1331"
+      ],
+      [
+        "11078134213546/23936731225",
+        "-14391960965188741844/3703371371475875"
+      ]
+    ],
+    "rational_height_lower": [
+      "113/12",
+      "343/12"
+    ],
+    "basis_index": 2,
+    "basis_change": [
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "lattice_checks": 4,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 149,
+    "rank": [
+      0,
+      0
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 151,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 154,
+    "rank": [
+      2,
+      2
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "rational_primitive": [
+      [
+        "-7",
+        "1911"
+      ],
+      [
+        "298137",
+        "162788535"
+      ]
+    ],
+    "rational_height_lower": [
+      "65/24",
+      "205/24"
+    ],
+    "basis_index": 2,
+    "basis_change": [
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "lattice_checks": 28,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 155,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 157,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 158,
+    "rank": [
+      2,
+      2
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "rational_primitive": [
+      [
+        "-7663/49",
+        "118579/343"
+      ],
+      [
+        "225315505/461041",
+        "1001068701011/313046839"
+      ]
+    ],
+    "rational_height_lower": [
+      "115/24",
+      "44/3"
+    ],
+    "basis_index": 2,
+    "basis_change": [
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "lattice_checks": 28,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 161,
+    "rank": [
+      0,
+      0
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 163,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 166,
+    "rank": [
+      2,
+      2
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "rational_primitive": [
+      [
+        "-1074670246/12187081",
+        "83897037605640/42545099771"
+      ],
+      [
+        "7969578426310530448462844802/3518764129399451210558449",
+        "707672450169493062701121347207982356752920/6600627646969437534961509514535856457"
+      ]
+    ],
+    "rational_height_lower": [
+      "473/24",
+      "119/2"
+    ],
+    "basis_index": 2,
+    "basis_change": [
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "lattice_checks": 4,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 167,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 170,
+    "rank": [
+      2,
+      2
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "rational_primitive": [
+      [
+        "506",
+        "11596"
+      ],
+      [
+        "37301554/64009",
+        "130817688092/16194277"
+      ]
+    ],
+    "rational_height_lower": [
+      "16/3",
+      "197/12"
+    ],
+    "basis_index": 2,
+    "basis_change": [
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "lattice_checks": 28,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 173,
+    "rank": [
+      0,
+      0
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 178,
+    "rank": [
+      2,
+      2
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "rational_primitive": [
+      [
+        "-1240172725566/6969745225",
+        "45164188248514748/581869180109125"
+      ],
+      [
+        "1432605448509343722813754445649719626/2679916505451151488713471220950025",
+        "97007630199817699396176107664754062358887522702227876/138733676453505838661355183714664338489972840718875"
+      ]
+    ],
+    "rational_height_lower": [
+      "53/2",
+      "1915/24"
+    ],
+    "basis_index": 2,
+    "basis_change": [
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "lattice_checks": 4,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 179,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 181,
+    "rank": [
+      0,
+      0
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 182,
+    "rank": [
+      6,
+      6
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 185,
+    "rank": [
+      0,
+      0
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 187,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 190,
+    "rank": [
+      2,
+      2
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "rational_primitive": [
+      [
+        "114",
+        "2888"
+      ],
+      [
+        "20026/9",
+        "-2810024/27"
+      ]
+    ],
+    "rational_height_lower": [
+      "23/12",
+      "145/24"
+    ],
+    "basis_index": 2,
+    "basis_change": [
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "lattice_checks": 52,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 191,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 193,
+    "rank": [
+      4,
+      8
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 194,
+    "rank": [
+      2,
+      2
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "rational_primitive": [
+      [
+        "-120574/625",
+        "5445076/15625"
+      ],
+      [
+        "1344335553005194/2271576480625",
+        "10899293755438438887628/3423663282185984375"
+      ]
+    ],
+    "rational_height_lower": [
+      "263/24",
+      "797/24"
+    ],
+    "basis_index": 2,
+    "basis_change": [
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "lattice_checks": 4,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 197,
+    "rank": [
+      0,
+      0
+    ],
+    "status": "complete",
+    "twist_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-w^2",
+        "0"
+      ],
+      [
+        "-w^2 + 1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "w^2",
+        "0"
+      ],
+      [
+        "w^2 - 1",
+        "0"
+      ]
+    ],
+    "torsion": 4,
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  },
+  {
+    "d": 199,
+    "rank": [
+      4,
+      4
+    ],
+    "status": "partial",
+    "outside_quartic_base": 0,
+    "projective_points_verified": 10
+  }
+]

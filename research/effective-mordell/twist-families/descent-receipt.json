@@ -1,0 +1,833 @@
+{
+  "squareclasses": {
+    "14": [
+      {
+        "a": 1,
+        "obstruction": 256
+      },
+      {
+        "a": 7,
+        "obstruction": 256
+      },
+      {
+        "a": 3,
+        "obstruction": 256
+      },
+      {
+        "a": 21,
+        "ranks": [
+          0,
+          0
+        ],
+        "rational_x": []
+      },
+      {
+        "a": 2,
+        "obstruction": 256
+      },
+      {
+        "a": 14,
+        "obstruction": 256
+      },
+      {
+        "a": 6,
+        "obstruction": 256
+      },
+      {
+        "a": 42,
+        "obstruction": 256
+      }
+    ],
+    "22": [
+      {
+        "a": 1,
+        "ranks": [
+          1,
+          1
+        ]
+      },
+      {
+        "a": 11,
+        "obstruction": 256
+      },
+      {
+        "a": 3,
+        "obstruction": 256
+      },
+      {
+        "a": 33,
+        "ranks": [
+          0,
+          0
+        ],
+        "rational_x": []
+      },
+      {
+        "a": 2,
+        "obstruction": 256
+      },
+      {
+        "a": 22,
+        "obstruction": 256
+      },
+      {
+        "a": 6,
+        "obstruction": 256
+      },
+      {
+        "a": 66,
+        "obstruction": 256
+      }
+    ],
+    "38": [
+      {
+        "a": 1,
+        "obstruction": 243
+      },
+      {
+        "a": 19,
+        "obstruction": 256
+      },
+      {
+        "a": 3,
+        "obstruction": 256
+      },
+      {
+        "a": 57,
+        "ranks": [
+          0,
+          0
+        ],
+        "rational_x": []
+      },
+      {
+        "a": 2,
+        "obstruction": 256
+      },
+      {
+        "a": 38,
+        "obstruction": 256
+      },
+      {
+        "a": 6,
+        "obstruction": 256
+      },
+      {
+        "a": 114,
+        "obstruction": 256
+      }
+    ],
+    "42": [
+      {
+        "a": 1,
+        "obstruction": 256
+      },
+      {
+        "a": 7,
+        "ranks": [
+          0,
+          0
+        ],
+        "rational_x": []
+      },
+      {
+        "a": 3,
+        "obstruction": 256
+      },
+      {
+        "a": 21,
+        "obstruction": 256
+      },
+      {
+        "a": 2,
+        "obstruction": 256
+      },
+      {
+        "a": 14,
+        "obstruction": 256
+      },
+      {
+        "a": 6,
+        "obstruction": 256
+      },
+      {
+        "a": 42,
+        "obstruction": 256
+      }
+    ],
+    "43": [
+      {
+        "a": 1,
+        "obstruction": 256
+      },
+      {
+        "a": 43,
+        "obstruction": 256
+      },
+      {
+        "a": 3,
+        "obstruction": 256
+      },
+      {
+        "a": 129,
+        "obstruction": 256
+      },
+      {
+        "a": 2,
+        "obstruction": 243
+      },
+      {
+        "a": 86,
+        "obstruction": 256
+      },
+      {
+        "a": 6,
+        "obstruction": 256
+      },
+      {
+        "a": 258,
+        "ranks": [
+          0,
+          0
+        ],
+        "rational_x": []
+      }
+    ],
+    "46": [
+      {
+        "a": 1,
+        "obstruction": 256
+      },
+      {
+        "a": 23,
+        "obstruction": 256
+      },
+      {
+        "a": 3,
+        "obstruction": 256
+      },
+      {
+        "a": 69,
+        "ranks": [
+          0,
+          0
+        ],
+        "rational_x": []
+      },
+      {
+        "a": 2,
+        "obstruction": 256
+      },
+      {
+        "a": 46,
+        "obstruction": 256
+      },
+      {
+        "a": 6,
+        "obstruction": 256
+      },
+      {
+        "a": 138,
+        "obstruction": 256
+      }
+    ],
+    "55": [
+      {
+        "a": 1,
+        "obstruction": 256
+      },
+      {
+        "a": 11,
+        "obstruction": 256
+      },
+      {
+        "a": 5,
+        "obstruction": 256
+      },
+      {
+        "a": 55,
+        "obstruction": 256
+      },
+      {
+        "a": 3,
+        "obstruction": 256
+      },
+      {
+        "a": 33,
+        "obstruction": 256
+      },
+      {
+        "a": 15,
+        "obstruction": 256
+      },
+      {
+        "a": 165,
+        "obstruction": 256
+      },
+      {
+        "a": 2,
+        "obstruction": 243
+      },
+      {
+        "a": 22,
+        "obstruction": 256
+      },
+      {
+        "a": 10,
+        "ranks": [
+          1,
+          1
+        ]
+      },
+      {
+        "a": 110,
+        "obstruction": 256
+      },
+      {
+        "a": 6,
+        "obstruction": 256
+      },
+      {
+        "a": 66,
+        "obstruction": 125
+      },
+      {
+        "a": 30,
+        "obstruction": 256
+      },
+      {
+        "a": 330,
+        "ranks": [
+          0,
+          0
+        ],
+        "rational_x": []
+      }
+    ],
+    "61": [
+      {
+        "a": 1,
+        "obstruction": 256
+      },
+      {
+        "a": 61,
+        "obstruction": 256
+      },
+      {
+        "a": 3,
+        "obstruction": 256
+      },
+      {
+        "a": 183,
+        "obstruction": 256
+      },
+      {
+        "a": 2,
+        "obstruction": 256
+      },
+      {
+        "a": 122,
+        "obstruction": 256
+      },
+      {
+        "a": 6,
+        "ranks": [
+          0,
+          0
+        ],
+        "rational_x": []
+      },
+      {
+        "a": 366,
+        "ranks": [
+          0,
+          0
+        ],
+        "rational_x": []
+      }
+    ],
+    "62": [
+      {
+        "a": 1,
+        "obstruction": 256
+      },
+      {
+        "a": 31,
+        "obstruction": 256
+      },
+      {
+        "a": 3,
+        "obstruction": 256
+      },
+      {
+        "a": 93,
+        "ranks": [
+          0,
+          0
+        ],
+        "rational_x": []
+      },
+      {
+        "a": 2,
+        "obstruction": 256
+      },
+      {
+        "a": 62,
+        "obstruction": 256
+      },
+      {
+        "a": 6,
+        "obstruction": 256
+      },
+      {
+        "a": 186,
+        "obstruction": 256
+      }
+    ],
+    "65": [
+      {
+        "a": 1,
+        "obstruction": 256
+      },
+      {
+        "a": 13,
+        "obstruction": 256
+      },
+      {
+        "a": 5,
+        "obstruction": 256
+      },
+      {
+        "a": 65,
+        "obstruction": 256
+      },
+      {
+        "a": 3,
+        "obstruction": 256
+      },
+      {
+        "a": 39,
+        "obstruction": 256
+      },
+      {
+        "a": 15,
+        "obstruction": 256
+      },
+      {
+        "a": 195,
+        "obstruction": 256
+      },
+      {
+        "a": 2,
+        "obstruction": 256
+      },
+      {
+        "a": 26,
+        "obstruction": 256
+      },
+      {
+        "a": 10,
+        "obstruction": 256
+      },
+      {
+        "a": 130,
+        "obstruction": 256
+      },
+      {
+        "a": 6,
+        "obstruction": 125
+      },
+      {
+        "a": 78,
+        "obstruction": 125
+      },
+      {
+        "a": 30,
+        "obstruction": 169
+      },
+      {
+        "a": 390,
+        "ranks": [
+          0,
+          0
+        ],
+        "rational_x": []
+      }
+    ],
+    "66": [
+      {
+        "a": 1,
+        "obstruction": 256
+      },
+      {
+        "a": 11,
+        "ranks": [
+          0,
+          0
+        ],
+        "rational_x": []
+      },
+      {
+        "a": 3,
+        "ranks": [
+          1,
+          1
+        ]
+      },
+      {
+        "a": 33,
+        "obstruction": 256
+      },
+      {
+        "a": 2,
+        "obstruction": 256
+      },
+      {
+        "a": 22,
+        "obstruction": 256
+      },
+      {
+        "a": 6,
+        "obstruction": 256
+      },
+      {
+        "a": 66,
+        "obstruction": 256
+      }
+    ],
+    "70": [
+      {
+        "a": 1,
+        "obstruction": 125
+      },
+      {
+        "a": 7,
+        "obstruction": 256
+      },
+      {
+        "a": 5,
+        "obstruction": 256
+      },
+      {
+        "a": 35,
+        "obstruction": 256
+      },
+      {
+        "a": 3,
+        "obstruction": 256
+      },
+      {
+        "a": 21,
+        "obstruction": 256
+      },
+      {
+        "a": 15,
+        "obstruction": 256
+      },
+      {
+        "a": 105,
+        "ranks": [
+          0,
+          0
+        ],
+        "rational_x": []
+      },
+      {
+        "a": 2,
+        "obstruction": 256
+      },
+      {
+        "a": 14,
+        "obstruction": 256
+      },
+      {
+        "a": 10,
+        "obstruction": 256
+      },
+      {
+        "a": 70,
+        "obstruction": 256
+      },
+      {
+        "a": 6,
+        "obstruction": 256
+      },
+      {
+        "a": 42,
+        "obstruction": 256
+      },
+      {
+        "a": 30,
+        "obstruction": 256
+      },
+      {
+        "a": 210,
+        "obstruction": 256
+      }
+    ],
+    "86": [
+      {
+        "a": 1,
+        "obstruction": 243
+      },
+      {
+        "a": 43,
+        "obstruction": 256
+      },
+      {
+        "a": 3,
+        "obstruction": 256
+      },
+      {
+        "a": 129,
+        "ranks": [
+          0,
+          0
+        ],
+        "rational_x": []
+      },
+      {
+        "a": 2,
+        "obstruction": 256
+      },
+      {
+        "a": 86,
+        "obstruction": 256
+      },
+      {
+        "a": 6,
+        "obstruction": 256
+      },
+      {
+        "a": 258,
+        "obstruction": 256
+      }
+    ],
+    "94": [
+      {
+        "a": 1,
+        "obstruction": 256
+      },
+      {
+        "a": 47,
+        "obstruction": 256
+      },
+      {
+        "a": 3,
+        "obstruction": 256
+      },
+      {
+        "a": 141,
+        "ranks": [
+          0,
+          0
+        ],
+        "rational_x": []
+      },
+      {
+        "a": 2,
+        "obstruction": 256
+      },
+      {
+        "a": 94,
+        "obstruction": 256
+      },
+      {
+        "a": 6,
+        "obstruction": 256
+      },
+      {
+        "a": 282,
+        "obstruction": 256
+      }
+    ],
+    "95": [
+      {
+        "a": 1,
+        "obstruction": 256
+      },
+      {
+        "a": 19,
+        "obstruction": 256
+      },
+      {
+        "a": 5,
+        "obstruction": 256
+      },
+      {
+        "a": 95,
+        "obstruction": 256
+      },
+      {
+        "a": 3,
+        "obstruction": 256
+      },
+      {
+        "a": 57,
+        "obstruction": 256
+      },
+      {
+        "a": 15,
+        "obstruction": 256
+      },
+      {
+        "a": 285,
+        "obstruction": 256
+      },
+      {
+        "a": 2,
+        "obstruction": 125
+      },
+      {
+        "a": 38,
+        "obstruction": 256
+      },
+      {
+        "a": 10,
+        "obstruction": 243
+      },
+      {
+        "a": 190,
+        "obstruction": 256
+      },
+      {
+        "a": 6,
+        "obstruction": 256
+      },
+      {
+        "a": 114,
+        "obstruction": 125
+      },
+      {
+        "a": 30,
+        "obstruction": 256
+      },
+      {
+        "a": 570,
+        "ranks": [
+          0,
+          0
+        ],
+        "rational_x": []
+      }
+    ]
+  },
+  "quadratic_sieve": {
+    "22": [
+      {
+        "delta": [
+          1,
+          4
+        ],
+        "obstruction": 16
+      },
+      {
+        "delta": [
+          5,
+          2
+        ],
+        "obstruction": 27
+      },
+      {
+        "delta": [
+          5,
+          -2
+        ],
+        "obstruction": 27
+      },
+      {
+        "delta": [
+          1,
+          -4
+        ],
+        "obstruction": 27
+      },
+      {
+        "delta": [
+          -1,
+          -4
+        ],
+        "obstruction": 27
+      },
+      {
+        "delta": [
+          -5,
+          -2
+        ],
+        "obstruction": null
+      },
+      {
+        "delta": [
+          -5,
+          2
+        ],
+        "obstruction": 27
+      },
+      {
+        "delta": [
+          -1,
+          4
+        ],
+        "obstruction": 27
+      }
+    ],
+    "55": [
+      {
+        "delta": [
+          1,
+          4
+        ],
+        "obstruction": 16
+      },
+      {
+        "delta": [
+          5,
+          2
+        ],
+        "obstruction": 27
+      },
+      {
+        "delta": [
+          5,
+          -2
+        ],
+        "obstruction": 27
+      },
+      {
+        "delta": [
+          1,
+          -4
+        ],
+        "obstruction": 27
+      },
+      {
+        "delta": [
+          -1,
+          -4
+        ],
+        "obstruction": 27
+      },
+      {
+        "delta": [
+          -5,
+          -2
+        ],
+        "obstruction": 16
+      },
+      {
+        "delta": [
+          -5,
+          2
+        ],
+        "obstruction": 27
+      },
+      {
+        "delta": [
+          -1,
+          4
+        ],
+        "obstruction": 27
+      }
+    ]
+  }
+}

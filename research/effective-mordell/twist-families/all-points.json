@@ -1,0 +1,1543 @@
+[
+  {
+    "d": 1,
+    "ranks": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 2,
+    "ranks": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 3,
+    "ranks": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 5,
+    "ranks": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 6,
+    "ranks": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 7,
+    "ranks": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 10,
+    "ranks": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 11,
+    "ranks": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 13,
+    "ranks": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 14,
+    "ranks": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational squareclass descent",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 15,
+    "ranks": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 17,
+    "ranks": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 19,
+    "ranks": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 21,
+    "ranks": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 22,
+    "ranks": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "elliptic Chabauty",
+    "affine": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        -44
+      ],
+      [
+        1,
+        44
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 23,
+    "ranks": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 26,
+    "ranks": [
+      [
+        0,
+        0
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 29,
+    "ranks": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 30,
+    "ranks": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 31,
+    "ranks": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 33,
+    "ranks": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 34,
+    "ranks": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 35,
+    "ranks": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 37,
+    "ranks": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 38,
+    "ranks": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational squareclass descent",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 39,
+    "ranks": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 41,
+    "ranks": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 42,
+    "ranks": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational squareclass descent",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 43,
+    "ranks": [
+      [
+        2,
+        2
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational squareclass descent",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 46,
+    "ranks": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational squareclass descent",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 47,
+    "ranks": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 51,
+    "ranks": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 53,
+    "ranks": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 55,
+    "ranks": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "quadratic local obstructions",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 57,
+    "ranks": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 58,
+    "ranks": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 59,
+    "ranks": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 61,
+    "ranks": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational squareclass descent",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 62,
+    "ranks": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational squareclass descent",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 65,
+    "ranks": [
+      [
+        2,
+        2
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational squareclass descent",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 66,
+    "ranks": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "isomorphism to d=22",
+    "affine": [
+      [
+        0,
+        0
+      ],
+      [
+        3,
+        -396
+      ],
+      [
+        3,
+        396
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 67,
+    "ranks": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 69,
+    "ranks": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 70,
+    "ranks": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational squareclass descent",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 71,
+    "ranks": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 73,
+    "ranks": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 74,
+    "ranks": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 77,
+    "ranks": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 78,
+    "ranks": [
+      [
+        2,
+        2
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 79,
+    "ranks": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 82,
+    "ranks": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 83,
+    "ranks": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 85,
+    "ranks": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 86,
+    "ranks": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational squareclass descent",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 87,
+    "ranks": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 89,
+    "ranks": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 91,
+    "ranks": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 93,
+    "ranks": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 94,
+    "ranks": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational squareclass descent",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 95,
+    "ranks": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational squareclass descent",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  },
+  {
+    "d": 97,
+    "ranks": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "torsion": [
+      2,
+      2
+    ],
+    "method": "rational quartic quotient",
+    "affine": [
+      [
+        0,
+        0
+      ]
+    ],
+    "rational_infinities": 1
+  }
+]

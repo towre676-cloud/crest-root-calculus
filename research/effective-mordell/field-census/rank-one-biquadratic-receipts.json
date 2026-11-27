@@ -1,0 +1,4838 @@
+[
+  {
+    "d": 2,
+    "field": "w^4 - 2*w^2 + 9",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 1,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-1/2*w^2 + 1/2",
+        "-1/2*w^3 - 1/2*w"
+      ],
+      [
+        "-1/2*w^2 + 1/2",
+        "1/2*w^3 + 1/2*w"
+      ],
+      [
+        "-1/4*w^2 + 1/4",
+        "-3/8*w^2 + 3/8"
+      ],
+      [
+        "-1/4*w^2 + 1/4",
+        "3/8*w^2 - 3/8"
+      ],
+      [
+        "-1/6*w^3 - 1/6*w",
+        "-1/2*w^2 + 1/2"
+      ],
+      [
+        "-1/6*w^3 - 1/6*w",
+        "1/2*w^2 - 1/2"
+      ],
+      [
+        "0",
+        "-1/6*w^3 - 1/6*w"
+      ],
+      [
+        "0",
+        "1/6*w^3 + 1/6*w"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "1/2*w^2 - 1/2",
+        "-1/2*w^3 - 1/2*w"
+      ],
+      [
+        "1/2*w^2 - 1/2",
+        "1/2*w^3 + 1/2*w"
+      ],
+      [
+        "1/4*w^2 - 1/4",
+        "-3/8*w^2 + 3/8"
+      ],
+      [
+        "1/4*w^2 - 1/4",
+        "3/8*w^2 - 3/8"
+      ],
+      [
+        "1/6*w^3 + 1/6*w",
+        "-1/2*w^2 + 1/2"
+      ],
+      [
+        "1/6*w^3 + 1/6*w",
+        "1/2*w^2 - 1/2"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 3,
+    "field": "w^4 - 4*w^2 + 16",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 0,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-1/4*w^2",
+        "0"
+      ],
+      [
+        "-1/4*w^2 + 1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/8*w^3"
+      ],
+      [
+        "0",
+        "1/8*w^3"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "1/4*w^2",
+        "0"
+      ],
+      [
+        "1/4*w^2 - 1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 5,
+    "field": "w^4 - 8*w^2 + 36",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 0,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/12*w^3 + 1/6*w"
+      ],
+      [
+        "0",
+        "1/12*w^3 - 1/6*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 6,
+    "field": "w^4 - 10*w^2 + 49",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 1,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/14*w^3 + 3/14*w"
+      ],
+      [
+        "0",
+        "1/14*w^3 - 3/14*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 7,
+    "field": "w^4 - 12*w^2 + 64",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-1/16*w^3 + 1/2*w",
+        "-3/64*w^3"
+      ],
+      [
+        "-1/16*w^3 + 1/2*w",
+        "3/64*w^3"
+      ],
+      [
+        "-1/2",
+        "-3/16*w^2 + 9/8"
+      ],
+      [
+        "-1/2",
+        "3/16*w^2 - 9/8"
+      ],
+      [
+        "-1/32*w^3 + 1/8*w^2 + 3/8*w - 1/2",
+        "-1/64*w^3 - 3/16*w^2 - 1/16*w + 5/4"
+      ],
+      [
+        "-1/32*w^3 + 1/8*w^2 + 3/8*w - 1/2",
+        "1/64*w^3 + 3/16*w^2 + 1/16*w - 5/4"
+      ],
+      [
+        "-1/32*w^3 - 1/8*w",
+        "-9/128*w^3 + 15/32*w"
+      ],
+      [
+        "-1/32*w^3 - 1/8*w",
+        "9/128*w^3 - 15/32*w"
+      ],
+      [
+        "-1/32*w^3 - 1/8*w^2 + 3/8*w + 1/2",
+        "-1/64*w^3 + 3/16*w^2 - 1/16*w - 5/4"
+      ],
+      [
+        "-1/32*w^3 - 1/8*w^2 + 3/8*w + 1/2",
+        "1/64*w^3 - 3/16*w^2 + 1/16*w + 5/4"
+      ],
+      [
+        "-1/8*w^2 + 1/4*w + 1",
+        "-1/32*w^3 - 3/16*w^2 + 1/4*w + 1"
+      ],
+      [
+        "-1/8*w^2 + 1/4*w + 1",
+        "1/32*w^3 + 3/16*w^2 - 1/4*w - 1"
+      ],
+      [
+        "-1/8*w^2 - 1/4*w + 1",
+        "-1/32*w^3 + 3/16*w^2 + 1/4*w - 1"
+      ],
+      [
+        "-1/8*w^2 - 1/4*w + 1",
+        "1/32*w^3 - 3/16*w^2 - 1/4*w + 1"
+      ],
+      [
+        "-2",
+        "-3/16*w^3 + 15/4*w"
+      ],
+      [
+        "-2",
+        "3/16*w^3 - 15/4*w"
+      ],
+      [
+        "0",
+        "-1/16*w^3 + 1/4*w"
+      ],
+      [
+        "0",
+        "1/16*w^3 - 1/4*w"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "1/16*w^3 - 1/2*w",
+        "-3/64*w^3"
+      ],
+      [
+        "1/16*w^3 - 1/2*w",
+        "3/64*w^3"
+      ],
+      [
+        "1/2",
+        "-3/16*w^2 + 9/8"
+      ],
+      [
+        "1/2",
+        "3/16*w^2 - 9/8"
+      ],
+      [
+        "1/32*w^3 + 1/8*w",
+        "-9/128*w^3 + 15/32*w"
+      ],
+      [
+        "1/32*w^3 + 1/8*w",
+        "9/128*w^3 - 15/32*w"
+      ],
+      [
+        "1/32*w^3 + 1/8*w^2 - 3/8*w - 1/2",
+        "-1/64*w^3 + 3/16*w^2 - 1/16*w - 5/4"
+      ],
+      [
+        "1/32*w^3 + 1/8*w^2 - 3/8*w - 1/2",
+        "1/64*w^3 - 3/16*w^2 + 1/16*w + 5/4"
+      ],
+      [
+        "1/32*w^3 - 1/8*w^2 - 3/8*w + 1/2",
+        "-1/64*w^3 - 3/16*w^2 - 1/16*w + 5/4"
+      ],
+      [
+        "1/32*w^3 - 1/8*w^2 - 3/8*w + 1/2",
+        "1/64*w^3 + 3/16*w^2 + 1/16*w - 5/4"
+      ],
+      [
+        "1/8*w^2 + 1/4*w - 1",
+        "-1/32*w^3 + 3/16*w^2 + 1/4*w - 1"
+      ],
+      [
+        "1/8*w^2 + 1/4*w - 1",
+        "1/32*w^3 - 3/16*w^2 - 1/4*w + 1"
+      ],
+      [
+        "1/8*w^2 - 1/4*w - 1",
+        "-1/32*w^3 - 3/16*w^2 + 1/4*w + 1"
+      ],
+      [
+        "1/8*w^2 - 1/4*w - 1",
+        "1/32*w^3 + 3/16*w^2 - 1/4*w - 1"
+      ],
+      [
+        "2",
+        "-3/16*w^3 + 15/4*w"
+      ],
+      [
+        "2",
+        "3/16*w^3 - 15/4*w"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 10,
+    "field": "w^4 - 18*w^2 + 121",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 1,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/22*w^3 + 7/22*w"
+      ],
+      [
+        "0",
+        "1/22*w^3 - 7/22*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 11,
+    "field": "w^4 - 20*w^2 + 144",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-1/30*w^3 + 4/15*w + 3/5",
+        "-3/500*w^3 + 13/125*w^2 + 24/125*w - 26/25"
+      ],
+      [
+        "-1/30*w^3 + 4/15*w + 3/5",
+        "3/500*w^3 - 13/125*w^2 - 24/125*w + 26/25"
+      ],
+      [
+        "-1/30*w^3 + 4/15*w - 3/5",
+        "-3/500*w^3 - 13/125*w^2 + 24/125*w + 26/25"
+      ],
+      [
+        "-1/30*w^3 + 4/15*w - 3/5",
+        "3/500*w^3 + 13/125*w^2 - 24/125*w - 26/25"
+      ],
+      [
+        "0",
+        "-1/24*w^3 + 1/3*w"
+      ],
+      [
+        "0",
+        "1/24*w^3 - 1/3*w"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "1/30*w^3 - 4/15*w + 3/5",
+        "-3/500*w^3 - 13/125*w^2 + 24/125*w + 26/25"
+      ],
+      [
+        "1/30*w^3 - 4/15*w + 3/5",
+        "3/500*w^3 + 13/125*w^2 - 24/125*w - 26/25"
+      ],
+      [
+        "1/30*w^3 - 4/15*w - 3/5",
+        "-3/500*w^3 + 13/125*w^2 + 24/125*w - 26/25"
+      ],
+      [
+        "1/30*w^3 - 4/15*w - 3/5",
+        "3/500*w^3 - 13/125*w^2 - 24/125*w + 26/25"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 13,
+    "field": "w^4 - 24*w^2 + 196",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 0,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/28*w^3 + 5/14*w"
+      ],
+      [
+        "0",
+        "1/28*w^3 - 5/14*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 14,
+    "field": "w^4 - 26*w^2 + 225",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 1,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/30*w^3 + 11/30*w"
+      ],
+      [
+        "0",
+        "1/30*w^3 - 11/30*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 15,
+    "field": "w^4 - 28*w^2 + 256",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 0,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/32*w^3 + 3/8*w"
+      ],
+      [
+        "0",
+        "1/32*w^3 - 3/8*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 17,
+    "field": "w^4 - 32*w^2 + 324",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 0,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/36*w^3 + 7/18*w"
+      ],
+      [
+        "0",
+        "1/36*w^3 - 7/18*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 19,
+    "field": "w^4 - 36*w^2 + 400",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-3/5",
+        "-14/125*w^2 + 252/125"
+      ],
+      [
+        "-3/5",
+        "14/125*w^2 - 252/125"
+      ],
+      [
+        "-5/3",
+        "-7/270*w^3 + 196/135*w"
+      ],
+      [
+        "-5/3",
+        "7/270*w^3 - 196/135*w"
+      ],
+      [
+        "0",
+        "-1/40*w^3 + 2/5*w"
+      ],
+      [
+        "0",
+        "1/40*w^3 - 2/5*w"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "3/5",
+        "-14/125*w^2 + 252/125"
+      ],
+      [
+        "3/5",
+        "14/125*w^2 - 252/125"
+      ],
+      [
+        "5/3",
+        "-7/270*w^3 + 196/135*w"
+      ],
+      [
+        "5/3",
+        "7/270*w^3 - 196/135*w"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 21,
+    "field": "w^4 - 40*w^2 + 484",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/44*w^3 + 9/22*w"
+      ],
+      [
+        "0",
+        "1/44*w^3 - 9/22*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 22,
+    "field": "w^4 - 42*w^2 + 529",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 1,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/46*w^3 + 19/46*w"
+      ],
+      [
+        "0",
+        "1/46*w^3 - 19/46*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 23,
+    "field": "w^4 - 44*w^2 + 576",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-1/52*w^3 + 5/13*w + 5/13",
+        "-37/17576*w^3 - 165/2197*w^2 + 629/4394*w + 3630/2197"
+      ],
+      [
+        "-1/52*w^3 + 5/13*w + 5/13",
+        "37/17576*w^3 + 165/2197*w^2 - 629/4394*w - 3630/2197"
+      ],
+      [
+        "-1/52*w^3 + 5/13*w - 5/13",
+        "-37/17576*w^3 + 165/2197*w^2 + 629/4394*w - 3630/2197"
+      ],
+      [
+        "-1/52*w^3 + 5/13*w - 5/13",
+        "37/17576*w^3 - 165/2197*w^2 - 629/4394*w + 3630/2197"
+      ],
+      [
+        "0",
+        "-1/48*w^3 + 5/12*w"
+      ],
+      [
+        "0",
+        "1/48*w^3 - 5/12*w"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "1/52*w^3 - 5/13*w + 5/13",
+        "-37/17576*w^3 + 165/2197*w^2 + 629/4394*w - 3630/2197"
+      ],
+      [
+        "1/52*w^3 - 5/13*w + 5/13",
+        "37/17576*w^3 - 165/2197*w^2 - 629/4394*w + 3630/2197"
+      ],
+      [
+        "1/52*w^3 - 5/13*w - 5/13",
+        "-37/17576*w^3 - 165/2197*w^2 + 629/4394*w + 3630/2197"
+      ],
+      [
+        "1/52*w^3 - 5/13*w - 5/13",
+        "37/17576*w^3 + 165/2197*w^2 - 629/4394*w - 3630/2197"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 26,
+    "field": "w^4 - 50*w^2 + 729",
+    "twist_rank_intervals": [
+      [
+        2,
+        2
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 3,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-1/90*w^3 + 23/90*w + 4/5",
+        "-1/1125*w^3 + 33/250*w^2 + 77/1125*w - 33/10"
+      ],
+      [
+        "-1/90*w^3 + 23/90*w + 4/5",
+        "1/1125*w^3 - 33/250*w^2 - 77/1125*w + 33/10"
+      ],
+      [
+        "-1/90*w^3 + 23/90*w - 4/5",
+        "-1/1125*w^3 - 33/250*w^2 + 77/1125*w + 33/10"
+      ],
+      [
+        "-1/90*w^3 + 23/90*w - 4/5",
+        "1/1125*w^3 + 33/250*w^2 - 77/1125*w - 33/10"
+      ],
+      [
+        "0",
+        "-1/54*w^3 + 23/54*w"
+      ],
+      [
+        "0",
+        "1/54*w^3 - 23/54*w"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "1/90*w^3 - 23/90*w + 4/5",
+        "-1/1125*w^3 - 33/250*w^2 + 77/1125*w + 33/10"
+      ],
+      [
+        "1/90*w^3 - 23/90*w + 4/5",
+        "1/1125*w^3 + 33/250*w^2 - 77/1125*w - 33/10"
+      ],
+      [
+        "1/90*w^3 - 23/90*w - 4/5",
+        "-1/1125*w^3 + 33/250*w^2 + 77/1125*w - 33/10"
+      ],
+      [
+        "1/90*w^3 - 23/90*w - 4/5",
+        "1/1125*w^3 - 33/250*w^2 - 77/1125*w + 33/10"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 29,
+    "field": "w^4 - 56*w^2 + 900",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 0,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/60*w^3 + 13/30*w"
+      ],
+      [
+        "0",
+        "1/60*w^3 - 13/30*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 30,
+    "field": "w^4 - 58*w^2 + 961",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 1,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/62*w^3 + 27/62*w"
+      ],
+      [
+        "0",
+        "1/62*w^3 - 27/62*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 31,
+    "field": "w^4 - 60*w^2 + 1024",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/64*w^3 + 7/16*w"
+      ],
+      [
+        "0",
+        "1/64*w^3 - 7/16*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 33,
+    "field": "w^4 - 64*w^2 + 1156",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/68*w^3 + 15/34*w"
+      ],
+      [
+        "0",
+        "1/68*w^3 - 15/34*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 34,
+    "field": "w^4 - 66*w^2 + 1225",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 1,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/70*w^3 + 31/70*w"
+      ],
+      [
+        "0",
+        "1/70*w^3 - 31/70*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 35,
+    "field": "w^4 - 68*w^2 + 1296",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/72*w^3 + 4/9*w"
+      ],
+      [
+        "0",
+        "1/72*w^3 - 4/9*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 37,
+    "field": "w^4 - 72*w^2 + 1444",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/76*w^3 + 17/38*w"
+      ],
+      [
+        "0",
+        "1/76*w^3 - 17/38*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 38,
+    "field": "w^4 - 74*w^2 + 1521",
+    "twist_rank_intervals": [
+      [
+        2,
+        2
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 3,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/78*w^3 + 35/78*w"
+      ],
+      [
+        "0",
+        "1/78*w^3 - 35/78*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 39,
+    "field": "w^4 - 76*w^2 + 1600",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 0,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/80*w^3 + 9/20*w"
+      ],
+      [
+        "0",
+        "1/80*w^3 - 9/20*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 41,
+    "field": "w^4 - 80*w^2 + 1764",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 0,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/84*w^3 + 19/42*w"
+      ],
+      [
+        "0",
+        "1/84*w^3 - 19/42*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 42,
+    "field": "w^4 - 82*w^2 + 1849",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 1,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/86*w^3 + 39/86*w"
+      ],
+      [
+        "0",
+        "1/86*w^3 - 39/86*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 43,
+    "field": "w^4 - 84*w^2 + 1936",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/88*w^3 + 5/11*w"
+      ],
+      [
+        "0",
+        "1/88*w^3 - 5/11*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 46,
+    "field": "w^4 - 90*w^2 + 2209",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 1,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/94*w^3 + 43/94*w"
+      ],
+      [
+        "0",
+        "1/94*w^3 - 43/94*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 47,
+    "field": "w^4 - 92*w^2 + 2304",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/96*w^3 + 11/24*w"
+      ],
+      [
+        "0",
+        "1/96*w^3 - 11/24*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 51,
+    "field": "w^4 - 100*w^2 + 2704",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 0,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/104*w^3 + 6/13*w"
+      ],
+      [
+        "0",
+        "1/104*w^3 - 6/13*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 53,
+    "field": "w^4 - 104*w^2 + 2916",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 0,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/108*w^3 + 25/54*w"
+      ],
+      [
+        "0",
+        "1/108*w^3 - 25/54*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 55,
+    "field": "w^4 - 108*w^2 + 3136",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/112*w^3 + 13/28*w"
+      ],
+      [
+        "0",
+        "1/112*w^3 - 13/28*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 57,
+    "field": "w^4 - 112*w^2 + 3364",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/116*w^3 + 27/58*w"
+      ],
+      [
+        "0",
+        "1/116*w^3 - 27/58*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 58,
+    "field": "w^4 - 114*w^2 + 3481",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 1,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/118*w^3 + 55/118*w"
+      ],
+      [
+        "0",
+        "1/118*w^3 - 55/118*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 59,
+    "field": "w^4 - 116*w^2 + 3600",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/120*w^3 + 7/15*w"
+      ],
+      [
+        "0",
+        "1/120*w^3 - 7/15*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 61,
+    "field": "w^4 - 120*w^2 + 3844",
+    "twist_rank_intervals": [
+      [
+        2,
+        2
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/124*w^3 + 29/62*w"
+      ],
+      [
+        "0",
+        "1/124*w^3 - 29/62*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 62,
+    "field": "w^4 - 122*w^2 + 3969",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 1,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/126*w^3 + 59/126*w"
+      ],
+      [
+        "0",
+        "1/126*w^3 - 59/126*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 65,
+    "field": "w^4 - 128*w^2 + 4356",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-1/264*w^3 + 31/132*w",
+        "-1/16*w^2 + 4"
+      ],
+      [
+        "-1/264*w^3 + 31/132*w",
+        "1/16*w^2 - 4"
+      ],
+      [
+        "-1/66*w^3 + 31/33*w",
+        "-1/2*w^2 + 32"
+      ],
+      [
+        "-1/66*w^3 + 31/33*w",
+        "1/2*w^2 - 32"
+      ],
+      [
+        "0",
+        "-1/132*w^3 + 31/66*w"
+      ],
+      [
+        "0",
+        "1/132*w^3 - 31/66*w"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "1/264*w^3 - 31/132*w",
+        "-1/16*w^2 + 4"
+      ],
+      [
+        "1/264*w^3 - 31/132*w",
+        "1/16*w^2 - 4"
+      ],
+      [
+        "1/66*w^3 - 31/33*w",
+        "-1/2*w^2 + 32"
+      ],
+      [
+        "1/66*w^3 - 31/33*w",
+        "1/2*w^2 - 32"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 66,
+    "field": "w^4 - 130*w^2 + 4489",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 1,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/134*w^3 + 63/134*w"
+      ],
+      [
+        "0",
+        "1/134*w^3 - 63/134*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 67,
+    "field": "w^4 - 132*w^2 + 4624",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/136*w^3 + 8/17*w"
+      ],
+      [
+        "0",
+        "1/136*w^3 - 8/17*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 69,
+    "field": "w^4 - 136*w^2 + 4900",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/140*w^3 + 33/70*w"
+      ],
+      [
+        "0",
+        "1/140*w^3 - 33/70*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 70,
+    "field": "w^4 - 138*w^2 + 5041",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 1,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/142*w^3 + 67/142*w"
+      ],
+      [
+        "0",
+        "1/142*w^3 - 67/142*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 71,
+    "field": "w^4 - 140*w^2 + 5184",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/144*w^3 + 17/36*w"
+      ],
+      [
+        "0",
+        "1/144*w^3 - 17/36*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 73,
+    "field": "w^4 - 144*w^2 + 5476",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 0,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/148*w^3 + 35/74*w"
+      ],
+      [
+        "0",
+        "1/148*w^3 - 35/74*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 74,
+    "field": "w^4 - 146*w^2 + 5625",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 1,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/150*w^3 + 71/150*w"
+      ],
+      [
+        "0",
+        "1/150*w^3 - 71/150*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 77,
+    "field": "w^4 - 152*w^2 + 6084",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 0,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/156*w^3 + 37/78*w"
+      ],
+      [
+        "0",
+        "1/156*w^3 - 37/78*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 78,
+    "field": "w^4 - 154*w^2 + 6241",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "rank_upper_bound": 3,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-9/6478*w^3 + 675/6478*w + 40/41",
+        "-3795/10889518*w^3 - 3894/68921*w^2 + 884235/10889518*w + 299838/68921"
+      ],
+      [
+        "-9/6478*w^3 + 675/6478*w + 40/41",
+        "3795/10889518*w^3 + 3894/68921*w^2 - 884235/10889518*w - 299838/68921"
+      ],
+      [
+        "-9/6478*w^3 + 675/6478*w - 40/41",
+        "-3795/10889518*w^3 + 3894/68921*w^2 + 884235/10889518*w - 299838/68921"
+      ],
+      [
+        "-9/6478*w^3 + 675/6478*w - 40/41",
+        "3795/10889518*w^3 - 3894/68921*w^2 - 884235/10889518*w + 299838/68921"
+      ],
+      [
+        "0",
+        "-1/158*w^3 + 75/158*w"
+      ],
+      [
+        "0",
+        "1/158*w^3 - 75/158*w"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "9/6478*w^3 - 675/6478*w + 40/41",
+        "-3795/10889518*w^3 + 3894/68921*w^2 + 884235/10889518*w - 299838/68921"
+      ],
+      [
+        "9/6478*w^3 - 675/6478*w + 40/41",
+        "3795/10889518*w^3 - 3894/68921*w^2 - 884235/10889518*w + 299838/68921"
+      ],
+      [
+        "9/6478*w^3 - 675/6478*w - 40/41",
+        "-3795/10889518*w^3 - 3894/68921*w^2 + 884235/10889518*w + 299838/68921"
+      ],
+      [
+        "9/6478*w^3 - 675/6478*w - 40/41",
+        "3795/10889518*w^3 + 3894/68921*w^2 - 884235/10889518*w - 299838/68921"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 79,
+    "field": "w^4 - 156*w^2 + 6400",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/160*w^3 + 19/40*w"
+      ],
+      [
+        "0",
+        "1/160*w^3 - 19/40*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 82,
+    "field": "w^4 - 162*w^2 + 6889",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 1,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/166*w^3 + 79/166*w"
+      ],
+      [
+        "0",
+        "1/166*w^3 - 79/166*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 83,
+    "field": "w^4 - 164*w^2 + 7056",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/168*w^3 + 10/21*w"
+      ],
+      [
+        "0",
+        "1/168*w^3 - 10/21*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 85,
+    "field": "w^4 - 168*w^2 + 7396",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 0,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/172*w^3 + 41/86*w"
+      ],
+      [
+        "0",
+        "1/172*w^3 - 41/86*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 86,
+    "field": "w^4 - 170*w^2 + 7569",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 1,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/174*w^3 + 83/174*w"
+      ],
+      [
+        "0",
+        "1/174*w^3 - 83/174*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 87,
+    "field": "w^4 - 172*w^2 + 7744",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 0,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/176*w^3 + 21/44*w"
+      ],
+      [
+        "0",
+        "1/176*w^3 - 21/44*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 89,
+    "field": "w^4 - 176*w^2 + 8100",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 0,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/180*w^3 + 43/90*w"
+      ],
+      [
+        "0",
+        "1/180*w^3 - 43/90*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 91,
+    "field": "w^4 - 180*w^2 + 8464",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/184*w^3 + 11/23*w"
+      ],
+      [
+        "0",
+        "1/184*w^3 - 11/23*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 93,
+    "field": "w^4 - 184*w^2 + 8836",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/188*w^3 + 45/94*w"
+      ],
+      [
+        "0",
+        "1/188*w^3 - 45/94*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 94,
+    "field": "w^4 - 186*w^2 + 9025",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 1,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/190*w^3 + 91/190*w"
+      ],
+      [
+        "0",
+        "1/190*w^3 - 91/190*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 95,
+    "field": "w^4 - 188*w^2 + 9216",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/192*w^3 + 23/48*w"
+      ],
+      [
+        "0",
+        "1/192*w^3 - 23/48*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 97,
+    "field": "w^4 - 192*w^2 + 9604",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 0,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/196*w^3 + 47/98*w"
+      ],
+      [
+        "0",
+        "1/196*w^3 - 47/98*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 101,
+    "field": "w^4 - 200*w^2 + 10404",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 0,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/204*w^3 + 49/102*w"
+      ],
+      [
+        "0",
+        "1/204*w^3 - 49/102*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 102,
+    "field": "w^4 - 202*w^2 + 10609",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 1,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/206*w^3 + 99/206*w"
+      ],
+      [
+        "0",
+        "1/206*w^3 - 99/206*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 103,
+    "field": "w^4 - 204*w^2 + 10816",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/208*w^3 + 25/52*w"
+      ],
+      [
+        "0",
+        "1/208*w^3 - 25/52*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 105,
+    "field": "w^4 - 208*w^2 + 11236",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/212*w^3 + 51/106*w"
+      ],
+      [
+        "0",
+        "1/212*w^3 - 51/106*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 106,
+    "field": "w^4 - 210*w^2 + 11449",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 1,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/214*w^3 + 103/214*w"
+      ],
+      [
+        "0",
+        "1/214*w^3 - 103/214*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 107,
+    "field": "w^4 - 212*w^2 + 11664",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/216*w^3 + 13/27*w"
+      ],
+      [
+        "0",
+        "1/216*w^3 - 13/27*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 109,
+    "field": "w^4 - 216*w^2 + 12100",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 0,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/220*w^3 + 53/110*w"
+      ],
+      [
+        "0",
+        "1/220*w^3 - 53/110*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 110,
+    "field": "w^4 - 218*w^2 + 12321",
+    "twist_rank_intervals": [
+      [
+        2,
+        2
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 3,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-5/1258*w^3 + 535/1258*w + 8/17",
+        "-47/363562*w^3 - 78/4913*w^2 + 15463/363562*w + 8502/4913"
+      ],
+      [
+        "-5/1258*w^3 + 535/1258*w + 8/17",
+        "47/363562*w^3 + 78/4913*w^2 - 15463/363562*w - 8502/4913"
+      ],
+      [
+        "-5/1258*w^3 + 535/1258*w - 8/17",
+        "-47/363562*w^3 + 78/4913*w^2 + 15463/363562*w - 8502/4913"
+      ],
+      [
+        "-5/1258*w^3 + 535/1258*w - 8/17",
+        "47/363562*w^3 - 78/4913*w^2 - 15463/363562*w + 8502/4913"
+      ],
+      [
+        "0",
+        "-1/222*w^3 + 107/222*w"
+      ],
+      [
+        "0",
+        "1/222*w^3 - 107/222*w"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "5/1258*w^3 - 535/1258*w + 8/17",
+        "-47/363562*w^3 + 78/4913*w^2 + 15463/363562*w - 8502/4913"
+      ],
+      [
+        "5/1258*w^3 - 535/1258*w + 8/17",
+        "47/363562*w^3 - 78/4913*w^2 - 15463/363562*w + 8502/4913"
+      ],
+      [
+        "5/1258*w^3 - 535/1258*w - 8/17",
+        "-47/363562*w^3 - 78/4913*w^2 + 15463/363562*w + 8502/4913"
+      ],
+      [
+        "5/1258*w^3 - 535/1258*w - 8/17",
+        "47/363562*w^3 + 78/4913*w^2 - 15463/363562*w - 8502/4913"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 111,
+    "field": "w^4 - 220*w^2 + 12544",
+    "twist_rank_intervals": [
+      [
+        2,
+        2
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/224*w^3 + 27/56*w"
+      ],
+      [
+        "0",
+        "1/224*w^3 - 27/56*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 113,
+    "field": "w^4 - 224*w^2 + 12996",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 0,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/228*w^3 + 55/114*w"
+      ],
+      [
+        "0",
+        "1/228*w^3 - 55/114*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 114,
+    "field": "w^4 - 226*w^2 + 13225",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "rank_upper_bound": 3,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/230*w^3 + 111/230*w"
+      ],
+      [
+        "0",
+        "1/230*w^3 - 111/230*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 115,
+    "field": "w^4 - 228*w^2 + 13456",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/232*w^3 + 14/29*w"
+      ],
+      [
+        "0",
+        "1/232*w^3 - 14/29*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 118,
+    "field": "w^4 - 234*w^2 + 14161",
+    "twist_rank_intervals": [
+      [
+        2,
+        2
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 3,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/238*w^3 + 115/238*w"
+      ],
+      [
+        "0",
+        "1/238*w^3 - 115/238*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 119,
+    "field": "w^4 - 236*w^2 + 14400",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/240*w^3 + 29/60*w"
+      ],
+      [
+        "0",
+        "1/240*w^3 - 29/60*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 122,
+    "field": "w^4 - 242*w^2 + 15129",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 1,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/246*w^3 + 119/246*w"
+      ],
+      [
+        "0",
+        "1/246*w^3 - 119/246*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 123,
+    "field": "w^4 - 244*w^2 + 15376",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 0,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/248*w^3 + 15/31*w"
+      ],
+      [
+        "0",
+        "1/248*w^3 - 15/31*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 127,
+    "field": "w^4 - 252*w^2 + 16384",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/256*w^3 + 31/64*w"
+      ],
+      [
+        "0",
+        "1/256*w^3 - 31/64*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 129,
+    "field": "w^4 - 256*w^2 + 16900",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/260*w^3 + 63/130*w"
+      ],
+      [
+        "0",
+        "1/260*w^3 - 63/130*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 130,
+    "field": "w^4 - 258*w^2 + 17161",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 1,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/262*w^3 + 127/262*w"
+      ],
+      [
+        "0",
+        "1/262*w^3 - 127/262*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 131,
+    "field": "w^4 - 260*w^2 + 17424",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/264*w^3 + 16/33*w"
+      ],
+      [
+        "0",
+        "1/264*w^3 - 16/33*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 133,
+    "field": "w^4 - 264*w^2 + 17956",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 0,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/268*w^3 + 65/134*w"
+      ],
+      [
+        "0",
+        "1/268*w^3 - 65/134*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 134,
+    "field": "w^4 - 266*w^2 + 18225",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 1,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/270*w^3 + 131/270*w"
+      ],
+      [
+        "0",
+        "1/270*w^3 - 131/270*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 137,
+    "field": "w^4 - 272*w^2 + 19044",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 0,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/276*w^3 + 67/138*w"
+      ],
+      [
+        "0",
+        "1/276*w^3 - 67/138*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 138,
+    "field": "w^4 - 274*w^2 + 19321",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 1,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/278*w^3 + 135/278*w"
+      ],
+      [
+        "0",
+        "1/278*w^3 - 135/278*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 139,
+    "field": "w^4 - 276*w^2 + 19600",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/280*w^3 + 17/35*w"
+      ],
+      [
+        "0",
+        "1/280*w^3 - 17/35*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 141,
+    "field": "w^4 - 280*w^2 + 20164",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/284*w^3 + 69/142*w"
+      ],
+      [
+        "0",
+        "1/284*w^3 - 69/142*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 142,
+    "field": "w^4 - 282*w^2 + 20449",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 1,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/286*w^3 + 139/286*w"
+      ],
+      [
+        "0",
+        "1/286*w^3 - 139/286*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 143,
+    "field": "w^4 - 284*w^2 + 20736",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/288*w^3 + 35/72*w"
+      ],
+      [
+        "0",
+        "1/288*w^3 - 35/72*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 145,
+    "field": "w^4 - 288*w^2 + 21316",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 0,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/292*w^3 + 71/146*w"
+      ],
+      [
+        "0",
+        "1/292*w^3 - 71/146*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 146,
+    "field": "w^4 - 290*w^2 + 21609",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 1,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/294*w^3 + 143/294*w"
+      ],
+      [
+        "0",
+        "1/294*w^3 - 143/294*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 149,
+    "field": "w^4 - 296*w^2 + 22500",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 0,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/300*w^3 + 73/150*w"
+      ],
+      [
+        "0",
+        "1/300*w^3 - 73/150*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 151,
+    "field": "w^4 - 300*w^2 + 23104",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/304*w^3 + 37/76*w"
+      ],
+      [
+        "0",
+        "1/304*w^3 - 37/76*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 154,
+    "field": "w^4 - 306*w^2 + 24025",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 1,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/310*w^3 + 151/310*w"
+      ],
+      [
+        "0",
+        "1/310*w^3 - 151/310*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 155,
+    "field": "w^4 - 308*w^2 + 24336",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/312*w^3 + 19/39*w"
+      ],
+      [
+        "0",
+        "1/312*w^3 - 19/39*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 157,
+    "field": "w^4 - 312*w^2 + 24964",
+    "twist_rank_intervals": [
+      [
+        2,
+        2
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/316*w^3 + 77/158*w"
+      ],
+      [
+        "0",
+        "1/316*w^3 - 77/158*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 158,
+    "field": "w^4 - 314*w^2 + 25281",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 1,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/318*w^3 + 155/318*w"
+      ],
+      [
+        "0",
+        "1/318*w^3 - 155/318*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 159,
+    "field": "w^4 - 316*w^2 + 25600",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 0,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/320*w^3 + 39/80*w"
+      ],
+      [
+        "0",
+        "1/320*w^3 - 39/80*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 161,
+    "field": "w^4 - 320*w^2 + 26244",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 0,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/324*w^3 + 79/162*w"
+      ],
+      [
+        "0",
+        "1/324*w^3 - 79/162*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 163,
+    "field": "w^4 - 324*w^2 + 26896",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/328*w^3 + 20/41*w"
+      ],
+      [
+        "0",
+        "1/328*w^3 - 20/41*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 165,
+    "field": "w^4 - 328*w^2 + 27556",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/332*w^3 + 81/166*w"
+      ],
+      [
+        "0",
+        "1/332*w^3 - 81/166*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 166,
+    "field": "w^4 - 330*w^2 + 27889",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 1,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/334*w^3 + 163/334*w"
+      ],
+      [
+        "0",
+        "1/334*w^3 - 163/334*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 167,
+    "field": "w^4 - 332*w^2 + 28224",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/336*w^3 + 41/84*w"
+      ],
+      [
+        "0",
+        "1/336*w^3 - 41/84*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 170,
+    "field": "w^4 - 338*w^2 + 29241",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 1,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/342*w^3 + 167/342*w"
+      ],
+      [
+        "0",
+        "1/342*w^3 - 167/342*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 173,
+    "field": "w^4 - 344*w^2 + 30276",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 0,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/348*w^3 + 85/174*w"
+      ],
+      [
+        "0",
+        "1/348*w^3 - 85/174*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 174,
+    "field": "w^4 - 346*w^2 + 30625",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 1,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/350*w^3 + 171/350*w"
+      ],
+      [
+        "0",
+        "1/350*w^3 - 171/350*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 177,
+    "field": "w^4 - 352*w^2 + 31684",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/356*w^3 + 87/178*w"
+      ],
+      [
+        "0",
+        "1/356*w^3 - 87/178*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 178,
+    "field": "w^4 - 354*w^2 + 32041",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 1,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/358*w^3 + 175/358*w"
+      ],
+      [
+        "0",
+        "1/358*w^3 - 175/358*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 179,
+    "field": "w^4 - 356*w^2 + 32400",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/360*w^3 + 22/45*w"
+      ],
+      [
+        "0",
+        "1/360*w^3 - 22/45*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 181,
+    "field": "w^4 - 360*w^2 + 33124",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 0,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/364*w^3 + 89/182*w"
+      ],
+      [
+        "0",
+        "1/364*w^3 - 89/182*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 182,
+    "field": "w^4 - 362*w^2 + 33489",
+    "twist_rank_intervals": [
+      [
+        2,
+        2
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 3,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-1/3",
+        "-1/27*w^2 + 181/27"
+      ],
+      [
+        "-1/3",
+        "1/27*w^2 - 181/27"
+      ],
+      [
+        "-3",
+        "-1/183*w^3 + 545/183*w"
+      ],
+      [
+        "-3",
+        "1/183*w^3 - 545/183*w"
+      ],
+      [
+        "0",
+        "-1/366*w^3 + 179/366*w"
+      ],
+      [
+        "0",
+        "1/366*w^3 - 179/366*w"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "1/3",
+        "-1/27*w^2 + 181/27"
+      ],
+      [
+        "1/3",
+        "1/27*w^2 - 181/27"
+      ],
+      [
+        "3",
+        "-1/183*w^3 + 545/183*w"
+      ],
+      [
+        "3",
+        "1/183*w^3 - 545/183*w"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 183,
+    "field": "w^4 - 364*w^2 + 33856",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/368*w^3 + 45/92*w"
+      ],
+      [
+        "0",
+        "1/368*w^3 - 45/92*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 185,
+    "field": "w^4 - 368*w^2 + 34596",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 0,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/372*w^3 + 91/186*w"
+      ],
+      [
+        "0",
+        "1/372*w^3 - 91/186*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 186,
+    "field": "w^4 - 370*w^2 + 34969",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 1,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/374*w^3 + 183/374*w"
+      ],
+      [
+        "0",
+        "1/374*w^3 - 183/374*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 187,
+    "field": "w^4 - 372*w^2 + 35344",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/376*w^3 + 23/47*w"
+      ],
+      [
+        "0",
+        "1/376*w^3 - 23/47*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 190,
+    "field": "w^4 - 378*w^2 + 36481",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 1,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/382*w^3 + 187/382*w"
+      ],
+      [
+        "0",
+        "1/382*w^3 - 187/382*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 191,
+    "field": "w^4 - 380*w^2 + 36864",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/384*w^3 + 47/96*w"
+      ],
+      [
+        "0",
+        "1/384*w^3 - 47/96*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 193,
+    "field": "w^4 - 384*w^2 + 37636",
+    "twist_rank_intervals": [
+      [
+        0,
+        2
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "rank_upper_bound": 4,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "-1/291*w^3 + 190/291*w",
+        "-5/54*w^2 + 160/9"
+      ],
+      [
+        "-1/291*w^3 + 190/291*w",
+        "5/54*w^2 - 160/9"
+      ],
+      [
+        "-3/1552*w^3 + 285/776*w",
+        "-5/128*w^2 + 15/2"
+      ],
+      [
+        "-3/1552*w^3 + 285/776*w",
+        "5/128*w^2 - 15/2"
+      ],
+      [
+        "0",
+        "-1/388*w^3 + 95/194*w"
+      ],
+      [
+        "0",
+        "1/388*w^3 - 95/194*w"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "1/291*w^3 - 190/291*w",
+        "-5/54*w^2 + 160/9"
+      ],
+      [
+        "1/291*w^3 - 190/291*w",
+        "5/54*w^2 - 160/9"
+      ],
+      [
+        "3/1552*w^3 - 285/776*w",
+        "-5/128*w^2 + 15/2"
+      ],
+      [
+        "3/1552*w^3 - 285/776*w",
+        "5/128*w^2 - 15/2"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 194,
+    "field": "w^4 - 386*w^2 + 38025",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 1,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/390*w^3 + 191/390*w"
+      ],
+      [
+        "0",
+        "1/390*w^3 - 191/390*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 195,
+    "field": "w^4 - 388*w^2 + 38416",
+    "twist_rank_intervals": [
+      [
+        2,
+        2
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/392*w^3 + 24/49*w"
+      ],
+      [
+        "0",
+        "1/392*w^3 - 24/49*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  },
+  {
+    "d": 197,
+    "field": "w^4 - 392*w^2 + 39204",
+    "twist_rank_intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "rank_upper_bound": 0,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/396*w^3 + 97/198*w"
+      ],
+      [
+        "0",
+        "1/396*w^3 - 97/198*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "complete"
+  },
+  {
+    "d": 199,
+    "field": "w^4 - 396*w^2 + 40000",
+    "twist_rank_intervals": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "rank_upper_bound": 2,
+    "gaussian_abscissas_tested": 3165,
+    "verified_affine_points": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "-1/400*w^3 + 49/100*w"
+      ],
+      [
+        "0",
+        "1/400*w^3 - 49/100*w"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "rational_infinities": 2,
+    "status": "partial"
+  }
+]

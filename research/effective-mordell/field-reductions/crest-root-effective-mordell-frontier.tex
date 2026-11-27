@@ -1,0 +1,230 @@
+\documentclass[12pt]{article}
+\usepackage[letterpaper,left=.88in,right=.88in,top=.8in,bottom=.8in]{geometry}
+\usepackage{lmodern,amsmath,amssymb,booktabs,array,xcolor,hyperref,fancyhdr}
+\definecolor{ink}{HTML}{172E3A}\definecolor{green}{HTML}{17605E}
+\hypersetup{colorlinks=true,urlcolor=green,linkcolor=green,pdftitle={Effective Mordell on a fixed genus-two curve over varying fields}}
+\pagestyle{fancy}\fancyhf{}\lhead{\small\textsf{Crest--Root Calculus}}\rhead{\small\textsf{Arithmetic geometry}}
+\cfoot{\small\textsf{\thepage}}\setlength{\headheight}{15pt}\setlength{\parindent}{0pt}\setlength{\parskip}{5pt plus 1pt}
+\newcommand{\Q}{\mathbb Q}\newcommand{\Z}{\mathbb Z}
+\newcommand{\head}[1]{{\Large\bfseries\color{ink}#1}\par\vspace{3pt}}
+\newcommand{\sub}[1]{\par\smallskip{\bfseries\color{green}#1}\par}
+\begin{document}
+{\small\sffamily\color{green}RESEARCH NOTE \quad $\cdot$ \quad 27 NOVEMBER 2026}\par
+{\LARGE\bfseries\color{ink}Effective Mordell on a fixed genus-two curve\\over varying fields}\par
+Let $C$ be the smooth projective curve $y^2=x^6-1$. It has two rational points at infinity, denoted $\infty_\pm$ by the limiting value $y/x^3=\pm1$. Write $S=\{(-1,0),(1,0),\infty_+,\infty_-\}$.
+
+\textbf{Theorem 1.} Set
+\[
+ M=\Q\bigl(i,\sqrt3,\sqrt p:\ p\text{ prime},\ p\equiv5\bmod12\bigr).
+\]
+For every finite subfield $K\subset M$ the full point set is
+\[
+ C(K)=\{\infty_+,\infty_-\}\ \cup\
+       \{(z,0):z\in K,\ z^6=1\}\ \cup\
+       \{(0,z):z\in K,\ z^2=-1\}.
+\]
+There are $4+2\,\mathbf1_{i\in K}+4\,\mathbf1_{\sqrt{-3}\in K}$ points. In particular $C(\Q(\zeta_{12}))$ has exactly ten points, where $\zeta_{12}$ is a primitive twelfth root of unity.
+The degrees of these fields are unbounded.
+
+\textbf{Theorem 2.} Over $\Q(\sqrt7)$ both standard elliptic quotients of $C$ have rank one. Nevertheless
+\[
+ C\bigl(\Q(\sqrt7)\bigr)=S\cup\{(\epsilon\,2,\eta\,3\sqrt7):
+                         \epsilon,\eta\in\{-1,1\}\}.
+\]
+The signs are independent. The proof uses an elliptic Chabauty certificate over $\Q(\sqrt{-3})$.
+
+\textbf{Connection to Effective Mordell.} Bogomolov and Tschinkel reduce Effective Mordell for every hyperelliptic curve in characteristic zero to an algorithm for $C(L)$ with an arbitrary number field $L$ as input. Poonen gives the corresponding reduction for superelliptic curves and further low-genus Galois quotients [1,2]. A finite étale cover of the input curve dominates $C$. Chevalley--Weil provides an effectively computable extension over which the relevant points lift. The required extension can lie outside $M$. The curve $v^2=u^6+1$ in the quartic solver is isomorphic to $C$ over $\Q(i)$ via $(u,v)=(ix,iy)$.
+
+ProofAtlas \#87 asks for every smooth projective curve of genus at least two over every number field [3]. Neither the unrestricted $C(L)$ algorithm nor a reduction of every such curve to $C$ is proved here. The previous Crest--Root note treats 122 rational twists of a different genus-two curve. This note varies the field on the fixed curve relevant to the published reduction.
+
+\newpage
+\head{Proof of the multiquadratic field theorem}
+Consider $E:y^2=X^3-1$ and the quotient $(x,y)\mapsto (x^2,y)$. The quadratic twist belonging to a signed squarefree integer $d$ supported on 3 and the allowed primes has model $E_d:y^2=X^3-d^3$. Translate the rational 2-torsion point to zero. The resulting curve and its 2-isogenous partner have equations
+\[
+ y^2=u(u^2+3du+3d^2),\qquad y^2=u(u^2-6du-3d^2).
+\]
+For $y^2=u(u^2+au+b)$ the descent image is represented by squarefree signed divisors $e$ of $b$ such that
+\[
+ Z^2=eU^4+aU^2V^2+(b/e)V^4,\qquad \gcd(U,V)=1 .
+\]
+It contains $1,b$ modulo squares. The product of the two image sizes is $2^{2+r}$, for common rank $r$ [4]. Suppose $\ell\mid d,e$ and $\ell\ne3$. The valuations of $e$ and $b/e$ at $\ell$ are one. Dividing by $\ell$ forces $U,V$ both to be units there and $(a^2-4b)/\ell^2$ to be a square modulo $\ell$. Its squareclass is respectively $-3$ or $3$. Both are nonsquares for $\ell\equiv5\bmod12$. No such $\ell$ can occur. On the first curve $u\ge0$ since the quadratic has negative discriminant; its image is $\{1,3\}$. On the second curve it suffices to exclude $e=-1$ modulo the known class $-3$. Reduction modulo 3 forces $3\mid U$, and the last term then has valuation $1+2v_3(d)$. Both other terms have larger valuation, for $v_3(d)=0$ or $1$. The second image is $\{1,-3\}$. This gives $r=0$ for both signs of $d$, including $d=\pm1$.
+
+The good reductions of $E_d$ at 11 and 23 have orders 12 and 24, since cubing is bijective in both residue fields. The torsion order divides 12. There is one nonidentity rational 2-torsion point. A half of it would require $u^2=3d^2$ by duplication. The 3-division polynomial is $3X(X^3-4d^3)$; rational 3-torsion requires $X=0$ and $-d^3$ a rational square, which occurs precisely for $d=-1$. In that case $(0,\pm1)$ gives the points of order three.
+
+For a finite $K\subset M$, the Galois group is an elementary abelian 2-group. Its characters decompose $E(K)\otimes\Q$ into the rational twist spaces, all of rank zero. They also decompose odd-order torsion: the character projectors divide only by $[K:\Q]$, invertible on every finite group of odd order. Hence the odd part is trivial unless $i\in K$, when it has order three. The full tower contains the cube roots of unity. Multiplication of $X$ by a cube root permutes the three nonzero 2-torsion points. A half of $(1,0)$ would have $X=1\pm\sqrt3$ and $y^2=9\pm6\sqrt3$. These two conjugate squares have opposite real signs. Thus $\Q(y)$ has both real and nonreal embeddings, impossible for a subfield of an abelian extension of $\Q$. There is no 4-torsion in $E(M)$. The full group is generated by $E[2]$ and $(0,i)$. Its finite abscissas are $0,\zeta,-2\zeta$ for $\zeta^3=1$, by the addition law. Every such $\zeta$ is a square in $\Q(\sqrt{-3})$; the rational squareclasses generating $M$ exclude $-2$ by its valuation at 2. The last three abscissas have no square root in $M$. Taking fibres of $x^2=X$ and restricting to $K$ proves Theorem 1.
+
+\newpage
+\head{Quadratic points with nonrational abscissa}
+Besides the quotient to $E_-$ with $E_-:Y^2=X^3-1$, the map $(-1/x^2,y/x^3)$ takes $C$ to $E_+:Y^2=X^3+1$. The two pulled-back differentials are $2x\,dx/y$ and $2\,dx/y$. Hence $J=\operatorname{Jac}(C)$ is $\Q$-isogenous to $E_-\times E_+$. In particular $J(\Q)$ and $J(\Q(i))$ are finite by the preceding rank calculation.
+
+For a base field $k$ and quadratic $L/k$, a point with $x\notin k$ and its conjugate give a $k$-rational effective divisor of degree two outside the hyperelliptic pencil. Such a divisor is unique in its linear equivalence class: two different representatives would give a degree-two pencil, necessarily the unique hyperelliptic one. Thus there are only finitely many such divisors when $J(k)$ has rank zero, across \emph{all} quadratic $L/k$.
+
+Over $\Q$, good reductions of $J$ at 5 and 7 have orders 36 and 48, giving the torsion bound 12. Let $W=(1,0)$ and pass to the odd chart $z=1/(x-1), w=z^3 y$, in which $W$ is at infinity and
+\[
+ w^2=(z+1)^6-z^6.
+\]
+There are 12 distinct reduced rational divisor classes. One has degree zero. Three have degree one, at the three remaining rational points $(-1,0),\infty_+,\infty_-$. Four have degree two and both points rational: the pairs of $(-1,0)$ with each infinity, and twice each infinity. Four more are quadratic pairs. Two consist of the roots of $x^2\pm x+1$ with ordinate zero, over $\Q(\sqrt{-3})$. Two are defined by $x^2=-1/2$, $y=\pm 3x/2$, over $\Q(\sqrt{-2})$. These exhaust the bound. In particular, every affine point over $\Q(\sqrt7)$ has rational abscissa. For rational $x$, the condition $y^2\in\Q$ implies $y\in\Q$ or $y\in\sqrt7\,\Q$. It remains to solve
+\[
+                 v^2=7(x^6-1),\qquad x,v\in\Q .
+\]
+
+\sub{Reduction to two simultaneous quartics}
+Omit the branch points $x=\pm1$. If $x=m/n$ is reduced, the positive squareclasses $a,b$ of $x^2+x+1$ and $x^2-x+1$ are each in $\{1,3,7,21\}$. Their primitive numerators are odd. Any odd prime common to one numerator and $(m-n)(m+n)$ divides 3, and the two quadratic numerators are coprime. All other odd primes except 7 must have even valuation by the source equation.
+
+Put $k=\operatorname{sf}(ab)$ for the positive squarefree part. Then $v_1^2=k(x^4+x^2+1)$ has a rational point, which gives $(kx^2,kxv_1)$ on $Y^2=X(X^2+kX+k^2)$. For $k=1,3,7$ its rank is zero and torsion orders are respectively $2,4,2$. The eligible finite abscissas give only $x=0,\pm1$, none new. All rational elliptic computations in this argument are replayed in the archive [5].
+
+\newpage
+\head{Closing the positive-rank case}
+For $k=21$, the possibilities $(a,b)$ are $(1,21),(21,1),(7,3),(3,7)$. In the first two, reflecting $x$ if necessary, one obtains $v_2^2=7(x^2-1)(x^2+x+1)$. Substituting $U=1/(x-1)$, $V=v_2 U^2$ gives $V^2=7(2U+1)(3U^2+3U+1)$. This cubic has rank zero, with just the identity and $(U,V)=(-1/2,0)$. Only branch points arise.
+
+In the other cases, choose the sign of $x$ giving $(a,b)=(7,3)$. Then $x^2-1=3r^2$ and $x=(3+s^2)/(3-s^2)$, with $s=(x-1)/r$. Substitution gives
+\[
+ s^4+3=A^2,\qquad s^4+27=7D^2,\qquad A,D\in\Q.
+\]
+In $F=\Q(\pi)$, $\pi^2=-3$, write $s=U/V$ in lowest terms. Set $\beta=U^2+\pi V^2$, $\gamma=U^2+3\pi V^2$. Their norms have squareclasses 1 and 7. The Eisenstein integers are a principal ideal domain, and their units have squareclasses represented by $\pm1$. Outside 2 and 3, a prime common to either element and its conjugate would divide $V$ and $U$. The ramified exponent over 3 is even by the norm. The prime 2 is inert, and $7=(2+\pi)(2-\pi)$. Thus $\delta\beta,\eta\gamma$ must be squares for
+\[
+ \delta\in\{\pm1,\pm2\},\qquad
+ \eta\in\{\pm1,\pm2\}\cdot\{2+\pi,2-\pi\}.
+\]
+Test all primitive normalized pairs $(U,1)$ or $(1,V)$, $p\mid V$, in the residue rings. Common unit scaling changes $\beta,\gamma$ by a square. The modulus 16 leaves two candidates and modulus 9 leaves only $\delta=-2,\ \eta=4-2\pi$. The code checks the two norm conditions and both ring squares.
+
+Put $t=s^2$, $c=\delta\eta=-8+4\pi$. Then $ct(t+\pi)(t+3\pi)$ is a square in $F$. This gives a point on
+\[
+ E':Y^2=X(X+c\pi)(X+3c\pi),\qquad X/c=t\in\Q .
+\]
+With Minkowski class-group proof bounds, Magma gives rank $[1,1]$ and an odd-index subgroup $\Z/2\oplus\Z/2\oplus\Z$. Elliptic Chabauty gives index obstruction $8$ and the exact rational projection values $\{\infty,0,1,-9\}$ [6]. The subgroup index is coprime to 8. Among nonzero finite rational squares only $t=1$ remains, giving $x=2$ before restoring its sign. This proves Theorem 2. The two direct target ranks over $\Q(\sqrt7)$ are both one by the rational twist computation.
+
+\newpage
+\head{The first unresolved field in this study}
+Set $B=\Q(i,\sqrt7)$ and $k=\Q(i)$. The two standard targets of $C$ become isomorphic over $k$. Therefore $J_B$ is isogenous to the square of one elliptic curve of positive rank. Over \emph{every} finite extension $L/B$, any elliptic quotient of $J_L$ is $L$-isogenous to that curve: at least one restriction of the homomorphism from its square is nonzero. Every such quotient has positive rank. Allowing elliptic quotients of every degree on the original curve cannot restore the finite-target argument on this input.
+
+\textbf{Exactly 14 points have rational abscissa, counting the two infinities.} If $x\in\Q$, then $y^2\in\Q$, and $y$ belongs to a quadratic subfield or to $\Q$. The real quadratic case is Theorem 2. The map $(x,y)\mapsto(1/x,iy/x^3)$ transports its nonbranch affine points to the imaginary twist, and conversely for rational $x\ne0$. Together with Theorem 1 this gives $S$, the two points $(0,\pm i)$, four points at $x=\pm2$, and four at $x=\pm1/2$ with $y=\pm3i\sqrt7/8$.
+
+\textbf{Exactly 24 points have abscissa outside $k$.} Since 5 and 13 split in $k$, the good reduction orders 36 and 144 bound $\#J(k)$ by 36. In the odd chart on page 3, generate reduced Mumford pairs starting with
+\[
+ (z+1/2,0),\quad(z,1),\quad(z^2+z+1/3,0),\quad(z+1,i).
+\]
+Exact Cantor addition over $k$ gives 36 distinct reduced classes. A quadratic $u$ irreducible over $k$ contributes its two points precisely when its discriminant becomes square. Of the irreducible degree-two pairs, four split over $k(\sqrt2)$, two over $k(\sqrt3)$, and twelve over $k(\sqrt7)$. Their full $(u,v)$ coefficients in the stated chart are included. Each of the last twelve gives two points over $B$ whose abscissas lie outside $k$.
+
+Consequently $C(B)$ has at least 38 points. Every additional point is equivalent to a solution of the single remaining equation
+\[
+ v^2=7(x^6-1),\qquad x\in k\setminus\Q,\quad v\in k .
+\]
+Indeed $y^2\in k$ implies $y\in k$ or $y/\sqrt7\in k$, and $C(k)$ has only rational abscissas. Conversely a solution gives $y=v/\sqrt7$. The exact bounded search found no solution with $x=(a+bi)/c$, $\gcd(a,b,c)=1$, $\max(|a|,|b|,c)\le65$. It checked 233,340 primitive representatives up to sign and conjugation. Completeness of the 38-point list remains open here.
+
+Even among quadratic fields, a universal height bound independent of the field is impossible. For $n\ge2$, the abscissa $1/n$ occurs over $\Q(\sqrt{1-n^6})$. Any general bound must accommodate arithmetic information about the input field or a comparable input-dependent quantity.
+
+\newpage
+\head{The remaining Gaussian descent}
+Put $k=\Q(i)$ and $Q_{\pm}=x^2\pm x+1$. Take $x=u/v$ in primitive Gaussian integers. Let $a,b$ be the squareclasses of $Q_+,Q_-$. The numerator of each is a unit at $1+i$, by checking the three primitive residue pairs in $\mathbb F_2$. The two numerators are coprime away from 2. A prime shared with $u^2-v^2$ must divide 3. Consequently their only possible odd valuations occur above 3 and 7, which are both inert. Unique factorization and the unit squareclasses $1,i$ leave
+\[
+         a,b\in\{1,2,3,6,7,14,21,42\}\bmod k^{\times 2},
+\]
+since $2i=(1+i)^2$. At the ramified prime we use $i$ to represent the class of 2.
+
+The equation requires $a(u^2+uv+v^2)$, $b(u^2-uv+v^2)$ and $7ab(u^2-v^2)$ all to be squares. Testing primitive projective pairs modulo $16,9,49$ in the Gaussian integers leaves $16,12,9$ possible ordered squareclass pairs in succession. The nine are $(1,1)$ and the two orientations of $(1,3),(1,7),(1,21),(3,7)$. For each pair test the three elliptic models on the next page over $k$. Rank over $k$ is the sum of the two rational ranks of a model and its $-1$ twist. For seven pairs a model has rank zero, and extracting the fibres of its full Gaussian torsion gives only rational abscissas. For the remaining two all three models have rank two.
+
+Choose the sign of $x$ so that $(a,b)=(7,3)$. The rational substitution on page 4 also works in $k$. Therefore the existence of a 39th point is equivalent to the existence of $s,A,D\in k$ satisfying
+\[
+    A^2=s^4+3,\qquad 7D^2=s^4+27,\qquad s^2\notin\Q.
+\]
+Conversely take $x=(3+s^2)/(3-s^2)$ and $v=42sAD/(3-s^2)^3$. These satisfy $v^2=7(x^6-1)$. Thus this finite descent preserves both directions of the question.
+
+The normalized fibre product of these two quartics has genus five, by its eight disjoint simple branch points. Its Jacobian has rank ten over $k$. To see this, the two quartics and their product give the two genus-one factors and $w^2=7(s^8+30s^4+81)$ of genus three. On the latter use abscissas $s^2,s+3/s,s-3/s$, with ordinates $w,w/s^2,w/s^2$ respectively. Their differentials are independent, with numerator polynomials $2s,s^2-3,s^2+3$. The five elliptic targets have equations $Y^2=X(X^2+aX+b)$ with $(a,b)$ equal to $(0,3),(0,1323),(210,3969),(-84,2352),(84,2352)$. Each has rational rank one and $-1$-twist rank one. This gives five positive-rank factors even after passing to this particular cover.
+
+\newpage
+\head{Classification over 243 quadratic fields}
+For every signed squarefree $d$ with $0<|d|\le200$ and $d\ne1$, we ran the point classifier on $K=\Q(\sqrt d)$. It certifies the complete point set for 213 of the 243 fields. Among the complete lists, 208 contain exactly the four points of $S$, one contains six points, and four contain eight. Each delivered affine coordinate is substituted back into $y^2=x^6-1$ in the input power basis. The remaining 30 inputs are explicitly marked partial.
+
+The degree-two divisor calculation on page 3 already enumerates every point with nonrational abscissa. For rational abscissas it remains to classify $z^2=d(x^6-1)$ over $\Q$. First use the two standard twists $Y^2=X^3\pm d^3$. A target of rank zero gives a finite, exhaustive set of fibres. The tower theorem accounts for 41 inputs, this direct test for a further 102, and the proof for $\pm7$ for two.
+
+For the remaining cases choose the positive squareclasses $a,b$ of $Q_+,Q_-$ over $\Q$. Their primitive numerators are odd, and outside primes dividing $3d$ both have even valuation, by the same coprimeness argument as on page 3. Enumerate positive divisors of the odd part of $\operatorname{rad}(3|d|)$. Test the projective square conditions displayed on the preceding page with $d$ replacing 7. At a prime power $p^e$, every primitive pair is represented by $(t,1)$ or $(1,t)$ with $p\mid t$ in the second chart. Simultaneous scaling preserves the conditions.
+
+Three quartic factors supply elliptic maps. For $k=\operatorname{sf}(ab)$ the first has abscissa $X=kx^2$ and target
+\[
+                   Y^2=X(X^2+kX+k^2).
+\]
+For $k=\operatorname{sf}(db)$ the second has $X=6k/(x-1)$ and target
+\[
+                   Y^2=X^3+9kX^2+30k^2X+36k^3 .
+\]
+The third uses $k=\operatorname{sf}(da)$ and reflection $x\mapsto -x$. These follow by multiplying the squareclasses of $Q_+Q_-$, $(x^2-1)Q_+$ and $(x^2-1)Q_-$. For a rank-zero target, enumerate its rational torsion and invert its abscissa map. Test each fibre on the original equation and include branch points and infinities separately. A local obstruction or an exhausted rank-zero target for every pair proves completeness. This closes 68 more fields. The outstanding positive radicands are
+\[
+ 19,31,43,67,79,95,103,127,129,139,151,163,182,193,199,
+\]
+together with their negatives. The JSON table records the surviving squareclasses for each.
+
+\newpage
+\head{Descent outside multiquadratic fields}
+The point classifier also accepts non-Galois fields by their defining polynomial. A separate test can certify rank zero directly over a field $K$ of any degree with class number one. For an integral model
+\[
+       E:y^2=u(u^2+au+b)
+\]
+use its 2-isogenous partner with parameters $-2a,a^2-4b$. For either direct quotient of $C$, the two constant coefficients after translating the rational point of order two are $3,-3$. Away from 3 the abscissa of a point has even valuation whenever its valuation is nonzero. Thus each descent image is contained in the squareclasses generated by the roots-of-unity generator, fundamental units, and generators of the prime ideals over 3. The program proves the ideal class and unit data with \texttt{bnfcertify} and checks the principal ideals of the generators exactly.
+
+For each squareclass $e$, and each selected prime ideal power $\mathcal P^h$ above 2 or 3, enumerate the squares in $\mathcal O_K/\mathcal P^h$ in an integral basis. A global point on the binary quartic on page 2 gives a local primitive pair and hence belongs to one of the normalized charts $(t,1),(1,t)$. Reject $e$ when neither chart gives a square. The first isogeny image also requires total positivity at the real places. The remaining sizes $A,B$ are upper bounds. As $2^{2+r}\le AB$, an upper bound product of four certifies rank zero; the finite torsion and its fibres then exhaust $C(K)$. Larger products carry no completeness claim.
+
+With residue ring sizes limited to 512, this test certifies 19 of 75 cubic field models, two of 35 quartic models and two of 35 quintic models in the archived sample. All 23 have exactly $S$. The sample is given by its defining polynomials and has no statistical interpretation. Examples include
+\[
+   \Q(\sqrt[3]2),\quad w^4-w^3+w+2=0,\quad
+   w^5-w^4+w^3-w^2-w-1=0.
+\]
+In particular the cubic example is outside every Galois extension of exponent two. Over $\Q(\zeta_{12})$ the same independent local test gives ten points, agreeing with Theorem 1. The implementation also accepts multiquadratic fields outside the tower when the rational character ranks of one target all vanish.
+
+\textbf{Scope of a general proof.} These computations give terminating certificates on explicit inputs. Extending the hyperelliptic reduction requires an effective bound or an exhaustive stopping procedure for $C(L)$ for every input field $L$. An all-curves result must also address curves outside the published reduction. Alpöge and Lawrence give a different general algorithm whose termination is conditional on major conjectures [8].
+
+\newpage
+\head{An infinite family without geometric elliptic quotients}
+A second application shows how passing to a cover handles a geometrically simple Jacobian. For each $m\in\Z$, put $G=x^4+1$ and let
+\[
+ D_m:\quad y^2=G(x)\left(1+(x+5m)G(x)\right).
+\]
+\textbf{Theorem 3.} These are smooth genus-four curves with geometrically simple Jacobians. Every point over $k=\Q(i)$ is the unique infinity or has $x=0$ and $y^2=1+5m$. The family contains infinitely many geometric isomorphism classes.
+
+\textit{Proof.} The argument for the abscissas works for any Gaussian integral polynomial $H$ in $G(1+HG)$. At a prime with $v(x)<0$, $v(G)=4v(x)$. At an integral $x$, if $v(G)>0$ then $1+HG$ is a unit and $v(G)$ must be even. Also $G$ has no zero in $k$. Thus $G(x)$ has even valuation everywhere. The Gaussian integers are Euclidean, so its squareclass is $1$ or $i$. For $\epsilon\in\{1,i\}$ choose $v^2=\epsilon(x^4+1)$. The point $(X,Y)=(\epsilon x^2,\epsilon xv)$ lies on
+\[
+                       Y^2=X^3+\epsilon^2X .
+\]
+Both curves have rank zero over $\Q$ and over $k$: their $-1$ twists are the same rational models. For coefficient $+1$, the full $k$-torsion comprises the identity and the three points with $X=0,\pm i$, by rational 2-torsion over $k$ and reductions at 13,17 of orders 20,16. For coefficient $-1$, the full torsion has order eight by reductions at 5,13 (orders 8,8) and the explicit points with $X=0,\pm1,\pm i$. Consequently $x=0,\pm1,\pm i$ are the only candidates. For a unit $x$ the proposed square is $2(1+2H(x))$. Dividing by $(1+i)^2$ would give a square congruent to $-i\bmod 2$, while the only square residues are 0 and 1. This leaves exactly the asserted points. In particular $m=-1$ gives $(0,\pm2i)$ and infinity, whereas over $\Q$ only infinity remains.
+
+All $D_m$ have the same squarefree degree-nine reduction modulo 5. Its counts in extensions of degrees 1 through 4 are $8,30,104,682$, giving Frobenius polynomial
+\[
+ P=T^8+2T^7+4T^6-2T^5+6T^4-10T^3+100T^2+250T+625.
+\]
+It is irreducible. After removing $(z-1)^8$ from $\mathrm{Res}_T(P(T),P(zT))$, the irreducible factors have degree/multiplicity pairs $(8,1),(8,2),(16,2)$ and none is cyclotomic. Every power of a Frobenius root therefore still has eight distinct conjugates. The reduction is simple over every finite extension, hence its Jacobian and the characteristic-zero Jacobians are absolutely simple. Finally the branch sets share the four roots of $G$ and infinity. Any projective linear transformation to a fixed branch set is determined by the images of three fixed roots, with finitely many choices. The five moving roots for distinct $m$ are disjoint. Thus any geometric isomorphism class occurs only finitely often. \hfill$\square$
+
+\newpage
+\head{Verification and sources}
+Claude's corrected archive identifies commit \texttt{5b65b0f} in its ZIP comment. Its nine-curve verifier, including the $S_6$ control, transformed chart, nonintegral input and nonstable-pairing test, passed here. The number-field maps, point fields, rational half-poles, independent cover identities and pairing disjointness were recomputed on all 36 Richelot neighbours. The two older standalone verifiers passed after the last changes. This verifies the tested inputs; recognition at finite precision can still report failure, and the two-variable chart can stop at an unresolved positive-dimensional component. The external reduction concerns rational points over the input field, a separate stopping question.
+
+{\small\begin{tabular}{@{}p{.34\linewidth}p{.61\linewidth}@{}}
+\toprule
+\textbf{Replay file}&\textbf{What it verifies}\\ \midrule
+\texttt{fixed\_curve.py}, \texttt{verify\_panel.py} & Field-polynomial classifier and the 243-field replay. Complete and partial outputs are explicitly distinguished.\\
+\texttt{gaussian\_descent.py}, \texttt{residual\_cover.py} & The nine local squareclass pairs, seven finite fibre sets, and five elliptic factors of the residual genus-five cover.\\
+\texttt{field\_tower.py} & Twist equations, rational ranks, torsion and finite-field checks for 256 signed sample twists. The uniform proof is on page 2.\\
+\texttt{quadratic\_pairs.py} & Exact Jacobian divisor enumeration over $\Q$ and $\Q(i)$, including the 12 pairs contributing 24 biquadratic points.\\
+\texttt{sqrt7.py} and \texttt{sqrt7.m} & Rational elliptic tests, all local quadratic squareclass exclusions, odd-index arithmetic and the complete elliptic Chabauty projection.\\
+\texttt{genus\_four.py} & Finite-field counts, irreducibility, cyclotomic factor tests, elliptic ranks and torsion. Integer arguments return $D_m(\Q(i))$.\\
+\texttt{remaining\_case.py} & Exact square tests for the bounded Gaussian search on the unresolved equation.\\
+\bottomrule
+\end{tabular}}
+
+\sub{References}
+{\small
+[1] F. Bogomolov and Y. Tschinkel, \href{https://math.nyu.edu/~tschinke/papers/yuri/04covers/cover4.pdf}{\emph{Couniformization of curves}}, Proposition 2.4 and its arithmetic consequence.
+
+[2] B. Poonen, \href{https://math.mit.edu/~poonen/papers/etale.pdf}{\emph{Unramified covers of Galois covers of low genus curves}}, Math. Res. Lett. 12 (2005), 475--481, especially Remark 1.2, Theorem 1.5 and Corollaries 1.8--1.9.
+
+[3] \href{https://www.proofatlas.ai/open-problems/}{ProofAtlas, problem 87}, \emph{Effective Mordell Conjecture for Curves of Genus at Least Two}.
+
+[4] A. Lozano-Robledo, \href{https://alozano.clas.uconn.edu/wp-content/uploads/sites/490/2021/04/MATH-5020-Elliptic-Curves-Lecture-28.pdf}{\emph{Elliptic Curves}, Lecture 28}, rational 2-isogeny descent.
+
+[5] PARI Group, \href{https://pari.math.u-bordeaux.fr/dochtml/html/Elliptic_curves.html}{\emph{Elliptic curves}}, \texttt{ellrank}, \texttt{elltors}.
+
+[6] Magma Handbook, \href{https://magma.maths.usyd.edu.au/magma/handbook/text/1568}{\emph{Elliptic Curve Chabauty}} and \href{https://magma.maths.usyd.edu.au/magma/handbook/text/416}{\emph{Setting the Class Group Bounds}}.
+
+[7] N. Bruin and M. Stoll, \href{https://www.mathe2.uni-bayreuth.de/stoll/papers/twocoverdescent.pdf}{\emph{Two-cover descent on hyperelliptic curves}}. The cover and descent principles used here have established precedents. Priority for the exact family and field classifications in this note has not been established.
+
+[8] L. Alpöge and B. Lawrence, \href{https://arxiv.org/abs/2408.11653}{\emph{Conditional algorithmic Mordell}}, arXiv:2408.11653.}
+\end{document}

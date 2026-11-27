@@ -1,0 +1,77 @@
+{
+  "target": "Y^2=X^3+1",
+  "maps": [
+    {
+      "degree": 8,
+      "forward": 171,
+      "inverse": 22408
+    },
+    {
+      "degree": 8,
+      "forward": 171,
+      "inverse": 22408
+    }
+  ],
+  "signed_sums": [
+    {
+      "rotation": 0,
+      "sign": -1,
+      "degree": 16,
+      "forward": 41433,
+      "inverse": 49798980
+    },
+    {
+      "rotation": 0,
+      "sign": 1,
+      "degree": 16,
+      "forward": 41426,
+      "inverse": 49148454
+    },
+    {
+      "rotation": 1,
+      "sign": -1,
+      "degree": 4,
+      "forward": 14,
+      "inverse": 53
+    },
+    {
+      "rotation": 1,
+      "sign": 1,
+      "degree": 28,
+      "forward": 131623243,
+      "inverse": 1372750560938584552
+    },
+    {
+      "rotation": 2,
+      "sign": -1,
+      "degree": 28,
+      "forward": 131623243,
+      "inverse": 1371620465253708473
+    },
+    {
+      "rotation": 2,
+      "sign": 1,
+      "degree": 4,
+      "forward": 16,
+      "inverse": 55
+    }
+  ],
+  "duplication": {
+    "degree": 4,
+    "forward": 9,
+    "inverse": 132
+  },
+  "quartic_reconstruction_strict_height_bound": 48659,
+  "reciprocal_sums": [
+    {
+      "degree": 4,
+      "forward": 8,
+      "inverse": 36
+    },
+    {
+      "degree": 4,
+      "forward": 8,
+      "inverse": 36
+    }
+  ]
+}
