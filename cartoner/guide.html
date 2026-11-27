@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cartoner trial guide · Linkwright</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="brand">Crest–Root / Linkwright</div>
+      <nav><a href="index.html">Open trial</a></nav>
+    </header>
+    <main class="guide">
+      <div class="intro">
+        <h1>Run a cartoner trial</h1>
+        <p>
+          Evaluate one historical machine setup or a bench run. The offline kit
+          opens directly in a current browser. Inputs, calculations and saved
+          records stay on the engineer’s computer.
+        </p>
+      </div>
+      <h2>Start with a known outcome</h2>
+      <ol>
+        <li>
+          Choose a reference case and inspect both recorded cycles. The opener’s
+          first cycle leaves its opening angle unresolved between measurements.
+          The folder’s first cycle contains a return-clearance violation. The
+          reach case contains the 60 nm geometric shortfall.
+        </li>
+        <li>
+          Choose a machine revision, carton format and speed setting. Give this
+          combination a unique setup ID. Before reading the field outcome,
+          record the existing inspection decision and agree on thresholds, input
+          uncertainty, permitted travel, phase origin and phase calibration.
+        </li>
+        <li>
+          Under <b>Setup &amp; trace</b>, download the example inputs. Replace
+          the example geometry and limits with the builder’s drawing values and
+          process requirements. Set <code>source</code> to <code>machine</code>.
+          For the run, import the revised JSON and its matching CSV together,
+          then select <b>Analyze inputs</b>.
+        </li>
+        <li>
+          Inspect each cycle and its limiting phase. Compare flagged and
+          unresolved intervals with synchronized encoder, vacuum, dimensional or
+          video evidence. Record the observed outcome and work-order reference
+          under <b>Trial comparison</b>. Save the record for replay.
+        </li>
+      </ol>
+      <h2>Inputs for the two stations</h2>
+      <p>
+        For an opening station, use calibrated carton angle and vacuum magnitude
+        with edge timestamps for conveyor capture and vacuum release. For a
+        folder, use flap angle, clearance from a named non-contact body and the
+        fold-complete and tool-withdrawal timestamps. Record relative tool speed
+        as another channel when it has an acceptance threshold. Dimensions,
+        samples, uncertainty and event names in the included cases are
+        synthetic. Each is an independent reference design.
+      </p>
+      <h3>Setup JSON</h3>
+      <p>
+        Start from <a href="examples/opener.json">the opener setup</a> or
+        <a href="examples/folder.json">the folder setup</a>. Channel IDs are
+        unique. Each channel has a label, unit, minimum or maximum limit (<code
+          >sense</code
+        >
+        is <code>min</code> or <code>max</code>), absolute measurement error,
+        maximum absolute rate of change per encoder degree, and inclusive phase
+        window. A window [350,10] requires coverage on both ends of the recorded
+        0–360° cycle. A rate of zero asserts a constant signal. Set
+        <code>rate</code> to <code>null</code> when no independently justified
+        bound is available. Time derivatives require a verified conversion to
+        variation per degree for the operating range. Include acquisition and
+        phase-alignment uncertainty in the bounds. A single real-valued trace
+        model requires a single-valued signal versus increasing master phase.
+      </p>
+      <p>
+        Optional <code>loops</code> take independent [low, high] pivot spacing
+        intervals in mm for ground, crank, coupler and rocker.
+        <code>groundDeg</code> locates the ground direction in full-turn
+        coordinates. For an oscillating crank supply <code>strokeCos</code>, the
+        minimum and maximum cosine of its angle relative to ground over
+        commanded travel. For example 0 to 90° gives [0,1]. Include interior
+        extrema when the stroke crosses 0° or 180°. An outward-rounded range
+        gives a conservative screen. A violating geometry in added travel needs
+        confirmation inside the commanded range. Multiple loops model separately
+        specified rigid four-bars with compatible prescribed drive motion. The
+        check establishes strict triangle closure for each specified loop; a
+        coupled machine with other constraints needs its own kinematics.
+      </p>
+      <p>
+        Events have independent bounded encoder timestamp error
+        <code>errorDeg</code>. Each handoff checks that its second event occurs
+        at least <code>minDeg</code> after its first in the same unwrapped
+        cycle. Set the origin before both events. For a maximum deadline, define
+        a second handoff from the release to the deadline marker. This allows a
+        two-sided release window. Digital event channels contain one edge per
+        declared event per cycle.
+      </p>
+      <h3>Trace CSV</h3>
+      <p>
+        Use UTF-8, decimal points, and up to six decimal places. Group one run
+        and setup per file. The cycle ID identifies a physical cycle. Analog
+        data and timestamp events can use different phase positions. Blank event
+        values in long format denote the edge at that phase.
+      </p>
+      <pre>
+setup,run,cycle,phase_deg,channel,value
+opener-r1,bench-04,12,160,opening,89.2
+opener-r1,bench-04,12,172,captured,
+opener-r1,bench-04,12,181,released,</pre
+      >
+      <p>
+        Wide CSV uses the same first four columns followed by configured channel
+        IDs. Leave unavailable readings blank. Enter 1 only on the event edge.
+        Each row must carry at least one observation. Each cycle submitted for
+        analysis needs an identifier and at least one row. Compare the returned
+        cycle count with the controller log to detect entirely absent cycles.
+        Split larger jobs into runs of up to 100,000 observations and 2,000
+        cycles.
+      </p>
+      <pre>
+setup,run,cycle,phase_deg,opening,vacuum,captured,released
+opener-r1,bench-04,12,160,89.2,48,,
+opener-r1,bench-04,12,172,,,1,
+opener-r1,bench-04,12,181,,,,1</pre
+      >
+      <h2 id="methods">How the bounds work</h2>
+      <p>
+        Convert each measurement into signed margin above its requirement. For a
+        maximum limit, subtract the measured value from the limit. A measured
+        margin m with absolute uncertainty e at phase p allows [m−e,m+e]. A
+        maximum rate L extends this to [m−e−L|x−p|, m+e+L|x−p|] at phase x.
+        Intersect the constraints from all samples of the same channel and
+        cycle. Forward and backward passes give the tight compatible interval at
+        every recorded phase. Between two readings the lower envelope is the
+        larger of two straight lines; the upper envelope is the smaller of two
+        straight lines. The solver checks their extrema over the required
+        portion of every segment. The numerical comparisons use scaled integers.
+        The graph rounds for display.
+      </p>
+      <p>
+        The reported lower and upper values bound the minimum signed margin.
+        Nonnegative lower bounds meet the inclusive process requirement. A
+        negative upper bound establishes a violation. Bounds straddling zero
+        leave the decision open. Incompatible readings, missing events and
+        incomplete coverage have their own results. A witnessed violation is
+        retained even if another part of the cycle lacks coverage. Event timing
+        subtracts the required separation and includes the errors of both edges.
+        Setup geometry requires a strictly positive margin to exclude toggles.
+      </p>
+      <p>
+        For a full-turn loop the pin distance varies from |ground−crank| to
+        ground+crank. The other two links allow distances between
+        |coupler−rocker| and coupler+rocker. The minimum of the two clearances
+        over the complete tolerance box determines the result. For a restricted
+        cosine range the solver compares squared distances in mm². The farthest
+        ground/crank distance occurs at a rectangle corner and the nearest can
+        occur on an edge. The record includes the dimensions attaining the
+        limiting result.
+      </p>
+      <p>
+        Return-clearance checks require a supplied clearance signal or validated
+        motion-model output. Carton contact, compliance, drive loads, vacuum and
+        board quality require corresponding instrument evidence. The overall
+        result applies to the submitted checks and individual recorded cycles.
+        Every cycle result is available even when a separate channel fails.
+      </p>
+      <h2>Commissioning comparison</h2>
+      <p>
+        Use one historical tuning set and a separate set of held-out production
+        jobs. Freeze tolerances and sensor bounds before evaluating held-out
+        jobs. Count confirmed issues caught only by the trial, known issues
+        missed, false alarms, unresolved cases and review minutes against the
+        existing inspection. Include clean runs, rejected cartons and a format
+        change. Group repeated cycles by machine setup when reporting
+        performance. Shop confirmation and the buyer’s acceptance criteria
+        determine suitability on that machine.
+      </p>
+      <h3>Offline replay</h3>
+      <p>
+        Open a saved record in the trial to recompute its results. Engineers
+        using Node.js 18 or later can run the same arithmetic from a terminal.
+      </p>
+      <pre>
+node cli.cjs examples/opener.json examples/opener.csv &gt; record.json
+node cli.cjs --replay record.json
+node --test test.cjs</pre
+      >
+      <p>
+        Public design examples include
+        <a href="https://patents.google.com/patent/US9260212B2/en"
+          >Marchesini’s opener</a
+        >
+        and
+        <a href="https://patents.google.com/patent/DE602006000420T2/en"
+          >Aetna’s folder</a
+        >. The trial fixtures use independently chosen dimensions and traces.
+      </p>
+    </main>
+    <footer>
+      Linkwright · Cartoner trial 1.0.0 <a href="index.html">Open trial</a>
+    </footer>
+  </body>
+</html>
