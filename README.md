@@ -98,6 +98,7 @@ A later experiment plotted an elliptic-curve score against a contribution alread
 | Explore | What you can try |
 | --- | --- |
 | [Four worked examples](examples/workbook.html) | Follow a fibre, count and index an 80-slot lantern puzzle, test a deceptive pair, or audit a score that shares terms with its predictor. |
+| [Cartoner stroke trial](https://towre676-cloud.github.io/crest-root-calculus/cartoner/) | Check four-bar travel, encoder traces and handoff timing for a machine setup. Load your own CSV or run the synthetic opener and folder. [Offline trial](downloads/linkwright-cartoner-trial.zip) · [Methods and evaluation](linkwright/cartoner/README.md) |
 | [Linkwright](linkwright/README.md) | Check four-bar linkage closure and continuous motion using its configuration curve. |
 | [Spectral mixtures and solar export](research/configuration-and-certificates/README.md) | See how model assumptions affect a mineral-mixture inference or a feeder export limit. |
 | [Tillamook crossing](research/deployable-crossing/v3/README.md) | Explore a feasibility study linking a mapped site to a structural and deployment model for a proposed pedestrian crossing. |

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "setup": "reach-r1",
+  "name": "Between-frame reach test",
+  "source": "synthetic",
+  "channels": [
+    {
+      "id": "gap",
+      "label": "Reference clearance",
+      "unit": "mm",
+      "sense": "min",
+      "limit": 0,
+      "error": 0.01,
+      "rate": 0.01,
+      "window": [
+        0,
+        360
+      ]
+    }
+  ],
+  "events": [],
+  "handoffs": [],
+  "loops": [
+    {
+      "name": "Narrow-gap regression crank",
+      "groundDeg": 0.25,
+      "ground": [
+        100,
+        100
+      ],
+      "crank": [
+        30,
+        30
+      ],
+      "coupler": [
+        75,
+        75
+      ],
+      "rocker": [
+        54.99994,
+        54.99994
+      ]
+    }
+  ]
+}
