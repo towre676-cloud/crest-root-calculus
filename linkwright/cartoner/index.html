@@ -6,6 +6,7 @@
     <meta name="color-scheme" content="light" />
     <title>Cartoner stroke trial · Linkwright</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="field.css" />
   </head>
   <body>
     <header>
@@ -22,6 +23,7 @@
         Crest–Root <span>/</span> Linkwright
       </div>
       <nav>
+        <a href="field.html">Measured evidence</a>
         <a href="guide.html">Trial guide</a
         ><a
           id="kit"
@@ -35,17 +37,19 @@
         <div>
           <h1>Cartoner stroke trial</h1>
           <p>
-            Find where a linkage loses reach, a tool runs out of clearance, or a
-            carton handoff runs short of time.
+            Check an entire stroke for reach, clearance and handoff timing. The
+            opening trial replays a measured four-bar current peak that fell
+            between two retained readings.
           </p>
         </div>
       </div>
       <section class="toolbar" aria-label="Trial controls">
         <label
-          >Reference case<select id="case">
+          >Trial case<select id="case">
             <option value="opener">Carton opener</option>
             <option value="folder">Flap folder</option>
             <option value="reach">Narrow reach gap</option>
+            <option value="bench">Measured servo window</option>
             <option value="custom" disabled>Custom setup</option>
           </select></label
         ><button id="inputs">Setup &amp; trace</button
@@ -59,9 +63,58 @@
       <section id="editor" hidden>
         <h2>Setup &amp; trace</h2>
         <p>
-          Import a matched setup and encoder CSV, or edit the open example.
-          Files are analyzed in this browser.
+          Import a matched setup and phase or elapsed-time CSV, or edit the open
+          example. Files are analyzed in this browser.
         </p>
+        <details class="native">
+          <summary>Import a native four-bar servo recording</summary>
+          <p>
+            Open an original six-column DaRUS text file. Select the recorded
+            quantity and enter the requirement for this trial. The original
+            timestamps retain stalls and reversals.
+          </p>
+          <div class="pick">
+            <label
+              >Quantity<select id="nativeSignal">
+                <option value="current">Motor current · mA</option>
+                <option value="command">Command current · mA</option>
+                <option value="velocity">Crank velocity · rad/s</option>
+                <option value="position">Crank position · rad</option>
+                <option value="voltage">Supply voltage · V</option>
+              </select></label
+            >
+            <label
+              >Requirement<select id="nativeSense">
+                <option value="max">Maximum</option>
+                <option value="min">Minimum</option>
+              </select></label
+            >
+            <label
+              >Limit<input id="nativeLimit" type="number" step="any"
+            /></label>
+            <label
+              >Absolute sensor error<input
+                id="nativeError"
+                type="number"
+                min="0"
+                step="any"
+            /></label>
+            <label
+              >Rate per second (optional)<input
+                id="nativeRate"
+                type="number"
+                min="0"
+                step="any"
+            /></label>
+          </div>
+          <label
+            >Original servo file<input
+              id="nativeFile"
+              type="file"
+              accept=".txt,.csv"
+          /></label>
+          <p id="nativeMessage" role="status"></p>
+        </details>
         <div class="editgrid">
           <div>
             <label
@@ -78,7 +131,7 @@
           </div>
           <div>
             <label
-              >Phase trace CSV<input
+              >Phase or time trace CSV<input
                 id="traceFile"
                 type="file"
                 accept=".csv,text/csv" /></label
@@ -106,7 +159,7 @@
           <section class="chart">
             <div class="charttop">
               <div>
-                <div class="eyebrow">Encoder phase</div>
+                <div class="eyebrow" id="axisLabel">Encoder phase</div>
                 <h3 id="chartTitle">Stroke margin</h3>
               </div>
               <label>Cycle<select id="cycle"></select></label>
@@ -120,6 +173,7 @@
                 </select></label
               >
             </div>
+            <p id="basis" class="meta"></p>
             <div id="graph"></div>
             <div class="legend">
               <span class="sample">Recorded margin</span
@@ -186,11 +240,13 @@
       </article>
     </main>
     <footer>
-      Linkwright · Cartoner trial 1.0.0
+      Linkwright · Cartoner trial 2.0.0
       <a href="guide.html#methods">Methods and scope</a>
     </footer>
     <script src="engine.js"></script>
     <script src="examples.js"></script>
+    <script src="field-data.js"></script>
+    <script src="bench.js"></script>
     <script src="ui.js"></script>
   </body>
 </html>

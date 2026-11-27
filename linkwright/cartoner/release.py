@@ -15,7 +15,9 @@ for key in ('opener', 'folder', 'reach'):
 (root / 'examples.js').write_bytes(('globalThis.trialExamples = ' +
     json.dumps(examples, indent=2) + ';\n').encode())
 files = ['index.html', 'engine.js', 'examples.js', 'ui.js', 'style.css',
-         'guide.html', 'test.cjs', 'cli.cjs']
+         'guide.html', 'test.cjs', 'cli.cjs', 'bench.js', 'field.html', 'field.js',
+         'field.css', 'field-data.js', 'audit.js']
+files += sorted('evidence/' + f.name for f in (root / 'evidence').iterdir() if f.is_file())
 files += sorted('examples/' + f.name for f in (root / 'examples').iterdir()
                 if f.suffix in {'.csv', '.json'})
 output = root.parents[1] / 'downloads' / 'linkwright-cartoner-trial.zip'

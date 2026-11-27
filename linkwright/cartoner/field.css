@@ -1,0 +1,144 @@
+.field {
+  max-width: 1240px;
+}
+.field .intro {
+  padding-bottom: 26px;
+}
+.field .intro .eyebrow {
+  font-size: 13px;
+  margin-bottom: 9px;
+}
+.field h1 {
+  font-size: clamp(37px, 5vw, 65px);
+}
+.field h2 {
+  font-size: clamp(23px, 3vw, 35px);
+  letter-spacing: -0.045em;
+  line-height: 1.15;
+  margin: 7px 0 12px;
+}
+.study,
+.evidence-pair article {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: clamp(16px, 3vw, 32px);
+  min-width: 0;
+}
+.study,
+.evidence-pair {
+  margin: 16px 0;
+}
+.field p {
+  line-height: 1.55;
+  margin: 10px 0;
+}
+.bench-grid,
+.evidence-pair {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: minmax(0, 2fr) minmax(200px, 1fr);
+}
+.evidence-pair {
+  grid-template-columns: 1fr 1fr;
+}
+.scope {
+  background: #103c3b;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.scope svg {
+  width: 100%;
+  display: block;
+}
+.keys {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  font-size: 13px;
+  color: var(--muted);
+  margin: 8px 0;
+}
+.reading {
+  align-self: center;
+}
+.reading strong {
+  font-size: clamp(32px, 4vw, 52px);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.05em;
+}
+.reading a {
+  display: block;
+  width: fit-content;
+  margin: 10px 0;
+}
+.launch {
+  border-radius: 6px;
+  padding: 10px 14px;
+  background: var(--deep);
+  color: white;
+  text-decoration: none;
+  font-weight: 650;
+}
+.field .footnote,
+.field .credit {
+  font-size: 14px;
+  color: var(--muted);
+}
+.hardware,
+.pressure {
+  width: 100%;
+  height: 235px;
+  object-fit: contain;
+  border-radius: 5px;
+  background: #f5f6f3;
+  display: block;
+}
+.assumptions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.assumptions label,
+.native .pick label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: start;
+}
+.assumptions input,
+.native input[type="number"] {
+  width: 140px;
+}
+.field input,
+.native input[type="number"] {
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: white;
+  padding: 7px;
+  font: inherit;
+}
+.field details {
+  margin-top: 18px;
+}
+@media (max-width: 740px) {
+  .bench-grid,
+  .evidence-pair {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .hardware,
+  .pressure {
+    height: auto;
+    max-height: 255px;
+  }
+  .field .charttop {
+    align-items: start;
+    flex-wrap: wrap;
+  }
+  .field select {
+    max-width: 100%;
+  }
+  .reading strong {
+    font-size: 32px;
+  }
+}

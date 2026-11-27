@@ -371,3 +371,196 @@ test("toggle equality, unsupported numeric input, and wrapped phase precision", 
     /decimal/,
   );
 });
+require("./field-data");
+require("./bench");
+require("./audit");
+test("twenty measured windows reproduce the withheld overshoot; endpoints alone remain unresolved", () => {
+  for (const [key, b] of Object.entries(fieldData.bench)) {
+    const both = [false, true].map((sparse) => {
+      const { setup: p, csv } = BenchTrial.fixture(key, sparse);
+      const r = analyze(p, csv);
+      a.equal(r.axis, "time_s");
+      a.equal(r.loops[0].folded, "21");
+      a.equal(r.loops[0].extended, "39");
+      return r.cycles[0].checks[0];
+    });
+    a.equal(both[0].status, "violation");
+    a.equal(both[1].status, "unresolved");
+    a.ok(Number(both[1].sampled) > 0);
+    a.ok(!Object.hasOwn(both[0], "phase"));
+    a.ok(
+      b.example.some(
+        ([t, y]) => t / 1e6 === Number(both[0].time_s) && y === b.peak,
+      ),
+    );
+  }
+});
+test("time coordinates retain precision, long recordings and edge units; historical records still replay", () => {
+  const p = setup({
+    schema: 2,
+    axis: "time_s",
+    events: [
+      { id: "on", errorS: "0.001" },
+      { id: "off", errorS: "0.001" },
+    ],
+    handoffs: [{ label: "Transfer", first: "on", second: "off", minS: 0.01 }],
+  });
+  p.channels[0].window = [400, 401];
+  const csv =
+    "setup,run,cycle,time_s,x,on,off\nR1,r,c,400,4,1,\nR1,r,c,400.009,, ,1\nR1,r,c,401,4,,\n";
+  const r = analyze(p, csv);
+  a.equal(r.cycles[0].checks[0].lowerWitness.seconds, 400.5);
+  a.equal(r.cycles[0].checks[1].unit, "s");
+  a.equal(r.cycles[0].checks[1].lower, "-0.003");
+  a.throws(() => analyze(p, csv.replace("time_s", "phase_deg")), /time_s/);
+  p.channels[0].window = [401, 400];
+  a.throws(() => analyze(p, csv), /increase/);
+  const ex = trialExamples.opener,
+    result = summary(analyze(ex.setup, ex.csv));
+  result.version = "1.0.0";
+  a.equal(replay({ ...ex, engine: "1.0.0", result }).version, "2.0.0");
+  result.status = "changed";
+  a.throws(() => replay({ ...ex, engine: "1.0.0", result }), /disagrees/);
+});
+test("native import uses selected column and original increasing timestamps", () => {
+  const s =
+    "% Time [s], Goal Current [mA], Pres. Current [mA], Pres. Voltage [V], Pres. Position [rad], Pres. Velocity [rad/s]\n0.001,1,9,12.1,1,-3\n0.005,1,11,12.1,0,-4";
+  const ex = BenchTrial.fromNative(
+    s,
+    "native.txt",
+    "current",
+    10,
+    "max",
+    0,
+    null,
+  );
+  a.equal(analyze(ex.setup, ex.csv).cycles[0].checks[0].sampled, "-1");
+  a.throws(
+    () =>
+      BenchTrial.fromNative(
+        s.replace("0.005", "0.001"),
+        "f",
+        "position",
+        0,
+        "min",
+        0,
+        null,
+      ),
+    /increase/,
+  );
+  a.throws(
+    () =>
+      BenchTrial.fromNative(
+        s.replace("Time", "Phase"),
+        "f",
+        "current",
+        10,
+        "max",
+        0,
+        null,
+      ),
+    /header/,
+  );
+});
+test("data totals preserve source counts, holdout membership and excluded readings", () => {
+  const b = Object.values(fieldData.bench),
+    total = (xs, f) => xs.reduce((s, x) => s + f(x), 0);
+  a.equal(b.length, 20);
+  a.equal(
+    total(b, (x) => total(x.runs, (r) => r.rows)),
+    905885,
+  );
+  a.equal(
+    total(b, (x) => total(x.runs, (r) => r.flagged)),
+    19,
+  );
+  a.equal(
+    total(b, (x) => x.raw.hidden),
+    226452,
+  );
+  a.equal(
+    total(b, (x) => x.hidden),
+    226431,
+  );
+  a.equal(
+    total(b, (x) => x.raw.outside),
+    5,
+  );
+  a.equal(
+    total(b, (x) => x.outside),
+    4,
+  );
+  a.equal(
+    total(Object.values(fieldData.piade), (x) => x.intervals),
+    429394,
+  );
+  a.equal(
+    total(Object.values(fieldData.comopi), (x) => x.targetRows),
+    41,
+  );
+  a.equal(
+    total(Object.values(fieldData.alpi), (x) => x.rows),
+    444834,
+  );
+});
+test("paired audit handles abstentions, clean runs, duplicate identities, source and tampering", () => {
+  const engine = require("./engine");
+  function make(id, reading, base, truth, source = "machine", rate = 0) {
+    const p = setup({ source });
+    p.channels[0].rate = rate;
+    const csv =
+      header +
+      "R1," +
+      id +
+      ",1,0,x," +
+      reading +
+      "\nR1," +
+      id +
+      ",1,10,x," +
+      reading +
+      "\n";
+    return {
+      engine: engine.VERSION,
+      setup: p,
+      csv,
+      result: summary(analyze(p, csv)),
+      comparison: { baseline: base, observed: truth },
+    };
+  }
+  const yes = "Confirmed deviation",
+    no = "Completed within limits";
+  const records = [
+    make("a", -1, "Passed", yes),
+    make("b", 1, "Flagged", yes),
+    make("c", -1, "Passed", no),
+    make("d", 0, "Passed", no),
+    make("e", 1, "Passed", no, "machine", null),
+    make("f", 1, "Passed", "Unrecorded"),
+    make("g", -1, "Passed", yes, "synthetic"),
+  ];
+  const b = BenchTrial.fixture("empty/Sine_0", false);
+  records.push({
+    ...b,
+    engine: engine.VERSION,
+    result: summary(analyze(b.setup, b.csv)),
+  });
+  const c = TrialAudit.evaluate(records, engine).counts;
+  for (const key of [
+    "trialOnly",
+    "baselineOnly",
+    "trialOnlyFlagClean",
+    "bothClear",
+    "incomplete",
+    "unlabeled",
+    "publishedBench",
+    "synthetic",
+  ])
+    a.equal(c[key], 1);
+  a.equal(c.paired, 4);
+  a.throws(
+    () => TrialAudit.evaluate([records[0], records[0]], engine),
+    /Duplicate/,
+  );
+  records[0].result.status = "meets";
+  a.throws(() => TrialAudit.evaluate(records, engine), /disagrees/);
+});
