@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>Cartoner stroke trial · Linkwright</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="brand">
+        <svg viewBox="0 0 38 23" aria-hidden="true">
+          <path
+            d="M1 20h7l9-16 9 16h11"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.8"
+          />
+          <circle cx="17" cy="4" r="3.1" fill="currentColor" />
+        </svg>
+        Crest–Root <span>/</span> Linkwright
+      </div>
+      <nav>
+        <a href="guide.html">Trial guide</a
+        ><a
+          id="kit"
+          href="https://towre676-cloud.github.io/crest-root-calculus/cartoner/linkwright-cartoner-trial.zip"
+          >Offline kit ↓</a
+        >
+      </nav>
+    </header>
+    <main>
+      <div class="intro">
+        <div>
+          <h1>Cartoner stroke trial</h1>
+          <p>
+            Find where a linkage loses reach, a tool runs out of clearance, or a
+            carton handoff runs short of time.
+          </p>
+        </div>
+      </div>
+      <section class="toolbar" aria-label="Trial controls">
+        <label
+          >Reference case<select id="case">
+            <option value="opener">Carton opener</option>
+            <option value="folder">Flap folder</option>
+            <option value="reach">Narrow reach gap</option>
+            <option value="custom" disabled>Custom setup</option>
+          </select></label
+        ><button id="inputs">Setup &amp; trace</button
+        ><button id="reopen">Open saved record</button
+        ><input type="file" id="recordFile" hidden accept=".json" /><button
+          id="export"
+        >
+          Save trial record ↓</button
+        ><span id="src"></span>
+      </section>
+      <section id="editor" hidden>
+        <h2>Setup &amp; trace</h2>
+        <p>
+          Import a matched setup and encoder CSV, or edit the open example.
+          Files are analyzed in this browser.
+        </p>
+        <div class="editgrid">
+          <div>
+            <label
+              >Setup JSON<input
+                id="setupFile"
+                type="file"
+                accept=".json,application/json" /></label
+            ><textarea
+              id="setupText"
+              spellcheck="false"
+              aria-label="Setup JSON contents"
+            ></textarea
+            ><button id="saveSetup">Download setup</button>
+          </div>
+          <div>
+            <label
+              >Phase trace CSV<input
+                id="traceFile"
+                type="file"
+                accept=".csv,text/csv" /></label
+            ><textarea
+              id="traceText"
+              spellcheck="false"
+              aria-label="Trace CSV contents"
+            ></textarea
+            ><button id="saveTrace">Download CSV</button>
+          </div>
+        </div>
+        <div class="actions">
+          <button id="run" class="primary">Analyze inputs</button
+          ><button id="reset">Restore analyzed inputs</button>
+        </div>
+      </section>
+      <div id="notice" role="status" aria-live="polite"></div>
+      <article id="report">
+        <div class="statusline">
+          <h2 id="job"></h2>
+          <span id="overall" class="pill"></span>
+        </div>
+        <p class="meta" id="meta"></p>
+        <div class="workspace">
+          <section class="chart">
+            <div class="charttop">
+              <div>
+                <div class="eyebrow">Encoder phase</div>
+                <h3 id="chartTitle">Stroke margin</h3>
+              </div>
+              <label>Cycle<select id="cycle"></select></label>
+            </div>
+            <div class="pick">
+              <label>Channel<select id="channel"></select></label
+              ><label
+                >View<select id="view">
+                  <option value="window">Required interval</option>
+                  <option value="all">Entire cycle</option>
+                </select></label
+              >
+            </div>
+            <div id="graph"></div>
+            <div class="legend">
+              <span class="sample">Recorded margin</span
+              ><span class="band">Compatible range</span
+              ><span class="lim">Required limit</span>
+            </div>
+            <p id="explain"></p>
+          </section>
+          <section class="panel">
+            <div class="eyebrow">Selected cycle</div>
+            <h3>Stroke checks</h3>
+            <div id="checks"></div>
+          </section>
+        </div>
+        <section class="geometry">
+          <div class="eyebrow">Design tolerances</div>
+          <h3>Linkage geometry over commanded travel</h3>
+          <div id="loops"></div>
+        </section>
+        <details>
+          <summary>All cycle results</summary>
+          <div class="scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>Cycle</th>
+                  <th>Check</th>
+                  <th>Result</th>
+                  <th>Margin bounds</th>
+                  <th>Unit</th>
+                </tr>
+              </thead>
+              <tbody id="all"></tbody>
+            </table>
+          </div>
+        </details>
+        <details>
+          <summary>Trial comparison</summary>
+          <p class="meta">Optional field notes saved with the record</p>
+          <div class="pick">
+            <label
+              >Existing inspection<select id="baseline">
+                <option>Unrecorded</option>
+                <option>Passed</option>
+                <option>Flagged</option>
+                <option>Inconclusive</option>
+              </select></label
+            ><label
+              >Bench outcome<select id="observed">
+                <option>Unrecorded</option>
+                <option>Completed within limits</option>
+                <option>Confirmed deviation</option>
+                <option>Inconclusive</option>
+              </select></label
+            >
+          </div>
+          <label for="notes">Evidence or work-order reference</label
+          ><textarea
+            id="notes"
+            maxlength="3000"
+            aria-label="Evidence or work-order reference"
+          ></textarea>
+        </details>
+      </article>
+    </main>
+    <footer>
+      Linkwright · Cartoner trial 1.0.0
+      <a href="guide.html#methods">Methods and scope</a>
+    </footer>
+    <script src="engine.js"></script>
+    <script src="examples.js"></script>
+    <script src="ui.js"></script>
+  </body>
+</html>

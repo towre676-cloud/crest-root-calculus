@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "setup": "folder-r1",
+  "name": "Front and rear flap folding",
+  "source": "synthetic",
+  "channels": [
+    {
+      "id": "flap",
+      "label": "Rear flap angle",
+      "unit": "deg",
+      "sense": "min",
+      "limit": 82,
+      "error": 0.75,
+      "rate": 0.8,
+      "window": [
+        240,
+        260
+      ]
+    },
+    {
+      "id": "gap",
+      "label": "Return clearance",
+      "unit": "mm",
+      "sense": "min",
+      "limit": 1,
+      "error": 0.1,
+      "rate": 0.18,
+      "window": [
+        290,
+        350
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "rear_folded",
+      "errorDeg": 1
+    },
+    {
+      "id": "tool_clear",
+      "errorDeg": 0.6
+    }
+  ],
+  "handoffs": [
+    {
+      "label": "Rear fold before withdrawal",
+      "first": "rear_folded",
+      "second": "tool_clear",
+      "minDeg": 6
+    }
+  ],
+  "loops": [
+    {
+      "name": "Illustrative folding actuator",
+      "groundDeg": 0,
+      "ground": [
+        93.55,
+        94.05
+      ],
+      "crank": [
+        46.35,
+        46.85
+      ],
+      "coupler": [
+        83.85,
+        84.35
+      ],
+      "rocker": [
+        111.05,
+        111.55
+      ],
+      "strokeCos": [
+        0,
+        0.8
+      ]
+    }
+  ]
+}
