@@ -62,6 +62,7 @@ def check_certificate(cert):
         assert {a, b} == {a1, a2} and N == abs(a - b)
         assert set(map(int, B["primes"])) == set(prime_factors(N))
         d = 1
+        closure_prime = None
         for ls, rec in B["primes"].items():
             ell = int(ls)
             assert rec["v_N"] == vval(N, ell)
@@ -90,12 +91,16 @@ def check_certificate(cert):
                 assert J.is_zero(J.mul(ell ** witness["level"], W)) and not J.is_zero(image)
                 assert image == decode(J, witness["phi_point"])
             if rec.get("closure"):
-                assert N == ell ** rec["v_N"] and s == rec["v_N"] - 1
+                assert closure_prime is None and s == rec["v_N"] - 1
+                closure_prime = ell
             elif not witness:
                 assert s == rec["v_N"]
             v_d = rec["v_N"] - s
             assert rec["v_d"] == v_d
             d *= ell ** v_d
+        if closure_prime is not None:
+            # Every other prime was killed. Only this top level could give degree 1.
+            assert d == closure_prime
         assert d // p ** vval(d, p) == B["prime_to_p_degree"]
         assert d == B.get("degree", B["prime_to_p_degree"])
         degrees.append(d)
