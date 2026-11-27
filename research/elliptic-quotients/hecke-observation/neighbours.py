@@ -15,26 +15,34 @@ def quadratic(gram, v):
     return sum(v[i] * gram[i, j] * v[j] for i, j in product(range(3), repeat=2))
 
 
+def neighbour_basis(gram, p, point):
+    """Return the basis of a p-neighbour in the parent coordinates."""
+    value = int(quadratic(gram, point))
+    if value % p:
+        raise ValueError("The point is not isotropic.")
+    normal = [sum(int(gram[i, j]) * point[j] for j in range(3)) for i in range(3)]
+    pivot = next(i for i, x in enumerate(normal) if x % p)
+    inverse = pow(normal[pivot], -1, p)
+    lift = list(point)
+    lift[pivot] += p * ((-value // p * pow(2 * normal[pivot], -1, p)) % p)
+    columns = [[0, 0, 0] for _ in range(3)]
+    columns[pivot][pivot] = p * p
+    for j in range(3):
+        if j != pivot:
+            columns[j][j] = p
+            columns[j][pivot] = p * (-normal[j] * inverse % p)
+    return pari.mathnf(pari.Mat([pari.Col(v) for v in columns + [lift]])) / p
+
+
 def neighbours(gram, p):
     """Yield the p+1 neighbours, one for each isotropic projective line."""
     points = [(1, y, z) for y, z in product(range(p), repeat=2)]
     points += [(0, 1, z) for z in range(p)] + [(0, 0, 1)]
     for point in points:
-        value = int(quadratic(gram, point))
-        if value % p:
+        if quadratic(gram, point) % p:
             continue
-        normal = [sum(int(gram[i, j]) * point[j] for j in range(3)) for i in range(3)]
-        pivot = next(i for i, x in enumerate(normal) if x % p)
-        lift = list(point)
-        lift[pivot] += p * ((-value // p * pow(2 * normal[pivot], -1, p)) % p)
-        columns = [[0, 0, 0] for _ in range(3)]
-        columns[pivot][pivot] = p * p
-        for j in range(3):
-            if j != pivot:
-                columns[j][j] = p
-                columns[j][pivot] = p * (-normal[j] * pow(normal[pivot], -1, p) % p)
-        basis = pari.mathnf(pari.Mat([pari.Col(v) for v in columns + [lift]]))
-        target = basis.mattranspose() * gram * basis / (p*p)
+        basis = neighbour_basis(gram, p, point)
+        target = basis.mattranspose() * gram * basis
         if any(target[i, j].type() != "t_INT" for i, j in product(range(3), repeat=2)):
             raise ArithmeticError("The lifted neighbour is not integral.")
         yield target

@@ -4,6 +4,8 @@ The determinant-200,000 sweep found 121 opposite-secant pairs whose quotient spe
 
 Two cases in that remaining group have an exact central-value explanation. Their signed sums belong to the weight-two packet of the elliptic curve 232.b. The discriminant −232 twist has central value zero and root number +1. A twist in a square class indistinguishable at the bad primes has nonzero central value.
 
+The [sublattice criterion](local-geometry.md) gives an independent geometric proof for all 18 five-adic cases and 37 two-adic cases. Its isometries persist in three infinite families.
+
 ## A finite test for exclusion of local squares
 
 Let $h=\sum_{n\ge1}a(n)q^n$ be the signed sum of the four parent-neighbour theta series. It is a weight-$3/2$ cusp form since the four lattices are in one genus. If $G$ is their parent Gram matrix, its character is $\chi=(\det G/\cdot)$ and its level $N$ is the least positive integer for which $N(2G)^{-1}$ is integral with even diagonal. Each theta coefficient counts both signs. [Half-integral-weight conventions](https://sites.lsa.umich.edu/kartikp/wp-content/uploads/sites/1326/2024/07/ssw.pdf)
