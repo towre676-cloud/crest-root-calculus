@@ -1,0 +1,6644 @@
+[
+  {
+    "parent": [
+      1024,
+      4,
+      16,
+      17,
+      0,
+      0,
+      4
+    ],
+    "edges": [
+      [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 1024,
+    "theta_character_conductor": 1,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 1024,
+        "orbit_bound": 256,
+        "projection_level": 1024,
+        "projection_bound": 256
+      }
+    ]
+  },
+  {
+    "parent": [
+      2560,
+      4,
+      17,
+      44,
+      2,
+      0,
+      8
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 2560,
+    "theta_character_conductor": 40,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          0,
+          1
+        ],
+        "orbit_level": 2560,
+        "orbit_bound": 768,
+        "projection_level": 2560,
+        "projection_bound": 768
+      }
+    ]
+  },
+  {
+    "parent": [
+      4096,
+      4,
+      17,
+      68,
+      2,
+      0,
+      8
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 4096,
+    "theta_character_conductor": 1,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          0,
+          1
+        ],
+        "orbit_level": 4096,
+        "orbit_bound": 1024,
+        "projection_level": 4096,
+        "projection_bound": 1024
+      }
+    ]
+  },
+  {
+    "parent": [
+      14848,
+      4,
+      17,
+      236,
+      2,
+      0,
+      8
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 28,
+    "theta_level": 14848,
+    "theta_character_conductor": 232,
+    "simultaneously_local_square": {
+      "norm": 528,
+      "signed_coefficient": 16,
+      "primes": [
+        2,
+        29
+      ]
+    },
+    "square_equality": "neighbour_sturm"
+  },
+  {
+    "parent": [
+      19456,
+      4,
+      65,
+      92,
+      2,
+      0,
+      32
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 12,
+    "theta_level": 19456,
+    "theta_character_conductor": 76,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 5,
+        "relation": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 19456,
+        "orbit_bound": 5120,
+        "projection_level": 19456,
+        "projection_bound": 5120
+      }
+    ]
+  },
+  {
+    "parent": [
+      304,
+      5,
+      8,
+      9,
+      2,
+      1,
+      2
+    ],
+    "edges": [
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          2,
+          0
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 304,
+    "theta_character_conductor": 76,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 304,
+        "orbit_bound": 80,
+        "projection_level": 1216,
+        "projection_bound": 320
+      }
+    ]
+  },
+  {
+    "parent": [
+      1024,
+      5,
+      13,
+      17,
+      1,
+      1,
+      -3
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 1024,
+    "theta_character_conductor": 1,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 1024,
+        "orbit_bound": 256,
+        "projection_level": 1024,
+        "projection_bound": 256
+      }
+    ]
+  },
+  {
+    "parent": [
+      2560,
+      5,
+      13,
+      41,
+      1,
+      1,
+      -3
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 12,
+    "theta_level": 2560,
+    "theta_character_conductor": 40,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          0,
+          1
+        ],
+        "orbit_level": 2560,
+        "orbit_bound": 768,
+        "projection_level": 2560,
+        "projection_bound": 768
+      }
+    ]
+  },
+  {
+    "parent": [
+      2560,
+      5,
+      13,
+      41,
+      1,
+      1,
+      -3
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 2560,
+    "theta_character_conductor": 40,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 2560,
+        "orbit_bound": 768,
+        "projection_level": 2560,
+        "projection_bound": 768
+      }
+    ]
+  },
+  {
+    "parent": [
+      4096,
+      5,
+      13,
+      65,
+      1,
+      1,
+      -3
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 4096,
+    "theta_character_conductor": 1,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          0,
+          1
+        ],
+        "orbit_level": 4096,
+        "orbit_bound": 1024,
+        "projection_level": 4096,
+        "projection_bound": 1024
+      }
+    ]
+  },
+  {
+    "parent": [
+      4096,
+      5,
+      13,
+      65,
+      1,
+      1,
+      -3
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 4096,
+    "theta_character_conductor": 1,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 4096,
+        "orbit_bound": 1024,
+        "projection_level": 4096,
+        "projection_bound": 1024
+      }
+    ]
+  },
+  {
+    "parent": [
+      5632,
+      5,
+      13,
+      89,
+      1,
+      1,
+      -3
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 5632,
+    "theta_character_conductor": 88,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 5632,
+        "orbit_bound": 1536,
+        "projection_level": 5632,
+        "projection_bound": 1536
+      }
+    ]
+  },
+  {
+    "parent": [
+      7168,
+      5,
+      13,
+      113,
+      1,
+      1,
+      -3
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 7168,
+    "theta_character_conductor": 28,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 7168,
+        "orbit_bound": 2048,
+        "projection_level": 7168,
+        "projection_bound": 2048
+      }
+    ]
+  },
+  {
+    "parent": [
+      8704,
+      5,
+      13,
+      137,
+      1,
+      1,
+      -3
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 8704,
+    "theta_character_conductor": 136,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 8704,
+        "orbit_bound": 2304,
+        "projection_level": 8704,
+        "projection_bound": 2304
+      }
+    ]
+  },
+  {
+    "parent": [
+      10240,
+      5,
+      13,
+      161,
+      1,
+      1,
+      -3
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 10240,
+    "theta_character_conductor": 40,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 10240,
+        "orbit_bound": 3072,
+        "projection_level": 10240,
+        "projection_bound": 3072
+      }
+    ]
+  },
+  {
+    "parent": [
+      11776,
+      5,
+      13,
+      185,
+      1,
+      1,
+      -3
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 11776,
+    "theta_character_conductor": 184,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 11776,
+        "orbit_bound": 3072,
+        "projection_level": 11776,
+        "projection_bound": 3072
+      }
+    ]
+  },
+  {
+    "parent": [
+      13312,
+      5,
+      13,
+      209,
+      1,
+      1,
+      -3
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 13312,
+    "theta_character_conductor": 13,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 13312,
+        "orbit_bound": 3584,
+        "projection_level": 13312,
+        "projection_bound": 3584
+      }
+    ]
+  },
+  {
+    "parent": [
+      14848,
+      5,
+      13,
+      233,
+      1,
+      1,
+      -3
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 28,
+    "theta_level": 14848,
+    "theta_character_conductor": 232,
+    "simultaneously_local_square": {
+      "norm": 528,
+      "signed_coefficient": -16,
+      "primes": [
+        2,
+        29
+      ]
+    },
+    "square_equality": "neighbour_sturm"
+  },
+  {
+    "parent": [
+      14848,
+      5,
+      13,
+      233,
+      1,
+      1,
+      -3
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 14848,
+    "theta_character_conductor": 232,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 14848,
+        "orbit_bound": 3840,
+        "projection_level": 14848,
+        "projection_bound": 3840
+      }
+    ]
+  },
+  {
+    "parent": [
+      16384,
+      5,
+      13,
+      257,
+      1,
+      1,
+      -3
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 16384,
+    "theta_character_conductor": 1,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 16384,
+        "orbit_bound": 4096,
+        "projection_level": 16384,
+        "projection_bound": 4096
+      }
+    ]
+  },
+  {
+    "parent": [
+      17920,
+      5,
+      13,
+      281,
+      1,
+      1,
+      -3
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 17920,
+    "theta_character_conductor": 280,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 17920,
+        "orbit_bound": 6144,
+        "projection_level": 17920,
+        "projection_bound": 6144
+      }
+    ]
+  },
+  {
+    "parent": [
+      19456,
+      5,
+      13,
+      305,
+      1,
+      1,
+      -3
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 19456,
+    "theta_character_conductor": 76,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 19456,
+        "orbit_bound": 5120,
+        "projection_level": 19456,
+        "projection_bound": 5120
+      }
+    ]
+  },
+  {
+    "parent": [
+      20992,
+      5,
+      13,
+      329,
+      1,
+      1,
+      -3
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 20992,
+    "theta_character_conductor": 328,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 20992,
+        "orbit_bound": 5376,
+        "projection_level": 20992,
+        "projection_bound": 5376
+      }
+    ]
+  },
+  {
+    "parent": [
+      4000,
+      5,
+      20,
+      41,
+      0,
+      1,
+      4
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 4000,
+    "theta_character_conductor": 40,
+    "local_obstructions": [
+      {
+        "prime": 5,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 4000,
+        "orbit_bound": 1200,
+        "projection_level": 4000,
+        "projection_bound": 1200
+      }
+    ]
+  },
+  {
+    "parent": [
+      3040,
+      5,
+      20,
+      32,
+      0,
+      2,
+      4
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 3040,
+    "theta_character_conductor": 760,
+    "simultaneously_local_square": {
+      "norm": 161,
+      "signed_coefficient": 4,
+      "primes": [
+        2,
+        5,
+        19
+      ]
+    },
+    "square_equality": "neighbour_sturm"
+  },
+  {
+    "parent": [
+      3040,
+      5,
+      20,
+      32,
+      0,
+      2,
+      4
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 3040,
+    "theta_character_conductor": 760,
+    "simultaneously_local_square": {
+      "norm": 161,
+      "signed_coefficient": 4,
+      "primes": [
+        2,
+        5,
+        19
+      ]
+    },
+    "square_equality": "neighbour_sturm"
+  },
+  {
+    "parent": [
+      4000,
+      5,
+      20,
+      44,
+      0,
+      2,
+      8
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 4000,
+    "theta_character_conductor": 40,
+    "local_obstructions": [
+      {
+        "prime": 5,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 4000,
+        "orbit_bound": 1200,
+        "projection_level": 4000,
+        "projection_bound": 1200
+      }
+    ]
+  },
+  {
+    "parent": [
+      2080,
+      8,
+      8,
+      33,
+      0,
+      0,
+      2
+    ],
+    "edges": [
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 2080,
+    "theta_character_conductor": 520,
+    "simultaneously_local_square": {
+      "norm": 129,
+      "signed_coefficient": -16,
+      "primes": [
+        2,
+        5,
+        13
+      ]
+    },
+    "square_equality": "neighbour_sturm"
+  },
+  {
+    "parent": [
+      1024,
+      8,
+      8,
+      17,
+      0,
+      2,
+      2
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 1024,
+    "theta_character_conductor": 1,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 1024,
+        "orbit_bound": 256,
+        "projection_level": 1024,
+        "projection_bound": 256
+      }
+    ]
+  },
+  {
+    "parent": [
+      928,
+      8,
+      8,
+      17,
+      0,
+      2,
+      4
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 928,
+    "theta_character_conductor": 232,
+    "simultaneously_local_square": {
+      "norm": 33,
+      "signed_coefficient": 8,
+      "primes": [
+        2,
+        29
+      ]
+    },
+    "waldspurger_packet": {
+      "curve_weierstrass_coefficients": [
+        0,
+        1,
+        0,
+        -80,
+        -304
+      ],
+      "newform_conductor": 232,
+      "hecke_primes": [
+        3,
+        5,
+        17
+      ],
+      "eigenvalues": [
+        1,
+        1,
+        0
+      ],
+      "theta_eigenvalue_bound": 240,
+      "shimura_33_sturm_bound": 120,
+      "shimura_33_multiplier": 8,
+      "shimura_33_dilations": [
+        1
+      ],
+      "auxiliary_twist_discriminant": 8,
+      "auxiliary_twist_conductor": 1856,
+      "twists": [
+        {
+          "square_class": 1,
+          "twist_discriminant": -232,
+          "root_number": 1,
+          "twisted_symbol_sum": 0
+        },
+        {
+          "square_class": 33,
+          "twist_discriminant": -7656,
+          "root_number": 1,
+          "twisted_symbol_sum": 128
+        }
+      ]
+    },
+    "square_equality": "neighbour_sturm"
+  },
+  {
+    "parent": [
+      11500,
+      8,
+      13,
+      117,
+      2,
+      0,
+      5
+    ],
+    "edges": [
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 11500,
+    "theta_character_conductor": 460,
+    "local_obstructions": [
+      {
+        "prime": 5,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 11500,
+        "orbit_bound": 3600,
+        "projection_level": 11500,
+        "projection_bound": 3600
+      }
+    ]
+  },
+  {
+    "parent": [
+      11500,
+      8,
+      13,
+      116,
+      2,
+      2,
+      -2
+    ],
+    "edges": [
+      [
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 11500,
+    "theta_character_conductor": 460,
+    "local_obstructions": [
+      {
+        "prime": 5,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 11500,
+        "orbit_bound": 3600,
+        "projection_level": 11500,
+        "projection_bound": 3600
+      }
+    ]
+  },
+  {
+    "parent": [
+      4000,
+      8,
+      13,
+      41,
+      2,
+      2,
+      3
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 4000,
+    "theta_character_conductor": 40,
+    "local_obstructions": [
+      {
+        "prime": 5,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 4000,
+        "orbit_bound": 1200,
+        "projection_level": 4000,
+        "projection_bound": 1200
+      }
+    ]
+  },
+  {
+    "parent": [
+      16000,
+      8,
+      13,
+      161,
+      2,
+      2,
+      3
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 16000,
+    "theta_character_conductor": 40,
+    "local_obstructions": [
+      {
+        "prime": 5,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 16000,
+        "orbit_bound": 4800,
+        "projection_level": 16000,
+        "projection_bound": 4800
+      }
+    ]
+  },
+  {
+    "parent": [
+      4000,
+      8,
+      13,
+      44,
+      2,
+      4,
+      -4
+    ],
+    "edges": [
+      [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 4000,
+    "theta_character_conductor": 40,
+    "local_obstructions": [
+      {
+        "prime": 5,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 4000,
+        "orbit_bound": 1200,
+        "projection_level": 4000,
+        "projection_bound": 1200
+      }
+    ]
+  },
+  {
+    "parent": [
+      16000,
+      8,
+      13,
+      164,
+      2,
+      4,
+      -4
+    ],
+    "edges": [
+      [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 16000,
+    "theta_character_conductor": 40,
+    "local_obstructions": [
+      {
+        "prime": 5,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 16000,
+        "orbit_bound": 4800,
+        "projection_level": 16000,
+        "projection_bound": 4800
+      }
+    ]
+  },
+  {
+    "parent": [
+      1456,
+      8,
+      16,
+      17,
+      4,
+      2,
+      -6
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 1456,
+    "theta_character_conductor": 364,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 1456,
+        "orbit_bound": 448,
+        "projection_level": 5824,
+        "projection_bound": 1792
+      }
+    ]
+  },
+  {
+    "parent": [
+      4144,
+      8,
+      16,
+      41,
+      4,
+      2,
+      -6
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 4144,
+    "theta_character_conductor": 1036,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 4144,
+        "orbit_bound": 1216,
+        "projection_level": 16576,
+        "projection_bound": 4864
+      }
+    ]
+  },
+  {
+    "parent": [
+      6832,
+      8,
+      16,
+      65,
+      4,
+      2,
+      -6
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 6832,
+    "theta_character_conductor": 1708,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 6832,
+        "orbit_bound": 1984,
+        "projection_level": 27328,
+        "projection_bound": 7936
+      }
+    ]
+  },
+  {
+    "parent": [
+      9520,
+      8,
+      16,
+      89,
+      4,
+      2,
+      -6
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 9520,
+    "theta_character_conductor": 2380,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 9520,
+        "orbit_bound": 3456,
+        "projection_level": 38080,
+        "projection_bound": 13824
+      }
+    ]
+  },
+  {
+    "parent": [
+      12208,
+      8,
+      16,
+      113,
+      4,
+      2,
+      -6
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 12208,
+    "theta_character_conductor": 3052,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 12208,
+        "orbit_bound": 3520,
+        "projection_level": 48832,
+        "projection_bound": 14080
+      }
+    ]
+  },
+  {
+    "parent": [
+      14896,
+      8,
+      16,
+      137,
+      4,
+      2,
+      -6
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 2128,
+    "theta_character_conductor": 76,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 2128,
+        "orbit_bound": 640,
+        "projection_level": 8512,
+        "projection_bound": 2560
+      }
+    ]
+  },
+  {
+    "parent": [
+      17584,
+      8,
+      16,
+      161,
+      4,
+      2,
+      -6
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 17584,
+    "theta_character_conductor": 4396,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 17584,
+        "orbit_bound": 5056,
+        "projection_level": 70336,
+        "projection_bound": 20224
+      }
+    ]
+  },
+  {
+    "parent": [
+      20272,
+      8,
+      16,
+      185,
+      4,
+      2,
+      -6
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 20272,
+    "theta_character_conductor": 5068,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 20272,
+        "orbit_bound": 5824,
+        "projection_level": 81088,
+        "projection_bound": 23296
+      }
+    ]
+  },
+  {
+    "parent": [
+      2992,
+      8,
+      16,
+      29,
+      4,
+      2,
+      -4
+    ],
+    "edges": [
+      [
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 2992,
+    "theta_character_conductor": 748,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 2992,
+        "orbit_bound": 864,
+        "projection_level": 11968,
+        "projection_bound": 3456
+      }
+    ]
+  },
+  {
+    "parent": [
+      5680,
+      8,
+      16,
+      53,
+      4,
+      2,
+      -4
+    ],
+    "edges": [
+      [
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 5680,
+    "theta_character_conductor": 1420,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 5680,
+        "orbit_bound": 1728,
+        "projection_level": 22720,
+        "projection_bound": 6912
+      }
+    ]
+  },
+  {
+    "parent": [
+      8368,
+      8,
+      16,
+      77,
+      4,
+      2,
+      -4
+    ],
+    "edges": [
+      [
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 8368,
+    "theta_character_conductor": 2092,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 8368,
+        "orbit_bound": 2096,
+        "projection_level": 33472,
+        "projection_bound": 8384
+      }
+    ]
+  },
+  {
+    "parent": [
+      11056,
+      8,
+      16,
+      101,
+      4,
+      2,
+      -4
+    ],
+    "edges": [
+      [
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 11056,
+    "theta_character_conductor": 2764,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 11056,
+        "orbit_bound": 2768,
+        "projection_level": 44224,
+        "projection_bound": 11072
+      }
+    ]
+  },
+  {
+    "parent": [
+      13744,
+      8,
+      16,
+      125,
+      4,
+      2,
+      -4
+    ],
+    "edges": [
+      [
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 13744,
+    "theta_character_conductor": 3436,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 13744,
+        "orbit_bound": 3440,
+        "projection_level": 54976,
+        "projection_bound": 13760
+      }
+    ]
+  },
+  {
+    "parent": [
+      16432,
+      8,
+      16,
+      149,
+      4,
+      2,
+      -4
+    ],
+    "edges": [
+      [
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 16432,
+    "theta_character_conductor": 4108,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 16432,
+        "orbit_bound": 4480,
+        "projection_level": 65728,
+        "projection_bound": 17920
+      }
+    ]
+  },
+  {
+    "parent": [
+      19120,
+      8,
+      16,
+      173,
+      4,
+      2,
+      -4
+    ],
+    "edges": [
+      [
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 19120,
+    "theta_character_conductor": 4780,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 19120,
+        "orbit_bound": 5760,
+        "projection_level": 76480,
+        "projection_bound": 23040
+      }
+    ]
+  },
+  {
+    "parent": [
+      21808,
+      8,
+      16,
+      197,
+      4,
+      2,
+      -4
+    ],
+    "edges": [
+      [
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 21808,
+    "theta_character_conductor": 5452,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 21808,
+        "orbit_bound": 5760,
+        "projection_level": 87232,
+        "projection_bound": 23040
+      }
+    ]
+  },
+  {
+    "parent": [
+      2224,
+      8,
+      16,
+      21,
+      4,
+      2,
+      -2
+    ],
+    "edges": [
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 2224,
+    "theta_character_conductor": 556,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 2224,
+        "orbit_bound": 560,
+        "projection_level": 8896,
+        "projection_bound": 2240
+      }
+    ]
+  },
+  {
+    "parent": [
+      4912,
+      8,
+      16,
+      45,
+      4,
+      2,
+      -2
+    ],
+    "edges": [
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 4912,
+    "theta_character_conductor": 1228,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 4912,
+        "orbit_bound": 1232,
+        "projection_level": 19648,
+        "projection_bound": 4928
+      }
+    ]
+  },
+  {
+    "parent": [
+      7600,
+      8,
+      16,
+      69,
+      4,
+      2,
+      -2
+    ],
+    "edges": [
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 7600,
+    "theta_character_conductor": 76,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 7600,
+        "orbit_bound": 2400,
+        "projection_level": 30400,
+        "projection_bound": 9600
+      }
+    ]
+  },
+  {
+    "parent": [
+      10288,
+      8,
+      16,
+      93,
+      4,
+      2,
+      -2
+    ],
+    "edges": [
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 10288,
+    "theta_character_conductor": 2572,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 10288,
+        "orbit_bound": 2576,
+        "projection_level": 41152,
+        "projection_bound": 10304
+      }
+    ]
+  },
+  {
+    "parent": [
+      12976,
+      8,
+      16,
+      117,
+      4,
+      2,
+      -2
+    ],
+    "edges": [
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 12976,
+    "theta_character_conductor": 3244,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 12976,
+        "orbit_bound": 3248,
+        "projection_level": 51904,
+        "projection_bound": 12992
+      }
+    ]
+  },
+  {
+    "parent": [
+      15664,
+      8,
+      16,
+      141,
+      4,
+      2,
+      -2
+    ],
+    "edges": [
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 15664,
+    "theta_character_conductor": 3916,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 15664,
+        "orbit_bound": 4320,
+        "projection_level": 62656,
+        "projection_bound": 17280
+      }
+    ]
+  },
+  {
+    "parent": [
+      18352,
+      8,
+      16,
+      165,
+      4,
+      2,
+      -2
+    ],
+    "edges": [
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 18352,
+    "theta_character_conductor": 4588,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 18352,
+        "orbit_bound": 4864,
+        "projection_level": 73408,
+        "projection_bound": 19456
+      }
+    ]
+  },
+  {
+    "parent": [
+      21040,
+      8,
+      16,
+      189,
+      4,
+      2,
+      -2
+    ],
+    "edges": [
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 21040,
+    "theta_character_conductor": 5260,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 21040,
+        "orbit_bound": 6336,
+        "projection_level": 84160,
+        "projection_bound": 25344
+      }
+    ]
+  },
+  {
+    "parent": [
+      1840,
+      8,
+      16,
+      17,
+      4,
+      2,
+      0
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 1840,
+    "theta_character_conductor": 460,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 1840,
+        "orbit_bound": 576,
+        "projection_level": 7360,
+        "projection_bound": 2304
+      }
+    ]
+  },
+  {
+    "parent": [
+      4528,
+      8,
+      16,
+      41,
+      4,
+      2,
+      0
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 4528,
+    "theta_character_conductor": 1132,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 4528,
+        "orbit_bound": 1136,
+        "projection_level": 18112,
+        "projection_bound": 4544
+      }
+    ]
+  },
+  {
+    "parent": [
+      7216,
+      8,
+      16,
+      65,
+      4,
+      2,
+      0
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 7216,
+    "theta_character_conductor": 1804,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 7216,
+        "orbit_bound": 2016,
+        "projection_level": 28864,
+        "projection_bound": 8064
+      }
+    ]
+  },
+  {
+    "parent": [
+      9904,
+      8,
+      16,
+      89,
+      4,
+      2,
+      0
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 9904,
+    "theta_character_conductor": 2476,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 9904,
+        "orbit_bound": 2480,
+        "projection_level": 39616,
+        "projection_bound": 9920
+      }
+    ]
+  },
+  {
+    "parent": [
+      12592,
+      8,
+      16,
+      113,
+      4,
+      2,
+      0
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 12592,
+    "theta_character_conductor": 3148,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 12592,
+        "orbit_bound": 3152,
+        "projection_level": 50368,
+        "projection_bound": 12608
+      }
+    ]
+  },
+  {
+    "parent": [
+      15280,
+      8,
+      16,
+      137,
+      4,
+      2,
+      0
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 15280,
+    "theta_character_conductor": 3820,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 15280,
+        "orbit_bound": 4608,
+        "projection_level": 61120,
+        "projection_bound": 18432
+      }
+    ]
+  },
+  {
+    "parent": [
+      17968,
+      8,
+      16,
+      161,
+      4,
+      2,
+      0
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 17968,
+    "theta_character_conductor": 4492,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 17968,
+        "orbit_bound": 4496,
+        "projection_level": 71872,
+        "projection_bound": 17984
+      }
+    ]
+  },
+  {
+    "parent": [
+      20656,
+      8,
+      16,
+      185,
+      4,
+      2,
+      0
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 20656,
+    "theta_character_conductor": 5164,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 20656,
+        "orbit_bound": 5168,
+        "projection_level": 82624,
+        "projection_bound": 20672
+      }
+    ]
+  },
+  {
+    "parent": [
+      11440,
+      8,
+      17,
+      89,
+      0,
+      4,
+      7
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 12,
+    "theta_level": 5720,
+    "theta_character_conductor": 2860,
+    "simultaneously_local_square": {
+      "norm": 521,
+      "signed_coefficient": -32,
+      "primes": [
+        2,
+        5,
+        11,
+        13
+      ]
+    },
+    "square_equality": "neighbour_sturm"
+  },
+  {
+    "parent": [
+      4096,
+      8,
+      17,
+      32,
+      2,
+      0,
+      4
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 4096,
+    "theta_character_conductor": 1,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          0,
+          1
+        ],
+        "orbit_level": 4096,
+        "orbit_bound": 1024,
+        "projection_level": 4096,
+        "projection_bound": 1024
+      }
+    ]
+  },
+  {
+    "parent": [
+      4096,
+      8,
+      17,
+      32,
+      2,
+      0,
+      4
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 4096,
+    "theta_character_conductor": 1,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          0,
+          1
+        ],
+        "orbit_level": 4096,
+        "orbit_bound": 1024,
+        "projection_level": 4096,
+        "projection_bound": 1024
+      }
+    ]
+  },
+  {
+    "parent": [
+      5824,
+      8,
+      17,
+      45,
+      2,
+      2,
+      3
+    ],
+    "edges": [
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 5824,
+    "theta_character_conductor": 364,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 3,
+        "relation": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 5824,
+        "orbit_bound": 1792,
+        "projection_level": 5824,
+        "projection_bound": 1792
+      }
+    ]
+  },
+  {
+    "parent": [
+      3712,
+      8,
+      17,
+      32,
+      4,
+      0,
+      4
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 12,
+    "theta_level": 1856,
+    "theta_character_conductor": 232,
+    "simultaneously_local_square": {
+      "norm": 33,
+      "signed_coefficient": 8,
+      "primes": [
+        2,
+        29
+      ]
+    },
+    "waldspurger_packet": {
+      "curve_weierstrass_coefficients": [
+        0,
+        1,
+        0,
+        -80,
+        -304
+      ],
+      "newform_conductor": 232,
+      "hecke_primes": [
+        3,
+        5,
+        17
+      ],
+      "eigenvalues": [
+        1,
+        1,
+        0
+      ],
+      "theta_eigenvalue_bound": 480,
+      "shimura_33_sturm_bound": 240,
+      "shimura_33_multiplier": 8,
+      "shimura_33_dilations": [
+        1,
+        2
+      ],
+      "auxiliary_twist_discriminant": 8,
+      "auxiliary_twist_conductor": 1856,
+      "twists": [
+        {
+          "square_class": 1,
+          "twist_discriminant": -232,
+          "root_number": 1,
+          "twisted_symbol_sum": 0
+        },
+        {
+          "square_class": 33,
+          "twist_discriminant": -7656,
+          "root_number": 1,
+          "twisted_symbol_sum": 128
+        }
+      ]
+    },
+    "square_equality": "neighbour_sturm"
+  },
+  {
+    "parent": [
+      3328,
+      8,
+      17,
+      32,
+      4,
+      0,
+      8
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 1664,
+    "theta_character_conductor": 13,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          0,
+          1
+        ],
+        "orbit_level": 1664,
+        "orbit_bound": 448,
+        "projection_level": 1664,
+        "projection_bound": 448
+      }
+    ]
+  },
+  {
+    "parent": [
+      4096,
+      8,
+      21,
+      29,
+      2,
+      2,
+      9
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 4096,
+    "theta_character_conductor": 1,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          0,
+          1
+        ],
+        "orbit_level": 4096,
+        "orbit_bound": 1024,
+        "projection_level": 4096,
+        "projection_bound": 1024
+      }
+    ]
+  },
+  {
+    "parent": [
+      4096,
+      8,
+      21,
+      29,
+      2,
+      2,
+      9
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 4096,
+    "theta_character_conductor": 1,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          0,
+          1
+        ],
+        "orbit_level": 4096,
+        "orbit_bound": 1024,
+        "projection_level": 4096,
+        "projection_bound": 1024
+      }
+    ]
+  },
+  {
+    "parent": [
+      8320,
+      8,
+      32,
+      33,
+      0,
+      0,
+      4
+    ],
+    "edges": [
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 20,
+    "theta_level": 4160,
+    "theta_character_conductor": 520,
+    "simultaneously_local_square": {
+      "norm": 129,
+      "signed_coefficient": -16,
+      "primes": [
+        2,
+        5,
+        13
+      ]
+    },
+    "square_equality": "neighbour_sturm"
+  },
+  {
+    "parent": [
+      10240,
+      8,
+      32,
+      41,
+      0,
+      2,
+      4
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 10240,
+    "theta_character_conductor": 40,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          0,
+          1
+        ],
+        "orbit_level": 10240,
+        "orbit_bound": 3072,
+        "projection_level": 10240,
+        "projection_bound": 3072
+      }
+    ]
+  },
+  {
+    "parent": [
+      16384,
+      8,
+      32,
+      65,
+      0,
+      2,
+      4
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 16384,
+    "theta_character_conductor": 1,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          0,
+          1
+        ],
+        "orbit_level": 16384,
+        "orbit_bound": 4096,
+        "projection_level": 16384,
+        "projection_bound": 4096
+      }
+    ]
+  },
+  {
+    "parent": [
+      10240,
+      8,
+      32,
+      45,
+      0,
+      2,
+      12
+    ],
+    "edges": [
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 10240,
+    "theta_character_conductor": 40,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          0,
+          1
+        ],
+        "orbit_level": 10240,
+        "orbit_bound": 3072,
+        "projection_level": 10240,
+        "projection_bound": 3072
+      }
+    ]
+  },
+  {
+    "parent": [
+      16384,
+      8,
+      32,
+      69,
+      0,
+      2,
+      12
+    ],
+    "edges": [
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 16384,
+    "theta_character_conductor": 1,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          0,
+          1
+        ],
+        "orbit_level": 16384,
+        "orbit_bound": 4096,
+        "projection_level": 16384,
+        "projection_bound": 4096
+      }
+    ]
+  },
+  {
+    "parent": [
+      9472,
+      8,
+      32,
+      41,
+      0,
+      4,
+      8
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 4736,
+    "theta_character_conductor": 37,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          0,
+          1
+        ],
+        "orbit_level": 4736,
+        "orbit_bound": 1216,
+        "projection_level": 4736,
+        "projection_bound": 1216
+      }
+    ]
+  },
+  {
+    "parent": [
+      15616,
+      8,
+      32,
+      65,
+      0,
+      4,
+      8
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 7808,
+    "theta_character_conductor": 61,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          0,
+          1
+        ],
+        "orbit_level": 7808,
+        "orbit_bound": 1984,
+        "projection_level": 7808,
+        "projection_bound": 1984
+      }
+    ]
+  },
+  {
+    "parent": [
+      21760,
+      8,
+      32,
+      89,
+      0,
+      4,
+      8
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 10880,
+    "theta_character_conductor": 85,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          0,
+          1
+        ],
+        "orbit_level": 10880,
+        "orbit_bound": 3456,
+        "projection_level": 10880,
+        "projection_bound": 3456
+      }
+    ]
+  },
+  {
+    "parent": [
+      16576,
+      8,
+      41,
+      56,
+      2,
+      0,
+      14
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ],
+      [
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 16576,
+    "theta_character_conductor": 1036,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 3,
+        "relation": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 16576,
+        "orbit_bound": 4864,
+        "projection_level": 16576,
+        "projection_bound": 4864
+      }
+    ]
+  },
+  {
+    "parent": [
+      16000,
+      8,
+      41,
+      52,
+      2,
+      4,
+      -4
+    ],
+    "edges": [
+      [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          0
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 16000,
+    "theta_character_conductor": 40,
+    "local_obstructions": [
+      {
+        "prime": 5,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 16000,
+        "orbit_bound": 4800,
+        "projection_level": 16000,
+        "projection_bound": 4800
+      }
+    ]
+  },
+  {
+    "parent": [
+      16000,
+      8,
+      45,
+      52,
+      2,
+      4,
+      -14
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 16000,
+    "theta_character_conductor": 40,
+    "local_obstructions": [
+      {
+        "prime": 5,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 16000,
+        "orbit_bound": 4800,
+        "projection_level": 16000,
+        "projection_bound": 4800
+      }
+    ]
+  },
+  {
+    "parent": [
+      8704,
+      12,
+      21,
+      41,
+      4,
+      0,
+      9
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 13,
+    "theta_level": 8704,
+    "theta_character_conductor": 136,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 8704,
+        "orbit_bound": 2304,
+        "projection_level": 8704,
+        "projection_bound": 2304
+      }
+    ]
+  },
+  {
+    "parent": [
+      8704,
+      12,
+      21,
+      41,
+      4,
+      0,
+      9
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 13,
+    "theta_level": 8704,
+    "theta_character_conductor": 136,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 8704,
+        "orbit_bound": 2304,
+        "projection_level": 8704,
+        "projection_bound": 2304
+      }
+    ]
+  },
+  {
+    "parent": [
+      20992,
+      12,
+      44,
+      45,
+      4,
+      4,
+      12
+    ],
+    "edges": [
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 20992,
+    "theta_character_conductor": 328,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 20992,
+        "orbit_bound": 5376,
+        "projection_level": 20992,
+        "projection_bound": 5376
+      }
+    ]
+  },
+  {
+    "parent": [
+      20992,
+      12,
+      44,
+      45,
+      4,
+      4,
+      12
+    ],
+    "edges": [
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 20992,
+    "theta_character_conductor": 328,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 20992,
+        "orbit_bound": 5376,
+        "projection_level": 20992,
+        "projection_bound": 5376
+      }
+    ]
+  },
+  {
+    "parent": [
+      16000,
+      13,
+      32,
+      41,
+      4,
+      3,
+      4
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 12,
+    "theta_level": 16000,
+    "theta_character_conductor": 40,
+    "local_obstructions": [
+      {
+        "prime": 5,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 16000,
+        "orbit_bound": 4800,
+        "projection_level": 16000,
+        "projection_bound": 4800
+      }
+    ]
+  },
+  {
+    "parent": [
+      16000,
+      13,
+      32,
+      44,
+      4,
+      4,
+      -8
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 20,
+    "theta_level": 16000,
+    "theta_character_conductor": 40,
+    "local_obstructions": [
+      {
+        "prime": 5,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 16000,
+        "orbit_bound": 4800,
+        "projection_level": 16000,
+        "projection_bound": 4800
+      }
+    ]
+  },
+  {
+    "parent": [
+      7168,
+      16,
+      17,
+      28,
+      4,
+      0,
+      0
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 7168,
+    "theta_character_conductor": 28,
+    "simultaneously_local_square": {
+      "norm": 57,
+      "signed_coefficient": -8,
+      "primes": [
+        2,
+        7
+      ]
+    },
+    "square_equality": "neighbour_sturm"
+  },
+  {
+    "parent": [
+      7168,
+      16,
+      17,
+      29,
+      4,
+      4,
+      1
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ],
+      [
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 13,
+    "theta_level": 7168,
+    "theta_character_conductor": 28,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 7168,
+        "orbit_bound": 2048,
+        "projection_level": 7168,
+        "projection_bound": 2048
+      }
+    ]
+  },
+  {
+    "parent": [
+      10240,
+      16,
+      17,
+      41,
+      4,
+      4,
+      1
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 5120,
+    "theta_character_conductor": 40,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          0,
+          1
+        ],
+        "orbit_level": 5120,
+        "orbit_bound": 1536,
+        "projection_level": 5120,
+        "projection_bound": 1536
+      }
+    ]
+  },
+  {
+    "parent": [
+      13312,
+      16,
+      17,
+      53,
+      4,
+      4,
+      1
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ],
+      [
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 13,
+    "theta_level": 13312,
+    "theta_character_conductor": 13,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 13312,
+        "orbit_bound": 3584,
+        "projection_level": 13312,
+        "projection_bound": 3584
+      }
+    ]
+  },
+  {
+    "parent": [
+      19456,
+      16,
+      17,
+      77,
+      4,
+      4,
+      1
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ],
+      [
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 21,
+    "theta_level": 19456,
+    "theta_character_conductor": 76,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 19456,
+        "orbit_bound": 5120,
+        "projection_level": 19456,
+        "projection_bound": 5120
+      }
+    ]
+  },
+  {
+    "parent": [
+      19456,
+      16,
+      17,
+      77,
+      4,
+      4,
+      1
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 12,
+    "theta_level": 19456,
+    "theta_character_conductor": 76,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 5,
+        "relation": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "orbit_level": 19456,
+        "orbit_bound": 5120,
+        "projection_level": 19456,
+        "projection_bound": 5120
+      }
+    ]
+  },
+  {
+    "parent": [
+      7168,
+      16,
+      17,
+      32,
+      4,
+      8,
+      2
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 7168,
+    "theta_character_conductor": 28,
+    "simultaneously_local_square": {
+      "norm": 57,
+      "signed_coefficient": 8,
+      "primes": [
+        2,
+        7
+      ]
+    },
+    "square_equality": "neighbour_sturm",
+    "parent_theta_identity": {
+      "type": "progression_sieve",
+      "level": 7168,
+      "bound": 2048,
+      "source_case": 93
+    }
+  },
+  {
+    "parent": [
+      5824,
+      16,
+      17,
+      29,
+      6,
+      2,
+      -7
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          0
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 5824,
+    "theta_character_conductor": 364,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          0,
+          1
+        ],
+        "orbit_level": 5824,
+        "orbit_bound": 1792,
+        "projection_level": 5824,
+        "projection_bound": 1792
+      }
+    ]
+  },
+  {
+    "parent": [
+      17920,
+      16,
+      29,
+      41,
+      4,
+      4,
+      1
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 21,
+    "theta_level": 17920,
+    "theta_character_conductor": 280,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 17920,
+        "orbit_bound": 6144,
+        "projection_level": 17920,
+        "projection_bound": 6144
+      }
+    ]
+  },
+  {
+    "parent": [
+      16576,
+      16,
+      32,
+      41,
+      8,
+      6,
+      -4
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 16576,
+    "theta_character_conductor": 1036,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          0,
+          1
+        ],
+        "orbit_level": 16576,
+        "orbit_bound": 4864,
+        "projection_level": 16576,
+        "projection_bound": 4864
+      }
+    ]
+  },
+  {
+    "parent": [
+      16384,
+      17,
+      20,
+      52,
+      4,
+      4,
+      4
+    ],
+    "edges": [
+      [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 16384,
+    "theta_character_conductor": 1,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          0,
+          1
+        ],
+        "orbit_level": 16384,
+        "orbit_bound": 4096,
+        "projection_level": 16384,
+        "projection_bound": 4096
+      }
+    ]
+  },
+  {
+    "parent": [
+      13312,
+      17,
+      20,
+      45,
+      4,
+      5,
+      8
+    ],
+    "edges": [
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 13312,
+    "theta_character_conductor": 13,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 13312,
+        "orbit_bound": 3584,
+        "projection_level": 13312,
+        "projection_bound": 3584
+      }
+    ]
+  },
+  {
+    "parent": [
+      13312,
+      17,
+      20,
+      52,
+      8,
+      8,
+      4
+    ],
+    "edges": [
+      [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ],
+      [
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 13,
+    "theta_level": 13312,
+    "theta_character_conductor": 13,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          0,
+          1
+        ],
+        "orbit_level": 13312,
+        "orbit_bound": 3584,
+        "projection_level": 13312,
+        "projection_bound": 3584
+      }
+    ]
+  },
+  {
+    "parent": [
+      17920,
+      17,
+      21,
+      53,
+      3,
+      3,
+      5
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 13,
+    "theta_level": 17920,
+    "theta_character_conductor": 280,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          0,
+          1
+        ],
+        "orbit_level": 17920,
+        "orbit_bound": 6144,
+        "projection_level": 17920,
+        "projection_bound": 6144
+      }
+    ]
+  },
+  {
+    "parent": [
+      16000,
+      17,
+      25,
+      41,
+      5,
+      1,
+      5
+    ],
+    "edges": [
+      [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 12,
+    "theta_level": 8000,
+    "theta_character_conductor": 40,
+    "local_obstructions": [
+      {
+        "prime": 5,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 8000,
+        "orbit_bound": 2400,
+        "projection_level": 8000,
+        "projection_bound": 2400
+      }
+    ]
+  },
+  {
+    "parent": [
+      16000,
+      17,
+      25,
+      44,
+      5,
+      2,
+      10
+    ],
+    "edges": [
+      [
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 8000,
+    "theta_character_conductor": 40,
+    "local_obstructions": [
+      {
+        "prime": 5,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 8000,
+        "orbit_bound": 2400,
+        "projection_level": 8000,
+        "projection_bound": 2400
+      }
+    ]
+  },
+  {
+    "parent": [
+      16000,
+      17,
+      25,
+      45,
+      5,
+      7,
+      -5
+    ],
+    "edges": [
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 16000,
+    "theta_character_conductor": 40,
+    "local_obstructions": [
+      {
+        "prime": 5,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 16000,
+        "orbit_bound": 4800,
+        "projection_level": 16000,
+        "projection_bound": 4800
+      }
+    ]
+  },
+  {
+    "parent": [
+      16000,
+      17,
+      25,
+      44,
+      5,
+      8,
+      0
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 16000,
+    "theta_character_conductor": 40,
+    "local_obstructions": [
+      {
+        "prime": 5,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 16000,
+        "orbit_bound": 4800,
+        "projection_level": 16000,
+        "projection_bound": 4800
+      }
+    ]
+  },
+  {
+    "parent": [
+      13312,
+      17,
+      32,
+      33,
+      8,
+      5,
+      -8
+    ],
+    "edges": [
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 24,
+    "theta_level": 6656,
+    "theta_character_conductor": 13,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 3,
+        "relation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "orbit_level": 6656,
+        "orbit_bound": 1792,
+        "projection_level": 6656,
+        "projection_bound": 1792
+      }
+    ]
+  },
+  {
+    "parent": [
+      16384,
+      20,
+      21,
+      41,
+      0,
+      4,
+      5
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 16384,
+    "theta_character_conductor": 1,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          0,
+          1
+        ],
+        "orbit_level": 16384,
+        "orbit_bound": 4096,
+        "projection_level": 16384,
+        "projection_bound": 4096
+      }
+    ]
+  },
+  {
+    "parent": [
+      13312,
+      20,
+      21,
+      33,
+      4,
+      0,
+      1
+    ],
+    "edges": [
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 13,
+    "theta_level": 13312,
+    "theta_character_conductor": 13,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          0,
+          1
+        ],
+        "orbit_level": 13312,
+        "orbit_bound": 3584,
+        "projection_level": 13312,
+        "projection_bound": 3584
+      }
+    ]
+  },
+  {
+    "parent": [
+      16384,
+      20,
+      21,
+      52,
+      8,
+      4,
+      -8
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 16384,
+    "theta_character_conductor": 1,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          0,
+          1
+        ],
+        "orbit_level": 16384,
+        "orbit_bound": 4096,
+        "projection_level": 16384,
+        "projection_bound": 4096
+      }
+    ]
+  },
+  {
+    "parent": [
+      16000,
+      20,
+      25,
+      41,
+      10,
+      2,
+      -3
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 8000,
+    "theta_character_conductor": 40,
+    "local_obstructions": [
+      {
+        "prime": 5,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 8000,
+        "orbit_bound": 2400,
+        "projection_level": 8000,
+        "projection_bound": 2400
+      }
+    ]
+  },
+  {
+    "parent": [
+      16000,
+      20,
+      25,
+      44,
+      10,
+      4,
+      -6
+    ],
+    "edges": [
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 8,
+    "theta_level": 8000,
+    "theta_character_conductor": 40,
+    "local_obstructions": [
+      {
+        "prime": 5,
+        "orbit_dimension": 1,
+        "relation": [
+          0,
+          1
+        ],
+        "orbit_level": 8000,
+        "orbit_bound": 2400,
+        "projection_level": 8000,
+        "projection_bound": 2400
+      }
+    ]
+  },
+  {
+    "parent": [
+      12160,
+      20,
+      25,
+      33,
+      10,
+      6,
+      -1
+    ],
+    "edges": [
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 12,
+    "theta_level": 6080,
+    "theta_character_conductor": 760,
+    "simultaneously_local_square": {
+      "norm": 161,
+      "signed_coefficient": -4,
+      "primes": [
+        2,
+        5,
+        19
+      ]
+    },
+    "square_equality": "neighbour_sturm"
+  },
+  {
+    "parent": [
+      12160,
+      20,
+      25,
+      33,
+      10,
+      6,
+      -1
+    ],
+    "edges": [
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 12,
+    "theta_level": 6080,
+    "theta_character_conductor": 760,
+    "simultaneously_local_square": {
+      "norm": 161,
+      "signed_coefficient": -4,
+      "primes": [
+        2,
+        5,
+        19
+      ]
+    },
+    "square_equality": "neighbour_sturm"
+  },
+  {
+    "parent": [
+      16384,
+      20,
+      29,
+      33,
+      8,
+      4,
+      5
+    ],
+    "edges": [
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 5,
+    "theta_level": 16384,
+    "theta_character_conductor": 1,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          0,
+          1
+        ],
+        "orbit_level": 16384,
+        "orbit_bound": 4096,
+        "projection_level": 16384,
+        "projection_bound": 4096
+      }
+    ]
+  },
+  {
+    "parent": [
+      17920,
+      21,
+      32,
+      33,
+      10,
+      5,
+      6
+    ],
+    "edges": [
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          0
+        ]
+      ]
+    ],
+    "ordinary_first_difference": 13,
+    "theta_level": 17920,
+    "theta_character_conductor": 280,
+    "local_obstructions": [
+      {
+        "prime": 2,
+        "orbit_dimension": 2,
+        "relation": [
+          0,
+          0,
+          1
+        ],
+        "orbit_level": 17920,
+        "orbit_bound": 6144,
+        "projection_level": 17920,
+        "projection_bound": 6144
+      }
+    ]
+  }
+]
