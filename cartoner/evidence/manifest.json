@@ -1,0 +1,410 @@
+[
+  {
+    "path": "alpi/data.zip",
+    "url": "https://data.mendeley.com/public-files/datasets/4nhx2x67cd/files/1c053e9f-e483-4ab5-925b-00d6237f24ee/file_downloaded",
+    "bytes": 8517314,
+    "sha256": "ecc199cbd5ed461b654b92d546b354954d815afc072d1c59e3dfddf9b1a3f95d"
+  },
+  {
+    "path": "comopi/industrial_dataset_alarm_10m_agg.csv",
+    "url": "https://zenodo.org/api/records/7572501/files/industrial_dataset_alarm_10m_agg.csv/content",
+    "bytes": 42677268,
+    "sha256": "2fd38bbe3d3ee4048f9e7ff772ee08b6f50117912a3730c614f247599f327bbc"
+  },
+  {
+    "path": "comopi/industrial_dataset_sensors_10m_agg.csv",
+    "url": "https://zenodo.org/api/records/7572501/files/industrial_dataset_sensors_10m_agg.csv/content",
+    "bytes": 5057527,
+    "sha256": "d51d60c61e1635d988b8d09bbe1113d531cbbf458faa3537e1f694795867b18e"
+  },
+  {
+    "path": "comopi/industrial_dataset_warnings_10m_agg.csv",
+    "url": "https://zenodo.org/api/records/7572501/files/industrial_dataset_warnings_10m_agg.csv/content",
+    "bytes": 95101318,
+    "sha256": "2cc6513fbcee72e89f17ea36e492ac9d8b65fea638336f03f97cc593bdde9c8a"
+  },
+  {
+    "path": "comopi/readme.md",
+    "url": "https://zenodo.org/api/records/7572501/files/readme.md/content",
+    "bytes": 3317,
+    "sha256": "930fb62999bc2d56c5e7575228b9d7e2d300aec6db0972868907168c172dc457"
+  },
+  {
+    "path": "darus/Experiments_Data/lab_mechanism_2.jpg",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290240",
+    "bytes": 1719433,
+    "sha256": "00f7d7a5f1af50402c780b89379f7222359c60ebb12d9af999cea5d9d96bb428"
+  },
+  {
+    "path": "darus/Experiments_Data/output_empty/Bridge_0_output_00.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290208",
+    "bytes": 464968,
+    "sha256": "c72b5fac7cb41fac27a35f9a36d67a5f254b51cf2a84a4fd1cded30414240d54"
+  },
+  {
+    "path": "darus/Experiments_Data/output_empty/Bridge_0_output_01.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290241",
+    "bytes": 465073,
+    "sha256": "fed97a2919fecc70a3f4a34dc7c7bb314c4896488d80882491c4eba0b0a984a1"
+  },
+  {
+    "path": "darus/Experiments_Data/output_empty/Bridge_0_output_02.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290254",
+    "bytes": 465117,
+    "sha256": "69e56007009ae0fdf4a6f466b1060604899179cf16bb619a6fec1eabef4de8d2"
+  },
+  {
+    "path": "darus/Experiments_Data/output_empty/Bridge_1_output_00.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290230",
+    "bytes": 623733,
+    "sha256": "5fa804e9b00d7303abc6f148a24b64465b6935d5ec82671165894daeee40623b"
+  },
+  {
+    "path": "darus/Experiments_Data/output_empty/Bridge_1_output_01.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290252",
+    "bytes": 623706,
+    "sha256": "09b5808f647beb2312f88f781afd392917549a67afe0987e0a34778c2314c9ad"
+  },
+  {
+    "path": "darus/Experiments_Data/output_empty/Bridge_1_output_02.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290217",
+    "bytes": 623653,
+    "sha256": "be669d331386ce929e7f491434302ad2e68b009e951e183c368ed342cd72a7b5"
+  },
+  {
+    "path": "darus/Experiments_Data/output_empty/Bridge_2_output_00.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290231",
+    "bytes": 1258553,
+    "sha256": "24c32747ee46d84fb9025787cd7fcb89a6f8cd4c62e37b5f99a35368ad758e57"
+  },
+  {
+    "path": "darus/Experiments_Data/output_empty/Bridge_2_output_01.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290261",
+    "bytes": 1258454,
+    "sha256": "648f2924e163b804715494f52630bc13fea0d2ba91c9ffa38560c577d35aaf52"
+  },
+  {
+    "path": "darus/Experiments_Data/output_empty/Bridge_2_output_02.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290263",
+    "bytes": 1258339,
+    "sha256": "22106bb719077823a1f4bb94dd9d5f3f3d06fb9720387ffec6587ee0e4a4bc45"
+  },
+  {
+    "path": "darus/Experiments_Data/output_empty/Bridge_3_output_00.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290256",
+    "bytes": 1249824,
+    "sha256": "d73f618ae66b393774b2be828ebce59d431463fc5fd78e1031e375e5a5aafa25"
+  },
+  {
+    "path": "darus/Experiments_Data/output_empty/Bridge_3_output_01.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290275",
+    "bytes": 1249831,
+    "sha256": "c089b02901f7c70848a393908f6a3104081e64f565b016865e819d127476bb9b"
+  },
+  {
+    "path": "darus/Experiments_Data/output_empty/Bridge_3_output_02.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290277",
+    "bytes": 1249730,
+    "sha256": "fd8f544056d7f392d116e3e3e33e779c5bf6741689e6d08d88079c830454a571"
+  },
+  {
+    "path": "darus/Experiments_Data/output_empty/Bridge_4_output_00.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290257",
+    "bytes": 972487,
+    "sha256": "1f8a1e35c67cbd401ff174a4b6f61ff6013b44ca4932fc2159db988aaec9a34a"
+  },
+  {
+    "path": "darus/Experiments_Data/output_empty/Bridge_4_output_01.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290247",
+    "bytes": 972644,
+    "sha256": "b7ec14c79075a795cce3e346cf0e4cd2b1286aeb38d129e632b580902c621705"
+  },
+  {
+    "path": "darus/Experiments_Data/output_empty/Bridge_4_output_02.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290212",
+    "bytes": 972638,
+    "sha256": "6dca8be3260392ce21a24b8f4e521b2cdb76365500b03c1c31edb863b2039098"
+  },
+  {
+    "path": "darus/Experiments_Data/output_empty/Constant_0_output_00.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290260",
+    "bytes": 314215,
+    "sha256": "9ad113cffe3d1deafcb30ac84c0be8da625c1d9bd42c799f7a7c9070d68345f4"
+  },
+  {
+    "path": "darus/Experiments_Data/output_empty/Constant_0_output_01.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290216",
+    "bytes": 314174,
+    "sha256": "3653d7ac9649bb753b27cb7d5cc656274e51d153fb24fa63c8ce8e6dfdef7c7a"
+  },
+  {
+    "path": "darus/Experiments_Data/output_empty/Constant_0_output_02.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290211",
+    "bytes": 314256,
+    "sha256": "b6998207f66bfed0780a360ea507874ee943681af81264a6ef8dcce202eb7e0c"
+  },
+  {
+    "path": "darus/Experiments_Data/output_empty/Sine_0_output_00.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290225",
+    "bytes": 933124,
+    "sha256": "3f540b79e39237be950f26436dde089deb4556f7b2e5323ccbc105e7b48b4298"
+  },
+  {
+    "path": "darus/Experiments_Data/output_empty/Sine_0_output_01.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290229",
+    "bytes": 933381,
+    "sha256": "4f2eaa575c9020b2d1832d9ab6d4506a5cc1f80b28b67f8fd1918a56a408e662"
+  },
+  {
+    "path": "darus/Experiments_Data/output_empty/Sine_0_output_02.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290223",
+    "bytes": 933364,
+    "sha256": "c966587b2d3e8bb38f2b916181fda9872129f513c4df5e85f26eef848f6d8fad"
+  },
+  {
+    "path": "darus/Experiments_Data/output_empty/Stair_0_output_00.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290215",
+    "bytes": 626002,
+    "sha256": "9afa21751066a54310bb670780e557bed1371879abfa63fbdb1f20a72987f90c"
+  },
+  {
+    "path": "darus/Experiments_Data/output_empty/Stair_0_output_01.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290207",
+    "bytes": 626018,
+    "sha256": "bbb7e11769c4f0db9641212ff282e6edf41dea9a08403b9b0ca33167441d6d3e"
+  },
+  {
+    "path": "darus/Experiments_Data/output_empty/Stair_0_output_02.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290210",
+    "bytes": 626054,
+    "sha256": "64a3cc29b741dc1e4432e4c705b19072260af157fe0f3158e0f88dd3c38050c7"
+  },
+  {
+    "path": "darus/Experiments_Data/output_empty/Stair_1_output_00.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290234",
+    "bytes": 972134,
+    "sha256": "20874f23871f7979fa145c2854cec7ed79fb141f76efb84db60a6c9df194f8a5"
+  },
+  {
+    "path": "darus/Experiments_Data/output_empty/Stair_1_output_01.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290264",
+    "bytes": 972229,
+    "sha256": "042a8fe1fd352c880237db96de48fc61f9ab9447b6b27c42e2b7796a3456008b"
+  },
+  {
+    "path": "darus/Experiments_Data/output_empty/Stair_1_output_02.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290268",
+    "bytes": 972197,
+    "sha256": "46f119844fb0dc63008972270e4436d4b97b371ff0a91cd0c1b0ab7f380f2e14"
+  },
+  {
+    "path": "darus/Experiments_Data/output_empty/Stair_2_output_00.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290255",
+    "bytes": 2046896,
+    "sha256": "b0ec77771c0fbbbac22a8bc3c157841e3b906b1e5ac4df567c63bb8b80832ee6"
+  },
+  {
+    "path": "darus/Experiments_Data/output_empty/Stair_2_output_01.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290221",
+    "bytes": 2045010,
+    "sha256": "b83ff0b6cf62c76eb2a4246a5336e51998499a64b7e05e33dbecfb48c6b91949"
+  },
+  {
+    "path": "darus/Experiments_Data/output_empty/Stair_2_output_02.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290206",
+    "bytes": 2044979,
+    "sha256": "f89faf6cbb4b29402203aedd963df883c3a4f2ad1dd0c5b97e045055fba6f85a"
+  },
+  {
+    "path": "darus/Experiments_Data/output_honey/Bridge_0_output_00.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290259",
+    "bytes": 464677,
+    "sha256": "8041b25498eea3761f4126d6161af918bbcba561afdd20a0bdddf9341085d255"
+  },
+  {
+    "path": "darus/Experiments_Data/output_honey/Bridge_0_output_01.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290280",
+    "bytes": 464148,
+    "sha256": "79f57964f5422910bb354d1587a72fa2e5254d11918a932830f9e2e3e845d259"
+  },
+  {
+    "path": "darus/Experiments_Data/output_honey/Bridge_0_output_02.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290262",
+    "bytes": 464459,
+    "sha256": "876aa36bd30c547eceaa64669932686722173daacfaa411e8b23a89bcf5fb4e5"
+  },
+  {
+    "path": "darus/Experiments_Data/output_honey/Bridge_1_output_00.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290245",
+    "bytes": 623129,
+    "sha256": "d2bf2d562057f2efa941b44422d9d712de0b1f8a42c3c6a7b929a5ca00dbb510"
+  },
+  {
+    "path": "darus/Experiments_Data/output_honey/Bridge_1_output_01.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290209",
+    "bytes": 623197,
+    "sha256": "a7f1293e9d9fc431509f8f7c7ac99f49d398dc65771c3ff890072784bae56cb0"
+  },
+  {
+    "path": "darus/Experiments_Data/output_honey/Bridge_1_output_02.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290279",
+    "bytes": 623253,
+    "sha256": "f8a8d21209b6bcc4b48a1ee7efe3beb6024191585df7ff0cd1db2fb8f4b310a0"
+  },
+  {
+    "path": "darus/Experiments_Data/output_honey/Bridge_2_output_00.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290233",
+    "bytes": 1258400,
+    "sha256": "a186fb6909e169bc6050bcfbd76240a6e0991c676e9b27dcac1fe6e440fbb61f"
+  },
+  {
+    "path": "darus/Experiments_Data/output_honey/Bridge_2_output_01.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290246",
+    "bytes": 1258177,
+    "sha256": "b15da66506512e86e239efbb3f9b479bd9dcd78174d705825c63e0f3b075d0e2"
+  },
+  {
+    "path": "darus/Experiments_Data/output_honey/Bridge_2_output_02.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290258",
+    "bytes": 1258008,
+    "sha256": "c8122ffebbad9556799c108d742feaefb39481c24c59a4282785d6a3e1ea4d44"
+  },
+  {
+    "path": "darus/Experiments_Data/output_honey/Bridge_3_output_00.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290269",
+    "bytes": 1249165,
+    "sha256": "900225968b3e4f72b930490003f57e73470f0e54bd540bcede2da443655ec547"
+  },
+  {
+    "path": "darus/Experiments_Data/output_honey/Bridge_3_output_01.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290227",
+    "bytes": 1249577,
+    "sha256": "bf77ada0f72c51aa366861bd8c965c94b7e90244658ec3e38fe79b035da6defc"
+  },
+  {
+    "path": "darus/Experiments_Data/output_honey/Bridge_3_output_02.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290271",
+    "bytes": 1249508,
+    "sha256": "0b1f52c3eb6b8254e645769c0a1569700dc71c4e70f3f5a868d6fac43d342073"
+  },
+  {
+    "path": "darus/Experiments_Data/output_honey/Bridge_4_output_00.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290272",
+    "bytes": 972606,
+    "sha256": "bb07373b5195d9fc8123e55bd40f38b7047929f2eeada2cfab153deb6345b54f"
+  },
+  {
+    "path": "darus/Experiments_Data/output_honey/Bridge_4_output_01.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290249",
+    "bytes": 971934,
+    "sha256": "27cf2dcde66abcb1a30075961138a28c7bc9ab8f4bd52487c895f0a99090e89d"
+  },
+  {
+    "path": "darus/Experiments_Data/output_honey/Bridge_4_output_02.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290251",
+    "bytes": 972107,
+    "sha256": "d6a2fb40c69bd6c6fcbce931d99895308eb20edaaff57da5f5c2a9aa0a341eef"
+  },
+  {
+    "path": "darus/Experiments_Data/output_honey/Constant_0_output_00.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290238",
+    "bytes": 314354,
+    "sha256": "b6372dfc56038603544dfaa2d60cd703c83656e04e63a52197c16d938104c554"
+  },
+  {
+    "path": "darus/Experiments_Data/output_honey/Constant_0_output_01.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290213",
+    "bytes": 314289,
+    "sha256": "1af98ba771be50d855270b437ab73fddba4861ae90fdad3cf03058a2acbf6fb1"
+  },
+  {
+    "path": "darus/Experiments_Data/output_honey/Constant_0_output_02.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290265",
+    "bytes": 314321,
+    "sha256": "6c8250dfed973c2ccab4fcb81bb35aa640b92a55cdb038153d019d893d54ea01"
+  },
+  {
+    "path": "darus/Experiments_Data/output_honey/Sine_0_output_00.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290232",
+    "bytes": 935922,
+    "sha256": "5c3e990738eceecf3d82cf699eed3b8221ac864ac270235e05a695a228ff0e69"
+  },
+  {
+    "path": "darus/Experiments_Data/output_honey/Sine_0_output_01.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290239",
+    "bytes": 932589,
+    "sha256": "70a3e833f321b16f22b70e1ebdeb97a392dd89f607eb3c21472927c341e93b6b"
+  },
+  {
+    "path": "darus/Experiments_Data/output_honey/Sine_0_output_02.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290214",
+    "bytes": 930652,
+    "sha256": "3f42e9c105ab326e052e79cd8049df1fe63be7dd6190870f1d3591ede6eb337d"
+  },
+  {
+    "path": "darus/Experiments_Data/output_honey/Stair_0_output_00.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290267",
+    "bytes": 625916,
+    "sha256": "e5ee81573c3112cac253427a7c429b0b92eccf1df9e8bfe73113b1b11814ad14"
+  },
+  {
+    "path": "darus/Experiments_Data/output_honey/Stair_0_output_01.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290278",
+    "bytes": 625985,
+    "sha256": "7de1f8beb9b4dffe5602e8c8151e9e751ce1193d9e03e7743b2ed0f39a59e17a"
+  },
+  {
+    "path": "darus/Experiments_Data/output_honey/Stair_0_output_02.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290273",
+    "bytes": 626005,
+    "sha256": "f3507caa3c2ee528955f78a42c476a73795e8cb22e56d0aa3da473e0119ab9ce"
+  },
+  {
+    "path": "darus/Experiments_Data/output_honey/Stair_1_output_00.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290235",
+    "bytes": 972243,
+    "sha256": "603be1949b6889d8dc5d7068a35753fdfd80c5b9d0d8326cd805f017c6fc6a1d"
+  },
+  {
+    "path": "darus/Experiments_Data/output_honey/Stair_1_output_01.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290218",
+    "bytes": 972301,
+    "sha256": "22e14b88045991c3d8140c5dac85f902322945a89e4bf205390361008a5ba222"
+  },
+  {
+    "path": "darus/Experiments_Data/output_honey/Stair_1_output_02.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290236",
+    "bytes": 972240,
+    "sha256": "d4d8465cb262c6e64da235ff66a7ff663ff331b67f58a7eba744c0d2dadcd105"
+  },
+  {
+    "path": "darus/Experiments_Data/output_honey/Stair_2_output_00.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290224",
+    "bytes": 2044570,
+    "sha256": "60c84f2fa892fb969b1bb582b1e3f2de5817d2dee234a4c5c52dd88fb0866282"
+  },
+  {
+    "path": "darus/Experiments_Data/output_honey/Stair_2_output_01.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290250",
+    "bytes": 2044559,
+    "sha256": "0babaa22da0fce7947ae2aacbb5afa7a14b31b17dc2b8b4944ec851cf0ecc3d5"
+  },
+  {
+    "path": "darus/Experiments_Data/output_honey/Stair_2_output_02.txt",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/290274",
+    "bytes": 2044509,
+    "sha256": "daa3647f84f0e836d4425e34a773fe15ed9a28ddc0c48575d26bfcc95bf31713"
+  },
+  {
+    "path": "piade/raw_data.csv",
+    "url": "https://zenodo.org/api/records/7071747/files/raw_data.csv/content",
+    "bytes": 49342406,
+    "sha256": "b52561a399d714aa3b084520d6bf86d66c1d2f010fc8cbe1d85b2332806fcb72"
+  },
+  {
+    "path": "piade/sequences_1h_data.csv",
+    "url": "https://zenodo.org/api/records/7071747/files/sequences_1h_data.csv/content",
+    "bytes": 11663660,
+    "sha256": "3488092fa9ec552967f8851df25c1d51fefa60be21091d4bfca342ed4c002691"
+  }
+]

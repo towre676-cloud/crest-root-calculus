@@ -126,6 +126,26 @@ opener-r1,bench-04,12,160,89.2,48,,
 opener-r1,bench-04,12,172,,,1,
 opener-r1,bench-04,12,181,,,,1</pre
       >
+      <h2>Elapsed-time trials</h2>
+      <p>
+        Use setup schema 2 with <code>"axis":"time_s"</code> and
+        <code>time_s</code> as the fourth CSV column for a synchronized clock.
+        Use elapsed seconds over one cycle or a named recording. Window
+        endpoints increase and may exceed 360. Give rates in channel units per
+        second, edge uncertainty as <code>errorS</code>, and minimum handoff
+        dwell as <code>minS</code>. Schema 1 keeps its encoder-degree convention
+        and saved 1.0.0 records replay in 2.0. A reversing crank can revisit the
+        same angle at different times.
+      </p>
+      <p>
+        The <a href="field.html">measured evidence page</a> opens published
+        readings in the solver. Its comparison limit is chosen to show the
+        difference between a coarse check and the original recordings. For field
+        use, enter the plant’s limit, calibrated sensor error, time alignment
+        allowance and independently supported rate. A time sample alone does not
+        specify encoder phase. For a generic elapsed-time file begin with the
+        measured example under Setup &amp; trace.
+      </p>
       <h2 id="methods">How the bounds work</h2>
       <p>
         Convert each measurement into signed margin above its requirement. For a
@@ -196,11 +216,11 @@ node --test test.cjs</pre
         and
         <a href="https://patents.google.com/patent/DE602006000420T2/en"
           >Aetna’s folder</a
-        >. The trial fixtures use independently chosen dimensions and traces.
+        >. The three synthetic fixtures use independently chosen dimensions and traces.
       </p>
     </main>
     <footer>
-      Linkwright · Cartoner trial 1.0.0 <a href="index.html">Open trial</a>
+      Linkwright · Cartoner trial 2.0.0 <a href="index.html">Open trial</a>
     </footer>
   </body>
 </html>
