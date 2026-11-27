@@ -60,7 +60,7 @@ There is also an exact relation between the two residual cases at parent determi
 $$
  h_2=(S_{8,5}-S_{8,1})h_1.
 $$
-The ordinary coefficients through the weight-two order bound certify the relation. This expresses the second case in terms of the first. A full arithmetic description of the other packets is open.
+The ordinary coefficients through the weight-two order bound certify the relation. This expresses the second case in terms of the first. The subsequent Hecke decomposition completes the arithmetic description of the remaining eleven cases. [Residual packets and exact replay](residual-packets.md)
 
 ## Replay
 

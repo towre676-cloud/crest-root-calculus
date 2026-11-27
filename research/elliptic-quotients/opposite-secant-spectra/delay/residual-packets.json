@@ -1,0 +1,632 @@
+{
+  "cases": [
+    {
+      "case": 3,
+      "parent_determinant": 14848,
+      "theta_level": 14848,
+      "splitting_prime": 3,
+      "neighbour_classes": 31,
+      "theta_sturm_bound": 3840,
+      "minimal_polynomial": [
+        1196,
+        -1204,
+        -2787,
+        3151,
+        2115,
+        -3055,
+        -430,
+        1362,
+        -166,
+        -270,
+        81,
+        15,
+        -9,
+        1
+      ],
+      "blocks": [
+        {
+          "factor": [
+            -2,
+            1
+          ],
+          "local_square_exclusion": {
+            "prime": 2,
+            "orbit_dimension": 1,
+            "relation": [
+              0,
+              1
+            ],
+            "orbit_level": 14848,
+            "orbit_bound": 3840,
+            "projection_level": 14848,
+            "projection_bound": 3840
+          }
+        },
+        {
+          "factor": [
+            -1,
+            1
+          ],
+          "central_packet": 232,
+          "simultaneous_local_square_norm": 528
+        },
+        {
+          "factor": [
+            1,
+            1
+          ],
+          "local_square_exclusion": {
+            "prime": 2,
+            "orbit_dimension": 1,
+            "relation": [
+              0,
+              1
+            ],
+            "orbit_level": 14848,
+            "orbit_bound": 3840,
+            "projection_level": 14848,
+            "projection_bound": 3840
+          }
+        },
+        {
+          "factor": [
+            -26,
+            3,
+            22,
+            -4,
+            -4,
+            1
+          ],
+          "local_square_exclusion": {
+            "prime": 2,
+            "orbit_dimension": 2,
+            "relation": [
+              0,
+              0,
+              1
+            ],
+            "orbit_level": 14848,
+            "orbit_bound": 3840,
+            "projection_level": 14848,
+            "projection_bound": 3840
+          }
+        },
+        {
+          "factor": [
+            -23,
+            9,
+            18,
+            -6,
+            -3,
+            1
+          ],
+          "local_square_exclusion": {
+            "prime": 2,
+            "orbit_dimension": 1,
+            "relation": [
+              0,
+              1
+            ],
+            "orbit_level": 14848,
+            "orbit_bound": 3840,
+            "projection_level": 14848,
+            "projection_bound": 3840
+          }
+        }
+      ]
+    },
+    {
+      "case": 17,
+      "parent_determinant": 14848,
+      "theta_level": 14848,
+      "splitting_prime": 3,
+      "neighbour_classes": 31,
+      "theta_sturm_bound": 3840,
+      "minimal_polynomial": [
+        26,
+        -29,
+        -19,
+        26,
+        0,
+        -5,
+        1
+      ],
+      "blocks": [
+        {
+          "factor": [
+            -1,
+            1
+          ],
+          "central_packet": 232,
+          "simultaneous_local_square_norm": 528
+        },
+        {
+          "factor": [
+            -26,
+            3,
+            22,
+            -4,
+            -4,
+            1
+          ],
+          "local_square_exclusion": {
+            "prime": 2,
+            "orbit_dimension": 2,
+            "relation": [
+              0,
+              0,
+              1
+            ],
+            "orbit_level": 14848,
+            "orbit_bound": 3840,
+            "projection_level": 14848,
+            "projection_bound": 3840
+          }
+        }
+      ]
+    },
+    {
+      "case": 24,
+      "parent_determinant": 3040,
+      "theta_level": 3040,
+      "splitting_prime": 3,
+      "neighbour_classes": 10,
+      "theta_sturm_bound": 960,
+      "minimal_polynomial": [
+        -1,
+        1
+      ],
+      "blocks": [
+        {
+          "factor": [
+            -1,
+            1
+          ],
+          "central_packet": 152,
+          "simultaneous_local_square_norm": 161
+        }
+      ]
+    },
+    {
+      "case": 25,
+      "parent_determinant": 3040,
+      "theta_level": 3040,
+      "splitting_prime": 3,
+      "neighbour_classes": 10,
+      "theta_sturm_bound": 960,
+      "minimal_polynomial": [
+        2,
+        0,
+        -3,
+        1
+      ],
+      "blocks": [
+        {
+          "factor": [
+            -1,
+            1
+          ],
+          "central_packet": 152,
+          "simultaneous_local_square_norm": 161
+        },
+        {
+          "factor": [
+            -2,
+            -2,
+            1
+          ],
+          "central_packet": 760,
+          "simultaneous_local_square_norm": 161
+        }
+      ]
+    },
+    {
+      "case": 27,
+      "parent_determinant": 2080,
+      "theta_level": 2080,
+      "splitting_prime": 3,
+      "neighbour_classes": 9,
+      "theta_sturm_bound": 672,
+      "minimal_polynomial": [
+        4,
+        -2,
+        -3,
+        1
+      ],
+      "blocks": [
+        {
+          "factor": [
+            -1,
+            1
+          ],
+          "central_packet": 104,
+          "simultaneous_local_square_norm": 129
+        },
+        {
+          "factor": [
+            -4,
+            -2,
+            1
+          ],
+          "central_packet": 520,
+          "simultaneous_local_square_norm": 129
+        }
+      ]
+    },
+    {
+      "case": 68,
+      "parent_determinant": 11440,
+      "theta_level": 5720,
+      "splitting_prime": 7,
+      "neighbour_classes": 8,
+      "theta_sturm_bound": 2016,
+      "minimal_polynomial": [
+        -12,
+        -1,
+        1
+      ],
+      "blocks": [
+        {
+          "factor": [
+            -4,
+            1
+          ],
+          "central_packet": 1430,
+          "simultaneous_local_square_norm": 521
+        },
+        {
+          "factor": [
+            3,
+            1
+          ],
+          "central_packet": 286,
+          "simultaneous_local_square_norm": 521
+        }
+      ]
+    },
+    {
+      "case": 76,
+      "parent_determinant": 8320,
+      "theta_level": 4160,
+      "splitting_prime": 3,
+      "neighbour_classes": 9,
+      "theta_sturm_bound": 1344,
+      "minimal_polynomial": [
+        4,
+        -2,
+        -3,
+        1
+      ],
+      "blocks": [
+        {
+          "factor": [
+            -1,
+            1
+          ],
+          "central_packet": 104,
+          "simultaneous_local_square_norm": 129
+        },
+        {
+          "factor": [
+            -4,
+            -2,
+            1
+          ],
+          "central_packet": 520,
+          "simultaneous_local_square_norm": 129
+        }
+      ]
+    },
+    {
+      "case": 93,
+      "parent_determinant": 7168,
+      "theta_level": 7168,
+      "splitting_prime": 3,
+      "neighbour_classes": 16,
+      "theta_sturm_bound": 2048,
+      "minimal_polynomial": [
+        -16,
+        8,
+        16,
+        -8,
+        -2,
+        1
+      ],
+      "blocks": [
+        {
+          "factor": [
+            -2,
+            1
+          ],
+          "central_packet": 1792,
+          "simultaneous_local_square_norm": 57
+        },
+        {
+          "factor": [
+            8,
+            0,
+            -8,
+            0,
+            1
+          ],
+          "local_square_exclusion": {
+            "prime": 2,
+            "orbit_dimension": 1,
+            "relation": [
+              0,
+              1
+            ],
+            "orbit_level": 7168,
+            "orbit_bound": 2048,
+            "projection_level": 7168,
+            "projection_bound": 2048
+          }
+        }
+      ]
+    },
+    {
+      "case": 99,
+      "parent_determinant": 7168,
+      "theta_level": 7168,
+      "splitting_prime": 3,
+      "neighbour_classes": 16,
+      "theta_sturm_bound": 2048,
+      "minimal_polynomial": [
+        -16,
+        8,
+        16,
+        -8,
+        -2,
+        1
+      ],
+      "blocks": [
+        {
+          "factor": [
+            -2,
+            1
+          ],
+          "central_packet": 1792,
+          "simultaneous_local_square_norm": 57
+        },
+        {
+          "factor": [
+            8,
+            0,
+            -8,
+            0,
+            1
+          ],
+          "local_square_exclusion": {
+            "prime": 2,
+            "orbit_dimension": 1,
+            "relation": [
+              0,
+              1
+            ],
+            "orbit_level": 7168,
+            "orbit_bound": 2048,
+            "projection_level": 7168,
+            "projection_bound": 2048
+          }
+        }
+      ]
+    },
+    {
+      "case": 117,
+      "parent_determinant": 12160,
+      "theta_level": 6080,
+      "splitting_prime": 3,
+      "neighbour_classes": 10,
+      "theta_sturm_bound": 1920,
+      "minimal_polynomial": [
+        -1,
+        1
+      ],
+      "blocks": [
+        {
+          "factor": [
+            -1,
+            1
+          ],
+          "central_packet": 152,
+          "simultaneous_local_square_norm": 161
+        }
+      ]
+    },
+    {
+      "case": 118,
+      "parent_determinant": 12160,
+      "theta_level": 6080,
+      "splitting_prime": 3,
+      "neighbour_classes": 10,
+      "theta_sturm_bound": 1920,
+      "minimal_polynomial": [
+        2,
+        0,
+        -3,
+        1
+      ],
+      "blocks": [
+        {
+          "factor": [
+            -1,
+            1
+          ],
+          "central_packet": 152,
+          "simultaneous_local_square_norm": 161
+        },
+        {
+          "factor": [
+            -2,
+            -2,
+            1
+          ],
+          "central_packet": 760,
+          "simultaneous_local_square_norm": 161
+        }
+      ]
+    }
+  ],
+  "central_packets": [
+    {
+      "conductor": 104,
+      "quadratic_twist": -520,
+      "symbol_basis_dimension": 1,
+      "exact_twisted_symbol": [
+        0
+      ],
+      "character_discriminant": 520,
+      "factor": [
+        -1,
+        1
+      ],
+      "fingerprint": {
+        "3": 1,
+        "7": 5
+      },
+      "newform_search_level": 2080
+    },
+    {
+      "conductor": 152,
+      "quadratic_twist": -760,
+      "symbol_basis_dimension": 1,
+      "exact_twisted_symbol": [
+        0
+      ],
+      "character_discriminant": 760,
+      "factor": [
+        -1,
+        1
+      ],
+      "fingerprint": {
+        "3": 1,
+        "7": 3
+      },
+      "newform_search_level": 3040
+    },
+    {
+      "conductor": 232,
+      "quadratic_twist": -232,
+      "symbol_basis_dimension": 1,
+      "exact_twisted_symbol": [
+        0
+      ],
+      "character_discriminant": 232,
+      "factor": [
+        -1,
+        1
+      ],
+      "fingerprint": {
+        "3": 1,
+        "5": 1,
+        "7": 2,
+        "11": 3,
+        "13": -1,
+        "17": 0
+      },
+      "newform_search_level": 7424
+    },
+    {
+      "conductor": 286,
+      "quadratic_twist": -715,
+      "symbol_basis_dimension": 1,
+      "exact_twisted_symbol": [
+        0
+      ],
+      "character_discriminant": 2860,
+      "factor": [
+        3,
+        1
+      ],
+      "fingerprint": {
+        "3": 2,
+        "7": -3
+      },
+      "newform_search_level": 2860
+    },
+    {
+      "conductor": 520,
+      "quadratic_twist": -520,
+      "symbol_basis_dimension": 2,
+      "exact_twisted_symbol": [
+        0,
+        0
+      ],
+      "character_discriminant": 520,
+      "factor": [
+        -4,
+        -2,
+        1
+      ],
+      "fingerprint": {
+        "3": [
+          0,
+          1
+        ],
+        "7": 0
+      },
+      "newform_search_level": 2080
+    },
+    {
+      "conductor": 760,
+      "quadratic_twist": -760,
+      "symbol_basis_dimension": 2,
+      "exact_twisted_symbol": [
+        0,
+        0
+      ],
+      "character_discriminant": 760,
+      "factor": [
+        -2,
+        -2,
+        1
+      ],
+      "fingerprint": {
+        "3": [
+          0,
+          1
+        ],
+        "7": 0
+      },
+      "newform_search_level": 3040
+    },
+    {
+      "conductor": 1430,
+      "quadratic_twist": -715,
+      "symbol_basis_dimension": 1,
+      "exact_twisted_symbol": [
+        0
+      ],
+      "character_discriminant": 2860,
+      "factor": [
+        -4,
+        1
+      ],
+      "fingerprint": {
+        "3": 2,
+        "7": 4,
+        "17": -6
+      },
+      "newform_search_level": 2860
+    },
+    {
+      "conductor": 1792,
+      "quadratic_twist": -7,
+      "symbol_basis_dimension": 1,
+      "exact_twisted_symbol": [
+        0
+      ],
+      "character_discriminant": 28,
+      "factor": [
+        -2,
+        1
+      ],
+      "fingerprint": {
+        "3": 2,
+        "5": 2,
+        "11": 0
+      },
+      "newform_search_level": 3584
+    }
+  ]
+}
