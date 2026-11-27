@@ -41,7 +41,7 @@ the solver finds one Galois-stable pairing. Its label algebra is the field defin
 
 On nonzero elliptic 2-torsion the graph sends the first abscissa \(t\) to \(-t^2/36+5t/3+56\). Identical labels mean the pullbacks agree in the Jacobian. For exact order four, the signed Mumford comparison works over the abscissa field, which here has degree six. The graph gives every point in the kernel, including the ordinates, and the replay checks that its order-four part doubles to the stated 2-torsion map. The squarefree source comes from a Richelot pairing of the even sextic defined by the roots of \(z^3+z^2-2z-1\). Only the resulting source equation enters the inverse algorithm. For a separate exclusion, the replay checks that the sextic \(x^6-x-1\) with Galois group \(S_6\) has no stable pairing.
 
-The reconstruction concerns rational maps. Maps defined only over number fields and algorithms avoiding explicit splitting fields are separate problems. The known forward classification of split Jacobians supplies context for the inverse computation. [Bruin and Doerksen](https://doi.org/10.4153/CJM-2011-039-3)
+The reconstruction here concerns rational maps. The [number-field extension](number-fields.md) recovers maps defined only over number fields and locates every pairing over its field of definition without a splitting field. The known forward classification of split Jacobians supplies context for the inverse computation. [Bruin and Doerksen](https://doi.org/10.4153/CJM-2011-039-3)
 
     python -B etale_fibres.py '[1,-12,12,14,-11,-6,1]' --graph
     python -B verify_galois.py

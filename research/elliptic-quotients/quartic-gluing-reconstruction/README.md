@@ -1,10 +1,10 @@
 # Degree-four elliptic maps and the signed gluing from one genus-two equation
 
-The [general rational inverse](galois-fibres.md) also recovers Galois-permuted fibres and proves that the numerator equations have full rank at every genuine degree-four cover.
+The [general rational inverse](galois-fibres.md) also recovers Galois-permuted fibres and proves that the numerator equations have full rank at every genuine degree-four cover. The [number-field inverse](number-fields.md) returns every geometric optimal degree-four map over its exact field of definition. On the repeated-factor curves it finds the missing conjugate pair over \(\mathbb Q(i)\).
 
 The degree-four Richelot control \(C'\) now has an exact reconstruction from its equation. The solver finds both elliptic curves, both maps and the full graph identifying their four-torsion. It receives no target coefficients or Richelot correspondence. An independent replay verifies the local degree at 37 and 61 and compares one recovered map with the archived Richelot map.
 
-The same reconstruction works on all **36 degree-four neighbours** in the five-source sweep. It gives two rational optimal maps and the full signed 16-point graph on every equation. On 32 curves the factors are geometrically distinct, as verified at a good prime, so the two recovered maps give the complete geometric optimal spectrum. On the four repeated-factor curves the two recovered rational maps give a splitting. Their additional geometric degree-four classes are described in the separate finite-kernel spectrum. [Earlier sweep](../../torsion-denominators/README.md#family-sweep) · [Repeated-factor spectrum](../exact-completeness/README.md)
+The same reconstruction works on all **36 degree-four neighbours** in the five-source sweep. It gives two rational optimal maps and the full signed 16-point graph on every equation. On 32 curves the factors are geometrically distinct, as verified at a good prime, so the two recovered maps give the complete geometric optimal spectrum. On the four repeated-factor curves the two recovered rational maps give a splitting. Their two additional geometric degree-four classes are described in the separate finite-kernel spectrum. They are now [recovered explicitly](number-fields.md#the-repeated-factor-curves) as a conjugate pair over \(\mathbb Q(i)\). [Earlier sweep](../../torsion-denominators/README.md#family-sweep) · [Repeated-factor spectrum](../exact-completeness/README.md)
 
 ## The control \(C'\)
 
@@ -58,5 +58,6 @@ From this directory, with SymPy, cypari2 and python-flint installed:
     python -B reconstruct_four.py '[-3003,-14850,11968,6600,-3575,-990,154]'
     python -B verify_four.py
     python -B verify_four.py --sweep
+    python -B verify_number_fields.py
 
 The last command regenerates the checks for all 36 frozen equations and compares them with the stored receipt. The optional reciprocal chart changes coordinates by \(x=a+1/u\), \(v=u^3y\), with \(a\) stored in the receipt. Maps are written in that chart when it is used.
