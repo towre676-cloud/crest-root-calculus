@@ -1,5 +1,7 @@
 # Degree-four elliptic maps and the signed gluing from one genus-two equation
 
+The [general rational inverse](galois-fibres.md) also recovers Galois-permuted fibres and proves that the numerator equations have full rank at every genuine degree-four cover.
+
 The degree-four Richelot control \(C'\) now has an exact reconstruction from its equation. The solver finds both elliptic curves, both maps and the full graph identifying their four-torsion. It receives no target coefficients or Richelot correspondence. An independent replay verifies the local degree at 37 and 61 and compares one recovered map with the archived Richelot map.
 
 The same reconstruction works on all **36 degree-four neighbours** in the five-source sweep. It gives two rational optimal maps and the full signed 16-point graph on every equation. On 32 curves the factors are geometrically distinct, as verified at a good prime, so the two recovered maps give the complete geometric optimal spectrum. On the four repeated-factor curves the two recovered rational maps give a splitting. Their additional geometric degree-four classes are described in the separate finite-kernel spectrum. [Earlier sweep](../../torsion-denominators/README.md#family-sweep) · [Repeated-factor spectrum](../exact-completeness/README.md)

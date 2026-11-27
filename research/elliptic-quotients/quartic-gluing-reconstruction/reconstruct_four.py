@@ -64,7 +64,16 @@ def build_map(source, p, s, quadratics):
     if roots is None:
         return None
     g = sp.Poly(sp.prod(t-r for r in roots), t, domain=sp.QQ)
-    quotient, remainder = sp.prod(p-d*r for r in roots).div(source)
+    return build_from_cubic(source, p, s, g)
+
+
+def build_from_cubic(source, p, s, g):
+    d = s*s
+    if max(p.degree(), d.degree()) != 4 or s.gcd(source).degree() or p.gcd(d).degree():
+        return None
+    if g.degree() != 3 or g.nth(3) != 1 or not g.is_sqf:
+        return None
+    quotient, remainder = sum(p**i*d**(3-i)*g.nth(i) for i in range(4)).div(source)
     if not remainder.is_zero or quotient.is_zero:
         return None
     scalar, factors = quotient.factor_list()
@@ -202,6 +211,11 @@ def recover_kernel(source, first, second):
     for cover in (first, second):
         certify_identity(source, cover)
     labels = [branch_values(c.numerator, c.half_poles**2, quadratics) for c in (first, second)]
+    return list(zip(*labels, strict=True)), recover_order_four(source, first, second)
+
+
+def recover_order_four(source, first, second):
+    """Match the signed pullback classes above the exact order-four abscissas."""
     second_poly = exact_four_x(second)
     components = []
     for factor, _ in exact_four_x(first).factor_list()[1]:
@@ -228,7 +242,7 @@ def recover_kernel(source, first, second):
             raise ValueError("No unique signed graph above an order-four abscissa.")
         components.append((factor, *matches[0]))
     assert sum(factor.degree() for factor, _, _ in components) == 6
-    return list(zip(*labels, strict=True)), components
+    return components
 
 
 def solve(source):
