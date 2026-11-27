@@ -1,6 +1,6 @@
 # Sublattice criteria for local square cancellation
 
-For an opposite-secant pair, write $h=\theta_{M_1}+\theta_{M_2}-\theta_{M_3}-\theta_{M_4}$ for its signed parent-neighbour theta sum. There is a direct test for $h$ to vanish at every index in the square class of $\mathbb Q_p$. It pairs finite collections of explicitly constructed sublattices by integral isometries. It explains all 18 five-adic cases in the [determinant census](README.md#extension-through-child-determinant-200000) and 37 two-adic cases, including all 25 in which $U(4)h=0$. The isometries persist in three infinite families of geometrically realized pairs with equal elliptic quotient counts in all degrees and distinct ordinary theta series.
+For an opposite-secant pair, write $h=\theta_{M_1}+\theta_{M_2}-\theta_{M_3}-\theta_{M_4}$ for its signed parent-neighbour theta sum. There is a direct test for $h$ to vanish at every index in the square class of $\mathbb Q_p$. It pairs finite collections of explicitly constructed sublattices by integral isometries. It explains all 18 five-adic cases in the [determinant census](README.md#extension-through-child-determinant-200000) and, with the layered construction below, all 90 two-adic cases. The isometries persist in three infinite families of geometrically realized pairs with equal elliptic quotient counts in all degrees and distinct ordinary theta series.
 
 ## The local criterion
 
@@ -34,7 +34,56 @@ For a second layer, apply the same idea to the signed sum $U(4)h$ on the four re
 
 For the unit-square test on $U(4)h$, fix a parity residue $v$ of norm one modulo four. Norm modulo eight now depends on residues modulo four. Among lifts $v+2y$, the congruence $Q(v+2y)\equiv1\pmod8$ is affine linear in $y\bmod2$, since its variable part divided by four is $B(v,y)+Q(y)$. The nonempty set of lifts is a coset of an even sublattice. Negation preserves the set, so its representative has order two modulo that sublattice. Its theta series is again a difference of two lattice theta series. Matching both second-layer lists proves $P_2U(4)h=0$ and $U(4)^2h=0$. Along with $P_2h=0$, this proves all local-square coefficients vanish.
 
-The second-layer isometries explain 12 further cases. The remaining 53 two-adic cases already have modular-form certificates. Extending the isometry construction to them remains open.
+The second-layer isometries explain 12 further cases. The remaining 53 two-adic cases are settled by the layered construction in the next section. With them, every one of the 108 local-obstruction cases in the census has a geometric proof.
+
+## All valuation layers at two
+
+The two layers above are the beginning of a recursion that needs neither the parity hypothesis nor a bound on the number of layers. [Layer certificates](two-adic-layers.json) · [Replay](dyadic_layers.py)
+
+**Admissible forms.** Call a positive ternary Gram matrix admissible if its diagonal is integral and twice the matrix is integral. Let \(S_0\) be the signed list of the four neighbours. For an admissible form \(G\) on \(L\) put \(a=1\) when \(G\) is integral and \(a=2\) otherwise. Then the identity
+\[
+ Q(r+2^aw)-Q(r)=2^{a+1}B(r,w)+4^aQ(w)
+\]
+shows that divisibility of the norm by four depends only on \(r\bmod2^aL\). The same identity with \(a+1\) shows that the condition \(Q\equiv1\pmod8\) depends only on \(r\bmod2^{a+1}L\).
+
+**The divisible vectors.** The vectors of norm divisible by four form a union \(D\) of cosets that is closed under all integer multiples. It is therefore a union of sublattices of \(L\) containing \(2^aL\). Let \(\mathcal F\) be the family of intersections of the maximal such sublattices. Möbius inversion on \(\mathcal F\) gives
+\[
+ 1_D=\sum_{F\in\mathcal F}c_F1_F,\qquad c_F=1-\sum_{F'\supsetneq F}c_{F'}.
+\]
+Indeed, the members of \(\mathcal F\) containing a vector \(v\in D\) are exactly those containing the least member \(F_v\), and the coefficients sum to one over them. Every \(F\) has all norms divisible by four, so \(F\) with the form \(Q/4\) is admissible. Hence
+\[
+ U(4)\theta_L=\sum_Fc_F\,\theta_{(F,Q/4)},
+\]
+and the replay checks the indicator identity on every residue.
+
+**The unit-square vectors.** The vectors \(P\) of norm \(1\bmod8\) are not a union of lattices, but a multiple of such a vector has norm \(1\bmod8\) or divisible by four. Take a residue-defined set \(Z\) containing all even multiples of \(P\) such that \(P\cup Z\) and \(Z\) are both unions of sublattices. Then
+\[
+ P_2\theta_L=\sum_F c_F\theta_F-\sum_{F'}c'_{F'}\theta_{F'}
+\]
+by the same inversion. The default is \(Z=D\). A unit-square set is unchanged on passing to the sublattice it generates, so one may also replace \(L\) by that sublattice first.
+
+**Cancellation and closure.** A signed list is reduced by sorting its terms into isometry classes, by exact integral isometries checked with \(T^{\mathsf t}GT=G'\) and \(\det T=\pm1\), and summing their signs. Every construction depends only on the isometry class of \(G\). So \(R_j\), the reduced class vector of \(S_j=D(S_{j-1})\), represents \(U(4)^jh\) exactly. If the unit-square class vectors of \(R_0,\dots,R_{m-1}\) all vanish and \(R_m\) is a rational combination of \(R_0,\dots,R_{m-1}\), then linearity gives
+\[
+ P_2U(4)^jh=0\quad\text{for every }j\ge0 .
+\]
+This is exactly the vanishing of \(h\) at every square of \(\mathbb Q_2\), so the parent transfer gives equal elliptic quotient counts in every degree. No coefficient bound enters.
+
+**The difficult cases.** Five cases need a unit-square identity involving all four neighbours. The indices are 71, 84, 100, 102 and 111. For each neighbour pair, every residue class \(1\bmod8\) modulo \(64\) has an explicit differing coefficient by norm \(512\). Thus no two of the four unit-square theta series can be identified within any of those progressions.
+
+The search uses the indicator of \(P\) on \(L/4L\). It writes that indicator as a rational combination of the sets \(P\cap K\), over all sublattices \(4L\subseteq K\subseteq L\), and matches terms by the isometry class of the lattice generated by \(P\cap K\). The replay checks the indicator identities on every residue and the cancellation in every class. The five actual solutions have coefficients zero or one, so each yields a disjoint partition into positive pieces. Each piece contains eight unit-square residues modulo four. In the first four cases, each positive neighbour contributes one piece to each of the two negative neighbours. In case 111, each connection has two pieces. The explicit matrices in the [partition certificates](dyadic-partitions.json) verify these matches without the rational search.
+
+Indices 71 and 100 have isometric collections of unit-square hulls, which are the lattices generated by the unit-square vectors. The same applies to 84 and 102 after exchanging the two signs. Thus these five inputs give three distinct collections of hulls at the initial valuation layer. Their Gram determinants are \(23296\), \(66304\) and \(13312\), respectively.
+
+| Additional two-adic cases | Layers including the closing relation | Unit-square proof used |
+|---|---:|---|
+| 48 | 3 | complement \(D\) or the unit-square hull, with the general relation at layer 0 for 100 and 102 |
+| 3 | 4 | complement \(D\) or the unit-square hull, with the general relation at layer 0 for 71, 84 and 111 |
+| 2 | 6 | complement \(D\), unit-square hull, and residue complements modulo 16 |
+
+Together the 53 cases use 57 hull steps, 47 complement-\(D\) steps, six steps with the complement given by norms \(0,4\bmod16\), and five general sublattice relations. The same procedure also re-proves the 37 cases of the earlier sections. It covers all 90 two-adic cases in the finite census. These closure lengths do not give a general termination bound.
+
+For the thirteen nonvanishing controls, the checker verifies the nonzero coefficients at the archived two-adic square indices. Those witnesses reject square exclusion directly.
+
 
 ## Three infinite families
 
@@ -57,6 +106,8 @@ All three parents have norms $0,1\pmod4$ throughout. The children do not represe
 ~~~sh
 study=research/elliptic-quotients/opposite-secant-spectra/delay
 python -B "$study/local_geometry.py" --verify "$study/local-geometry.json"
+python -B "$study/dyadic_layers.py" --verify "$study/two-adic-layers.json"
+python -B "$study/dyadic_layers.py" --all-dyadic --controls
 ~~~
 
-The replay constructs each 3-neighbour and each sublattice directly from the registered parent and secant endpoints. It verifies every isometry by an integral matrix identity and a determinant check. For all three infinite families it verifies the simultaneous matrix identities and the bounded ordinary representation checks. The conclusions do not use modular-form coefficient cutoffs. [Exact matrix certificates](local-geometry.json)
+The replay constructs each 3-neighbour and each sublattice directly from the registered parent and secant endpoints. It verifies every isometry by an integral matrix identity and a determinant check. For all three infinite families it verifies the simultaneous matrix identities and the bounded ordinary representation checks. The second command compares the 53-case receipt. The third replays all 90 two-adic cases and runs the thirteen nonvanishing controls and the compact partition checks. The cancellation proofs do not use modular-form coefficient cutoffs. [Exact matrix certificates](local-geometry.json)

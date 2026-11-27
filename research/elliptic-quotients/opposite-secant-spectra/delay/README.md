@@ -2,7 +2,7 @@
 
 The level-three opposite-secant construction can produce **equal quotient counts in every degree**, even when the refined Humbert forms are inequivalent. A family below proves this for infinitely many pairs of genus-two curves. An exhaustive sweep through child Gram determinant 200,000 finds 280 such pairs and measures the first difference for every pair in the sweep whose spectra differ.
 
-Three further infinite families have identical full spectra through explicit sublattice cancellations at 2 and 5. The same criterion explains 55 cases in the determinant census by exact isometries. [Local constructions and matrix certificates](local-geometry.md)
+Three further infinite families have identical full spectra through explicit sublattice cancellations at 2 and 5. The geometric certificates cover all 108 local-obstruction cases in the determinant census, including all 90 two-adic cases. [Local constructions and matrix certificates](local-geometry.md)
 
 A separate effective family has finite first differences beyond any fixed multiple of the third successive-minimum length, even while the three parent minima become asymptotically equal. Along that family $\delta\gg\lambda_3(G)^{4/7}$ for the **squared** third minimum. [Construction and exact replay](balanced-delay.md)
 
