@@ -32,7 +32,7 @@ For every positive $M\equiv9\bmod24$, Theorem 5.5 constructs two genus-two curve
 
 ## Equality in every degree
 
-The determinant-1,440 pair has two explicit genus-two equations over the ring class field of discriminant −360. Each curve has two exact degree-three covers. The certified lattices have different minimum norms, yet the full geometric quotient counts agree in every degree. The exact Igusa invariants generate an octic field of moduli for each curve. [Equations, maps and all 32 embedding certificates](../full-spectrum-curves/README.md)
+The determinant-1,440 pair has two explicit genus-two equations over the ring class field of discriminant −360. Each curve has two exact degree-three covers. The certified lattices have different minimum norms, yet the full geometric quotient counts agree in every degree. An exact descent gives a sextic over the octic field of moduli for each curve. The associated infinite family has uniform determinantal equations. [Equations, maps and all 32 embedding certificates](../full-spectrum-curves/README.md)
 
 ## Run the checks
 
