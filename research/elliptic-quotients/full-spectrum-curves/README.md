@@ -50,9 +50,23 @@ At all \(16\) embeddings the resulting form is isometric to its target and not t
 
 ## Scope
 
-Both sextics are defined over the degree-16 ring class field. Each has an exact octic field of moduli. The verifier evaluates the absolute Igusa invariants in the ring class field, checks that \(J_2^5/J_{10}\) has degree eight, and expresses the other two invariants in its power basis by rational linear algebra. Both fields of moduli are isomorphic to the field defined by \(x^8-5x^6+12x^4-5x^2+1\). Descent of either sextic to its field of moduli remains open.
+Both sextics are defined over the degree-16 ring class field. Each has an exact octic field of moduli. The verifier evaluates the absolute Igusa invariants in the ring class field, checks that \(J_2^5/J_{10}\) has degree eight, and expresses the other two invariants in its power basis by rational linear algebra. Both fields of moduli are isomorphic to the field defined by \(x^8-5x^6+12x^4-5x^2+1\). Both curves now have sextic models over their octic fields of moduli. See the exact descent below.
 
 The covers are defined over the degree-16 field if the targets are written as the twists \(Y_i^2=c_i g_i(X_i)\). In those coordinates the second component of each map is \(c_iS_i y/D_i^2\) with \(D_1=Q\), \(D_2=R\).
+
+## Exact octic descent
+
+Let \(\sigma\) be the nonidentity automorphism of the degree-two extension from the octic moduli field to \(\mathcal H\). It exchanges the two distinct quotient \(j\)-invariants. The verifier recovers a projectivity sending the original branch divisor to its conjugate. In the second cover, dividing the Wronskian \(P_2'R-P_2R'\) by \(S_2\) gives the residual critical point \(r\). The other point \(s\) in that fibre is obtained by removing the double root from \(R(r)P_2-P_2(r)R\). The conjugate first-cover coordinate is \(c(x-s)/(x-r)\), with \(c\) uniquely chosen to give the transformed cubic the same normalized quadratic coefficient. The branch-divisor identity is checked exactly.
+
+If \(M\) is a linear representative of this projectivity, then \(\sigma(M)M=\alpha I\). The two stored algebraic norm witnesses satisfy \(u\sigma(u)=\alpha\). This splits the projective descent obstruction. The verifier constructs an invertible \(T\) with \(\sigma(T)=(M/u)T\) and substitutes \(T\) into the binary sextic. Dividing by the leading coefficient produces a monic sextic fixed by \(\sigma\). The verifier checks each coefficient in the degree-eight basis and substitutes it back into the degree-sixteen field. This proves geometric isomorphism and transfers the full lattice and spectrum certificates. The scalar normalization can change the quadratic twist of the equation.
+
+[Octic sextics](models_1440_octic.json) · [Galois and norm witnesses](octic-descent-witnesses.json) · [Exact descent replay](octic_descent.py)
+
+## Equations beyond determinant 1,440
+
+The first positive parameters \(t=1,2\) have geometric minimum optimal degree nine. The family has unbounded minimum degree, so the determinant-1,440 degree-three formulas are specific to \(t=0\). A [uniform determinantal construction](family-equations.md) gives affine equations for every admissible parameter over a field specified by CM class and division polynomial roots. All four positive-parameter polarized products and torsion labels are certified, and the construction includes an unconditional terminating search for the required product. The determinantal models use compact formulas for the coefficient matrices. Expanding them into hyperelliptic sextics at positive parameters remains a separate computational task.
+
+## Discovery and replay
 
 The discovery step solves the degree-three cover equations numerically on all \(8\) Shimura conjugates at 1000 digits. It then recognises six normalised coordinates of each curve in \(\mathcal H\). In this run every coefficient was stable between rational-approximation bounds of \(10^{333}\) and \(10^{250}\). The verifier checks the exact models and lattice identifications independently of that recognition. [Discovery](gluing33.py) · [Exact verifier](exact_models.py)
 
@@ -60,4 +74,6 @@ The discovery step solves the degree-three cover equations numerically on all \(
 python -B find_d1440.py 25
 TWIN_DPS=1000 python -B gluing33.py A   # and B; discovery, minutes each
 python -B exact_models.py --verify     # exact identities and 16-embedding certificates per curve
+python -B octic_descent.py --verify    # geometric isomorphisms to the two octic sextics
+python -B family_equations.py --isolate-torsion
 ~~~

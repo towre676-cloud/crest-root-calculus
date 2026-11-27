@@ -61,7 +61,9 @@ identify their refined Humbert forms from their equations. We also give
 two nonisomorphic genus-two curves over the ring class field of
 discriminant \(-360\) with identical elliptic quotient counts in all
 degrees. Both have explicit degree-three covers and certified inequivalent
-refined Humbert forms of determinant \(1440\).
+refined Humbert forms of determinant \(1440\). We descend both curves
+to octic fields and give uniform determinantal equations for the
+associated infinite family.
 \end{abstract}
 \maketitle
 
@@ -1173,8 +1175,83 @@ an invariant \(J_2^5/J_{10}\) of degree eight. Exact linear algebra
 places the other two invariants in the field it generates. Both
 fields are isomorphic to the field defined by
 \[x^8-5x^6+12x^4-5x^2+1=0.\]
-This calculation uses the smooth chart \(J_2\ne0\). Descent of the
-sextics to the respective fields of moduli remains open.
+This calculation uses the smooth chart \(J_2\ne0\). The next
+subsection constructs sextics over each of these fields.
+
+\subsection{Octic descent and uniform equations}
+The two determinant-\(1440\) curves admit sextics over their octic
+fields of moduli. To see this, let \(\sigma\) generate the quadratic
+extension from the moduli field to the ring class field. It exchanges
+the two degree-three quotient labels. The residual critical point
+of the second map and the other point in its fibre determine the
+projectivity to the conjugate normalized coordinate. The coefficient
+of the quadratic term in the transformed cubic fixes its scale. For a
+matrix \(M\) representing this projectivity, the exact certificates
+check the identity of the branch divisors and give
+\(\sigma(M)M=\alpha I\). They exhibit an algebraic element \(u\) with
+\(u\sigma(u)=\alpha\), independently for both curves.
+
+Put \(B=M/u\). An invertible solution of \(\sigma(T)=BT\) is
+obtained from \(T=cI+\sigma(c)B^{-1}\). In the checked models one of
+\(c=1,\sqrt{-10},1+\sqrt{-10}\) suffices. Substituting \(T\) into
+the binary sextic and making it monic gives a polynomial over the
+moduli field. The exact substitution identifies the geometric curves,
+so the Humbert and quotient-spectrum certificates carry over. The
+\href{https://github.com/towre676-cloud/crest-root-calculus/tree/main/research/elliptic-quotients/full-spectrum-curves}{coefficient tables and norm witnesses}
+specify both octic models. The leading scalar may change the twist
+over the degree-sixteen field.
+
+\smallskip
+There is also an algebraic equation for each member of the entire
+opposite-secant family \(t\ge0\), \(t\not\equiv3\pmod5\).
+The minimum quotient degree tends to infinity. On the plane \(x=y\),
+a square norm would give \((2z+x)^2+5x^2=2v^2\). Reduction modulo
+five forces all three coordinates divisible by five and infinite
+descent excludes any nonzero solution. Off the plane the norm is at
+least \(36t+5\). The four curves at \(t=1,2\) have minimum degree
+nine, so a construction from degree-three covers does not apply.
+
+Let \(N=90(1+18t)\), \(r=\sqrt{-N}\), and \(\mathcal O=\Z[r]\).
+The finite integer search in the companion gives a polarized product
+\(E_0\times E_I\) for each child, where \(E_0=\C/\mathcal O\) and
+\(E_I=\C/\langle a,b+r\rangle\). Its Hermitian matrix is
+\(\left(\begin{smallmatrix}n&k\\k&m/a\end{smallmatrix}\right)\),
+where \(nm-ak^2=1\), and the exact N\'eron--Severi computation
+identifies its refined Humbert form. To see termination, divide the
+Gram adjugate of each child by four. The first two diagonal entries
+are \(648t+41,648t+81\) for one child and \(108t+11,648t+81\) for
+the other. They are coprime on the admissible parameters. Thus a
+primitive binary restriction of the reciprocal form supplies an
+odd prime away from the discriminant by the binary prime representation
+theorem \cite{Cox}. This provides the prime in the primitive realization
+of \cite{KirConstruction} unconditionally in this family.
+
+Let \(h:E_I\to E_0\) be the degree-\(a\) cyclic map from inclusion.
+The algebraic factors and map are specified by a CM class-polynomial
+root and labelled torsion points, followed by two V\'elu isogenies.
+Write \(D_0,D_I\) for the two coordinate divisors and \(\Gamma_h\)
+for the graph \(P=h(Q)\). The divisor
+\[
+ D=(n+k)D_0+(m+ak)D_I-k\Gamma_h
+\]
+represents the principal polarization and has a one-dimensional
+section space. Start with the product Weierstrass monomials \(z_i\)
+with pole bounds \(n+k\) and \(m+ak\), in number \(s\).
+For each of the first \(k\) transverse derivatives on the graph,
+restrict the monomials and collect the coefficients after clearing
+denominators. Denote the resulting matrix by \(M_D\). Its kernel is
+the stated section space, because vanishing of these derivatives is
+equivalent to imposing \(k\Gamma_h\). The two elliptic equations and
+\[
+ \operatorname{rank}\begin{pmatrix}M_D\\ z_1(P,Q)\;\cdots\;z_s(P,Q)\end{pmatrix}<s
+\]
+define the curve off the axes and the graph. The theta divisor is
+smooth of genus two by the nonproduct criterion, and its Jacobian
+has the required refined Humbert form. Thus the determinantal
+formula gives explicit algebraic equations for the whole family.
+The four positive-parameter specializations are certified in the
+companion. A compact hyperelliptic expansion at those parameters
+is a separate computation.
 
 \subsection{Infinite families and the finite census}
 
@@ -1183,8 +1260,8 @@ Thus adding \(36t(x-y)^2\) to \(G\), with the secants fixed,
 produces an infinite family of equal full spectra. The companion
 proves realization and inequivalence for \(t\ge0\),
 \(t\not\equiv3\pmod5\). Its child determinant is
-\(1440(1+18t)\). The exact algebraic equations in
-Theorem~\ref{thm:full-spectrum-pair} are for \(t=0\).
+\(1440(1+18t)\). The octic sextics are for \(t=0\), and the preceding determinantal
+formula applies to every admissible \(t\).
 
 Three further infinite families have nonzero signed ordinary
 neighbour theta sums. Let \(P_p\) retain the coefficients at unit
@@ -1276,7 +1353,9 @@ equations. Run \texttt{python -B verify\_d67.py} for the seven pairs at discrimi
 quartic descent at discriminant \(-163\). The determinant-\(1440\)
 models and their geometric lattices are certified by
 \texttt{python -B exact\_models.py --verify} in the full-spectrum
-curves directory. The
+curves directory. Run \texttt{python -B octic\_descent.py --verify}
+for the octic models and \texttt{python -B family\_equations.py --isolate-torsion}
+for the positive-parameter lattice and torsion certificates. The
 \href{https://github.com/towre676-cloud/crest-root-calculus/tree/main/docs/visuals}{visual companion}
 shows the lattice-to-curve computation and the certificate in reverse.
 
