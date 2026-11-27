@@ -1,0 +1,716 @@
+{
+ "A": {
+  "target": [
+   [
+    45,
+    18,
+    21
+   ],
+   [
+    18,
+    12,
+    10
+   ],
+   [
+    21,
+    10,
+    17
+   ]
+  ],
+  "embeddings": {
+   "0": {
+    "humbert_form": [
+     [
+      9,
+      2,
+      2
+     ],
+     [
+      2,
+      12,
+      -4
+     ],
+     [
+      2,
+      -4,
+      16
+     ]
+    ],
+    "isometric_to_target": true,
+    "rank_End": 8
+   },
+   "1": {
+    "humbert_form": [
+     [
+      9,
+      -2,
+      2
+     ],
+     [
+      -2,
+      12,
+      4
+     ],
+     [
+      2,
+      4,
+      16
+     ]
+    ],
+    "isometric_to_target": true,
+    "rank_End": 8
+   },
+   "2": {
+    "humbert_form": [
+     [
+      9,
+      2,
+      2
+     ],
+     [
+      2,
+      12,
+      -4
+     ],
+     [
+      2,
+      -4,
+      16
+     ]
+    ],
+    "isometric_to_target": true,
+    "rank_End": 8
+   },
+   "3": {
+    "humbert_form": [
+     [
+      9,
+      -2,
+      -2
+     ],
+     [
+      -2,
+      12,
+      -4
+     ],
+     [
+      -2,
+      -4,
+      16
+     ]
+    ],
+    "isometric_to_target": true,
+    "rank_End": 8
+   },
+   "4": {
+    "humbert_form": [
+     [
+      9,
+      2,
+      2
+     ],
+     [
+      2,
+      12,
+      -4
+     ],
+     [
+      2,
+      -4,
+      16
+     ]
+    ],
+    "isometric_to_target": true,
+    "rank_End": 8
+   },
+   "5": {
+    "humbert_form": [
+     [
+      9,
+      -2,
+      2
+     ],
+     [
+      -2,
+      12,
+      4
+     ],
+     [
+      2,
+      4,
+      16
+     ]
+    ],
+    "isometric_to_target": true,
+    "rank_End": 8
+   },
+   "6": {
+    "humbert_form": [
+     [
+      9,
+      -2,
+      -2
+     ],
+     [
+      -2,
+      12,
+      -4
+     ],
+     [
+      -2,
+      -4,
+      16
+     ]
+    ],
+    "isometric_to_target": true,
+    "rank_End": 8
+   },
+   "7": {
+    "humbert_form": [
+     [
+      9,
+      2,
+      2
+     ],
+     [
+      2,
+      12,
+      -4
+     ],
+     [
+      2,
+      -4,
+      16
+     ]
+    ],
+    "isometric_to_target": true,
+    "rank_End": 8
+   },
+   "8": {
+    "humbert_form": [
+     [
+      9,
+      -2,
+      2
+     ],
+     [
+      -2,
+      12,
+      4
+     ],
+     [
+      2,
+      4,
+      16
+     ]
+    ],
+    "isometric_to_target": true,
+    "rank_End": 8
+   },
+   "9": {
+    "humbert_form": [
+     [
+      9,
+      2,
+      2
+     ],
+     [
+      2,
+      12,
+      -4
+     ],
+     [
+      2,
+      -4,
+      16
+     ]
+    ],
+    "isometric_to_target": true,
+    "rank_End": 8
+   },
+   "10": {
+    "humbert_form": [
+     [
+      9,
+      -2,
+      -2
+     ],
+     [
+      -2,
+      12,
+      -4
+     ],
+     [
+      -2,
+      -4,
+      16
+     ]
+    ],
+    "isometric_to_target": true,
+    "rank_End": 8
+   },
+   "11": {
+    "humbert_form": [
+     [
+      9,
+      -2,
+      -2
+     ],
+     [
+      -2,
+      12,
+      -4
+     ],
+     [
+      -2,
+      -4,
+      16
+     ]
+    ],
+    "isometric_to_target": true,
+    "rank_End": 8
+   },
+   "12": {
+    "humbert_form": [
+     [
+      9,
+      -2,
+      -2
+     ],
+     [
+      -2,
+      12,
+      -4
+     ],
+     [
+      -2,
+      -4,
+      16
+     ]
+    ],
+    "isometric_to_target": true,
+    "rank_End": 8
+   },
+   "13": {
+    "humbert_form": [
+     [
+      9,
+      -2,
+      -2
+     ],
+     [
+      -2,
+      12,
+      -4
+     ],
+     [
+      -2,
+      -4,
+      16
+     ]
+    ],
+    "isometric_to_target": true,
+    "rank_End": 8
+   },
+   "14": {
+    "humbert_form": [
+     [
+      9,
+      -2,
+      2
+     ],
+     [
+      -2,
+      12,
+      4
+     ],
+     [
+      2,
+      4,
+      16
+     ]
+    ],
+    "isometric_to_target": true,
+    "rank_End": 8
+   },
+   "15": {
+    "humbert_form": [
+     [
+      9,
+      2,
+      2
+     ],
+     [
+      2,
+      12,
+      -4
+     ],
+     [
+      2,
+      -4,
+      16
+     ]
+    ],
+    "isometric_to_target": true,
+    "rank_End": 8
+   }
+  }
+ },
+ "B": {
+  "target": [
+   [
+    45,
+    3,
+    36
+   ],
+   [
+    3,
+    5,
+    4
+   ],
+   [
+    36,
+    4,
+    36
+   ]
+  ],
+  "embeddings": {
+   "0": {
+    "humbert_form": [
+     [
+      5,
+      -1,
+      1
+     ],
+     [
+      -1,
+      9,
+      -1
+     ],
+     [
+      1,
+      -1,
+      33
+     ]
+    ],
+    "isometric_to_target": true,
+    "rank_End": 8
+   },
+   "1": {
+    "humbert_form": [
+     [
+      5,
+      -1,
+      -1
+     ],
+     [
+      -1,
+      9,
+      1
+     ],
+     [
+      -1,
+      1,
+      33
+     ]
+    ],
+    "isometric_to_target": true,
+    "rank_End": 8
+   },
+   "2": {
+    "humbert_form": [
+     [
+      5,
+      -1,
+      -1
+     ],
+     [
+      -1,
+      9,
+      1
+     ],
+     [
+      -1,
+      1,
+      33
+     ]
+    ],
+    "isometric_to_target": true,
+    "rank_End": 8
+   },
+   "3": {
+    "humbert_form": [
+     [
+      5,
+      1,
+      1
+     ],
+     [
+      1,
+      9,
+      1
+     ],
+     [
+      1,
+      1,
+      33
+     ]
+    ],
+    "isometric_to_target": true,
+    "rank_End": 8
+   },
+   "4": {
+    "humbert_form": [
+     [
+      5,
+      1,
+      -1
+     ],
+     [
+      1,
+      9,
+      -1
+     ],
+     [
+      -1,
+      -1,
+      33
+     ]
+    ],
+    "isometric_to_target": true,
+    "rank_End": 8
+   },
+   "5": {
+    "humbert_form": [
+     [
+      5,
+      -1,
+      -1
+     ],
+     [
+      -1,
+      9,
+      1
+     ],
+     [
+      -1,
+      1,
+      33
+     ]
+    ],
+    "isometric_to_target": true,
+    "rank_End": 8
+   },
+   "6": {
+    "humbert_form": [
+     [
+      5,
+      1,
+      1
+     ],
+     [
+      1,
+      9,
+      1
+     ],
+     [
+      1,
+      1,
+      33
+     ]
+    ],
+    "isometric_to_target": true,
+    "rank_End": 8
+   },
+   "7": {
+    "humbert_form": [
+     [
+      5,
+      -1,
+      -1
+     ],
+     [
+      -1,
+      9,
+      1
+     ],
+     [
+      -1,
+      1,
+      33
+     ]
+    ],
+    "isometric_to_target": true,
+    "rank_End": 8
+   },
+   "8": {
+    "humbert_form": [
+     [
+      5,
+      -1,
+      -1
+     ],
+     [
+      -1,
+      9,
+      1
+     ],
+     [
+      -1,
+      1,
+      33
+     ]
+    ],
+    "isometric_to_target": true,
+    "rank_End": 8
+   },
+   "9": {
+    "humbert_form": [
+     [
+      5,
+      -1,
+      1
+     ],
+     [
+      -1,
+      9,
+      -1
+     ],
+     [
+      1,
+      -1,
+      33
+     ]
+    ],
+    "isometric_to_target": true,
+    "rank_End": 8
+   },
+   "10": {
+    "humbert_form": [
+     [
+      5,
+      -1,
+      -1
+     ],
+     [
+      -1,
+      9,
+      1
+     ],
+     [
+      -1,
+      1,
+      33
+     ]
+    ],
+    "isometric_to_target": true,
+    "rank_End": 8
+   },
+   "11": {
+    "humbert_form": [
+     [
+      5,
+      -1,
+      1
+     ],
+     [
+      -1,
+      9,
+      -1
+     ],
+     [
+      1,
+      -1,
+      33
+     ]
+    ],
+    "isometric_to_target": true,
+    "rank_End": 8
+   },
+   "12": {
+    "humbert_form": [
+     [
+      5,
+      -1,
+      1
+     ],
+     [
+      -1,
+      9,
+      -1
+     ],
+     [
+      1,
+      -1,
+      33
+     ]
+    ],
+    "isometric_to_target": true,
+    "rank_End": 8
+   },
+   "13": {
+    "humbert_form": [
+     [
+      5,
+      -1,
+      -1
+     ],
+     [
+      -1,
+      9,
+      1
+     ],
+     [
+      -1,
+      1,
+      33
+     ]
+    ],
+    "isometric_to_target": true,
+    "rank_End": 8
+   },
+   "14": {
+    "humbert_form": [
+     [
+      5,
+      -1,
+      -1
+     ],
+     [
+      -1,
+      9,
+      1
+     ],
+     [
+      -1,
+      1,
+      33
+     ]
+    ],
+    "isometric_to_target": true,
+    "rank_End": 8
+   },
+   "15": {
+    "humbert_form": [
+     [
+      5,
+      1,
+      -1
+     ],
+     [
+      1,
+      9,
+      -1
+     ],
+     [
+      -1,
+      -1,
+      33
+     ]
+    ],
+    "isometric_to_target": true,
+    "rank_End": 8
+   }
+  }
+ }
+}
