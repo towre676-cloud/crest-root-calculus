@@ -1,7 +1,7 @@
 /* Linkwright | Exact comparisons for planar closure, phase traces and event order. */
 (function (root) {
   "use strict";
-  const VERSION = "1.0.0";
+  const VERSION = "2.0.0";
   const S = 1000000n;
   const min = (a, b) => (a < b ? a : b);
   const max = (a, b) => (a > b ? a : b);
@@ -157,12 +157,22 @@
     };
   }
   function project(p) {
-    requireThat(p && p.schema === 1, "Use setup schema 1.");
+    requireThat(
+      p && (p.schema === 1 || p.schema === 2),
+      "Use setup schema 1 or 2.",
+    );
+    const time = p.schema === 2 && p.axis === "time_s";
+    requireThat(
+      p.schema === 1 ? p.axis === undefined : time || p.axis === "phase_deg",
+      "Schema 2 requires axis time_s or phase_deg. Use schema 2 to specify an axis.",
+    );
+    const coordinate = time ? (x, key) => decimal(x, key, 0n) : angle;
     id(p.setup, "setup ID");
     name(p.name, "setup name");
     requireThat(
-      ["synthetic", "machine"].includes(p.source),
-      "Choose synthetic or machine for source.",
+      ["synthetic", "machine"].includes(p.source) ||
+        (p.schema === 2 && p.source === "published-bench"),
+      "Use machine, synthetic, or published-bench (schema 2) for source.",
     );
     for (const key of ["loops", "channels", "events", "handoffs"])
       requireThat(
@@ -191,23 +201,25 @@
         Array.isArray(c.window) && c.window.length === 2,
         "Set both phase window endpoints.",
       );
-      const w = c.window.map((x) => angle(x, "Window"));
+      const w = c.window.map((x) => coordinate(x, "Window"));
+      if (time) requireThat(w[1] > w[0], "Elapsed-time windows must increase.");
       requireThat(w[0] !== w[1], "Use [0,360] for a complete cycle.");
       return {
         ...c,
+        time,
         w,
         threshold: decimal(c.limit, "Limit"),
         e: decimal(c.error, "Sensor error", 0n),
         rate:
           c.rate === null
             ? null
-            : decimal(c.rate, "Maximum rate per degree", 0n),
+            : decimal(c.rate, "Maximum rate per axis unit", 0n),
       };
     });
     const events = new Map(
       p.events.map((e) => {
         register(e.id);
-        return [e.id, angle(e.errorDeg, "Event error")];
+        return [e.id, coordinate(time ? e.errorS : e.errorDeg, "Event error")];
       }),
     );
     const handoffs = p.handoffs.map((h) => {
@@ -216,11 +228,26 @@
         events.has(h.first) && events.has(h.second) && h.first !== h.second,
         "Unknown or identical handoff events.",
       );
-      return { ...h, dwell: angle(h.minDeg, "Required phase separation") };
+      return {
+        ...h,
+        time,
+        dwell: coordinate(
+          time ? h.minS : h.minDeg,
+          "Required event separation",
+        ),
+      };
     });
-    return { loops: p.loops.map(loop), channels, events, handoffs, seen };
+    return {
+      loops: p.loops.map(loop),
+      channels,
+      events,
+      handoffs,
+      seen,
+      coordinate,
+      time,
+    };
   }
-  function csvRows(data) {
+  function csvRows(data, axis) {
     requireThat(
       typeof data === "string" && data.length < 16000000,
       "Trace file exceeds 16 MB.",
@@ -257,8 +284,8 @@
     requireThat(!quoted, "Unclosed CSV quote.");
     const header = rows.shift() || [];
     requireThat(
-      header.slice(0, 4).join(",") === "setup,run,cycle,phase_deg",
-      "Expected setup,run,cycle,phase_deg as the first four columns.",
+      header.slice(0, 4).join(",") === "setup,run,cycle," + axis,
+      "Expected setup,run,cycle," + axis + " as the first four columns.",
     );
     requireThat(
       rows.length > 0 && rows.length <= 100000,
@@ -269,8 +296,8 @@
   function readTrace(p, spec, csv) {
     const cycles = new Map();
     let run = null;
-    const { header, rows } = csvRows(csv);
-    const long = header.join(",") === "setup,run,cycle,phase_deg,channel,value";
+    const { header, rows } = csvRows(csv, spec.time ? "time_s" : "phase_deg");
+    const long = header.slice(4).join(",") === "channel,value";
     const keys = header.slice(4);
     if (!long)
       requireThat(
@@ -311,7 +338,10 @@
           if (run === null) run = r;
           requireThat(run === r, "Import one run per file.");
           requireThat(spec.seen.has(ch), "Unknown channel " + ch);
-          const x = angle(phase, "Encoder phase");
+          const x = spec.coordinate(
+            phase,
+            spec.time ? "Elapsed time" : "Encoder phase",
+          );
           if (!cycles.has(cycle)) cycles.set(cycle, new Map());
           const signals = cycles.get(cycle);
           if (!signals.has(ch)) signals.set(ch, []);
@@ -435,7 +465,7 @@
           witness = {
             numerator: String(num),
             denominator: String(den * S),
-            degrees: Number(num) / Number(den * S),
+            [c.time ? "seconds" : "degrees"]: Number(num) / Number(den * S),
           };
         }
         for (const t of [l, r]) {
@@ -467,7 +497,7 @@
         status === "violation"
           ? format(upperAt)
           : witness
-            ? String(witness.degrees)
+            ? String(c.time ? witness.seconds : witness.degrees)
             : null,
       lowerWitness: witness,
       points: q.map((p) => [
@@ -484,7 +514,7 @@
     const base = {
       kind: "handoff",
       label: h.label,
-      unit: "deg",
+      unit: h.time ? "s" : "deg",
       first: h.first,
       second: h.second,
     };
@@ -524,7 +554,17 @@
       "unresolved",
       "meets",
     ].find((s) => statuses.has(s));
+    if (spec.time) {
+      for (const cycle of records)
+        for (const check of cycle.checks) {
+          if (Object.hasOwn(check, "phase")) {
+            check.time_s = check.phase;
+            delete check.phase;
+          }
+        }
+    }
     return {
+      ...(p.schema === 2 ? { axis: p.axis } : {}),
       version: VERSION,
       setup: p.setup,
       source: p.source,
@@ -545,7 +585,10 @@
   }
   function replay(record) {
     requireThat(
-      record.engine === VERSION,
+      record.engine === VERSION ||
+        (record.engine === "1.0.0" &&
+          record.setup?.schema === 1 &&
+          !("axis" in record.setup)),
       "This record needs engine " + record.engine,
     );
     const fresh = analyze(record.setup, record.csv);
@@ -560,7 +603,7 @@
       return x;
     }
     requireThat(
-      JSON.stringify(stable(summary(fresh))) ===
+      JSON.stringify(stable({ ...summary(fresh), version: record.engine })) ===
         JSON.stringify(stable(record.result)),
       "Stored result disagrees with replay.",
     );

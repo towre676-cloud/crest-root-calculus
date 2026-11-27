@@ -73,8 +73,14 @@ function activate(setup, csv, selector) {
   $("src").textContent =
     setup.source === "synthetic"
       ? "Synthetic reference data"
-      : "User-supplied machine data";
+      : setup.source === "published-bench"
+        ? "Published four-bar measurements"
+        : "Machine measurements";
+  $("axisLabel").textContent =
+    setup.axis === "time_s" ? "Elapsed time" : "Encoder phase";
   $("job").textContent = setup.name;
+  $("basis").textContent =
+    typeof setup.provenance?.basis === "string" ? setup.provenance.basis : "";
   $("overall").replaceWith(
     Object.assign(badge(result.status), { id: "overall" }),
   );
@@ -153,8 +159,13 @@ function renderCycle() {
   $("checks").replaceChildren();
   for (const x of c.checks) {
     const div = node("div", undefined, "check");
+    const location = x.time_s ?? x.phase;
     const phase =
-      x.phase == null ? "" : " · " + Number(Number(x.phase).toFixed(3)) + "°";
+      location == null
+        ? ""
+        : " · " +
+          Number(Number(location).toFixed(6)) +
+          (active.setup.axis === "time_s" ? " s" : "°");
     div.append(
       node("strong", x.label),
       badge(x.status),
@@ -181,7 +192,9 @@ function renderGraph() {
   }
   $("chartTitle").textContent = spec.label;
   $("explain").textContent =
-    explain[result.status] +
+    (active.setup.axis === "time_s"
+      ? explain[result.status].replaceAll("phase", "time")
+      : explain[result.status]) +
     (result.sampled != null
       ? " Lowest recorded margin: " +
         signed(result.sampled) +
@@ -191,12 +204,14 @@ function renderGraph() {
       : "");
   if (result.unbounded)
     $("explain").textContent =
-      "No rate bound supplied. Measurements can identify a violation at a recorded phase. Between-sample margins remain open.";
+      "No rate bound supplied. Measurements can identify a violation at a recorded point. Between-sample margins remain open.";
   if (!result.points?.length) return;
   const [start, end] = spec.window.map(Number),
     full = $("view").value === "all" || start > end;
-  let from = full ? 0 : start,
-    to = full ? 360 : end;
+  const timed = active.setup.axis === "time_s";
+  let from = full ? (timed ? result.points[0][0] : 0) : start,
+    to = full ? (timed ? result.points.at(-1)[0] : 360) : end;
+  if (from === to) to = from + (timed ? 0.001 : 1);
   const width = 690,
     height = 250,
     left = 65,
@@ -249,7 +264,7 @@ function renderGraph() {
     spec.label +
       " margin in " +
       spec.unit +
-      " versus encoder phase, with compatible bounds",
+      (timed ? " versus elapsed seconds" : " versus encoder phase"),
   );
   function draw(tag, attrs, text) {
     const e = document.createElementNS(svg.namespaceURI, tag);
@@ -301,7 +316,7 @@ function renderGraph() {
         "text-anchor": "middle",
         "font-size": 14,
       },
-      Number(x.toFixed(3)) + "°",
+      Number(x.toFixed(timed ? 6 : 3)) + (timed ? " s" : "°"),
     );
   }
   // Large traces keep the exact numerical result and show extrema per screen column.
@@ -347,6 +362,12 @@ function renderGraph() {
   $("graph").append(svg);
 }
 function loadCase(k) {
+  if (k === "bench") {
+    const example = BenchTrial.fixture(benchGroup, benchEveryFourth);
+    activate(example.setup, example.csv, k);
+    $("editor").hidden = true;
+    return;
+  }
   const e = trialExamples[k];
   activate(e.setup, e.csv, k);
   $("editor").hidden = true;
@@ -438,4 +459,44 @@ $("recordFile").onchange = async (e) => {
     $("recordFile").value = "";
   }
 };
-loadCase("opener");
+$("nativeFile").onchange = async (event) => {
+  const file = event.target.files[0];
+  if (!file) return;
+  const selected = active;
+  try {
+    if (file.size > 16000000) throw Error("File exceeds 16 MB.");
+    if ($("nativeLimit").value === "" || $("nativeError").value === "")
+      throw Error(
+        "Enter a limit and absolute sensor error before opening a recording.",
+      );
+    const values = [
+      "nativeSignal",
+      "nativeLimit",
+      "nativeSense",
+      "nativeError",
+      "nativeRate",
+    ].map((k) => $(k).value);
+    const body = await file.text();
+    if (active !== selected) return;
+    const e = BenchTrial.fromNative(
+      body,
+      file.name,
+      ...values.slice(0, 4),
+      values[4] || null,
+    );
+    activate(e.setup, e.csv, "custom");
+    $("nativeMessage").textContent = "";
+    $("editor").hidden = true;
+  } catch (err) {
+    dirty(err.message);
+    $("nativeMessage").textContent = err.message;
+  } finally {
+    $("nativeFile").value = "";
+  }
+};
+const query = new URLSearchParams(location.search);
+const benchGroup = Object.hasOwn(fieldData.bench, query.get("bench"))
+  ? query.get("bench")
+  : "empty/Sine_0";
+const benchEveryFourth = query.get("samples") === "ends";
+loadCase("bench");

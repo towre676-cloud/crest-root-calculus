@@ -1,6 +1,10 @@
-# Cartoner stroke trial
+# Cartoner stroke trial 2.0
 
 [Open the deployed application](https://towre676-cloud.github.io/crest-root-calculus/cartoner/) · [Download the offline trial](../../downloads/linkwright-cartoner-trial.zip) · [Trial guide](https://towre676-cloud.github.io/crest-root-calculus/cartoner/guide.html)
+
+[Explore the measured evidence](https://towre676-cloud.github.io/crest-root-calculus/cartoner/field.html) · [Source register](evidence/sources.md)
+
+Version 2.0 opens on a published four-bar recording. The higher of two retained endpoints measured 18.83 mA, while the original recording reached 48.42 mA within the same 15.989 ms window. Open both versions to compare the measured violation of an illustrative limit with the unresolved between-sample result. The trial also accepts elapsed-time signals and handoff events, original DaRUS servo files, and existing version 1 records. The evidence page includes independent-run rate checks across 60 bench recordings, three factory datasets and a paired comparison for your own adjudicated runs.
 
 Run the extracted `index.html` in a current browser. The program reads local CSV and JSON, checks full-turn or limited-angle four-bar travel, checks analog process requirements across continuous encoder-phase intervals, and checks event separation. Every cycle retains its own evidence. The exported JSON contains the exact inputs, results, version and optional paired inspection notes. Reopening the record recomputes the mathematical results. Record replay checks consistency. It supplies no digital signature or independent validation of the original measurements.
 

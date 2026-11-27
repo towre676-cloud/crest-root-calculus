@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Measured evidence · Linkwright 2.0</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="field.css" />
+  </head>
+  <body>
+    <header>
+      <div class="brand">Crest–Root <span>/</span> Linkwright</div>
+      <nav>
+        <a href="index.html">Stroke trial</a>
+        <a href="guide.html">Trial guide</a>
+      </nav>
+    </header>
+    <main class="field">
+      <div class="intro">
+        <p class="eyebrow">Linkwright 2.0 · measured evidence</p>
+        <h1>What fell between readings?</h1>
+        <p>
+          Replay physical four-bar recordings, then examine the packaging
+          evidence at the time scale each instrument captured.
+        </p>
+      </div>
+      <section class="study">
+        <div class="charttop">
+          <div>
+            <div class="eyebrow">University of Stuttgart · servo bench</div>
+            <h2>Inside a 16 ms sampling gap</h2>
+          </div>
+          <label>Load and command<select id="group"></select></label>
+        </div>
+        <div class="bench-grid">
+          <div>
+            <div class="scope" id="wave"></div>
+            <div class="keys">
+              <span>● Original reading</span><span>◇ Retained endpoint</span
+              ><span>┄ Illustration limit</span>
+            </div>
+          </div>
+          <div class="reading">
+            <div class="eyebrow">Recorded peak</div>
+            <strong id="peak"></strong>
+            <p id="detail"></p>
+            <a id="allRead" class="launch">Analyze original readings →</a
+            ><a id="sparseRead">Analyze only the endpoints →</a>
+          </div>
+        </div>
+        <p class="footnote">
+          For each held-out run, the display selects the largest positive
+          excursion above its neighboring retained readings among screened
+          intervals. The dashed limit sits halfway across that excursion to
+          demonstrate a missed reading. The plant supplies its own acceptance
+          limit.
+        </p>
+        <details>
+          <summary>Held-out results and original files</summary>
+          <p>
+            Within each load and command, repeats 00 and 01 supply the maximum
+            observed adjacent current-change rate, rounded up to a whole mA/s.
+            On unseen repeat 02, keep every fourth reading and the last. At each
+            withheld timestamp, test whether its current is reachable from both
+            retained neighbors at that rate. Each time gap uses its recorded
+            duration.
+          </p>
+          <div class="scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>Comparison</th>
+                  <th>Rate (mA/s)</th>
+                  <th>Hidden readings</th>
+                  <th>Outside bounds</th>
+                  <th>Inconsistent endpoint pairs</th>
+                </tr>
+              </thead>
+              <tbody id="holdout"></tbody>
+            </table>
+          </div>
+          <p id="pooled"></p>
+          <p id="quality"></p>
+          <div class="scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>Original recording</th>
+                  <th>Role</th>
+                  <th>Rows</th>
+                  <th>Present current range (mA, raw)</th>
+                  <th>Flagged rows</th>
+                </tr>
+              </thead>
+              <tbody id="runs"></tbody>
+            </table>
+          </div>
+          <p>
+            Download a recording above, then use
+            <strong
+              >Setup &amp; trace → Import a native four-bar servo
+              recording</strong
+            >
+            in the stroke trial to analyze any of its five signals. The native
+            importer uses the original timestamps.
+          </p>
+        </details>
+      </section>
+      <section class="evidence-pair">
+        <article>
+          <div class="eyebrow">Mechanism geometry</div>
+          <h2>What the four-bar proves</h2>
+          <img
+            class="hardware"
+            src="evidence/four-bar.webp"
+            alt="The aluminum four-bar test mechanism, photographed from above by the Stuttgart investigators."
+          />
+          <p>
+            The published pivot distances are 95 mm for ground, 30 mm for the
+            crank, 104 mm for the coupler and 60 mm for the rocker. They leave
+            <strong>21 mm folded</strong> and
+            <strong>39 mm extended</strong> nominal closure margin over a full
+            turn. Carton clearance needs its own measurement or geometry.
+          </p>
+          <p class="credit">
+            Photo resized from the original by Röder, Ebel and Eberhard.
+            <a href="https://doi.org/10.18419/darus-4152">DaRUS · CC BY 4.0</a>
+          </p>
+        </article>
+        <article>
+          <div class="eyebrow">Direct carton-handling evidence</div>
+          <h2>When a suction cup detaches</h2>
+          <img
+            class="pressure"
+            src="evidence/suction-figure.webp"
+            alt="Published pressure records for nominal operation, one detached suction cup, and two detached cups."
+          />
+          <p>
+            Calabrese and colleagues recorded pressure at 10 kHz on four cups
+            moving a carton through a 134 ms cycle. Their three experiments show
+            normal operation, one cup detached and two cups detached. The
+            authors report loss of function with two detached cups.
+          </p>
+          <p class="credit">
+            Figure 3a cropped from Calabrese et al. The raw recordings require
+            third-party permission.
+            <a href="https://doi.org/10.3390/app12189212"
+              >Applied Sciences · CC BY 4.0</a
+            >
+          </p>
+        </article>
+      </section>
+      <section class="study">
+        <div class="eyebrow">Factory records · PIADE</div>
+        <h2>Where a field trial could matter</h2>
+        <p>
+          Actual operating intervals on five anonymous packaging machines. Hours
+          sum the recorded durations by state. Machine coverage varies, and the
+          logs do not identify the share attributable to a carton handoff.
+        </p>
+        <div class="scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Machine</th>
+                <th>Intervals</th>
+                <th>Production (h)</th>
+                <th>Downtime (h)</th>
+                <th>Scheduled downtime (h)</th>
+                <th>Performance loss (h)</th>
+                <th>Idle (h)</th>
+              </tr>
+            </thead>
+            <tbody id="piade"></tbody>
+          </table>
+        </div>
+        <details>
+          <summary>Estimate the value of a trial on one machine</summary>
+          <p>
+            Use the selected machine’s recorded downtime across its entire
+            published observation period. Enter the fraction your site
+            substantiates as recoverable, the marginal value of an hour, and the
+            cost of the trial over that same period.
+          </p>
+          <div class="assumptions">
+            <label>Machine<select id="machine"></select></label
+            ><label
+              >Recoverable share (%)<input
+                id="share"
+                type="number"
+                min="0"
+                max="100"
+                step="any" /></label
+            ><label
+              >Value per hour ($)<input
+                id="value"
+                type="number"
+                min="0"
+                step="any" /></label
+            ><label
+              >Trial cost ($)<input id="cost" type="number" min="0" step="any"
+            /></label>
+          </div>
+          <p id="economics" role="status"></p>
+        </details>
+        <p class="credit">
+          Tosato, Convento, Masiero, Susto and Beghi.
+          <a href="https://doi.org/10.5281/zenodo.7071747">PIADE · CC BY 4.0</a>
+        </p>
+      </section>
+      <section class="study">
+        <div class="eyebrow">Factory records · CoMoPI</div>
+        <h2>What a ten-minute window can tell you</h2>
+        <p>
+          Eight packaging machines recorded activity around a watertight closure
+          module. Two alarm counters were identified by the authors as fault
+          targets. A sensor row contains ten-minute averages. Alarm and warning
+          files have their own coverage.
+        </p>
+        <div class="scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Machine</th>
+                <th>Sensor rows</th>
+                <th>Alarm rows</th>
+                <th>Warning rows</th>
+                <th>Rows with either target</th>
+                <th>AL_53 count</th>
+                <th>AL_54 count</th>
+              </tr>
+            </thead>
+            <tbody id="comopi"></tbody>
+          </table>
+        </div>
+        <p class="credit">
+          Masiero, Susto and Tosato.
+          <a href="https://doi.org/10.5281/zenodo.7572501"
+            >CoMoPI · CC BY 4.0</a
+          >
+        </p>
+      </section>
+      <section class="study">
+        <div class="eyebrow">Factory records · ALPI</div>
+        <h2>What the alarm history preserves</h2>
+        <p id="alarmSummary"></p>
+        <details>
+          <summary>Inspect all 20 machine histories</summary>
+          <div class="scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>Serial</th>
+                  <th>Logged events</th>
+                  <th>Different codes</th>
+                  <th>Most frequent code</th>
+                  <th>Share of events</th>
+                  <th>First date</th>
+                  <th>Last date</th>
+                </tr>
+              </thead>
+              <tbody id="alpi"></tbody>
+            </table>
+          </div>
+        </details>
+        <p class="credit">
+          Dalle Pezze, Tosato, Masiero, Susto and Beghi.
+          <a href="https://doi.org/10.17632/4nhx2x67cd.1">ALPI · CC BY 4.0</a>
+        </p>
+      </section>
+      <section id="paired" class="study">
+        <div class="eyebrow">Your production trial</div>
+        <h2>Did the existing inspection miss it?</h2>
+        <p>
+          Choose saved trial records with the incumbent inspection and bench
+          outcome filled in. Each setup and run counts once. The app recomputes
+          the saved calculations and counts paired catches and false alarms
+          against your bench outcomes.
+        </p>
+        <label
+          >Saved trial records<input
+            id="auditFiles"
+            type="file"
+            multiple
+            accept=".json"
+        /></label>
+        <p id="auditStatus" role="status">Select records to compare.</p>
+        <div id="auditResult" hidden>
+          <div class="scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>Operator-adjudicated outcome</th>
+                  <th>Both flagged</th>
+                  <th>Only Linkwright flagged</th>
+                  <th>Only incumbent flagged</th>
+                  <th>Neither flagged</th>
+                </tr>
+              </thead>
+              <tbody id="auditTable"></tbody>
+            </table>
+          </div>
+          <button id="auditSave">Download paired audit ↓</button>
+        </div>
+        <p class="footnote">
+          Assess each run against the same declared requirement. The operator
+          records the bench outcome independently. Calculations use fully
+          adjudicated, decisive machine runs. Counts for synthetic, unlabeled
+          and inconclusive cases are shown separately. The selected public servo
+          examples illustrate a chosen threshold and do not establish cartoner
+          performance.
+        </p>
+      </section>
+      <p class="credit">
+        Reproducibility and search coverage.
+        <a href="evidence/sources.md">Source register and methods</a> ·
+        <a href="evidence/manifest.json">Source URLs and SHA-256 hashes</a> ·
+        <a href="evidence/catalog-search.json">Dataset catalog search</a> ·
+        <a href="https://creativecommons.org/licenses/by/4.0/"
+          >Attribution license</a
+        >
+      </p>
+    </main>
+    <footer>
+      Linkwright · Cartoner trial 2.0.0
+      <a href="index.html">Open stroke trial</a>
+    </footer>
+    <script src="engine.js"></script>
+    <script src="audit.js"></script>
+    <script src="field-data.js"></script>
+    <script src="field.js"></script>
+  </body>
+</html>
