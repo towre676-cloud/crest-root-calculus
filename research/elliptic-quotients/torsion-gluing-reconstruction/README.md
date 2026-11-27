@@ -86,4 +86,4 @@ Use Python with SymPy, cypari2 and python-flint. Run from the repository root.
     python -B sieve.py --height 100 --prime-bound 251
     python -B sieve.py --height 100 --prime-bound 251 --order-108
 
-The [receipt](receipt.json) has both maps and every signed graph component for all seven split examples. It uses ascending coefficients. This study recovers known curves and gives an exact inverse implementation for rational degree-three maps on the supported sextic charts. An equation-only degree-four gluing for the earlier Richelot neighbour remains open.
+The [receipt](receipt.json) has both maps and every signed graph component for all seven split examples. It uses ascending coefficients. This study recovers known curves and gives an exact inverse implementation for rational degree-three maps on the supported sextic charts. A companion study recovers both degree-four maps and the signed four-torsion graph from the Richelot equations. [Degree-four reconstruction](../quartic-gluing-reconstruction/README.md)

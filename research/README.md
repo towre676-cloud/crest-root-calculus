@@ -10,6 +10,8 @@
 
 For Howe’s order-70 Jacobian, exact elimination from the sextic recovers both degree-three elliptic maps and their full signed 3-torsion gluing. The same replay covers six further examples. A height-100 search recovers Howe’s unique order-7/order-10 pair and rules out order 108 in the marked order-9/order-12 box by local lift obstructions. [Proofs, maps and search](elliptic-quotients/torsion-gluing-reconstruction/README.md)
 
+The degree-four inverse calculation on the Richelot family eliminates the abscissa numerator linearly, then solves for the quadratic whose square gives the poles. It recovers both maps and the signed four-torsion graph from each of 36 equations. Independent reduction witnesses give the full geometric optimal spectrum on the 32 distinct-factor cases. [Proof, equations and replay](elliptic-quotients/quartic-gluing-reconstruction/README.md)
+
 ## Quotient discovery from one expanded equation
 
 The coefficient-only search removes square factors with their rational unit and exhausts all constant-multiplier polynomial decompositions to lower positive genus. For odd-degree models with a singleton infinity fibre, it also exhausts maps to unknown targets when the vertical multiplier is nonconstant. Writing the derivative as a product reduces the number of incidence parameters and solves the saturated strata without multivariate elimination. A separate complete degree-two search discovers all rational positive-genus quotients of odd or even hyperelliptic equations, with arbitrary infinity fibres. Both searches reconstruct explicit target equations and maps. [Theorems, programs and comparisons](coefficient-quotients/README.md)
