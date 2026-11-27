@@ -106,7 +106,7 @@ Here $\lambda_3(G)$ denotes the **squared** third successive minimum. The table 
 
 The extended replay recovers all 31 archived pairs and agrees with the original totals in each earlier determinant band. It enumerates 150,300 parent isometry classes and 364,337 pairs of inequivalent children. Of these, 289,274 pairs meet the primitive Jacobian criterion. Their spectra differ for 288,994 pairs and agree in every degree for 280. Neighbour isometries account for 159 of the equalities. The other 121 have a nonzero ordinary neighbour theta difference by norm 28 and zero square coefficients by Sturm.
 
-Of those 121 nonzero sums, 90 are supported entirely on nonsquares over $\mathbb Q_2$ and 18 over $\mathbb Q_5$. The other 13 have explicit nonzero indices that are squares at every prime of the theta level. For two of these, an exact modular-symbol calculation and the Waldspurger factor give the same central-value explanation. [Local-square criterion and replay](local-square.md)
+Of those 121 nonzero sums, 90 are supported entirely on nonsquares over $\mathbb Q_2$ and 18 over $\mathbb Q_5$. The other 13 have explicit nonzero indices that are squares at every prime of the theta level. The Hecke decomposition accounts for all 13. Their central blocks belong to eight weight-two newform orbits with exact twisted central zeros. Four of the 13 sums also have blocks supported on nonsquares over $\mathbb Q_2$. [Local-square criterion](local-square.md) · [Hecke packets and exact replay](residual-packets.md)
 
 | Extremum over pairs with differing spectra | First difference $\delta$ | Child determinant | Parent squared minima |
 |---|---:|---:|---|
