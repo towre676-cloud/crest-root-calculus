@@ -205,7 +205,7 @@ def check_equal_family(field):
     return results
 
 
-def census(limit, initial_cap):
+def census(limit, initial_cap, expected_square_null=None):
     compiler = ["g++", "-O3", "-std=c++17", "-Wall", "-Wextra", "-Werror"]
     with TemporaryDirectory() as directory:
         parents_bin, shells_bin = (str(Path(directory)/name) for name in ("parents", "shells"))
@@ -233,6 +233,12 @@ def census(limit, initial_cap):
         retry = [(i,case) for i,(case,row) in enumerate(zip(cases,rows))
                  if not case[2] and not row[0] and not row[3]]
         certificates, ordinary_witnesses = neighbour_comparison(shells_bin,retry,field)
+        if expected_square_null is not None:
+            extracted = [{"parent": cases[i][0], "edges": cases[i][1]}
+                         for i,(method,delta,_) in certificates.items()
+                         if method == "neighbour_sturm" and not delta]
+            if json.loads(json.dumps(extracted)) != expected_square_null:
+                raise ArithmeticError("The extracted theta pairs differ from the local-square receipt.")
         for i, (_,delta,excess) in certificates.items():
             _, _, witness, is_product, checked = rows[i]
             if delta and delta <= checked:
@@ -335,10 +341,15 @@ def main():
     parser.add_argument("--determinant-limit", type=int, default=100000)
     parser.add_argument("--initial-cap", type=int, default=128)
     parser.add_argument("--verify", type=Path)
+    parser.add_argument("--verify-square-null", type=Path)
     options = parser.parse_args()
     if not 21 <= options.initial_cap <= 4096:
         parser.error("require 21 <= initial cap <= 4096")
-    result = census(options.determinant_limit,options.initial_cap)
+    expected = None
+    if options.verify_square_null:
+        expected = [{"parent": row["parent"], "edges": row["edges"]}
+                    for row in json.loads(options.verify_square_null.read_text())]
+    result = census(options.determinant_limit,options.initial_cap,expected)
     data = json.dumps(result,indent=2)
     if options.verify and json.loads(data) != json.loads(options.verify.read_text()):
         raise ArithmeticError("The census differs from the stored record.")
